@@ -1,23 +1,116 @@
-# Developer QA (audit-only)
+# Developer QA harness
 
-The root `index.html` is untouched. These tools inject additional controls into a disposable copy of that file; never deploy the generated copy as the game.
+This directory contains development-only tooling for inspecting and regression-testing **東方紅月夜 ~ Scarlet Moon Never Sets ~**. The shipped `index.html` is the source under test and is never rewritten in place.
+
+The harness exists so maintainers and coding agents can reproduce the same state-by-state inspection workflow outside ChatGPT Work/Astra.
+
+## Safety model
+
+- `index.html` remains untouched.
+- `qa/build.py` creates disposable `qa/generated.html` by injecting the QA controls into a copy of the shipped game.
+- Generated captures and reports go under `qa/output/` and are gitignored.
+- Do not deploy `qa/generated.html` as the game.
+- Promote only evidence that supports a real audit finding into `audit/evidence/`.
+
+## Manual browser workflow — no npm required
 
 From the repository root:
 
-```
+```bash
 python3 qa/build.py
 python3 -m http.server 8000
 ```
 
-Open `http://localhost:8000/qa/generated.html`. Alternatively open the generated HTML locally in a normal desktop browser. No dependencies are required. `node qa/server.cjs` provides an optional port-4173 adapter for supervised browser QA; its root is the inspector and `/baseline` serves the untouched game.
+Open `http://localhost:8000/qa/generated.html`.
 
-- **Run regression checks** executes the recovered 32-group simulation suite and displays JSON.
-- **Scene**, **Tick**, **Inspect frozen frame** jump to every major scene and all 14 boss phases. Tick is a 60 Hz simulation count from scene/phase start. Boss inspection skips the initial 72-frame phase gap. Stage inspection skips stage cards; Stage 3 inspection after tick 2520 marks Sakuya cleared so the second half can be inspected independently.
-- **Advance dialogue** advances a fully printed page. **Resume motion** returns to normal ticking; **Freeze motion** freezes without adding the game's pause overlay.
-- **Run acceptance diagnostics** emits music lengths and targeted source-backed behavior measurements.
-- Music/effect selectors permit isolated listening on a desktop browser.
-- **Invulnerable inspection** is optional for interactive practice. Frozen scene capture uses invulnerability during stepping; on blink-off frames Reimu may be absent. That is a harness artifact, not an invisible-player finding.
+The inspector provides:
 
-`regression.js` is recovered developer tooling. `inspection.js`, `build.py`, and the server adapter were added for this audit. The inspector replaces `tick` only in its generated page so it can freeze rendering. It must not be confused with uninstrumented runtime performance testing. Game source is read directly, without minification or rewrites.
+- **Run regression checks** — recovered 32-group direct-simulation suite.
+- **Scene / Tick / Inspect frozen frame** — deterministic state jumping for presentation scenes, dialogues, stages, and all 14 boss phases.
+- **Advance dialogue** — advances a fully printed page.
+- **Resume motion / Freeze motion** — inspect movement without adding the game's pause overlay.
+- **Run acceptance diagnostics** — emits track lengths and targeted source-backed gameplay measurements.
+- **Music / effect selectors** — isolated audio listening.
+- **Invulnerable inspection** — optional interactive practice.
 
-The regression route uses invulnerability, automatic dialogue confirmation, and boss timeouts. It is not a human-played clear, difficulty proof, music-fidelity test, or screenshot comparison. Browser UI checks supplement it. Reports are in `audit/evidence/`. Re-run in a fresh tab, click regression once, wait for results, then use diagnostics and scene inspection. Export displayed JSON by copying it; do not carry inspection state into a release build.
+The scene inspector replaces `tick` only inside the generated page so it can freeze rendering. That behavior is not present in the release game.
+
+## Automated agent workflow
+
+For a CLI coding agent or developer who needs reproducible screenshots and machine-readable results:
+
+```bash
+cd qa
+npm install
+npm run agent
+```
+
+Requirements:
+
+- Node.js 18+
+- Python 3
+- an installed Chromium-family browser: Chrome, Chromium, or Edge
+
+The runner uses `playwright-core` but **does not download a browser**. It tries common Chrome/Chromium/Edge locations. If discovery fails, set:
+
+```bash
+BROWSER_BIN=/path/to/chrome npm run agent
+```
+
+Useful modes:
+
+```bash
+npm run agent:headed                 # watch the automated run
+npm run agent:no-captures            # regression + diagnostics only
+node agent-run.mjs --case=r5-final   # one deterministic capture
+QA_HEADED=1 npm run agent             # equivalent headed mode
+```
+
+Outputs are written locally under:
+
+```text
+qa/output/
+├── agent-report.json
+└── captures/
+    ├── <case>.png
+    └── <case>.json
+```
+
+`agent-report.json` contains:
+
+- SHA-256 of the tested `index.html`;
+- browser executable used;
+- full recovered regression result;
+- acceptance diagnostics;
+- browser console/page errors;
+- capture manifest and state metadata.
+
+The capture matrix is versioned in `qa/cases.json`. Add a case there when a new stable inspection checkpoint becomes useful to future maintainers.
+
+## What the regression suite certifies
+
+The recovered suite exercises movement, focus, shooting, power, items, hitbox, graze, death/deathbomb, bombs, pause, continues, scoring, spell capture behavior, lasers, all stages, all dialogue, every boss phase, ending, credits, attract mode, audio state changes, and a second run.
+
+It intentionally uses direct simulation, invulnerability, automatic dialogue progression, and boss timeouts. Therefore it **does not certify**:
+
+- subjective visual quality;
+- Touhou/Famicom art fidelity;
+- musical quality or arrangement fidelity;
+- human-played difficulty/fairness;
+- frame pacing on every target machine.
+
+Those require review of captured frames, isolated audio, and human playtesting.
+
+## Recommended acceptance workflow
+
+1. Run `npm run agent:no-captures` after code changes.
+2. Fix any regression failure or console error before visual review.
+3. Run `npm run agent` to regenerate the standard capture matrix locally.
+4. Compare the relevant captures with `audit/reference/` and the acceptance spec.
+5. Human-play the changed portion when gameplay feel or difficulty could have changed.
+6. Commit game changes only after the relevant acceptance finding is satisfied.
+7. Keep QA tooling and shipped-game changes separable in review.
+
+## Existing recovered tooling
+
+`regression.js` is recovered developer tooling from the original build session. `inspection.js`, `build.py`, `server.cjs`, `cases.json`, and `agent-run.mjs` make that tooling reusable outside the original sandbox.
