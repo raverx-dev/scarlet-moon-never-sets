@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "engines": {"node": ">=20"},
+  "scripts": {
+    "build": "python3 build.py",
+    "dev": "node server.cjs",
+    "agent": "node agent-run.mjs",
+    "agent:headed": "node agent-run.mjs --headed",
+    "agent:no-captures": "node agent-run.mjs --no-captures"
+  },
+  "devDependencies": {
+    "playwright-core": "1.63.0"
+  }
+}
