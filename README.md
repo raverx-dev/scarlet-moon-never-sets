@@ -64,3 +64,9 @@ The game was executed in Chromium. An isolated test harness, excluded from this 
 The full progression test used accelerated simulation and inspection invulnerability to exercise every phase without interruption. It was not an unassisted human no-continue clear. Direct browser keyboard checks additionally exposed and corrected lost very short key taps. Screenshots were inspected for the title, dialogue, and final-boss presentation. Red Magic reached 194 simultaneous hostile objects in the regression pass. No game-origin console errors were observed; unrelated browser-extension errors were present.
 
 Actual `file://` execution, Firefox, and a deployed GitHub Pages origin were not directly exercised in the available browser. Self-containment and static HTTP operation were checked. Subjective Normal-difficulty tuning and the unverified musical reconstructions are not certified by the automated pass. The functional title-to-credits loop passes; the full creative/audio acceptance specification is not claimed as completely certified.
+
+## Development
+
+The shipped game remains self-contained, but the repository also includes a development-only [`qa/`](qa/) tool for deterministic state inspection, regression checks, diagnostics, automated browser capture, and future maintenance.
+
+The longer-term project direction is documented in [`ROADMAP.md`](ROADMAP.md). The current priority is to finish and stabilize Scarlet Moon itself before extracting reusable systems. The roadmap intentionally treats the game as the future reference implementation for a possible reusable HTML5/JavaScript danmaku framework and authoring environment rather than as a disposable engine demo.
