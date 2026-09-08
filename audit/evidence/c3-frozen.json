@@ -1,0 +1,10 @@
+{
+  "state": "play",
+  "stateTick": 200,
+  "stage": 1,
+  "stageTick": 0,
+  "phase": "c3",
+  "bossTick": 200,
+  "bullets": 67,
+  "frame": 200
+}

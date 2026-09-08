@@ -1,0 +1,10 @@
+{
+  "state": "dialogue",
+  "stateTick": 60,
+  "stage": 3,
+  "stageTick": 0,
+  "bullets": 0,
+  "dialogue": "ending",
+  "line": 0,
+  "frame": 60
+}

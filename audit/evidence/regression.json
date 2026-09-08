@@ -1,0 +1,180 @@
+{
+  "passed": 32,
+  "failed": 0,
+  "checks": [
+    "Fresh resources: 3 lives, 3 bombs, power 1",
+    "Immediate movement; normalized diagonals; focus speed",
+    "Held Z firing and four shot levels",
+    "Point and power pickups, max power score, collection line",
+    "Tiny hitbox, one graze per bullet, delayed death",
+    "Deathbomb on last available frame preserves life",
+    "No bomb at zero stock; death loses power",
+    "Pause/resume stops simulation and resets input",
+    "Continue restores resources, resets score, restarts boss",
+    "Continue timeout returns title; another run resets state",
+    "Player shots destroy enemies and damage bosses",
+    "Spell capture bonus and bomb forfeiture",
+    "Laser telegraph harmless, active beam lethal",
+    "Final survival duration resists early damage clear",
+    "All dialogue pages and boss scenes render without exceptions",
+    "cirno / Cold Snap",
+    "cirno / Icicle Fall",
+    "cirno / Perfect Freeze",
+    "marisa / Star Sweep",
+    "marisa / Stardust Reverie",
+    "marisa / Non-Directional Laser",
+    "marisa / Master Spark",
+    "sakuya / Killing Doll",
+    "sakuya / Private Square",
+    "remilia / Scarlet Waltz",
+    "remilia / Scarlet Shoot",
+    "remilia / Spear the Gungnir",
+    "remilia / Scarlet Gensokyo",
+    "remilia / Red Magic",
+    "All stages, dialogues, bosses, ending, credits and second run",
+    "Attract mode and how-to-play round trip",
+    "Audio initialization, all track changes, effects and mute"
+  ],
+  "errors": [],
+  "metrics": [
+    {
+      "phase": "c1",
+      "max": 44,
+      "frozen": 0,
+      "beams": 0,
+      "spears": 0
+    },
+    {
+      "phase": "c2",
+      "max": 37,
+      "frozen": 0,
+      "beams": 0,
+      "spears": 0
+    },
+    {
+      "phase": "c3",
+      "max": 91,
+      "frozen": 700,
+      "beams": 0,
+      "spears": 0
+    },
+    {
+      "phase": "m1",
+      "max": 62,
+      "frozen": 0,
+      "beams": 0,
+      "spears": 0
+    },
+    {
+      "phase": "m2",
+      "max": 102,
+      "frozen": 0,
+      "beams": 0,
+      "spears": 0
+    },
+    {
+      "phase": "m3",
+      "max": 41,
+      "frozen": 0,
+      "beams": 1144,
+      "spears": 0
+    },
+    {
+      "phase": "m4",
+      "max": 65,
+      "frozen": 0,
+      "beams": 1352,
+      "spears": 0
+    },
+    {
+      "phase": "s1",
+      "max": 55,
+      "frozen": 0,
+      "beams": 0,
+      "spears": 0
+    },
+    {
+      "phase": "s2",
+      "max": 117,
+      "frozen": 620,
+      "beams": 0,
+      "spears": 0
+    },
+    {
+      "phase": "r1",
+      "max": 80,
+      "frozen": 0,
+      "beams": 0,
+      "spears": 0
+    },
+    {
+      "phase": "r2",
+      "max": 62,
+      "frozen": 0,
+      "beams": 0,
+      "spears": 0
+    },
+    {
+      "phase": "r3",
+      "max": 78,
+      "frozen": 0,
+      "beams": 845,
+      "spears": 886
+    },
+    {
+      "phase": "r4",
+      "max": 122,
+      "frozen": 0,
+      "beams": 0,
+      "spears": 0
+    },
+    {
+      "phase": "r5",
+      "max": 194,
+      "frozen": 0,
+      "beams": 0,
+      "spears": 0
+    }
+  ],
+  "timing": {
+    "combatSeconds": 670,
+    "fastDialogueRunSeconds": 743
+  },
+  "flow": [
+    "dialogue:intro",
+    "stagecard",
+    "stage:1",
+    "dialogue:cirno_before",
+    "cirno:0",
+    "cirno:1",
+    "cirno:2",
+    "defeat",
+    "dialogue:cirno_after",
+    "stage:2",
+    "dialogue:marisa_before",
+    "marisa:0",
+    "marisa:1",
+    "marisa:2",
+    "marisa:3",
+    "dialogue:marisa_after",
+    "gate",
+    "stage:3",
+    "dialogue:sakuya_before",
+    "sakuya:0",
+    "sakuya:1",
+    "dialogue:sakuya_after",
+    "dialogue:remilia_before",
+    "remilia:0",
+    "remilia:1",
+    "remilia:2",
+    "remilia:3",
+    "remilia:4",
+    "dialogue:remilia_after",
+    "dawn",
+    "endingScene",
+    "dialogue:ending",
+    "endingExit",
+    "theend",
+    "credits"
+  ]
+}

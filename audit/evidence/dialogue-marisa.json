@@ -1,0 +1,10 @@
+{
+  "state": "dialogue",
+  "stateTick": 60,
+  "stage": 2,
+  "stageTick": 0,
+  "bullets": 0,
+  "dialogue": "marisa_before",
+  "line": 0,
+  "frame": 60
+}
