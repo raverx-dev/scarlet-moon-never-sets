@@ -2,11 +2,11 @@
 
 An unofficial Touhou Project fan game: a three-stage vertical danmaku shooter imagined as an impossible late-era Famicom cartridge. Reimu investigates three nights without sunrise—and without donations. Fly through Misty Lake, the Forest of Magic, and the Scarlet Devil Mansion; confront Cirno, Marisa, Sakuya, and Remilia.
 
-The executable is the single, self-contained `index.html`. The release contains exactly this file, this README, and `FANWORK_NOTICE.md`. No installation, build, packages, remote assets, or server is required by the game.
+The repository now preserves multiple self-contained playable builds. The root `index.html` is a GitHub Pages version selector; each frozen game version remains a single self-contained HTML file under `versions/`. See [`VERSIONS.md`](VERSIONS.md) for the archive policy and exact checkpoints.
 
 ## Play locally
 
-Download the release, extract it if using the ZIP, and open `index.html` in a desktop Chromium- or Firefox-class browser. Press Enter or Z to advance through the boot screens. Audio starts after a keyboard press or a click on the game. Browser previewers that suppress JavaScript are not the game runtime; open the downloaded HTML in your browser.
+For a preserved build, open its `versions/<version>/index.html` in a desktop Chromium- or Firefox-class browser. Press Enter or Z to advance through the boot screens. Audio starts after a keyboard press or a click on the game. Browser previewers that suppress JavaScript are not the game runtime; open the HTML directly in your browser.
 
 | Key | Action |
 | --- | --- |
@@ -35,7 +35,14 @@ Title idle time starts the scripted attract sequence. The ending, animated credi
 
 ## GitHub Pages
 
-Place the three release files at your repository root. In the repository's Pages settings, publish that root from the chosen branch. `index.html` is the entry point. There are no path-sensitive asset references, network requests, package steps, or runtime API calls. The same bytes work with ordinary static HTTP hosting.
+GitHub Pages publishes `main`. The normal project Pages URL opens the root version selector, which launches immutable playable snapshots under `versions/`. Each preserved build remains self-contained and has no path-sensitive runtime assets, network requests, package steps, or runtime API calls.
+
+Current preserved versions:
+
+- `versions/original/` — Version 1, original build.
+- `versions/p1-visual-audio/` — Version 2, accepted P0 + Visual P1 + Audio P1 checkpoint.
+
+Future accepted iterations are added as new version folders; existing folders are never overwritten.
 
 ## Implementation
 
@@ -45,28 +52,26 @@ Place the three release files at your repository root. In the repository's Pages
 - Fixed 60 Hz simulation with bounded frame catch-up; focus loss pauses combat and releases held keys.
 - Authored stage cue lists and five ordinary enemy archetypes.
 - Fourteen individually scripted boss phases, including freeze/thaw state changes, warning beams, moving spears, and layered final patterns.
-- Two pulse voices using explicit duty-cycle waveforms, triangle bass, and deterministic LFSR noise. Effects borrow a pulse channel. No recordings, soundfonts, MIDI files, or external audio are embedded.
+- Two pulse voices using explicit duty-cycle waveforms, triangle bass, and deterministic LFSR noise. No recordings, soundfonts, MIDI files, or external audio are embedded.
 
-The source is organized inside the HTML into drawing primitives and sprites, input/state handling, score synthesis, boss patterns, authored stage cues, collision/scoring, dialogue data, and scene rendering. There is no general-purpose engine or runtime debug menu.
+The source is organized inside each playable HTML into drawing primitives and sprites, input/state handling, score synthesis, boss patterns, authored stage cues, collision/scoring, dialogue data, and scene rendering. There is no general-purpose engine or runtime debug menu.
 
 ## Music and attribution
 
-Touhou Project, its characters, setting, and source compositions are by ZUN / Team Shanghai Alice. This implementation's code, graphics, synthesis, accompaniment, and short musical adaptations were created for this project. See `FANWORK_NOTICE.md`.
+Touhou Project, its characters, setting, and source compositions are by ZUN / Team Shanghai Alice. This implementation's code, graphics, synthesis, accompaniment, and musical adaptations were created for this project. See `FANWORK_NOTICE.md`.
 
-The stage tracks and Sakuya cue use newly composed material. Reimu's title/ending motif was checked against the composer's publicly published *Maiden's Capriccio* score. Marisa uses the shared *Love-coloured Magic / Love-Colored Master Spark* motif, checked against ZUN's published earlier score and newly voiced for this game. The composer's standalone score catalog is at https://www16.big.or.jp/~zun/html/music_old.html . Source score files are not distributed with this release.
-
-Cirno and Remilia have short reconstructed motif adaptations intended for *Beloved Tomboyish Girl* and *Septette for a Dead Princess*. Their note-for-note fidelity to the source compositions was not independently verified. These are abbreviated musical interpretations, not full transcriptions. Musical fidelity therefore remains a limitation of acceptance sign-off.
+The current Visual + Audio P1 build replaces the original tiny music loops with authored four-voice Famicom-style arrangements. Stage tracks and Sakuya use newly composed material. Reimu/title/ending, Cirno, Marisa, and Remilia use newly implemented theme-inspired adaptations; final recognizability/source-fidelity remains subject to human listening and later acceptance work.
 
 ## Validation and limits
 
-The game was executed in Chromium. An isolated test harness, excluded from this release, ran the actual simulation and Canvas/Web Audio code. Its 32 checks passed after corrections. They covered movement, diagonal normalization, focus, held firing, enemy/boss shot damage, the tiny hitbox, single-use graze, items, all power levels, collection, bombs, eight-frame death/deathbomb behavior, lives, score, spell bonuses, pause/resume, continues, all stage/boss phases, every dialogue page, attract/help screens, audio initialization/transitions/mute, ending, credits, return to title, and a second run. Laser telegraphs were checked as harmless before activation, and final-phase early-clear protection was checked.
+The recovered QA tool exercises movement, diagonal normalization, focus, shooting, enemy/boss damage, hitbox, graze, items, power, bombs, death/deathbomb behavior, lives, score, spell bonuses, pause/resume, continues, all stages and boss phases, dialogue, attract/help screens, audio state changes, ending, credits, return to title, and a second run.
 
-The full progression test used accelerated simulation and inspection invulnerability to exercise every phase without interruption. It was not an unassisted human no-continue clear. Direct browser keyboard checks additionally exposed and corrected lost very short key taps. Screenshots were inspected for the title, dialogue, and final-boss presentation. Red Magic reached 194 simultaneous hostile objects in the regression pass. No game-origin console errors were observed; unrelated browser-extension errors were present.
-
-Actual `file://` execution, Firefox, and a deployed GitHub Pages origin were not directly exercised in the available browser. Self-containment and static HTTP operation were checked. Subjective Normal-difficulty tuning and the unverified musical reconstructions are not certified by the automated pass. The functional title-to-credits loop passes; the full creative/audio acceptance specification is not claimed as completely certified.
+Accepted P0, Visual P1, and Audio P1 engineering checkpoints retained 32 passed / 0 failed regression results with no material browser console/page errors. Automated checks do not certify subjective art quality, musical recognizability, Normal-difficulty tuning, or an unassisted human no-continue clear.
 
 ## Development
 
-The shipped game remains self-contained, but the repository also includes a development-only [`qa/`](qa/) tool for deterministic state inspection, regression checks, diagnostics, automated browser capture, and future maintenance.
+The repository includes a development-only [`qa/`](qa/) tool for deterministic state inspection, regression checks, diagnostics, automated browser capture, and future maintenance.
+
+Active implementation does not happen inside preserved version folders. `v1-polish` is the accepted Visual + Audio P1 feature checkpoint, while the dedicated character replacement work proceeds independently on `sprite-redesign`. Once a new build is accepted, it is frozen as the next numbered playable version before development continues.
 
 The longer-term project direction is documented in [`ROADMAP.md`](ROADMAP.md). The current priority is to finish and stabilize Scarlet Moon itself before extracting reusable systems. The roadmap intentionally treats the game as the future reference implementation for a possible reusable HTML5/JavaScript danmaku framework and authoring environment rather than as a disposable engine demo.
