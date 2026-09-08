@@ -1,6 +1,6 @@
 {
   "private": true,
-  "engines": {"node": ">=18"},
+  "engines": {"node": ">=20"},
   "scripts": {
     "build": "python3 build.py",
     "dev": "node server.cjs",
@@ -9,6 +9,6 @@
     "agent:no-captures": "node agent-run.mjs --no-captures"
   },
   "devDependencies": {
-    "playwright-core": ">=1.45.0 <2"
+    "playwright-core": "1.63.0"
   }
 }

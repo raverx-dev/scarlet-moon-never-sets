@@ -19,19 +19,61 @@ const onlyCase=onlyArg?.slice('--case='.length)||null;
 
 function die(msg){console.error(msg);process.exit(1)}
 function hashFile(p){return crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex')}
+function which(cmd){
+  try{
+    const r=spawnSync(process.platform==='win32'?'where':'which',[cmd],{encoding:'utf8'});
+    if(r.status===0)return r.stdout.trim().split(/\r?\n/)[0]||null;
+  }catch{}
+  return null;
+}
+function resolveBrowser(p){
+  if(!p)return null;
+  try{
+    if(!fs.existsSync(p))return null;
+    const real=fs.realpathSync(p);
+    // Distro wrappers (e.g. Fedora /usr/bin/chromium-browser -> *.sh) are not always valid Playwright binaries.
+    if(real.endsWith('.sh')){
+      const elf=real.slice(0,-3);
+      if(fs.existsSync(elf))return elf;
+    }
+    return real;
+  }catch{
+    return fs.existsSync(p)?p:null;
+  }
+}
+function isBenignBrowserFetch(url){
+  if(!url)return false;
+  try{
+    const u=new URL(url,base);
+    return /^\/(favicon\.ico|apple-touch-icon[^/]*)$/i.test(u.pathname);
+  }catch{
+    return false;
+  }
+}
 function browserBin(){
-  const supplied=process.env.BROWSER_BIN;
   const candidates=[
-    supplied,
-    '/usr/bin/google-chrome-stable','/usr/bin/google-chrome','/usr/bin/chromium','/usr/bin/chromium-browser',
+    process.env.BROWSER_BIN,
+    '/usr/lib64/chromium-browser/chromium-browser',
+    '/usr/lib/chromium-browser/chromium-browser',
+    '/usr/bin/google-chrome-stable','/usr/bin/google-chrome',
+    '/usr/bin/chromium','/usr/bin/chromium-browser',
+    '/usr/bin/microsoft-edge-stable','/usr/bin/microsoft-edge',
     '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
     '/Applications/Chromium.app/Contents/MacOS/Chromium',
+    '/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge',
     process.env.LOCALAPPDATA&&path.join(process.env.LOCALAPPDATA,'Google/Chrome/Application/chrome.exe'),
     process.env.PROGRAMFILES&&path.join(process.env.PROGRAMFILES,'Google/Chrome/Application/chrome.exe'),
     process.env['PROGRAMFILES(X86)']&&path.join(process.env['PROGRAMFILES(X86)'],'Google/Chrome/Application/chrome.exe'),
-    process.env.PROGRAMFILES&&path.join(process.env.PROGRAMFILES,'Microsoft/Edge/Application/msedge.exe')
-  ].filter(Boolean);
-  return candidates.find(fs.existsSync)||null;
+    process.env.PROGRAMFILES&&path.join(process.env.PROGRAMFILES,'Microsoft/Edge/Application/msedge.exe'),
+    process.env.LOCALAPPDATA&&path.join(process.env.LOCALAPPDATA,'Microsoft/Edge/Application/msedge.exe'),
+    which('google-chrome-stable'),which('google-chrome'),which('chromium'),
+    which('chromium-browser'),which('microsoft-edge'),which('msedge')
+  ];
+  for(const c of candidates){
+    const resolved=resolveBrowser(c);
+    if(resolved)return resolved;
+  }
+  return null;
 }
 async function waitForServer(){
   for(let i=0;i<50;i++){
@@ -57,6 +99,7 @@ if(built.status!==0)die(`QA build failed using ${python}`);
 
 const exe=browserBin();
 if(!exe)die('No Chromium-family browser found. Set BROWSER_BIN to Chrome, Chromium, or Edge. See qa/README.md.');
+console.log(`Using browser: ${exe}`);
 
 const server=spawn(process.execPath,[path.join(here,'server.cjs')],{cwd:here,stdio:['ignore','pipe','pipe']});
 server.stdout.on('data',d=>process.stdout.write(`[server] ${d}`));
@@ -68,8 +111,12 @@ try{
   browser=await chromium.launch({headless:!headed,executablePath:exe,args:['--autoplay-policy=no-user-gesture-required']});
   const page=await browser.newPage({viewport:{width:1100,height:760}});
   const consoleErrors=[];
-  page.on('console',m=>{if(m.type()==='error')consoleErrors.push(m.text())});
-  page.on('pageerror',e=>consoleErrors.push(String(e)));
+  page.on('console',m=>{
+    if(m.type()!=='error')return;
+    const loc=m.location();
+    consoleErrors.push({type:'console',text:m.text(),url:loc?.url||null});
+  });
+  page.on('pageerror',e=>consoleErrors.push({type:'pageerror',text:String(e),url:null}));
   await page.goto(base,{waitUntil:'load'});
   await page.waitForSelector('#audit-scene');
 
@@ -110,10 +157,12 @@ try{
     captures:captureIndex
   };
   fs.writeFileSync(path.join(out,'agent-report.json'),JSON.stringify(report,null,2)+'\n');
+  const materialErrors=consoleErrors.filter(e=>!isBenignBrowserFetch(e.url||''));
   console.log(`\nQA report: ${path.relative(root,path.join(out,'agent-report.json'))}`);
+  console.log(`Browser: ${exe}`);
   console.log(`Regression: ${regression.passed} passed / ${regression.failed} failed`);
-  console.log(`Console errors: ${consoleErrors.length}`);
-  if(regression.failed||consoleErrors.length)process.exitCode=2;
+  console.log(`Console/page errors: ${consoleErrors.length} (material: ${materialErrors.length})`);
+  if(regression.failed||materialErrors.length)process.exitCode=2;
 } finally {
   if(browser)await browser.close();
   server.kill('SIGTERM');

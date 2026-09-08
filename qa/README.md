@@ -47,15 +47,25 @@ npm run agent
 
 Requirements:
 
-- Node.js 18+
+- Node.js 20+ (pinned `playwright-core@1.63.0`; the runner scripts themselves are ordinary ESM)
 - Python 3
 - an installed Chromium-family browser: Chrome, Chromium, or Edge
 
-The runner uses `playwright-core` but **does not download a browser**. It tries common Chrome/Chromium/Edge locations. If discovery fails, set:
+The runner uses `playwright-core` but **does not download a browser**. It tries common Chrome/Chromium/Edge locations, including Fedora's Chromium ELF under `/usr/lib64/chromium-browser/`, and resolves distro wrapper scripts to the real binary when possible. If discovery fails, set `BROWSER_BIN` to the browser executable, not a launcher script:
 
 ```bash
 BROWSER_BIN=/path/to/chrome npm run agent
 ```
+
+The local QA server answers Chromium's automatic `/favicon.ico` and `/apple-touch-icon*` fetches with HTTP 204. Those browser-chrome requests are not game assets and do not fail the suite.
+
+Exit status:
+
+- `0` — regression passed and no material page/console errors
+- `1` — harness/infrastructure failure (missing browser, build/server error, unknown capture case)
+- `2` — recovered regression reported failures, or a material browser console/page error
+
+`agent-report.json` records every console/page error with its text and source URL when Playwright provides one. Benign favicon/touch-icon fetches are recorded if they still occur, but they do not set exit status 2.
 
 Useful modes:
 
