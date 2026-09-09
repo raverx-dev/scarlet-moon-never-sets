@@ -1,0 +1,12 @@
+{
+  "id": "continue",
+  "scene": "continue",
+  "tick": 30,
+  "group": "presentation",
+  "state": "continue",
+  "stateTick": 30,
+  "stage": 1,
+  "stageTick": 0,
+  "bullets": 0,
+  "frame": 30
+}

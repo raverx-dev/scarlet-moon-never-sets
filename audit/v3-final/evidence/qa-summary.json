@@ -1,0 +1,72 @@
+{
+  "generatedAt": "2026-09-09T20:11:20.222Z",
+  "baseline": {
+    "path": "index.html",
+    "sha256": "7ff1518457539be21130d492366e956f20e6ce8a3cb9bc463a42e3d694407f8c"
+  },
+  "browser": {
+    "executable": "/usr/lib64/chromium-browser/chromium-browser",
+    "headed": false
+  },
+  "regression": {
+    "passed": 32,
+    "failed": 0,
+    "errors": []
+  },
+  "r5Density": {
+    "maxAllocated": 194,
+    "maxCentersOnscreen": 147,
+    "lastNineSecondsVisibleRange": [
+      71,
+      147
+    ]
+  },
+  "consoleErrors": [],
+  "captureCount": 44,
+  "captureIds": [
+    "boot",
+    "notice",
+    "title",
+    "how",
+    "attract-donation",
+    "attract-fine",
+    "attract-cirno",
+    "attract-marisa",
+    "attract-sakuya",
+    "attract-eyes",
+    "intro",
+    "stage1",
+    "cirno-dialogue",
+    "c1",
+    "c2",
+    "c3-frozen",
+    "stage2",
+    "marisa-dialogue",
+    "m1",
+    "m2",
+    "m3-active",
+    "m4-active",
+    "gate",
+    "stage3-interior",
+    "stage3-roof",
+    "sakuya-dialogue",
+    "s1",
+    "s2-frozen",
+    "remilia-dialogue",
+    "r1",
+    "r2",
+    "r3-spear",
+    "r4",
+    "r5-final",
+    "dawn",
+    "ending-arrival",
+    "ending-dialogue",
+    "credits-cirno",
+    "credits-marisa",
+    "credits-meiling",
+    "credits-sakuya",
+    "credits-remilia",
+    "credits-reimu",
+    "final-card"
+  ]
+}
