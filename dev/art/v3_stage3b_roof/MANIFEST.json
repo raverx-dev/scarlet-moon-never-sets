@@ -1,0 +1,31 @@
+{
+  "package": "v3_stage3b_roof",
+  "baseline_commit": "69d06766c0a6c165f26f71ded96d7b5bd8a122df",
+  "branch": "v3-art-stage3b-roof",
+  "asset_prefixes": [
+    "roof_",
+    "gate_",
+    "mansion_ext_"
+  ],
+  "palette_extension_requested": false,
+  "asset_count": 44,
+  "source_files": [
+    "palette.json",
+    "roof_tiles.json",
+    "roof_structures_a.json",
+    "roof_structures_b.json",
+    "gate_assets.json",
+    "mansion_ext_assets.json",
+    "roof_scarlet_moon.json"
+  ],
+  "proof_files": [
+    "stage3b_roof_atlas.png",
+    "stage3b_roof_playfield_native.png",
+    "stage3b_roof_playfield_preview.png"
+  ],
+  "notes": [
+    "No runtime integration.",
+    "Exact scarlet moon family carried forward from approved shrine/title workstream.",
+    "Lower-center playfield intentionally subdued for Remilia late-phase readability."
+  ]
+}
