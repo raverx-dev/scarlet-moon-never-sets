@@ -41,7 +41,7 @@ Current published versions:
 
 - `versions/original/` — Version 1, original build. Frozen.
 - `versions/p1-visual-audio/` — Version 2, accepted P0 + Visual P1 + Audio P1 checkpoint. Frozen.
-- `versions/sprite-redesign/` — Version 3, current live visual-redesign build. Active / published; may be updated in place until the owner explicitly freezes it.
+- `versions/sprite-redesign/` — Version 3, current live visual-redesign build (sprites, UI chrome, shrine/title, Stage 1–3 environments). Active / published; may be updated in place until the owner explicitly freezes it.
 
 Version 1 and Version 2 folders must never be overwritten. Version 3 becomes frozen only when the owner declares it complete; later work then becomes Version 4.
 

@@ -10,7 +10,7 @@ Versions 1 and 2 are frozen. Version 3 is the current published visual-redesign 
 | --- | --- | --- | --- | --- |
 | Version 1 — Original Build | Original shipped build before P0, Visual P1, and Audio P1 | `08c2a1704a1943ee8d57b402e7a962395ab3f85b` | `versions/original/` | Frozen |
 | Version 2 — Visual + Audio P1 | P0 fixes, Visual P1 presentation/art, and Audio P1 expanded music | `d505ce85103be0011fd60c7bfc6e5734e4df6833` | `versions/p1-visual-audio/` | Frozen |
-| Version 3 — Sprite Redesign | Current live visual-redesign build: Version 2 foundation plus redesigned sprites, P0 character repairs, and approved story-character integration | `69d06766c0a6c165f26f71ded96d7b5bd8a122df` | `versions/sprite-redesign/` | Active / published |
+| Version 3 — Sprite Redesign | Current live visual-redesign build: Version 2 foundation plus redesigned sprites, P0 character repairs, story-character integration, global UI chrome, Hakurei shrine/title, and Stage 1–3 environment art | `449ad2bb677e29f6793b3f5a25ac80c0845f3e14` | `versions/sprite-redesign/` | Active / published |
 
 The repository-root `index.html` is the GitHub Pages version selector, so the normal project Pages URL opens the chooser first. `versions/index.html` is a secondary copy of the selector.
 
@@ -28,7 +28,7 @@ These branches are archival checkpoints and should not be used for ongoing devel
 
 ## Ongoing development
 
-Active Version 3 work continues on the `sprite-redesign` integration branch, currently at `69d06766c0a6c165f26f71ded96d7b5bd8a122df`. `v1-polish` remains frozen at the accepted Visual + Audio P1 checkpoint.
+Active Version 3 work continues on the `sprite-redesign` integration branch, currently at `449ad2bb677e29f6793b3f5a25ac80c0845f3e14`. `v1-polish` remains frozen at the accepted Visual + Audio P1 checkpoint.
 
 Public Version 3 may be updated in place during the ongoing V3 visual redesign. It becomes frozen only when the owner explicitly declares Version 3 complete. After that, later work becomes Version 4.
 

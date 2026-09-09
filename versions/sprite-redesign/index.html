@@ -957,24 +957,24 @@ const SPRITES={
     '...........',
   ],
   life:[
-    '.rrrrrr.',
-    'rrwrrwrr',
-    'rhhhhhhR',
-    'hfkffkfh',
-    'hffffffh',
-    '.wwrrww.',
-    '.rrrrrr.',
-    '..r..r..',
+    '..rrr...',
+    '.rwwRr..',
+    'rwrrwwr.',
+    'rwrRrwr.',
+    'rwwrrwr.',
+    '.rRwwr..',
+    '..rrr...',
+    '...R....',
   ],
   starIcon:[
-    '...gg...',
-    '...gg...',
-    '.gggggg.',
-    'gggggggg',
-    '.gggggg.',
-    '..g..g..',
-    '.g....g.',
-    'g......g',
+    '...g....',
+    '.g.r.g..',
+    '..rrr...',
+    'grrwrgg.',
+    '..rwr...',
+    '.g.rr.g.',
+    '...g....',
+    '..R.R...',
   ],
   yinyang:[
     '..kkkkkk..',
@@ -1157,8 +1157,529 @@ const SPRITES={
     '................................',
   ],
 };
+const UI=(function(){
+  const A=(w,h,ch=".")=>Array.from({length:h},()=>Array(w).fill(ch));
+  const toRows=m=>m.map(r=>r.join(""));
+  const mh=rs=>rs.map(r=>[...r].reverse().join(""));
+  const mv=rs=>[...rs].reverse();
+  const put=(m,x,y,pat,t=".")=>pat.forEach((r,yy)=>[...r].forEach((ch,xx)=>{
+    if(ch!==t&&m[y+yy]&&m[y+yy][x+xx]!==undefined)m[y+yy][x+xx]=ch;
+  }));
+  const tl=["rrrrrrrr","rRRRRRRR","rR......","rR.gg...","rR.g....","rR......","rR......","rR......"];
+  const tr=mh(tl),bl=mv(tl),br=mv(tr);
+  const top=["rrrrrrrr","RRRRRRRR","........","........","........","........","........","........"];
+  const bottom=mv(top);
+  const left=Array(8).fill("rR......"),right=mh(left);
+  const life=["..rrr...",".rwwRr..","rwrrwwr.","rwrRrwr.","rwwrrwr.",".rRwwr..","..rrr...","...R...."];
+  const bomb=["...g....",".g.r.g..","..rrr...","grrwrgg.","..rwr...",".g.rr.g.","...g....","..R.R..."];
+  const powerOn=["rrrrrrrr","rggggggr","rgyyyggr","rgyrrggr","rgyrrggr","rgyyyggr","rggggggr","rrrrrrrr"];
+  const powerOff=["HHHHHHHH","HBBBBBBH","HBhhhhBH","HBhBBhBH","HBhBBhBH","HBhhhhBH","HBBBBBBH","HHHHHHHH"];
+  const lake=[
+    "kkkkkkkkkkkkkkkk","kkkkkkkkkaakkkkk","kkkkkkkkaaaakkkk","kkkkkkkaaaaaakkk","kBkkkkkaaaaaakkk",
+    "BBkkBBkkaaaakkkk","BBBBBBBBBBBBBBBB","BbbBbbBbbBbbBbbB","bbibbbbibbbbibbb","bbbbccbbbbccbbbb",
+    "bbbbbCbbbbCbbbbb","bbbbccbbbbccbbbb","bBibbbbbBibbbbbb","bbbbbbbbbbbbbbbb","BbbBbbBbbBbbBbbB","BBBBBBBBBBBBBBBB"];
+  const forest=[
+    "kkkkkkkkkkkkkkkk","kkekkeekkkekkkkk","keeeevveeeevvkkk","eevevvveevvvvvkk","eveeGveeevGevvek",
+    "eevvvvvvvvvvvvve","evveeeevveeeevve","kkkkueeekkuuekkk","kkkkuuukkuuukkkk","kkkkutukkuutkkkk",
+    "kkkkuutukuuukkkk","kkkeeueekueeekkk","kkeeeeeeueeeeekk","keeeevveeeevvkkk","eevvvvvvvvvvvvek","kkkkkkkkkkkkkkkk"];
+  const mansion=[
+    "kkkkkkkkkkkkkkkk","kkkkkkkxxkkkkkkk","kkkkkkxxxxkkkkkk","kkkkkxxxxxxkkkkk","kkkHHHHHHHHHHkkk",
+    "kkHHBBBBBBBBHHkk","kkHBxxxxxxxxBHkk","kkHBxrrxxrrxBHkk","kkHBxrrxxrrxBHkk","kkHBxxxxxxxxBHkk",
+    "kkHBxxHBBHxxBHkk","kkHBxxHkkHxxBHkk","kkHBxxHkkHxxBHkk","kkHBxxHkkHxxBHkk","kkHHHHHHHHHHHHkk","kkkkkkkkkkkkkkkk"];
+  const titleTab=(()=>{
+    const m=A(32,8);for(let x=4;x<28;x++)m[0][x]="r";
+    m[1][3]=m[1][28]="r";for(let x=4;x<28;x++)m[1][x]="R";
+    m[2][2]="r";m[2][3]="R";m[2][28]="R";m[2][29]="r";
+    m[3][1]="r";m[3][2]="R";m[3][29]="R";m[3][30]="r";[7,8,23,24].forEach(x=>m[3][x]="g");
+    m[4][0]="r";m[4][1]="R";m[4][30]="R";m[4][31]="r";[6,25].forEach(x=>m[4][x]="g");
+    m[5][1]="R";m[5][30]="R";return toRows(m);
+  })();
+  const hudDiv=(()=>{
+    const m=A(56,8);for(let x=0;x<56;x++)m[3][x]="H";
+    [0,1,2,53,54,55].forEach(x=>{m[2][x]="r";m[3][x]="r";m[4][x]="R"});
+    [6,7,8,47,48,49].forEach(x=>m[3][x]="g");return toRows(m);
+  })();
+  const hudPanel=(()=>{
+    const m=A(64,240,"k");
+    for(let y=0;y<240;y++){m[y][0]="r";m[y][1]="R";m[y][2]=(y>=5&&y<11)||(y>=229&&y<235)?"g":"H";m[y][62]="R";m[y][63]="r"}
+    for(let x=0;x<64;x++){m[0][x]="r";m[1][x]="R";m[238][x]="R";m[239][x]="r"}
+    for(let y=8;y<232;y+=8){m[y][4]="B";m[y][59]="B"}
+    put(m,0,0,tl);put(m,56,0,tr);put(m,0,232,bl);put(m,56,232,br);
+    [56,114,174,228].forEach(y=>put(m,4,y-3,hudDiv));
+    for(let x=6;x<58;x++)m[145][x]="H";
+    [6,7,56,57].forEach(x=>{m[144][x]="R";m[145][x]="r";m[146][x]="R"});
+    for(let x=21;x<43;x++){m[204][x]="H";m[225][x]="H"}for(let y=204;y<226;y++){m[y][21]="H";m[y][42]="H"}
+    m[204][21]=m[204][42]=m[225][21]=m[225][42]="r";m[205][22]=m[205][41]=m[224][22]=m[224][41]="g";
+    return toRows(m);
+  })();
+  const dialogue=(()=>{
+    const m=A(248,62,"k");
+    for(let x=0;x<248;x++){m[0][x]="r";m[1][x]="R";m[60][x]="R";m[61][x]="r"}
+    for(let y=0;y<62;y++){m[y][0]="r";m[y][1]="R";m[y][246]="R";m[y][247]="r"}
+    for(let x=6;x<242;x++){m[3][x]="H";m[58][x]="H"}for(let y=6;y<56;y++){m[y][3]="H";m[y][244]="H"}
+    put(m,0,0,tl);put(m,240,0,tr);put(m,0,54,bl);put(m,240,54,br);
+    [..."rrrgg"].forEach((ch,x)=>m[5][10+x]=ch);m[6][10]="r";m[7][10]="R";
+    [..."ggrrr"].forEach((ch,x)=>m[56][233+x]=ch);m[54][237]="r";m[55][237]="R";
+    return toRows(m);
+  })();
+  const bezel=(()=>{
+    const m=A(40,40);
+    for(let x=0;x<40;x++){m[0][x]="r";m[1][x]="R";m[38][x]="R";m[39][x]="r"}
+    for(let y=0;y<40;y++){m[y][0]="r";m[y][1]="R";m[y][38]="R";m[y][39]="r"}
+    for(let x=3;x<37;x++){m[3][x]="w";m[36][x]="w"}for(let y=3;y<37;y++){m[y][3]="w";m[y][36]="w"}
+    [[2,2],[35,2],[2,35],[35,35]].forEach(([x,y])=>m[y][x]="g");
+    [[5,1],[6,1],[1,5],[1,6],[33,1],[34,1],[38,5],[38,6],[5,38],[6,38],[1,33],[1,34],[33,38],[34,38],[38,33],[38,34]]
+      .forEach(([x,y])=>m[y][x]="r");
+    return toRows(m);
+  })();
+  return Object.freeze({
+    ui_frame_corner_tl:tl,ui_frame_corner_tr:tr,ui_frame_corner_bl:bl,ui_frame_corner_br:br,
+    ui_frame_edge_top:top,ui_frame_edge_bottom:bottom,ui_frame_edge_left:left,ui_frame_edge_right:right,
+    ui_frame_title_tab:titleTab,ui_hud_divider:hudDiv,ui_hud_panel:hudPanel,
+    ui_life_icon:life,ui_bomb_icon:bomb,ui_power_cell_on:powerOn,ui_power_cell_off:powerOff,
+    ui_stage_thumb_lake:lake,ui_stage_thumb_forest:forest,ui_stage_thumb_mansion:mansion,
+    ui_dialogue_frame:dialogue,ui_portrait_bezel:bezel
+  });
+})();
+const SHRINE=(function(){
+const RAW={
+"shrine_ground_dirt_night_a":"uuuuuduu\nutuuuuuu\nuuuuuuuu\nuuuttuuu\nuuuuuuud\nuuuuuuuu\ntuuuuHHu\nuuuuuuuu",
+"shrine_ground_dirt_night_b":"uuduuuuu\nuuuuuuuu\nuuuuuttu\nHuuuuuuu\nuuuuuuuu\nuuuuduuu\nuuuuuuuu\nuutuuuut",
+"shrine_ground_grass_night_a":"eeeeeeee\neeeeevne\nevneenee\neneeeeee\neeeeeeee\neeevneee\neeeneeev\neeeeeeen",
+"shrine_ground_grass_night_b":"eeeeeeee\nvneeeeee\nneeevnee\neeeeneee\neeeeeevn\neeeeeene\neeeeeeee\neevneeee",
+"shrine_ground_stone_night_a":"BBBHBBBB\nBeBHBBBB\nBBBHBBeB\nHHHHHHHH\nBBBHBBBB\nBBBHBeBB\nBBBHHHHH\nBBBHBBBB",
+"shrine_ground_stone_night_b":"BBBBBHBB\nBBeBBHBB\nHHHHHHHH\nBBBBBHBB\nBBBBBHeB\nHHHHHHHH\nBBBeBHBB\nBBBBBHBB",
+"shrine_ground_path_night":"eHHHHHHe\neSSHSSHe\neSSHSSHe\neHHSHHHe\neSSHSSHe\neSSHSSHe\neHSHHSHe\neHHHHHHe",
+"shrine_ground_dirt_morning_a":"tttttutt\ntotttttt\ntttttttt\ntttoottt\ntttttttu\ntttttttt\nottttWWt\ntttttttt",
+"shrine_ground_dirt_morning_b":"ttuttttt\ntttttttt\ntttttoot\nWttttttt\ntttttttt\nttttuttt\ntttttttt\nttotttto",
+"shrine_ground_grass_morning_a":"vvvvvvvv\nvvvvvGev\nvGevvevv\nvevvvvvv\nvvvvvvvv\nvvvGevvv\nvvvevvvG\nvvvvvvve",
+"shrine_ground_grass_morning_b":"vvvvvvvv\nGevvvvvv\nevvvGevv\nvvvvevvv\nvvvvvvGe\nvvvvvvev\nvvvvvvvv\nvvGevvvv",
+"shrine_ground_stone_morning_a":"aaaSaaaa\navaSaaaa\naaaSaava\nSSSSSSSS\naaaSaaaa\naaaSavaa\naaaSSSSS\naaaSaaaa",
+"shrine_ground_stone_morning_b":"aaaaaSaa\naavaaSaa\nSSSSSSSS\naaaaaSaa\naaaaaSva\nSSSSSSSS\naaavaSaa\naaaaaSaa",
+"shrine_ground_path_morning":"vssssssv\nvaasaasv\nvaasaasv\nvssasssv\nvaasaasv\nvaasaasv\nvsassasv\nvssssssv",
+"shrine_hill_far_night":"................\n................\n................\n................\n................\n................\n................\n................\n.......n........\n..n...nnn...n...\n.nnn.nnnBn.nBn..\nnnnnnnnnnnnnnnn.\nBnnnBnnnnnnnnnnn\nnnnnnnnnnnnnnnnn\nnnnnnnnnnnnnnnnn\nBBBBBBBBBBBBBBBB",
+"shrine_hill_mid_night":"................\n................\n................\n................\n................\n........n.......\n...n...nBn...n..\n..nnn.nnnnn.nnn.\n.nnnBnnnnnnnBnnn\nnnnnnnnnnnnnnnnn\nBnnnnnnnnnnnnnnn\nnnnnnnnnnnnnnnnn\nnnnnnnnnnnnnnnnn\nnnnnnnnnnnnnnnnn\nnnnnnnnnnnnnnnnn\nBBBBBBBBBBBBBBBB",
+"shrine_tree_far_night_a":"................\n........nen.....\n...nen.nenen....\n..nenenenene....\n..enenenenenen..\n..nenenenenenen.\n...nenene.enene.\n....nenen.nenen.\n....enene..nen..\n.....enHH.......\n......HHHH......\n.......HH.......\n..e..e.He..e.e..\n.nnnnnnnnnnnnnn.\n................\n................",
+"shrine_tree_far_night_b":"................\n................\n.......nen.nen..\n..nen.nenenenen.\n.nenenenenenene.\n.enenenenenenen.\n.nenen.nenenen..\n..nen...nenen...\n........enene...\n.......HHenen...\n......HHHHen....\n.......HH.......\n..e..e.He..e.e..\n.nnnnnnnnnnnnnn.\n................\n................",
+"shrine_hill_far_morning":"................\n................\n................\n................\n................\n................\n................\n................\n.......b........\n..b...bbb...b...\n.bbb.bbbSb.bSb..\nbbbbbbbbbbbbbbb.\nSbbbSbbbbbbbbbbb\nbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbb\nSSSSSSSSSSSSSSSS",
+"shrine_hill_mid_morning":"................\n................\n................\n................\n................\n........b.......\n...b...bSb...b..\n..bbb.bbbbb.bbb.\n.bbbSbbbbbbbSbbb\nbbbbbbbbbbbbbbbb\nSbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbb\nSSSSSSSSSSSSSSSS",
+"shrine_tree_far_morning_a":"................\n........vGv.....\n...vGv.vGvGv....\n..vGvGvGvGvG....\n..GvGvGvGvGvGv..\n..vGvGvGvGvGvGv.\n...vGvGvG.GvGvG.\n....vGvGv.vGvGv.\n....GvGvG..vGv..\n.....Gvuu.......\n......uuuu......\n.......uu.......\n..G..G.uG..G.G..\n.vvvvvvvvvvvvvv.\n................\n................",
+"shrine_tree_far_morning_b":"................\n................\n.......vGv.vGv..\n..vGv.vGvGvGvGv.\n.vGvGvGvGvGvGvG.\n.GvGvGvGvGvGvGv.\n.vGvGv.vGvGvGv..\n..vGv...vGvGv...\n........GvGvG...\n.......uuGvGv...\n......uuuuGv....\n.......uu.......\n..G..G.uG..G.G..\n.vvvvvvvvvvvvvv.\n................\n................",
+"shrine_torii_night":"................................................................\n................................................................\n................................................................\n.......rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr.......\n......RRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRR......\n.....rRRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRRr.....\n......RRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRR......\n......RRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRR......\n..........RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR..........\n...........RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR...........\n................................................................\n................................................................\n............rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr............\n............rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr............\n............rrrrrrrrrrrrrrrrruuuuuurrrrrrrrrrrrrrrrr............\n..............RRRRRRRRRRRRRRRuwwwwuRRRRRRRRRRRRRRR..............\n.............xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.............\n.............................uwwwwu.............................\n.............................uwwwwu.............................\n.............................uuuuuu.............................\n............rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr............\n..........RRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRR..........\n..........RRRRrrrrRRRRrrrrrrrrrrrrrrrrrrrrRRRRrrrrRRRR..........\n.............xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.............\n...............rrrrrrrr......RR..RR.......Rrrrrrrrr.............\n...............rrrrrrrr......RR..RR........rrrrrrrr.............\n...............rrrrrrrr......RR..RR........rrrrrrrr.............\n...............rrrrrrrr......RR..RR........rrrrrrrr.............\n...............RrrrrrrR......RR..RR........RrrrrrrR.............\n...............rrrrrrrr......RR..RR........rrrrrrrr.............\n...............rrrrrrrr......RR..RR........rrrrrrrr.............\n...............rrrrrrrr......RR..RR........rrrrrrrr.............\n...............rrrrrrrr....................rrrrrrrr.............\n...............rrrrrrrr....................rrrrrrrr.............\n...............RrrrrrrR....................RrrrrrrR.............\n...............rrrrrrrr....................rrrrrrrr.............\n...............rrrrrrrr....................rrrrrrrr.............\n...............rrrrrrrr....................rrrrrrrr.............\n...............rrrrrrrr....................rrrrrrrr.............\n...............rrrrrrrr....................rrrrrrrr.............\n...............RrrrrrrR....................RrrrrrrR.............\n...............rrrrrrrr....................rrrrrrrr.............\n..............rrrrrrrrrr..................rrrrrrrrrr............\n..............rrrrrrrrrr..................rrrrrrrrrr............\n..............rrrrrrrrrr..................rrrrrrrrrr............\n..............rrrrrrrrrr..................rrrrrrrrrr............\n.............rrrrrrrrrrrr................rrrrrrrrrrrr...........\n.............rrrrrrrrrrrr................rrrrrrrrrrrr...........\n.............RRRRRRRRRRRR................RRRRRRRRRRRR...........\n.............RrrrrrrrrrrR................RrrrrrrrrrrR...........\n.............RrrrrrrrrrrR................RrrrrrrrrrrR...........\n.............RRxxxxxxxxRR................RRxxxxxxxxRR...........\n................................................................\n................................................................\n................................................................\n................................................................",
+"shrine_torii_morning":"................................................................\n................................................................\n................................................................\n.......rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr.......\n......RRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRR......\n.....rRRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRRr.....\n......RRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRR......\n......RRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRR......\n..........RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR..........\n...........RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR...........\n................................................................\n................................................................\n............rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr............\n............rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr............\n............rrrrrrrrrrrrrrrrroooooorrrrrrrrrrrrrrrrr............\n..............RRRRRRRRRRRRRRRoyyyyoRRRRRRRRRRRRRRR..............\n.............xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.............\n.............................oyyyyo.............................\n.............................oyyyyo.............................\n.............................oooooo.............................\n............rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr............\n..........RRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRR..........\n..........RRRRrrrrRRRRrrrrrrrrrrrrrrrrrrrrRRRRrrrrRRRR..........\n.............xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.............\n...............rrrrrrrr......RR..RR.......Rrrrrrrrr.............\n...............rrrrrrrr......RR..RR........rrrrrrrr.............\n...............rrrrrrrr......RR..RR........rrrrrrrr.............\n...............rrrrrrrr......RR..RR........rrrrrrrr.............\n...............RrrrrrrR......RR..RR........RrrrrrrR.............\n...............rrrrrrrr......RR..RR........rrrrrrrr.............\n...............rrrrrrrr......RR..RR........rrrrrrrr.............\n...............rrrrrrrr......RR..RR........rrrrrrrr.............\n...............rrrrrrrr....................rrrrrrrr.............\n...............rrrrrrrr....................rrrrrrrr.............\n...............RrrrrrrR....................RrrrrrrR.............\n...............rrrrrrrr....................rrrrrrrr.............\n...............rrrrrrrr....................rrrrrrrr.............\n...............rrrrrrrr....................rrrrrrrr.............\n...............rrrrrrrr....................rrrrrrrr.............\n...............rrrrrrrr....................rrrrrrrr.............\n...............RrrrrrrR....................RrrrrrrR.............\n...............rrrrrrrr....................rrrrrrrr.............\n..............rrrrrrrrrr..................rrrrrrrrrr............\n..............rrrrrrrrrr..................rrrrrrrrrr............\n..............rrrrrrrrrr..................rrrrrrrrrr............\n..............rrrrrrrrrr..................rrrrrrrrrr............\n.............rrrrrrrrrrrr................rrrrrrrrrrrr...........\n.............rrrrrrrrrrrr................rrrrrrrrrrrr...........\n.............RRRRRRRRRRRR................RRRRRRRRRRRR...........\n.............RrrrrrrrrrrR................RrrrrrrrrrrR...........\n.............RrrrrrrrrrrR................RrrrrrrrrrrR...........\n.............RRxxxxxxxxRR................RRxxxxxxxxRR...........\n................................................................\n................................................................\n................................................................\n................................................................",
+"shrine_roof_left_night":"................\n................\n................\n................\nbBBBBBbBBBBBbBBB\nbBBbBBbBBbBBbBBb\nbBBbBBbBBbBBbB.b\nbBBbBBbBBbBBb..b\nbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbb\nbBBbBBbBBbBBbBBb\nbSBbBSbBBSBBbSBb\nHHHHHHHHHHHHHHHH\nuuuuuuuuuuuuuuuu\nuuuuuuuuuuuuuuuu\nuuuuuuuuuuuuuuuu",
+"shrine_roof_mid_night":"................\n................\n................\n................\nBBBBBBBBBBBBBBBB\nBBBBBBBBBBBBBBBB\nBBBBBBBBBBBBBBBB\nBBBBBBBBBBBBBBBB\nbBbbBbbBbbBbbBbb\nbBbbBbbBbbBbbBbb\nbBbbBbbBbbBbbBbb\nbSbbBSbBbSBbbSbb\nHHHHHHHHHHHHHHHH\nuuuuuuuuuuuuuuuu\nuuuuuuuuuuuuuuuu\nuuuuuuuuuuuuuuuu",
+"shrine_roof_right_night":"................\n................\n................\n................\nBbBBBBBbBBBBBbBB\n.bBBbBBbBBbBBbBB\n.bBBbBBbBBbBBbBB\n.b.BbBBbBBbBBbBB\nbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbb\nBbBBbBBbBBbBBbBB\nBSBBbSBbBSbBBSBB\nHHHHHHHHHHHHHHHH\nuuuuuuuuuuuuuuuu\nuuuuuuuuuuuuuuuu\nuuuuuuuuuuuuuuuu",
+"shrine_wall_night":"uuuuuuuuuuuuuuuu\nuWWWWuWWWWuWWWWu\nuWWWWuWWWWuWWWWu\nuHHHWuHHHWuHHHWu\nuWWWWuWWWWuWWWWu\nuWWWWuWWWWuWWWWu\nuHHHHHHHHHHHHHHu\nuuuuuuuuuuuuuuuu\nuWWWWuWWWWuWWWWu\nuWRRWuWRRWuWRRWu\nuWWWWuWWWWuWWWWu\nuWHHWuWHHWuWHHWu\nuWWWWuWWWWuWWWWu\nuWWWWuWWWWuWWWWu\nuHHHHHHHHHHHHHHu\nuuuuuuuuuuuuuuuu",
+"shrine_door_night":"uuuuuuuuuuuuuuuu\nuHHHHHHHHHHHHHHu\nuHRRRRRuRRRRRHHu\nuHRwHwRuRwHwRHHu\nuHRRHRRuRRHRRHHu\nuHRRHRRuRRHRRHHu\nuHRRHRRuRRHRRHHu\nuHRRHRRuRRHRRHHu\nuHRwHwRuRwHwRHHu\nuHRRHRRuRRHRRHHu\nuHRRHRRuRRHRRHHu\nuHRRHRguRgHRRHHu\nuHRRHRguRgHRRHHu\nuHRwHwRuRwHwRHHu\nuHRRHRRuRRHRRHHu\nuHRRHRRuRRHRRHHu\nuHRRHRRuRRHRRHHu\nuHRRHRRuRRHRRHHu\nuHRwHwRuRwHwRHHu\nuHRRRRRuRRRRRHHu\nuHuuuuuuuuuuuHHu\nuHuuuuuuuuuuuHHu\nuHHHHHHHHHHHHHHu\nuuuuuuuuuuuuuuuu",
+"shrine_window_night":"................\n.uuuuuuuuuuuuuu.\n.uuuuuuuuuuuuuu.\n.uuRRRRuuRRRRuu.\n.uuRrrruurrrRuu.\n.uuRrFruurrrRuu.\n.uuRrrruurrrRuu.\n.uuuuuuuuuuuuuu.\n.uuuuuuuuuuuuuu.\n.uuRrrruurrrRuu.\n.uuRrrruurFrRuu.\n.uuRrrruurrrRuu.\n.uuRRRRuuRRRRuu.\n.uuuuuuuuuuuuuu.\n.uuuuuuuuuuuuuu.\n................",
+"shrine_roof_left_morning":"................\n................\n................\n................\nsbbbbbsbbbbbsbbb\nsbbsbbsbbsbbsbbs\nsbbsbbsbbsbbsb.s\nsbbsbbsbbsbbs..s\nssssssssssssssss\nssssssssssssssss\nsbbsbbsbbsbbsbbs\nsabsbasbbabbsabs\nSSSSSSSSSSSSSSSS\noooooooooooooooo\noooooooooooooooo\noooooooooooooooo",
+"shrine_roof_mid_morning":"................\n................\n................\n................\nbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbb\nsbssbssbssbssbss\nsbssbssbssbssbss\nsbssbssbssbssbss\nsassbasbsabssass\nSSSSSSSSSSSSSSSS\noooooooooooooooo\noooooooooooooooo\noooooooooooooooo",
+"shrine_roof_right_morning":"................\n................\n................\n................\nbsbbbbbsbbbbbsbb\n.sbbsbbsbbsbbsbb\n.sbbsbbsbbsbbsbb\n.s.bsbbsbbsbbsbb\nssssssssssssssss\nssssssssssssssss\nbsbbsbbsbbsbbsbb\nbabbsabsbasbbabb\nSSSSSSSSSSSSSSSS\noooooooooooooooo\noooooooooooooooo\noooooooooooooooo",
+"shrine_wall_morning":"oooooooooooooooo\nowwwwowwwwowwwwo\nowwwwowwwwowwwwo\noSSSwoSSSwoSSSwo\nowwwwowwwwowwwwo\nowwwwowwwwowwwwo\noSSSSSSSSSSSSSSo\noooooooooooooooo\nowwwwowwwwowwwwo\nowrrwowrrwowrrwo\nowwwwowwwwowwwwo\nowSSwowSSwowSSwo\nowwwwowwwwowwwwo\nowwwwowwwwowwwwo\noSSSSSSSSSSSSSSo\noooooooooooooooo",
+"shrine_door_morning":"oooooooooooooooo\noSSSSSSSSSSSSSSo\noSrrrrrorrrrrSSo\noSrWSWrorWSWrSSo\noSrrSrrorrSrrSSo\noSrrSrrorrSrrSSo\noSrrSrrorrSrrSSo\noSrrSrrorrSrrSSo\noSrWSWrorWSWrSSo\noSrrSrrorrSrrSSo\noSrrSrrorrSrrSSo\noSrrSrgorgSrrSSo\noSrrSrgorgSrrSSo\noSrWSWrorWSWrSSo\noSrrSrrorrSrrSSo\noSrrSrrorrSrrSSo\noSrrSrrorrSrrSSo\noSrrSrrorrSrrSSo\noSrWSWrorWSWrSSo\noSrrrrrorrrrrSSo\noSoooooooooooSSo\noSoooooooooooSSo\noSSSSSSSSSSSSSSo\noooooooooooooooo",
+"shrine_window_morning":"................\n.tttttttttttttt.\n.tttttttttttttt.\n.ttRRRRttRRRRtt.\n.ttRzzzttzzzRtt.\n.ttRzyzttzzzRtt.\n.ttRzzzttzzzRtt.\n.tttttttttttttt.\n.tttttttttttttt.\n.ttRzzzttzzzRtt.\n.ttRzzzttzyzRtt.\n.ttRzzzttzzzRtt.\n.ttRRRRttRRRRtt.\n.tttttttttttttt.\n.tttttttttttttt.\n................",
+"shrine_stairs_night":"SSSSSSSSSSSSSSSS\nBBBBBBBBBBBBBBBB\nBBBBBBBBBBBBBBBB\nHHHHHHHHHHHHHHHH\nSSSSSSSSSSSSSSSS\nBBBBBBBBBBBBBBBB\nBBBBBBBBBBBBBBBB\nHHHHHHHHHHHHHHHH\nSSSSSSSSSSSSSSSS\nBBBBBBBBBBBBBBBB\nBBBBBBBBBBBBBBBB\nHHHHHHHHHHHHHHHH\nSSSSSSSSSSSSSSSS\nBBBBBBBBBBBBBBBB\nBBBBBBBBBBBBBBBB\nHHHHHHHHHHHHHHHH",
+"shrine_stairs_top_night":"SSSSSSSSSSSSSSSS\nBBBBBBBBBBBBBBBB\nBBBBBBBBBBBBBBBB\nHHHHHHHHHHHHHHHH\nnSSSSSSSSSSSSSSn\nnBBBBBBBBBBBBBBn\nnBBBBBBBBBBBBBBn\nnHHHHHHHHHHHHHHn\nnnSSSSSSSSSSSSnn\nnnBBBBBBBBBBBBnn\nnnBBBBBBBBBBBBnn\nnnHHHHHHHHHHHHnn\nnnnSSSSSSSSSSnnn\nnnnBBBBBBBBBBnnn\nnnnBBBBBBBBBBnnn\nnnnHHHHHHHHHHnnn",
+"shrine_approach_night":"eeehhhhhhhhhheee\neeeBBBBBBBBBBeee\neeeBBSBBBBBBBeee\neeeBBBBBBBBBBeee\neeeBBBBBBBBBBeee\neeehhhhhhhhhheee\neeeBBBBBBBBBBeee\neeeBBBBBBBBBBeee\neeeBBBBBBBSBBeee\neeeBBBBBBBBBBeee\neeehhhhhhhhhheee\neeeBBBBBBBBBBeee\neeeBBBBBBBBBBeee\neeeBBBSBBBBBBeee\neeeBBBBBBBBBBeee\neeehhhhhhhhhheee",
+"shrine_lantern_night":".....uu.....\n.....uu.....\n.....uu.....\n...HHHHHH...\n..RRRRRRRR..\n.rrrrrrrrrr.\n.RRRRRRRRRR.\n.RwHwHwHwHR.\n.RwHwHwHwHR.\n.RHHHHHHHHR.\n.RwHwHwHwHR.\n.RwHwHwHwHR.\n.RwHwHwHwHR.\n.RRRRRRRRRR.\n.rrrrrrrrrr.\n..RRRRRRRR..\n.....uu.....\n.....uu.....\n.....uu.....\n.....uu.....",
+"shrine_donation_box_night":"................................\ngggggggggggggggggggggggggggggggg\ngttdddtttdddtttdddtttdddtttdddtg\ngttdddtttdddtttdddtttdddtttdddtg\ngttttttttttttttttttttttttttttttg\ngggggggddggggggggggggggddggggggg\n.duuuuudduuuuuuuuuuuuuudduuuuud.\n.duuuuudduuuuuuuuuuuuuudduuuuud.\n.duuuuudduuuuuuuuuuuuuudduuuuud.\n.duuuuudduuuuuuuuuuuuuudduuuuud.\n.dtttttddttttttttttttttddtttttd.\n.dtttttddttttttttttttttddtttttd.\n.duuuuudduwwwwwwwwwwwwudduuuuud.\n.duuuuudduwWWWWrWWWWWwudduuuuud.\n.duuuuudduwWWrrrrrrWWwudduuuuud.\n.duuuuudduwWWWWrWWWWWwudduuuuud.\n.duuuuudduwWrrrrrrrrWwudduuuuud.\n.duuuuudduwWWWWrWWWWWwudduuuuud.\n.duuuuudduwwwwwwwwwwwwudduuuuud.\n.duuuuudduuuuuuuuuuuuuudduuuuud.\n.duuuuudduuuuuuuuuuuuuudduuuuud.\n.duuuuudduuuuuuuuuuuuuudduuuuud.\n.duuuuudduuuuuuuuuuuuuudduuuuud.\n.dddddddddddddddddddddddddddddd.",
+"shrine_stairs_morning":"aaaaaaaaaaaaaaaa\nSSSSSSSSSSSSSSSS\nSSSSSSSSSSSSSSSS\nBBBBBBBBBBBBBBBB\naaaaaaaaaaaaaaaa\nSSSSSSSSSSSSSSSS\nSSSSSSSSSSSSSSSS\nBBBBBBBBBBBBBBBB\naaaaaaaaaaaaaaaa\nSSSSSSSSSSSSSSSS\nSSSSSSSSSSSSSSSS\nBBBBBBBBBBBBBBBB\naaaaaaaaaaaaaaaa\nSSSSSSSSSSSSSSSS\nSSSSSSSSSSSSSSSS\nBBBBBBBBBBBBBBBB",
+"shrine_stairs_top_morning":"aaaaaaaaaaaaaaaa\nSSSSSSSSSSSSSSSS\nSSSSSSSSSSSSSSSS\nBBBBBBBBBBBBBBBB\nuaaaaaaaaaaaaaau\nuSSSSSSSSSSSSSSu\nuSSSSSSSSSSSSSSu\nuBBBBBBBBBBBBBBu\nuuaaaaaaaaaaaauu\nuuSSSSSSSSSSSSuu\nuuSSSSSSSSSSSSuu\nuuBBBBBBBBBBBBuu\nuuuaaaaaaaaaauuu\nuuuSSSSSSSSSSuuu\nuuuSSSSSSSSSSuuu\nuuuBBBBBBBBBBuuu",
+"shrine_approach_morning":"vvvHHHHHHHHHHvvv\nvvvSSSSSSSSSSvvv\nvvvSSaSSSSSSSvvv\nvvvSSSSSSSSSSvvv\nvvvSSSSSSSSSSvvv\nvvvHHHHHHHHHHvvv\nvvvSSSSSSSSSSvvv\nvvvSSSSSSSSSSvvv\nvvvSSSSSSSaSSvvv\nvvvSSSSSSSSSSvvv\nvvvHHHHHHHHHHvvv\nvvvSSSSSSSSSSvvv\nvvvSSSSSSSSSSvvv\nvvvSSSaSSSSSSvvv\nvvvSSSSSSSSSSvvv\nvvvHHHHHHHHHHvvv",
+"shrine_lantern_morning":".....oo.....\n.....oo.....\n.....oo.....\n...SSSSSS...\n..rrrrrrrr..\n.RRRRRRRRRR.\n.rrrrrrrrrr.\n.rySySySySr.\n.rySySySySr.\n.rSSSSSSSSr.\n.rySySySySr.\n.rySySySySr.\n.rySySySySr.\n.rrrrrrrrrr.\n.RRRRRRRRRR.\n..rrrrrrrr..\n.....oo.....\n.....oo.....\n.....oo.....\n.....oo.....",
+"shrine_donation_box_morning":"................................\ngggggggggggggggggggggggggggggggg\ngoouuuooouuuooouuuooouuuooouuuog\ngoouuuooouuuooouuuooouuuooouuuog\ngoooooooooooooooooooooooooooooog\nggggggguugggggggggggggguuggggggg\n.utttttuuttttttttttttttuutttttu.\n.utttttuuttttttttttttttuutttttu.\n.utttttuuttttttttttttttuutttttu.\n.utttttuuttttttttttttttuutttttu.\n.uooooouuoooooooooooooouuooooou.\n.uooooouuoooooooooooooouuooooou.\n.utttttuutwwwwwwwwwwwwtuutttttu.\n.utttttuutwWWWWrWWWWWwtuutttttu.\n.utttttuutwWWrrrrrrWWwtuutttttu.\n.utttttuutwWWWWrWWWWWwtuutttttu.\n.utttttuutwWrrrrrrrrWwtuutttttu.\n.utttttuutwWWWWrWWWWWwtuutttttu.\n.utttttuutwwwwwwwwwwwwtuutttttu.\n.utttttuuttttttttttttttuutttttu.\n.utttttuuttttttttttttttuutttttu.\n.utttttuuttttttttttttttuutttttu.\n.utttttuuttttttttttttttuutttttu.\n.uuuuuuuuuuuuuuuuuuuuuuuuuuuuuu.",
+"moon_scarlet_64":"................................................................\n..........................xxxxxxxxxxxx..........................\n......................xxxxxxxxxxxxxxxxxxxx......................\n....................xxxxxxxRRRRRRRRRRxxxxxxx....................\n..................xxxxxRRzRRRRRRRzRRRRRRRxxxxx..................\n................xxxxRRRRRRRrrrrrrrrrrRRRRRRRxxxx................\n..............xFFxzRRRFFrrrrrFFrrrrrFFrrrzRRRRxxxx..............\n.............xFFRRRRRFFrrrrrFFrrrrrFFrrrrrrRRRRRxxx.............\n............xFzRRRRrFFrrrrrFFrrrrrFFrrrrrrrrrRRRRxxx............\n...........xFFRRRrrFFrrrrrFFrrrrrFFrrrrrrrrrrrrRRRxxx...........\n..........xFFRRRrrFFrrrrrFFrrrrrFFrrrrrFrrrrrrrrzRRxxx..........\n.........xFFRRrrrFFxrrrrFFrrrrrFFrrrrrFFrrrRrrrrrrRRRxx.........\n........xFFRRrrrxxRxxxxFFrrrrrFFrrrrrFFrRRxRRRRrrrrRRxxx........\n.......xFFRRrrrRRRRRRRxxrrrrrFFrrrrrFFrRxxxxxRRRrrrrRRxxx.......\n......xxFRRrrrRRRRRRRRRxxrrrFFrrrrrFFrrRxxxxxRRRrrrrrRRxxx......\n......xxRRRrrxRRRRRRRRRxxxrFFrrrrrFFrrrxxxxxxxRRrrrrrRRRxx......\n.....xxRRRrrFxRRRRRRRRRxxxFFrrrrrFFrrrRRxxxxxRRRRrrrrrRRRxx.....\n.....xxRRrrFFRRRRRRRRRRRxxFrrrrrFFrrrrrRxxxxxRRRrrrrrrrzRxx.....\n....xxRRRrFFxxRRRRRRRRRxxxxrrrrFFrrrrrFRRRxRRRRRrrrrrrrRRRxx....\n....xxRRrFFrrxRRRRRRRRRxxxrrrrFFrrrrrFFRRRRRRRRRrrrrrrrrRRxx....\n...xxRRRzFrrrxRRRRRRRRRxxxrrrFFrrrrrFFrrRRRRRRRrrrrrrrrrRRRxx...\n...xxRRrFrrrrxxRRRRRRRxxxxrrFFrrrrrFFrrrrrrRrrrrrrrrrrrrrRRxx...\n..xxxRRrrrrrrFxxxxRxxxxxxrrFFrrrrrFFrrrrrrrrrrrrrrrrrrrrrRRxxx..\n..xxRRrrrrrrFFrxxxxxxxxxrrFFrrrrrFFrrrrrrrrrrrrrrrrrrrrrrrRRxx..\n..xxRRrrrrrFFrrrxxxxxxxrrFFrrrrrFFrrrrrFrrrrrrrrrrrrrrrrrrRRxx..\n..xxRRrrrrFFrrrrrFFxrrrrFFrrrrrFFrrrxrFFrrrrrrrrrrrrrrrrrrRRxx..\n.xxxRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrxxxxxrrrrrrrrrrrrrrrrrrrRRxxx.\n.xxRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrxxxxxrrrrrrrrrrrrrrrrrrrrRRxx.\n.xxRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrxxxxxxxrrrrrrrrrrrrrrrrrrzRRxx.\n.xxRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrxxxxxrrrrrrrrrrrrrrrrrrrrRRxx.\n.xxRRrzrrrrrrrrrrrrrrrrrrrrrrrrrrrxxxxxrrrrrrrrrrrrrrrrrrrrRRxx.\n.xxRRrrrrrrrrrRrrrrrrrrrrrrrrrrrrrrrxrrrrrrrrrrxrrrrrrrrrrrRRxx.\n.xxRRrrrrrrrRRRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrxxRxxxxrrrrrrrrRRxx.\n.xxRRrrrrrrrRRRRRrrrrrrrrrrrrrrrrrrrrrrrrrrxRRRRRxxxrrrrrrrRRxx.\n.xxRRrrrrrrRRRRRRRrrrrrrrrrrrrrrrrrrrrrrrrxRRRRRRRxxxrrrrrrRRxx.\n.xxRRrrrrrrrRRRRRrrrrrrrrrrrrrrrrrrrrrrrrrxRRRRRRRxxxrrrrrrRRxx.\n.xxRRrrrrrrrRRRRRrrrrrrrrrrrrrrrrrrrrrrrrrRRRRRRRRRxxrrrrrrRRxx.\n.xxxRRrrrrrrrrRrrrrrrrrrrrrrrrrrrrrrrrrrrxxRRRRRRRxxxxrrrrRRxxx.\n..xxRRrrrrrrrrrrrrrrrrrrrRrrrrrrrrrrrrrrrrxRRRRRRRxxxrrrrrRRxx..\n..xxRRrrrrrrrrrrrrrrrrrRxRRRrrrrrrrrrrrrrrxxRRRRRxxxxrrrrrRRxx..\n..xxRRrrrrrrrrrrrrrrrrRxxxRRRrrrrrrrrrrrrrxxxxRxxxxxxrrrrrRRxx..\n..xxxRRrrrrrrrrrrrrrrrxxxxxRRrrrrrrrrrrrrrrxxxxxxxxxrrrrrRRxxx..\n...xxRRrrrrrrrrrrrrrrRRxxxRRRRrrrrrrrrrrrrrrxxxxxxxrrrrrrRRxx...\n...xxRRRrrrrrrrrrrrrrrRRxRRRRrrrrrrrrrrrrrrrrrrxrrrrrrrrRRRxx...\n....xxRRrrrrrrrrrrrrrrRRRRRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrRRxx....\n....xxRRRrrrrrrrrrrrrrrRRRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRxx....\n.....xxRRrrrrrrrrrrrrrrrrRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRxx.....\n.....xxRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRxx.....\n......xxRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRxx......\n......xxxRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRxxx......\n.......xxxRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrzRRxxx.......\n........xxxRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRxxx........\n.........xxRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRxx.........\n..........xxxRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRxxx..........\n...........xxxRRRzrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRxxx...........\n............xxxRRRRrrrrrrrrrrrrrrrrrrrrrrrrrrRRRRxxx............\n.............xxxRRRRRrrrrrrrrrrrrrrrrrrrrrrRRRRRxxx.............\n..............xxxxRRRRRrrrrrrrrrrrrrrrrrrRRRRRxxxx..............\n................xxxxRRRRRRRrrrzrrrrrrRRRRRRRxxxx................\n..................xxxxxRRRRRRRRRRRRRRRRRRxxxxx..................\n....................xxxxxxxRRRRRRRRRRxxxxxxx....................\n......................xxxxxxxxxxxxxxxxxxxx......................\n..........................xxxxxxxxxxxx..........................\n................................................................",
+"moon_silver_32":"................................\n............BBBBBBBB............\n.........BBBSSSCSSSSBBB.........\n........BBSSSSSSSSSSSSBB........\n......BBSCSSSaaaaaaSSSSSBB......\n.....BBSSSaaaaaaaaaaaaSSSBB.....\n....BBSSSaBaaaaaaaaaaaaSSSBB....\n....BSSSBBBBBaaaaaaaaSaaCSSB....\n...BSSSaBBBBBaaaaaaaSSSaaSSSB...\n..BBSSaBBBBBBBaaaaaSSSSSaaSSBB..\n..BSSaaaBBBBBaaaaaaaSSSaaaaSSB..\n..BSSaaaBBBBBaaaaaaaaSaaaaaSSB..\n.BSSSaaaaaBaaaaaaaaaaaaaaaaSSSB.\n.BSSaaaaaaaaaaaaaaaaaaaaaaaaSSB.\n.BSSaCaaaaaaaaaaaaaaaaaaaaaaSSB.\n.BSSaaaaaaaaaaaaaaaaaaaaaaaaSSB.\n.BSSaaaaaaaaaaaaaaaaaaBaaaaaSSB.\n.BSSaaaaaaaaaaaaaaaaBBBBBaaaSSB.\n.BSSaaaaaaaaaaaaaaaaBBBBBaaaSSB.\n.BSSSaaaaaaaaaaaaaaBBBBBBBaSSSB.\n..BSSaaaaaaaSaaaaaaaBBBBBaaSSB..\n..BSSaaaaaaSSSaaaaaaBBBBBaaSSB..\n..BBSSaaaaSSSSSaaaaaaaBaaaSSBB..\n...BSSSaaaaSSSaaaaaaaaaaaCSSB...\n....BSSSaaaaSaaaaaaaaaaaSSSB....\n....BBSSSaaaaaaaaaaaaaaSSSBB....\n.....BBSSSaaaaaaaaaaaaSSSBB.....\n......BBSSSSSaCaaaaSSSSSBB......\n........BBSSSSSSSSSSSSBB........\n.........BBBSSSSSSSSBBB.........\n............BBBBBBBB............\n................................",
+"title_touhou_kougetsuya":"................................................................................................\n........w..................w...............w.........................................w..........\n........zx..................z.............z.x................zzzzzzzzzzz.............zx.........\n..wwwwwwwwwwwwww............wx............wx.................wxxxxxxxxxwx............wx.........\n...xxxxxwxxxxxxxx....wwwwwwwwwwwwww......w.x.w.wwwwwwww......wx........wx.....wwwwwwwwwwwwwww...\n........wx............xxxwxxxxxxxxxx.....wx.w.x.xxwxxxxx.....wx........wx......xxwxxxxwxxxxxxx..\n...wwwwwwwwwwww..........wx.............wwwwww....wx.........wwwwwwwwwwwx.......w.x..w.x........\n...wxxxxwxxxxxwx.........wx..............xxwxxx...wx.........wxxxxxxxxxwx.......wx...wwwwwww....\n...wwwwwwwwwwwwx.........wwwwwwww.........w.x.....wx.........wx........wx......wwx..w.xxxxwxx...\n...wxxxxwxxxxxwx.........wxxxxxxwx.......w.x......wx.........wx........wx......wwx..ww....wx....\n...rrrrrrrrrrrrx........r.x.....rx.......rxrrr....rx.........rrrrrrrrrrrx.....r.rx.r.xr..r.x....\n....xxxxrrxxxxxx........rx......rx......rrrrxxx...rx.........rxxxxxxxxxrx......xrx..x..r.rx.....\n.......rrxr............r.x.....r.x.......xxrx.....rx.........rx........rx.......rx.....rr.x.....\n......r.rx.r...........rx......rx.......r..rxr....rx.........rx........rx.......rx.....rrx......\n....rr.xrx..rr........r.x......rx.......rx.rx.r...rx........r.x........rx.......rx...rr.xr......\n...r.xx.rx...xr.......rx....rrrrx......r.x.rx.rrrrrrrrr.....rx.........rx.......rx..r.xx..rr....\n..r.x...rx.....r.....r.x.....xxxx......rx..rx..xxxxxxxxx...r.x......rrrrx.......rx.r.x.....xr...\n...x.....x......x.....x.................x...x...............x........xxxx........x..x........x..\n................................................................................................\n....RR.RR.RR.RR.RR.RR.RR.RR.RR.RR.RR.RR.RR.RR.RR.RR.RR.RR.RR.RR.RR.RR.RR.RR.RR.RR.RR.RR.RR.RR...",
+"title_cloud_32_a":"................................\n................................\n................................\n..............bbbbbbbb..........\n.......bbbbbbbbmbbbbmb..........\n.......bmbbbbbbbbbbbbb..........\n.......bbbbbbbbbbbbbbb.bbbbbbb..\n...bbbbbbbbbbbbbbbbbbbbbbmbbbb..\n...bbbbbbbbbbbbbbbbbbbbbbbbbbb..\n...bbbbbbbbbbbbbbbbbbbbbbb......\nBBBBBBBBBBBBBBBBBBBBBBBBBBBBB...\nBBBBBBBBBBBBBBBBBBBBBBBBBBBBB...\n........BBBBBBBBBBBBBBBBBB......\n........BBBBBBBBBBBBBBBBBB......\n................................\n................................",
+"title_cloud_32_b":"................................\n................................\n................................\n................................\n................................\n.......bbbbbbbbbbbb.............\n.......bbmbbbbbmbbb.............\n.......bbbbbbbbbbbbbbbbbbbbbbb..\n.bbbbbbbbbbbbbbbbbbbbbbmbbbbbb..\n.bbbbbbbbbbbbbbb.bbbbbbbbbbbbb..\n.bbbbbbbbbbbbbbb.bbbbbbbbbbbbb..\n....BBBBBBBBBBBBBBBBBBBBBBBBBBB.\n....BBBBBBBBBBBBBBBBBBBBBBBBBBB.\n............BBBBBBBBBBBBBB......\n............BBBBBBBBBBBBBB......\n................................",
+};
+  return Object.freeze(Object.fromEntries(Object.entries(RAW).map(([n,s])=>[n,s.split("\n")])));
+})();
+const LAKE=(function(){
+const RAW={
+"lake_water_dark_a":"nnnnnnnn\nnnnBnnnn\nnBBnnnnn\nnnnnnnnn\nnnnnnBnn\nnnnBBnnn\nnnnnnnnn\nnBnnnnBn",
+"lake_water_dark_b":"nnnnnnnn\nnnnnnBnn\nnnnBBnnn\nnnnnnnnn\nnBnnnnnn\nnnBBnnBn\nnnnnnnnn\nnnnnBnnn",
+"lake_water_dark_c":"nnnnnnnn\nnBnnnnnn\nnnnBnnBn\nnnnnnnnn\nnnBBnnnn\nnnnnnBnn\nnBnnnnnn\nnnnnnnnn",
+"lake_water_edge_d":"nnnnnnnn\nnnBBnnnn\nnnBbbBnn\nnnnnnnnn\nnnnnBBnn\nnBBbbBnn\nnnnnnnnn\nnnBnnnBn",
+"lake_ripple_dim_a":"........\n...B....\n..BBB...\n........\n.....B..\n...BB...\n........\n........",
+"lake_ripple_dim_b":"........\n.B......\n.BBB....\n........\n....BB..\n...B..B.\n........\n........",
+"lake_ripple_cool_a":"........\n....B...\n..BbiB..\n...BB...\n........\n.BbbB...\n..B.....\n........",
+"lake_foam_spark_a":"........\n........\n...l....\n..lCl...\n...l....\n........\n......l.\n........",
+"lake_foam_edge_b":"........\n..B.....\n.BlB....\n..B.....\n.....B..\n....BlB.\n.....B..\n........",
+"lake_mist_wisp_a":"........\n..BB....\n.BbbB...\n...B....\n.....B..\n....Bbb.\n......B.\n........",
+"lake_mist_wisp_b":"........\n.....B..\n...BbbB.\n..BB....\n........\n.B......\n.BbbB...\n...B....",
+"lake_mist_wisp_c":"........\n.B......\n..bB....\n...B....\n......B.\n....Bbb.\n.....B..\n........",
+"lake_ice_glint":"........\n...c....\n...l....\n.clClc..\n...l....\n...c....\n........\n........",
+"lake_moon_reflect_a":"........\n...S....\n..SaS...\n...B....\n....S...\n...Sa...\n....B...\n........",
+"lake_moon_reflect_b":"........\n.S......\n..aS....\n...B....\n.....S..\n....aS..\n...B....\n........",
+"lake_reeds_a":"................\n...........Gv...\n.......vG..v....\n.......e...v....\n...G...e...v....\n..vv...e.G.v....\n...v...e.G.vvG..\n...v...e.G.ve...\n...v...e.G.ve...\n...v..e..Gv.e...\n....vve..Ge.e...\n....v.e.Gvv..e..\n....v.e.G.v..e..\n....v.e.G.v..e..\n....veeeGeveee..\n..e.v.e.G.v.eee.",
+"lake_reeds_b":"................\n................\n................\n.........vG.....\n.....G...e......\n.....v...e.Gv...\n....vv...e.v....\n....ev.G.e.v....\n....ev.G.e..v...\n...e.v.G.e..e...\n...eev.G.ve.vv..\n...v.v.Ge.e.v...\n...e.v..G.e.v...\n..e..v..G.e..v..\n..e..v..G.e..v..\n.ee.ev.eG.ee.ve.",
+"lake_shore_stone_a":"................\n................\n................\n................\n................\n........BSSSB...\n.......BSBaBSB..\n..SSSSBBBaBaBSB.\n.BaBSBBBBBBBBBB.\n.BBBBBBBaBBBBBB.\n.nnnnBBBBBBBaBB.\n.nnnnnBBBBBBBBB.\n..nnnnBBBBBBBBB.\n......BBBBBBBBB.\n..nnnnnnnnnnnnn.\n...e..e...e..e..",
+"lake_shore_stone_b":"................\n................\n................\n................\n..........S.....\n.......BBSBSBB..\n....S.BBSBBBSBB.\n..BSBSBBBaBBBBB.\n.BSBaBBBBBBaBBS.\n.BBBBBBBBBBBBSBB\nBBBBBBBBBBBBBBaB\n.BBBBBBBBBBBBBBB\n.BBBBBBBBBBBBBBB\n..BBBBBBBBBBBBBB\n....B.....B...B.\ne.e.e.e.e.e.e.e.",
+"lake_lilypad_a":"................\n................\n................\n................\n................\n........e.......\n.....evvveee....\n...eeeeeeveeee..\n...eGeee..veee..\n..eeevee...eGe..\n...eeeveeeevee..\n...eeeeeveeeee..\n.....eeeeeee....\n................\n................\n................",
+"lake_shore_post":"........\n..SSSS..\n.BBBBBB.\n..nnnn..\n..nuun..\n..nuun..\n..nuun..\n..noun..\n..nuun..\n..nuun..\n..nuun..\n..nuun..\n..nuun..\n..nuun..\n..noun..\n..nuun..\n..nuun..\n..nuun..\n..nuun..\n..nuun..\n..noun..\n.BBBBBB.\nb.b.b.b.\n..nnnn..",
+"lake_lantern_dim":"................\n.....nnnnnn.....\n...RRRRRRRRRR...\n..nnnnnnnnnnnn..\n....RRRRRRRR....\n....RRRRRRRR....\n....R......R....\n....R.ogog.R....\n....R.gyyo.R....\n....R.ogog.R....\n....R.gogo.R....\n....R......R....\n....RRRRRRRR....\n......nnnn......\n......nuun......\n......nuun......\n......nuun......\n......nuun......\n......nuun......\n......nuun......\n......nuun......\n......nuun......\n......nuun......\n.....BBBBBB.....",
+"lake_ice_shard":"........\n....l...\n...lC...\n...Cc...\n..cClc..\n..clCc..\n.BcClc..\n..BcCB..\n..BccB..\n...BcB..\n...Bc...\n...BB...\n...B....\n........\n........\n........",
+"lake_water_band_e":"........\n..BBB...\n.BBBBB..\n..BBBB..\n....BB..\n........\n..B.....\n.....B..",
+"lake_mist_transition_d":"..BBB...\n.BSSBB..\nBSSaaBB.\n.BSSSSB.\n..BSSS..\n...BB...\n........\n........",
+"lake_edge_cluster_c":"................\n................\n......v.........\n......G...G.....\n.....GG...GG....\n.....G....v.....\n...v.G....G.....\n..GG.G..v.G.....\n..G..G..G.G.G...\n.GG..G..G.G.G...\n.G...G..G.GGG...\nBBBBBBBBBBBB....\nSSaaSSaaSSaS....\n...S....S.......\n..n.n..n.n......\n..n.n..n.n......"
+};
+const A=Object.fromEntries(Object.entries(RAW).map(([n,s])=>[n,s.split("\n")]));
+const H=240,placements=[];
+const add=(asset,x,y)=>{placements.push({asset,x,y})};
+const centerCycle=['lake_water_dark_a','lake_water_dark_b','lake_water_dark_c'];
+const edgeCycle=['lake_water_dark_a','lake_water_dark_b','lake_water_dark_c','lake_water_edge_d'];
+for(let ty=0;ty<H;ty+=8)for(let tx=0;tx<256;tx+=8){
+  const col=tx>>3,cycle=(col>=6&&col<=17)?centerCycle:edgeCycle;
+  add(cycle[(col+(ty>>3))%cycle.length],tx,ty);
+}
+for(const ty of [24,56,96,136,176,216])for(const tx of [0,16,32,136,152,168])add('lake_water_band_e',tx,ty+(((tx>>4)&1)*8));
+for(const ty of [40,112,184])for(const tx of [56,72,104,120])add('lake_water_band_e',tx,ty);
+for(let ty=24;ty<H;ty+=32)for(const tx of [0,16,160,176]){
+  add('lake_ripple_cool_a',tx+(((ty>>5)&1)*8),ty);
+  if(((ty>>5)&1)===0)add('lake_foam_edge_b',tx,ty+8);
+}
+for(let ty=32;ty<H;ty+=32)for(const tx of [56,80,104,128])add((((tx+ty)>>3)&1)===0?'lake_ripple_dim_a':'lake_ripple_dim_b',tx,ty);
+for(const [x,y] of [[16,64],[160,72],[24,184],[152,192]])add('lake_foam_spark_a',x,y);
+for(const [x,y,a] of [[88,32,'lake_moon_reflect_a'],[96,48,'lake_moon_reflect_b'],[88,64,'lake_moon_reflect_a'],[96,80,'lake_moon_reflect_b'],[88,96,'lake_moon_reflect_a']])add(a,x,y);
+const mistGroups=[[8,20,['lake_mist_wisp_a','lake_mist_transition_d','lake_mist_wisp_b','lake_mist_wisp_a','lake_mist_wisp_b']],[152,12,['lake_mist_wisp_b','lake_mist_transition_d','lake_mist_wisp_a','lake_mist_wisp_b','lake_mist_wisp_a']],[56,40,['lake_mist_wisp_c','lake_mist_wisp_a','lake_mist_wisp_c','lake_mist_wisp_b']],[104,56,['lake_mist_wisp_c','lake_mist_wisp_b','lake_mist_wisp_c','lake_mist_wisp_a']]];
+for(const [x0,y0,seq] of mistGroups)seq.forEach((a,i)=>add(a,x0+(i%2?8:0),y0+i*24));
+for(const [x,ys,a] of [[0,[96,144,192,216],'lake_edge_cluster_c'],[16,[120,168,208],'lake_shore_stone_a'],[160,[104,152,200],'lake_shore_stone_b'],[176,[128,176,216],'lake_edge_cluster_c']])for(const y of ys)add(a,x,y);
+for(const [x,y,a] of [[0,112,'lake_reeds_a'],[16,184,'lake_reeds_b'],[160,120,'lake_reeds_b'],[176,184,'lake_reeds_a'],[16,72,'lake_lilypad_a'],[144,80,'lake_lilypad_a'],[24,168,'lake_lilypad_a'],[152,176,'lake_lilypad_a'],[8,88,'lake_shore_post'],[24,184,'lake_shore_post'],[168,96,'lake_shore_post'],[152,184,'lake_shore_post'],[24,96,'lake_lantern_dim'],[152,112,'lake_lantern_dim'],[32,56,'lake_ice_shard'],[144,56,'lake_ice_shard'],[16,152,'lake_ice_shard'],[168,160,'lake_ice_shard'],[24,64,'lake_ice_glint'],[152,72,'lake_ice_glint']])add(a,x,y);
+const sheet=document.createElement('canvas');sheet.width=256;sheet.height=240;
+const lc=sheet.getContext('2d',{alpha:false});lc.imageSmoothingEnabled=false;lc.fillStyle=C.black;lc.fillRect(0,0,256,240);
+for(const p of placements){const rows=A[p.asset];for(let yy=0;yy<rows.length;yy++){const row=rows[yy];for(let xx=0;xx<row.length;xx++){const col=PAL[row[xx]];if(!col)continue;lc.fillStyle=col;lc.fillRect(p.x+xx,p.y+yy,1,1)}}}
+return Object.freeze({A,placements,sheet});
+})();
+const FOREST=(function(){
+const RAW={
+"forest_bark_a":"uutuuutu\nutthuutu\nutuhuttu\nuuutttuu\ntuhuutut\nutuooutu\nuuthutuu\ntuutuutu",
+"forest_bark_b":"tuutuutu\nuuhuttuu\nuttootut\nuutthutu\ntutuuhuu\nuutottuu\nuhuututu\nutuutttu",
+"forest_bark_knot":"uutttuuu\nutohottu\nuohohotu\ntohhhhot\nuohohotu\nutohottu\nuutttuuu\nutuututu",
+"forest_leaf_a":"..ee....\n.evve...\nevGvve..\neGGvvee.\n.evGve..\n..eve...\n...e....\n........",
+"forest_leaf_b":"...e....\n..eve...\n.evGve..\nevvvGve.\neGvGvve.\n.evvve..\n..ee....\n........",
+"forest_leaf_c":"........\n.ee.e...\nevvve.e.\neGvGvve.\n.vvGve..\n..eve...\n...e....\n........",
+"forest_leaf_moonlit":"....e...\n..evve..\n.evGvve.\nevvGivve\n.evGvve.\n..evve..\n...e....\n........",
+"forest_path_lane_a":"nnnnhnnn\nnnnnnnnn\nnBnnnnnn\nnnnnHnnn\nnnnnnnnn\nhnnnnnnn\nnnnnnBnn\nnnnnnnnn",
+"forest_path_lane_b":"nnnnnnnn\nnnHnnnnn\nnnnnnnnn\nnnnnBnnn\nhnnnnnnn\nnnnnnnnn\nnnnnnHnn\nnnnnnnnn",
+"forest_path_lane_c":"nnnnBnnn\nnnnnnnnn\nnnHnnnnn\nnnnnnnnn\nnnnnnnnh\nnnnnnnnn\nnBnnnnnn\nnnnnHnnn",
+"forest_ground_edge":"nneennnn\nnevvennn\nnevGvenn\nnevvvenn\nnnennnnn\nnnnHnnnn\nnBnnennn\nnnnnnnnn",
+"forest_canopy_a":"..e...eve...e...\n.eve.eevee.eve..\neeveeeGGveeevee.\neGGvevGvvveGGvee\nvGvvvevnvevGvvve\nevvvveeveevvvvee\neenvvvevevvvvee.\n.evvvveeevvvne..\neevGGvvevGGvvee.\nevvGvvvvvGvvvvve\neevvvvvevvvvveve\n.eevvveeevvveGnv\n..evvne.evvvvGvv\n...eve...eneevvv\n....e.....e.eeve\n.............eve",
+"forest_canopy_b":"evee..e...eevee.\nGGveeeve.eeGGvee\nGvvvevvveevGvvve\nvvveevvveeevvvee\neveevGGnveeevve.\nevevvGvvvveevvve\n.enevvvvveeevvve\n...eevvveeevnGvv\n...evvvveevvGvvv\n..evvvve.eevvvvv\n.eevvvee.evevvve\neevGGvveeevevvne\nevvGvnvveGGveve.\neevvvvvevGnvvee.\n.eevvveeevvvee..\n..evvve.eevee...",
+"forest_canopy_moonlit":"..e...eve...e...\n.eve.eevee.eve..\neeveeeGiveeevee.\neGivevGvvveGivee\nvGvvvevnvevGvvve\nevvvveeveevvvvee\neenvvvevevvvvee.\n.evvvveeevvvne..\neevGivvevGivvee.\nevvGvvvvvGvvvvve\neevvvvvevvvvveve\n.eevvveeevvveGnv\n..evvne.evvvvGvv\n...eve...eneevvv\n....e.....e.eeve\n.............eve",
+"forest_canopy_shadow":"..n...nen...n...\n.nen.nnenn.nen..\nnnennnvvennnenn.\nnvveneveeenvvenn\neveeeneneneveeen\nneeeennenneeeenn\nnnneeeneneeeenn.\n.neeeennneeenn..\nnnevveenevveenn.\nneeveeeeeveeeeen\nnneeeeeneeeeenen\n.nneeennneeenvne\n..neenn.neeeevee\n...nen...nnnneee\n....n.....n.nnen\n.............nen",
+"forest_trunk_straight":".....uttuuhu....\n.....uttuuhu....\n.....uttouhu....\n.....uttuohu....\n.....uttuuhu....\n.....uttuuhu....\n.....uthuuhu....\n.....utthuhu....\n.....uttuuhu....\n.....uttuuhu....\n.....uttuthu....\n.....uttuuhu....\n.....uttuuhu....\n.....uhtuuhu....\n.....uttuuhu....\n.....uttuuhu....",
+"forest_trunk_knotted":"....uttuuuhu....\n....uttuuuhu....\n....uttuuuhu....\n....uttuuuhu....\n....uttuuuhu....\n....uttoooou....\n....utoohhoo....\n....utohooho....\n....uttohhou....\n....uttuuuhu....\n....uttuuuhu....\n....uttuuuhu....\n....uttuuuhu....\n....uttuuuhu....\n....uttuuuhu....\n....uttuuuhu....",
+"forest_root_left":".........utuuh..\n.........utuuh..\n.........utuuh..\n.........utuuh..\n.........utuuh..\n.........utuuh..\n.........utuuh..\n.........utuuh..\n.........uuuuh..\n........uuhtuu..\n......uuuh.t.u..\n....uu.hhot...u.\n..uu..hu..t..ou.\nuu...ho..t.....u\n...hou...t.....u\n..h.u...t.......",
+"forest_root_right":"..huutu.........\n..huutu.........\n..huutu.........\n..huutu.........\n..huutu.........\n..huutu.........\n..huutu.........\n..huutu.........\n..huuuu.........\n..uuthuu........\n..u.t.huuu......\n.u...tohh.uu....\n.uo..t..uh..uu..\nu.....t..oh...uu\nu.....t...uoh...\n.......t...u.h..",
+"forest_mushroom_red":"................\n................\n................\n....hrrrrrrh....\n..hrrwrrrwrrrh..\n..rrrrrrrrrrrr..\n.hrwrrrrrrrwrrh.\n..rrrrrwrrrrrr..\n...hRRRRRRRRh...\n.....hWwWWh.....\n......WwWW......\n......WwWW......\n......WwWW......\n.....hWWWWh.....\n.....hWWWWh.....\n................",
+"forest_mushroom_violet":"................\n................\n................\n....hmmmmmmh....\n..hmmwmmmwmmmh..\n..mmmmmmmmmmmm..\n.hmwmmmmmmmwmmh.\n..mmmmmwmmmmmm..\n...hMMMMMMMMh...\n.....hWwWWh.....\n......WwWW......\n......WwWW......\n......WwWW......\n.....hWWWWh.....\n.....hWWWWh.....\n................",
+"forest_mushroom_cluster":"................\n................\n................\n................\n................\n................\n.........mmm....\n........mwmmm...\n...rrr.mMmmmMm..\n..rwrrr...W.....\n.rRrrrRr..W.....\n....W......rrr..\n....W.....rwrrr.\n.....e...rRrrrRr\n..e.....e...W.e.\n............W...",
+"forest_lantern_small":"...uu...\n...uu...\n...uu...\n.RRRRRR.\nhRRRRRRh\n..rrrr..\n.hryyrh.\n..rwyr..\n..rygr..\n..ryyr..\n.hryyrh.\n..rrrr..\n.RRRRRR.\n.RRRRRR.\n...uu...\n...uu...",
+"forest_firefly_a":"........\n........\n...g....\n..gyg...\n...g....\n........\n........\n........",
+"forest_firefly_b":"........\n....g...\n...gy...\n..g.g...\n...g....\n........\n........\n........",
+"forest_wisp":"........\n...m....\n..mgm...\n..gyg...\n...g....\n...e....\n..eee...\n........",
+"forest_distant_pines_a":"................\n.......nnn......\n.......nnn......\n......nnnnn.....\n..nnn.nnBnn.....\n..nnnnnnBnnnnnn.\n.nnnnnnnBnnnnnn.\n.nnBnnnnBnnnnnnn\nnnnBnnnnBnnnnBnn\nnnnnnnnnBnnnnBnn\nnnnnnnnnBnnnnBnn\nnnnnnnnnBnnnnBnn\nnnnnnnnnBnnnnBnn\nnnnnnnnnnnnnnBnn\nnnnnnnnnnnnnnBnn\n...B....B....B..",
+"forest_distant_pines_b":"................\n......nnn.......\n......nnn.......\n.....nnnnn......\n.....nnBnn.nnn..\n.nnnnnnBnnnnnn..\n.nnnnnnBnnnnnnn.\nnnnnnnnBnnnnBnn.\nnnBnnnnBnnnnBnnn\nnnBnnnnBnnnnnnnn\nnnBnnnnBnnnnnnnn\nnnBnnnnBnnnnnnnn\nnnBnnnnBnnnnnnnn\nnnBnnnnnnnnnnnnn\nnnBnnnnnnnnnnnnn\n..B....B....B...",
+"forest_distant_pines_moonlit":"................\n.......BBB......\n.......BBB......\n......BBBBB.....\n..BBB.BBbBB.....\n..BBBBBBbBBBBBB.\n.BBBBBBBbBBBBBB.\n.BBbBBBBbBBBBBBB\nBBBbBBBBbBBBBbBB\nBBBBBBBBbBBBBbBB\nBBBBBBBBbBBBBbBB\nBBBBBBBBbBBBBbBB\nBBBBBBBBbBBBBbBB\nBBBBBBBBBBBBBbBB\nBBBBBBBBBBBBBbBB\n...b....b....b..",
+"forest_fern":"................\n................\n................\n....v.....v.....\n...G.vvevv......\n..vv...v...Gv...\n....vv.e.vv.....\n.vG...vvv...vv..\n...vvv.e.vvv.G..\n..vv..vvv..vv...\n....Gv.e.vv.....\n...vv.vvv.Gv....\n.....vvevv......\n.......v........\n.......e........\n................",
+"forest_grass_tuft":"................\n................\n................\n................\n.....e.e.e......\n.....e.e.e......\n......eveee.e...\n..e.e.eeeee.e...\n...ee.eeeeve.e..\n...eveeeee.ee...\n....ee.eeee.v...\n.....eeeeeee....\n......eeeee.....\n......eeee......\n.......eee......\n........e.......",
+"forest_vine_hanging":"........e.......\n........e.......\n.......ve.......\n.....vv.e.......\n...Gv...v.......\n........evv.....\n......vve..vG...\n....vv..e.......\n..Gv...evv......\n.......e..vv....\n.......v....vG..\n.....vve........\n...Gv..ev.......\n.......e.vv.....\n.......e...vG...\n.......e........",
+"forest_shrub":"................\n................\n................\n................\n................\n................\n.....eeeeeee....\n.....evGvvve....\n.....evvvvGe....\n.eeeeevvvveeeee.\n.evvGevvvvevvve.\n.evvvevvvvevGve.\n.evvveGeeeevvve.\n.eneeeee.neeeen.\n................\n................",
+"forest_path_edge_stone":"................\n................\n................\n................\n................\n................\n................\n....BBBBBBBB....\n..BBHBBBHBBBBB..\n.BBBBBBBBBBHBBB.\n.BBhBBBBBBBBhBB.\n..BBBBHBBBHBBB..\n....BhBBBhBB....\n................\n................\n................"
+};
+const A=Object.fromEntries(Object.entries(RAW).map(([n,s])=>[n,s.split("\n")]));
+const H=240,placements=[];
+const add=(asset,x,y)=>{placements.push({asset,x,y})};
+const lane=['forest_path_lane_a','forest_path_lane_b','forest_path_lane_c'];
+for(let ty=0;ty<H;ty+=8)for(let tx=0;tx<256;tx+=8)add(lane[((tx>>3)+(ty>>3))%3],tx,ty);
+for(let ty=0;ty<H;ty+=8){add('forest_ground_edge',48,ty);add('forest_ground_edge',136,ty)}
+for(const [i,tx] of [0,16,32,144,160,176,192,208,224,240].entries()){
+  if(tx===0||tx===176||tx===240)add('forest_distant_pines_moonlit',tx,0);
+  else add(i%2?'forest_distant_pines_b':'forest_distant_pines_a',tx,0);
+}
+for(let ty=0;ty<H;ty+=16)for(const tx of [0,16,32,144,160,176,192,208,224,240]){
+  if(ty===0&&(tx===0||tx===176||tx===240))add('forest_canopy_moonlit',tx,ty);
+  else if(tx===32||tx===144)add('forest_canopy_shadow',tx,ty);
+  else add(((tx>>4)+(ty>>4))%2===0?'forest_canopy_a':'forest_canopy_b',tx,ty);
+}
+for(let ty=16;ty<224;ty+=16){
+  add((ty>>4)%2===0?'forest_trunk_straight':'forest_trunk_knotted',0,ty);
+  add((ty>>4)%2===0?'forest_trunk_knotted':'forest_trunk_straight',176,ty);
+  add((ty>>4)%2===0?'forest_trunk_straight':'forest_trunk_knotted',240,ty);
+}
+add('forest_root_left',0,224);add('forest_root_right',176,224);add('forest_root_right',240,224);
+for(const [x,y,a] of [[16,40,'forest_mushroom_red'],[16,104,'forest_mushroom_violet'],[16,168,'forest_mushroom_red'],[160,56,'forest_mushroom_violet'],[160,120,'forest_mushroom_red'],[160,184,'forest_mushroom_violet'],[0,72,'forest_mushroom_cluster'],[0,200,'forest_mushroom_cluster'],[176,48,'forest_mushroom_cluster'],[176,136,'forest_mushroom_cluster'],[208,40,'forest_mushroom_red'],[208,120,'forest_mushroom_violet'],[240,72,'forest_mushroom_cluster']])add(a,x,y);
+for(const y of [24,88,152,216]){add('forest_lantern_small',4,y);add('forest_lantern_small',180,y);add('forest_lantern_small',244,y)}
+for(const [i,y] of [16,36,56,76,96,116,136,156,176,196,216].entries()){
+  add(i%2===0?'forest_firefly_a':'forest_firefly_b',i%2===0?8:176,y);
+  add(i%2===0?'forest_firefly_b':'forest_firefly_a',240,y);
+}
+for(const [x,y] of [[24,32],[160,64],[8,128],[176,160],[24,192],[160,208],[208,64],[240,160]])add('forest_wisp',x,y);
+for(const y of [48,112,176]){add('forest_fern',16,y);add('forest_fern',160,y);add('forest_fern',208,y)}
+for(const y of [32,96,160,224]){add('forest_shrub',16,y);add('forest_shrub',160,y);add('forest_shrub',208,y)}
+for(const y of [16,80,144,208]){add('forest_grass_tuft',40,y);add('forest_grass_tuft',136,y)}
+for(const y of [0,16,32]){add('forest_vine_hanging',16,y);add('forest_vine_hanging',160,y);add('forest_vine_hanging',208,y)}
+for(const y of [64,128,192]){add('forest_path_edge_stone',40,y);add('forest_path_edge_stone',136,y)}
+for(let i=0,y=8;y<232;y+=16,i++){
+  add(['forest_leaf_a','forest_leaf_b','forest_leaf_c'][i%3],24,y);
+  add(['forest_leaf_c','forest_leaf_a','forest_leaf_b'][i%3],160,y);
+  add(['forest_leaf_a','forest_leaf_b','forest_leaf_c'][(i+1)%3],208,y);
+}
+for(const [x,y] of [[0,8],[184,24],[0,88],[184,120],[0,168],[184,200],[248,24],[248,120]])add('forest_leaf_moonlit',x,y);
+const sheet=document.createElement('canvas');sheet.width=256;sheet.height=240;
+const fc=sheet.getContext('2d',{alpha:false});fc.imageSmoothingEnabled=false;fc.fillStyle=C.black;fc.fillRect(0,0,256,240);
+for(const p of placements){
+  const rows=A[p.asset],path=p.asset.indexOf('forest_path_lane')===0;
+  for(let yy=0;yy<rows.length;yy++){
+    const row=rows[yy];
+    for(let xx=0;xx<row.length;xx++){
+      const col=PAL[row[xx]];if(!col)continue;
+      const x=p.x+xx,y=p.y+yy;
+      if(!path&&x>=56&&x<=135)continue;
+      fc.fillStyle=col;fc.fillRect(x,y,1,1);
+    }
+  }
+}
+return Object.freeze({A,placements,sheet});
+})();
+const MANSION=(function(){
+const RAW={
+"mansion_wall_plain":"hhhhhhhh\nnnnnnnnH\nnHnnnnnn\nnnnHnnnn\nhhhhhhhh\nnnnnnnnn\nnnnnnHnn\nnnnnnnnn",
+"mansion_wall_damask_a":"nnnddnnn\nnnHxxHnn\nnHxRRxHn\nnnHxxHnn\nnnnddnnn\nnnHxxHnn\nnHxRRxHn\nnnnddnnn",
+"mansion_wall_damask_b":"hdhhhhdh\nHxHhhHxH\nhHRHHRHh\nhhxddxhh\nhdhhhhdh\nHxHhhHxH\nhHRHHRHh\nhhxddxhh",
+"mansion_wall_panel":"HHHHHHHh\nHnnnnnnh\nHnddddnh\nHndHhhnh\nHndhHhnh\nHndhhhnh\nHnnnnnnh\nHhhhhhhh",
+"mansion_carpet_center":"dddddddd\ndhdddddd\nddddddhd\ndddddddd\ndddddddd\ndddddhdd\nddhddddd\ndddddddd",
+"mansion_carpet_motif":"dddxxddd\nddxddxdd\ndRddddRd\nddxRRxdd\nddxRRxdd\ndRddddRd\nddxddxdd\ndddxxddd",
+"mansion_carpet_edge_l":"xxRHdddd\nxrRHdddd\nxxRHdddd\nxxRHdddd\nxxRHdddd\nxrRHdddd\nxxRHdddd\nxxRHdddd",
+"mansion_carpet_edge_r":"ddddHRxx\nddddHRxx\nddddHRrx\nddddHRxx\nddddHRxx\nddddHRxx\nddddHRrx\nddddHRxx",
+"mansion_floor_wood":"tttttttt\nuuoHuuuu\nuuuuuuou\nHuuouuuu\ntttttttt\nuouuHuuu\nuuuuuouu\nuuuuuuuo",
+"mansion_floor_stone":"SSSHSSSS\nBBBHBBBB\nBSBHBSBB\nBBBHBBBB\nHHHHHHHH\nBBBBBBHB\nBBSBBBHS\nBBBBBBHB",
+"mansion_molding_horizontal":"........\nHHHHHHHH\nSgSSSSgS\nuuuuuuuu\ntttttttt\nHHHHHHHH\n........\n........",
+"mansion_trim_vertical":"..HSut..\n..Hgut..\n..HSut..\n..HSut..\n..HSut..\n..HSut..\n..Hgut..\n..HSut..",
+"mansion_masonry_shadow":"HHHHHHHH\nhhxhhhhh\nhdhhhdhh\nhhhhhhhh\nHHHHHHHH\nhhhhhhxh\nhhhhxhhh\nhhhhhhhh",
+"mansion_window_gothic_a":"................\n.......SS.......\n......SbbS......\n...S.SB..BS.S...\n..HSSkkkHkkSSH..\n..HSSkBBHbkSSH..\n..HSSkBBHbkSSH..\n..HSSkBBHbkSSH..\n..HSSHHHHHHSSH..\n..HSSkbbHBkSSH..\n..HSSkbbHBkSSH..\n..HSSkbbHBkSSH..\n..HSSHHHHHHSSH..\n..HSSkBBHbkSSH..\n..HSSkBBHbkSSH..\n..HSSkkkHkkSSH..",
+"mansion_window_gothic_b":"................\n.......SS.......\n......SbbS......\n...S.SB..BS.S...\n..HSSkkkHkkSSH..\n..HSSkBBHbkSSH..\n..HSSkBllbkSSH..\n..HSSkBBHbkSSH..\n..HSSHHHHHHSSH..\n..HSSkbbHBkSSH..\n..HSSkxdHdkSSH..\n..HSSkdxHxkSSH..\n..HSSHHHHHHSSH..\n..HSSkdxHxkSSH..\n..HSSkxdHdkSSH..\n..HSSkkkHkkSSH..",
+"mansion_sconce_single":"................\n........r.......\n.......yWy......\n........W.......\n........W.......\n........W.......\n.....y..g.......\n......gggu......\n.......ugu......\n.......ugu......\n.......ugu......\n.......uuu......\n.......uuu......\n................\n................\n................",
+"mansion_sconce_double":"................\n................\n....r......r....\n...gyg....gyg...\n....W......W....\n....W......W....\n....W......W....\n....WgyuuygW....\n......uggu......\n......uggu......\n......uggu......\n......uggu......\n......uttu......\n................\n................\n................",
+"mansion_pillar_cap":".....HHHHHH.....\n.....HHHHHH.....\n....BBBBBBBB....\n....BBBBBBBB....\n...SSSSSSSSSS...\n..HSSSSSSSSSSH..\n..HHHHHHHHHHHH..\n..HHHHHHHHHHHH..\n..gggggggggggg..\n....uuuuuuuu....\n.....HSSHHH.....\n.....HSSHHH.....\n.....HSSHHH.....\n.....HSSHHH.....\n.....HSSHHH.....\n.....HSSHHH.....",
+"mansion_pillar_mid":"....HSSBBBBh....\n....HSSBBBBh....\n....HSSBBBBh....\n....HSsBBHBh....\n....HSSBBBBh....\n....HSSBBBBh....\n....HSSBBBBh....\n....HSSBBBBh....\n....HSsBBHBh....\n....HSSBBBBh....\n....HSSBBBBh....\n....HSSBBBBh....\n....HSSBBBBh....\n....HSsBBHBh....\n....HSSBBBBh....\n....HSSBBBBh....",
+"mansion_pillar_base":".....HSSHHH.....\n.....HSSHHH.....\n.....HSSHHH.....\n.....HSSHHH.....\n.....HSSHHH.....\n.....HSSHHH.....\n.....HSSHHH.....\n....BBBBBBBB....\n....BBBBBBBB....\n....BBBBBBBB....\n...HHHHHHHHHH...\n...HHHHHHHHHH...\n...uuuuuuuuuu...\n..SSSSSSSSSSSS..\n..SSSSSSSSSSSS..\n..SSSSSSSSSSSS..",
+"mansion_railing":"................\n.g...g....g...g.\nuuuuuuuuuuuuuuuu\ngggggggggggggggg\n.t...t....t...t.\n.g...g....g...g.\n.t...t....t...t.\n.t...t....t...t.\n.t...t....t...t.\n.t...t....t...t.\n.H...H....H...H.\n.t...t....t...t.\n.t...t....t...t.\nHHHHHHHHHHHHHHHH\nuuuuuuuuuuuuuuuu\n................",
+"mansion_door_arch_l":"............HHHH\n........HHHHtttt\n......SS.ttt....\n.....S.uu.......\n....S.u.........\n....Su..........\n..HS.u..........\n..HSu...........\n..HSu...........\n..Hgu...........\n..HSu...........\n..HSu...........\n..HSu...........\n..Hgu...........\n..HSu...........\n..HSu...........",
+"mansion_door_arch_r":"HHHH............\nttttHHHH........\n....ttt.SS......\n.......uu.S.....\n.........u.S....\n..........uS....\n..........u.SH..\n...........uSH..\n...........uSH..\n...........ugH..\n...........uSH..\n...........uSH..\n...........uSH..\n...........ugH..\n...........uSH..\n...........uSH..",
+"mansion_door_side_l":"..HSSHu.........\n..HSSHu.........\n..HSSHu.........\n..HSgHu.........\n..HSSHu.........\n..HSSHu.........\n..HSSHu.........\n..HSSHu.........\n..HSSHu.........\n..HSgHu.........\n..HSSHu.........\n..HSSHu.........\n..HSSHu.........\n..HSSHu.........\n..HSgHu.........\n..HSSHu.........",
+"mansion_door_side_r":".........uHSSH..\n.........uHSSH..\n.........uHSSH..\n.........uHgSH..\n.........uHSSH..\n.........uHSSH..\n.........uHSSH..\n.........uHSSH..\n.........uHSSH..\n.........uHgSH..\n.........uHSSH..\n.........uHSSH..\n.........uHSSH..\n.........uHSSH..\n.........uHgSH..\n.........uHSSH..",
+"mansion_door_panel":"kkhhhhhhhhhhhhkk\nkkhnnnnnnnnnnhkk\nkkhnnnnnnnnnnhkk\nkkhnnHHHdHHnnhkk\nkkhnnHHHdHHnnhkk\nkkhnnHHHdHHnnhkk\nkkhnnHHHdHHnnhkk\nkkhnnddddddnnhkk\nkkhnnHHHdHHnnhkk\nkkhnnHHHdHgnnhkk\nkkhnnHHHdHHnnhkk\nkkhnnHHHdHHnnhkk\nkkhnnHHHdHHnnhkk\nkkhnnHHHdHHnnhkk\nkkhnnnnnnnnnnhkk\nkkhnnnnnnnnnnhkk",
+"mansion_corridor_shadow":"HkkkkkkkkkkkkkkH\nHkkkkkkkkkkkkkkH\nHkkkkkkkkkkkkkkH\nHkkkkkkkkkkkkkkH\nHhhhhhhhhhhhhhhH\nHhhhhhhhhhhhhhhH\nHhhhhhhhhhhhhhhH\nHhhhhhhhhhhhhhhH\nHnnnnnnnnnnnnnnH\nHnnnnnnnnnnnnnnH\nHnnnnnnnnnnnnnnH\nHnnnnnnnnnnnnnnH\nHHHHHHHHHHHHHHHH\nHHHHHHHHHHHHHHHH\nHHHHHHHHHHHHHHHH\nHHHHHHHHHHHHHHHH",
+"mansion_corridor_threshold":"nnHnnnnnnnnnnHnn\nnnHnnnnnnnnnnHnn\nHHHHHHHHHHHHHHHH\nSSHSSSSSSSSSSHSS\nnnHnnnnnnnnnnHnn\nnnHnnnnnnnnnnHnn\nuuHuuuuuuuuuuHuu\nttHttttttttttHtt\nnnHnnnnnnnnnnHnn\nnnHnnnnnnnnnnHnn\nxxHxxxxxxxxxxHxx\nRRHRRRRRRRRRRHRR\nnnHnnnnnnnnnnHnn\nnnHnnnnnnnnnnHnn\nhhHhhhhhhhhhhHhh\nnnHnnnnnnnnnnHnn",
+"mansion_painting_frame":"................\n..uuuuuuuuuuuu..\n..uggggggggggu..\n..ugykkkkkkygu..\n..ugkkkkkkkkgu..\n..ugkkkHHkkkgu..\n..ugkkkHHkkkgu..\n..ugkkkHHkkkgu..\n..ugkkddddkkgu..\n..ugkkddddkkgu..\n..ugkxddddxkgu..\n..ugkkkkkkkkgu..\n..ugtkkkkkktgu..\n..uggggggggggu..\n..uuuuuuuuuuuu..\n................",
+"mansion_bookcase":"................\n.uuuuuuuuuuuuuu.\n.ukkkBkkkSkkkku.\n.ukxkBkRkSkdkku.\n.ukxkBkRkSkdkku.\n.ukkkkkkkkkkkku.\n.uttttttttttttu.\n.ukBkkkkgkRkkku.\n.ukBkkxkkkRkSku.\n.ukBkkxkkkRkSku.\n.ukkkkkkkkkkkku.\n.uttttttttttttu.\n.ukdkBkxkkSkgku.\n.ukdkBkxkkSkkku.\n.uuuuuuxuuuuuuu.\n.HHHHHHHHHHHHHH.",
+"mansion_side_table":"................\n................\n................\n................\n................\n................\n................\n..gggggggggggg..\n...uuuuuuuuuu...\n....uuuuuuuu....\n....uuHuuHuu....\n....uuuuuuuu....\n.....t....t.....\n.....t....t.....\n.....t....t.....\n.....t....t.....",
+"mansion_vase_flowers":"................\n................\n......rrRR......\n..........xx....\n.......RR.......\n.....rreerr.....\n.......ee.......\n.......ee.......\n.......ee.......\n......BBBB......\n.....bbbbbb.....\n......BBBB......\n......BBBB......\n......BBBB......\n......HHHH......\n................",
+"mansion_bust_statue":"................\n................\n................\n................\n.......ss.......\n......a..a......\n......aaaa......\n.....SaHHaS.....\n......aaaa......\n......aaSa......\n....ssaaaass....\n.....SSSSSS.....\n.....SSSSSS.....\n.....SSSSSS.....\n.....SSSSSS.....\n.....HHHHHH.....",
+"mansion_drape_banner":"................\n...gggggggggg...\n....RRRRRRRR....\n....xRxxxxdx....\n....xRxxxxdx....\n....xRxxxxdx....\n....xRxkkxdx....\n....xRkxxkdx....\n....xkxkkxkx....\n....xRxkkxdx....\n....xRxxxxdx....\n....xRxxxxdx....\n....xRxxxxdx....\n....x.x..x.x....\n.....x....x.....\n................",
+"mansion_chandelier":"...............gg...............\n...............yg...............\n...............gg...............\n...............gy...............\n...............gg...............\n...............gt...............\n........r......gt......r........\n.......gyg...gggggg...gyg.......\n....r...W......gt......W...r....\n...gyg..W..tttggggttt..W..gyg...\n....W...W..rgg.gt.ggr..W...W....\n....W...W.gygggrrgggyg.W...W....\n....W...gggWgggyygggWggg...W....\n....W...gggW...WW...Wggg...W....\n....g.ggg..W..gWWg..W..ggg.g....\n....gg..g..WtgtWWtgtW..g..gg....\n....g......gg..WW..gg......g....\n....g......g...gt...g......g....\n...........g...gt...g...........\n...........g...gg...g...........\n...............tt...............\n...............gg...............\n................................\n................................"
+};
+const A=Object.fromEntries(Object.entries(RAW).map(([n,s])=>[n,s.split("\n")]));
+const operations=[];
+const tileRect=(asset,x,y,width,height)=>operations.push({op:'tile_rect',asset,x,y,width,height});
+const place=(asset,x,y)=>operations.push({op:'place',asset,x,y});
+tileRect('mansion_wall_plain', 0, 0, 192, 240);
+tileRect('mansion_wall_damask_a', 0, 0, 48, 240);
+tileRect('mansion_wall_damask_b', 144, 0, 48, 240);
+tileRect('mansion_carpet_center', 64, 0, 64, 240);
+place('mansion_carpet_motif', 88, 40);
+place('mansion_carpet_motif', 96, 104);
+place('mansion_carpet_motif', 88, 176);
+tileRect('mansion_carpet_edge_l', 56, 0, 8, 240);
+tileRect('mansion_carpet_edge_r', 128, 0, 8, 240);
+tileRect('mansion_masonry_shadow', 48, 0, 8, 240);
+tileRect('mansion_masonry_shadow', 136, 0, 8, 240);
+
+for (const y of [72, 152, 224]) {
+  tileRect('mansion_molding_horizontal', 0, y, 56, 8);
+  tileRect('mansion_molding_horizontal', 136, y, 56, 8);
+}
+
+for (const x of [0, 40, 136, 176]) {
+  place('mansion_pillar_cap', x, 0);
+  for (const y of [16,32,48,64,80,96,112,128,144,160,176,192]) place('mansion_pillar_mid', x, y);
+  place('mansion_pillar_base', x, 208);
+}
+
+for (const [asset,x,y] of [
+  ['mansion_window_gothic_a',16,16], ['mansion_window_gothic_b',152,16],
+  ['mansion_window_gothic_b',16,88], ['mansion_window_gothic_a',152,88],
+  ['mansion_sconce_single',0,40], ['mansion_sconce_double',32,40],
+  ['mansion_sconce_double',144,40], ['mansion_sconce_single',176,40],
+  ['mansion_sconce_double',0,112], ['mansion_sconce_single',32,112],
+  ['mansion_sconce_single',144,112], ['mansion_sconce_double',176,112],
+  ['mansion_sconce_single',16,184], ['mansion_sconce_single',160,184],
+  ['mansion_painting_frame',16,56], ['mansion_painting_frame',160,56],
+  ['mansion_side_table',16,72], ['mansion_vase_flowers',16,64],
+  ['mansion_side_table',160,72], ['mansion_vase_flowers',160,64],
+  ['mansion_drape_banner',32,128], ['mansion_drape_banner',144,128],
+  ['mansion_bust_statue',40,168], ['mansion_side_table',40,184],
+  ['mansion_bust_statue',136,168], ['mansion_side_table',136,184],
+  ['mansion_chandelier',8,4], ['mansion_chandelier',152,4],
+  ['mansion_door_arch_l',48,208], ['mansion_door_arch_r',128,208],
+  ['mansion_door_side_l',48,224], ['mansion_door_side_r',128,224],
+  ['mansion_corridor_threshold',0,208], ['mansion_corridor_threshold',176,208],
+]) place(asset, x, y);
+
+for (const x of [0,16,32,144,160,176]) place('mansion_railing', x, 144);
+for (const x of [8,24,152,168]) {
+  place('mansion_bookcase', x, 160);
+  place('mansion_bookcase', x, 176);
+}
+for (const x of [64,80,96,112]) {
+  place('mansion_corridor_shadow', x, 208);
+  place('mansion_corridor_shadow', x, 224);
+}
+const sheet=document.createElement('canvas');sheet.width=256;sheet.height=240;
+const mc=sheet.getContext('2d',{alpha:false});mc.imageSmoothingEnabled=false;mc.fillStyle=C.black;mc.fillRect(0,0,256,240);
+function paint(rows,x0,y0,cx,cy,cw,ch){
+  for(let yy=0;yy<rows.length;yy++){
+    const row=rows[yy];
+    for(let xx=0;xx<row.length;xx++){
+      const col=PAL[row[xx]];if(!col)continue;
+      const x=x0+xx,y=y0+yy;
+      if(x<0||x>=192||y<0||y>=240)continue;
+      if(cw!=null&&(x<cx||x>=cx+cw||y<cy||y>=cy+ch))continue;
+      mc.fillStyle=col;mc.fillRect(x,y,1,1);
+    }
+  }
+}
+for(const op of operations){
+  const rows=A[op.asset];
+  if(op.op==='tile_rect'){
+    const tw=rows[0].length,th=rows.length;
+    for(let ty=0;ty<op.height;ty+=th)for(let tx=0;tx<op.width;tx+=tw)paint(rows,op.x+tx,op.y+ty,op.x,op.y,op.width,op.height);
+  }else paint(rows,op.x,op.y);
+}
+return Object.freeze({A,operations,sheet});
+})();
+const ROOF=(function(){
+const RAW={
+"roof_shingle_a":"bbbBBBBb\nbBbBBbBb\nBbbBBbbB\nbBBBBBBb\nbBbBBbBb\nBbbBBbbB\nbBBBBBBb\nBBBBBBBB",
+"roof_shingle_b":"BbBBBBBb\nbBBbBBbB\nBbBBbBBb\nbBBBBBBb\nBBbBBbBB\nbBBbBBbB\nBbBBBBBb\nBBBBBBBB",
+"roof_shingle_c":"bBBBBbBb\nBbBBbBBb\nbBbBBbBB\nBBBBBBBb\nbBBbBBbB\nBbBBbBBb\nbBBBBbBb\nBBBBBBBB",
+"roof_shingle_shadow":"hHBHHHhH\nhHhHHhHh\nHhhHHhhH\nhHHHHHHh\nhHhHHhHh\nHhhHHhhH\nhHHHHHHh\nHHHHHHHH",
+"roof_masonry_a":"BBBHBBBB\nBHBBBHBB\nBBBHBBBB\nHHHHHHHH\nBBBBHBBB\nBBHBBBHB\nBBBBHBBB\nHHHHHHHH",
+"roof_masonry_b":"BBBBBHBB\nBBHBBBHB\nBBBBBHBB\nHHHHHHHH\nBHBBBBBB\nBBBHBBBH\nBHBBBBBB\nHHHHHHHH",
+"roof_cobble_a":"aSaSaaSa\nSaaSaaSa\naSaaSaSa\nSaaSaaSa\naSaSaaSa\nSaaaSaSa\naSaaSaSa\nSaaSaaSa",
+"roof_cobble_b":"SaaSaaSa\naSaSaaSa\nSaaaSaSa\naSaaSaSa\nSaaSaaSa\naSaSaaSa\nSaaSaaSa\naSaaSaSa",
+"roof_ridge_trim":"xxxRxxxx\nRRRRRRRR\nBBBBBBBB\nBBBBBBBB\nHHHHHHHH\nBBBBBBBB\nBBBBBBBB\nHHHHHHHH",
+"roof_battlement_straight":"BBB..BBB..BBB...\nBBB..BBB..BBB...\nBBB..BBB..BBB...\nHHHHHHHHHHHHHHH.\nBBBBBBBBBBBBBBBB\nBBBBBBBBBBBBBBBB\nBBHBBBBHBBBBHBB.\nBBBBBBBBBBBBBBBB\nHHHHHHHHHHHHHHH.\nBBBBHBBBBHBBBBB.\nBBBBBBBBBBBBBBBB\nBBHBBBBHBBBBHBB.\nBBBBBBBBBBBBBBBB\nHHHHHHHHHHHHHHH.\nBBBBBBBBBBBBBBBB\nBBBBBBBBBBBBBBBB",
+"roof_battlement_corner_l":"BBB..BBB........\nBBB..BBB........\nBBB..BBB........\nHHHHHHHH........\nBBBBBBBB........\nBBBBBBBBBBBBBBBB\nBBHBBBBHBBBBHBB.\nBBBBBBBBBBBBBBBB\nHHHHHHHHHHHHHHH.\nBBBBHBBBBHBBBBB.\nBBBBBBBBBBBBBBBB\nBBHBBBBHBBBBHBB.\nBBBBBBBBBBBBBBBB\nHHHHHHHHHHHHHHH.\nBBBBBBBBBBBBBBBB\nBBBBBBBBBBBBBBBB",
+"roof_battlement_corner_r":"........BBB..BBB\n........BBB..BBB\n........BBB..BBB\n........HHHHHHHH\n........BBBBBBBB\nBBBBBBBBBBBBBBBB\nBBHBBBBHBBBBHBB.\nBBBBBBBBBBBBBBBB\nHHHHHHHHHHHHHHH.\nBBBBHBBBBHBBBBB.\nBBBBBBBBBBBBBBBB\nBBHBBBBHBBBBHBB.\nBBBBBBBBBBBBBBBB\nHHHHHHHHHHHHHHH.\nBBBBBBBBBBBBBBBB\nBBBBBBBBBBBBBBBB",
+"roof_window_gothic_tall":".....RRRRRR.....\n....RrrrrrR.....\n...RrrWWrrR.....\n..BRrWyyWrRB....\n.BBRrWyyWrRBB...\n.BBRrWyyWrRBB...\n.BBRrWyyWrRBB...\n.BBRrWyyWrRBB...\n.BBRrWyyWrRBB...\n.BBRrWyyWrRBB...\n.BBRrWyyWrRBB...\n.BBRrWyyWrRBB...\n.BBRrWyyWrRBB...\n.BBRrrrrrrRBB...\n.BBBHHHHHHBBB...\n..BBBBBBBBBB....",
+"roof_window_gothic_wide":"...RRRRRRRRRR...\n..RrrrrrrrrrR...\n.BRrWWrWWrWWrRB.\nBBRWyyWyyWyyWRBB\nBBRWyyWyyWyyWRBB\nBBRWyyWyyWyyWRBB\nBBRWyyWyyWyyWRBB\nBBRWyyWyyWyyWRBB\nBBRWyyWyyWyyWRBB\nBBRWyyWyyWyyWRBB\nBBRWyyWyyWyyWRBB\nBBRWyyWyyWyyWRBB\n.BRrWWrWWrWWrRB.\n.BRrrrrrrrrrrRB.\n..BHHHHHHHHHHB..\n...BBBBBBBBBB...",
+"roof_railing_straight":"................\n..S..S..S..S....\n..S..S..S..S....\n..S..S..S..S....\nSSSSSSSSSSSSSSSS\n..S..S..S..S....\n..S..S..S..S....\n..S..S..S..S....\nSSSSSSSSSSSSSSSS\n..S..S..S..S....\n..S..S..S..S....\n..S..S..S..S....\nSSSSSSSSSSSSSSSS\n................\n................\n................",
+"roof_railing_end_l":"................\n.SS.............\n.SS.............\n.SS.............\nSSSSSSSSSSSSSSSS\n.SS.............\n.SS.............\n.SS.............\nSSSSSSSSSSSSSSSS\n.SS.............\n.SS.............\n.SS.............\nSSSSSSSSSSSSSSSS\n................\n................\n................",
+"roof_railing_end_r":"................\n.............SS.\n.............SS.\n.............SS.\nSSSSSSSSSSSSSSSS\n.............SS.\n.............SS.\n.............SS.\nSSSSSSSSSSSSSSSS\n.............SS.\n.............SS.\n.............SS.\nSSSSSSSSSSSSSSSS\n................\n................\n................",
+"roof_spire_base":"......BB........\n.....BBBB.......\n....BBBBBB......\n...BBBBBBBB.....\n..BBBRRRBBB.....\n..BBBRRRBBB.....\n..BBBBBBBBBB....\n..BBBBBBBBBB....\n..BBBHHHHBBB....\n..BBBHHHHBBB....\n.BBBBHHHHBBBB...\n.BBBBHHHHBBBB...\n.BBBBBBBBBBBB...\n.BBBBBBBBBBBB...\nHHHHHHHHHHHHHH..\nBBBBBBBBBBBBBB..",
+"roof_spire_mid":"......RR........\n.....RBBR.......\n....RBBBBR......\n...RBBBBBBR.....\n...BBBBBBBB.....\n..BBBBBBBBBB....\n..BBBBBBBBBB....\n..BBBHHHHBBB....\n..BBBHHHHBBB....\n..BBBHHHHBBB....\n..BBBBBBBBBB....\n..BBBBBBBBBB....\n...BBBBBBBB.....\n....BBBBBB......\n.....BBBB.......\n......BB........",
+"roof_spire_cap":".......R........\n......RRR.......\n......RRR.......\n.....RBBBR......\n.....BBBBB......\n....RBBBBBR.....\n....BBBBBBB.....\n...RBBBBBBBR....\n...BBBBBBBBB....\n...BBBBBBBBB....\n..RBBBBBBBBBR...\n..BBBBBBBBBBB...\n..BBBBHHHBBBB...\n..BBBHHHHHBBB...\n..BBBHHHHHBBB...\n...BBHHHHHBB....",
+"roof_chimney_stack":"...BBBBBBBB.....\n..BBBBBBBBBB....\n..BBHBBBBHBB....\n..BBBBBBBBBB....\n..BBBBBBBBBB....\n..BBHBBBBHBB....\n..BBBBBBBBBB....\n..BBBBBBBBBB....\n..BBHBBBBHBB....\n..BBBBBBBBBB....\n..BBBBBBBBBB....\n..BBHBBBBHBB....\n..BBBBBBBBBB....\n..BBBHHHHBBB....\n..BBBHHHHBBB....\n...BBHHHHBB.....",
+"roof_finial_cross":".......a........\n.......a........\n.......a........\n...aaaaSaaaa....\n.......a........\n.......a........\n.......a........\n......aaa.......\n.....aSaSa......\n......aaa.......\n.......a........\n......BBB.......\n.....BBBBB......\n.....BBBBB......\n....BBBBBBB.....\n....BBBBBBB.....",
+"roof_gargoyle_left":"................\n.......HH.......\n......HSSH......\n.....HSSSH......\n....HHSSH.......\n..HHHSSS........\n.HSSSSS....HH...\nHSSSSSH...HSSH..\nHSSSHH...HSSSSH.\n.HHH.....HSSSSH.\n.........HSSSHH.\n.........HHHHBB.\n......BBBBBBBBB.\n.....BBBBBBBBBB.\n....BBBBBBBBBBB.\n...BBBBBBBBBBBB.",
+"roof_gargoyle_right":"................\n.......HH.......\n......HSSH......\n......HSSSH.....\n.......HSSHHH...\n........SSSHHH..\n...HH....SSSSSH.\n..HSSH...HSSSSSH\n.HSSSSH...HHSSSH\n.HSSSSH.....HHH.\n.HHSSSH.........\n.BBHHHH.........\n.BBBBBBBBB......\nBBBBBBBBBBB.....\nBBBBBBBBBBBB....\nBBBBBBBBBBBBB...",
+"roof_lantern_hanging":"......uu........\n......uu........\n......uu........\n.....uRRu.......\n....RRrrRR......\n...RrrrrrrR.....\n...RrWyyWrR.....\n...RrWyyWrR.....\n...RrWyyWrR.....\n...RrWyyWrR.....\n...RrWyyWrR.....\n...RrWyyWrR.....\n...RrrrrrrR.....\n....RRrrRR......\n.....uRRu.......\n......uu........",
+"roof_lantern_wall":"...HHH..........\n..HSSSH.........\n..HSSSH.........\n...HHHuu........\n.....uRRu.......\n....RRrrRR......\n...RrrrrrrR.....\n...RrWyyWrR.....\n...RrWyyWrR.....\n...RrWyyWrR.....\n...RrWyyWrR.....\n...RrrrrrrR.....\n....RRrrRR......\n.....uRRu.......\n......uu........\n......uu........",
+"gate_arch_top":"....BBBBBBBB....\n..BBBHHHHHBBB...\n.BBHH......HHBB.\nBBH..........HBB\nBH............HB\nBH............HB\nBH............HB\nBH............HB\nBH............HB\nBH............HB\nBBH..........HBB\n.BBHH......HHBB.\n..BBBHHHHHBBB...\n....BBBBBBBB....\n................\n................",
+"gate_bar_panel":"S..S..S..S..S..S\nS..S..S..S..S..S\nS..S..S..S..S..S\nS..S..S..S..S..S\nS..S..S..S..S..S\nS..S..S..S..S..S\nS..S..S..S..S..S\nS..S..S..S..S..S\nS..S..S..S..S..S\nS..S..S..S..S..S\nS..S..S..S..S..S\nS..S..S..S..S..S\nSSSSSSSSSSSSSSSS\n.S.S.S.S.S.S.S..\n..S.S.S.S.S.S...\n...S.S.S.S.S....",
+"gate_pillar":"....BBBBBBBB....\n...BBBBBBBBBB...\n...BBHBBBBHBB...\n...BBBBBBBBBB...\n...BBBBBBBBBB...\n...BBHBBBBHBB...\n...BBBBBBBBBB...\n...BBBBBBBBBB...\n...BBHBBBBHBB...\n...BBBBBBBBBB...\n...BBBBBBBBBB...\n...BBHBBBBHBB...\n...BBBBBBBBBB...\n...BBBBBBBBBB...\n...BBBBBBBBBB...\n...BBBBBBBBBB...",
+"gate_pillar_cap":"..BBBBBBBBBBBB..\n.BBBBBBBBBBBBBB.\nBBBBBBBBBBBBBBBB\nBBBBBHHHHBBBBBBB\nBBBBHHHHHHBBBBBB\nBBBBBBBBBBBBBBBB\n..BBBBBBBBBBBB..\n...BBBBBBBBBB...\n....BBBBBBBB....\n....BBBBBBBB....\n....BBBBBBBB....\n....BBBBBBBB....\n....BBBBBBBB....\n....BBBBBBBB....\n....BBBBBBBB....\n....BBBBBBBB....",
+"gate_fence_section":".S....S....S....\n.SS..SS..SS..S..\n..S..S....S..S..\n..S..S....S..S..\n..S..S....S..S..\n..S..S....S..S..\n..S..S....S..S..\n..S..S....S..S..\n..S..S....S..S..\n..S..S....S..S..\n..S..S....S..S..\n..S..S....S..S..\n..S..S....S..S..\nSSSSSSSSSSSSSSSS\n................\n................",
+"gate_fence_finial":"....S....S......\n...SS...SS......\n..S.S..S.S......\n..S.S..S.S......\n..S.S..S.S......\n..S.S..S.S......\n..S.S..S.S......\n..S.S..S.S......\n..S.S..S.S......\n..S.S..S.S......\n..S.S..S.S......\n..S.S..S.S......\n..S.S..S.S......\nSSSSSSSSSSSSSSSS\n................\n................",
+"gate_approach_stone":"BBBBBHHHBBBBBHHH\nBBBBBBBBBBBBBBBB\nBBHBBBBHBBBBHBB.\nHHHHHHHHHHHHHHHH\nBBBBBBBBBBBBBBBB\nBBBHBBBBHBBBBHB.\nBBBBBBBBBBBBBBBB\nHHHHHHHHHHHHHHHH\nBBBBBBBBBBBBBBBB\nBBHBBBBHBBBBHBB.\nBBBBBBBBBBBBBBBB\nHHHHHHHHHHHHHHHH\nBBBBBBBBBBBBBBBB\nBBBHBBBBHBBBBHB.\nBBBBBBBBBBBBBBBB\nHHHHHHHHHHHHHHHH",
+"gate_approach_transition":"aSaSaaSaSSSaaSaS\nSaaSaaSaSaSaaSaa\naSaaSaSaSSaaSaSa\nSaaSaaSaSaSaaSaa\nBBBBBBBBBBBBBBBB\nBBBHBBBBHBBBBHBB\nBBBBBBBBBBBBBBBB\nHHHHHHHHHHHHHHHH\nBBBBBBBBBBBBBBBB\nBBBHBBBBHBBBBHBB\nBBBBBBBBBBBBBBBB\nHHHHHHHHHHHHHHHH\naSaSaaSaSaSaaSaS\nSaaSaaSaSSSaaSaa\naSaaSaSaSaSaaSaS\nSaaSaaSaSaSaaSaa",
+"mansion_ext_wall_panel":"BBBBBBBBBBBBBBBB\nBBHBBBBHBBBBHBB.\nBBBBBBBBBBBBBBBB\nHHHHHHHHHHHHHHHH\nBBBBBBBBBBBBBBBB\nBBBHBBBBHBBBBHB.\nBBBBBBBBBBBBBBBB\nHHHHHHHHHHHHHHHH\nBBBBBBBBBBBBBBBB\nBBHBBBBHBBBBHBB.\nBBBBBBBBBBBBBBBB\nHHHHHHHHHHHHHHHH\nBBBBBBBBBBBBBBBB\nBBBHBBBBHBBBBHB.\nBBBBBBBBBBBBBBBB\nHHHHHHHHHHHHHHHH",
+"mansion_ext_window_tall":".....RRRRRR.....\n....RrrrrrR.....\n...RrrWWrrR.....\n..BRrWyyWrRB....\n.BBRrWyyWrRBB...\n.BBRrWyyWrRBB...\n.BBRrWyyWrRBB...\nBBBRrWyyWrRBBB..\nBBBRrWyyWrRBBB..\nBBBRrWyyWrRBBB..\nBBBRrWyyWrRBBB..\n.BBRrWyyWrRBB...\n.BBRrWyyWrRBB...\n.BBRrrrrrrRBB...\n.BBBHHHHHHBBB...\n..BBBBBBBBBB....",
+"mansion_ext_buttress":"......BB........\n.....BBBB.......\n....BBBBBB......\n....BBBBBB......\n...BBBBBBBB.....\n...BBBBBBBB.....\n..BBBBHHBBBB....\n..BBBBHHBBBB....\n.BBBBBHHBBBBB...\n.BBBBBHHBBBBB...\nBBBBBBHHBBBBBB..\nBBBBBBHHBBBBBB..\nBBBBBBHHBBBBBB..\nBBBBBBHHBBBBBB..\nBBBBBBHHBBBBBB..\nBBBBBBBBBBBBBB..",
+"mansion_ext_balcony_floor":"BBBBBBBBBBBBBBBB\nBBBBBBBBBBBBBBBB\nHHHHHHHHHHHHHHHH\nBBBBBBBBBBBBBBBB\nBBBBBBBBBBBBBBBB\nHHHHHHHHHHHHHHHH\n.S.S.S.S.S.S.S..\n.S.S.S.S.S.S.S..\n.S.S.S.S.S.S.S..\nSSSSSSSSSSSSSSSS\n.S.S.S.S.S.S.S..\n.S.S.S.S.S.S.S..\n.S.S.S.S.S.S.S..\nSSSSSSSSSSSSSSSS\n................\n................",
+"mansion_ext_chimney_tall":"...BBBBBBBB.....\n..BBBBBBBBBB....\n..BBHBBBBHBB....\n..BBBBBBBBBB....\n..BBBBBBBBBB....\n..BBHBBBBHBB....\n..BBBBBBBBBB....\n..BBBBBBBBBB....\n..BBHBBBBHBB....\n..BBBBBBBBBB....\n..BBBBBBBBBB....\n..BBHBBBBHBB....\n..BBBBBBBBBB....\n..BBBBBBBBBB....\n..BBBHHHHBBB....\n...BBHHHHBB.....",
+"mansion_ext_lantern_window":".....RRRRRR.....\n....RrrrrrR.....\n...RrWWWWrR.....\n...RrWyyWrR.....\n...RrWyyWrR.....\n...RrWyyWrR.....\n...RrWyyWrR.....\n....RrrrrR......\n.....uRRu.......\n....RRrrRR......\n...RrrrrrrR.....\n...RrWyyWrR.....\n...RrWyyWrR.....\n...RrrrrrrR.....\n....RRrrRR......\n.....uRRu.......",
+"mansion_ext_roofline_trim":"xxxRxxxRxxxRxxxR\nRRRRRRRRRRRRRRRR\nBBBBBBBBBBBBBBBB\nBBBBBBBBBBBBBBBB\nBBHBBBBHBBBBHBB.\nBBBBBBBBBBBBBBBB\nHHHHHHHHHHHHHHHH\nBBBBBBBBBBBBBBBB\nBBBBBBBBBBBBBBBB\nBBHBBBBHBBBBHBB.\nBBBBBBBBBBBBBBBB\nHHHHHHHHHHHHHHHH\n................\n................\n................\n................",
+"mansion_ext_skyline_spires_a":"......B.....B...\n.....BBB...BBB..\n....BBBBB.BBBBB.\n....BBBBBBBBBBB.\n...BBBBBBBBBBBBB\n...BBBBHBBBBBBBB\n..BBBBHHHBBBBBBB\n..BBBHHHHHBBBBBB\n.BBBHHHHHHHBBBBB\n.BBBHHHHHHHBBBBB\nBBBHHHHHHHHHBBBB\nBBBHHHHHHHHHBBBB\nHHHHHHHHHHHHHHHH\nhhhhhhhhhhhhhhhh\nnnnnnnnnnnnnnnnn\nnnnnnnnnnnnnnnnn",
+"mansion_ext_skyline_spires_b":"...B.......B....\n..BBB.....BBB...\n.BBBBB...BBBBB..\n.BBBBBB.BBBBBB..\nBBBBBBBBBBBBBBB.\nBBBBBBHBBBBBBBB.\nBBBBBHHHBBBBBBB.\nBBBBHHHHHBBBBBB.\nBBBHHHHHHHBBBBB.\nBBBHHHHHHHBBBBB.\nBBHHHHHHHHHBBBB.\nBBHHHHHHHHHBBBB.\nHHHHHHHHHHHHHHH.\nhhhhhhhhhhhhhhh.\nnnnnnnnnnnnnnnn.\nnnnnnnnnnnnnnnn.",
+"roof_scarlet_moon_64":"................................................................\n..........................xxxxxxxxxxxx..........................\n......................xxxxxxxxxxxxxxxxxxxx......................\n....................xxxxxxxRRRRRRRRRRxxxxxxx....................\n..................xxxxxRRzRRRRRRRzRRRRRRRxxxxx..................\n................xxxxRRRRRRRrrrrrrrrrrRRRRRRRxxxx................\n..............xFFxzRRRFFrrrrrFFrrrrrFFrrrzRRRRxxxx..............\n.............xFFRRRRRFFrrrrrFFrrrrrFFrrrrrrRRRRRxxx.............\n............xFzRRRRrFFrrrrrFFrrrrrFFrrrrrrrrrRRRRxxx............\n...........xFFRRRrrFFrrrrrFFrrrrrFFrrrrrrrrrrrrRRRxxx...........\n..........xFFRRRrrFFrrrrrFFrrrrrFFrrrrrFrrrrrrrrzRRxxx..........\n.........xFFRRrrrFFxrrrrFFrrrrrFFrrrrrFFrrrRrrrrrrRRRxx.........\n........xFFRRrrrxxRxxxxFFrrrrrFFrrrrrFFrRRxRRRRrrrrRRxxx........\n.......xFFRRrrrRRRRRRRxxrrrrrFFrrrrrFFrRxxxxxRRRrrrrRRxxx.......\n......xxFRRrrrRRRRRRRRRxxrrrFFrrrrrFFrrRxxxxxRRRrrrrrRRxxx......\n......xxRRRrrxRRRRRRRRRxxxrFFrrrrrFFrrrxxxxxxxRRrrrrrRRRxx......\n.....xxRRRrrFxRRRRRRRRRxxxFFrrrrrFFrrrRRxxxxxRRRRrrrrrRRRxx.....\n.....xxRRrrFFRRRRRRRRRRRxxFrrrrrFFrrrrrRxxxxxRRRrrrrrrrzRxx.....\n....xxRRRrFFxxRRRRRRRRRxxxxrrrrFFrrrrrFRRRxRRRRRrrrrrrrRRRxx....\n....xxRRrFFrrxRRRRRRRRRxxxrrrrFFrrrrrFFRRRRRRRRRrrrrrrrrRRxx....\n...xxRRRzFrrrxRRRRRRRRRxxxrrrFFrrrrrFFrrRRRRRRRrrrrrrrrrRRRxx...\n...xxRRrFrrrrxxRRRRRRRxxxxrrFFrrrrrFFrrrrrrRrrrrrrrrrrrrrRRxx...\n..xxxRRrrrrrrFxxxxRxxxxxxrrFFrrrrrFFrrrrrrrrrrrrrrrrrrrrrRRxxx..\n..xxRRrrrrrrFFrxxxxxxxxxrrFFrrrrrFFrrrrrrrrrrrrrrrrrrrrrrrRRxx..\n..xxRRrrrrrFFrrrxxxxxxxrrFFrrrrrFFrrrrrFrrrrrrrrrrrrrrrrrrRRxx..\n..xxRRrrrrFFrrrrrFFxrrrrFFrrrrrFFrrrxrFFrrrrrrrrrrrrrrrrrrRRxx..\n.xxxRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrxxxxxrrrrrrrrrrrrrrrrrrrRRxxx.\n.xxRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrxxxxxrrrrrrrrrrrrrrrrrrrrRRxx.\n.xxRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrxxxxxxxrrrrrrrrrrrrrrrrrrzRRxx.\n.xxRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrxxxxxrrrrrrrrrrrrrrrrrrrrRRxx.\n.xxRRrzrrrrrrrrrrrrrrrrrrrrrrrrrrrxxxxxrrrrrrrrrrrrrrrrrrrrRRxx.\n.xxRRrrrrrrrrrRrrrrrrrrrrrrrrrrrrrrrxrrrrrrrrrrxrrrrrrrrrrrRRxx.\n.xxRRrrrrrrrRRRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrxxRxxxxrrrrrrrrRRxx.\n.xxRRrrrrrrrRRRRRrrrrrrrrrrrrrrrrrrrrrrrrrrxRRRRRxxxrrrrrrrRRxx.\n.xxRRrrrrrrRRRRRRRrrrrrrrrrrrrrrrrrrrrrrrrxRRRRRRRxxxrrrrrrRRxx.\n.xxRRrrrrrrrRRRRRrrrrrrrrrrrrrrrrrrrrrrrrrxRRRRRRRxxxrrrrrrRRxx.\n.xxRRrrrrrrrRRRRRrrrrrrrrrrrrrrrrrrrrrrrrrRRRRRRRRRxxrrrrrrRRxx.\n.xxxRRrrrrrrrrRrrrrrrrrrrrrrrrrrrrrrrrrrrxxRRRRRRRxxxxrrrrRRxxx.\n..xxRRrrrrrrrrrrrrrrrrrrrRrrrrrrrrrrrrrrrrxRRRRRRRxxxrrrrrRRxx..\n..xxRRrrrrrrrrrrrrrrrrrRxRRRrrrrrrrrrrrrrrxxRRRRRxxxxrrrrrRRxx..\n..xxRRrrrrrrrrrrrrrrrrRxxxRRRrrrrrrrrrrrrrxxxxRxxxxxxrrrrrRRxx..\n..xxxRRrrrrrrrrrrrrrrrxxxxxRRrrrrrrrrrrrrrrxxxxxxxxxrrrrrRRxxx..\n...xxRRrrrrrrrrrrrrrrRRxxxRRRRrrrrrrrrrrrrrrxxxxxxxrrrrrrRRxx...\n...xxRRRrrrrrrrrrrrrrrRRxRRRRrrrrrrrrrrrrrrrrrrxrrrrrrrrRRRxx...\n....xxRRrrrrrrrrrrrrrrRRRRRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrRRxx....\n....xxRRRrrrrrrrrrrrrrrRRRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRxx....\n.....xxRRrrrrrrrrrrrrrrrrRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRxx.....\n.....xxRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRxx.....\n......xxRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRxx......\n......xxxRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRxxx......\n.......xxxRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrzRRxxx.......\n........xxxRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRxxx........\n.........xxRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRxx.........\n..........xxxRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRxxx..........\n...........xxxRRRzrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRxxx...........\n............xxxRRRRrrrrrrrrrrrrrrrrrrrrrrrrrrRRRRxxx............\n.............xxxRRRRRrrrrrrrrrrrrrrrrrrrrrrRRRRRxxx.............\n..............xxxxRRRRRrrrrrrrrrrrrrrrrrrRRRRRxxxx..............\n................xxxxRRRRRRRrrrzrrrrrrRRRRRRRxxxx................\n..................xxxxxRRRRRRRRRRRRRRRRRRxxxxx..................\n....................xxxxxxxRRRRRRRRRRxxxxxxx....................\n......................xxxxxxxxxxxxxxxxxxxx......................\n..........................xxxxxxxxxxxx..........................\n................................................................"
+};
+const A=Object.fromEntries(Object.entries(RAW).map(([n,s])=>[n,s.split("\n")]));
+const operations=[];
+const place=(asset,x,y)=>operations.push({op:'place',asset,x,y});
+place('roof_scarlet_moon_64',64,4);
+for(const [n,x,y] of [['mansion_ext_skyline_spires_a',8,24],['mansion_ext_skyline_spires_b',40,28],['mansion_ext_skyline_spires_a',132,30],['mansion_ext_skyline_spires_b',152,24]]) place(n,x,y);
+for(let x=24;x<168;x+=16) place('roof_battlement_straight',x,78);
+for(let x=16;x<176;x+=16) place('roof_railing_straight',x,94);
+for(const bx of [0,160]){
+  place('roof_spire_base',bx+8,104);place('roof_spire_mid',bx+8,88);place('roof_spire_cap',bx+8,72);place('roof_window_gothic_tall',bx+8,120);
+}
+for(const x of [8,24,144,160]) place('gate_pillar',x,160);
+for(const x of [24,40,56,120,136,152]) place('gate_fence_section',x,188);
+for(const x of [56,72,88,104]) place('gate_bar_panel',x,144);
+place('gate_arch_top',72,128);
+place('roof_gargoyle_left',12,184);place('roof_gargoyle_right',164,184);
+for(const x of [20,148]) place('roof_lantern_hanging',x,152);
+for(const x of [0,16,176]) place('mansion_ext_wall_panel',x,208);
+for(const [n,x,y] of [['mansion_ext_skyline_spires_a',192,28],['mansion_ext_skyline_spires_b',216,24],['mansion_ext_skyline_spires_a',232,30]]) place(n,x,y);
+for(let x=184;x<256;x+=16) place('roof_battlement_straight',x,78);
+for(let x=176;x<256;x+=16) place('roof_railing_straight',x,94);
+place('roof_spire_base',232,104);place('roof_spire_mid',232,88);place('roof_spire_cap',232,72);place('roof_window_gothic_tall',232,120);
+for(const x of [192,208,224,240]){place('gate_approach_stone',x,192);place('mansion_ext_wall_panel',x,208);}
+const sheet=document.createElement('canvas');sheet.width=256;sheet.height=240;
+const rc=sheet.getContext('2d',{alpha:false});rc.imageSmoothingEnabled=false;
+for(let y=0;y<240;y++){rc.fillStyle=PAL[y<40?'n':y<80?'d':y<120?'h':'k'];rc.fillRect(0,y,256,1)}
+function paint(rows,x0,y0){
+  for(let yy=0;yy<rows.length;yy++){
+    const row=rows[yy];
+    for(let xx=0;xx<row.length;xx++){
+      const col=PAL[row[xx]];if(!col)continue;
+      const x=x0+xx,y=y0+yy;
+      if(x<0||x>=256||y<0||y>=240)continue;
+      rc.fillStyle=col;rc.fillRect(x,y,1,1);
+    }
+  }
+}
+for(const op of operations) paint(A[op.asset],op.x,op.y);
+rc.globalAlpha=180/255;rc.fillStyle=PAL.k;rc.fillRect(48,156,96,84);rc.globalAlpha=1;
+for(let x=56;x<136;x+=16) paint(A[(x>>4)%2===0?'roof_cobble_a':'roof_cobble_b'],x,224);
+for(const x of [32,144]) paint(A.roof_lantern_wall,x,204);
+return Object.freeze({A,operations,sheet});
+})();
 function blitRows(rows,s){const h=rows.length,w=rows[0].length;for(let yy=0;yy<h;yy++){const y0=Math.round((yy-h/2)*s),y1=Math.round((yy+1-h/2)*s),dh=y1-y0;if(dh<=0)continue;const row=rows[yy];for(let xx=0;xx<w;xx++){const col=PAL[row[xx]];if(!col)continue;const x0=Math.round((xx-w/2)*s),x1=Math.round((xx+1-w/2)*s),dw=x1-x0;if(dw<=0)continue;rect(x0,y0,dw,dh,col)}}}
 function blit(rows,x,y,s=1,flip=false){if(!rows||!rows.length)return;s=Math.max(1,s|0);ctx.save();ctx.translate(Math.round(x),Math.round(y));if(flip)ctx.scale(-1,1);blitRows(rows,s);ctx.restore()}
+function stamp(rows,x,y){x=Math.round(x);y=Math.round(y);for(let yy=0;yy<rows.length;yy++){const row=rows[yy];for(let xx=0;xx<row.length;xx++){const col=PAL[row[xx]];if(col)rect(x+xx,y+yy,1,1,col)}}}
+function stampSlice(rows,dx,dy,sx,sy,sw,sh){dx=Math.round(dx);dy=Math.round(dy);for(let yy=0;yy<sh;yy++){const row=rows[sy+yy];if(!row)continue;for(let xx=0;xx<sw;xx++){const col=PAL[row[sx+xx]];if(col)rect(dx+xx,dy+yy,1,1,col)}}}
+function stampScale(rows,x,y,s){s=Math.max(1,s|0);x=Math.round(x);y=Math.round(y);for(let yy=0;yy<rows.length;yy++){const row=rows[yy];for(let xx=0;xx<row.length;xx++){const col=PAL[row[xx]];if(col)rect(x+xx*s,y+yy*s,s,s,col)}}}
+function shrineFill(a,b,x,y,w,h){x=Math.round(x);y=Math.round(y);w=Math.round(w);h=Math.round(h);const A=SHRINE[a],B=SHRINE[b]||A;for(let yy=0;yy<h;yy+=8)for(let xx=0;xx<w;xx+=8)stampSlice(((xx^yy)&8)?B:A,x+xx,y+yy,0,0,Math.min(8,w-xx),Math.min(8,h-yy))}
+function shrineStrip(rows,x,y,w,h,edge,inner){x=Math.round(x);y=Math.round(y);w=Math.round(w);h=Math.round(h);const tw=rows[0].length,th=rows.length;for(let yy=0;yy<h;yy+=th){const dh=Math.min(th,h-yy);if(edge>0)stampSlice(rows,x,y+yy,0,0,edge,dh);for(let xx=edge;xx<w-edge;xx+=inner)stampSlice(rows,x+xx,y+yy,edge,0,Math.min(inner,w-edge-xx),dh);if(edge>0&&w>edge)stampSlice(rows,x+w-edge,y+yy,tw-edge,0,edge,dh)}}
+function shrineHall(morning,x,y,mids,opt={}){
+  x=Math.round(x);y=Math.round(y);
+  const p=morning?'_morning':'_night',cols=2+mids;
+  stamp(SHRINE['shrine_roof_left'+p],x,y);
+  for(let i=0;i<mids;i++)stamp(SHRINE['shrine_roof_mid'+p],x+16+i*16,y);
+  stamp(SHRINE['shrine_roof_right'+p],x+16+mids*16,y);
+  const wallY=y+13,wall=SHRINE['shrine_wall'+p],doorC=Math.floor((cols-1)/2);
+  for(let row=0;row<2;row++)for(let c=0;c<cols;c++)stamp(wall,x+c*16,wallY+row*16);
+  const win=SHRINE['shrine_window'+p];
+  if(1!==doorC)stamp(win,x+16,wallY);
+  if(cols-2!==doorC&&cols-2!==1)stamp(win,x+(cols-2)*16,wallY);
+  stamp(SHRINE['shrine_door'+p],x+doorC*16,wallY+8);
+  if(opt.lanterns!==false){stamp(SHRINE['shrine_lantern'+p],x-12,wallY+12);stamp(SHRINE['shrine_lantern'+p],x+cols*16,wallY+12)}
+  if(opt.stairs!==false){
+    const sx=x+(doorC-1)*16,sy=wallY+32,st=SHRINE['shrine_stairs'+p];
+    for(let c=0;c<3;c++)stamp(st,sx+c*16,sy);
+    for(let c=0;c<3;c++)stamp(st,sx+c*16,sy+16);
+    if(opt.approach!==false)shrineStrip(SHRINE['shrine_approach'+p],sx,sy+32,48,32,3,10);
+  }
+}
+function uiRepeatEdge(rows,x,y,span,vert){let i=0;while(i<span){const n=Math.min(8,span-i);if(vert)stampSlice(rows,x,y+i,0,0,8,n);else stampSlice(rows,x+i,y,0,0,n,8);i+=n}}
+function uiMenuFrame(x,y,w,h){x=Math.round(x);y=Math.round(y);w=Math.round(w);h=Math.round(h);rect(x,y,w,h,PAL.k);stamp(UI.ui_frame_corner_tl,x,y);stamp(UI.ui_frame_corner_tr,x+w-8,y);stamp(UI.ui_frame_corner_bl,x,y+h-8);stamp(UI.ui_frame_corner_br,x+w-8,y+h-8);if(w>16){uiRepeatEdge(UI.ui_frame_edge_top,x+8,y,w-16,false);uiRepeatEdge(UI.ui_frame_edge_bottom,x+8,y+h-8,w-16,false)}if(h>16){uiRepeatEdge(UI.ui_frame_edge_left,x,y+8,h-16,true);uiRepeatEdge(UI.ui_frame_edge_right,x+w-8,y+8,h-16,true)}stamp(UI.ui_frame_title_tab,x+Math.floor((w-32)/2),y)}
 function anim(name){const f=(frame>>4)&1;if(name==='reimu'){if(state==='play'&&player){if(player.focus)return 'reimuFocus';if(keys.z&&!player.death)return 'reimuFire'}return f?'reimu':'reimuB'}if(name==='cirno'){if((boss&&boss.who==='cirno'&&bullets.some(b=>b.frozen))||(state==='credits'&&Math.floor(stateTick/300)===0&&stateTick%300>120))return 'cirnoFreeze';return f?'cirno':'cirnoB'}if(name==='marisa'){if(boss&&boss.who==='marisa'&&(boss.data.id==='m3'||boss.data.id==='m4'))return 'marisaAttack';return f?'marisa':'marisaB'}if(name==='sakuya'){if((boss&&boss.who==='sakuya'&&bullets.some(b=>b.frozen))||(state==='credits'&&Math.floor(stateTick/300)===3&&stateTick%300>90&&stateTick%300<170))return 'sakuyaStop';return f?'sakuya':'sakuyaB'}if(name==='remilia'){if(boss&&boss.who==='remilia'&&boss.data.id==='r5')return 'remiliaFinal';return f?'remilia':'remiliaB'}return name}
 const GOHEI_OFF={reimu:[8,-5],reimuB:[7,-5],reimuFocus:[8,-5],reimuFire:[9,-4]};
 function sprite(name,x,y,s=1,flip=false){s=Math.max(1,s|0);const pose=anim(name);const rows=SPRITES[pose]||SPRITES[name]||SPRITES.fairyIce;const held=pose==='reimuFire'?SPRITES.reimuGoheiFire:GOHEI_OFF[pose]?SPRITES.reimuGohei:null;ctx.save();ctx.translate(Math.round(x),Math.round(y));if(flip)ctx.scale(-1,1);if(held){const o=GOHEI_OFF[pose];ctx.save();ctx.translate(o[0]*s,o[1]*s);blitRows(held,s);ctx.restore()}blitRows(rows,s);ctx.restore()}
@@ -1339,48 +1860,39 @@ function cloud(x,y,w,c){rect(x+4,y,w-8,3,c);rect(x,y+3,w,4,c);rect(x+6,y+7,w-12,
 function dimField(w,level){if(level>=2){rect(0,80,w,160,C.black);return}for(let y=0;y<240;y+=2)for(let x=y%4;x<w;x+=4)rect(x,y,2,1,C.black)}
 function roof(y,w=192){rect(0,y,w,240-y,'#12142d');for(let x=0;x<w;x+=16){rect(x,y,14,3,C.stone);rect(x+4,y+3,4,14,'#3a4270');rect(x,y+17,16,3,C.blue)}for(let yy=y+22;yy<240;yy+=6)for(let xx=0;xx<w;xx+=12)rect(xx+(yy%12?6:0),yy,10,1,'#292138')}
 function drawMistyLake(t,w,dim){
-  rect(0,0,w,240,C.black);stars(w,72);moon(Math.floor(w*.68),34,22,false);
-  for(let x=0;x<w;x+=6){const h=7+(x*13)%12;rect(x,66-h,6,h,'#12182c')}
-  rect(0,66,w,174,'#0a1428');
-  for(let row=0;row<20;row++){const yy=68+row*8,ox=Math.floor(t*.22+row*9)%16;for(let x=-16;x<w;x+=16){rect(x+ox+2,yy+2,8,1,row%3===0?'#3a5080':'#1e3058');if(row%2===0)rect(x+ox+8,yy+5,5,1,'#152238')}}
-  const mx=Math.floor(w*.68);for(let i=0;i<18;i++){const yy=72+i*8+(Math.floor(t/8)+i)%3,hw=Math.max(2,12-i);if(yy<240)rect(mx-hw+(i%2),yy,hw*2,1,i%2?'#5a6088':'#3a4068')}
-  for(let i=0;i<4;i++){const yy=82+i*34+Math.floor(Math.sin((t+i*40)/40)*3);for(let x=0;x<w;x+=3)if(((x+i*7)^Math.floor(t/16))&3)rect(x,yy,2,1,'#2a3a58')}
-  for(const side of [0,1]){const x0=side?w-14:0;for(let yy=52;yy<240;yy+=6){rect(x0+side*3,yy,4,5,'#1c3040');rect(x0+2,yy-(yy%5),1,7,'#3a6a58');if(yy%18===0){rect(x0+1,yy+2,6,3,C.cyan);rect(x0+2,yy+3,4,1,C.white)}}}
+  ctx.drawImage(LAKE.sheet,0,0,w,240,0,0,w,240);
   if(dim)dimField(w,dim);
 }
 function drawForest(t,w,dim){
-  rect(0,0,w,240,C.black);stars(w,240);moon(Math.floor(w*.72),28,16,false);
-  for(let i=0;i<11;i++){const x=18+i*15,h=18+(i*7)%16;for(let k=0;k<4;k++)rect(x-8+k*2,92-h+k*5,20-k*4,6,'#121c22')}
-  const scroll=Math.floor(t*.3)%32;
-  for(const side of [0,1])for(let col=0;col<2;col++){const x=side?w-18-col*10:col*10;for(let y=-32;y<260;y+=32){const yy=y+scroll;rect(x+4,yy,6,32,'#2a2438');rect(x+5,yy,2,32,'#3a3450');for(let j=0;j<5;j++)rect(x+(side?-j*2:j*2)-4,yy+j*5,22-j*3,5,j%2?'#1a3a34':'#245048');if((y/32+col+side)%3===0){rect(x+(side?2:8),yy+20,3,6,'#5a4860');rect(x+(side?0:6),yy+18,7,4,'#744553');rect(x+(side?2:8),yy+18,2,1,C.gold)}}}
-  for(let i=0;i<6;i++){const x=40+(i*29+Math.floor(t/8))%(w-80),y=40+(i*37+Math.floor(t/12))%180;if(x>28&&x<w-28)rect(x,y,1,1,C.gold)}
+  ctx.drawImage(FOREST.sheet,0,0,w,240,0,0,w,240);
   if(dim)dimField(w,dim);
 }
 function drawInterior(t,w,dim){
-  rect(0,0,w,240,'#14101c');
-  for(let y=0;y<240;y+=4)rect(0,y,w,1,y%8?'#14101c':'#1a1424');
-  rect(w/2-24,0,48,240,'#3a1428');
-  for(let y=-20;y<260;y+=16){const yy=y+Math.floor(t*.5)%16;rect(w/2-20,yy,40,1,'#50213a');rect(w/2-2,yy,4,16,'#6b2a41')}
-  for(const x of [28,w-36]){rect(x,0,8,240,'#2a2840');rect(x+2,0,2,240,'#3a3c58');for(let y=-20;y<260;y+=32)rect(x-2,y+Math.floor(t*.5)%32,12,4,'#3a3860')}
-  for(const side of [0,1]){const x=side?w-26:6;for(let y=-40;y<260;y+=40){const yy=y+Math.floor(t*.5)%40;rect(x,yy,18,26,'#30304b');rect(x+2,yy+2,14,20,'#6b2a41');rect(x+8,yy+2,2,20,'#171629');rect(x+2,yy+10,14,2,'#171629');rect(x+4,yy+4,4,4,'#873149')}}
-  const cy=Math.floor(t*.4)%260;line(w/2,cy-20,w/2,cy,C.gold);rect(w/2-16,cy,32,3,'#84724c');for(let j=-2;j<=2;j++){rect(w/2+j*7,cy+3,3,6,C.gold);rect(w/2+j*7+1,cy+8,1,2,C.white)}
+  ctx.drawImage(MANSION.sheet,0,0,w,240,0,0,w,240);
   if(dim)dimField(w,dim);
 }
 function drawRoof(t,w,dim){
-  rect(0,0,w,240,C.black);stars(w,90);moon(Math.round(w/2),38,50,true);
-  function tower(x){rect(x,70,22,86,'#1a1830');rect(x+2,80,18,16,'#421f35');for(let yy=82;yy<94;yy+=6){rect(x+4,yy,6,5,'#873149');rect(x+12,yy,6,5,'#873149')}for(let k=0;k<8;k++)rect(x-2+k,62+k,26-k*2,2,C.stone);rect(x+10,54,2,10,C.blue)}
-  if(w>=160){tower(4);tower(w-26)}
-  roof(108,w);
-  for(let i=0;i<8;i++)rect(w/2-10-i,118+i*4,20+i*2,3,'#1e1931');
-  for(let x=18;x<w-18;x+=40){rect(x,148,24,42,'#1e1931');rect(x+3,152,18,28,'#421f35');rect(x+5,154,5,5,'#873149');rect(x+13,154,5,5,'#873149');rect(x+5,164,5,5,'#873149');rect(x+13,164,5,5,'#873149')}
-  for(let i=0;i<4;i++){const side=i%2,x=side?w-22-(i*5)%12:6+(i*6)%12,y=18+i*10+Math.floor(Math.sin((t+i*20)/20)*3);rect(x,y,7,2,'#2a2440');rect(x+2,y-1,3,1,'#2a2440')}
+  ctx.drawImage(ROOF.sheet,0,0,w,240,0,0,w,240);
   if(dim)dimField(w,dim);
 }
 function shrine(morning,t,w=256,opt={}){
   const sky=opt.sky!==false,showMoon=opt.moon!==false,arch=opt.architecture!==false,showBox=opt.donation!==false;
-  if(sky){if(morning){rect(0,0,w,240,'#4a4e78');rect(0,48,w,20,'#8a5a78');rect(0,68,w,22,'#b56b79');rect(0,90,w,20,C.gold);rect(0,110,w,130,'#5a5a70');for(let i=0;i<3;i++){const x=(t*.3+i*61)%w;line(x,29+i*6,x+3,31+i*6,C.dark);line(x+3,31+i*6,x+6,29+i*6,C.dark)}}else{rect(0,0,w,240,C.black);stars(w,110);if(showMoon)moon(Math.floor(w*.72),40,28,true)}}
-  if(arch){for(let x=0;x<w;x+=8){const h=10+(x*13)%22;rect(x,118-h,8,h,morning?'#293e49':'#171d36')}rect(0,118,w,122,morning?'#4b4b64':'#15192d');rect(28,66,100,5,C.red);rect(34,74,88,4,'#873145');rect(43,70,8,90,'#9b3447');rect(105,70,8,90,'#9b3447');rect(40,68,4,92,'#c45a58');rect(102,68,4,92,'#c45a58');for(let j=0;j<8;j++)rect(138+j*2,90-j*2,100-j*4,3,morning?'#4a5080':'#373c60');rect(144,102,90,58,morning?'#3a3a55':'#24253c');rect(154,114,18,28,morning?'#b77d7b':'#713345');rect(202,114,18,28,morning?'#b77d7b':'#713345');rect(178,112,16,50,C.black);for(let j=0;j<6;j++)rect(146-j*2,160+j*4,86+j*4,3,morning?'#4a5080':'#373c60')}
-  if(showBox)donation(88,175);
+  const p=morning?'_morning':'_night';
+  if(sky){if(morning){rect(0,0,w,240,'#4a4e78');rect(0,48,w,20,'#8a5a78');rect(0,68,w,22,'#b56b79');rect(0,90,w,20,C.gold);rect(0,110,w,130,'#5a5a70');for(let i=0;i<3;i++){const x=(t*.3+i*61)%w;line(x,29+i*6,x+3,31+i*6,C.dark);line(x+3,31+i*6,x+6,29+i*6,C.dark)}}else{rect(0,0,w,240,C.black);stars(w,110);if(showMoon)stamp(SHRINE.moon_scarlet_64,Math.floor(w-70),2)}}
+  if(arch){
+    const hillFar=SHRINE['shrine_hill_far'+p],hillMid=SHRINE['shrine_hill_mid'+p],treeA=SHRINE['shrine_tree_far'+p+'_a'],treeB=SHRINE['shrine_tree_far'+p+'_b'];
+    for(let x=-8;x<w;x+=16)stamp(hillFar,x,100);
+    for(let x=0;x<w;x+=16)stamp(hillMid,x,108);
+    stamp(treeA,0,96);stamp(treeB,16,100);stamp(treeA,32,96);
+    shrineFill('shrine_ground_grass'+p+'_a','shrine_ground_grass'+p+'_b',0,120,w,120);
+    shrineFill('shrine_ground_dirt'+p+'_a','shrine_ground_dirt'+p+'_b',8,152,136,72);
+    shrineFill('shrine_ground_stone'+p+'_a','shrine_ground_stone'+p+'_b',144,120,Math.max(0,w-144),56);
+    shrineStrip(SHRINE['shrine_ground_path'+p],48,168,40,40,1,6);
+    stampScale(SHRINE['shrine_torii'+p],4,80,2);
+    stampScale(SHRINE['shrine_lantern'+p],4,152,2);stampScale(SHRINE['shrine_lantern'+p],114,152,2);
+    shrineHall(morning,152,75,3);
+  }
+  if(showBox)donation(88,175,morning);
 }
 function background(n,t,w=192,mode='',opt){
   rect(0,0,w,240,C.black);
@@ -1391,26 +1903,24 @@ function background(n,t,w=192,mode='',opt){
   else if(n===3){if(mode==='roof'||(boss&&boss.who==='remilia')||(sakuyaDone&&stageTick>70*60))drawRoof(t,w,bossDim);else drawInterior(t,w,bossDim)}
   else stars(w);
 }
-function donation(x,y){rect(x-16,y,33,22,'#704638');rect(x-17,y-3,35,6,C.gold);rect(x-16,y-2,33,4,'#c47a4a');for(let j=0;j<5;j++)rect(x-12+j*6,y-1,3,2,C.black);rect(x-8,y+7,16,8,C.white);text('YEN',x-8,y+8,C.red)}
+function donation(x,y,morning=false){stamp(SHRINE[morning?'shrine_donation_box_morning':'shrine_donation_box_night'],Math.round(x-16),Math.round(y))}
 function nesBox(x,y,w,h,c=C.white){rect(x,y,w,h,c);rect(x+1,y+1,w-2,h-2,C.black);rect(x+2,y+2,w-4,h-4,c);rect(x+3,y+3,w-6,h-6,C.black)}
-function portrait(name,x,y,active=true){const col={reimu:C.red,cirno:C.cyan,marisa:C.gold,sakuya:C.white,remilia:C.pink}[name]||C.white;box(x,y,34,36,active?col:C.blue);const rows=SPRITES['p_'+name];ctx.save();ctx.beginPath();ctx.rect(x+2,y+2,30,32);ctx.clip();if(rows)blit(rows,x+17,y+18,1);else sprite(name,x+17,y+22,1);ctx.restore()}
+function portrait(name,x,y,active=true){stamp(UI.ui_portrait_bezel,x,y);const rows=SPRITES['p_'+name];ctx.save();ctx.beginPath();ctx.rect(x+4,y+4,32,32);ctx.clip();if(rows)blit(rows,x+20,y+20,1);else sprite(name,x+20,y+20,1);ctx.restore()}
 function enemyArt(e){if(e.type==='orb')return 'orb';if(e.type==='familiar')return stage===1?'iceFam':stage===2?'starFam':'bat';return stage===1?'fairyIce':stage===2?'fairyMagic':'fairyMansion'}
 function drawBullet(b){let x=Math.round(b.x),y=Math.round(b.y),col=b.frozen?(Math.floor(frame/8)%2?C.white:b.c):b.c;if(b.grace&&frame%6<3)return;if(b.shape==='knife'){let a=b.frozen?Math.atan2(b.savedVy,b.savedVx):Math.atan2(b.vy,b.vx);line(x-Math.cos(a)*3,y-Math.sin(a)*3,x+Math.cos(a)*3,y+Math.sin(a)*3,col,3);line(x,y,x+Math.cos(a)*3,y+Math.sin(a)*3,C.white,1)}else if(b.shape==='spear'){const a=b.a;line(x-Math.cos(a)*18,y-Math.sin(a)*18,x+Math.cos(a)*18,y+Math.sin(a)*18,C.red,7);line(x-Math.cos(a)*17,y-Math.sin(a)*17,x+Math.cos(a)*17,y+Math.sin(a)*17,C.white,2);line(x+Math.cos(a)*18,y+Math.sin(a)*18,x+Math.cos(a-2.5)*10,y+Math.sin(a-2.5)*10,C.pink,2);line(x+Math.cos(a)*18,y+Math.sin(a)*18,x+Math.cos(a+2.5)*10,y+Math.sin(a+2.5)*10,C.pink,2)}else if(b.shape==='star'){rect(x-1,y-4,2,9,col);rect(x-4,y-1,9,2,col);rect(x-2,y-2,5,5,col);rect(x-1,y-1,2,2,C.white)}else if(b.shape==='bat'){line(x-5,y-2,x,y+1,col,2);line(x,y+1,x+5,y-2,col,2);rect(x-1,y-2,3,5,C.white)}else if(b.shape==='ice'||b.shape==='diamond'){for(let yy=-3;yy<=3;yy++)rect(x-(3-Math.abs(yy)),y+yy,1+2*(3-Math.abs(yy)),1,col);rect(x,y-1,1,3,C.white)}else {let r=b.shape==='large'?5:3;disk(x,y,r,C.black);disk(x,y,r-1,col);rect(x-1,y-1,2,2,C.white)}}
 function drawLaser(l){const active=l.age>=l.wait;if(l.type==='spear'&&!active){if(frame%8<4)line(l.x,l.y,l.x+Math.cos(l.a)*340,l.y+Math.sin(l.a)*340,C.red,2);text('!',Math.max(4,Math.min(180,l.x)),l.y+15,C.gold);return}const x2=l.x+Math.cos(l.a)*340,y2=l.y+Math.sin(l.a)*340;if(!active){if(frame%8<4)line(l.x,l.y,x2,y2,l.type==='spark'?C.gold:C.purple,1);line(l.x+Math.sin(l.a)*l.width/2,l.y-Math.cos(l.a)*l.width/2,x2+Math.sin(l.a)*l.width/2,y2-Math.cos(l.a)*l.width/2,C.red,1);line(l.x-Math.sin(l.a)*l.width/2,l.y+Math.cos(l.a)*l.width/2,x2-Math.sin(l.a)*l.width/2,y2+Math.cos(l.a)*l.width/2,C.red,1)}else {line(l.x,l.y,x2,y2,l.type==='spark'?C.gold:C.purple,l.width);line(l.x,l.y,x2,y2,C.white,l.width*.6);if(l.type==='spark')line(l.x,l.y,x2,y2,frame%6<3?C.cyan:C.pink,8)}}
 function hud(){
-  rect(192,0,64,240,'#0a0a14');rect(192,0,2,240,C.red);rect(194,0,1,240,C.gold);rect(196,0,58,1,C.blue);
+  stamp(UI.ui_hud_panel,192,0);
   text('SCORE',198,8,C.pink);text(String(score).padStart(8,'0'),198,18);
   text('HI-SCORE',198,34,C.pink);text(String(hiscore).padStart(8,'0'),198,44);
-  text('LIVES',198,62,C.cyan);for(let i=0;i<player.lives;i++)blit(SPRITES.life,206+i*16,76,1);
-  text('BOMBS',198,90,C.cyan);for(let i=0;i<player.bombs;i++)blit(SPRITES.starIcon,206+i*16,104,1);
+  text('LIVES',198,62,C.cyan);for(let i=0;i<player.lives;i++)blit(UI.ui_life_icon,206+i*16,76,1);
+  text('BOMBS',198,90,C.cyan);for(let i=0;i<player.bombs;i++)blit(UI.ui_bomb_icon,206+i*16,104,1);
   text('POWER',198,118,C.pink);nesBox(198,130,9,9,C.white);text('P',199,131,C.red);
-  for(let i=0;i<4;i++){box(210+i*10,131,8,7,C.white);if(i<player.power)rect(211+i*10,132,6,5,C.red)}
+  for(let i=0;i<4;i++)stamp(i<player.power?UI.ui_power_cell_on:UI.ui_power_cell_off,210+i*10,131);
   text('GRAZE',198,148,C.cyan);text(String(graze).padStart(5,'0'),198,158);
-  rect(196,174,56,1,C.blue);text('STAGE '+stage,198,180,C.gold);
+  text('STAGE '+stage,198,180,C.gold);
   ([['MISTY','LAKE'],['FOREST','OF MAGIC'],['SCARLET','MANSION']][stage-1]).forEach((l,i)=>text(l,198,190+i*9,C.blue));
-  if(stage===3){rect(200,212,48,14,'#1a1830');rect(208,216,10,6,C.red);rect(230,216,10,6,C.red);rect(218,214,12,8,'#2a2440')}
-  else if(stage===1){disk(228,220,7,'#535b91');disk(227,219,6,'#a9a4b6')}
-  else {rect(220,214,4,12,'#21423e');rect(214,212,16,7,'#245048')}
+  stamp([UI.ui_stage_thumb_lake,UI.ui_stage_thumb_forest,UI.ui_stage_thumb_mansion][stage-1],215,206);
   text(muted?'M:OFF':'M:ON',198,232,C.blue);
 }
 function drawPlay(){
@@ -1428,15 +1938,15 @@ function drawPlay(){
   if(bombTimer){for(let i=0;i<7;i++){const a=i*TAU/7+frame*.07,r=(150-bombTimer)*.9,x=player.x+Math.cos(a)*r,y=player.y+Math.sin(a)*r*.65;disk(x,y,9,[C.red,C.cyan,C.gold,C.pink][i%4]);disk(x,y,5,C.white);rect(x-4,y,9,4,C.red)}if(bombTimer>105){rect(15,104,162,19,C.black);center('FANTASY SEAL',110,C.white,1,192)}}
   if(boss){rect(0,0,192,15,C.black);text(boss.name,4,3,C.white);const secs=Math.max(0,Math.ceil((boss.data.duration-boss.t)/60));text(String(secs).padStart(2,'0'),175,3,C.gold);rect(4,12,184,2,C.blue);rect(4,12,184*Math.max(0,boss.hp/boss.max),2,C.red);if(phaseGap>0||boss.t<90){const lines=wrap((boss.data.sign?boss.data.sign+' / ':'')+boss.data.name,29);rect(4,74,184,lines.length*10+9,C.black);lines.forEach((l,i)=>center(l,79+i*10,boss.data.spell?C.gold:C.cyan,1,192))}if(bullets.some(b=>b.frozen)){rect(65,18,62,10,C.black);text('TIME STOP',69,20,C.cyan)}}
   ctx.restore();hud();
-  if(paused){nesBox(34,86,124,64,C.white);center('PAUSED',97,C.gold,1,192);center('ENTER TO RESUME',118,C.white,1,192);center('X: TITLE',134,C.blue,1,192)}
+  if(paused){uiMenuFrame(34,86,124,64);center('PAUSED',97,C.gold,1,192);center('ENTER TO RESUME',118,C.white,1,192);center('X: TITLE',134,C.blue,1,192)}
 }
 function drawDialogue(){
   const d=dialogue,[who,s]=d.lines[d.index];
   background(stage,frame,256,sceneKind||(d.id==='intro'?'shrine':d.id==='ending'?'morning':''),d.id==='ending'?{donation:false}:undefined);
   if(d.id==='intro')storyReimu(70,146);
-  else if(d.id==='ending'){storyReimu(64,136);sprite('remilia',168,124,1);donation(112,148);coin(112,140)}
+  else if(d.id==='ending'){storyReimu(64,136);sprite('remilia',168,124,1);donation(112,148,true);coin(112,140)}
   else {storyReimu(56,124);const other=who==='reimu'?(d.id.startsWith('cirno')?'cirno':d.id.startsWith('marisa')?'marisa':d.id.startsWith('sakuya')?'sakuya':d.id.startsWith('remilia')?'remilia':'reimu'):who;if(other==='reimu')storyReimu(196,116);else sprite(other,196,108,1);if(d.id.startsWith('marisa')){rect(168,118,12,16,C.gold);rect(170,120,8,12,C.red);rect(171,122,6,2,C.white)}}
-  nesBox(4,174,248,62,C.white);portrait(who,9,181);
+  stamp(UI.ui_dialogue_frame,4,174);portrait(who,9,181);
   text(who,50,181,{reimu:C.red,cirno:C.cyan,marisa:C.gold,sakuya:C.white,remilia:C.pink}[who]);
   wrap(s.slice(0,Math.floor(d.print)),32).forEach((l,i)=>text(l,50,193+i*9));
   if(d.print>=s.length&&frame%45<32)text('Z >',228,226,C.gold);
@@ -1445,19 +1955,20 @@ function drawDialogue(){
 }
 function drawTitle(){
   rect(0,0,256,240,C.black);stars(256,130);
-  for(let x=0;x<256;x+=6)rect(x,170-((x*17)%16),6,10+(x*17)%16,'#12182c');
-  for(let x=0;x<256;x+=8)rect(x,176-((x*11)%10),8,8+(x*11)%10,'#1a2440');
-  cloud(6,32,52,'#1a2a68');cloud(188,24,58,'#1a2a68');cloud(16,46,42,'#243878');cloud(196,42,50,'#243878');
-  moon(128,50,50,true);
+  for(let x=-8;x<256;x+=16)stamp(SHRINE.shrine_hill_far_night,x,176);
+  for(let x=0;x<256;x+=16)stamp(SHRINE.shrine_hill_mid_night,x,184);
+  shrineFill('shrine_ground_grass_night_a','shrine_ground_grass_night_b',0,192,256,48);
+  stamp(SHRINE.title_cloud_32_a,8,24);stamp(SHRINE.title_cloud_32_b,216,18);
+  stamp(SHRINE.title_cloud_32_b,40,40);stamp(SHRINE.title_cloud_32_a,196,38);
+  stamp(SHRINE.moon_scarlet_64,96,10);
   sprite('reimuTitle',128+Math.sin(frame/150)*46,48+Math.sin(frame/40)*5,1);
-  rect(0,176,256,64,'#0a1428');
-  for(let y=176;y<240;y+=4)for(let x=0;x<256;x+=12)rect(x+((y+Math.floor(frame/8))|0)%8,y,6,1,'#1a2a4a');
-  for(let i=0;i<10;i++){const yy=178+i*5,hw=18-i;rect(128-hw+(i%2)*2,yy,hw*2,1,i%2?'#87243b':'#5a2038')}
-  rect(12,158,50,3,C.red);rect(16,163,42,2,'#873145');rect(20,162,4,48,'#6b1c32');rect(50,162,4,48,'#6b1c32');
-  for(let j=0;j<6;j++)rect(188+j,156-j,48-j*2,2,'#373c60');rect(192,158,40,38,'#24253c');rect(198,166,10,14,'#713345');rect(216,166,10,14,'#713345');rect(207,166,8,30,C.black);
-  logo(33,82,2);blit(SPRITES.yinyang,128,122,2);center('SCARLET MOON NEVER SETS',134,C.pink);
+  stamp(SHRINE.shrine_torii_night,8,176);
+  shrineHall(false,200,176,1,{approach:false,stairs:false,lanterns:false});
+  stampScale(SHRINE.title_touhou_kougetsuya,32,76,2);
+  blit(SPRITES.yinyang,128,122,2);center('SCARLET MOON NEVER SETS',134,C.pink);
   text(menu===0?'> START':'  START',88,148,menu===0?C.gold:C.white);
   text(menu===1?'> HOW TO PLAY':'  HOW TO PLAY',88,162,menu===1?C.gold:C.white);
+  rect(0,214,256,26,C.black);
   center('UNOFFICIAL TOUHOU PROJECT FAN GAME',220,C.white);center('ZUN / TEAM SHANGHAI ALICE',231,C.blue);
 }
 function drawAttract(){
@@ -1466,7 +1977,7 @@ function drawAttract(){
     const lines=t<170?['THREE NIGHTS HAVE PASSED...']:t<340?['THE MOON HAS NOT SET ONCE.']:t<530?['NEITHER HAS ANYONE','COME TO THE SHRINE.']:t<720?['REIMU: NOT ONE DONATION.']:['REIMU: FINE.'];
     if(t<530){shrine(false,t);storyReimu(58,176)}
     else if(t<720){shrine(false,t,256,{architecture:false,donation:false});donation(128,112)}
-    else {rect(0,0,256,240,C.black);stars(256);moon(128,62,56,true);storyReimu(78,158-(t-720)*.28)}
+    else {rect(0,0,256,240,C.black);stars(256);stamp(SHRINE.moon_scarlet_64,96,30);storyReimu(78,158-(t-720)*.28)}
     nesBox(7,199,242,32,C.white);lines.forEach((l,i)=>center(l,205+i*10));
   }else{
     const q=Math.floor((t-900)/70);
@@ -1474,7 +1985,7 @@ function drawAttract(){
     if(q===1){background(2,t,256);sprite('marisa',128,96,1)}
     if(q===2){background(3,t,256,'roof');sprite('sakuya',128,96,1)}
     if(q===3){rect(0,0,256,240,C.black);sprite('remiliaAttract',128,88,1)}
-    if(q>=4){rect(0,0,256,240,C.black);stars(256,80);moon(128,48,36,true);logo(35,88,2);center('SCARLET MOON NEVER SETS',133,C.pink)}
+    if(q>=4){rect(0,0,256,240,C.black);stars(256,80);stamp(SHRINE.moon_scarlet_64,96,16);stampScale(SHRINE.title_touhou_kougetsuya,32,88,2);center('SCARLET MOON NEVER SETS',133,C.pink)}
   }
   if(frame%50<35)center('PRESS START',233,C.gold);
 }
@@ -1498,20 +2009,20 @@ function draw(){
   if(state==='boot'){rect(96,62,64,50,'#1a1428');disk(128,84,13,C.red);rect(119,79,18,9,C.white);text('⑨',125,80,C.red);center('EMPTY BOX SOFT',116,C.white);center('PRESENTS',136,C.blue)}
   else if(state==='notice'){shrine(false,stateTick,256,{donation:false,architecture:true});rect(8,24,240,192,'#080810');center('AN UNOFFICIAL',38,C.pink);center('TOUHOU PROJECT FAN GAME',51,C.white);['TOUHOU PROJECT / CHARACTERS','AND SETTING ORIGINALLY CREATED','BY ZUN / TEAM SHANGHAI ALICE'].forEach((l,i)=>center(l,90+i*12,C.cyan));['ALL GAME GRAPHICS, CODE','AND ARRANGEMENTS IN THIS','FAN GAME ARE NEWLY CREATED'].forEach((l,i)=>center(l,154+i*12));center('Z / ENTER',220,C.gold)}
   else if(state==='title')drawTitle();
-  else if(state==='how'){nesBox(6,6,244,228,C.gold);center('HOW TO PLAY',18,C.gold,2);[['ARROWS','MOVE'],['Z','SHOOT / CONFIRM'],['X','FANTASY SEAL / CANCEL'],['SHIFT','FOCUS / SHOW HITBOX'],['ENTER','START / PAUSE'],['M','MUTE']].forEach((a,i)=>{text(a[0],16,50+i*16,C.cyan);text(a[1],70,50+i*16)});center('GRAZE BULLETS. COLLECT P.',160);center('POWER 3+: FLY HIGH TO COLLECT.',174);center('HIT? X WITHIN 8 FRAMES!',188,C.pink);center('UNLIMITED CONTINUES',202,C.blue);center('Z / X: BACK',218,C.gold)}
+  else if(state==='how'){uiMenuFrame(6,6,244,228);center('HOW TO PLAY',18,C.gold,2);[['ARROWS','MOVE'],['Z','SHOOT / CONFIRM'],['X','FANTASY SEAL / CANCEL'],['SHIFT','FOCUS / SHOW HITBOX'],['ENTER','START / PAUSE'],['M','MUTE']].forEach((a,i)=>{text(a[0],16,50+i*16,C.cyan);text(a[1],70,50+i*16)});center('GRAZE BULLETS. COLLECT P.',160);center('POWER 3+: FLY HIGH TO COLLECT.',174);center('HIT? X WITHIN 8 FRAMES!',188,C.pink);center('UNLIMITED CONTINUES',202,C.blue);center('Z / X: BACK',218,C.gold)}
   else if(state==='attract')drawAttract();
   else if(state==='dialogue')drawDialogue();
   else if(state==='stagecard'){background(stage,0,256,stage===3?'roof':'');rect(0,88,256,64,C.black);rect(0,90,256,1,C.red);rect(0,148,256,1,C.gold);center('STAGE '+stage,100,C.gold,2);center(['MISTY LAKE','FOREST OF MAGIC','SCARLET DEVIL MANSION'][stage-1],128,C.white)}
-  else if(state==='gate'){background(3,0,256,'roof');rect(0,150,256,90,'#1a1830');for(let x=0;x<256;x+=16)rect(x,148,12,8,C.blue);rect(0,158,256,8,'#2a2448');sprite('meilingSleep',204,186,2);text('Z Z Z',206,150,C.cyan);storyReimu(45+Math.min(stateTick,160)*.7,176-Math.min(stateTick,90)*.4)}
+  else if(state==='gate'){background(3,0,256,'roof');sprite('meilingSleep',204,186,2);text('Z Z Z',206,150,C.cyan);storyReimu(45+Math.min(stateTick,160)*.7,176-Math.min(stateTick,90)*.4)}
   else if(state==='play')drawPlay();
-  else if(state==='continue'){drawPlay();nesBox(25,66,145,100,C.white);center('CONTINUE?',80,C.gold,1,192);center(stateTick<60?'⑨':String(Math.max(0,9-Math.floor(stateTick/60))),101,C.cyan,2,192);center('Z / ENTER: YES',126,C.white,1,192);center('X: TITLE',147,C.blue,1,192)}
+  else if(state==='continue'){drawPlay();uiMenuFrame(25,66,145,100);center('CONTINUE?',80,C.gold,1,192);center(stateTick<60?'⑨':String(Math.max(0,9-Math.floor(stateTick/60))),101,C.cyan,2,192);center('Z / ENTER: YES',126,C.white,1,192);center('X: TITLE',147,C.blue,1,192)}
   else if(state==='defeat'){background(stage,stageTick,256,sceneKind==='remilia'?'roof':'');const t=stateTick;let x=128,y=80;if(sceneKind==='cirno')y+=t<60?t*.8:48-(t-60)*.5;if(sceneKind==='sakuya')x+=t*.9;sprite(sceneKind,x,y,1);if(sceneKind==='marisa')for(let j=0;j<4;j++)rect(x-8+j*5,y-27-(t+j*9)%28,3,3,C.blue);storyReimu(90,198)}
-  else if(state==='dawn'){if(stateTick<190){background(3,0,256,'roof');nesBox(108,100,40,64,C.blue);disk(128,131,13,stateTick<100?C.red:C.dark);line(128,90,128,172,stateTick<100?C.white:C.blue,2);if(stateTick<100)for(let j=0;j<5;j++)rect(113+j*7,111+(stateTick%20),2,2,C.gold);center('LUNAR ANCHOR',190,C.gold)}else {rect(0,0,256,240,'#25213d');moon(128,80+(stateTick-190)*.45,43,true);rect(0,150,256,90,'#181b32');rect(0,144,256,6,C.gold);rect(0,138,256,6,'#bd6573')}}
+  else if(state==='dawn'){if(stateTick<190){background(3,0,256,'roof');nesBox(108,100,40,64,C.blue);disk(128,131,13,stateTick<100?C.red:C.dark);line(128,90,128,172,stateTick<100?C.white:C.blue,2);if(stateTick<100)for(let j=0;j<5;j++)rect(113+j*7,111+(stateTick%20),2,2,C.gold);center('LUNAR ANCHOR',190,C.gold)}else {rect(0,0,256,240,'#25213d');stamp(SHRINE.moon_scarlet_64,96,Math.round(80+(stateTick-190)*.45-32));rect(0,150,256,90,'#181b32');rect(0,144,256,6,C.gold);rect(0,138,256,6,'#bd6573')}}
   else if(state==='endingScene'){shrine(true,stateTick);storyReimu(58,174);if(stateTick>150){const x=Math.max(126,285-(stateTick-150)*.8);sprite('remiliaParasol',x,160,1);if(stateTick>350)coin(88,Math.min(174,145+(stateTick-350)*.8))}}
-  else if(state==='endingExit'){shrine(true,stateTick);storyReimu(58,174);sprite('remilia',133+stateTick*.9,160,1);donation(88,175);coin(88,174)}
-  else if(state==='theend'){shrine(true,400);storyReimu(59,174);donation(88,175);coin(88,174);center('THE END',62,C.white,2);center(continues?'CLEAR / '+continues+' CONTINUES':'NO-CONTINUE CLEAR',96,C.gold)}
+  else if(state==='endingExit'){shrine(true,stateTick);storyReimu(58,174);sprite('remilia',133+stateTick*.9,160,1);donation(88,175,true);coin(88,174)}
+  else if(state==='theend'){shrine(true,400);storyReimu(59,174);donation(88,175,true);coin(88,174);center('THE END',62,C.white,2);center(continues?'CLEAR / '+continues+' CONTINUES':'NO-CONTINUE CLEAR',96,C.gold)}
   else if(state==='credits')drawCredits();
-  else if(state==='final'){stars(256);moon(128,52,36,true);center('THANK YOU',88,C.gold,2);center('FOR PLAYING',108,C.gold,2);['THIS IS AN UNOFFICIAL','TOUHOU PROJECT FAN WORK','','TOUHOU PROJECT CREATED BY','ZUN / TEAM SHANGHAI ALICE'].forEach((l,i)=>center(l,132+i*12));center('PRESS START',213,C.white)}
+  else if(state==='final'){stars(256);stamp(SHRINE.moon_scarlet_64,96,20);center('THANK YOU',88,C.gold,2);center('FOR PLAYING',108,C.gold,2);['THIS IS AN UNOFFICIAL','TOUHOU PROJECT FAN WORK','','TOUHOU PROJECT CREATED BY','ZUN / TEAM SHANGHAI ALICE'].forEach((l,i)=>center(l,132+i*12));center('PRESS START',213,C.white)}
 }
 
 function tick(){frame++;if(pressed.m){muted=!muted;if(master){master.gain.cancelScheduledValues(ac.currentTime);master.gain.value=muted?0:.22}}if(state==='play'&&pressed.enter){paused=!paused;sound('pause')}if(paused){if(pressed.x)toTitle();pressed={};return}stateTick++;
