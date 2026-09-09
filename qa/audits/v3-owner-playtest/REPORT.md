@@ -151,7 +151,9 @@ Do **not** freeze until F01–F03 are re-captured. Do **not** return to V2 art. 
 
 ## 8. Audit branch + SHA
 
-Branch: **`v3-owner-playtest-qa`** (this commit, after the docs land).
+Branch: **`v3-owner-playtest-qa`**
+
+Evidence-and-report commit: `e8ad30b03067f56e18c0c71c880de013e12ec4f6`
 
 Base SHA (untouched runtime): `449ad2bb677e29f6793b3f5a25ac80c0845f3e14`
 
