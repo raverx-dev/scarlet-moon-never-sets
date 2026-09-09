@@ -43,3 +43,35 @@ This branch is a character-art-only pass based on Visual P1 `2a27cb17103e9d0d9f9
 - Use the existing permanent `qa/` harness and existing capture matrix; do not invent another QA stack.
 
 `dev/sprites/*.js` contains the exact approved logical-pixel matrices for integration. These files are implementation source/reference only, not shipped runtime dependencies.
+
+## Character Repair P0 notes
+
+### Story Reimu scale (diagnosis only)
+
+No `reimuStory` asset exists. Non-play scenes still stamp compact gameplay `reimu` at 2× (32×48). Native 1× (16×24) is smaller than the 24–32px boss/story matrices and does not improve composition. Do not broadly change these scales until dedicated story art exists.
+
+| Scene | Call | Scale | 1× safe? |
+| --- | --- | ---: | --- |
+| intro dialogue | `sprite('reimu',70,138,2)` | 2× | no — too small vs shrine / title art |
+| boss dialogue (left) | `sprite('reimu',56,116,2)` | 2× | no — 16×24 vs 24–32px bosses |
+| boss dialogue (right fallback) | `sprite(other,…, other==='reimu'?2:1)` | 2× if Reimu | no — same |
+| ending dialogue | `sprite('reimu',64,128,2)` | 2× | no — smaller than 32×32 Remilia |
+| attract shrine | `sprite('reimu',58,168,2)` | 2× | no |
+| attract "FINE" / moon | `sprite('reimu',78,150-(t-720)*.28,2)` | 2× | no |
+| gate | `sprite('reimu',45+…,168-…,2)` | 2× | no — vs 2× `meilingSleep` |
+| defeat | `sprite('reimu',90,190,2)` | 2× | no |
+| endingScene / endingExit / theend | `sprite('reimu',58–59,166,2)` | 2× | no |
+| credits Reimu | `sprite('reimu',102,156,2)` | 2× | no |
+
+Gameplay `drawPlay` remains 1×. Title uses `reimuTitle` at 1×.
+
+ART REQUIRED: dedicated native `reimuStory` art.
+
+### Remilia attract eyes (unchanged)
+
+`drawAttract()` montage slot `q===3` (`index.html`): two primitive rectangles on black, left unchanged.
+
+- `rect(105,92,11,3,C.red)`
+- `rect(142,92,11,3,C.red)`
+
+QA case `attract-eyes` at tick 1130. ART REQUIRED: remilia attract eyes / silhouette.
