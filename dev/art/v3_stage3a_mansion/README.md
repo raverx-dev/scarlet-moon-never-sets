@@ -1,61 +1,135 @@
-# Version 3 Stage 3A — Scarlet Devil Mansion Interior Art Package
+# Version 3 Stage 3A — Scarlet Devil Mansion Interior Art
 
-Scope: **environment art only** for the 192×240 vertical playfield. Based directly on issue #16 V3 checkpoint `69d06766c0a6c165f26f71ded96d7b5bd8a122df`.
+Art-only package for `raverx-dev/scarlet-moon-never-sets`, authored for GitHub issue #16 against the owner-approved `scarlet_moon_mansion_nes_stage_concept_board.png` direction.
 
-## Canonical exact source
+- Base checkpoint: `69d06766c0a6c165f26f71ded96d7b5bd8a122df`
+- Branch: `v3-art-stage3a-mansion`
+- Logical game canvas: 256×240
+- Stage playfield proof: 192×240 (HUD excluded)
+- Scope: Scarlet Devil Mansion interior environment only
+- Runtime integration: none
+- Character / bullet / item / UI changes: none
+- Palette extension request: **none**
 
-`v3_stage3a_mansion_assets.js` is the canonical deterministic matrix/tile source. All authored asset names are `mansion_` prefixed. Every visible matrix character is an existing game `PAL` key and `.` is transparency.
+## Exact deterministic source
 
-**PALETTE EXTENSION REQUEST: none.**
+The canonical matrices are explicit native-size rows in these files:
 
-Package palette inventory: `B G H R S W b d g h i n p r t u x y`
+- `mansion_assets_8x8.js`
+- `mansion_assets_arch16.js`
+- `mansion_assets_furnish16.js`
+- `mansion_chandelier.js`
+- `mansion_assets.js` — aggregate export only
 
-## Assets
+Every asset name begins with `mansion_`. `.` is transparency. Every other character is an existing checkpoint `PAL` key.
 
-| Asset | Exact size | Intended use |
-|---|---:|---|
-| `mansion_wall_dark_a` | 8×8 | quiet central/side wall base; alternate to suppress visible tiling |
-| `mansion_wall_dark_b` | 8×8 | quiet wall variant; alternate with mansion_wall_dark_a |
-| `mansion_wallpaper_damask` | 8×8 | side-zone ornament only; do not blanket central bullet lane |
-| `mansion_carpet_dark_a` | 8×8 | central lane base; deliberately low contrast |
-| `mansion_carpet_dark_b` | 8×8 | central lane alternate; low contrast |
-| `mansion_carpet_border` | 8×8 | repeat vertically at lane edge; gold only on outermost seam |
-| `mansion_wood_panel` | 8×8 | side paneling/furnishing fill |
-| `mansion_stone_molding` | 8×8 | horizontal architectural divider; side or scene boundary |
-| `mansion_gold_trim` | 8×8 | small side-zone trim/accent; avoid dense central use |
-| `mansion_floor_shadow` | 8×8 | dark transition/floor shadow tile |
-| `mansion_gothic_window` | 16×16 | outer side walls; cool blue contrast against dark red interior |
-| `mansion_gothic_window_dim` | 16×16 | alternate/distant window for lower contrast |
-| `mansion_wall_sconce` | 16×16 | side wall highlight; keep out of central bullet lane |
-| `mansion_column` | 16×16 | side-zone structural separator |
-| `mansion_railing` | 16×16 | repeat along side balconies/scene boundaries |
-| `mansion_painting` | 16×16 | side-wall furnishing; abstract scarlet motif |
-| `mansion_bookcase` | 16×16 | side-wall bookcase/detail block |
-| `mansion_cabinet` | 16×16 | side-zone cabinet/chest |
-| `mansion_door_arch_left` | 16×16 | pair with mansion_door_arch_right at corridor boundary |
-| `mansion_door_arch_right` | 16×16 | pair with mansion_door_arch_left at corridor boundary |
-| `mansion_door_jamb` | 16×16 | vertical doorway continuation/side return |
-| `mansion_corridor_edge_left` | 16×16 | scene-boundary taper/side corridor transition |
-| `mansion_corridor_edge_right` | 16×16 | mirrored scene-boundary taper |
-| `mansion_flower_vase` | 16×16 | optional side furnishing; restrained floral accent |
-| `mansion_statue_bust` | 16×16 | optional side architectural accent |
-| `mansion_chandelier` | 32×24 | top/scene-boundary focal prop; avoid sustained central-lane occupation |
+`mansion_composition.js` is the deterministic recipe used for the 192×240 proof. Its operations are only `tile_rect` and `place` references to the exact matrices. The proof does not import or draw any independent scene art.
 
-## Vertical-danmaku composition proof
+## Asset inventory
 
-The canonical source also contains the deterministic `compositionProof` recipe. The native proof is exactly **192×240**. Its visible pixels are produced only by stamping/repeating exact `mansion_*` matrices; no environment rectangles, lines, gradients, resampling, antialiasing, characters, bullets, items, or UI are drawn into it.
+### 8×8 wall / carpet / floor / trim
 
-The quiet central bullet lane is x=48..143. Dark carpet variants occupy that band; architectural detail is concentrated in x=0..39 and x=152..191, with 8-pixel carpet borders between them. The chandelier is restricted to the top scene boundary.
+| Asset | Size |
+|---|---:|
+| `mansion_wall_plain` | 8×8 |
+| `mansion_wall_damask_a` | 8×8 |
+| `mansion_wall_damask_b` | 8×8 |
+| `mansion_wall_panel` | 8×8 |
+| `mansion_carpet_center` | 8×8 |
+| `mansion_carpet_motif` | 8×8 |
+| `mansion_carpet_edge_l` | 8×8 |
+| `mansion_carpet_edge_r` | 8×8 |
+| `mansion_floor_wood` | 8×8 |
+| `mansion_floor_stone` | 8×8 |
+| `mansion_molding_horizontal` | 8×8 |
+| `mansion_trim_vertical` | 8×8 |
+| `mansion_masonry_shadow` | 8×8 |
 
-Review files:
+### 16×16 architecture
 
-- `mansion_asset_atlas.png` — exact matrices arranged into an atlas and enlarged **4× nearest-neighbor** by literal pixel duplication.
-- `mansion_composition_proof_192x240.png` — exact native-size vertical-danmaku proof generated from the embedded composition recipe.
+| Asset | Size |
+|---|---:|
+| `mansion_window_gothic_a` | 16×16 |
+| `mansion_window_gothic_b` | 16×16 |
+| `mansion_sconce_single` | 16×16 |
+| `mansion_sconce_double` | 16×16 |
+| `mansion_pillar_cap` | 16×16 |
+| `mansion_pillar_mid` | 16×16 |
+| `mansion_pillar_base` | 16×16 |
+| `mansion_railing` | 16×16 |
+| `mansion_door_arch_l` | 16×16 |
+| `mansion_door_arch_r` | 16×16 |
+| `mansion_door_side_l` | 16×16 |
+| `mansion_door_side_r` | 16×16 |
+| `mansion_door_panel` | 16×16 |
+| `mansion_corridor_shadow` | 16×16 |
+| `mansion_corridor_threshold` | 16×16 |
+
+### 16×16 furnishing / accents
+
+| Asset | Size |
+|---|---:|
+| `mansion_painting_frame` | 16×16 |
+| `mansion_bookcase` | 16×16 |
+| `mansion_side_table` | 16×16 |
+| `mansion_vase_flowers` | 16×16 |
+| `mansion_bust_statue` | 16×16 |
+| `mansion_drape_banner` | 16×16 |
+
+### Larger prop
+
+| Asset | Size |
+|---|---:|
+| `mansion_chandelier` | 32×24 |
+
+Total: **35 exact assets**.
+
+## Palette inventory
+
+Exact package usage:
+
+`B H R S W a b d e g h k l n o r s t u x y`
+
+The validator reads the live checkpoint `PAL` keys from `index.html` and rejects any source character outside that set plus `.`.
+
+## Danmaku composition rule
+
+The proof reserves x=64..127 as the principal quiet bullet lane. Rich wallpaper, windows, sconces, chandeliers, paintings, railings, bookcases, busts, flowers, and most bright gold highlights stay toward the side architecture or scene boundaries.
+
+Measured on the proof before the lower doorway boundary (y<208):
+
+- central bright-pixel density: `0.000000`
+- side-zone bright-pixel density: `0.114633`
+- central edge density: `0.130843`
+- side-zone edge density: `0.435491`
+
+The center is therefore materially darker and less visually busy than the sides.
+
+## Preview / proof
+
+- `mansion_asset_atlas.png` — enlarged 4× nearest-neighbor atlas rendered from the exact matrices.
+- `mansion_asset_atlas_map.txt` — row/column mapping for the unlabeled atlas.
+- `mansion_composition_proof_192x240.png` — exact native 192×240 vertical-danmaku composition proof made only from the matrix family.
 
 ## Validation
 
-`VALIDATION.txt` records the passed dimension, prefix, duplicate-name, allowed-character, composition-reference, proof-size, and palette checks, plus SHA-256 hashes for the committed source and preview images.
+Run:
 
-## Non-goals
+```bash
+node dev/art/v3_stage3a_mansion/mansion_validate.js
+```
 
-No Reimu, Sakuya, Remilia, fairy, portrait, bullet, item, UI, gameplay, or runtime integration changes are included. `index.html` remains untouched.
+The validator checks:
+
+- `mansion_` prefixes;
+- exact declared height and row widths;
+- allowed `PAL` characters;
+- exact 192×240 composition dimensions;
+- composition references only existing assets;
+- PNG dimensions for the proof and enlarged atlas.
+
+The committed `VALIDATION.txt` is the passing report.
+
+## Integration boundary
+
+This branch is an art-source handoff only. `index.html` is intentionally untouched. A later mechanical integration pass may copy these exact matrices into runtime tile structures, but should not redraw or reinterpret them.
