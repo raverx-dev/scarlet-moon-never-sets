@@ -1,0 +1,10 @@
+Version 3 Stage 2 Forest of Magic asset validation
+===================================================
+Asset count: 34
+Matrix validation errors: 0
+All asset names forest_-prefixed: PASS
+Allowed-character rule (existing PAL letters + '.'): PASS
+Palette extension request: NONE
+Composition proof mean luminance, central lane x=56..135: 29.08
+Composition proof mean luminance, outer side columns: 85.65
+Central lane darker than sides: PASS
