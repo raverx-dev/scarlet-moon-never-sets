@@ -1,0 +1,43 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Scarlet Moon V3 UI Chrome — Exact Matrix Preview</title>
+<style>
+html,body{margin:0;background:#09101a;color:#eee;font:12px monospace}
+main{padding:16px;display:grid;grid-template-columns:280px 1fr;gap:18px}
+section{display:flex;flex-wrap:wrap;align-content:flex-start;gap:16px}
+figure{margin:0;padding:8px;background:#0d1520;border:1px solid #253044}
+figcaption{margin-top:6px;max-width:360px}
+canvas{display:block;background:#111320;image-rendering:pixelated;image-rendering:crisp-edges}
+p{grid-column:1/-1;margin:0 0 8px}
+</style>
+<main>
+<p>Exact preview generated directly from <code>ui_assets.js</code>. Canvas smoothing is disabled; scaling is integer nearest-neighbor.</p>
+<section id="hud"></section><section id="rest"></section>
+</main>
+<script type="module">
+import {UI_ASSETS,UI_PAL_KEYS,validateUiAssets} from "./ui_assets.js";
+const check=validateUiAssets();
+if(!check.ok) throw new Error(check.errors.join("\n"));
+function render(name,scale,parent){
+  const a=UI_ASSETS[name], c=document.createElement("canvas");
+  c.width=a.width*scale;c.height=a.height*scale;
+  c.style.width=c.width+"px";c.style.height=c.height+"px";
+  const x=c.getContext("2d");x.imageSmoothingEnabled=false;
+  x.fillStyle="#111320";x.fillRect(0,0,c.width,c.height);
+  for(let y=0;y<a.height;y++)for(let px=0;px<a.width;px++){
+    const ch=a.rows[y][px]; if(ch===".")continue;
+    x.fillStyle=UI_PAL_KEYS[ch];
+    x.fillRect(px*scale,y*scale,scale,scale);
+  }
+  const f=document.createElement("figure"),cap=document.createElement("figcaption");
+  cap.textContent=`${name} — ${a.width}×${a.height} — keys ${a.palette||"(transparent)"}`;
+  f.append(c,cap);parent.append(f);
+}
+render("ui_hud_panel",4,document.querySelector("#hud"));
+for(const n of Object.keys(UI_ASSETS)){
+  if(n==="ui_hud_panel")continue;
+  const a=UI_ASSETS[n];
+  const scale=a.width<=8?8:a.width<=40?6:4;
+  render(n,scale,document.querySelector("#rest"));
+}
+</script>

@@ -1,0 +1,27 @@
+Scarlet Moon Never Sets — Version 3 Global UI Chrome Validation
+Governing issue: #16
+Baseline checkpoint: 69d06766c0a6c165f26f71ded96d7b5bd8a122df
+Allowed keys: . plus existing PAL keys only
+
+PASS ui_frame_corner_tl: 8x8; palette=Rgr
+PASS ui_frame_corner_tr: 8x8; palette=Rgr
+PASS ui_frame_corner_bl: 8x8; palette=Rgr
+PASS ui_frame_corner_br: 8x8; palette=Rgr
+PASS ui_frame_edge_top: 8x8; palette=Rr
+PASS ui_frame_edge_bottom: 8x8; palette=Rr
+PASS ui_frame_edge_left: 8x8; palette=Rr
+PASS ui_frame_edge_right: 8x8; palette=Rr
+PASS ui_frame_title_tab: 32x8; palette=Rgr
+PASS ui_hud_divider: 56x8; palette=HRgr
+PASS ui_hud_panel: 64x240; palette=BHRgkr
+PASS ui_life_icon: 8x8; palette=Rrw
+PASS ui_bomb_icon: 8x8; palette=Rgrw
+PASS ui_power_cell_on: 8x8; palette=gry
+PASS ui_power_cell_off: 8x8; palette=BHh
+PASS ui_stage_thumb_lake: 16x16; palette=BCabcik
+PASS ui_stage_thumb_forest: 16x16; palette=Gektuv
+PASS ui_stage_thumb_mansion: 16x16; palette=BHkrx
+PASS ui_dialogue_frame: 248x62; palette=HRgkr
+PASS ui_portrait_bezel: 40x40; palette=Rgrw
+
+OVERALL: PASS
