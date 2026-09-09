@@ -1,0 +1,171 @@
+{
+  "assets": {
+    "roof_shingle_a": [
+      "bbbBBBBb",
+      "bBbBBbBb",
+      "BbbBBbbB",
+      "bBBBBBBb",
+      "bBbBBbBb",
+      "BbbBBbbB",
+      "bBBBBBBb",
+      "BBBBBBBB"
+    ],
+    "roof_shingle_b": [
+      "BbBBBBBb",
+      "bBBbBBbB",
+      "BbBBbBBb",
+      "bBBBBBBb",
+      "BBbBBbBB",
+      "bBBbBBbB",
+      "BbBBBBBb",
+      "BBBBBBBB"
+    ],
+    "roof_shingle_c": [
+      "bBBBBbBb",
+      "BbBBbBBb",
+      "bBbBBbBB",
+      "BBBBBBBb",
+      "bBBbBBbB",
+      "BbBBbBBb",
+      "bBBBBbBb",
+      "BBBBBBBB"
+    ],
+    "roof_shingle_shadow": [
+      "hHBHHHhH",
+      "hHhHHhHh",
+      "HhhHHhhH",
+      "hHHHHHHh",
+      "hHhHHhHh",
+      "HhhHHhhH",
+      "hHHHHHHh",
+      "HHHHHHHH"
+    ],
+    "roof_masonry_a": [
+      "BBBHBBBB",
+      "BHBBBHBB",
+      "BBBHBBBB",
+      "HHHHHHHH",
+      "BBBBHBBB",
+      "BBHBBBHB",
+      "BBBBHBBB",
+      "HHHHHHHH"
+    ],
+    "roof_masonry_b": [
+      "BBBBBHBB",
+      "BBHBBBHB",
+      "BBBBBHBB",
+      "HHHHHHHH",
+      "BHBBBBBB",
+      "BBBHBBBH",
+      "BHBBBBBB",
+      "HHHHHHHH"
+    ],
+    "roof_cobble_a": [
+      "aSaSaaSa",
+      "SaaSaaSa",
+      "aSaaSaSa",
+      "SaaSaaSa",
+      "aSaSaaSa",
+      "SaaaSaSa",
+      "aSaaSaSa",
+      "SaaSaaSa"
+    ],
+    "roof_cobble_b": [
+      "SaaSaaSa",
+      "aSaSaaSa",
+      "SaaaSaSa",
+      "aSaaSaSa",
+      "SaaSaaSa",
+      "aSaSaaSa",
+      "SaaSaaSa",
+      "aSaaSaSa"
+    ],
+    "roof_ridge_trim": [
+      "xxxRxxxx",
+      "RRRRRRRR",
+      "BBBBBBBB",
+      "BBBBBBBB",
+      "HHHHHHHH",
+      "BBBBBBBB",
+      "BBBBBBBB",
+      "HHHHHHHH"
+    ]
+  },
+  "meta": {
+    "roof_shingle_a": {
+      "w": 8,
+      "h": 8,
+      "palette": [
+        "B",
+        "b"
+      ]
+    },
+    "roof_shingle_b": {
+      "w": 8,
+      "h": 8,
+      "palette": [
+        "B",
+        "b"
+      ]
+    },
+    "roof_shingle_c": {
+      "w": 8,
+      "h": 8,
+      "palette": [
+        "B",
+        "b"
+      ]
+    },
+    "roof_shingle_shadow": {
+      "w": 8,
+      "h": 8,
+      "palette": [
+        "B",
+        "H",
+        "h"
+      ]
+    },
+    "roof_masonry_a": {
+      "w": 8,
+      "h": 8,
+      "palette": [
+        "B",
+        "H"
+      ]
+    },
+    "roof_masonry_b": {
+      "w": 8,
+      "h": 8,
+      "palette": [
+        "B",
+        "H"
+      ]
+    },
+    "roof_cobble_a": {
+      "w": 8,
+      "h": 8,
+      "palette": [
+        "S",
+        "a"
+      ]
+    },
+    "roof_cobble_b": {
+      "w": 8,
+      "h": 8,
+      "palette": [
+        "S",
+        "a"
+      ]
+    },
+    "roof_ridge_trim": {
+      "w": 8,
+      "h": 8,
+      "palette": [
+        "B",
+        "H",
+        "R",
+        "x"
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+Version 3 Stage 3B roof/gate asset validation
+
+Asset count: 44
+Prefix check: PASS
+Allowed-character check: PASS
+Palette extension: NONE
+
+roof_shingle_a: 8x8 palette=B,b
+roof_shingle_b: 8x8 palette=B,b
+roof_shingle_c: 8x8 palette=B,b
+roof_shingle_shadow: 8x8 palette=B,H,h
+roof_masonry_a: 8x8 palette=B,H
+roof_masonry_b: 8x8 palette=B,H
+roof_cobble_a: 8x8 palette=S,a
+roof_cobble_b: 8x8 palette=S,a
+roof_ridge_trim: 8x8 palette=B,H,R,x
+roof_battlement_straight: 16x16 palette=B,H
+roof_battlement_corner_l: 16x16 palette=B,H
+roof_battlement_corner_r: 16x16 palette=B,H
+roof_window_gothic_tall: 16x16 palette=B,H,R,W,r,y
+roof_window_gothic_wide: 16x16 palette=B,H,R,W,r,y
+roof_railing_straight: 16x16 palette=S
+roof_railing_end_l: 16x16 palette=S
+roof_railing_end_r: 16x16 palette=S
+roof_spire_base: 16x16 palette=B,H,R
+roof_spire_mid: 16x16 palette=B,H,R
+roof_spire_cap: 16x16 palette=B,H,R
+roof_chimney_stack: 16x16 palette=B,H
+roof_finial_cross: 16x16 palette=B,S,a
+roof_gargoyle_left: 16x16 palette=B,H,S
+roof_gargoyle_right: 16x16 palette=B,H,S
+roof_lantern_hanging: 16x16 palette=R,W,r,u,y
+roof_lantern_wall: 16x16 palette=H,R,S,W,r,u,y
+gate_arch_top: 16x16 palette=B,H
+gate_bar_panel: 16x16 palette=S
+gate_pillar: 16x16 palette=B,H
+gate_pillar_cap: 16x16 palette=B,H
+gate_fence_section: 16x16 palette=S
+gate_fence_finial: 16x16 palette=S
+gate_approach_stone: 16x16 palette=B,H
+gate_approach_transition: 16x16 palette=B,H,S,a
+mansion_ext_wall_panel: 16x16 palette=B,H
+mansion_ext_window_tall: 16x16 palette=B,H,R,W,r,y
+mansion_ext_buttress: 16x16 palette=B,H
+mansion_ext_balcony_floor: 16x16 palette=B,H,S
+mansion_ext_chimney_tall: 16x16 palette=B,H
+mansion_ext_lantern_window: 16x16 palette=R,W,r,u,y
+mansion_ext_roofline_trim: 16x16 palette=B,H,R,x
+mansion_ext_skyline_spires_a: 16x16 palette=B,H,h,n
+mansion_ext_skyline_spires_b: 16x16 palette=B,H,h,n
+roof_scarlet_moon_64: 64x64 palette=F,R,r,x,z
+
+Composition proof checks:
+- upper spectacle mean luminance: 44.17
+- lower-center survival zone mean luminance: 16.08
+- lower-edge detail mean luminance: 22.70
+- readability result: PASS (lower center is darker than both upper spectacle and lower edges)
+- moon family source: exact carry-forward from approved shrine/title asset family
+- split-source equivalence: PASS (44 assets serialized without matrix edits)
