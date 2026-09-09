@@ -1,0 +1,29 @@
+PASS — Version 3 Stage 3A Scarlet Devil Mansion Interior
+
+Base checkpoint: 69d06766c0a6c165f26f71ded96d7b5bd8a122df
+Branch target: v3-art-stage3a-mansion
+Asset count: 26
+
+Checks:
+- mansion_ prefix: PASS
+- unique asset names: PASS
+- declared matrix widths/heights: PASS
+- allowed characters (existing PAL keys + '.' transparency): PASS
+- compositionProof references resolve only to exact mansion_* assets: PASS
+- native composition proof dimensions 192x240: PASS
+- atlas uses exact matrices enlarged by integer nearest-neighbor duplication: PASS
+- no palette extension: PASS
+- no runtime/index.html integration: PASS
+
+Palette inventory:
+B G H R S W b d g h i n p r t u x y
+
+Preview dimensions:
+mansion_asset_atlas.png: 800x768 RGBA
+mansion_composition_proof_192x240.png: 192x240 RGBA
+
+SHA-256:
+1628eded4bb116749c6c010144bec0f380b5ff30a3f0601139e3c4dc1db5abc3  v3_stage3a_mansion_assets.js
+7d97c91d487b1fc29826d1e0c2c76cda10cd03bda372157150769da7232341ac  README.md
+e3790f30ba5f6107ad362879ccac38e1ce2a5b0892369abbf021a63700367be9  mansion_asset_atlas.png
+2f89a6a4e17f1034bd47a8fe8a400a63eccb638ff07a0a334fc8bdd659e793c3  mansion_composition_proof_192x240.png
