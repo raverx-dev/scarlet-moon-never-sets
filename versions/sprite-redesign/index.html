@@ -1396,39 +1396,36 @@ const add=(asset,x,y)=>{placements.push({asset,x,y})};
 const lane=['forest_path_lane_a','forest_path_lane_b','forest_path_lane_c'];
 for(let ty=0;ty<H;ty+=8)for(let tx=0;tx<256;tx+=8)add(lane[((tx>>3)+(ty>>3))%3],tx,ty);
 for(let ty=0;ty<H;ty+=8){add('forest_ground_edge',48,ty);add('forest_ground_edge',136,ty)}
-for(const [i,tx] of [0,16,32,144,160,176,192,208,224,240].entries()){
-  if(tx===0||tx===176||tx===240)add('forest_distant_pines_moonlit',tx,0);
+for(const [i,tx] of [0,16,32,144,160,176].entries()){
+  if(tx===0||tx===176)add('forest_distant_pines_moonlit',tx,0);
   else add(i%2?'forest_distant_pines_b':'forest_distant_pines_a',tx,0);
 }
-for(let ty=0;ty<H;ty+=16)for(const tx of [0,16,32,144,160,176,192,208,224,240]){
-  if(ty===0&&(tx===0||tx===176||tx===240))add('forest_canopy_moonlit',tx,ty);
+for(let ty=0;ty<H;ty+=16)for(const tx of [0,16,32,144,160,176]){
+  if(ty===0&&(tx===0||tx===176))add('forest_canopy_moonlit',tx,ty);
   else if(tx===32||tx===144)add('forest_canopy_shadow',tx,ty);
   else add(((tx>>4)+(ty>>4))%2===0?'forest_canopy_a':'forest_canopy_b',tx,ty);
 }
 for(let ty=16;ty<224;ty+=16){
   add((ty>>4)%2===0?'forest_trunk_straight':'forest_trunk_knotted',0,ty);
   add((ty>>4)%2===0?'forest_trunk_knotted':'forest_trunk_straight',176,ty);
-  add((ty>>4)%2===0?'forest_trunk_straight':'forest_trunk_knotted',240,ty);
 }
-add('forest_root_left',0,224);add('forest_root_right',176,224);add('forest_root_right',240,224);
-for(const [x,y,a] of [[16,40,'forest_mushroom_red'],[16,104,'forest_mushroom_violet'],[16,168,'forest_mushroom_red'],[160,56,'forest_mushroom_violet'],[160,120,'forest_mushroom_red'],[160,184,'forest_mushroom_violet'],[0,72,'forest_mushroom_cluster'],[0,200,'forest_mushroom_cluster'],[176,48,'forest_mushroom_cluster'],[176,136,'forest_mushroom_cluster'],[208,40,'forest_mushroom_red'],[208,120,'forest_mushroom_violet'],[240,72,'forest_mushroom_cluster']])add(a,x,y);
-for(const y of [24,88,152,216]){add('forest_lantern_small',4,y);add('forest_lantern_small',180,y);add('forest_lantern_small',244,y)}
+add('forest_root_left',0,224);add('forest_root_right',176,224);
+for(const [x,y,a] of [[16,40,'forest_mushroom_red'],[16,104,'forest_mushroom_violet'],[16,168,'forest_mushroom_red'],[160,56,'forest_mushroom_violet'],[160,120,'forest_mushroom_red'],[160,184,'forest_mushroom_violet'],[0,72,'forest_mushroom_cluster'],[0,200,'forest_mushroom_cluster'],[176,48,'forest_mushroom_cluster'],[176,136,'forest_mushroom_cluster']])add(a,x,y);
+for(const y of [24,88,152,216]){add('forest_lantern_small',4,y);add('forest_lantern_small',180,y)}
 for(const [i,y] of [16,36,56,76,96,116,136,156,176,196,216].entries()){
   add(i%2===0?'forest_firefly_a':'forest_firefly_b',i%2===0?8:176,y);
-  add(i%2===0?'forest_firefly_b':'forest_firefly_a',240,y);
 }
-for(const [x,y] of [[24,32],[160,64],[8,128],[176,160],[24,192],[160,208],[208,64],[240,160]])add('forest_wisp',x,y);
-for(const y of [48,112,176]){add('forest_fern',16,y);add('forest_fern',160,y);add('forest_fern',208,y)}
-for(const y of [32,96,160,224]){add('forest_shrub',16,y);add('forest_shrub',160,y);add('forest_shrub',208,y)}
+for(const [x,y] of [[24,32],[160,64],[8,128],[176,160],[24,192],[160,208]])add('forest_wisp',x,y);
+for(const y of [48,112,176]){add('forest_fern',16,y);add('forest_fern',160,y)}
+for(const y of [32,96,160,224]){add('forest_shrub',16,y);add('forest_shrub',160,y)}
 for(const y of [16,80,144,208]){add('forest_grass_tuft',40,y);add('forest_grass_tuft',136,y)}
-for(const y of [0,16,32]){add('forest_vine_hanging',16,y);add('forest_vine_hanging',160,y);add('forest_vine_hanging',208,y)}
+for(const y of [0,16,32]){add('forest_vine_hanging',16,y);add('forest_vine_hanging',160,y)}
 for(const y of [64,128,192]){add('forest_path_edge_stone',40,y);add('forest_path_edge_stone',136,y)}
 for(let i=0,y=8;y<232;y+=16,i++){
   add(['forest_leaf_a','forest_leaf_b','forest_leaf_c'][i%3],24,y);
   add(['forest_leaf_c','forest_leaf_a','forest_leaf_b'][i%3],160,y);
-  add(['forest_leaf_a','forest_leaf_b','forest_leaf_c'][(i+1)%3],208,y);
 }
-for(const [x,y] of [[0,8],[184,24],[0,88],[184,120],[0,168],[184,200],[248,24],[248,120]])add('forest_leaf_moonlit',x,y);
+for(const [x,y] of [[0,8],[184,24],[0,88],[184,120],[0,168],[184,200]])add('forest_leaf_moonlit',x,y);
 const sheet=document.createElement('canvas');sheet.width=256;sheet.height=240;
 const fc=sheet.getContext('2d',{alpha:false});fc.imageSmoothingEnabled=false;fc.fillStyle=C.black;fc.fillRect(0,0,256,240);
 for(const p of placements){
@@ -1560,7 +1557,43 @@ for(const op of operations){
     for(let ty=0;ty<op.height;ty+=th)for(let tx=0;tx<op.width;tx+=tw)paint(rows,op.x+tx,op.y+ty,op.x,op.y,op.width,op.height);
   }else paint(rows,op.x,op.y);
 }
-return Object.freeze({A,operations,sheet});
+const story=document.createElement('canvas');story.width=256;story.height=240;
+const sc=story.getContext('2d',{alpha:false});sc.imageSmoothingEnabled=false;sc.drawImage(sheet,0,0);
+function paintStory(rows,x0,y0,cx,cy,cw,ch){
+  for(let yy=0;yy<rows.length;yy++){
+    const row=rows[yy];
+    for(let xx=0;xx<row.length;xx++){
+      const col=PAL[row[xx]];if(!col)continue;
+      const x=x0+xx,y=y0+yy;
+      if(x<0||x>=256||y<0||y>=240)continue;
+      if(cw!=null&&(x<cx||x>=cx+cw||y<cy||y>=cy+ch))continue;
+      sc.fillStyle=col;sc.fillRect(x,y,1,1);
+    }
+  }
+}
+function tileStory(asset,x,y,width,height){
+  const rows=A[asset],tw=rows[0].length,th=rows.length;
+  for(let ty=0;ty<height;ty+=th)for(let tx=0;tx<width;tx+=tw)paintStory(rows,x+tx,y+ty,x,y,width,height);
+}
+tileStory('mansion_wall_plain',192,0,64,240);
+tileStory('mansion_wall_damask_b',192,0,48,240);
+for(const y of [72,152,224]) tileStory('mansion_molding_horizontal',192,y,64,8);
+for(const y of [16,32,48,64,80,96,112,128,144,160,176,192]) paintStory(A.mansion_pillar_mid,240,y);
+paintStory(A.mansion_pillar_cap,240,0);
+paintStory(A.mansion_pillar_base,240,208);
+for(const [asset,x,y] of [
+  ['mansion_window_gothic_a',208,16],
+  ['mansion_sconce_single',192,40],['mansion_sconce_double',224,40],
+  ['mansion_sconce_single',208,184],
+  ['mansion_painting_frame',208,56],
+  ['mansion_drape_banner',224,128],
+  ['mansion_chandelier',200,4],
+  ['mansion_corridor_threshold',240,208]
+]) paintStory(A[asset],x,y);
+for(const x of [192,208,224,240]) paintStory(A.mansion_railing,x,144);
+paintStory(A.mansion_bookcase,208,160);
+paintStory(A.mansion_bookcase,208,176);
+return Object.freeze({A,operations,sheet,story});
 })();
 const ROOF=(function(){
 const RAW={
@@ -1649,7 +1682,43 @@ for(const op of operations) paint(A[op.asset],op.x,op.y);
 rc.globalAlpha=180/255;rc.fillStyle=PAL.k;rc.fillRect(48,156,96,84);rc.globalAlpha=1;
 for(let x=56;x<136;x+=16) paint(A[(x>>4)%2===0?'roof_cobble_a':'roof_cobble_b'],x,224);
 for(const x of [32,144]) paint(A.roof_lantern_wall,x,204);
-return Object.freeze({A,operations,sheet});
+const story=document.createElement('canvas');story.width=256;story.height=240;
+const sc=story.getContext('2d',{alpha:false});sc.imageSmoothingEnabled=false;sc.drawImage(sheet,0,0);
+function paintStory(rows,x0,y0){
+  for(let yy=0;yy<rows.length;yy++){
+    const row=rows[yy];
+    for(let xx=0;xx<row.length;xx++){
+      const col=PAL[row[xx]];if(!col)continue;
+      const x=x0+xx,y=y0+yy;
+      if(x<0||x>=256||y<0||y>=240)continue;
+      sc.fillStyle=col;sc.fillRect(x,y,1,1);
+    }
+  }
+}
+for(let y=112;y<240;y++){sc.fillStyle=PAL[y<128?'h':'k'];sc.fillRect(0,y,256,1)}
+for(let y=112;y<240;y+=8)for(let x=0;x<256;x+=8)paintStory(A[(x>>3)%2===0?'roof_cobble_a':'roof_cobble_b'],x,y);
+for(let x=0;x<256;x+=16)paintStory(A.gate_approach_stone,x,112);
+for(const y of [112,128,144,160]){paintStory(A.mansion_ext_wall_panel,0,y);paintStory(A.mansion_ext_wall_panel,240,y)}
+for(const x of [32,80]){
+  paintStory(A.gate_pillar_cap,x,112);
+  paintStory(A.gate_pillar,x,128);
+  paintStory(A.gate_pillar,x,144);
+}
+paintStory(A.gate_arch_top,48,112);
+paintStory(A.gate_arch_top,64,112);
+paintStory(A.gate_bar_panel,48,128);
+paintStory(A.gate_bar_panel,64,128);
+paintStory(A.gate_bar_panel,48,144);
+paintStory(A.gate_bar_panel,64,144);
+paintStory(A.mansion_ext_window_tall,192,128);
+paintStory(A.mansion_ext_buttress,224,128);
+for(const x of [0,16,224,240])paintStory(A.gate_fence_section,x,208);
+paintStory(A.roof_gargoyle_left,8,192);
+paintStory(A.roof_gargoyle_right,232,192);
+paintStory(A.roof_lantern_wall,32,144);
+paintStory(A.roof_lantern_wall,80,144);
+for(let x=0;x<256;x+=16)paintStory(A.mansion_ext_balcony_floor,x,224);
+return Object.freeze({A,operations,sheet,story});
 })();
 function blitRows(rows,s){const h=rows.length,w=rows[0].length;for(let yy=0;yy<h;yy++){const y0=Math.round((yy-h/2)*s),y1=Math.round((yy+1-h/2)*s),dh=y1-y0;if(dh<=0)continue;const row=rows[yy];for(let xx=0;xx<w;xx++){const col=PAL[row[xx]];if(!col)continue;const x0=Math.round((xx-w/2)*s),x1=Math.round((xx+1-w/2)*s),dw=x1-x0;if(dw<=0)continue;rect(x0,y0,dw,dh,col)}}}
 function blit(rows,x,y,s=1,flip=false){if(!rows||!rows.length)return;s=Math.max(1,s|0);ctx.save();ctx.translate(Math.round(x),Math.round(y));if(flip)ctx.scale(-1,1);blitRows(rows,s);ctx.restore()}
@@ -1868,11 +1937,11 @@ function drawForest(t,w,dim){
   if(dim)dimField(w,dim);
 }
 function drawInterior(t,w,dim){
-  ctx.drawImage(MANSION.sheet,0,0,w,240,0,0,w,240);
+  ctx.drawImage((w>=256&&MANSION.story)?MANSION.story:MANSION.sheet,0,0,w,240,0,0,w,240);
   if(dim)dimField(w,dim);
 }
 function drawRoof(t,w,dim){
-  ctx.drawImage(ROOF.sheet,0,0,w,240,0,0,w,240);
+  ctx.drawImage((w>=256&&ROOF.story)?ROOF.story:ROOF.sheet,0,0,w,240,0,0,w,240);
   if(dim)dimField(w,dim);
 }
 function shrine(morning,t,w=256,opt={}){
@@ -1945,7 +2014,7 @@ function drawDialogue(){
   background(stage,frame,256,sceneKind||(d.id==='intro'?'shrine':d.id==='ending'?'morning':''),d.id==='ending'?{donation:false}:undefined);
   if(d.id==='intro')storyReimu(70,146);
   else if(d.id==='ending'){storyReimu(64,136);sprite('remilia',168,124,1);donation(112,148,true);coin(112,140)}
-  else {storyReimu(56,124);const other=who==='reimu'?(d.id.startsWith('cirno')?'cirno':d.id.startsWith('marisa')?'marisa':d.id.startsWith('sakuya')?'sakuya':d.id.startsWith('remilia')?'remilia':'reimu'):who;if(other==='reimu')storyReimu(196,116);else sprite(other,196,108,1);if(d.id.startsWith('marisa')){rect(168,118,12,16,C.gold);rect(170,120,8,12,C.red);rect(171,122,6,2,C.white)}}
+  else {storyReimu(56,124);const other=who==='reimu'?(d.id.startsWith('cirno')?'cirno':d.id.startsWith('marisa')?'marisa':d.id.startsWith('sakuya')?'sakuya':d.id.startsWith('remilia')?'remilia':'reimu'):who;const ox=other==='marisa'?152:other==='sakuya'?208:other==='remilia'?200:196,oy=other==='remilia'?124:108;if(other==='reimu')storyReimu(ox,oy+8);else sprite(other,ox,oy,1);if(d.id.startsWith('marisa')){rect(136,118,12,16,C.gold);rect(138,120,8,12,C.red);rect(139,122,6,2,C.white)}}
   stamp(UI.ui_dialogue_frame,4,174);portrait(who,9,181);
   text(who,50,181,{reimu:C.red,cirno:C.cyan,marisa:C.gold,sakuya:C.white,remilia:C.pink}[who]);
   wrap(s.slice(0,Math.floor(d.print)),32).forEach((l,i)=>text(l,50,193+i*9));
@@ -1983,7 +2052,7 @@ function drawAttract(){
     const q=Math.floor((t-900)/70);
     if(q===0){background(1,t,256);sprite('cirno',128,96,1)}
     if(q===1){background(2,t,256);sprite('marisa',128,96,1)}
-    if(q===2){background(3,t,256,'roof');sprite('sakuya',128,96,1)}
+    if(q===2){background(3,t,256,'roof');sprite('sakuya',128,132,1)}
     if(q===3){rect(0,0,256,240,C.black);sprite('remiliaAttract',128,88,1)}
     if(q>=4){rect(0,0,256,240,C.black);stars(256,80);stamp(SHRINE.moon_scarlet_64,96,16);stampScale(SHRINE.title_touhou_kougetsuya,32,88,2);center('SCARLET MOON NEVER SETS',133,C.pink)}
   }
@@ -1995,7 +2064,7 @@ function drawCredits(){
   const credits=[['STAFF','A TINY LOST CARTRIDGE','NEW CODE AND PIXEL ART'],['MUSIC','TOUHOU COMPOSITIONS: ZUN','NEW FOUR-VOICE ARRANGEMENTS'],['SPECIAL THANKS','THE GENSOKYO NIGHT SHIFT','GATE SECURITY: MEILING'],['TIMING AND PRECISION','SAKUYA IZAYOI','NO FRAMES WERE HARMED'],['EXECUTIVE AESTHETICS','REMILIA SCARLET','CHARISMA RESTORATION'],['INCIDENT RESOLUTION','REIMU HAKUREI','TOTAL COMPENSATION: ONE COIN']][part];
   let head=credits[0];if(part===1&&local>105)head='MUS C';
   const scroll=Math.floor(local/18);center(head,62-scroll,C.gold,part===0?2:1);center(credits[1],90-scroll,C.white);center(credits[2],104-scroll,C.blue);
-  if(part>1)text('MUS C',8,198,C.blue);roof(181,256);
+  if(part>1)text('MUS C',8,198,C.blue);shrineFill('shrine_ground_stone_night_a','shrine_ground_stone_night_b',0,181,256,59);for(let x=0;x<256;x+=8)stamp(ROOF.A.roof_ridge_trim,x,181);
   if(part===0){if(local>120)iceCase(104,118,48,56);sprite('cirno',128,148,1);if(local>120){for(let i=0;i<6;i++)rect(110+(i*7)%40,124+(i*9)%48,2,2,i%2?C.white:C.cyan)}if(local<120)for(let i=0;i<5;i++)drawBullet({x:128+(i-2)*8,y:140-local*.6,c:C.cyan,shape:'ice'})}
   if(part===1){const x=local<200?local*1.7-40:300;sprite('marisa',x,144,1);if(local>105)text('I',x+15,126,C.gold)}
   if(part===2){sprite('meilingSleep',128,165,2);text('Z Z Z',145,130-(local%60)*.1,C.cyan)}
