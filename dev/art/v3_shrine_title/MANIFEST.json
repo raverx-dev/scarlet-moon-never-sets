@@ -1,0 +1,25 @@
+{
+  "branch": "v3-shrine-title-assets",
+  "status": "finalized-composition-qa",
+  "governing_issue": "#16",
+  "pass": "focused richness pass + matrix-only composition QA correction",
+  "asset_count": 51,
+  "palette_policy": "existing PAL letters plus . transparency only",
+  "validation_overall": "PASS",
+  "composition_qa": "PASS",
+  "runtime_integration": false,
+  "source_file": "dev/art/v3_shrine_title/v3_shrine_title_assets.js",
+  "validation_file": "dev/art/v3_shrine_title/VALIDATION.txt",
+  "manifest_file": "dev/art/v3_shrine_title/MANIFEST.json",
+  "composition_qa_file": "dev/art/v3_shrine_title/COMPOSITION_QA.md",
+  "unchanged_key_assets": [
+    "moon_scarlet_64",
+    "moon_silver_32",
+    "title_touhou_kougetsuya"
+  ],
+  "integration_guidance": {
+    "character_scale": "keep accepted character sprites at native accepted scale",
+    "environment_scale": "make shrine larger by composing/repeating native 8x8 and 16x16 components; integer scaling only where appropriate",
+    "forbidden": "fractional scaling, smoothing, downsampling, shrinking gameplay sprites to fit scenery"
+  }
+}
