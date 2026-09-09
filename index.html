@@ -1353,6 +1353,98 @@ const lc=sheet.getContext('2d',{alpha:false});lc.imageSmoothingEnabled=false;lc.
 for(const p of placements){const rows=A[p.asset];for(let yy=0;yy<rows.length;yy++){const row=rows[yy];for(let xx=0;xx<row.length;xx++){const col=PAL[row[xx]];if(!col)continue;lc.fillStyle=col;lc.fillRect(p.x+xx,p.y+yy,1,1)}}}
 return Object.freeze({A,placements,sheet});
 })();
+const FOREST=(function(){
+const RAW={
+"forest_bark_a":"uutuuutu\nutthuutu\nutuhuttu\nuuutttuu\ntuhuutut\nutuooutu\nuuthutuu\ntuutuutu",
+"forest_bark_b":"tuutuutu\nuuhuttuu\nuttootut\nuutthutu\ntutuuhuu\nuutottuu\nuhuututu\nutuutttu",
+"forest_bark_knot":"uutttuuu\nutohottu\nuohohotu\ntohhhhot\nuohohotu\nutohottu\nuutttuuu\nutuututu",
+"forest_leaf_a":"..ee....\n.evve...\nevGvve..\neGGvvee.\n.evGve..\n..eve...\n...e....\n........",
+"forest_leaf_b":"...e....\n..eve...\n.evGve..\nevvvGve.\neGvGvve.\n.evvve..\n..ee....\n........",
+"forest_leaf_c":"........\n.ee.e...\nevvve.e.\neGvGvve.\n.vvGve..\n..eve...\n...e....\n........",
+"forest_leaf_moonlit":"....e...\n..evve..\n.evGvve.\nevvGivve\n.evGvve.\n..evve..\n...e....\n........",
+"forest_path_lane_a":"nnnnhnnn\nnnnnnnnn\nnBnnnnnn\nnnnnHnnn\nnnnnnnnn\nhnnnnnnn\nnnnnnBnn\nnnnnnnnn",
+"forest_path_lane_b":"nnnnnnnn\nnnHnnnnn\nnnnnnnnn\nnnnnBnnn\nhnnnnnnn\nnnnnnnnn\nnnnnnHnn\nnnnnnnnn",
+"forest_path_lane_c":"nnnnBnnn\nnnnnnnnn\nnnHnnnnn\nnnnnnnnn\nnnnnnnnh\nnnnnnnnn\nnBnnnnnn\nnnnnHnnn",
+"forest_ground_edge":"nneennnn\nnevvennn\nnevGvenn\nnevvvenn\nnnennnnn\nnnnHnnnn\nnBnnennn\nnnnnnnnn",
+"forest_canopy_a":"..e...eve...e...\n.eve.eevee.eve..\neeveeeGGveeevee.\neGGvevGvvveGGvee\nvGvvvevnvevGvvve\nevvvveeveevvvvee\neenvvvevevvvvee.\n.evvvveeevvvne..\neevGGvvevGGvvee.\nevvGvvvvvGvvvvve\neevvvvvevvvvveve\n.eevvveeevvveGnv\n..evvne.evvvvGvv\n...eve...eneevvv\n....e.....e.eeve\n.............eve",
+"forest_canopy_b":"evee..e...eevee.\nGGveeeve.eeGGvee\nGvvvevvveevGvvve\nvvveevvveeevvvee\neveevGGnveeevve.\nevevvGvvvveevvve\n.enevvvvveeevvve\n...eevvveeevnGvv\n...evvvveevvGvvv\n..evvvve.eevvvvv\n.eevvvee.evevvve\neevGGvveeevevvne\nevvGvnvveGGveve.\neevvvvvevGnvvee.\n.eevvveeevvvee..\n..evvve.eevee...",
+"forest_canopy_moonlit":"..e...eve...e...\n.eve.eevee.eve..\neeveeeGiveeevee.\neGivevGvvveGivee\nvGvvvevnvevGvvve\nevvvveeveevvvvee\neenvvvevevvvvee.\n.evvvveeevvvne..\neevGivvevGivvee.\nevvGvvvvvGvvvvve\neevvvvvevvvvveve\n.eevvveeevvveGnv\n..evvne.evvvvGvv\n...eve...eneevvv\n....e.....e.eeve\n.............eve",
+"forest_canopy_shadow":"..n...nen...n...\n.nen.nnenn.nen..\nnnennnvvennnenn.\nnvveneveeenvvenn\neveeeneneneveeen\nneeeennenneeeenn\nnnneeeneneeeenn.\n.neeeennneeenn..\nnnevveenevveenn.\nneeveeeeeveeeeen\nnneeeeeneeeeenen\n.nneeennneeenvne\n..neenn.neeeevee\n...nen...nnnneee\n....n.....n.nnen\n.............nen",
+"forest_trunk_straight":".....uttuuhu....\n.....uttuuhu....\n.....uttouhu....\n.....uttuohu....\n.....uttuuhu....\n.....uttuuhu....\n.....uthuuhu....\n.....utthuhu....\n.....uttuuhu....\n.....uttuuhu....\n.....uttuthu....\n.....uttuuhu....\n.....uttuuhu....\n.....uhtuuhu....\n.....uttuuhu....\n.....uttuuhu....",
+"forest_trunk_knotted":"....uttuuuhu....\n....uttuuuhu....\n....uttuuuhu....\n....uttuuuhu....\n....uttuuuhu....\n....uttoooou....\n....utoohhoo....\n....utohooho....\n....uttohhou....\n....uttuuuhu....\n....uttuuuhu....\n....uttuuuhu....\n....uttuuuhu....\n....uttuuuhu....\n....uttuuuhu....\n....uttuuuhu....",
+"forest_root_left":".........utuuh..\n.........utuuh..\n.........utuuh..\n.........utuuh..\n.........utuuh..\n.........utuuh..\n.........utuuh..\n.........utuuh..\n.........uuuuh..\n........uuhtuu..\n......uuuh.t.u..\n....uu.hhot...u.\n..uu..hu..t..ou.\nuu...ho..t.....u\n...hou...t.....u\n..h.u...t.......",
+"forest_root_right":"..huutu.........\n..huutu.........\n..huutu.........\n..huutu.........\n..huutu.........\n..huutu.........\n..huutu.........\n..huutu.........\n..huuuu.........\n..uuthuu........\n..u.t.huuu......\n.u...tohh.uu....\n.uo..t..uh..uu..\nu.....t..oh...uu\nu.....t...uoh...\n.......t...u.h..",
+"forest_mushroom_red":"................\n................\n................\n....hrrrrrrh....\n..hrrwrrrwrrrh..\n..rrrrrrrrrrrr..\n.hrwrrrrrrrwrrh.\n..rrrrrwrrrrrr..\n...hRRRRRRRRh...\n.....hWwWWh.....\n......WwWW......\n......WwWW......\n......WwWW......\n.....hWWWWh.....\n.....hWWWWh.....\n................",
+"forest_mushroom_violet":"................\n................\n................\n....hmmmmmmh....\n..hmmwmmmwmmmh..\n..mmmmmmmmmmmm..\n.hmwmmmmmmmwmmh.\n..mmmmmwmmmmmm..\n...hMMMMMMMMh...\n.....hWwWWh.....\n......WwWW......\n......WwWW......\n......WwWW......\n.....hWWWWh.....\n.....hWWWWh.....\n................",
+"forest_mushroom_cluster":"................\n................\n................\n................\n................\n................\n.........mmm....\n........mwmmm...\n...rrr.mMmmmMm..\n..rwrrr...W.....\n.rRrrrRr..W.....\n....W......rrr..\n....W.....rwrrr.\n.....e...rRrrrRr\n..e.....e...W.e.\n............W...",
+"forest_lantern_small":"...uu...\n...uu...\n...uu...\n.RRRRRR.\nhRRRRRRh\n..rrrr..\n.hryyrh.\n..rwyr..\n..rygr..\n..ryyr..\n.hryyrh.\n..rrrr..\n.RRRRRR.\n.RRRRRR.\n...uu...\n...uu...",
+"forest_firefly_a":"........\n........\n...g....\n..gyg...\n...g....\n........\n........\n........",
+"forest_firefly_b":"........\n....g...\n...gy...\n..g.g...\n...g....\n........\n........\n........",
+"forest_wisp":"........\n...m....\n..mgm...\n..gyg...\n...g....\n...e....\n..eee...\n........",
+"forest_distant_pines_a":"................\n.......nnn......\n.......nnn......\n......nnnnn.....\n..nnn.nnBnn.....\n..nnnnnnBnnnnnn.\n.nnnnnnnBnnnnnn.\n.nnBnnnnBnnnnnnn\nnnnBnnnnBnnnnBnn\nnnnnnnnnBnnnnBnn\nnnnnnnnnBnnnnBnn\nnnnnnnnnBnnnnBnn\nnnnnnnnnBnnnnBnn\nnnnnnnnnnnnnnBnn\nnnnnnnnnnnnnnBnn\n...B....B....B..",
+"forest_distant_pines_b":"................\n......nnn.......\n......nnn.......\n.....nnnnn......\n.....nnBnn.nnn..\n.nnnnnnBnnnnnn..\n.nnnnnnBnnnnnnn.\nnnnnnnnBnnnnBnn.\nnnBnnnnBnnnnBnnn\nnnBnnnnBnnnnnnnn\nnnBnnnnBnnnnnnnn\nnnBnnnnBnnnnnnnn\nnnBnnnnBnnnnnnnn\nnnBnnnnnnnnnnnnn\nnnBnnnnnnnnnnnnn\n..B....B....B...",
+"forest_distant_pines_moonlit":"................\n.......BBB......\n.......BBB......\n......BBBBB.....\n..BBB.BBbBB.....\n..BBBBBBbBBBBBB.\n.BBBBBBBbBBBBBB.\n.BBbBBBBbBBBBBBB\nBBBbBBBBbBBBBbBB\nBBBBBBBBbBBBBbBB\nBBBBBBBBbBBBBbBB\nBBBBBBBBbBBBBbBB\nBBBBBBBBbBBBBbBB\nBBBBBBBBBBBBBbBB\nBBBBBBBBBBBBBbBB\n...b....b....b..",
+"forest_fern":"................\n................\n................\n....v.....v.....\n...G.vvevv......\n..vv...v...Gv...\n....vv.e.vv.....\n.vG...vvv...vv..\n...vvv.e.vvv.G..\n..vv..vvv..vv...\n....Gv.e.vv.....\n...vv.vvv.Gv....\n.....vvevv......\n.......v........\n.......e........\n................",
+"forest_grass_tuft":"................\n................\n................\n................\n.....e.e.e......\n.....e.e.e......\n......eveee.e...\n..e.e.eeeee.e...\n...ee.eeeeve.e..\n...eveeeee.ee...\n....ee.eeee.v...\n.....eeeeeee....\n......eeeee.....\n......eeee......\n.......eee......\n........e.......",
+"forest_vine_hanging":"........e.......\n........e.......\n.......ve.......\n.....vv.e.......\n...Gv...v.......\n........evv.....\n......vve..vG...\n....vv..e.......\n..Gv...evv......\n.......e..vv....\n.......v....vG..\n.....vve........\n...Gv..ev.......\n.......e.vv.....\n.......e...vG...\n.......e........",
+"forest_shrub":"................\n................\n................\n................\n................\n................\n.....eeeeeee....\n.....evGvvve....\n.....evvvvGe....\n.eeeeevvvveeeee.\n.evvGevvvvevvve.\n.evvvevvvvevGve.\n.evvveGeeeevvve.\n.eneeeee.neeeen.\n................\n................",
+"forest_path_edge_stone":"................\n................\n................\n................\n................\n................\n................\n....BBBBBBBB....\n..BBHBBBHBBBBB..\n.BBBBBBBBBBHBBB.\n.BBhBBBBBBBBhBB.\n..BBBBHBBBHBBB..\n....BhBBBhBB....\n................\n................\n................"
+};
+const A=Object.fromEntries(Object.entries(RAW).map(([n,s])=>[n,s.split("\n")]));
+const H=240,placements=[];
+const add=(asset,x,y)=>{placements.push({asset,x,y})};
+const lane=['forest_path_lane_a','forest_path_lane_b','forest_path_lane_c'];
+for(let ty=0;ty<H;ty+=8)for(let tx=0;tx<256;tx+=8)add(lane[((tx>>3)+(ty>>3))%3],tx,ty);
+for(let ty=0;ty<H;ty+=8){add('forest_ground_edge',48,ty);add('forest_ground_edge',136,ty)}
+for(const [i,tx] of [0,16,32,144,160,176,192,208,224,240].entries()){
+  if(tx===0||tx===176||tx===240)add('forest_distant_pines_moonlit',tx,0);
+  else add(i%2?'forest_distant_pines_b':'forest_distant_pines_a',tx,0);
+}
+for(let ty=0;ty<H;ty+=16)for(const tx of [0,16,32,144,160,176,192,208,224,240]){
+  if(ty===0&&(tx===0||tx===176||tx===240))add('forest_canopy_moonlit',tx,ty);
+  else if(tx===32||tx===144)add('forest_canopy_shadow',tx,ty);
+  else add(((tx>>4)+(ty>>4))%2===0?'forest_canopy_a':'forest_canopy_b',tx,ty);
+}
+for(let ty=16;ty<224;ty+=16){
+  add((ty>>4)%2===0?'forest_trunk_straight':'forest_trunk_knotted',0,ty);
+  add((ty>>4)%2===0?'forest_trunk_knotted':'forest_trunk_straight',176,ty);
+  add((ty>>4)%2===0?'forest_trunk_straight':'forest_trunk_knotted',240,ty);
+}
+add('forest_root_left',0,224);add('forest_root_right',176,224);add('forest_root_right',240,224);
+for(const [x,y,a] of [[16,40,'forest_mushroom_red'],[16,104,'forest_mushroom_violet'],[16,168,'forest_mushroom_red'],[160,56,'forest_mushroom_violet'],[160,120,'forest_mushroom_red'],[160,184,'forest_mushroom_violet'],[0,72,'forest_mushroom_cluster'],[0,200,'forest_mushroom_cluster'],[176,48,'forest_mushroom_cluster'],[176,136,'forest_mushroom_cluster'],[208,40,'forest_mushroom_red'],[208,120,'forest_mushroom_violet'],[240,72,'forest_mushroom_cluster']])add(a,x,y);
+for(const y of [24,88,152,216]){add('forest_lantern_small',4,y);add('forest_lantern_small',180,y);add('forest_lantern_small',244,y)}
+for(const [i,y] of [16,36,56,76,96,116,136,156,176,196,216].entries()){
+  add(i%2===0?'forest_firefly_a':'forest_firefly_b',i%2===0?8:176,y);
+  add(i%2===0?'forest_firefly_b':'forest_firefly_a',240,y);
+}
+for(const [x,y] of [[24,32],[160,64],[8,128],[176,160],[24,192],[160,208],[208,64],[240,160]])add('forest_wisp',x,y);
+for(const y of [48,112,176]){add('forest_fern',16,y);add('forest_fern',160,y);add('forest_fern',208,y)}
+for(const y of [32,96,160,224]){add('forest_shrub',16,y);add('forest_shrub',160,y);add('forest_shrub',208,y)}
+for(const y of [16,80,144,208]){add('forest_grass_tuft',40,y);add('forest_grass_tuft',136,y)}
+for(const y of [0,16,32]){add('forest_vine_hanging',16,y);add('forest_vine_hanging',160,y);add('forest_vine_hanging',208,y)}
+for(const y of [64,128,192]){add('forest_path_edge_stone',40,y);add('forest_path_edge_stone',136,y)}
+for(let i=0,y=8;y<232;y+=16,i++){
+  add(['forest_leaf_a','forest_leaf_b','forest_leaf_c'][i%3],24,y);
+  add(['forest_leaf_c','forest_leaf_a','forest_leaf_b'][i%3],160,y);
+  add(['forest_leaf_a','forest_leaf_b','forest_leaf_c'][(i+1)%3],208,y);
+}
+for(const [x,y] of [[0,8],[184,24],[0,88],[184,120],[0,168],[184,200],[248,24],[248,120]])add('forest_leaf_moonlit',x,y);
+const sheet=document.createElement('canvas');sheet.width=256;sheet.height=240;
+const fc=sheet.getContext('2d',{alpha:false});fc.imageSmoothingEnabled=false;fc.fillStyle=C.black;fc.fillRect(0,0,256,240);
+for(const p of placements){
+  const rows=A[p.asset],path=p.asset.indexOf('forest_path_lane')===0;
+  for(let yy=0;yy<rows.length;yy++){
+    const row=rows[yy];
+    for(let xx=0;xx<row.length;xx++){
+      const col=PAL[row[xx]];if(!col)continue;
+      const x=p.x+xx,y=p.y+yy;
+      if(!path&&x>=56&&x<=135)continue;
+      fc.fillStyle=col;fc.fillRect(x,y,1,1);
+    }
+  }
+}
+return Object.freeze({A,placements,sheet});
+})();
 function blitRows(rows,s){const h=rows.length,w=rows[0].length;for(let yy=0;yy<h;yy++){const y0=Math.round((yy-h/2)*s),y1=Math.round((yy+1-h/2)*s),dh=y1-y0;if(dh<=0)continue;const row=rows[yy];for(let xx=0;xx<w;xx++){const col=PAL[row[xx]];if(!col)continue;const x0=Math.round((xx-w/2)*s),x1=Math.round((xx+1-w/2)*s),dw=x1-x0;if(dw<=0)continue;rect(x0,y0,dw,dh,col)}}}
 function blit(rows,x,y,s=1,flip=false){if(!rows||!rows.length)return;s=Math.max(1,s|0);ctx.save();ctx.translate(Math.round(x),Math.round(y));if(flip)ctx.scale(-1,1);blitRows(rows,s);ctx.restore()}
 function stamp(rows,x,y){x=Math.round(x);y=Math.round(y);for(let yy=0;yy<rows.length;yy++){const row=rows[yy];for(let xx=0;xx<row.length;xx++){const col=PAL[row[xx]];if(col)rect(x+xx,y+yy,1,1,col)}}}
@@ -1566,11 +1658,7 @@ function drawMistyLake(t,w,dim){
   if(dim)dimField(w,dim);
 }
 function drawForest(t,w,dim){
-  rect(0,0,w,240,C.black);stars(w,240);moon(Math.floor(w*.72),28,16,false);
-  for(let i=0;i<11;i++){const x=18+i*15,h=18+(i*7)%16;for(let k=0;k<4;k++)rect(x-8+k*2,92-h+k*5,20-k*4,6,'#121c22')}
-  const scroll=Math.floor(t*.3)%32;
-  for(const side of [0,1])for(let col=0;col<2;col++){const x=side?w-18-col*10:col*10;for(let y=-32;y<260;y+=32){const yy=y+scroll;rect(x+4,yy,6,32,'#2a2438');rect(x+5,yy,2,32,'#3a3450');for(let j=0;j<5;j++)rect(x+(side?-j*2:j*2)-4,yy+j*5,22-j*3,5,j%2?'#1a3a34':'#245048');if((y/32+col+side)%3===0){rect(x+(side?2:8),yy+20,3,6,'#5a4860');rect(x+(side?0:6),yy+18,7,4,'#744553');rect(x+(side?2:8),yy+18,2,1,C.gold)}}}
-  for(let i=0;i<6;i++){const x=40+(i*29+Math.floor(t/8))%(w-80),y=40+(i*37+Math.floor(t/12))%180;if(x>28&&x<w-28)rect(x,y,1,1,C.gold)}
+  ctx.drawImage(FOREST.sheet,0,0,w,240,0,0,w,240);
   if(dim)dimField(w,dim);
 }
 function drawInterior(t,w,dim){
