@@ -1445,6 +1445,123 @@ for(const p of placements){
 }
 return Object.freeze({A,placements,sheet});
 })();
+const MANSION=(function(){
+const RAW={
+"mansion_wall_plain":"hhhhhhhh\nnnnnnnnH\nnHnnnnnn\nnnnHnnnn\nhhhhhhhh\nnnnnnnnn\nnnnnnHnn\nnnnnnnnn",
+"mansion_wall_damask_a":"nnnddnnn\nnnHxxHnn\nnHxRRxHn\nnnHxxHnn\nnnnddnnn\nnnHxxHnn\nnHxRRxHn\nnnnddnnn",
+"mansion_wall_damask_b":"hdhhhhdh\nHxHhhHxH\nhHRHHRHh\nhhxddxhh\nhdhhhhdh\nHxHhhHxH\nhHRHHRHh\nhhxddxhh",
+"mansion_wall_panel":"HHHHHHHh\nHnnnnnnh\nHnddddnh\nHndHhhnh\nHndhHhnh\nHndhhhnh\nHnnnnnnh\nHhhhhhhh",
+"mansion_carpet_center":"dddddddd\ndhdddddd\nddddddhd\ndddddddd\ndddddddd\ndddddhdd\nddhddddd\ndddddddd",
+"mansion_carpet_motif":"dddxxddd\nddxddxdd\ndRddddRd\nddxRRxdd\nddxRRxdd\ndRddddRd\nddxddxdd\ndddxxddd",
+"mansion_carpet_edge_l":"xxRHdddd\nxrRHdddd\nxxRHdddd\nxxRHdddd\nxxRHdddd\nxrRHdddd\nxxRHdddd\nxxRHdddd",
+"mansion_carpet_edge_r":"ddddHRxx\nddddHRxx\nddddHRrx\nddddHRxx\nddddHRxx\nddddHRxx\nddddHRrx\nddddHRxx",
+"mansion_floor_wood":"tttttttt\nuuoHuuuu\nuuuuuuou\nHuuouuuu\ntttttttt\nuouuHuuu\nuuuuuouu\nuuuuuuuo",
+"mansion_floor_stone":"SSSHSSSS\nBBBHBBBB\nBSBHBSBB\nBBBHBBBB\nHHHHHHHH\nBBBBBBHB\nBBSBBBHS\nBBBBBBHB",
+"mansion_molding_horizontal":"........\nHHHHHHHH\nSgSSSSgS\nuuuuuuuu\ntttttttt\nHHHHHHHH\n........\n........",
+"mansion_trim_vertical":"..HSut..\n..Hgut..\n..HSut..\n..HSut..\n..HSut..\n..HSut..\n..Hgut..\n..HSut..",
+"mansion_masonry_shadow":"HHHHHHHH\nhhxhhhhh\nhdhhhdhh\nhhhhhhhh\nHHHHHHHH\nhhhhhhxh\nhhhhxhhh\nhhhhhhhh",
+"mansion_window_gothic_a":"................\n.......SS.......\n......SbbS......\n...S.SB..BS.S...\n..HSSkkkHkkSSH..\n..HSSkBBHbkSSH..\n..HSSkBBHbkSSH..\n..HSSkBBHbkSSH..\n..HSSHHHHHHSSH..\n..HSSkbbHBkSSH..\n..HSSkbbHBkSSH..\n..HSSkbbHBkSSH..\n..HSSHHHHHHSSH..\n..HSSkBBHbkSSH..\n..HSSkBBHbkSSH..\n..HSSkkkHkkSSH..",
+"mansion_window_gothic_b":"................\n.......SS.......\n......SbbS......\n...S.SB..BS.S...\n..HSSkkkHkkSSH..\n..HSSkBBHbkSSH..\n..HSSkBllbkSSH..\n..HSSkBBHbkSSH..\n..HSSHHHHHHSSH..\n..HSSkbbHBkSSH..\n..HSSkxdHdkSSH..\n..HSSkdxHxkSSH..\n..HSSHHHHHHSSH..\n..HSSkdxHxkSSH..\n..HSSkxdHdkSSH..\n..HSSkkkHkkSSH..",
+"mansion_sconce_single":"................\n........r.......\n.......yWy......\n........W.......\n........W.......\n........W.......\n.....y..g.......\n......gggu......\n.......ugu......\n.......ugu......\n.......ugu......\n.......uuu......\n.......uuu......\n................\n................\n................",
+"mansion_sconce_double":"................\n................\n....r......r....\n...gyg....gyg...\n....W......W....\n....W......W....\n....W......W....\n....WgyuuygW....\n......uggu......\n......uggu......\n......uggu......\n......uggu......\n......uttu......\n................\n................\n................",
+"mansion_pillar_cap":".....HHHHHH.....\n.....HHHHHH.....\n....BBBBBBBB....\n....BBBBBBBB....\n...SSSSSSSSSS...\n..HSSSSSSSSSSH..\n..HHHHHHHHHHHH..\n..HHHHHHHHHHHH..\n..gggggggggggg..\n....uuuuuuuu....\n.....HSSHHH.....\n.....HSSHHH.....\n.....HSSHHH.....\n.....HSSHHH.....\n.....HSSHHH.....\n.....HSSHHH.....",
+"mansion_pillar_mid":"....HSSBBBBh....\n....HSSBBBBh....\n....HSSBBBBh....\n....HSsBBHBh....\n....HSSBBBBh....\n....HSSBBBBh....\n....HSSBBBBh....\n....HSSBBBBh....\n....HSsBBHBh....\n....HSSBBBBh....\n....HSSBBBBh....\n....HSSBBBBh....\n....HSSBBBBh....\n....HSsBBHBh....\n....HSSBBBBh....\n....HSSBBBBh....",
+"mansion_pillar_base":".....HSSHHH.....\n.....HSSHHH.....\n.....HSSHHH.....\n.....HSSHHH.....\n.....HSSHHH.....\n.....HSSHHH.....\n.....HSSHHH.....\n....BBBBBBBB....\n....BBBBBBBB....\n....BBBBBBBB....\n...HHHHHHHHHH...\n...HHHHHHHHHH...\n...uuuuuuuuuu...\n..SSSSSSSSSSSS..\n..SSSSSSSSSSSS..\n..SSSSSSSSSSSS..",
+"mansion_railing":"................\n.g...g....g...g.\nuuuuuuuuuuuuuuuu\ngggggggggggggggg\n.t...t....t...t.\n.g...g....g...g.\n.t...t....t...t.\n.t...t....t...t.\n.t...t....t...t.\n.t...t....t...t.\n.H...H....H...H.\n.t...t....t...t.\n.t...t....t...t.\nHHHHHHHHHHHHHHHH\nuuuuuuuuuuuuuuuu\n................",
+"mansion_door_arch_l":"............HHHH\n........HHHHtttt\n......SS.ttt....\n.....S.uu.......\n....S.u.........\n....Su..........\n..HS.u..........\n..HSu...........\n..HSu...........\n..Hgu...........\n..HSu...........\n..HSu...........\n..HSu...........\n..Hgu...........\n..HSu...........\n..HSu...........",
+"mansion_door_arch_r":"HHHH............\nttttHHHH........\n....ttt.SS......\n.......uu.S.....\n.........u.S....\n..........uS....\n..........u.SH..\n...........uSH..\n...........uSH..\n...........ugH..\n...........uSH..\n...........uSH..\n...........uSH..\n...........ugH..\n...........uSH..\n...........uSH..",
+"mansion_door_side_l":"..HSSHu.........\n..HSSHu.........\n..HSSHu.........\n..HSgHu.........\n..HSSHu.........\n..HSSHu.........\n..HSSHu.........\n..HSSHu.........\n..HSSHu.........\n..HSgHu.........\n..HSSHu.........\n..HSSHu.........\n..HSSHu.........\n..HSSHu.........\n..HSgHu.........\n..HSSHu.........",
+"mansion_door_side_r":".........uHSSH..\n.........uHSSH..\n.........uHSSH..\n.........uHgSH..\n.........uHSSH..\n.........uHSSH..\n.........uHSSH..\n.........uHSSH..\n.........uHSSH..\n.........uHgSH..\n.........uHSSH..\n.........uHSSH..\n.........uHSSH..\n.........uHSSH..\n.........uHgSH..\n.........uHSSH..",
+"mansion_door_panel":"kkhhhhhhhhhhhhkk\nkkhnnnnnnnnnnhkk\nkkhnnnnnnnnnnhkk\nkkhnnHHHdHHnnhkk\nkkhnnHHHdHHnnhkk\nkkhnnHHHdHHnnhkk\nkkhnnHHHdHHnnhkk\nkkhnnddddddnnhkk\nkkhnnHHHdHHnnhkk\nkkhnnHHHdHgnnhkk\nkkhnnHHHdHHnnhkk\nkkhnnHHHdHHnnhkk\nkkhnnHHHdHHnnhkk\nkkhnnHHHdHHnnhkk\nkkhnnnnnnnnnnhkk\nkkhnnnnnnnnnnhkk",
+"mansion_corridor_shadow":"HkkkkkkkkkkkkkkH\nHkkkkkkkkkkkkkkH\nHkkkkkkkkkkkkkkH\nHkkkkkkkkkkkkkkH\nHhhhhhhhhhhhhhhH\nHhhhhhhhhhhhhhhH\nHhhhhhhhhhhhhhhH\nHhhhhhhhhhhhhhhH\nHnnnnnnnnnnnnnnH\nHnnnnnnnnnnnnnnH\nHnnnnnnnnnnnnnnH\nHnnnnnnnnnnnnnnH\nHHHHHHHHHHHHHHHH\nHHHHHHHHHHHHHHHH\nHHHHHHHHHHHHHHHH\nHHHHHHHHHHHHHHHH",
+"mansion_corridor_threshold":"nnHnnnnnnnnnnHnn\nnnHnnnnnnnnnnHnn\nHHHHHHHHHHHHHHHH\nSSHSSSSSSSSSSHSS\nnnHnnnnnnnnnnHnn\nnnHnnnnnnnnnnHnn\nuuHuuuuuuuuuuHuu\nttHttttttttttHtt\nnnHnnnnnnnnnnHnn\nnnHnnnnnnnnnnHnn\nxxHxxxxxxxxxxHxx\nRRHRRRRRRRRRRHRR\nnnHnnnnnnnnnnHnn\nnnHnnnnnnnnnnHnn\nhhHhhhhhhhhhhHhh\nnnHnnnnnnnnnnHnn",
+"mansion_painting_frame":"................\n..uuuuuuuuuuuu..\n..uggggggggggu..\n..ugykkkkkkygu..\n..ugkkkkkkkkgu..\n..ugkkkHHkkkgu..\n..ugkkkHHkkkgu..\n..ugkkkHHkkkgu..\n..ugkkddddkkgu..\n..ugkkddddkkgu..\n..ugkxddddxkgu..\n..ugkkkkkkkkgu..\n..ugtkkkkkktgu..\n..uggggggggggu..\n..uuuuuuuuuuuu..\n................",
+"mansion_bookcase":"................\n.uuuuuuuuuuuuuu.\n.ukkkBkkkSkkkku.\n.ukxkBkRkSkdkku.\n.ukxkBkRkSkdkku.\n.ukkkkkkkkkkkku.\n.uttttttttttttu.\n.ukBkkkkgkRkkku.\n.ukBkkxkkkRkSku.\n.ukBkkxkkkRkSku.\n.ukkkkkkkkkkkku.\n.uttttttttttttu.\n.ukdkBkxkkSkgku.\n.ukdkBkxkkSkkku.\n.uuuuuuxuuuuuuu.\n.HHHHHHHHHHHHHH.",
+"mansion_side_table":"................\n................\n................\n................\n................\n................\n................\n..gggggggggggg..\n...uuuuuuuuuu...\n....uuuuuuuu....\n....uuHuuHuu....\n....uuuuuuuu....\n.....t....t.....\n.....t....t.....\n.....t....t.....\n.....t....t.....",
+"mansion_vase_flowers":"................\n................\n......rrRR......\n..........xx....\n.......RR.......\n.....rreerr.....\n.......ee.......\n.......ee.......\n.......ee.......\n......BBBB......\n.....bbbbbb.....\n......BBBB......\n......BBBB......\n......BBBB......\n......HHHH......\n................",
+"mansion_bust_statue":"................\n................\n................\n................\n.......ss.......\n......a..a......\n......aaaa......\n.....SaHHaS.....\n......aaaa......\n......aaSa......\n....ssaaaass....\n.....SSSSSS.....\n.....SSSSSS.....\n.....SSSSSS.....\n.....SSSSSS.....\n.....HHHHHH.....",
+"mansion_drape_banner":"................\n...gggggggggg...\n....RRRRRRRR....\n....xRxxxxdx....\n....xRxxxxdx....\n....xRxxxxdx....\n....xRxkkxdx....\n....xRkxxkdx....\n....xkxkkxkx....\n....xRxkkxdx....\n....xRxxxxdx....\n....xRxxxxdx....\n....xRxxxxdx....\n....x.x..x.x....\n.....x....x.....\n................",
+"mansion_chandelier":"...............gg...............\n...............yg...............\n...............gg...............\n...............gy...............\n...............gg...............\n...............gt...............\n........r......gt......r........\n.......gyg...gggggg...gyg.......\n....r...W......gt......W...r....\n...gyg..W..tttggggttt..W..gyg...\n....W...W..rgg.gt.ggr..W...W....\n....W...W.gygggrrgggyg.W...W....\n....W...gggWgggyygggWggg...W....\n....W...gggW...WW...Wggg...W....\n....g.ggg..W..gWWg..W..ggg.g....\n....gg..g..WtgtWWtgtW..g..gg....\n....g......gg..WW..gg......g....\n....g......g...gt...g......g....\n...........g...gt...g...........\n...........g...gg...g...........\n...............tt...............\n...............gg...............\n................................\n................................"
+};
+const A=Object.fromEntries(Object.entries(RAW).map(([n,s])=>[n,s.split("\n")]));
+const operations=[];
+const tileRect=(asset,x,y,width,height)=>operations.push({op:'tile_rect',asset,x,y,width,height});
+const place=(asset,x,y)=>operations.push({op:'place',asset,x,y});
+tileRect('mansion_wall_plain', 0, 0, 192, 240);
+tileRect('mansion_wall_damask_a', 0, 0, 48, 240);
+tileRect('mansion_wall_damask_b', 144, 0, 48, 240);
+tileRect('mansion_carpet_center', 64, 0, 64, 240);
+place('mansion_carpet_motif', 88, 40);
+place('mansion_carpet_motif', 96, 104);
+place('mansion_carpet_motif', 88, 176);
+tileRect('mansion_carpet_edge_l', 56, 0, 8, 240);
+tileRect('mansion_carpet_edge_r', 128, 0, 8, 240);
+tileRect('mansion_masonry_shadow', 48, 0, 8, 240);
+tileRect('mansion_masonry_shadow', 136, 0, 8, 240);
+
+for (const y of [72, 152, 224]) {
+  tileRect('mansion_molding_horizontal', 0, y, 56, 8);
+  tileRect('mansion_molding_horizontal', 136, y, 56, 8);
+}
+
+for (const x of [0, 40, 136, 176]) {
+  place('mansion_pillar_cap', x, 0);
+  for (const y of [16,32,48,64,80,96,112,128,144,160,176,192]) place('mansion_pillar_mid', x, y);
+  place('mansion_pillar_base', x, 208);
+}
+
+for (const [asset,x,y] of [
+  ['mansion_window_gothic_a',16,16], ['mansion_window_gothic_b',152,16],
+  ['mansion_window_gothic_b',16,88], ['mansion_window_gothic_a',152,88],
+  ['mansion_sconce_single',0,40], ['mansion_sconce_double',32,40],
+  ['mansion_sconce_double',144,40], ['mansion_sconce_single',176,40],
+  ['mansion_sconce_double',0,112], ['mansion_sconce_single',32,112],
+  ['mansion_sconce_single',144,112], ['mansion_sconce_double',176,112],
+  ['mansion_sconce_single',16,184], ['mansion_sconce_single',160,184],
+  ['mansion_painting_frame',16,56], ['mansion_painting_frame',160,56],
+  ['mansion_side_table',16,72], ['mansion_vase_flowers',16,64],
+  ['mansion_side_table',160,72], ['mansion_vase_flowers',160,64],
+  ['mansion_drape_banner',32,128], ['mansion_drape_banner',144,128],
+  ['mansion_bust_statue',40,168], ['mansion_side_table',40,184],
+  ['mansion_bust_statue',136,168], ['mansion_side_table',136,184],
+  ['mansion_chandelier',8,4], ['mansion_chandelier',152,4],
+  ['mansion_door_arch_l',48,208], ['mansion_door_arch_r',128,208],
+  ['mansion_door_side_l',48,224], ['mansion_door_side_r',128,224],
+  ['mansion_corridor_threshold',0,208], ['mansion_corridor_threshold',176,208],
+]) place(asset, x, y);
+
+for (const x of [0,16,32,144,160,176]) place('mansion_railing', x, 144);
+for (const x of [8,24,152,168]) {
+  place('mansion_bookcase', x, 160);
+  place('mansion_bookcase', x, 176);
+}
+for (const x of [64,80,96,112]) {
+  place('mansion_corridor_shadow', x, 208);
+  place('mansion_corridor_shadow', x, 224);
+}
+const sheet=document.createElement('canvas');sheet.width=256;sheet.height=240;
+const mc=sheet.getContext('2d',{alpha:false});mc.imageSmoothingEnabled=false;mc.fillStyle=C.black;mc.fillRect(0,0,256,240);
+function paint(rows,x0,y0,cx,cy,cw,ch){
+  for(let yy=0;yy<rows.length;yy++){
+    const row=rows[yy];
+    for(let xx=0;xx<row.length;xx++){
+      const col=PAL[row[xx]];if(!col)continue;
+      const x=x0+xx,y=y0+yy;
+      if(x<0||x>=192||y<0||y>=240)continue;
+      if(cw!=null&&(x<cx||x>=cx+cw||y<cy||y>=cy+ch))continue;
+      mc.fillStyle=col;mc.fillRect(x,y,1,1);
+    }
+  }
+}
+for(const op of operations){
+  const rows=A[op.asset];
+  if(op.op==='tile_rect'){
+    const tw=rows[0].length,th=rows.length;
+    for(let ty=0;ty<op.height;ty+=th)for(let tx=0;tx<op.width;tx+=tw)paint(rows,op.x+tx,op.y+ty,op.x,op.y,op.width,op.height);
+  }else paint(rows,op.x,op.y);
+}
+return Object.freeze({A,operations,sheet});
+})();
 function blitRows(rows,s){const h=rows.length,w=rows[0].length;for(let yy=0;yy<h;yy++){const y0=Math.round((yy-h/2)*s),y1=Math.round((yy+1-h/2)*s),dh=y1-y0;if(dh<=0)continue;const row=rows[yy];for(let xx=0;xx<w;xx++){const col=PAL[row[xx]];if(!col)continue;const x0=Math.round((xx-w/2)*s),x1=Math.round((xx+1-w/2)*s),dw=x1-x0;if(dw<=0)continue;rect(x0,y0,dw,dh,col)}}}
 function blit(rows,x,y,s=1,flip=false){if(!rows||!rows.length)return;s=Math.max(1,s|0);ctx.save();ctx.translate(Math.round(x),Math.round(y));if(flip)ctx.scale(-1,1);blitRows(rows,s);ctx.restore()}
 function stamp(rows,x,y){x=Math.round(x);y=Math.round(y);for(let yy=0;yy<rows.length;yy++){const row=rows[yy];for(let xx=0;xx<row.length;xx++){const col=PAL[row[xx]];if(col)rect(x+xx,y+yy,1,1,col)}}}
@@ -1662,13 +1779,7 @@ function drawForest(t,w,dim){
   if(dim)dimField(w,dim);
 }
 function drawInterior(t,w,dim){
-  rect(0,0,w,240,'#14101c');
-  for(let y=0;y<240;y+=4)rect(0,y,w,1,y%8?'#14101c':'#1a1424');
-  rect(w/2-24,0,48,240,'#3a1428');
-  for(let y=-20;y<260;y+=16){const yy=y+Math.floor(t*.5)%16;rect(w/2-20,yy,40,1,'#50213a');rect(w/2-2,yy,4,16,'#6b2a41')}
-  for(const x of [28,w-36]){rect(x,0,8,240,'#2a2840');rect(x+2,0,2,240,'#3a3c58');for(let y=-20;y<260;y+=32)rect(x-2,y+Math.floor(t*.5)%32,12,4,'#3a3860')}
-  for(const side of [0,1]){const x=side?w-26:6;for(let y=-40;y<260;y+=40){const yy=y+Math.floor(t*.5)%40;rect(x,yy,18,26,'#30304b');rect(x+2,yy+2,14,20,'#6b2a41');rect(x+8,yy+2,2,20,'#171629');rect(x+2,yy+10,14,2,'#171629');rect(x+4,yy+4,4,4,'#873149')}}
-  const cy=Math.floor(t*.4)%260;line(w/2,cy-20,w/2,cy,C.gold);rect(w/2-16,cy,32,3,'#84724c');for(let j=-2;j<=2;j++){rect(w/2+j*7,cy+3,3,6,C.gold);rect(w/2+j*7+1,cy+8,1,2,C.white)}
+  ctx.drawImage(MANSION.sheet,0,0,w,240,0,0,w,240);
   if(dim)dimField(w,dim);
 }
 function drawRoof(t,w,dim){

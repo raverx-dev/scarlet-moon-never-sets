@@ -1,0 +1,55 @@
+{
+  "package": "v3-stage3a-mansion-interior",
+  "repository": "raverx-dev/scarlet-moon-never-sets",
+  "branch": "v3-art-stage3a-mansion",
+  "base_checkpoint": "69d06766c0a6c165f26f71ded96d7b5bd8a122df",
+  "reference_board": "scarlet_moon_mansion_nes_stage_concept_board.png",
+  "asset_count": 35,
+  "source_files": [
+    "mansion_assets_8x8.js",
+    "mansion_assets_arch16.js",
+    "mansion_assets_furnish16.js",
+    "mansion_chandelier.js",
+    "mansion_assets.js"
+  ],
+  "composition_source": "mansion_composition.js",
+  "palette_inventory": [
+    "B",
+    "H",
+    "R",
+    "S",
+    "W",
+    "a",
+    "b",
+    "d",
+    "e",
+    "g",
+    "h",
+    "k",
+    "l",
+    "n",
+    "o",
+    "r",
+    "s",
+    "t",
+    "u",
+    "x",
+    "y"
+  ],
+  "palette_extension_request": null,
+  "atlas": {
+    "file": "mansion_asset_atlas.png",
+    "scale": 4,
+    "sampling": "nearest-neighbor",
+    "map": "mansion_asset_atlas_map.txt"
+  },
+  "proof": {
+    "file": "mansion_composition_proof_192x240.png",
+    "width": 192,
+    "height": 240,
+    "construction": "exact matrices only"
+  },
+  "validator": "mansion_validate.js",
+  "validation_report": "VALIDATION.txt",
+  "runtime_integration": false
+}

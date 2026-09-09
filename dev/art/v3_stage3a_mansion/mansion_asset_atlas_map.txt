@@ -1,0 +1,37 @@
+Compact atlas order (row-major; 4 columns; each cell 136×104; assets scaled 4× nearest-neighbor):
+
+00 row=0 col=0 mansion_wall_plain 8x8
+01 row=0 col=1 mansion_wall_damask_a 8x8
+02 row=0 col=2 mansion_wall_damask_b 8x8
+03 row=0 col=3 mansion_wall_panel 8x8
+04 row=1 col=0 mansion_carpet_center 8x8
+05 row=1 col=1 mansion_carpet_motif 8x8
+06 row=1 col=2 mansion_carpet_edge_l 8x8
+07 row=1 col=3 mansion_carpet_edge_r 8x8
+08 row=2 col=0 mansion_floor_wood 8x8
+09 row=2 col=1 mansion_floor_stone 8x8
+10 row=2 col=2 mansion_molding_horizontal 8x8
+11 row=2 col=3 mansion_trim_vertical 8x8
+12 row=3 col=0 mansion_masonry_shadow 8x8
+13 row=3 col=1 mansion_window_gothic_a 16x16
+14 row=3 col=2 mansion_window_gothic_b 16x16
+15 row=3 col=3 mansion_sconce_double 16x16
+16 row=4 col=0 mansion_sconce_single 16x16
+17 row=4 col=1 mansion_pillar_mid 16x16
+18 row=4 col=2 mansion_pillar_cap 16x16
+19 row=4 col=3 mansion_pillar_base 16x16
+20 row=5 col=0 mansion_railing 16x16
+21 row=5 col=1 mansion_painting_frame 16x16
+22 row=5 col=2 mansion_bookcase 16x16
+23 row=5 col=3 mansion_side_table 16x16
+24 row=6 col=0 mansion_vase_flowers 16x16
+25 row=6 col=1 mansion_bust_statue 16x16
+26 row=6 col=2 mansion_door_arch_l 16x16
+27 row=6 col=3 mansion_door_arch_r 16x16
+28 row=7 col=0 mansion_door_side_l 16x16
+29 row=7 col=1 mansion_door_side_r 16x16
+30 row=7 col=2 mansion_door_panel 16x16
+31 row=7 col=3 mansion_corridor_shadow 16x16
+32 row=8 col=0 mansion_corridor_threshold 16x16
+33 row=8 col=1 mansion_drape_banner 16x16
+34 row=8 col=2 mansion_chandelier 32x24

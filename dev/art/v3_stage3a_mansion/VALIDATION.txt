@@ -1,0 +1,58 @@
+Version 3 Stage 3A Mansion Interior Validation
+=================================================
+Base checkpoint: 69d06766c0a6c165f26f71ded96d7b5bd8a122df
+Assets: 35
+Allowed PAL keys discovered from index.html: BCFGHMPRSWabcdefghiklmnoprstuvwxyz
+Palette keys actually used: B H R S W a b d e g h k l n o r s t u x y
+
+PASS  mansion_wall_plain                  8x8   keys=H h n
+PASS  mansion_wall_damask_a               8x8   keys=H R d n x
+PASS  mansion_wall_damask_b               8x8   keys=H R d h x
+PASS  mansion_wall_panel                  8x8   keys=H d h n
+PASS  mansion_carpet_center               8x8   keys=d h
+PASS  mansion_carpet_motif                8x8   keys=R d x
+PASS  mansion_carpet_edge_l               8x8   keys=H R d r x
+PASS  mansion_carpet_edge_r               8x8   keys=H R d r x
+PASS  mansion_floor_wood                  8x8   keys=H o t u
+PASS  mansion_floor_stone                 8x8   keys=B H S
+PASS  mansion_molding_horizontal          8x8   keys=H S g t u
+PASS  mansion_trim_vertical               8x8   keys=H S g t u
+PASS  mansion_masonry_shadow              8x8   keys=H d h x
+PASS  mansion_window_gothic_a            16x16  keys=B H S b k
+PASS  mansion_window_gothic_b            16x16  keys=B H S b d k l x
+PASS  mansion_sconce_single              16x16  keys=W g r u y
+PASS  mansion_sconce_double              16x16  keys=W g r t u y
+PASS  mansion_pillar_cap                 16x16  keys=B H S g u
+PASS  mansion_pillar_mid                 16x16  keys=B H S h s
+PASS  mansion_pillar_base                16x16  keys=B H S u
+PASS  mansion_railing                    16x16  keys=H g t u
+PASS  mansion_door_arch_l                16x16  keys=H S g t u
+PASS  mansion_door_arch_r                16x16  keys=H S g t u
+PASS  mansion_door_side_l                16x16  keys=H S g u
+PASS  mansion_door_side_r                16x16  keys=H S g u
+PASS  mansion_door_panel                 16x16  keys=H d g h k n
+PASS  mansion_corridor_shadow            16x16  keys=H h k n
+PASS  mansion_corridor_threshold         16x16  keys=H R S h n t u x
+PASS  mansion_painting_frame             16x16  keys=H d g k t u x y
+PASS  mansion_bookcase                   16x16  keys=B H R S d g k t u x
+PASS  mansion_side_table                 16x16  keys=H g t u
+PASS  mansion_vase_flowers               16x16  keys=B H R b e r x
+PASS  mansion_bust_statue                16x16  keys=H S a s
+PASS  mansion_drape_banner               16x16  keys=R d g k x
+PASS  mansion_chandelier                 32x24  keys=W g r t y
+
+Composition proof: 192x240
+Composition construction: exact mansion_* matrices only
+Central-lane design audit: PASS — x=64..127 is intentionally low-detail; side architecture carries bright/detail load.
+Measured proof (y<208): central bright-pixel density 0.000000 vs side 0.114633; central edge density 0.130843 vs side 0.435491.
+
+mansion_assets_8x8.js sha256: d7b461f5c7404b416983e88691567e8f4b7b95802bd5be387bf5636954b4c4b4
+mansion_assets_arch16.js sha256: bcbbe488ab0f0888050829237593e090d86f65ab89622ce76787e74001b8d4ae
+mansion_assets_furnish16.js sha256: d70ae75a9ad101bca93e9ffc1362bdd38d92c42c8c82055825b68d2b795a3f86
+mansion_chandelier.js sha256: 9299efeab24ff77578df1551c89ba3ab7d8ec33c908e03d7085ce30b114ed069
+mansion_composition.js sha256: 026b3b557facc8a3552573e880916b1321d27e0a4d2f0ceb5eadbdffb722c6c1
+mansion_asset_atlas.png sha256: 8afd202b84be02b0fd2910d71ace704ee082b547fa2a49307b79bf9ecb6ac023
+mansion_composition_proof_192x240.png sha256: 81a3632bea2e534082358b0da284e62c59ff3696e5138daefe6ed151137c9d90
+
+RESULT: PASS
+PALETTE EXTENSION REQUEST: none
