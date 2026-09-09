@@ -1,0 +1,12 @@
+{
+  "id": "attract-eyes",
+  "scene": "attract",
+  "tick": 1130,
+  "group": "presentation",
+  "state": "attract",
+  "stateTick": 1130,
+  "stage": 1,
+  "stageTick": 0,
+  "bullets": 0,
+  "frame": 1130
+}

@@ -1,0 +1,12 @@
+{
+  "id": "stage3-roof",
+  "scene": "stage3",
+  "tick": 4300,
+  "group": "stage",
+  "state": "play",
+  "stateTick": 4300,
+  "stage": 3,
+  "stageTick": 4300,
+  "bullets": 26,
+  "frame": 4300
+}

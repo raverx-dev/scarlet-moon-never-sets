@@ -1,0 +1,12 @@
+{
+  "id": "dawn",
+  "scene": "dawn",
+  "tick": 280,
+  "group": "ending",
+  "state": "dawn",
+  "stateTick": 280,
+  "stage": 1,
+  "stageTick": 0,
+  "bullets": 0,
+  "frame": 280
+}

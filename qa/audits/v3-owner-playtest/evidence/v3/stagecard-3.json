@@ -1,0 +1,12 @@
+{
+  "id": "stagecard-3",
+  "scene": "stagecard:3",
+  "tick": 60,
+  "group": "presentation",
+  "state": "stagecard",
+  "stateTick": 60,
+  "stage": 3,
+  "stageTick": 0,
+  "bullets": 0,
+  "frame": 60
+}

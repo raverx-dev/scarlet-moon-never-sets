@@ -76,6 +76,15 @@ node agent-run.mjs --case=r5-final   # one deterministic capture
 QA_HEADED=1 npm run agent             # equivalent headed mode
 ```
 
+Optional environment (comparison / audit only; does not rewrite the source HTML):
+
+```bash
+QA_SOURCE=/path/to/frozen/index.html \  # default: repository-root index.html
+QA_OUT=/path/to/output-dir \            # default: qa/output
+QA_CASES=/path/to/cases.json \          # default: qa/cases.json
+node agent-run.mjs
+```
+
 Outputs are written locally under:
 
 ```text

@@ -1,0 +1,14 @@
+{
+  "id": "m3-active",
+  "scene": "boss:marisa:2",
+  "tick": 110,
+  "group": "boss",
+  "state": "play",
+  "stateTick": 110,
+  "stage": 2,
+  "stageTick": 0,
+  "phase": "m3",
+  "bossTick": 110,
+  "bullets": 16,
+  "frame": 110
+}

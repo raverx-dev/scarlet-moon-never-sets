@@ -1,0 +1,14 @@
+{
+  "id": "c3-frozen",
+  "scene": "boss:cirno:2",
+  "tick": 200,
+  "group": "boss",
+  "state": "play",
+  "stateTick": 200,
+  "stage": 1,
+  "stageTick": 0,
+  "phase": "c3",
+  "bossTick": 200,
+  "bullets": 67,
+  "frame": 200
+}

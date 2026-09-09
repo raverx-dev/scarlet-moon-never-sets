@@ -1,0 +1,14 @@
+{
+  "id": "r4",
+  "scene": "boss:remilia:3",
+  "tick": 500,
+  "group": "boss",
+  "state": "play",
+  "stateTick": 500,
+  "stage": 3,
+  "stageTick": 0,
+  "phase": "r4",
+  "bossTick": 500,
+  "bullets": 98,
+  "frame": 500
+}

@@ -1,0 +1,12 @@
+{
+  "id": "stage3-interior",
+  "scene": "stage3",
+  "tick": 900,
+  "group": "stage",
+  "state": "play",
+  "stateTick": 900,
+  "stage": 3,
+  "stageTick": 900,
+  "bullets": 21,
+  "frame": 900
+}

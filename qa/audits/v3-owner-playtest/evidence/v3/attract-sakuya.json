@@ -1,0 +1,12 @@
+{
+  "id": "attract-sakuya",
+  "scene": "attract",
+  "tick": 1070,
+  "group": "presentation",
+  "state": "attract",
+  "stateTick": 1070,
+  "stage": 1,
+  "stageTick": 0,
+  "bullets": 0,
+  "frame": 1070
+}

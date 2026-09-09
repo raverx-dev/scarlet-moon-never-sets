@@ -1,0 +1,12 @@
+{
+  "id": "dawn-anchor",
+  "scene": "dawn",
+  "tick": 90,
+  "group": "ending",
+  "state": "dawn",
+  "stateTick": 90,
+  "stage": 1,
+  "stageTick": 0,
+  "bullets": 0,
+  "frame": 90
+}

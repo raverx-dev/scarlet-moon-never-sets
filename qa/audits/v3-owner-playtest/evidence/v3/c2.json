@@ -1,0 +1,14 @@
+{
+  "id": "c2",
+  "scene": "boss:cirno:1",
+  "tick": 340,
+  "group": "boss",
+  "state": "play",
+  "stateTick": 340,
+  "stage": 1,
+  "stageTick": 0,
+  "phase": "c2",
+  "bossTick": 340,
+  "bullets": 35,
+  "frame": 340
+}

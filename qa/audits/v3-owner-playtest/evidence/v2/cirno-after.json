@@ -1,0 +1,14 @@
+{
+  "id": "cirno-after",
+  "scene": "dialogue:cirno_after",
+  "tick": 60,
+  "group": "dialogue",
+  "state": "dialogue",
+  "stateTick": 60,
+  "stage": 1,
+  "stageTick": 0,
+  "bullets": 0,
+  "dialogue": "cirno_after",
+  "line": 0,
+  "frame": 60
+}

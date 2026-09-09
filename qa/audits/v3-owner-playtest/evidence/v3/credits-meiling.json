@@ -1,0 +1,12 @@
+{
+  "id": "credits-meiling",
+  "scene": "credits",
+  "tick": 770,
+  "group": "credits",
+  "state": "credits",
+  "stateTick": 770,
+  "stage": 1,
+  "stageTick": 0,
+  "bullets": 0,
+  "frame": 770
+}

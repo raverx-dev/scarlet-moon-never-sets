@@ -1,0 +1,12 @@
+{
+  "id": "credits-marisa",
+  "scene": "credits",
+  "tick": 470,
+  "group": "credits",
+  "state": "credits",
+  "stateTick": 470,
+  "stage": 1,
+  "stageTick": 0,
+  "bullets": 0,
+  "frame": 470
+}

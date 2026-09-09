@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-09-09T22:02:22.081Z",
+  "baseline": {
+    "path": "index.html",
+    "sha256": "7ff1518457539be21130d492366e956f20e6ce8a3cb9bc463a42e3d694407f8c"
+  },
+  "browser": {
+    "executable": "/usr/lib64/chromium-browser/chromium-browser",
+    "headed": false
+  },
+  "regressionPassed": 32,
+  "regressionFailed": 0,
+  "materialConsoleErrors": 0,
+  "captureCount": 9,
+  "captureIds": [
+    "continue",
+    "dawn-anchor",
+    "stagecard-1",
+    "stagecard-2",
+    "stagecard-3",
+    "cirno-after",
+    "marisa-after",
+    "sakuya-after",
+    "remilia-after"
+  ]
+}

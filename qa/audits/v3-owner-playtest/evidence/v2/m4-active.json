@@ -1,0 +1,14 @@
+{
+  "id": "m4-active",
+  "scene": "boss:marisa:3",
+  "tick": 125,
+  "group": "boss",
+  "state": "play",
+  "stateTick": 125,
+  "stage": 2,
+  "stageTick": 0,
+  "phase": "m4",
+  "bossTick": 125,
+  "bullets": 12,
+  "frame": 125
+}

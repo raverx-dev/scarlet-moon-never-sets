@@ -1,0 +1,12 @@
+{
+  "id": "stage1",
+  "scene": "stage1",
+  "tick": 900,
+  "group": "stage",
+  "state": "play",
+  "stateTick": 900,
+  "stage": 1,
+  "stageTick": 900,
+  "bullets": 14,
+  "frame": 900
+}

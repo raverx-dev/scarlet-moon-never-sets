@@ -1,0 +1,14 @@
+{
+  "id": "r5-final",
+  "scene": "boss:remilia:4",
+  "tick": 1850,
+  "group": "boss",
+  "state": "play",
+  "stateTick": 1850,
+  "stage": 3,
+  "stageTick": 0,
+  "phase": "r5",
+  "bossTick": 1850,
+  "bullets": 178,
+  "frame": 1850
+}

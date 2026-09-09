@@ -1,0 +1,12 @@
+{
+  "id": "credits-sakuya",
+  "scene": "credits",
+  "tick": 1070,
+  "group": "credits",
+  "state": "credits",
+  "stateTick": 1070,
+  "stage": 1,
+  "stageTick": 0,
+  "bullets": 0,
+  "frame": 1070
+}

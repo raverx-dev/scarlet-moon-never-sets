@@ -1,0 +1,14 @@
+{
+  "id": "r3-spear",
+  "scene": "boss:remilia:2",
+  "tick": 85,
+  "group": "boss",
+  "state": "play",
+  "stateTick": 85,
+  "stage": 3,
+  "stageTick": 0,
+  "phase": "r3",
+  "bossTick": 85,
+  "bullets": 21,
+  "frame": 85
+}

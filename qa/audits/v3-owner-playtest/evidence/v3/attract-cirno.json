@@ -1,0 +1,12 @@
+{
+  "id": "attract-cirno",
+  "scene": "attract",
+  "tick": 930,
+  "group": "presentation",
+  "state": "attract",
+  "stateTick": 930,
+  "stage": 1,
+  "stageTick": 0,
+  "bullets": 0,
+  "frame": 930
+}

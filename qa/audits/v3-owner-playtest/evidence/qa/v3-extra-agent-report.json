@@ -1,0 +1,646 @@
+{
+  "generatedAt": "2026-09-09T22:02:22.081Z",
+  "baseline": {
+    "path": "index.html",
+    "sha256": "7ff1518457539be21130d492366e956f20e6ce8a3cb9bc463a42e3d694407f8c"
+  },
+  "browser": {
+    "executable": "/usr/lib64/chromium-browser/chromium-browser",
+    "headed": false
+  },
+  "regression": {
+    "passed": 32,
+    "failed": 0,
+    "checks": [
+      "Fresh resources: 3 lives, 3 bombs, power 1",
+      "Immediate movement; normalized diagonals; focus speed",
+      "Held Z firing and four shot levels",
+      "Point and power pickups, max power score, collection line",
+      "Tiny hitbox, one graze per bullet, delayed death",
+      "Deathbomb on last available frame preserves life",
+      "No bomb at zero stock; death loses power",
+      "Pause/resume stops simulation and resets input",
+      "Continue restores resources, resets score, restarts boss",
+      "Continue timeout returns title; another run resets state",
+      "Player shots destroy enemies and damage bosses",
+      "Spell capture bonus and bomb forfeiture",
+      "Laser telegraph harmless, active beam lethal",
+      "Final survival duration resists early damage clear",
+      "All dialogue pages and boss scenes render without exceptions",
+      "cirno / Cold Snap",
+      "cirno / Icicle Fall",
+      "cirno / Perfect Freeze",
+      "marisa / Star Sweep",
+      "marisa / Stardust Reverie",
+      "marisa / Non-Directional Laser",
+      "marisa / Master Spark",
+      "sakuya / Killing Doll",
+      "sakuya / Private Square",
+      "remilia / Scarlet Waltz",
+      "remilia / Scarlet Shoot",
+      "remilia / Spear the Gungnir",
+      "remilia / Scarlet Gensokyo",
+      "remilia / Red Magic",
+      "All stages, dialogues, bosses, ending, credits and second run",
+      "Attract mode and how-to-play round trip",
+      "Audio initialization, all track changes, effects and mute"
+    ],
+    "errors": [],
+    "metrics": [
+      {
+        "phase": "c1",
+        "max": 44,
+        "frozen": 0,
+        "beams": 0,
+        "spears": 0
+      },
+      {
+        "phase": "c2",
+        "max": 37,
+        "frozen": 0,
+        "beams": 0,
+        "spears": 0
+      },
+      {
+        "phase": "c3",
+        "max": 91,
+        "frozen": 700,
+        "beams": 0,
+        "spears": 0
+      },
+      {
+        "phase": "m1",
+        "max": 62,
+        "frozen": 0,
+        "beams": 0,
+        "spears": 0
+      },
+      {
+        "phase": "m2",
+        "max": 102,
+        "frozen": 0,
+        "beams": 0,
+        "spears": 0
+      },
+      {
+        "phase": "m3",
+        "max": 41,
+        "frozen": 0,
+        "beams": 1144,
+        "spears": 0
+      },
+      {
+        "phase": "m4",
+        "max": 65,
+        "frozen": 0,
+        "beams": 1352,
+        "spears": 0
+      },
+      {
+        "phase": "s1",
+        "max": 55,
+        "frozen": 0,
+        "beams": 0,
+        "spears": 0
+      },
+      {
+        "phase": "s2",
+        "max": 117,
+        "frozen": 620,
+        "beams": 0,
+        "spears": 0
+      },
+      {
+        "phase": "r1",
+        "max": 80,
+        "frozen": 0,
+        "beams": 0,
+        "spears": 0
+      },
+      {
+        "phase": "r2",
+        "max": 62,
+        "frozen": 0,
+        "beams": 0,
+        "spears": 0
+      },
+      {
+        "phase": "r3",
+        "max": 78,
+        "frozen": 0,
+        "beams": 845,
+        "spears": 886
+      },
+      {
+        "phase": "r4",
+        "max": 122,
+        "frozen": 0,
+        "beams": 0,
+        "spears": 0
+      },
+      {
+        "phase": "r5",
+        "max": 194,
+        "frozen": 0,
+        "beams": 0,
+        "spears": 0
+      }
+    ],
+    "timing": {
+      "combatSeconds": 670,
+      "fastDialogueRunSeconds": 743
+    },
+    "flow": [
+      "dialogue:intro",
+      "stagecard",
+      "stage:1",
+      "dialogue:cirno_before",
+      "cirno:0",
+      "cirno:1",
+      "cirno:2",
+      "defeat",
+      "dialogue:cirno_after",
+      "stage:2",
+      "dialogue:marisa_before",
+      "marisa:0",
+      "marisa:1",
+      "marisa:2",
+      "marisa:3",
+      "dialogue:marisa_after",
+      "gate",
+      "stage:3",
+      "dialogue:sakuya_before",
+      "sakuya:0",
+      "sakuya:1",
+      "dialogue:sakuya_after",
+      "dialogue:remilia_before",
+      "remilia:0",
+      "remilia:1",
+      "remilia:2",
+      "remilia:3",
+      "remilia:4",
+      "dialogue:remilia_after",
+      "dawn",
+      "endingScene",
+      "dialogue:ending",
+      "endingExit",
+      "theend",
+      "credits"
+    ]
+  },
+  "diagnostics": {
+    "music": {
+      "title": {
+        "bpm": 132,
+        "form": [
+          "intro",
+          "A",
+          "A2",
+          "B",
+          "trans",
+          "A3"
+        ],
+        "loopFrom": "A",
+        "steps": 640,
+        "loopStartStep": 64,
+        "seconds": 72.73,
+        "loopSeconds": 65.45,
+        "voices": [
+          "p1",
+          "p2",
+          "tri",
+          "noi"
+        ],
+        "source": "Maiden's Capriccio-inspired Reimu motif (in-game F#-G#-A#-D# identity developed; not a note-for-note transcription)"
+      },
+      "stage1": {
+        "bpm": 132,
+        "form": [
+          "intro",
+          "A",
+          "A2",
+          "B",
+          "C",
+          "A3"
+        ],
+        "loopFrom": "A",
+        "steps": 704,
+        "loopStartStep": 64,
+        "seconds": 80,
+        "loopSeconds": 72.73,
+        "voices": [
+          "p1",
+          "p2",
+          "tri",
+          "noi"
+        ],
+        "source": "original Misty Lake stage material"
+      },
+      "cirno": {
+        "bpm": 160,
+        "form": [
+          "intro",
+          "A",
+          "A2",
+          "B",
+          "C",
+          "B2",
+          "A3"
+        ],
+        "loopFrom": "A",
+        "steps": 832,
+        "loopStartStep": 64,
+        "seconds": 78,
+        "loopSeconds": 72,
+        "voices": [
+          "p1",
+          "p2",
+          "tri",
+          "noi"
+        ],
+        "source": "Beloved Tomboyish Girl — bouncing D-minor hook newly voiced; not a full transcription"
+      },
+      "stage2": {
+        "bpm": 144,
+        "form": [
+          "intro",
+          "A",
+          "A2",
+          "B",
+          "C",
+          "A3"
+        ],
+        "loopFrom": "A",
+        "steps": 704,
+        "loopStartStep": 64,
+        "seconds": 73.33,
+        "loopSeconds": 66.67,
+        "voices": [
+          "p1",
+          "p2",
+          "tri",
+          "noi"
+        ],
+        "source": "original Forest of Magic stage material"
+      },
+      "marisa": {
+        "bpm": 164,
+        "form": [
+          "intro",
+          "A",
+          "A2",
+          "B",
+          "C",
+          "A3"
+        ],
+        "loopFrom": "A",
+        "steps": 704,
+        "loopStartStep": 64,
+        "seconds": 64.39,
+        "loopSeconds": 58.54,
+        "voices": [
+          "p1",
+          "p2",
+          "tri",
+          "noi"
+        ],
+        "source": "Love-coloured Magic iconic rest+C-Eb-F pickup; B/C original F-minor development, not a Master Spark transcription"
+      },
+      "stage3": {
+        "bpm": 126,
+        "form": [
+          "intro",
+          "A",
+          "A2",
+          "B",
+          "C",
+          "A3"
+        ],
+        "loopFrom": "A",
+        "steps": 704,
+        "loopStartStep": 64,
+        "seconds": 83.81,
+        "loopSeconds": 76.19,
+        "voices": [
+          "p1",
+          "p2",
+          "tri",
+          "noi"
+        ],
+        "source": "original Scarlet Devil Mansion stage material"
+      },
+      "sakuya": {
+        "bpm": 152,
+        "form": [
+          "intro",
+          "A",
+          "A2",
+          "B",
+          "C",
+          "A3"
+        ],
+        "loopFrom": "A",
+        "steps": 704,
+        "loopStartStep": 64,
+        "seconds": 69.47,
+        "loopSeconds": 63.16,
+        "voices": [
+          "p1",
+          "p2",
+          "tri",
+          "noi"
+        ],
+        "source": "original Sakuya clockwork material (ticking 16ths as identity)"
+      },
+      "remilia": {
+        "bpm": 148,
+        "form": [
+          "intro",
+          "A",
+          "A2",
+          "B",
+          "C"
+        ],
+        "loopFrom": "A",
+        "steps": 864,
+        "loopStartStep": 96,
+        "seconds": 87.57,
+        "loopSeconds": 77.84,
+        "voices": [
+          "p1",
+          "p2",
+          "tri",
+          "noi"
+        ],
+        "source": "Septette for a Dead Princess — Eb waltz princess contour newly voiced with climactic form; not a full transcription"
+      },
+      "ending": {
+        "bpm": 96,
+        "form": [
+          "intro",
+          "A",
+          "B",
+          "A2"
+        ],
+        "loopFrom": "A",
+        "steps": 448,
+        "loopStartStep": 64,
+        "seconds": 70,
+        "loopSeconds": 60,
+        "voices": [
+          "p1",
+          "p2",
+          "tri",
+          "noi"
+        ],
+        "source": "Maiden's Capriccio-inspired Reimu motif, calmer ending arrangement"
+      }
+    },
+    "m1CurvedStars": 0,
+    "stage3ContinueAfterSakuya": {
+      "state": "play",
+      "stageTick": 2521,
+      "sakuyaDone": true,
+      "boss": null
+    },
+    "r5Density": {
+      "maxAllocated": 194,
+      "maxCentersOnscreen": 147,
+      "lastNineSecondsVisibleRange": [
+        71,
+        147
+      ]
+    },
+    "laserOriginOffset": [
+      {
+        "age": 110,
+        "distanceFromBoss": 34.86151875260431
+      },
+      {
+        "age": 110,
+        "distanceFromBoss": 34.86151875260431
+      },
+      {
+        "age": 110,
+        "distanceFromBoss": 34.86151875260431
+      },
+      {
+        "age": 110,
+        "distanceFromBoss": 34.86151875260431
+      },
+      {
+        "age": 110,
+        "distanceFromBoss": 34.86151875260431
+      }
+    ],
+    "bossContact": {
+      "deathWindow": 8,
+      "lives": 3
+    },
+    "dialogue": {
+      "intro": {
+        "lines": 3,
+        "maxWrappedLines": 1
+      },
+      "cirno_before": {
+        "lines": 13,
+        "maxWrappedLines": 2
+      },
+      "cirno_after": {
+        "lines": 10,
+        "maxWrappedLines": 2
+      },
+      "marisa_before": {
+        "lines": 22,
+        "maxWrappedLines": 2
+      },
+      "marisa_after": {
+        "lines": 8,
+        "maxWrappedLines": 2
+      },
+      "sakuya_before": {
+        "lines": 6,
+        "maxWrappedLines": 1
+      },
+      "sakuya_after": {
+        "lines": 2,
+        "maxWrappedLines": 2
+      },
+      "remilia_before": {
+        "lines": 17,
+        "maxWrappedLines": 2
+      },
+      "remilia_after": {
+        "lines": 3,
+        "maxWrappedLines": 2
+      },
+      "ending": {
+        "lines": 4,
+        "maxWrappedLines": 1
+      }
+    },
+    "sparkGeometry": [
+      {
+        "angle": 1.4042835269787552,
+        "declaredWidth": 42,
+        "paintedPerpendicularWidth": 48.380351954836115,
+        "collisionWidth": 45
+      }
+    ]
+  },
+  "consoleErrors": [],
+  "captures": [
+    {
+      "id": "continue",
+      "scene": "continue",
+      "tick": 30,
+      "group": "presentation",
+      "meta": {
+        "state": "continue",
+        "stateTick": 30,
+        "stage": 1,
+        "stageTick": 0,
+        "bullets": 0,
+        "frame": 30
+      },
+      "png": "../../../../tmp/scarlet-v3-extra/captures/continue.png",
+      "json": "../../../../tmp/scarlet-v3-extra/captures/continue.json"
+    },
+    {
+      "id": "dawn-anchor",
+      "scene": "dawn",
+      "tick": 90,
+      "group": "ending",
+      "meta": {
+        "state": "dawn",
+        "stateTick": 90,
+        "stage": 1,
+        "stageTick": 0,
+        "bullets": 0,
+        "frame": 90
+      },
+      "png": "../../../../tmp/scarlet-v3-extra/captures/dawn-anchor.png",
+      "json": "../../../../tmp/scarlet-v3-extra/captures/dawn-anchor.json"
+    },
+    {
+      "id": "stagecard-1",
+      "scene": "stagecard:1",
+      "tick": 60,
+      "group": "presentation",
+      "meta": {
+        "state": "stagecard",
+        "stateTick": 60,
+        "stage": 1,
+        "stageTick": 0,
+        "bullets": 0,
+        "frame": 60
+      },
+      "png": "../../../../tmp/scarlet-v3-extra/captures/stagecard-1.png",
+      "json": "../../../../tmp/scarlet-v3-extra/captures/stagecard-1.json"
+    },
+    {
+      "id": "stagecard-2",
+      "scene": "stagecard:2",
+      "tick": 60,
+      "group": "presentation",
+      "meta": {
+        "state": "stagecard",
+        "stateTick": 60,
+        "stage": 2,
+        "stageTick": 0,
+        "bullets": 0,
+        "frame": 60
+      },
+      "png": "../../../../tmp/scarlet-v3-extra/captures/stagecard-2.png",
+      "json": "../../../../tmp/scarlet-v3-extra/captures/stagecard-2.json"
+    },
+    {
+      "id": "stagecard-3",
+      "scene": "stagecard:3",
+      "tick": 60,
+      "group": "presentation",
+      "meta": {
+        "state": "stagecard",
+        "stateTick": 60,
+        "stage": 3,
+        "stageTick": 0,
+        "bullets": 0,
+        "frame": 60
+      },
+      "png": "../../../../tmp/scarlet-v3-extra/captures/stagecard-3.png",
+      "json": "../../../../tmp/scarlet-v3-extra/captures/stagecard-3.json"
+    },
+    {
+      "id": "cirno-after",
+      "scene": "dialogue:cirno_after",
+      "tick": 60,
+      "group": "dialogue",
+      "meta": {
+        "state": "dialogue",
+        "stateTick": 60,
+        "stage": 1,
+        "stageTick": 0,
+        "bullets": 0,
+        "dialogue": "cirno_after",
+        "line": 0,
+        "frame": 60
+      },
+      "png": "../../../../tmp/scarlet-v3-extra/captures/cirno-after.png",
+      "json": "../../../../tmp/scarlet-v3-extra/captures/cirno-after.json"
+    },
+    {
+      "id": "marisa-after",
+      "scene": "dialogue:marisa_after",
+      "tick": 60,
+      "group": "dialogue",
+      "meta": {
+        "state": "dialogue",
+        "stateTick": 60,
+        "stage": 2,
+        "stageTick": 0,
+        "bullets": 0,
+        "dialogue": "marisa_after",
+        "line": 0,
+        "frame": 60
+      },
+      "png": "../../../../tmp/scarlet-v3-extra/captures/marisa-after.png",
+      "json": "../../../../tmp/scarlet-v3-extra/captures/marisa-after.json"
+    },
+    {
+      "id": "sakuya-after",
+      "scene": "dialogue:sakuya_after",
+      "tick": 60,
+      "group": "dialogue",
+      "meta": {
+        "state": "dialogue",
+        "stateTick": 60,
+        "stage": 3,
+        "stageTick": 0,
+        "bullets": 0,
+        "dialogue": "sakuya_after",
+        "line": 0,
+        "frame": 60
+      },
+      "png": "../../../../tmp/scarlet-v3-extra/captures/sakuya-after.png",
+      "json": "../../../../tmp/scarlet-v3-extra/captures/sakuya-after.json"
+    },
+    {
+      "id": "remilia-after",
+      "scene": "dialogue:remilia_after",
+      "tick": 60,
+      "group": "dialogue",
+      "meta": {
+        "state": "dialogue",
+        "stateTick": 60,
+        "stage": 3,
+        "stageTick": 0,
+        "bullets": 0,
+        "dialogue": "remilia_after",
+        "line": 0,
+        "frame": 60
+      },
+      "png": "../../../../tmp/scarlet-v3-extra/captures/remilia-after.png",
+      "json": "../../../../tmp/scarlet-v3-extra/captures/remilia-after.json"
+    }
+  ]
+}

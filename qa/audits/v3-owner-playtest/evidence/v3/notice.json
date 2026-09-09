@@ -1,0 +1,12 @@
+{
+  "id": "notice",
+  "scene": "notice",
+  "tick": 60,
+  "group": "presentation",
+  "state": "notice",
+  "stateTick": 60,
+  "stage": 1,
+  "stageTick": 0,
+  "bullets": 0,
+  "frame": 60
+}

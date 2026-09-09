@@ -1,0 +1,62 @@
+{
+  "audit": "v3-owner-playtest",
+  "decision": "BOUNDED_CORRECTIONS_REQUIRED",
+  "date": "2026-09-09",
+  "development_branch": "sprite-redesign",
+  "v3_sha": "449ad2bb677e29f6793b3f5a25ac80c0845f3e14",
+  "published_main": "bc9568c47b345e38aca0acd193a5824812982aa3",
+  "v3_index_sha256": "7ff1518457539be21130d492366e956f20e6ce8a3cb9bc463a42e3d694407f8c",
+  "published_v3_index_sha256": "7ff1518457539be21130d492366e956f20e6ce8a3cb9bc463a42e3d694407f8c",
+  "published_byte_equivalent": true,
+  "v2_index_sha256": "724abb7d4a34a7814b65a332ffaf13891001404e05c22c418feaba51a65e8670",
+  "qa": {
+    "v3_regression": "32/32",
+    "v3_material_console_errors": 0,
+    "v3_captures": 53,
+    "v2_regression": "32/32",
+    "v2_captures": 53
+  },
+  "issue_15_in_scope": false,
+  "findings": [
+    {
+      "id": "F01",
+      "priority": "P1",
+      "classification": "A",
+      "scene": "Sakuya dialogue (before and after); any full-width mansion-interior presentation",
+      "title": "192×240 mansion sheet reused at 256×240 leaves a black gutter; Sakuya stands in the void",
+      "asset_redesign_required": false
+    },
+    {
+      "id": "F02",
+      "priority": "P1",
+      "classification": "A",
+      "scene": "Gate, Remilia dialogue (before and after), attract-sakuya, Stage 3 card, dawn-anchor backdrop",
+      "title": "R5-empty roof sheet reused for story/gate scenes; V2 walkway/floor is gone",
+      "asset_redesign_required": false
+    },
+    {
+      "id": "F03",
+      "priority": "P1",
+      "classification": "B",
+      "scene": "Marisa dialogue (before and after); Forest stage card / attract at 256",
+      "title": "Marisa and leftover grimoire overlap the playfield-edge trunk; HUD-column forest unbalances 256-wide frames",
+      "asset_redesign_required": false
+    },
+    {
+      "id": "F04",
+      "priority": "P2",
+      "classification": "B",
+      "scene": "Gate / roof gameplay / Remilia dialogue architecture",
+      "title": "Roof/gate props read as scattered stamps (oval 'arch', barcode bars) rather than a building",
+      "asset_redesign_required": false
+    },
+    {
+      "id": "F05",
+      "priority": "P2",
+      "classification": "C",
+      "scene": "Credits (all parts after the sky block)",
+      "title": "Credits still stand on the leftover V2 procedural roof() plus primitive iceCase",
+      "asset_redesign_required": false
+    }
+  ]
+}

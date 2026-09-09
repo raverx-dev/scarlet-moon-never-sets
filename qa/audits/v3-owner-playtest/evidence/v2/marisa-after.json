@@ -1,0 +1,14 @@
+{
+  "id": "marisa-after",
+  "scene": "dialogue:marisa_after",
+  "tick": 60,
+  "group": "dialogue",
+  "state": "dialogue",
+  "stateTick": 60,
+  "stage": 2,
+  "stageTick": 0,
+  "bullets": 0,
+  "dialogue": "marisa_after",
+  "line": 0,
+  "frame": 60
+}

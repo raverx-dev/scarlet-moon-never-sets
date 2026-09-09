@@ -1,0 +1,11 @@
+[
+  {"id":"continue","scene":"continue","tick":30,"group":"presentation"},
+  {"id":"dawn-anchor","scene":"dawn","tick":90,"group":"ending"},
+  {"id":"stagecard-1","scene":"stagecard:1","tick":60,"group":"presentation"},
+  {"id":"stagecard-2","scene":"stagecard:2","tick":60,"group":"presentation"},
+  {"id":"stagecard-3","scene":"stagecard:3","tick":60,"group":"presentation"},
+  {"id":"cirno-after","scene":"dialogue:cirno_after","tick":60,"group":"dialogue"},
+  {"id":"marisa-after","scene":"dialogue:marisa_after","tick":60,"group":"dialogue"},
+  {"id":"sakuya-after","scene":"dialogue:sakuya_after","tick":60,"group":"dialogue"},
+  {"id":"remilia-after","scene":"dialogue:remilia_after","tick":60,"group":"dialogue"}
+]

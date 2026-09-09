@@ -1,0 +1,12 @@
+{
+  "id": "attract-donation",
+  "scene": "attract",
+  "tick": 620,
+  "group": "presentation",
+  "state": "attract",
+  "stateTick": 620,
+  "stage": 1,
+  "stageTick": 0,
+  "bullets": 0,
+  "frame": 620
+}

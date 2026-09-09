@@ -1,0 +1,14 @@
+{
+  "id": "s1",
+  "scene": "boss:sakuya:0",
+  "tick": 340,
+  "group": "boss",
+  "state": "play",
+  "stateTick": 340,
+  "stage": 3,
+  "stageTick": 0,
+  "phase": "s1",
+  "bossTick": 340,
+  "bullets": 37,
+  "frame": 340
+}

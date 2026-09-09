@@ -1,0 +1,12 @@
+{
+  "id": "credits-remilia",
+  "scene": "credits",
+  "tick": 1370,
+  "group": "credits",
+  "state": "credits",
+  "stateTick": 1370,
+  "stage": 1,
+  "stageTick": 0,
+  "bullets": 0,
+  "frame": 1370
+}

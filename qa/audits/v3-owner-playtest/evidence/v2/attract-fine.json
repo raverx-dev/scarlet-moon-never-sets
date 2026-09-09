@@ -1,0 +1,12 @@
+{
+  "id": "attract-fine",
+  "scene": "attract",
+  "tick": 800,
+  "group": "presentation",
+  "state": "attract",
+  "stateTick": 800,
+  "stage": 1,
+  "stageTick": 0,
+  "bullets": 0,
+  "frame": 800
+}

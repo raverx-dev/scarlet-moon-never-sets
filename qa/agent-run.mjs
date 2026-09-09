@@ -8,7 +8,9 @@ import {chromium} from 'playwright-core';
 
 const here=path.dirname(fileURLToPath(import.meta.url));
 const root=path.resolve(here,'..');
-const out=path.join(here,'output');
+const sourceHtml=path.resolve(process.env.QA_SOURCE||path.join(root,'index.html'));
+const casesFile=path.resolve(process.env.QA_CASES||path.join(here,'cases.json'));
+const out=path.resolve(process.env.QA_OUT||path.join(here,'output'));
 const captures=path.join(out,'captures');
 const base='http://127.0.0.1:4173/';
 const args=new Set(process.argv.slice(2));
@@ -94,8 +96,15 @@ async function waitJson(locator,timeout=120000){
 
 fs.mkdirSync(captures,{recursive:true});
 const python=process.env.PYTHON||'python3';
-const built=spawnSync(python,[path.join(here,'build.py')],{cwd:root,stdio:'inherit'});
+const built=spawnSync(python,[path.join(here,'build.py')],{
+  cwd:root,
+  stdio:'inherit',
+  env:{...process.env,QA_SOURCE:sourceHtml}
+});
 if(built.status!==0)die(`QA build failed using ${python}`);
+console.log(`QA source: ${sourceHtml}`);
+console.log(`QA cases: ${casesFile}`);
+console.log(`QA out: ${out}`);
 
 const exe=browserBin();
 if(!exe)die('No Chromium-family browser found. Set BROWSER_BIN to Chrome, Chromium, or Edge. See qa/README.md.');
@@ -126,7 +135,7 @@ try{
   await page.getByRole('button',{name:'Run acceptance diagnostics'}).click();
   const diagnostics=await waitJson(page.locator('#audit-diagnostics'));
 
-  const matrix=JSON.parse(fs.readFileSync(path.join(here,'cases.json'),'utf8'));
+  const matrix=JSON.parse(fs.readFileSync(casesFile,'utf8'));
   const selected=onlyCase?matrix.filter(c=>c.id===onlyCase):matrix;
   if(onlyCase&&!selected.length)throw new Error(`Unknown capture case: ${onlyCase}`);
   const captureIndex=[];
@@ -149,7 +158,7 @@ try{
 
   const report={
     generatedAt:new Date().toISOString(),
-    baseline:{path:'index.html',sha256:hashFile(path.join(root,'index.html'))},
+    baseline:{path:path.relative(root,sourceHtml)||sourceHtml,sha256:hashFile(sourceHtml)},
     browser:{executable:exe,headed},
     regression,
     diagnostics,
