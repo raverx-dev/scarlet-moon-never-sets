@@ -1,0 +1,46 @@
+VERSION 3 STAGE 1 MISTY LAKE — VALIDATION REPORT
+==================================================================
+RESULT: PASS
+Asset count: 26
+Playfield: 192x240
+Placement count: 900
+Center lane: x=48..143
+Edge-only overlap violations: 0
+Center bright density: 0.001432
+Edge bright density:   0.044748
+
+All asset dimensions, palette keys, prefix rules, and composition constraints passed.
+
+ASSET SHA-256
+lake_water_dark_a            8x8     51d3beec5eb19ec04e958458f4aa00b7645aa28767035b15b7e7de32aca6c9ff
+lake_water_dark_b            8x8     d1367e4478f96aefb1473dc3b6b730134e94a325281d42887fe3199eac18e65b
+lake_water_dark_c            8x8     5a8b17b0b31de47ac25e05a1d9b123a2caa63acf5bd06f427be04f5d89beacb7
+lake_water_edge_d            8x8     c4fad28ee3477ed90de12d98e6deb08027a86a10725cc80f580b072781c2737b
+lake_ripple_dim_a            8x8     0672a71f4856f002a26cb60c0dd7c93581cef2233ecec7e23622c6bd5409b160
+lake_ripple_dim_b            8x8     b2cd08e367784183f8f1fe38983431d2f7ffecffe443606242d59cd917fc0cf2
+lake_ripple_cool_a           8x8     a621afa9774572def08079b9e8454c7e1509329cb798d29f52d4c5fb92b5ae5a
+lake_foam_spark_a            8x8     fb2e51315f57b7abfefc1b300f26488a79d99defd22aa3ab1aaa21ce23a972c5
+lake_foam_edge_b             8x8     154d8891970d8046e20298cf7163e5b71bb9afaff4761f9d16807e3d7112b3fc
+lake_mist_wisp_a             8x8     c5acb0634a526b5025403b6c8bfc8aeaecf9ae49ad18afe02053cdf8b1fcd08e
+lake_mist_wisp_b             8x8     dd310b172cb7bab22957b3ad6dd9ad225333c193181aa6fad6ac10f83bbd1ecf
+lake_mist_wisp_c             8x8     4d198c565b8189c4859a92d377f84c66c82567e49c1512c84105c4b150dbf21e
+lake_ice_glint               8x8     edaeec60a57f837c1a3bbd40d84b608b39587575c160276ccfee8d4e4bffc741
+lake_moon_reflect_a          8x8     a1b1ffa9e3055dd8403b61b6781564abcab58526d4efd034f72a4a8878ceb436
+lake_moon_reflect_b          8x8     2f444a72e0da5bea72d33bad679ca1c72843d62ab0210c9c27d5168649ca66bc
+lake_reeds_a                 16x16   c20c0a7bd360ac99a386a1de48bf58638089d5a263f0b53b9d1a8555b868c5c9
+lake_reeds_b                 16x16   817bcb4eb10446eb90ea1735230b3610eba766ea98eccbe433215f06c2be5003
+lake_shore_stone_a           16x16   723ce1afa94a6173d8dbed22f117bd4abdaeb867a00181e4356735b399245aed
+lake_shore_stone_b           16x16   bce223cf9e0c820c5599ba7ee8d3c748602a46eabe0fd6b3805c7493a8a87389
+lake_lilypad_a               16x16   da9ee42dea08ba51a9d05c979135c296584ec09178d05d4495e2e05a03d8973e
+lake_shore_post              8x24    726e7bcc01788f85dbbe5f982e02496f0f9e0931ae34ef4322b32719ace1dc31
+lake_lantern_dim             16x24   48d9fe890593b0c1da1577ae6b61172b18527d3998bd502e3efa9a92ad8b9c3c
+lake_ice_shard               8x16    53b8ee4eec615f30aa4cc35f9ca2a1b18c5213d0fdcb504d2d1ef8c2e0ec8d08
+lake_water_band_e            8x8     7b5b258352015d1aca4e5cf551fd19ea7d0ee2ad2b0f4b587aea0823ce3c0520
+lake_mist_transition_d       8x8     a70fd8c0ed254d0adf78ac23ba0194820e2afa14e9949c0f77363f9b7b3fcdad
+lake_edge_cluster_c          16x16   e69eaa458294e099772b1c5071ae4cb70eea4d4cf38c691f402f284d913a443f
+
+PLAYFIELD SHA-256
+ae727e9d6552edd4e8ae09152aba4494f2cceed42fd1c737b851521fbb682424
+
+COMPOSITION SOURCE: lake_playfield_composition.js
+REFERENCE PREVIEW: lake_playfield_reference_preview.png
