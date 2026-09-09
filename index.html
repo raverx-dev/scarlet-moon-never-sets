@@ -1297,6 +1297,62 @@ const RAW={
 };
   return Object.freeze(Object.fromEntries(Object.entries(RAW).map(([n,s])=>[n,s.split("\n")])));
 })();
+const LAKE=(function(){
+const RAW={
+"lake_water_dark_a":"nnnnnnnn\nnnnBnnnn\nnBBnnnnn\nnnnnnnnn\nnnnnnBnn\nnnnBBnnn\nnnnnnnnn\nnBnnnnBn",
+"lake_water_dark_b":"nnnnnnnn\nnnnnnBnn\nnnnBBnnn\nnnnnnnnn\nnBnnnnnn\nnnBBnnBn\nnnnnnnnn\nnnnnBnnn",
+"lake_water_dark_c":"nnnnnnnn\nnBnnnnnn\nnnnBnnBn\nnnnnnnnn\nnnBBnnnn\nnnnnnBnn\nnBnnnnnn\nnnnnnnnn",
+"lake_water_edge_d":"nnnnnnnn\nnnBBnnnn\nnnBbbBnn\nnnnnnnnn\nnnnnBBnn\nnBBbbBnn\nnnnnnnnn\nnnBnnnBn",
+"lake_ripple_dim_a":"........\n...B....\n..BBB...\n........\n.....B..\n...BB...\n........\n........",
+"lake_ripple_dim_b":"........\n.B......\n.BBB....\n........\n....BB..\n...B..B.\n........\n........",
+"lake_ripple_cool_a":"........\n....B...\n..BbiB..\n...BB...\n........\n.BbbB...\n..B.....\n........",
+"lake_foam_spark_a":"........\n........\n...l....\n..lCl...\n...l....\n........\n......l.\n........",
+"lake_foam_edge_b":"........\n..B.....\n.BlB....\n..B.....\n.....B..\n....BlB.\n.....B..\n........",
+"lake_mist_wisp_a":"........\n..BB....\n.BbbB...\n...B....\n.....B..\n....Bbb.\n......B.\n........",
+"lake_mist_wisp_b":"........\n.....B..\n...BbbB.\n..BB....\n........\n.B......\n.BbbB...\n...B....",
+"lake_mist_wisp_c":"........\n.B......\n..bB....\n...B....\n......B.\n....Bbb.\n.....B..\n........",
+"lake_ice_glint":"........\n...c....\n...l....\n.clClc..\n...l....\n...c....\n........\n........",
+"lake_moon_reflect_a":"........\n...S....\n..SaS...\n...B....\n....S...\n...Sa...\n....B...\n........",
+"lake_moon_reflect_b":"........\n.S......\n..aS....\n...B....\n.....S..\n....aS..\n...B....\n........",
+"lake_reeds_a":"................\n...........Gv...\n.......vG..v....\n.......e...v....\n...G...e...v....\n..vv...e.G.v....\n...v...e.G.vvG..\n...v...e.G.ve...\n...v...e.G.ve...\n...v..e..Gv.e...\n....vve..Ge.e...\n....v.e.Gvv..e..\n....v.e.G.v..e..\n....v.e.G.v..e..\n....veeeGeveee..\n..e.v.e.G.v.eee.",
+"lake_reeds_b":"................\n................\n................\n.........vG.....\n.....G...e......\n.....v...e.Gv...\n....vv...e.v....\n....ev.G.e.v....\n....ev.G.e..v...\n...e.v.G.e..e...\n...eev.G.ve.vv..\n...v.v.Ge.e.v...\n...e.v..G.e.v...\n..e..v..G.e..v..\n..e..v..G.e..v..\n.ee.ev.eG.ee.ve.",
+"lake_shore_stone_a":"................\n................\n................\n................\n................\n........BSSSB...\n.......BSBaBSB..\n..SSSSBBBaBaBSB.\n.BaBSBBBBBBBBBB.\n.BBBBBBBaBBBBBB.\n.nnnnBBBBBBBaBB.\n.nnnnnBBBBBBBBB.\n..nnnnBBBBBBBBB.\n......BBBBBBBBB.\n..nnnnnnnnnnnnn.\n...e..e...e..e..",
+"lake_shore_stone_b":"................\n................\n................\n................\n..........S.....\n.......BBSBSBB..\n....S.BBSBBBSBB.\n..BSBSBBBaBBBBB.\n.BSBaBBBBBBaBBS.\n.BBBBBBBBBBBBSBB\nBBBBBBBBBBBBBBaB\n.BBBBBBBBBBBBBBB\n.BBBBBBBBBBBBBBB\n..BBBBBBBBBBBBBB\n....B.....B...B.\ne.e.e.e.e.e.e.e.",
+"lake_lilypad_a":"................\n................\n................\n................\n................\n........e.......\n.....evvveee....\n...eeeeeeveeee..\n...eGeee..veee..\n..eeevee...eGe..\n...eeeveeeevee..\n...eeeeeveeeee..\n.....eeeeeee....\n................\n................\n................",
+"lake_shore_post":"........\n..SSSS..\n.BBBBBB.\n..nnnn..\n..nuun..\n..nuun..\n..nuun..\n..noun..\n..nuun..\n..nuun..\n..nuun..\n..nuun..\n..nuun..\n..nuun..\n..noun..\n..nuun..\n..nuun..\n..nuun..\n..nuun..\n..nuun..\n..noun..\n.BBBBBB.\nb.b.b.b.\n..nnnn..",
+"lake_lantern_dim":"................\n.....nnnnnn.....\n...RRRRRRRRRR...\n..nnnnnnnnnnnn..\n....RRRRRRRR....\n....RRRRRRRR....\n....R......R....\n....R.ogog.R....\n....R.gyyo.R....\n....R.ogog.R....\n....R.gogo.R....\n....R......R....\n....RRRRRRRR....\n......nnnn......\n......nuun......\n......nuun......\n......nuun......\n......nuun......\n......nuun......\n......nuun......\n......nuun......\n......nuun......\n......nuun......\n.....BBBBBB.....",
+"lake_ice_shard":"........\n....l...\n...lC...\n...Cc...\n..cClc..\n..clCc..\n.BcClc..\n..BcCB..\n..BccB..\n...BcB..\n...Bc...\n...BB...\n...B....\n........\n........\n........",
+"lake_water_band_e":"........\n..BBB...\n.BBBBB..\n..BBBB..\n....BB..\n........\n..B.....\n.....B..",
+"lake_mist_transition_d":"..BBB...\n.BSSBB..\nBSSaaBB.\n.BSSSSB.\n..BSSS..\n...BB...\n........\n........",
+"lake_edge_cluster_c":"................\n................\n......v.........\n......G...G.....\n.....GG...GG....\n.....G....v.....\n...v.G....G.....\n..GG.G..v.G.....\n..G..G..G.G.G...\n.GG..G..G.G.G...\n.G...G..G.GGG...\nBBBBBBBBBBBB....\nSSaaSSaaSSaS....\n...S....S.......\n..n.n..n.n......\n..n.n..n.n......"
+};
+const A=Object.fromEntries(Object.entries(RAW).map(([n,s])=>[n,s.split("\n")]));
+const H=240,placements=[];
+const add=(asset,x,y)=>{placements.push({asset,x,y})};
+const centerCycle=['lake_water_dark_a','lake_water_dark_b','lake_water_dark_c'];
+const edgeCycle=['lake_water_dark_a','lake_water_dark_b','lake_water_dark_c','lake_water_edge_d'];
+for(let ty=0;ty<H;ty+=8)for(let tx=0;tx<256;tx+=8){
+  const col=tx>>3,cycle=(col>=6&&col<=17)?centerCycle:edgeCycle;
+  add(cycle[(col+(ty>>3))%cycle.length],tx,ty);
+}
+for(const ty of [24,56,96,136,176,216])for(const tx of [0,16,32,136,152,168])add('lake_water_band_e',tx,ty+(((tx>>4)&1)*8));
+for(const ty of [40,112,184])for(const tx of [56,72,104,120])add('lake_water_band_e',tx,ty);
+for(let ty=24;ty<H;ty+=32)for(const tx of [0,16,160,176]){
+  add('lake_ripple_cool_a',tx+(((ty>>5)&1)*8),ty);
+  if(((ty>>5)&1)===0)add('lake_foam_edge_b',tx,ty+8);
+}
+for(let ty=32;ty<H;ty+=32)for(const tx of [56,80,104,128])add((((tx+ty)>>3)&1)===0?'lake_ripple_dim_a':'lake_ripple_dim_b',tx,ty);
+for(const [x,y] of [[16,64],[160,72],[24,184],[152,192]])add('lake_foam_spark_a',x,y);
+for(const [x,y,a] of [[88,32,'lake_moon_reflect_a'],[96,48,'lake_moon_reflect_b'],[88,64,'lake_moon_reflect_a'],[96,80,'lake_moon_reflect_b'],[88,96,'lake_moon_reflect_a']])add(a,x,y);
+const mistGroups=[[8,20,['lake_mist_wisp_a','lake_mist_transition_d','lake_mist_wisp_b','lake_mist_wisp_a','lake_mist_wisp_b']],[152,12,['lake_mist_wisp_b','lake_mist_transition_d','lake_mist_wisp_a','lake_mist_wisp_b','lake_mist_wisp_a']],[56,40,['lake_mist_wisp_c','lake_mist_wisp_a','lake_mist_wisp_c','lake_mist_wisp_b']],[104,56,['lake_mist_wisp_c','lake_mist_wisp_b','lake_mist_wisp_c','lake_mist_wisp_a']]];
+for(const [x0,y0,seq] of mistGroups)seq.forEach((a,i)=>add(a,x0+(i%2?8:0),y0+i*24));
+for(const [x,ys,a] of [[0,[96,144,192,216],'lake_edge_cluster_c'],[16,[120,168,208],'lake_shore_stone_a'],[160,[104,152,200],'lake_shore_stone_b'],[176,[128,176,216],'lake_edge_cluster_c']])for(const y of ys)add(a,x,y);
+for(const [x,y,a] of [[0,112,'lake_reeds_a'],[16,184,'lake_reeds_b'],[160,120,'lake_reeds_b'],[176,184,'lake_reeds_a'],[16,72,'lake_lilypad_a'],[144,80,'lake_lilypad_a'],[24,168,'lake_lilypad_a'],[152,176,'lake_lilypad_a'],[8,88,'lake_shore_post'],[24,184,'lake_shore_post'],[168,96,'lake_shore_post'],[152,184,'lake_shore_post'],[24,96,'lake_lantern_dim'],[152,112,'lake_lantern_dim'],[32,56,'lake_ice_shard'],[144,56,'lake_ice_shard'],[16,152,'lake_ice_shard'],[168,160,'lake_ice_shard'],[24,64,'lake_ice_glint'],[152,72,'lake_ice_glint']])add(a,x,y);
+const sheet=document.createElement('canvas');sheet.width=256;sheet.height=240;
+const lc=sheet.getContext('2d',{alpha:false});lc.imageSmoothingEnabled=false;lc.fillStyle=C.black;lc.fillRect(0,0,256,240);
+for(const p of placements){const rows=A[p.asset];for(let yy=0;yy<rows.length;yy++){const row=rows[yy];for(let xx=0;xx<row.length;xx++){const col=PAL[row[xx]];if(!col)continue;lc.fillStyle=col;lc.fillRect(p.x+xx,p.y+yy,1,1)}}}
+return Object.freeze({A,placements,sheet});
+})();
 function blitRows(rows,s){const h=rows.length,w=rows[0].length;for(let yy=0;yy<h;yy++){const y0=Math.round((yy-h/2)*s),y1=Math.round((yy+1-h/2)*s),dh=y1-y0;if(dh<=0)continue;const row=rows[yy];for(let xx=0;xx<w;xx++){const col=PAL[row[xx]];if(!col)continue;const x0=Math.round((xx-w/2)*s),x1=Math.round((xx+1-w/2)*s),dw=x1-x0;if(dw<=0)continue;rect(x0,y0,dw,dh,col)}}}
 function blit(rows,x,y,s=1,flip=false){if(!rows||!rows.length)return;s=Math.max(1,s|0);ctx.save();ctx.translate(Math.round(x),Math.round(y));if(flip)ctx.scale(-1,1);blitRows(rows,s);ctx.restore()}
 function stamp(rows,x,y){x=Math.round(x);y=Math.round(y);for(let yy=0;yy<rows.length;yy++){const row=rows[yy];for(let xx=0;xx<row.length;xx++){const col=PAL[row[xx]];if(col)rect(x+xx,y+yy,1,1,col)}}}
@@ -1506,13 +1562,7 @@ function cloud(x,y,w,c){rect(x+4,y,w-8,3,c);rect(x,y+3,w,4,c);rect(x+6,y+7,w-12,
 function dimField(w,level){if(level>=2){rect(0,80,w,160,C.black);return}for(let y=0;y<240;y+=2)for(let x=y%4;x<w;x+=4)rect(x,y,2,1,C.black)}
 function roof(y,w=192){rect(0,y,w,240-y,'#12142d');for(let x=0;x<w;x+=16){rect(x,y,14,3,C.stone);rect(x+4,y+3,4,14,'#3a4270');rect(x,y+17,16,3,C.blue)}for(let yy=y+22;yy<240;yy+=6)for(let xx=0;xx<w;xx+=12)rect(xx+(yy%12?6:0),yy,10,1,'#292138')}
 function drawMistyLake(t,w,dim){
-  rect(0,0,w,240,C.black);stars(w,72);moon(Math.floor(w*.68),34,22,false);
-  for(let x=0;x<w;x+=6){const h=7+(x*13)%12;rect(x,66-h,6,h,'#12182c')}
-  rect(0,66,w,174,'#0a1428');
-  for(let row=0;row<20;row++){const yy=68+row*8,ox=Math.floor(t*.22+row*9)%16;for(let x=-16;x<w;x+=16){rect(x+ox+2,yy+2,8,1,row%3===0?'#3a5080':'#1e3058');if(row%2===0)rect(x+ox+8,yy+5,5,1,'#152238')}}
-  const mx=Math.floor(w*.68);for(let i=0;i<18;i++){const yy=72+i*8+(Math.floor(t/8)+i)%3,hw=Math.max(2,12-i);if(yy<240)rect(mx-hw+(i%2),yy,hw*2,1,i%2?'#5a6088':'#3a4068')}
-  for(let i=0;i<4;i++){const yy=82+i*34+Math.floor(Math.sin((t+i*40)/40)*3);for(let x=0;x<w;x+=3)if(((x+i*7)^Math.floor(t/16))&3)rect(x,yy,2,1,'#2a3a58')}
-  for(const side of [0,1]){const x0=side?w-14:0;for(let yy=52;yy<240;yy+=6){rect(x0+side*3,yy,4,5,'#1c3040');rect(x0+2,yy-(yy%5),1,7,'#3a6a58');if(yy%18===0){rect(x0+1,yy+2,6,3,C.cyan);rect(x0+2,yy+3,4,1,C.white)}}}
+  ctx.drawImage(LAKE.sheet,0,0,w,240,0,0,w,240);
   if(dim)dimField(w,dim);
 }
 function drawForest(t,w,dim){
