@@ -149,7 +149,7 @@ try{
 
   const report={
     generatedAt:new Date().toISOString(),
-    baseline:{path:'index.html',sha256:hashFile(path.join(root,'index.html'))},
+    baseline:{path:process.env.SCARLET_QA_SOURCE||'index.html',sha256:hashFile(path.resolve(root,process.env.SCARLET_QA_SOURCE||'index.html'))},
     browser:{executable:exe,headed},
     regression,
     diagnostics,

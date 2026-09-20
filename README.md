@@ -42,8 +42,9 @@ Current published versions:
 - `versions/original/` — Version 1, original build. Frozen.
 - `versions/p1-visual-audio/` — Version 2, accepted P0 + Visual P1 + Audio P1 checkpoint. Frozen.
 - `versions/sprite-redesign/` — Version 3, owner-approved visual-redesign build (sprites, UI chrome, shrine/title, Stage 1–3 environments, owner-playtest staging fixes). Frozen.
+- `versions/v4/` — Version 4 development preview: approved RoboPixel can-and-cigarette splash logo and RAVER X DEV attribution. This is an evolving build, not a frozen release.
 
-Version 1, Version 2, and Version 3 folders must never be overwritten. Later work becomes Version 4. Version 4 has not been created.
+Version 1, Version 2, and Version 3 folders must never be overwritten. Version 4 work continues in its separate development folder.
 
 ## Implementation
 
@@ -73,6 +74,6 @@ Accepted P0, Visual P1, and Audio P1 engineering checkpoints retained 32 passed 
 
 The repository includes a development-only [`qa/`](qa/) tool for deterministic state inspection, regression checks, diagnostics, automated browser capture, and future maintenance.
 
-Version 3 is frozen at `ea4c31aa8d2ad92e1a5d8bfb0f25d1ba0863ed31` on `sprite-redesign` and `archive/version-3`. `v1-polish` is the accepted Visual + Audio P1 feature checkpoint. Published Version 3 at `versions/sprite-redesign/` is frozen in place. Version 1 and Version 2 folders stay frozen. Version 4 has not been created.
+Version 3 is frozen at `ea4c31aa8d2ad92e1a5d8bfb0f25d1ba0863ed31` on `sprite-redesign` and `archive/version-3`. `v1-polish` is the accepted Visual + Audio P1 feature checkpoint. Published Version 3 at `versions/sprite-redesign/` is frozen in place. Version 1 and Version 2 folders stay frozen. Version 4 has begun as a separate, non-frozen development preview under `versions/v4/`.
 
 The longer-term project direction is documented in [`ROADMAP.md`](ROADMAP.md). The current priority is to finish and stabilize Scarlet Moon itself before extracting reusable systems. The roadmap intentionally treats the game as the future reference implementation for a possible reusable HTML5/JavaScript danmaku framework and authoring environment rather than as a disposable engine demo.
