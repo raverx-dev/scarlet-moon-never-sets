@@ -2098,7 +2098,7 @@ function drawCredits(){
 }
 function draw(){
   rect(0,0,256,240,C.black);
-  if(state==='boot'){rect(84,35,88,123,'#1a1428');drawV4CanLogo(96,45);center('RAVER X DEV',121,C.white);center('PRESENTS',142,C.blue)}
+  if(state==='boot'){drawV4CanLogo(96,45);center('RAVER X DEV',121,C.white);center('PRESENTS',142,C.blue)}
   else if(state==='notice'){shrine(false,stateTick,256,{donation:false,architecture:true});rect(8,24,240,192,'#080810');center('AN UNOFFICIAL',38,C.pink);center('TOUHOU PROJECT FAN GAME',51,C.white);['TOUHOU PROJECT / CHARACTERS','AND SETTING ORIGINALLY CREATED','BY ZUN / TEAM SHANGHAI ALICE'].forEach((l,i)=>center(l,90+i*12,C.cyan));['ALL GAME GRAPHICS, CODE','AND ARRANGEMENTS IN THIS','FAN GAME ARE NEWLY CREATED'].forEach((l,i)=>center(l,154+i*12));center('Z / ENTER',220,C.gold)}
   else if(state==='title')drawTitle();
   else if(state==='how'){uiMenuFrame(6,6,244,228);center('HOW TO PLAY',18,C.gold,2);[['ARROWS','MOVE'],['Z','SHOOT / CONFIRM'],['X','FANTASY SEAL / CANCEL'],['SHIFT','FOCUS / SHOW HITBOX'],['ENTER','START / PAUSE'],['M','MUTE']].forEach((a,i)=>{text(a[0],16,50+i*16,C.cyan);text(a[1],70,50+i*16)});center('GRAZE BULLETS. COLLECT P.',160);center('POWER 3+: FLY HIGH TO COLLECT.',174);center('HIT? X WITHIN 8 FRAMES!',188,C.pink);center('UNLIMITED CONTINUES',202,C.blue);center('Z / X: BACK',218,C.gold)}
