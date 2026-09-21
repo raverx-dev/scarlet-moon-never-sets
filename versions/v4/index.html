@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080810"><title>東方紅月夜 ~ Scarlet Moon Never Sets</title>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="scarlet-build" content="v4-candidate-20260921"><meta name="theme-color" content="#080810"><title>東方紅月夜 ~ Scarlet Moon Never Sets</title>
 <style>*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;background:#080810;overflow:hidden}body{display:flex;align-items:center;justify-content:center}canvas{image-rendering:pixelated;image-rendering:crisp-edges;outline:none;box-shadow:0 0 0 1px #24233e}#status{position:absolute;left:-10000px}</style>
 <canvas id="game" width="256" height="240" tabindex="0" aria-label="Scarlet Moon Never Sets. Arrow keys move, Z fires or confirms, X bombs, Shift focuses, Enter starts or pauses, M mutes."></canvas><div id="status" aria-live="polite"></div>
 <script>
@@ -2025,7 +2025,7 @@ function drawPlay(){
   if(boss){sprite(boss.who,boss.x,boss.y,1);if(boss.flash>0)rect(boss.x-3,boss.y-4,6,6,C.white)}
   for(const l of lasers)drawLaser(l);for(const b of bullets)drawBullet(b);
   if(!player.inv||frame%6<3){sprite('reimu',player.x,player.y,1);if(player.power>1)for(const side of [-1,1]){const x=player.x+side*(player.focus?11:19),y=player.y+Math.sin(frame*.07)*3;disk(x,y,3,C.white);rect(x-2,y,5,2,C.red);rect(x,y-2,1,1,C.red)}}
-  if(player.focus||player.death){disk(player.x,player.y,3,C.black);rect(player.x-2,player.y-2,4,4,player.death?C.red:C.white);rect(player.x,player.y,1,1,C.red)}
+  if(player.focus||player.death){disk(player.x,player.y,3,C.black);rect(player.x-2,player.y-2,5,5,player.death?C.red:C.white);rect(player.x,player.y,1,1,C.red)}
   for(const e of effects){if(e.type==='graze'){rect(e.x-9,e.y-4,2,1,C.gold);rect(e.x+8,e.y+3,2,1,C.gold)}else if(e.type==='label'){center(e.text,Math.min(205,e.y),C.gold,1,192)}else {const r=e.type==='death'?(45-e.t)*.3:3;for(let j=0;j<4;j++)rect(e.x+Math.cos(j*Math.PI/2)*r,e.y+Math.sin(j*Math.PI/2)*r,2,2,e.type==='cancel'?C.gold:C.white)}}
   if(bombTimer){for(let i=0;i<7;i++){const a=i*TAU/7+frame*.07,r=(150-bombTimer)*.9,x=player.x+Math.cos(a)*r,y=player.y+Math.sin(a)*r*.65;disk(x,y,9,[C.red,C.cyan,C.gold,C.pink][i%4]);disk(x,y,5,C.white);rect(x-4,y,9,4,C.red)}if(bombTimer>105){rect(15,104,162,19,C.black);center('FANTASY SEAL',110,C.white,1,192)}}
   if(boss){rect(0,0,192,15,C.black);text(boss.name,4,3,C.white);const secs=Math.max(0,Math.ceil((boss.data.duration-boss.t)/60));text(String(secs).padStart(2,'0'),175,3,C.gold);rect(4,12,184,2,C.blue);rect(4,12,184*Math.max(0,boss.hp/boss.max),2,C.red);if(phaseGap>0||boss.t<90){const lines=wrap((boss.data.sign?boss.data.sign+' / ':'')+boss.data.name,29);rect(4,74,184,lines.length*10+9,C.black);lines.forEach((l,i)=>center(l,79+i*10,boss.data.spell?C.gold:C.cyan,1,192))}if(bullets.some(b=>b.frozen)){rect(65,18,62,10,C.black);text('TIME STOP',69,20,C.cyan)}}
@@ -2037,7 +2037,7 @@ function drawDialogue(){
   background(stage,frame,256,sceneKind||(d.id==='intro'?'shrine':d.id==='ending'?'morning':''),d.id==='ending'?{donation:false}:undefined);
   if(d.id==='intro')storyReimu(70,146);
   else if(d.id==='ending'){storyReimu(64,136);sprite('remilia',168,124,1);donation(112,148,true);coin(112,140)}
-  else {storyReimu(56,124);const other=who==='reimu'?(d.id.startsWith('cirno')?'cirno':d.id.startsWith('marisa')?'marisa':d.id.startsWith('sakuya')?'sakuya':d.id.startsWith('remilia')?'remilia':'reimu'):who;const ox=other==='marisa'?152:other==='sakuya'?208:other==='remilia'?200:196,oy=other==='remilia'?124:108;if(other==='reimu')storyReimu(ox,oy+8);else sprite(other,ox,oy,1);if(d.id.startsWith('marisa')){rect(136,118,12,16,C.gold);rect(138,120,8,12,C.red);rect(139,122,6,2,C.white)}}
+  else {storyReimu(56,124);const other=who==='reimu'?(d.id.startsWith('cirno')?'cirno':d.id.startsWith('marisa')?'marisa':d.id.startsWith('sakuya')?'sakuya':d.id.startsWith('remilia')?'remilia':'reimu'):who;const ox=other==='marisa'?152:other==='sakuya'?208:other==='remilia'?200:196,oy=other==='remilia'?124:108;if(other==='reimu')storyReimu(ox,oy+8);else sprite(other,ox,oy,1,other==='cirno'&&d.id.startsWith('cirno'));if(d.id.startsWith('marisa')){rect(136,118,12,16,C.gold);rect(138,120,8,12,C.red);rect(139,122,6,2,C.white)}}
   stamp(UI.ui_dialogue_frame,4,174);portrait(who,9,181);
   text(who,50,181,{reimu:C.red,cirno:C.cyan,marisa:C.gold,sakuya:C.white,remilia:C.pink}[who]);
   wrap(s.slice(0,Math.floor(d.print)),32).forEach((l,i)=>text(l,50,193+i*9));
@@ -2112,7 +2112,7 @@ function draw(){
   else if(state==='dawn'){if(stateTick<190){background(3,0,256,'roof');nesBox(108,100,40,64,C.blue);disk(128,131,13,stateTick<100?C.red:C.dark);line(128,90,128,172,stateTick<100?C.white:C.blue,2);if(stateTick<100)for(let j=0;j<5;j++)rect(113+j*7,111+(stateTick%20),2,2,C.gold);center('LUNAR ANCHOR',190,C.gold)}else {rect(0,0,256,240,'#25213d');stamp(SHRINE.moon_scarlet_64,96,Math.round(80+(stateTick-190)*.45-32));rect(0,150,256,90,'#181b32');rect(0,144,256,6,C.gold);rect(0,138,256,6,'#bd6573')}}
   else if(state==='endingScene'){shrine(true,stateTick);storyReimu(58,174);if(stateTick>150){const x=Math.max(126,285-(stateTick-150)*.8);sprite('remiliaParasol',x,160,1);if(stateTick>350)coin(88,Math.min(174,145+(stateTick-350)*.8))}}
   else if(state==='endingExit'){shrine(true,stateTick);storyReimu(58,174);sprite('remilia',133+stateTick*.9,160,1);donation(88,175,true);coin(88,174)}
-  else if(state==='theend'){shrine(true,400);storyReimu(59,174);donation(88,175,true);coin(88,174);center('THE END',62,C.white,2);center(continues?'CLEAR / '+continues+' CONTINUES':'NO-CONTINUE CLEAR',96,C.gold)}
+  else if(state==='theend'){shrine(true,400);storyReimu(59,174);donation(88,175,true);coin(88,174);rect(24,52,208,60,PAL.k);rect(28,56,200,1,PAL.R);rect(28,107,200,1,PAL.R);center('THE END',64,C.white,2);center(continues?'CLEAR / '+continues+' CONTINUES':'NO-CONTINUE CLEAR',94,C.gold)}
   else if(state==='credits')drawCredits();
   else if(state==='final'){stars(256);stamp(SHRINE.moon_scarlet_64,96,20);center('THANK YOU',88,C.gold,2);center('FOR PLAYING',108,C.gold,2);['THIS IS AN UNOFFICIAL','TOUHOU PROJECT FAN WORK','','TOUHOU PROJECT CREATED BY','ZUN / TEAM SHANGHAI ALICE'].forEach((l,i)=>center(l,132+i*12));center('PRESS START',213,C.white)}
 }
