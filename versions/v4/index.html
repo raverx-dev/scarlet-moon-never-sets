@@ -1743,6 +1743,146 @@ paintStory(A.roof_lantern_wall,80,144);
 for(let x=0;x<256;x+=16)paintStory(A.mansion_ext_balcony_floor,x,224);
 return Object.freeze({A,operations,sheet,story});
 })();
+// V4 candidate scene compositions. Direct runtime artwork, not RoboPixel delivery.
+// Prepainted at native resolution; all edges land on integer pixels.
+const V4_SCENES=(()=>{
+  function painter(w){
+    const sheet=document.createElement('canvas');sheet.width=w;sheet.height=240;
+    const c=sheet.getContext('2d',{alpha:false});c.imageSmoothingEnabled=false;
+    const r=(x,y,a,b,col)=>{c.fillStyle=col;c.fillRect(Math.round(x),Math.round(y),Math.round(a),Math.round(b))};
+    function poly(points,col){
+      const lo=Math.max(0,Math.floor(Math.min(...points.map(p=>p[1])))),hi=Math.min(239,Math.ceil(Math.max(...points.map(p=>p[1]))));
+      for(let y=lo;y<=hi;y++){const hits=[];for(let i=0;i<points.length;i++){const a=points[i],b=points[(i+1)%points.length];if((a[1]<=y&&b[1]>y)||(b[1]<=y&&a[1]>y))hits.push(a[0]+(y-a[1])*(b[0]-a[0])/(b[1]-a[1]))}hits.sort((a,b)=>a-b);for(let i=0;i<hits.length;i+=2)r(Math.ceil(hits[i]),y,Math.floor(hits[i+1])-Math.ceil(hits[i])+1,1,col)}
+    }
+    function ln(x,y,X,Y,col,th=1){const n=Math.max(Math.abs(X-x),Math.abs(Y-y));for(let i=0;i<=n;i++)r(x+(X-x)*i/(n||1),y+(Y-y)*i/(n||1),th,th,col)}
+    function oval(x,y,rx,ry,col){for(let j=-ry;j<=ry;j++){const dx=Math.floor(rx*Math.sqrt(Math.max(0,1-j*j/(ry*ry))));r(x-dx,y+j,dx*2+1,1,col)}}
+    function art(rows,x,y){if(!rows)return;for(let j=0;j<rows.length;j++)for(let i=0;i<rows[j].length;i++){const col=PAL[rows[j][i]];if(col)r(x+i,y+j,1,1,col)}}
+    return {sheet,r,poly,ln,oval,art,w};
+  }
+  function forest(w,deep=false){
+    const p=painter(w),{r,poly,ln,oval,art}=p,c=w/2;
+    r(0,0,w,240,'#0a1020');
+    // A distant opening, uneven ground banks and a quiet path tapering into it.
+    r(0,0,w,53,'#18253a');r(0,53,w,38,'#152432');r(0,91,w,149,'#101d27');
+    oval(c+12,42,49,36,'#20333f');
+    for(const [x,y,h] of [[8,2,101],[31,-8,119],[57,0,76],[w-17,-9,108],[w-47,5,89],[w-68,-15,79]]){
+      poly([[x,y],[x+4,y],[x+6,y+h],[x-3,y+h]],'#10212c');
+      ln(x+2,y+38,x-13,y+19,'#10212c',2);ln(x+2,y+51,x+17,y+32,'#10212c',2);
+    }
+    poly([[c-11,39],[c+17,39],[c+29,87],[c+21,127],[c+36,180],[c+47,240],[c-55,240],[c-34,177],[c-27,119],[c-23,79]],'#121b2b');
+    for(let i=0;i<115;i++){const y=57+(i*37)%180,x=c-22+(i*47)%49;if(i%3===0||y<90)r(x,y,2,1,'#1b2634')}
+    // Three large asymmetrical tree groups, with branching silhouettes rather than a tile fence.
+    function tree(x,y,wide,h,right=false){
+      const s=right?-1:1;
+      poly([[x-wide,y],[x+wide,y],[x+wide-2,y+h-28],[x+wide+10,y+h],[x-16,y+h-2],[x-wide+1,y+h-30]],'#151b22');
+      poly([[x-wide+2,y],[x-2,y],[x-3,y+h-22],[x-11,y+h-6],[x-7,y+h-35]],'#333037');
+      ln(x+1,y+3,x,y+h-29,'#4a4141',2);ln(x-wide+3,y+14,x-wide+4,y+h-39,'#514343');
+      poly([[x,y+37],[x+s*29,y+18],[x+s*48,y+16],[x+s*30,y+24],[x,y+49]],'#20222a');
+      ln(x+s*27,y+21,x+s*43,y+19,'#49403f');
+      poly([[x,y+h-20],[x+s*23,y+h-1],[x+s*38,y+h+4],[x+s*21,y+h+5],[x-2,y+h-9]],'#292a2d');
+      for(const [dx,dy,rx,ry] of [[-12,-7,25,15],[13,-1,27,19],[s*36,10,24,14],[s*51,2,15,11]]){
+        oval(x+dx,y+dy,rx,ry,'#12302d');oval(x+dx-3,y+dy-5,rx-3,ry-4,'#214338');
+        for(let k=0;k<8;k++){const u=x+dx-rx+k*rx/4,v=y+dy+Math.sin(k*2.3)*ry*.5;oval(u,v,5+(k%3),4,'#183b32');ln(u-3,v-2,u+2,v-2,'#315548')}
+        for(let j=0;j<48;j++){const xx=x+dx-rx+(j*17)%(rx*2),yy=y+dy-ry+(j*7)%(ry+5);r(xx,yy,3,2,j%3?'#315548':'#416553')}
+      }
+      oval(x+3,y+h-51,3,5,'#111b22');ln(x+4,y+h-54,x+4,y+h-48,'#5a4844');
+    }
+    tree(10,-12,9,119);tree(w-20,26,11,143,true);tree(-5,108,14,133);tree(w+3,169,15,96,true);
+    // Irregular foreground leaf masses leave the center free.
+    for(const [x,y,rx,ry] of [[0,107,28,13],[w-5,181,35,17],[8,218,30,18],[w,232,25,18],[18,21,34,12],[w-8,3,35,15]]){
+      oval(x,y,rx,ry,'#0b2225');oval(x-3,y-5,rx-4,ry-5,'#193b32');
+      for(let j=0;j<55;j++)r(x-rx+(j*19)%(rx*2),y-ry+(j*11)%(ry+9),3,2,j%4?'#254b3c':'#365d45');
+    }
+    for(const [a,x,y] of [['forest_mushroom_cluster',18,188],['forest_mushroom_violet',w-39,141],['forest_mushroom_red',11,96],['forest_fern',w-34,198],['forest_fern',22,225],['forest_path_edge_stone',w-49,171],['forest_shrub',-2,151]])art(FOREST.A[a],x,y);
+    // One abandoned lantern and two dim fairy lights make landmarks, not a repeated grid.
+    art(FOREST.A.forest_lantern_small,17,135);art(FOREST.A.forest_wisp,w-35,77);
+    r(31,73,1,1,'#77997e');r(w-43,126,1,1,'#77997e');
+    if(deep){r(0,0,w,1,'#132135');for(const [x,y] of [[29,163],[w-31,215],[19,68]]){oval(x,y,9,3,'#203640');r(x-5,y,9,1,'#385366')}}
+    return p.sheet;
+  }
+  function arch(p,x,y,width,height,edge,fill){
+    const {r,poly}=p,tip=x+width/2;
+    poly([[x,y+width/3],[tip,y],[x+width,y+width/3],[x+width,y+height],[x,y+height]],edge);
+    poly([[x+3,y+width/3+1],[tip,y+5],[x+width-3,y+width/3+1],[x+width-3,y+height-3],[x+3,y+height-3]],fill);
+  }
+  function interior(w){
+    const p=painter(w),{r,poly,ln,oval,art}=p,c=w/2;
+    r(0,0,w,240,'#11111f');
+    for(let y=4;y<238;y+=11)for(const side of [0,w-43]){r(side,y,43,1,'#232130');r(side+((y%22)?12:27),y,1,11,'#232130')}
+    // Vaulted apse: the rose window anchors one space; floor converges toward it.
+    poly([[0,0],[w,0],[c+36,70],[c-36,70]],'#222033');
+    for(const x of [0,26,w-26,w]){ln(x,0,c,58,'#454055',2);ln(x+3,0,c,61,'#181827')}
+    arch(p,c-31,11,62,75,'#4a3b4d','#171628');
+    oval(c,38,20,20,'#6a4052');oval(c,38,17,17,'#2e2b48');oval(c,38,13,13,'#4a2b45');
+    for(let i=0;i<8;i++){const a=i*Math.PI/4;ln(c,38,c+Math.cos(a)*16,38+Math.sin(a)*16,'#927080');oval(Math.round(c+Math.cos(a)*10),Math.round(38+Math.sin(a)*10),3,3,i%2?'#895266':'#546589')}
+    for(let i=0;i<16;i++){const a=i*Math.PI/8;r(c+Math.cos(a)*19,38+Math.sin(a)*19,1,1,'#b28a92')}
+    oval(c,38,4,4,'#c08987');r(c-1,36,3,4,'#e0b298');
+    r(c-32,76,64,3,'#5b485a');r(c-37,79,74,4,'#282535');r(c-40,84,80,2,'#625265');
+    poly([[c-40,86],[c+40,86],[w,240],[0,240]],'#1b1b2b');
+    // Wide, low-contrast runner; ornament kept outside the dodging lane.
+    poly([[c-15,87],[c+15,87],[c+45,240],[c-45,240]],'#321c31');
+    ln(c-16,87,c-46,240,'#6b3548');ln(c+16,87,c+46,240,'#6b3548');
+    ln(c-12,87,c-39,240,'#482739');ln(c+12,87,c+39,240,'#482739');
+    for(const y of [105,135,178,231]){const hw=40+(y-86)*.36;ln(c-hw,y,c-20-(y-86)*.18,y,'#343041');ln(c+20+(y-86)*.18,y,c+hw,y,'#343041')}
+    for(const side of [-1,1]){
+      // Receding bays have distinct scales and spacing, keeping architecture intentional.
+      for(const [dist,y,bw,bh] of [[43,48,12,49],[65,64,18,75],[w/2-12,83,25,121]]){
+        const x=c+side*dist-bw/2;
+        arch(p,x,y,bw,bh,'#52475d','#151625');
+        r(x+4,y+bw/2,bw-8,bh-bw/2-5,'#2d344f');
+        for(let wy=y+bw/2+4;wy<y+bh-8;wy+=12){poly([[x+4,wy],[x+bw/2,wy-4],[x+bw-4,wy],[x+bw/2,wy+4]],wy%24<12?'#48405b':'#3c3b57');ln(x+4,wy,x+bw-4,wy,'#63536c')}
+        r(x+4,y+bh-8,bw-8,2,'#6f566d');
+        ln(x+bw/2,y+8,x+bw/2,y+bh-6,'#766676');ln(x+3,y+bh*.55,x+bw-4,y+bh*.55,'#665569');
+        r(x+3,y+bh-3,bw-6,2,'#7e687b');
+        const colx=side<0?x-6:x+bw+2;
+        r(colx,y-3,5,bh+13,'#363141');r(colx,y-3,2,bh+13,'#6b5a6c');r(colx-2,y-5,9,3,'#8a6c76');r(colx-3,y+bh+7,11,3,'#544453');
+        for(const yy of [y-1,y+bh+3]){r(colx-1,yy,7,1,'#a28a91');r(colx-2,yy+2,9,1,'#272331')}
+      }
+      const x=side<0?8:w-25;
+      poly([[x,11],[x+16,11],[x+15,65],[x+8,74],[x,66]],'#60283e');ln(x+2,15,x+2,63,'#a24958');ln(x+13,15,x+13,63,'#3c2036');
+      r(x-2,9,20,2,'#b28a65');oval(x+8,31,5,7,'#b7857b');oval(x+10,29,4,6,'#60283e');ln(x+8,44,x+8,56,'#b7857b');poly([[x+8,46],[x+12,50],[x+8,54],[x+4,50]],'#b7857b');art(MANSION.A.mansion_sconce_single,x,93);
+      art(MANSION.A.mansion_bust_statue,side<0?23:w-39,178);art(MANSION.A.mansion_side_table,side<0?23:w-39,195);
+    }
+    // Chandelier is a single focal object, above combat rather than a repeated border.
+    ln(c,0,c,9,'#8f6d5d');r(c-8,7,17,1,'#b38b69');
+    for(const x of [c-8,c,c+8]){r(x,3,1,5,'#f1c18d');r(x,2,1,1,'#fff0b8')}
+    return p.sheet;
+  }
+  function rooftop(w,story=false){
+    const p=painter(w),{r,poly,ln,oval,art}=p,c=w/2;
+    r(0,0,w,240,'#111529');r(0,71,w,48,'#21192f');r(0,119,w,121,'#141524');
+    for(let i=0;i<27;i++){const x=(i*67+11)%w,y=(i*31+9)%78;if(Math.abs(x-c)>37)r(x,y,1,1,i%4?'#39415c':'#75758e')}
+    art(ROOF.A.roof_scarlet_moon_64,c-32,4);
+    // The far estate is a continuous, varied silhouette, not floating roof tiles.
+    poly([[0,81],[14,81],[14,70],[25,59],[36,70],[36,90],[51,90],[51,82],[68,82],[68,96],[w-56,96],[w-56,79],[w-45,69],[w-34,79],[w-34,86],[w-16,86],[w-16,73],[w,73],[w,129],[0,129]],'#17182a');
+    r(0,122,w,3,'#463045');r(0,125,w,5,'#29253b');
+    for(let x=0;x<w;x+=13){r(x,118,7,4,'#3c3045');r(x,117,7,1,'#6b475b')}
+    for(const [x,y] of [[22,82],[w-42,90],[45,99]]){r(x,y,2,5,'#784859');r(x+5,y+2,2,3,'#503447')}
+    // Roof-plane perspective and deliberately subdued slate tile courses.
+    poly([[29,130],[w-29,130],[w,240],[0,240]],'#1b1d30');
+    for(const y of [145,166,194,230]){ln(13,y,w-13,y,'#2a293d');for(let x=20+(y%3)*8;x<w-20;x+=31)ln(x,y,x+4,y+5,'#242539')}
+    for(const side of [-1,1]){
+      const x=side<0?7:w-30;
+      // Asymmetric towers frame the moon and leave the entire central dodge lane quiet.
+      const top=side<0?43:63;
+      poly([[x-3,top+28],[x+10,top],[x+24,top+28]],'#373046');ln(x+10,top,x+23,top+27,'#895365');
+      r(x,top+27,21,67,'#28273b');
+      for(let yy=top+33;yy<top+92;yy+=8){r(x+4,yy,17,1,'#383045');r(x+(yy%16<8?8:14),yy,1,8,'#383045')}
+      for(let yy=top+7;yy<top+25;yy+=5){const d=(yy-top)*.45;ln(x+10-d,yy,x+10+d,yy,'#514052')}r(x+2,top+31,3,61,'#494052');
+      r(x-3,top+27,27,3,'#664457');arch(p,x+6,top+40,10,25,'#5c485d','#10182c');
+      r(x+10,top+48,2,15,'#c08379');r(x-2,top+92,25,4,'#5a4255');
+      poly([[x,top+96],[x+21,top+96],[side<0?37:w,240],[side<0?0:w-37,240]],'#242235');
+      art(ROOF.A[side<0?'roof_gargoyle_left':'roof_gargoyle_right'],side<0?12:w-29,177);
+      art(ROOF.A.roof_lantern_wall,side<0?7:w-22,207);
+    }
+    // Foreground parapet makes the roof a physical arena, not a loose stack of objects.
+    for(const x of [0,16,w-32,w-16]){r(x,231,12,9,'#393044');r(x,229,12,2,'#87586b')}
+    if(story){r(0,158,w,2,'#514057');for(const x of [8,24,w-40,w-24]){r(x,143,3,16,'#65516b');r(x-2,140,7,3,'#8b6477')}r(0,155,40,3,'#675063');r(w-40,155,40,3,'#675063')}
+    return p.sheet;
+  }
+  return {forest:{192:forest(192),256:forest(256)},deepForest:{192:forest(192,true),256:forest(256,true)},interior:{192:interior(192),256:interior(256)},roof:{192:rooftop(192),256:rooftop(256,true)}};
+})();
+
 function blitRows(rows,s){const h=rows.length,w=rows[0].length;for(let yy=0;yy<h;yy++){const y0=Math.round((yy-h/2)*s),y1=Math.round((yy+1-h/2)*s),dh=y1-y0;if(dh<=0)continue;const row=rows[yy];for(let xx=0;xx<w;xx++){const col=PAL[row[xx]];if(!col)continue;const x0=Math.round((xx-w/2)*s),x1=Math.round((xx+1-w/2)*s),dw=x1-x0;if(dw<=0)continue;rect(x0,y0,dw,dh,col)}}}
 function blit(rows,x,y,s=1,flip=false){if(!rows||!rows.length)return;s=Math.max(1,s|0);ctx.save();ctx.translate(Math.round(x),Math.round(y));if(flip)ctx.scale(-1,1);blitRows(rows,s);ctx.restore()}
 function stamp(rows,x,y){x=Math.round(x);y=Math.round(y);for(let yy=0;yy<rows.length;yy++){const row=rows[yy];for(let xx=0;xx<row.length;xx++){const col=PAL[row[xx]];if(col)rect(x+xx,y+yy,1,1,col)}}}
@@ -1956,15 +2096,15 @@ function drawMistyLake(t,w,dim){
   if(dim)dimField(w,dim);
 }
 function drawForest(t,w,dim){
-  ctx.drawImage(FOREST.sheet,0,0,w,240,0,0,w,240);
+  ctx.drawImage((t>1800?V4_SCENES.deepForest:V4_SCENES.forest)[w>=256?256:192],0,0);
   if(dim)dimField(w,dim);
 }
 function drawInterior(t,w,dim){
-  ctx.drawImage((w>=256&&MANSION.story)?MANSION.story:MANSION.sheet,0,0,w,240,0,0,w,240);
+  ctx.drawImage(V4_SCENES.interior[w>=256?256:192],0,0);
   if(dim)dimField(w,dim);
 }
 function drawRoof(t,w,dim){
-  ctx.drawImage((w>=256&&ROOF.story)?ROOF.story:ROOF.sheet,0,0,w,240,0,0,w,240);
+  ctx.drawImage(V4_SCENES.roof[w>=256?256:192],0,0);
   if(dim)dimField(w,dim);
 }
 function shrine(morning,t,w=256,opt={}){
