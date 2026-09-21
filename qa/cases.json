@@ -38,5 +38,6 @@
   {"id":"credits-sakuya","scene":"credits","tick":1070,"group":"credits"},
   {"id":"credits-remilia","scene":"credits","tick":1370,"group":"credits"},
   {"id":"credits-reimu","scene":"credits","tick":1670,"group":"credits"},
+  {"id":"clear-message","scene":"theend","tick":60,"group":"ending"},
   {"id":"final-card","scene":"final","tick":60,"group":"presentation"}
 ]

@@ -1,0 +1,302 @@
+{
+  "idle_a": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-reimu-back-gameplay-candidate-01",
+    "revision": 8,
+    "revision_hash": "cf2de4cef1e70427d5033db2dc54d34ddc6b0826d235e906d7fabfad16fbdf7a",
+    "frame_id": "idle_a",
+    "layer_id": "art",
+    "matrix": {
+      "width": 16,
+      "height": 24,
+      "rows": [
+        "................",
+        "...RrR....RrR...",
+        "...RwrRhhRrwR...",
+        "....RrrRRrrR....",
+        "....hHHHHHHh....",
+        "...hHHhhhhHHh...",
+        "...hHhhhhhhHh...",
+        "...hHhhhhhhHh...",
+        "...hHhhhhhhHh...",
+        "..WhHHhhhhHHwW..",
+        ".WwwhHHHHHHhwwW.",
+        ".WwrRhHHHHhRrwW.",
+        ".WwRrrRrrRrrRwW.",
+        ".WwRrrrrrrrrRwW.",
+        "..W.RrrRrRrr.W..",
+        "....RrrRrRrr....",
+        "...RrrrRrRrrr...",
+        "...RrrrRrRrrr...",
+        "..RrrrrRrRrrrr..",
+        "..RwwWWwwWWwwR..",
+        "...WWwwwwwwWW...",
+        ".....fW..Wf.....",
+        ".....RH..HR.....",
+        "................"
+      ],
+      "symbols": {
+        ".": {
+          "transparent": true
+        },
+        "h": {
+          "hex": "#191528"
+        },
+        "H": {
+          "hex": "#2c2438"
+        },
+        "r": {
+          "hex": "#e83a51"
+        },
+        "R": {
+          "hex": "#9a2438"
+        },
+        "w": {
+          "hex": "#fff0ce"
+        },
+        "W": {
+          "hex": "#d4c4a8"
+        },
+        "f": {
+          "hex": "#f6b993"
+        }
+      }
+    },
+    "round_trip": {
+      "width": 16,
+      "height": 24,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-reimu-back-gameplay-candidate-01/revision/8/scarlet-moon-js"
+    }
+  },
+  "idle_b": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-reimu-back-gameplay-candidate-01",
+    "revision": 8,
+    "revision_hash": "cf2de4cef1e70427d5033db2dc54d34ddc6b0826d235e906d7fabfad16fbdf7a",
+    "frame_id": "idle_b",
+    "layer_id": "art",
+    "matrix": {
+      "width": 16,
+      "height": 24,
+      "rows": [
+        "................",
+        "...RrR....RrR...",
+        "...RwrRhhRrwR...",
+        "....RrrRRrrR....",
+        "....hHHHHHHh....",
+        "...hHHhhhhHHh...",
+        "...hHhhhhhhHh...",
+        "...hHhhhhhhHh...",
+        "...hHhhhhhhHh...",
+        "..WhHHhhhhHHwW..",
+        ".WwwhHHHHHHhwwW.",
+        ".WwrRhHHHHhRrwW.",
+        ".WwRrrRrrRrrRwW.",
+        ".WwRrrrrrrrrRwW.",
+        "..W.RrrRrRrr.W..",
+        "....RrrRrRrr....",
+        "...RrrrRrRrrr...",
+        "...RrrrRrRrrr...",
+        "...RrrrRrRrrr...",
+        "..RwwWWwwWWwwR..",
+        "..WWwwwwwwwwWW..",
+        "....fW....Wf....",
+        ".....RH..HR.....",
+        "................"
+      ],
+      "symbols": {
+        ".": {
+          "transparent": true
+        },
+        "h": {
+          "hex": "#191528"
+        },
+        "H": {
+          "hex": "#2c2438"
+        },
+        "r": {
+          "hex": "#e83a51"
+        },
+        "R": {
+          "hex": "#9a2438"
+        },
+        "w": {
+          "hex": "#fff0ce"
+        },
+        "W": {
+          "hex": "#d4c4a8"
+        },
+        "f": {
+          "hex": "#f6b993"
+        }
+      }
+    },
+    "round_trip": {
+      "width": 16,
+      "height": 24,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-reimu-back-gameplay-candidate-01/revision/8/scarlet-moon-js"
+    }
+  },
+  "focus": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-reimu-back-gameplay-candidate-01",
+    "revision": 8,
+    "revision_hash": "cf2de4cef1e70427d5033db2dc54d34ddc6b0826d235e906d7fabfad16fbdf7a",
+    "frame_id": "focus",
+    "layer_id": "art",
+    "matrix": {
+      "width": 16,
+      "height": 24,
+      "rows": [
+        "................",
+        "...RrR....RrR...",
+        "...RwrRhhRrwR...",
+        "....RrrRRrrR....",
+        "....hHHHHHHh....",
+        "...hHHhhhhHHh...",
+        "...hHhhhhhhHh...",
+        "...hHhhhhhhHh...",
+        "...hHhhhhhhHh...",
+        "..WhHHhhhhHHwW..",
+        "..WwhHHHHHHhwW..",
+        "..WrRhHHHHhRrW..",
+        "..WRrrRrrRrrRW..",
+        "..WRrrrrrrrrRW..",
+        "...WRrrRrRrrW...",
+        "....RrrRrRrr....",
+        "...RrrrRrRrrr...",
+        "...RrrrRrRrrr...",
+        "..RrrrrRrRrrrr..",
+        "..RwwWWwwWWwwR..",
+        "...WWwwwwwwWW...",
+        ".....fW..Wf.....",
+        ".....RH..HR.....",
+        "................"
+      ],
+      "symbols": {
+        ".": {
+          "transparent": true
+        },
+        "h": {
+          "hex": "#191528"
+        },
+        "H": {
+          "hex": "#2c2438"
+        },
+        "r": {
+          "hex": "#e83a51"
+        },
+        "R": {
+          "hex": "#9a2438"
+        },
+        "w": {
+          "hex": "#fff0ce"
+        },
+        "W": {
+          "hex": "#d4c4a8"
+        },
+        "f": {
+          "hex": "#f6b993"
+        }
+      }
+    },
+    "round_trip": {
+      "width": 16,
+      "height": 24,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-reimu-back-gameplay-candidate-01/revision/8/scarlet-moon-js"
+    }
+  },
+  "fire": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-reimu-back-gameplay-candidate-01",
+    "revision": 8,
+    "revision_hash": "cf2de4cef1e70427d5033db2dc54d34ddc6b0826d235e906d7fabfad16fbdf7a",
+    "frame_id": "fire",
+    "layer_id": "art",
+    "matrix": {
+      "width": 16,
+      "height": 24,
+      "rows": [
+        "................",
+        "...RrR....RrR...",
+        "...RwrRhhRrwR...",
+        "....RrrRRrrR....",
+        "....hHHHHHHh....",
+        "...hHHhhhhHHh...",
+        "...hHhhhhhhHh...",
+        "...hHhhhhhhHh...",
+        "...hHhhhhhhHh...",
+        ".WWhHHhhhhHHwWW.",
+        ".WwwhHHHHHHhwwW.",
+        "..wrRhHHHHhRrw..",
+        ".WwRrrRrrRrrRwW.",
+        ".WwRrrrrrrrrRwW.",
+        "..W.RrrRrRrr.W..",
+        "....RrrRrRrr....",
+        "...RrrrRrRrrr...",
+        "...RrrrRrRrrr...",
+        "..RrrrrRrRrrrr..",
+        "..RwwWWwwWWwwR..",
+        "...WWwwwwwwWW...",
+        ".....fW..Wf.....",
+        ".....RH..HR.....",
+        "................"
+      ],
+      "symbols": {
+        ".": {
+          "transparent": true
+        },
+        "h": {
+          "hex": "#191528"
+        },
+        "H": {
+          "hex": "#2c2438"
+        },
+        "r": {
+          "hex": "#e83a51"
+        },
+        "R": {
+          "hex": "#9a2438"
+        },
+        "w": {
+          "hex": "#fff0ce"
+        },
+        "W": {
+          "hex": "#d4c4a8"
+        },
+        "f": {
+          "hex": "#f6b993"
+        }
+      }
+    },
+    "round_trip": {
+      "width": 16,
+      "height": 24,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-reimu-back-gameplay-candidate-01/revision/8/scarlet-moon-js"
+    }
+  }
+}
