@@ -83,12 +83,19 @@ g.rect(2,14,12,1,'1');g.rect(3,4,10,8,'3');g.rect(4,5,8,7,'2')
 g.row(5,5,'..3...');g.row(6,5,'.343..');g.row(7,5,'..3...')
 g.save('wall-panel')
 
+# Quiet cut-stone infill for upper walls: avoid repeating inset panels everywhere.
+g=Grid(32,16,'2')
+g.rect(0,0,32,1,'1');g.rect(0,8,32,1,'1')
+g.rect(10,1,1,7,'1');g.rect(26,9,1,7,'1')
+g.row(3,17,'33');g.row(4,19,'3');g.row(12,4,'33')
+g.save('wall-masonry')
+
 # Running-bond blue-violet limestone. Long sparse veins, no random noise.
 g=Grid(32,16,'3')
-g.rect(0,0,32,1,'2');g.rect(0,1,32,1,'4')
-g.rect(0,8,32,1,'2');g.rect(0,9,32,1,'4')
-g.rect(7,1,1,7,'2');g.rect(23,9,1,7,'2')
-g.row(4,17,'442');g.row(5,20,'42');g.row(12,3,'444');g.row(13,6,'42')
+for y in range(16):
+    g.dot((2*y)%32,y,'2');g.dot((31-2*y)%32,y,'2')
+    g.dot((2*y+1)%32,y,'4')
+g.row(4,16,'442');g.row(5,18,'42');g.row(12,13,'44')
 g.save('floor')
 
 # Broad quiet velvet runner. Only two restrained 2px pile marks per repeat.
@@ -148,7 +155,7 @@ for j,hw in enumerate([4,8,10,12,13,14,14,15,15,15,15,15,15,15,15,15,15,15,15,15
     if hw>3:g.rect(26-hw,y,2*hw-4,1,'1')
 for j,row in enumerate(rose):
     for x,c in enumerate(row):
-        if c!='.':g.dot(14+x,9+j,c)
+        if c!='.':g.dot(14+x,9+j,'D' if c=='C' else c)
 g.rect(10,35,28,1,'5');g.rect(9,36,30,2,'3')
 for y,hw in enumerate([2,4,6,7,8,8,8,8,8,8,8,8,8,8,8,8,8,8]):
     g.rect(24-hw,40+y,hw*2,1,'4')
@@ -158,7 +165,7 @@ g.save('rose-apse')
 
 if __name__=='__main__':
     # Canonical palette uses symbol 0 for darkest opaque; align design notation.
-    mapping=str.maketrans('123456789ABC','0123456789AB')
+    mapping=str.maketrans('123456789ABCD','0123456789ABC')
     for asset in ASSETS.values():
         asset['rows']=[row.translate(mapping) for row in asset['rows']]
     out=ROOT/'authoring_inputs.json'

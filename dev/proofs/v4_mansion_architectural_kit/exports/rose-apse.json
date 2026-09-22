@@ -4,8 +4,8 @@
   "delivery": false,
   "project_id": "scarlet-moon-never-sets",
   "asset_id": "v4-mansion-proof-rose-apse-01",
-  "revision": 3,
-  "revision_hash": "4eab24a09ceee7c0aa844a17d2afe9348ad764b83e13d72a6e28ec264ce02314",
+  "revision": 4,
+  "revision_hash": "744aeb00758441dc9a1d2efbba79bce37786eebf3b8429a3f841a42da2e05e43",
   "frame_id": "default",
   "layer_id": "art",
   "matrix": {
@@ -32,8 +32,8 @@
       "113421111430004538893322223398835400032111123011",
       "113421111430004532222245542222235400032111123011",
       "113421111430004532222246642222235400032111123011",
-      "11342122243000453BBA33244233ABB35400032111123011",
-      "11342111143000453BA377A22A773AB35400032111123011",
+      "11342122243000453CCA33244233ACC35400032111123011",
+      "11342111143000453CA377A22A773AC35400032111123011",
       "113421111430000543777AA22AA777345000032222123011",
       "11342111143000045377AAA22AAA77354000032111123011",
       "11342111143000005437AAA22AAA73450000032111123011",
@@ -128,6 +128,6 @@
     "cel_hash": true
   },
   "resources": {
-    "export": "robopixel://export/scarlet-moon-never-sets/v4-mansion-proof-rose-apse-01/revision/3/scarlet-moon-js"
+    "export": "robopixel://export/scarlet-moon-never-sets/v4-mansion-proof-rose-apse-01/revision/4/scarlet-moon-js"
   }
 }

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mansion architectural kit proof — candidate</title>
+<style>
+:root{color-scheme:dark;--scale:2}*{box-sizing:border-box}body{margin:0;background:#10101b;color:#dcd5dc;font:16px/1.5 system-ui,sans-serif}main{max-width:1450px;margin:auto;padding:28px}h1{font-size:28px;margin:0}h2{font-size:19px;margin-top:32px}.eyebrow{color:#c8889c;letter-spacing:.08em;font-size:12px}p{max-width:850px;color:#b7abba}button,a{color:#e0bcc8}button{background:#292333;border:1px solid #725469;border-radius:5px;padding:8px 16px;cursor:pointer}button[aria-pressed=true]{background:#724457;color:#fff}.controls{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0}.row{display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start}figure{margin:0 0 16px}figcaption{margin-bottom:8px;color:#c0afb9}img{image-rendering:pixelated;image-rendering:crisp-edges;display:block;max-width:none;border:1px solid #392f41}.native{width:calc(var(--w) * var(--scale) * 1px);height:calc(240 * var(--scale) * 1px)}.scroll{overflow-x:auto;max-width:100%}.atlas{width:960px}.refs img{width:384px;height:480px}.note{border-left:3px solid #8c576c;padding-left:14px}.tag{color:#f1c889}footer{margin:30px 0;color:#96879d}a{overflow-wrap:anywhere}
+</style>
+<main>
+<div class="eyebrow">SCARLET MOON NEVER SETS · V4 PROOF</div>
+<h1>Mansion architectural kit</h1>
+<p>Ten RoboPixel candidates. Two native compositions. <span class="tag">Review only — not approved or integrated.</span></p>
+<div class="controls" aria-label="Preview controls">
+<button type="button" onclick="setScale(1,this)" aria-pressed="false" class="scale">1× native</button>
+<button type="button" onclick="setScale(2,this)" aria-pressed="true" class="scale">2×</button>
+<button type="button" onclick="setScale(3,this)" aria-pressed="false" class="scale">3×</button>
+<button type="button" id="context" onclick="toggleContext(this)" aria-pressed="false">Show sprite / dialogue witnesses</button>
+</div>
+<div class="row">
+<figure class="scroll"><figcaption>Gameplay · 192×240 · corridor / quiet centre</figcaption><img id="game" class="native" style="--w:192" src="mansion_gameplay_preview_192x240.png" width="192" height="240" alt="Mansion gameplay proof"></figure>
+<figure class="scroll"><figcaption>Story · 256×240 · rear elevation / actor stage</figcaption><img id="story" class="native" style="--w:256" src="mansion_story_preview_256x240.png" width="256" height="240" alt="Mansion story proof"></figure>
+</div>
+<p id="modeNote">Clean backgrounds. Both views use the same exact assets with separate placement lists.</p>
+<h2>Reusable kit</h2><div class="scroll"><img class="atlas" src="mansion_asset_atlas.png" width="480" height="208" alt="Ten labelled native assets"></div>
+<p>Columns use cap, repeated shaft and base slices. Carpet uses one field plus a mirrored border wedge. No asset resampling or scene-level shape drawing.</p>
+<h2>Direction comparison</h2>
+<div class="row refs">
+<figure><figcaption>Frozen V3 · baseline</figcaption><img src="references/v3_mansion_192x240.png" alt="V3 reference"></figure>
+<figure><figcaption>Astra checkpoint · composition reference</figcaption><img src="references/astra_mansion_192x240.png" alt="Astra reference"></figure>
+<figure><figcaption>This proof · canonical pixel kit</figcaption><img src="mansion_gameplay_preview_192x240.png" alt="New Mansion proof"></figure>
+</div>
+<p class="note">Worker assessment: the workflow works and the visual direction is promising. Depth remains approximate; floor convergence, near/far variants and the rose identity need further Mansion-only refinement. Static witnesses are not live combat QA.</p>
+<p><a href="README.md">README</a> · <a href="asset_inventory.md">Asset inventory</a> · <a href="workflow_note.md">Workflow</a> · <a href="evaluation.md">Evaluation</a> · <a href="verification.json">Verification</a></p>
+<footer>Owner checkpoint: review native pixel language, shared location identity, distinct staging and remaining depth limitations. Work stops with this package.</footer>
+</main>
+<script>
+function setScale(n,b){document.documentElement.style.setProperty('--scale',n);document.querySelectorAll('.scale').forEach(x=>x.setAttribute('aria-pressed',String(x===b)))}
+function toggleContext(b){const on=b.getAttribute('aria-pressed')!=='true';b.setAttribute('aria-pressed',String(on));document.getElementById('game').src=on?'mansion_gameplay_scale.png':'mansion_gameplay_preview_192x240.png';document.getElementById('story').src=on?'mansion_story_staging.png':'mansion_story_preview_256x240.png';document.getElementById('modeNote').textContent=on?'Static scale witnesses using unchanged V3 sprites. The story rectangle marks existing dialogue bounds; this is not a runtime capture.':'Clean backgrounds. Both views use the same exact assets with separate placement lists.'}
+</script></html>
