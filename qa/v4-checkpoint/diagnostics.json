@@ -1,0 +1,140 @@
+{
+  "music": {
+    "title": {
+      "steps": 640,
+      "seconds": 72.72727272727272,
+      "bpm": 132
+    },
+    "stage1": {
+      "steps": 704,
+      "seconds": 80,
+      "bpm": 132
+    },
+    "cirno": {
+      "steps": 832,
+      "seconds": 78,
+      "bpm": 160
+    },
+    "stage2": {
+      "steps": 704,
+      "seconds": 73.33333333333334,
+      "bpm": 144
+    },
+    "marisa": {
+      "steps": 704,
+      "seconds": 64.39024390243902,
+      "bpm": 164
+    },
+    "stage3": {
+      "steps": 704,
+      "seconds": 83.80952380952381,
+      "bpm": 126
+    },
+    "sakuya": {
+      "steps": 704,
+      "seconds": 69.47368421052632,
+      "bpm": 152
+    },
+    "remilia": {
+      "steps": 864,
+      "seconds": 87.56756756756758,
+      "bpm": 148
+    },
+    "ending": {
+      "steps": 448,
+      "seconds": 70,
+      "bpm": 96
+    }
+  },
+  "m1CurvedStars": 0,
+  "stage3ContinueAfterSakuya": {
+    "state": "play",
+    "stageTick": 2521,
+    "sakuyaDone": true,
+    "boss": null
+  },
+  "r5Density": {
+    "maxAllocated": 194,
+    "maxCentersOnscreen": 147,
+    "lastNineSecondsVisibleRange": [
+      71,
+      147
+    ]
+  },
+  "laserOriginOffset": [
+    {
+      "age": 110,
+      "distanceFromBoss": 34.86151875260431
+    },
+    {
+      "age": 110,
+      "distanceFromBoss": 34.86151875260431
+    },
+    {
+      "age": 110,
+      "distanceFromBoss": 34.86151875260431
+    },
+    {
+      "age": 110,
+      "distanceFromBoss": 34.86151875260431
+    },
+    {
+      "age": 110,
+      "distanceFromBoss": 34.86151875260431
+    }
+  ],
+  "bossContact": {
+    "deathWindow": 8,
+    "lives": 3
+  },
+  "dialogue": {
+    "intro": {
+      "lines": 3,
+      "maxWrappedLines": 1
+    },
+    "cirno_before": {
+      "lines": 13,
+      "maxWrappedLines": 2
+    },
+    "cirno_after": {
+      "lines": 10,
+      "maxWrappedLines": 2
+    },
+    "marisa_before": {
+      "lines": 22,
+      "maxWrappedLines": 2
+    },
+    "marisa_after": {
+      "lines": 8,
+      "maxWrappedLines": 2
+    },
+    "sakuya_before": {
+      "lines": 6,
+      "maxWrappedLines": 1
+    },
+    "sakuya_after": {
+      "lines": 2,
+      "maxWrappedLines": 2
+    },
+    "remilia_before": {
+      "lines": 17,
+      "maxWrappedLines": 2
+    },
+    "remilia_after": {
+      "lines": 3,
+      "maxWrappedLines": 2
+    },
+    "ending": {
+      "lines": 4,
+      "maxWrappedLines": 1
+    }
+  },
+  "sparkGeometry": [
+    {
+      "angle": 1.4042835269787552,
+      "declaredWidth": 42,
+      "paintedPerpendicularWidth": 48.380351954836115,
+      "collisionWidth": 45
+    }
+  ]
+}
