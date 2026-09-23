@@ -5,7 +5,9 @@ import crypto from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {Client} from '@modelcontextprotocol/sdk/client/index.js';
 import {StreamableHTTPClientTransport} from '@modelcontextprotocol/sdk/client/streamableHttp.js';
+import os from 'node:os';
 import {CASE_ID, CASE_SCENE, CASE_TICK, GAME_SHA256, LOGICAL_HEIGHT, LOGICAL_WIDTH, PINNED_COMMIT} from './constants.mjs';
+import {stagePinnedSource} from './pinned-source.mjs';
 import {startQaService} from './server.mjs';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
@@ -22,6 +24,8 @@ function dimensions(png) {
 }
 
 await fs.mkdir(outputRoot, {recursive: true});
+const prepared = await stagePinnedSource(process.env.QA_PINNED_SOURCE || path.join(os.tmpdir(), `scarlet-qa19-pinned-source-${PINNED_COMMIT}`));
+process.env.QA_PINNED_SOURCE = prepared.sourceDir;
 const service = await startQaService({port: 0, secret, runRoot});
 const client = new Client({name: 'qa19-local-smoke', version: '1.0.0'});
 const transport = new StreamableHTTPClientTransport(new URL(`http://127.0.0.1:${service.port}/mcp`), {
@@ -40,7 +44,7 @@ try {
   const size = dimensions(png);
   if (size.width !== LOGICAL_WIDTH || size.height !== LOGICAL_HEIGHT) throw new Error('capture dimensions mismatch');
   if (sha256(png) !== captureMeta.capture.artifact.sha256) throw new Error('inline PNG hash mismatch');
-  if (captureMeta.source.exactCommit !== PINNED_COMMIT || captureMeta.source.gameSha256 !== GAME_SHA256 || captureMeta.source.qaToolRevision !== PINNED_COMMIT) throw new Error('capture source identity mismatch');
+  if (captureMeta.source.exactCommit !== PINNED_COMMIT || captureMeta.source.gameSha256 !== GAME_SHA256 || captureMeta.source.qaToolRevision !== PINNED_COMMIT || captureMeta.source.acquisition !== 'prepared-offline') throw new Error('capture source identity mismatch');
   if (captureMeta.request.scene !== CASE_SCENE || captureMeta.request.tick !== CASE_TICK || captureMeta.capture.sceneMetadata.stage !== 3) throw new Error('capture scene metadata mismatch');
 
   const artifactUrl = new URL(captureMeta.capture.artifact.endpoint, `http://127.0.0.1:${service.port}`);
@@ -52,6 +56,7 @@ try {
   const regression = await client.callTool({name: 'qa_regression', arguments: request});
   if (regression.isError) throw new Error(`qa_regression infrastructure error: ${regression.content[0]?.text}`);
   const regressionMeta = regression.structuredContent;
+  if (regressionMeta.source.acquisition !== 'prepared-offline' || regressionMeta.source.exactCommit !== PINNED_COMMIT) throw new Error('regression source identity mismatch');
   const summary = {
     completedAt: new Date().toISOString(),
     protocol: 'MCP Streamable HTTP',
@@ -66,6 +71,8 @@ try {
       reportSha256: captureMeta.report.sha256,
       request: captureMeta.request,
       sceneMetadata: captureMeta.capture.sceneMetadata,
+      serviceRevision: captureMeta.runtime.serviceRevision,
+      acquisition: captureMeta.source.acquisition,
       consoleErrors: captureMeta.consoleErrors,
       blockedRequests: captureMeta.blockedRequests
     },

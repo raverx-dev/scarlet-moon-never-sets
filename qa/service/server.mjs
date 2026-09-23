@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import http from 'node:http';
 import fs from 'node:fs/promises';
+import fsSync from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import {fileURLToPath} from 'node:url';
@@ -17,6 +18,34 @@ function validateSecret(secret) {
     throw new Error('QA_SERVICE_SECRET must be a strong secret of at least 32 bytes');
   }
   return secret;
+}
+
+const CREDENTIAL_NAME = 'qa-secret';
+
+export function loadServiceSecret({
+  explicitSecret,
+  credentialsDirectory,
+  environmentSecret
+} = {}) {
+  if (explicitSecret !== undefined) return validateSecret(explicitSecret);
+  const directory = credentialsDirectory === undefined ? process.env.CREDENTIALS_DIRECTORY : credentialsDirectory;
+  const fromEnvironment = environmentSecret === undefined ? process.env.QA_SERVICE_SECRET : environmentSecret;
+  if (directory) return readCredentialFile(directory);
+  return validateSecret(fromEnvironment);
+}
+
+function readCredentialFile(directory) {
+  if (!path.isAbsolute(directory)) throw new Error('CREDENTIALS_DIRECTORY must be absolute');
+  const root = path.resolve(directory);
+  const file = path.join(root, CREDENTIAL_NAME);
+  let info;
+  try { info = fsSync.lstatSync(file); }
+  catch { throw new Error('QA service credential file is missing'); }
+  if (!info.isFile() || info.isSymbolicLink() || info.size > 4096) {
+    throw new Error('QA service credential file must be a regular file');
+  }
+  const value = fsSync.readFileSync(file, 'utf8');
+  return validateSecret(value);
 }
 
 function bearerMatches(header, secret) {
@@ -109,13 +138,15 @@ function safeArtifactPath(runRoot, pathname) {
 export async function startQaService({
   host = process.env.QA_SERVICE_HOST || '127.0.0.1',
   port = Number(process.env.QA_SERVICE_PORT || DEFAULT_PORT),
-  secret = process.env.QA_SERVICE_SECRET,
+  secret,
+  credentialsDirectory,
+  environmentSecret,
   runRoot = process.env.QA_SERVICE_RUN_ROOT,
   executor
 } = {}) {
   if (host !== '127.0.0.1') throw new Error('QA service refuses non-loopback binding');
   if (!Number.isInteger(port) || port < 0 || port > 65535) throw new Error('QA_SERVICE_PORT is invalid');
-  validateSecret(secret);
+  secret = loadServiceSecret({explicitSecret: secret, credentialsDirectory, environmentSecret});
   if (!runRoot || !path.isAbsolute(runRoot)) throw new Error('QA_SERVICE_RUN_ROOT must be an absolute path');
   await fs.mkdir(runRoot, {recursive: true, mode: 0o700});
   const runRootReal = await fs.realpath(runRoot);

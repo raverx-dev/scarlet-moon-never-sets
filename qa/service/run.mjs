@@ -17,20 +17,15 @@ import {
   PINNED_COMMIT,
   RUN_TIMEOUT_MS
 } from './constants.mjs';
+import {QaInfrastructureError} from './errors.mjs';
+import {materializePinnedSource} from './pinned-source.mjs';
+
+export {QaInfrastructureError};
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const qaRoot = path.resolve(here, '..');
 const repoRoot = path.resolve(qaRoot, '..');
 const staticServerPath = path.join(here, 'static-server.mjs');
-
-export class QaInfrastructureError extends Error {
-  constructor(code, message, evidence = {}) {
-    super(message);
-    this.name = 'QaInfrastructureError';
-    this.code = code;
-    this.evidence = evidence;
-  }
-}
 
 function hashBuffer(data) {
   return crypto.createHash('sha256').update(data).digest('hex');
@@ -46,11 +41,14 @@ async function hashFile(file) {
   return hashBuffer(await fs.readFile(file));
 }
 
-function childEnv(extra = {}) {
-  const keep = ['PATH', 'LANG', 'LC_ALL', 'HTTPS_PROXY', 'HTTP_PROXY', 'NO_PROXY', 'https_proxy', 'http_proxy', 'no_proxy'];
+export function subprocessEnvironment(extra = {}, base = process.env) {
   const env = {};
-  for (const key of keep) if (process.env[key]) env[key] = process.env[key];
+  for (const key of ['PATH', 'LANG', 'LC_ALL']) if (base[key]) env[key] = base[key];
   return {...env, ...extra};
+}
+
+function childEnv(extra = {}) {
+  return subprocessEnvironment(extra);
 }
 
 function terminate(child) {
@@ -121,54 +119,6 @@ function browserBinary() {
     if (result.status === 0 && result.stdout.trim()) return fsSync.realpathSync(result.stdout.trim().split(/\r?\n/)[0]);
   }
   return null;
-}
-
-async function validateTrackedSymlinks(sourceDir) {
-  const {stdout} = await runCommand('git', ['ls-files', '-s', '-z'], {cwd: sourceDir, code: 'source_symlink_scan'});
-  for (const entry of stdout.split('\0').filter(Boolean)) {
-    const match = entry.match(/^(\d+) [0-9a-f]+ \d+\t(.+)$/s);
-    if (!match) throw new QaInfrastructureError('source_index_invalid', 'source index entry was invalid');
-    if (match[1] !== '120000') continue;
-    const link = path.resolve(sourceDir, match[2]);
-    let target;
-    try { target = await fs.realpath(link); }
-    catch { throw new QaInfrastructureError('source_symlink_invalid', 'source contains a dangling symlink'); }
-    if (target !== sourceDir && !target.startsWith(`${sourceDir}${path.sep}`)) {
-      throw new QaInfrastructureError('source_symlink_escape', 'source contains an escaping symlink');
-    }
-  }
-}
-
-async function cloneAndValidate(runDir, repository, deadline) {
-  const sourceDir = path.join(runDir, 'source');
-  await fs.mkdir(sourceDir, {mode: 0o700});
-  const gitEnv = childEnv({
-    GIT_CONFIG_GLOBAL: '/dev/null',
-    GIT_CONFIG_SYSTEM: '/dev/null',
-    GIT_TERMINAL_PROMPT: '0',
-    GIT_ASKPASS: '/bin/false'
-  });
-  await runCommand('git', ['init', '--quiet'], {cwd: sourceDir, env: gitEnv, timeoutMs: remaining(deadline, 45_000), code: 'source_init'});
-  await runCommand('git', ['remote', 'add', 'origin', repository], {cwd: sourceDir, env: gitEnv, timeoutMs: remaining(deadline, 45_000), code: 'source_remote'});
-  await runCommand('git', ['-c', 'protocol.file.allow=never', 'fetch', '--quiet', '--depth=1', 'origin', PINNED_COMMIT], {
-    cwd: sourceDir, env: gitEnv, timeoutMs: remaining(deadline, 60_000), code: 'source_fetch'
-  });
-  await runCommand('git', ['checkout', '--quiet', '--detach', 'FETCH_HEAD'], {cwd: sourceDir, env: gitEnv, timeoutMs: remaining(deadline, 45_000), code: 'source_checkout'});
-  const head = (await runCommand('git', ['rev-parse', 'HEAD'], {cwd: sourceDir, env: gitEnv, timeoutMs: remaining(deadline, 45_000), code: 'source_revision'})).stdout.trim();
-  const remote = (await runCommand('git', ['remote', 'get-url', 'origin'], {cwd: sourceDir, env: gitEnv, timeoutMs: remaining(deadline, 45_000), code: 'source_remote_check'})).stdout.trim();
-  const toolRevision = (await runCommand('git', ['log', '-1', '--format=%H', '--', 'qa/build.py', 'qa/regression.js', 'qa/inspection.js', 'qa/cases.json'], {
-    cwd: sourceDir, env: gitEnv, timeoutMs: remaining(deadline, 45_000), code: 'qa_tool_revision'
-  })).stdout.trim();
-  if (head !== PINNED_COMMIT || toolRevision !== PINNED_COMMIT || remote !== repository) {
-    throw new QaInfrastructureError('source_identity_mismatch', 'source or QA-tool revision did not match the pin');
-  }
-  await validateTrackedSymlinks(sourceDir);
-  const gameFile = path.join(sourceDir, GAME_PATH);
-  const gameReal = await fs.realpath(gameFile);
-  if (!gameReal.startsWith(`${sourceDir}${path.sep}`) || await hashFile(gameReal) !== GAME_SHA256) {
-    throw new QaInfrastructureError('game_hash_mismatch', 'pinned game HTML failed identity validation');
-  }
-  return {sourceDir, head, toolRevision};
 }
 
 async function startStaticServer(sourceDir, generatedFile) {
@@ -400,8 +350,9 @@ async function browserRun(kind, sourceDir, deadline) {
 }
 
 async function serviceRevision() {
-  const result = await runCommand('git', ['rev-parse', 'HEAD'], {cwd: repoRoot, code: 'service_revision'});
-  const dirty = spawnSync('git', ['diff', '--quiet', '--', 'qa/service', 'qa/package.json', 'qa/package-lock.json', 'qa/README.md'], {cwd: repoRoot}).status !== 0;
+  const env = childEnv();
+  const result = await runCommand('git', ['rev-parse', 'HEAD'], {cwd: repoRoot, env, code: 'service_revision'});
+  const dirty = spawnSync('git', ['diff', '--quiet', '--', 'qa/service', 'qa/package.json', 'qa/package-lock.json', 'qa/README.md'], {cwd: repoRoot, env}).status !== 0;
   return {commit: result.stdout.trim(), dirty};
 }
 
@@ -413,7 +364,7 @@ function artifactRecord(runId, artifactId, mediaType, bytes, sha256) {
   return {artifactId, mediaType, bytes, sha256, endpoint: `/artifacts/${runId}/${artifactId}`};
 }
 
-export async function runQa(kind, {runRoot, repository = CANONICAL_REPOSITORY, now = () => new Date()} = {}) {
+export async function runQa(kind, {runRoot, pinnedSource = process.env.QA_PINNED_SOURCE, now = () => new Date()} = {}) {
   if (!['capture', 'regression'].includes(kind)) throw new QaInfrastructureError('operation_invalid', 'invalid QA operation');
   if (!path.isAbsolute(runRoot || '')) throw new QaInfrastructureError('run_root_invalid', 'QA_SERVICE_RUN_ROOT must be an absolute path');
   await fs.mkdir(runRoot, {recursive: true, mode: 0o700});
@@ -425,7 +376,8 @@ export async function runQa(kind, {runRoot, repository = CANONICAL_REPOSITORY, n
   await fs.mkdir(evidenceDir, {recursive: true, mode: 0o700});
   const deadline = Date.now() + RUN_TIMEOUT_MS;
   try {
-    const source = await cloneAndValidate(runDir, repository, deadline);
+    const source = await materializePinnedSource(runDir, pinnedSource, rootReal);
+    remaining(deadline, RUN_TIMEOUT_MS);
     const runtime = await browserRun(kind, source.sourceDir, deadline);
     remaining(deadline, RUN_TIMEOUT_MS);
     const revision = await serviceRevision();
@@ -439,7 +391,8 @@ export async function runQa(kind, {runRoot, repository = CANONICAL_REPOSITORY, n
         exactCommit: source.head,
         gamePath: GAME_PATH,
         gameSha256: GAME_SHA256,
-        qaToolRevision: source.toolRevision
+        qaToolRevision: source.toolRevision,
+        acquisition: source.acquisition
       },
       runtime: {browser: runtime.browser, serviceRevision: revision},
       request: {case: CASE_ID, scene: CASE_SCENE, tick: CASE_TICK},

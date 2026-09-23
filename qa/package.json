@@ -10,6 +10,7 @@
     "agent:headed": "node agent-run.mjs --headed",
     "agent:no-captures": "node agent-run.mjs --no-captures",
     "service": "node service/server.mjs",
+    "service:stage": "node service/stage-pinned-source.mjs",
     "service:test": "node --test service/*.test.mjs",
     "service:smoke": "node service/smoke.mjs"
   },

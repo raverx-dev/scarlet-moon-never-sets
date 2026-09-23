@@ -1,13 +1,14 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
+import http from 'node:http';
 import os from 'node:os';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import {Client} from '@modelcontextprotocol/sdk/client/index.js';
 import {StreamableHTTPClientTransport} from '@modelcontextprotocol/sdk/client/streamableHttp.js';
 import {PINNED_COMMIT} from './constants.mjs';
-import {createSerializedExecutor, startQaService} from './server.mjs';
+import {createSerializedExecutor, loadServiceSecret, startQaService} from './server.mjs';
 
 const secret = crypto.randomBytes(32).toString('base64url');
 
@@ -58,7 +59,8 @@ test('rejects wrong commit, wrong case, and extra path/url/js/shell inputs befor
       {path: 'versions/v4/index.html'},
       {url: 'https://example.com'},
       {js: 'return document.body'},
-      {shell: 'id'}
+      {shell: 'id'},
+      {pinnedSource: '/tmp/not-accepted-from-the-caller'}
     ];
     for (const args of invalid) {
       const result = await f.client.callTool({name: 'qa_capture', arguments: args});
@@ -133,4 +135,63 @@ test('fails closed for weak secrets and non-loopback binding', async () => {
     await assert.rejects(startQaService({port: 0, secret: 'weak', runRoot}), /strong secret/);
     await assert.rejects(startQaService({port: 0, secret, runRoot: path.parse(runRoot).root}), /dedicated child/);
   } finally { await fs.rm(runRoot, {recursive: true, force: true}); }
+});
+
+function requestStatus(port, headers) {
+  return new Promise((resolve, reject) => {
+    const req = http.request({hostname: '127.0.0.1', port, path: '/mcp', method: 'GET', headers}, res => {
+      res.resume();
+      resolve(res.statusCode);
+    });
+    req.on('error', reject);
+    req.end();
+  });
+}
+
+test('credential file overrides the environment and host validation stays strict', async () => {
+  const runRoot = await fs.mkdtemp(path.join(os.tmpdir(), 'scarlet-qa19-credential-'));
+  const credentialsDirectory = await fs.mkdtemp(path.join(os.tmpdir(), 'scarlet-qa19-cred-dir-'));
+  const fileSecret = crypto.randomBytes(32).toString('base64url');
+  const environmentSecret = crypto.randomBytes(32).toString('base64url');
+  await fs.writeFile(path.join(credentialsDirectory, 'qa-secret'), fileSecret, {mode: 0o400});
+  const service = await startQaService({
+    port: 0,
+    runRoot,
+    credentialsDirectory,
+    environmentSecret
+  });
+  try {
+    assert.equal(await requestStatus(service.port, {host: `127.0.0.1:${service.port}`}), 401);
+    assert.equal(await requestStatus(service.port, {host: 'evil.example', authorization: `Bearer ${fileSecret}`}), 421);
+    assert.equal(await requestStatus(service.port, {host: `127.0.0.1:${service.port}`, authorization: `Bearer ${environmentSecret}`}), 401);
+    const accepted = await requestStatus(service.port, {host: `127.0.0.1:${service.port}`, authorization: `Bearer ${fileSecret}`});
+    assert.notEqual(accepted, 401);
+    assert.notEqual(accepted, 421);
+  } finally {
+    await service.close();
+    await fs.rm(runRoot, {recursive: true, force: true});
+    await fs.rm(credentialsDirectory, {recursive: true, force: true});
+  }
+});
+
+test('credential loading fails closed for a missing, invalid, or linked credential', async () => {
+  const directory = await fs.mkdtemp(path.join(os.tmpdir(), 'scarlet-qa19-cred-fail-'));
+  const environmentSecret = crypto.randomBytes(32).toString('base64url');
+  try {
+    await assert.rejects(
+      async () => loadServiceSecret({credentialsDirectory: directory, environmentSecret}),
+      /credential file is missing/
+    );
+    await fs.writeFile(path.join(directory, 'qa-secret'), 'weak-secret-value-should-not-leak\n');
+    await assert.rejects(
+      async () => loadServiceSecret({credentialsDirectory: directory, environmentSecret}),
+      error => error.message.includes('strong secret') && !error.message.includes('weak-secret-value-should-not-leak')
+    );
+    await fs.rm(path.join(directory, 'qa-secret'));
+    await fs.symlink('/etc/hostname', path.join(directory, 'qa-secret'));
+    await assert.rejects(
+      async () => loadServiceSecret({credentialsDirectory: directory, environmentSecret}),
+      /regular file/
+    );
+  } finally { await fs.rm(directory, {recursive: true, force: true}); }
 });
