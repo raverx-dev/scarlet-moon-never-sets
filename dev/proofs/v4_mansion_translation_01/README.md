@@ -1,54 +1,55 @@
-# Mansion Translation Pass 01 — candidate artwork
+# Mansion Art Development 01 — candidate artwork
 
-A bounded translation of the Owner-selected full-scene Mansion direction into canonical RoboPixel pixel assets. **Candidate artwork for visual review; not final approved V4 art.** No runtime integration, asset approval/delivery, merge or site publication.
+One Mansion-only art pass on the two **accepted compositions** at `4ef4080fc17f53f03393ac74e205220072360c0b`. Both placement maps are byte-identical to that checkpoint. No viewpoint, proportion, focal axis, carpet/stair join, actor anchor or dialogue coverage was changed. Artwork remains provisional; Owner visual review is required.
 
-| Native preview | Review enlargement | Comparison |
+| Scene | Native PNG | Direct accepted → developed comparison |
 |---|---|---|
-| [Gameplay — 192×240](mansion_gameplay_preview_192x240.png) | [3× nearest neighbor](mansion_gameplay_3x.png) | [Direction / original proof / refinement / translation](gameplay_comparison.png) |
-| [Story — 256×240](mansion_story_preview_256x240.png) | [3× nearest neighbor](mansion_story_3x.png) | [Direction / original proof / refinement / translation](story_comparison.png) |
+| Gameplay | [192×240](mansion_gameplay_preview_192x240.png) | [Before/after](gameplay_art_before_after.png) |
+| Story/dialogue | [256×240](mansion_story_preview_256x240.png) | [Before/after](story_art_before_after.png) |
 
-## Direction and scope
+[Gameplay 3×](mansion_gameplay_3x.png) · [Story 3×](mansion_story_3x.png) · [Asset atlas](asset_atlas.png)
 
-The primary anchors are the [centered gameplay hall](references/gameplay-direction.png) and [offset story hall](references/story-direction.png) made and selected in this Work conversation. These are saved exact 192×240 and 256×240 reference exports of generated concepts, not authored game assets. Neither reference is sampled, traced, quantized or downscaled to produce this kit. They appear only in comparison boards. See [reference provenance](references/provenance.json).
+## Art changes
 
-The translation retains ruby rose glass, crimson bat-crested banners, pale fluted columns, pointed arcades, a red runner, dark perspective paving and a raised far dais. Pixel values are discrete palette entries, with stepped contours and no antialiasing, gradients or scene-level lighting effects. The palette is Famicom-inspired, not hardware-strict.
+Twelve existing canonical assets were revised, with no new assets:
 
-Gameplay puts a centered rose and triple-lancet elevation above the stair, leaving a quiet widening runner for the lower combat area. The corrected story view presents a near-frontal reception stage: one rear elevation, centered rose/stairs/runner, matched side bays and separate banner strips. Its broad floor and foreground frame are intentionally staged for dialogue, with an independent layout rather than a widened gameplay crop. Existing V3 actors and dialogue coverage are shown in [gameplay scale](mansion_gameplay_scale.png) and [story staging](mansion_story_staging.png); these are static witnesses only.
+- **Rose:** pointed petal lights, interlocking ruby facets, secondary lights, radial stone tracery, segmented outer moulding and corner leafwork. Its footprint and focal position are unchanged.
+- **Architecture:** crocketed arch shoulders, nested side tracery, carved dados, acanthus capitals, recessed column flutes, collars, plinth panels, pierced balustrades and articulated cornice teeth.
+- **Glass and fabric:** leaded diamond lancets with restrained cool facets; velvet folds and embroidered crescent/bat banners; woven runner edging.
+- **Materials and lighting:** tapered candle flames and scrolling brass arms; beveled stair treads, inset risers and carpet edging; fragmented cool stone reflections.
 
-## Canonical kit
+The runner field, runner motif, masonry and far pier retain their exact previously selected revisions. In particular, the lower central combat lane is pixel-identical to the accepted image. No new decoration was added to its center. One native-scale inspection adjustment filled out initially sparse rose glass and reduced floor-reflection contrast within this pass.
 
-Sixteen selected assets: **12 new, 1 revised, 3 reused**. The existing `v4-mansion-proof-column-01` is revised from r3 to r4 to strengthen pale shafts and capitals. The old proof still selects and preserves r3. Dark masonry r2, cornice r3 and far pier r2 are reused unchanged. New rose and paving reached r3 after one native-scale inspection correction; the other ten new pieces select r2. Exact IDs, revisions, hashes and approval-status snapshots are in [the manifest](robopixel_manifest.json); roles and dimensions are in [the inventory](asset_inventory.md).
+The full-scene [gameplay direction](references/gameplay-direction.png) and [story direction](references/story-direction.png) remain the art references. The corrected near-frontal story camera supersedes the reference's angle. Reference image pixels are not sampled, traced, resized or quantized into assets; they appear only in review boards.
 
-[Atlas](asset_atlas.png) shows each independent building block. Rose and stair are special focal pieces; the other pieces are reusable. No full scene is stored as a canonical asset. New assets were created with `asset_create`; pixel grids were committed with `grid_paste`. The workflow uses the exposed RoboPixel authoring engine, never direct storage writes or product code changes.
+## Exact canonical evidence
 
-`author_inputs.py` prepares explicit indexed grids using low-resolution integer raster primitives. It is an authoring aid, not the canonical result. `authoring_inputs.json` records final submitted rows; [transaction receipts](authoring_receipts.json) retain creation, first submissions and corrections. `robopixel_readback.json` preserves live export/view/approval responses; `unpack_readback.py` extracts the exact [export matrices](exports/) and [canonical PNG views](canonical_previews/).
+[Inventory](asset_inventory.md) and [manifest](robopixel_manifest.json) record exact asset IDs, before/after revisions, revision/render hashes and approval status. [Receipts](authoring_receipts.json) retain every mutation in this pass. [Live read-back](robopixel_readback.json) contains the initial current-head checks, final export matrices, independent canonical PNGs and approval responses.
 
-## Reproduce and verify
+`art_development_inputs.py` prepares indexed native pixel grids from immutable accepted exports in Git. Its integer raster operations are authoring inputs, not scene-level painting. Those grids were committed through RoboPixel `grid_paste` with exact expected revisions. Every final scene consumes only the actual read-back [exports](exports/), which match independent [canonical PNG views](canonical_previews/). There are no full-scene canonical assets, concept downscales, interpolation, recoloring, gradients or painted lighting in the compositor.
+
+Selected revisions: rose r3→r5, paving r3→r5, column r4→r5, cornice r3→r4; arch, lancet, banner, near pier, stairs, balustrade, candelabra and runner edge r2→r3. Four remaining assets are unchanged. Every selected asset remains unapproved; no delivery export or approval was issued.
+
+## Composition, staging and verification
+
+The accepted `layouts.json` and `build_layouts.py` are unchanged. `compose.py` only places, crops, repeats and reflects exact exported pixels. [Accepted checkpoint](accepted_composition_checkpoint/) preserves both native images, both actor/UI witnesses, exact layouts and the prior asset manifest. The full original kit is retrievable at the recorded Git head. Earlier original/refinement packages and rejected-angle/correction history are intact.
+
+[Gameplay scale](mansion_gameplay_scale.png) and [story dialogue coverage](mansion_story_staging.png) use unchanged V3 sprite matrices and anchors. [Fixed bullet comparison](bullet_readability_before_after.png) overlays identical V3 diamond/star primitives on the accepted and developed scenes; [witness metadata](bullet_witnesses.json) records exact colors and placements. It is a static contrast sample, not live combat QA.
 
 Requires Python 3 and Pillow. From this directory:
 
 ```sh
 python3 unpack_readback.py
-python3 build_layouts.py
 python3 compose.py
 python3 review_context.py
-python3 verify.py
+python3 art_review.py
+python3 verify_art_development.py
 ```
 
-`compose.py` consumes only read-back export matrices and `layouts.json`. It permits native placement, crop, repetition and horizontal reflection. Perspective floor courses and the runner are explicit native pixel-row placements; there is no resampling or recoloring. `build_layouts.py` regenerates those independent placement maps. Review enlargements alone use nearest-neighbor scaling. Labels and static actor/UI witnesses are not canonical environment art.
+The [current verification](art_development_verification.json) checks all 16 canonical PNG/export correspondences, final submitted grids, exact native reproduction, byte-identical layout/source and staging, preserved accepted evidence, unchanged quiet center, continuous story stair-to-carpet color path, protected repository files and candidate approval status. `verify_story_correction.py` and its report are historical checks for the previous correction head, not the gate for this art pass.
 
-Verification checks all 16 independently rendered RoboPixel PNGs against exported matrices; submitted rows for authored pieces; revision/hash correspondence; unapproved status; exact scene reproduction; required files and sizes; asset use; opaque output and palette membership; and Git blob identity for every protected tracked file. The original proof at `13ff42307d5f008b8fa8ebce80f546b164067a1b` and the refinement at `44530dd918ce498544025ca1919e91faccb619d4` remain unchanged. The branch inherits those proof-only commits; its PR against main therefore also contains the preserved baselines.
+## Remaining limitations
 
-## What this proves, and remaining gaps
+This is still more schematic than the rich reference: repeated side bays, stylized rather than physically matched reflections, and compact symmetrical rose tracery. Lighting remains discrete highlights rather than animated candlelight. The fixed bullet witness samples only two shapes and does not establish dense moving-pattern readability. Final aesthetics, runtime correspondence and hardware constraints have not been approved or qualified.
 
-This demonstrates a reference-led translation into reusable canonical pixels, real revision of an existing piece, exact read-back and two reproducible static compositions. It does not demonstrate runtime correspondence, live danmaku readability, animation, tile-budget/hardware compliance or final artistic acceptance. Approval status is recorded as false; no approval, validation waiver or delivery export was issued.
-
-The result is deliberately lower-detail than the generated direction. Rose tracery is simplified and symmetrical; side architecture still repeats; floor reflections are restrained symbolic fragments rather than reflections of each placed column. Story now deliberately uses a near-frontal camera, avoiding the inconsistent three-quarter perspective of the first return. Candelabra and thin pale columns may need contrast balancing in live combat. The Owner should judge those artistic gaps before any subsequent authoring or integration pass.
-
-## Story-only composition correction
-
-Following Owner review of `37c2e611d469925fbc4e99e79bc84ddc7ed7934f`, gameplay is preserved byte-for-byte. The mixed-angle story view is replaced by a coherent frontal stage. Rear architecture shares one baseline; stairs meet the runner at y=126; floor seams and carpet converge near (128,96). Windows, banners and columns have dedicated wall strips, with no stepped diagonal gallery or cut-off overhead arch. Actor anchors and the existing 248×62 dialogue witness remain unchanged.
-
-[Before / corrected story](story_before_after.png) preserves the prior native image, enlargement, staging witness, comparison and layout under [story_before_correction/](story_before_correction/). The story uses **15 existing canonical assets at exactly the same selected revisions**; no new or revised asset was needed. Fresh RoboPixel read-back matched every selected story matrix and revision hash; see [correction provenance](story_correction_provenance.json).
-
-Run `python3 verify_story_correction.py` for the combined static check. It also verifies unchanged gameplay layout/pixels and every canonical kit/provenance file against the reviewed head, exact before-image preservation, permitted file scope, native story reproduction and carpet/stair continuity. [Correction verification](story_correction_verification.json) records the result. This is still candidate artwork requiring Owner visual review, not runtime qualification or final asset approval.
+No playable V4 or frozen-version changes, other environments, RoboPixel product changes, runtime integration, merge, deployment, publication or formal asset approval.

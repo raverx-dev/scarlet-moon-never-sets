@@ -4,8 +4,8 @@
   "delivery": false,
   "project_id": "scarlet-moon-never-sets",
   "asset_id": "v4-mansion-proof-trim-top-01",
-  "revision": 3,
-  "revision_hash": "9a1bad091af4ad029928d9bf36963a2476a8d589e47a34dde8f8f4104d1565cf",
+  "revision": 4,
+  "revision_hash": "508da795c7aa3a327f82fa94cb89fe920328408e5a5eee8af566fde293a1552d",
   "frame_id": "default",
   "layer_id": "art",
   "matrix": {
@@ -13,10 +13,10 @@
     "height": 8,
     "rows": [
       "4444444444444444",
-      "5555555555555555",
-      "3333333333333333",
+      "5655565556555655",
+      "3353335333533353",
       "4142414241424142",
-      "3132313231323132",
+      "3332333233323332",
       "2222222222222222",
       "4444444444444444",
       "0000000000000000"
@@ -72,6 +72,6 @@
     "cel_hash": true
   },
   "resources": {
-    "export": "robopixel://export/scarlet-moon-never-sets/v4-mansion-proof-trim-top-01/revision/3/scarlet-moon-js"
+    "export": "robopixel://export/scarlet-moon-never-sets/v4-mansion-proof-trim-top-01/revision/4/scarlet-moon-js"
   }
 }

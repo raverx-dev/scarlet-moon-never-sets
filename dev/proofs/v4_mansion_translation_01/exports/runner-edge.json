@@ -4,30 +4,30 @@
   "delivery": false,
   "project_id": "scarlet-moon-never-sets",
   "asset_id": "v4-mansion-trans01-runner-edge",
-  "revision": 2,
-  "revision_hash": "0e0d444891ba06920ab098fef73ab898a9ac20b3436bdfdd5ec95cf444ed5e1f",
+  "revision": 3,
+  "revision_hash": "cddfff0d226fa5fcf710981f840a247482f67131090b70b1d13c046f4d992810",
   "frame_id": "default",
   "layer_id": "art",
   "matrix": {
     "width": 8,
     "height": 16,
     "rows": [
-      "EHEDDDFE",
-      "EHEDDDFE",
-      "EHEDFDFE",
-      "EHEDFDFE",
-      "EHEFFFFE",
-      "EHEDFDFE",
-      "EHEDFDFE",
-      "EHEDDDFE",
-      "EHEDDDFE",
-      "EHEDDDFE",
-      "EHEDFDFE",
-      "EHEDFDFE",
-      "EHEFFFFE",
-      "EHEDFDFE",
-      "EHEDFDFE",
-      "EHEDDDFE"
+      "E5DDDDEE",
+      "EHDDDDEE",
+      "EHDDFDEE",
+      "EHDDCDEE",
+      "E5DFFFEE",
+      "EHDDEDEE",
+      "EHDDFDEE",
+      "EHDDDDEE",
+      "E5DDDDEE",
+      "EHDDDDEE",
+      "EHDDFDEE",
+      "EHDDCDEE",
+      "E5DFFFEE",
+      "EHDDEDEE",
+      "EHDDFDEE",
+      "EHDDDDEE"
     ],
     "symbols": {
       "0": {
@@ -101,6 +101,6 @@
     "cel_hash": true
   },
   "resources": {
-    "export": "robopixel://export/scarlet-moon-never-sets/v4-mansion-trans01-runner-edge/revision/2/scarlet-moon-js"
+    "export": "robopixel://export/scarlet-moon-never-sets/v4-mansion-trans01-runner-edge/revision/3/scarlet-moon-js"
   }
 }

@@ -1,22 +1,22 @@
-# Asset inventory
+# Art Development 01 — canonical asset inventory
 
-All assets belong to `scarlet-moon-never-sets`; candidate and unapproved.
+All selected assets remain candidates in `scarlet-moon-never-sets`. Same 16 asset IDs; no new assets.
 
-| Name / canonical ID | Selected revision | Change | Size | Kind / role |
-|---|---:|---|---|---|
-| rose / `v4-mansion-trans01-rose` | 3 | created | 56×56 | focal: Rose window and carved stone ring |
-| lancet / `v4-mansion-trans01-lancet` | 2 | created | 16×48 | reusable: Narrow ruby stained-glass window |
-| arch / `v4-mansion-trans01-arch` | 2 | created | 48×80 | reusable: Pointed open arcade surround |
-| banner / `v4-mansion-trans01-banner` | 2 | created | 20×56 | reusable: Velvet banner and bat crest |
-| near-pier / `v4-mansion-trans01-near-pier` | 2 | created | 24×96 | reusable: Foreground pale clustered pier, cap/shaft/base |
-| stairs / `v4-mansion-trans01-stairs` | 2 | created | 64×24 | focal: Widening six-step carpeted dais |
-| balustrade / `v4-mansion-trans01-balustrade` | 2 | created | 24×18 | reusable: Gothic gallery balustrade |
-| candelabra / `v4-mansion-trans01-candelabra` | 2 | created | 12×28 | reusable: Three candle accents |
-| runner / `v4-mansion-trans01-runner` | 2 | created | 16×16 | reusable: Quiet dark crimson carpet field |
-| runner-edge / `v4-mansion-trans01-runner-edge` | 2 | created | 8×16 | reusable: Fine ochre piping and crimson border |
-| runner-motif / `v4-mansion-trans01-runner-motif` | 2 | created | 16×16 | reusable: Sparse low contrast runner emblem |
-| paving / `v4-mansion-trans01-paving` | 3 | created | 32×16 | reusable: Two dark polished paving swatches, fragmented reflection |
-| column / `v4-mansion-proof-column-01` | 4 | revised | 16×64 | reusable: Pale middle-distance column, stronger clustered shafts |
-| wall-masonry / `v4-mansion-proof-wall-masonry-01` | 2 | reused | 32×16 | reusable: Dark architectural infill |
-| trim-top / `v4-mansion-proof-trim-top-01` | 3 | reused | 16×8 | reusable: Cornice and gallery ledge |
-| far-pier / `v4-mansion-ref01-far-pier-01` | 2 | reused | 12×48 | reusable: Small distant pier |
+| Asset ID | Revision | Size | Change | Art treatment |
+|---|---|---|---|---|
+| `v4-mansion-trans01-rose` | 3 → 5 | 56×56 | revised | Eight pointed petal lights, radial stone tracery, interstitial quatrefoils, segmented archivolt and corner leaf carving |
+| `v4-mansion-trans01-lancet` | 2 → 3 | 16×48 | revised | Leaded ruby diamond lights, small cool-glass facets and crisp stone jamb highlights |
+| `v4-mansion-trans01-arch` | 2 → 3 | 48×80 | revised | Crocketed arch shoulders, nested mouldings, blind side tracery and a carved lower dado |
+| `v4-mansion-trans01-banner` | 2 → 3 | 20×56 | revised | Layered velvet folds, embroidered crescent/bat identity, hem chain and pendant stitching |
+| `v4-mansion-trans01-near-pier` | 2 → 3 | 24×96 | revised | Acanthus capitals, clustered flutes, shaft collars and inset plinth panels |
+| `v4-mansion-trans01-stairs` | 2 → 3 | 64×24 | revised | Beveled stone treads, inset risers and carpet edging with unchanged stair silhouette and runner join |
+| `v4-mansion-trans01-balustrade` | 2 → 3 | 24×18 | revised | Pierced pointed stone rail with shaped balusters and a beveled handrail |
+| `v4-mansion-trans01-candelabra` | 2 → 3 | 12×28 | revised | Tapered flames, wax shafts, scrolling brass arms and separated highlights |
+| `v4-mansion-trans01-runner` | 2 → 2 | 16×16 | reused | Unchanged |
+| `v4-mansion-trans01-runner-edge` | 2 → 3 | 8×16 | revised | Restrained woven border diamonds; center runner and motifs unchanged |
+| `v4-mansion-trans01-runner-motif` | 2 → 2 | 16×16 | reused | Unchanged |
+| `v4-mansion-trans01-paving` | 3 → 5 | 32×16 | revised | Fragmented polished-stone reflections and softened bevel seams, within accepted perspective strips |
+| `v4-mansion-proof-column-01` | 4 → 5 | 16×64 | revised | Matched small acanthus capital, recessed fluting and carved base; accepted column dimensions retained |
+| `v4-mansion-proof-wall-masonry-01` | 2 → 2 | 32×16 | reused | Unchanged |
+| `v4-mansion-proof-trim-top-01` | 3 → 4 | 16×8 | revised | Alternating carved cornice dentils and restrained edge highlights |
+| `v4-mansion-ref01-far-pier-01` | 2 → 2 | 12×48 | reused | Unchanged |

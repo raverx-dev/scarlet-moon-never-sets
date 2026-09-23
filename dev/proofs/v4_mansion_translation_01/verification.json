@@ -5,8 +5,8 @@
     {
       "asset": "rose",
       "asset_id": "v4-mansion-trans01-rose",
-      "revision": 3,
-      "revision_hash": "4b2e9eabdb5fed35c1d9ba2d56d99c66b0445e2aae033771445fed488769453c",
+      "revision": 5,
+      "revision_hash": "64879b97226e22fb53211a3d8e92b00cca5aacdc12507b0129a2acbc794b35c3",
       "canonical_png_vs_export_rgba": "PASS",
       "submitted_rows": "PASS",
       "approved": false
@@ -14,8 +14,8 @@
     {
       "asset": "lancet",
       "asset_id": "v4-mansion-trans01-lancet",
-      "revision": 2,
-      "revision_hash": "c62d2a8cce3c2d47c08e2fcc1f8e70e4ffe8d40ef116db2f5c4abe7678c21c45",
+      "revision": 3,
+      "revision_hash": "af680c698f85531a5abda37c4723c1caa7e657931f031918d2e0f8a26935f2bb",
       "canonical_png_vs_export_rgba": "PASS",
       "submitted_rows": "PASS",
       "approved": false
@@ -23,8 +23,8 @@
     {
       "asset": "arch",
       "asset_id": "v4-mansion-trans01-arch",
-      "revision": 2,
-      "revision_hash": "3e4e5c269f972e016bb9f3ac6ef93f084eff0723312b68c6a8aac897837e3535",
+      "revision": 3,
+      "revision_hash": "4d6618fd9074150adaed2b2ae80e204467480bf0ecf556aab751ec6065b3e25e",
       "canonical_png_vs_export_rgba": "PASS",
       "submitted_rows": "PASS",
       "approved": false
@@ -32,8 +32,8 @@
     {
       "asset": "banner",
       "asset_id": "v4-mansion-trans01-banner",
-      "revision": 2,
-      "revision_hash": "ffd2def3424a6f8eccd7620a99cdae2a59ce5e63d858b213555a9b3bb5717a5b",
+      "revision": 3,
+      "revision_hash": "af2ed3b4c4f83b158092cf0791a8b43eac72fa10a6109d7aa802e371fe56f7dc",
       "canonical_png_vs_export_rgba": "PASS",
       "submitted_rows": "PASS",
       "approved": false
@@ -41,8 +41,8 @@
     {
       "asset": "near-pier",
       "asset_id": "v4-mansion-trans01-near-pier",
-      "revision": 2,
-      "revision_hash": "e48ab9944b76a0933965db09879d42dddebbc14fa1300b934cf24d1be50d3450",
+      "revision": 3,
+      "revision_hash": "e6b60afaaf0b61b431f4188246f38430c4111d6026c1259b28a6e2fb38c3e3ee",
       "canonical_png_vs_export_rgba": "PASS",
       "submitted_rows": "PASS",
       "approved": false
@@ -50,8 +50,8 @@
     {
       "asset": "stairs",
       "asset_id": "v4-mansion-trans01-stairs",
-      "revision": 2,
-      "revision_hash": "95c713aac5d254fddb03adc245ea25a3e6b687d49e041c3e240c03a4a804e709",
+      "revision": 3,
+      "revision_hash": "a66add7f1da69ae0abc28604378e198cc48193de8cf394e518c541445a3d383a",
       "canonical_png_vs_export_rgba": "PASS",
       "submitted_rows": "PASS",
       "approved": false
@@ -59,8 +59,8 @@
     {
       "asset": "balustrade",
       "asset_id": "v4-mansion-trans01-balustrade",
-      "revision": 2,
-      "revision_hash": "63ffacbd31c9b50dd60dc7e036e85cce4efbe93ee820c95be0268ae1bd25b7d7",
+      "revision": 3,
+      "revision_hash": "26f0156d6762eeb1c272e618a87877e6229f9aaf1bdbc4427b9dd8d6c0c91ab0",
       "canonical_png_vs_export_rgba": "PASS",
       "submitted_rows": "PASS",
       "approved": false
@@ -68,8 +68,8 @@
     {
       "asset": "candelabra",
       "asset_id": "v4-mansion-trans01-candelabra",
-      "revision": 2,
-      "revision_hash": "77894ea4a25003d33d8572d89d17b12b1f4f44d57318eaa58c7b76a9fa987e55",
+      "revision": 3,
+      "revision_hash": "689ed8480042d1be1c500a1a4ea818cd8e281e1643f142a1ddbb1859528e5df2",
       "canonical_png_vs_export_rgba": "PASS",
       "submitted_rows": "PASS",
       "approved": false
@@ -80,14 +80,14 @@
       "revision": 2,
       "revision_hash": "173e9f8275c5bc5246eda7d905610092a5e8041060a2fe551e0f92963d1d2c49",
       "canonical_png_vs_export_rgba": "PASS",
-      "submitted_rows": "PASS",
+      "submitted_rows": "reused",
       "approved": false
     },
     {
       "asset": "runner-edge",
       "asset_id": "v4-mansion-trans01-runner-edge",
-      "revision": 2,
-      "revision_hash": "0e0d444891ba06920ab098fef73ab898a9ac20b3436bdfdd5ec95cf444ed5e1f",
+      "revision": 3,
+      "revision_hash": "cddfff0d226fa5fcf710981f840a247482f67131090b70b1d13c046f4d992810",
       "canonical_png_vs_export_rgba": "PASS",
       "submitted_rows": "PASS",
       "approved": false
@@ -98,14 +98,14 @@
       "revision": 2,
       "revision_hash": "99fc40e679eb25161067272e5f7193cc37ded52d6a92df2f3c27912d7f31e648",
       "canonical_png_vs_export_rgba": "PASS",
-      "submitted_rows": "PASS",
+      "submitted_rows": "reused",
       "approved": false
     },
     {
       "asset": "paving",
       "asset_id": "v4-mansion-trans01-paving",
-      "revision": 3,
-      "revision_hash": "a9173888c4d445e8aa077822fbb7362709b61e3a9c39c0653b45a6a0354f1023",
+      "revision": 5,
+      "revision_hash": "ea5ad5194307245681a4b3d4f43db03a08e685377f202968fcbfd4226388dfb9",
       "canonical_png_vs_export_rgba": "PASS",
       "submitted_rows": "PASS",
       "approved": false
@@ -113,8 +113,8 @@
     {
       "asset": "column",
       "asset_id": "v4-mansion-proof-column-01",
-      "revision": 4,
-      "revision_hash": "e5ab2205ee44ef2e728ee282430e5d1df37946e953d8058cc26eab19e0574062",
+      "revision": 5,
+      "revision_hash": "1f85384467a30319209ee886869688d29c61e18c829ad2ca707fffebdd11e41f",
       "canonical_png_vs_export_rgba": "PASS",
       "submitted_rows": "PASS",
       "approved": false
@@ -131,10 +131,10 @@
     {
       "asset": "trim-top",
       "asset_id": "v4-mansion-proof-trim-top-01",
-      "revision": 3,
-      "revision_hash": "9a1bad091af4ad029928d9bf36963a2476a8d589e47a34dde8f8f4104d1565cf",
+      "revision": 4,
+      "revision_hash": "508da795c7aa3a327f82fa94cb89fe920328408e5a5eee8af566fde293a1552d",
       "canonical_png_vs_export_rgba": "PASS",
-      "submitted_rows": "reused",
+      "submitted_rows": "PASS",
       "approved": false
     },
     {
@@ -155,7 +155,7 @@
       ],
       "reproduces_exactly": true,
       "palette_membership": true,
-      "sha256": "effc06c1749ca40119f555147898ba6c1f6793e9c7afd973d32e133ecb16f8bb"
+      "sha256": "da820396d6bd6ac5dff50d1d2b84e838a66e8ed0bcd9eebad4fdf996870421ee"
     },
     "story": {
       "dimensions": [
@@ -164,7 +164,7 @@
       ],
       "reproduces_exactly": true,
       "palette_membership": true,
-      "sha256": "1cd3a22a4154101ce28b6d38c57c32f94ea299c12b6e89b7032a2ebd6ca2fec7"
+      "sha256": "ac940b238771a55f348f5aef2842f77b5f578ccacf10c17d04de3f92e1d8d979"
     }
   },
   "all_selected_assets_used": true,
