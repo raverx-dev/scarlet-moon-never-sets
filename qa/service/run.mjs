@@ -234,6 +234,36 @@ function pngDimensions(buffer) {
   return {width: buffer.readUInt32BE(16), height: buffer.readUInt32BE(20)};
 }
 
+export function assertCaptureState(metadata) {
+  const expected = {
+    state: 'play',
+    stage: Number(CASE_SCENE.slice('stage'.length)),
+    stateTick: CASE_TICK,
+    stageTick: CASE_TICK,
+    frame: CASE_TICK
+  };
+  if (!metadata || typeof metadata !== 'object' || Array.isArray(metadata)) {
+    throw new QaInfrastructureError('capture_state_mismatch', 'browser capture did not return runtime state metadata');
+  }
+  for (const [field, value] of Object.entries(expected)) {
+    if (!Object.hasOwn(metadata, field) || metadata[field] !== value) {
+      throw new QaInfrastructureError('capture_state_mismatch', `browser capture runtime ${field} did not match the pinned case`);
+    }
+  }
+  return metadata;
+}
+
+export function classifyCaptureIssues(consoleErrors, blockedRequests, counts = {
+  consoleErrors: consoleErrors.length,
+  blockedRequests: blockedRequests.length
+}) {
+  // No errors are exempted for this pinned capture. Preserve a failed frame as evidence, never as PASS.
+  return {
+    status: counts.consoleErrors === 0 && counts.blockedRequests === 0 ? 'passed' : 'failed',
+    materialErrors: consoleErrors
+  };
+}
+
 export function classifyRegression(regression, consoleErrors, blockedRequests) {
   const failedChecks = regression?.failed;
   if (typeof failedChecks !== 'number' || !Number.isInteger(failedChecks) || failedChecks < 0) {
@@ -267,6 +297,9 @@ async function browserRun(kind, sourceDir, deadline) {
   let isolatedServer;
   const consoleErrors = [];
   const blockedRequests = [];
+  const MAX_RECORDED_BROWSER_EVENTS = 32;
+  let consoleErrorCount = 0;
+  let blockedRequestCount = 0;
   try {
     isolatedServer = await startStaticServer(sourceDir, generatedFile);
     const origin = `http://127.0.0.1:${isolatedServer.port}`;
@@ -292,7 +325,10 @@ async function browserRun(kind, sourceDir, deadline) {
           return;
         }
       } catch {}
-      blockedRequests.push({url: safeRequestUrl(requestUrl), resourceType: route.request().resourceType()});
+      blockedRequestCount += 1;
+      if (blockedRequests.length < MAX_RECORDED_BROWSER_EVENTS) {
+        blockedRequests.push({url: safeRequestUrl(requestUrl), resourceType: route.request().resourceType()});
+      }
       await route.abort('blockedbyclient');
     });
     const page = await context.newPage();
@@ -300,9 +336,17 @@ async function browserRun(kind, sourceDir, deadline) {
     page.on('console', message => {
       if (message.type() !== 'error') return;
       const location = message.location();
-      consoleErrors.push({type: 'console', text: message.text().slice(0, 2_000), url: location?.url ? safeRequestUrl(location.url) : null});
+      consoleErrorCount += 1;
+      if (consoleErrors.length < MAX_RECORDED_BROWSER_EVENTS) {
+        consoleErrors.push({type: 'console', text: message.text().slice(0, 2_000), url: location?.url ? safeRequestUrl(location.url) : null});
+      }
     });
-    page.on('pageerror', error => consoleErrors.push({type: 'pageerror', text: String(error).slice(0, 2_000), url: null}));
+    page.on('pageerror', error => {
+      consoleErrorCount += 1;
+      if (consoleErrors.length < MAX_RECORDED_BROWSER_EVENTS) {
+        consoleErrors.push({type: 'pageerror', text: String(error).slice(0, 2_000), url: null});
+      }
+    });
     await page.goto(`${origin}/`, {waitUntil: 'load', timeout: remaining(deadline, 30_000)});
     await page.waitForSelector('#audit-scene');
 
@@ -329,7 +373,14 @@ async function browserRun(kind, sourceDir, deadline) {
           captured.selectedScene !== CASE_SCENE || captured.selectedTick !== CASE_TICK) {
         throw new QaInfrastructureError('capture_state_mismatch', 'browser capture dimensions or selected state did not match the pinned case');
       }
-      return {browser: {executable, version: browserVersion, headless: true}, consoleErrors, blockedRequests, png, dimensions, sceneMetadata: captured.metadata};
+      const sceneMetadata = assertCaptureState(captured.metadata);
+      return {
+        browser: {executable, version: browserVersion, headless: true},
+        consoleErrors, blockedRequests,
+        browserEventCounts: {consoleErrors: consoleErrorCount, blockedRequests: blockedRequestCount},
+        ...classifyCaptureIssues(consoleErrors, blockedRequests, {consoleErrors: consoleErrorCount, blockedRequests: blockedRequestCount}),
+        png, dimensions, sceneMetadata
+      };
     }
 
     await page.locator('#run-qa').click();
@@ -379,7 +430,7 @@ export async function runQa(kind, {runRoot, repository = CANONICAL_REPOSITORY, n
     remaining(deadline, RUN_TIMEOUT_MS);
     const revision = await serviceRevision();
     const base = {
-      status: kind === 'regression' ? runtime.status : 'passed',
+      status: runtime.status,
       operation: kind === 'capture' ? 'qa_capture' : 'qa_regression',
       runId,
       generatedAt: now().toISOString(),
@@ -393,7 +444,8 @@ export async function runQa(kind, {runRoot, repository = CANONICAL_REPOSITORY, n
       runtime: {browser: runtime.browser, serviceRevision: revision},
       request: {case: CASE_ID, scene: CASE_SCENE, tick: CASE_TICK},
       consoleErrors: runtime.consoleErrors,
-      blockedRequests: runtime.blockedRequests
+      blockedRequests: runtime.blockedRequests,
+      browserEventCounts: runtime.browserEventCounts || {consoleErrors: runtime.consoleErrors.length, blockedRequests: runtime.blockedRequests.length}
     };
     let imageData;
     if (kind === 'capture') {
@@ -401,6 +453,7 @@ export async function runQa(kind, {runRoot, repository = CANONICAL_REPOSITORY, n
       const pngFile = path.join(evidenceDir, artifactId);
       await fs.writeFile(pngFile, runtime.png, {mode: 0o600});
       const pngSha256 = hashBuffer(runtime.png);
+      base.materialErrors = runtime.materialErrors;
       base.capture = {
         dimensions: runtime.dimensions,
         sceneMetadata: runtime.sceneMetadata,
