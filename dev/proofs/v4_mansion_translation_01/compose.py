@@ -45,6 +45,12 @@ def main():
         for i,(label,p) in enumerate(zip(('DIRECTION','ORIGINAL PROOF','REFINEMENT PROOF','TRANSLATION 01'),sources)):
             board.paste(Image.open(p),(i*w,20));d.text((i*w+4,4),label,fill='#d4c4a8')
         board.save(R/f'{name}_comparison.png')
+    before=R/'story_before_correction'/'mansion_story_preview_256x240.png'
+    if before.exists():
+        pair=Image.new('RGB',(512,260),'#080810');d=ImageDraw.Draw(pair)
+        for x,label,path in ((0,'BEFORE: MIXED ANGLE',before),(256,'CORRECTED: FRONTAL STAGE',R/'mansion_story_preview_256x240.png')):
+            pair.paste(Image.open(path),(x,20));d.text((x+4,4),label,fill='#d4c4a8')
+        pair.save(R/'story_before_after.png')
     atlas=Image.new('RGB',(4*136,4*132),'#080810');d=ImageDraw.Draw(atlas)
     for i,(name,a) in enumerate(kit.items()):
         x=(i%4)*136+6;y=(i//4)*132+24;atlas.paste(a,(x,y),a);d.text((x,y-19),name,fill='#d4c4a8');d.text((x,y+98),f'{a.width} x {a.height}',fill='#a18a92')

@@ -64,34 +64,35 @@ for x in (-10,178):column(g,x,38,167,True)
 tile(g,'trim-top',0,0,192,4,crop=[0,4,16,4])
 
 s=[]
+# One near-frontal elevation and one floor vanishing point at x=128, y=96.
+# The floor's native strip spacing and the runner edges converge together.
 tile(s,'wall-masonry',0,0,256,240)
-tile(s,'wall-masonry',106,0,127,139,crop=[2,2,1,1])
-floor(s,256,149,173)
-runner(s,154,141,198,-28,249)
-for x,y in ((151,178),(139,215)):stamp(s,'runner-motif',x,y)
-# Offset far elevation. Nearer rose and stair stay native, surrounded differently.
-stamp(s,'rose',146,8)
-for x in (145,163,181):stamp(s,'lancet',x,65)
-for x in (131,199):column(s,x,44,95)
-for x in (109,204):stamp(s,'banner',x,16)
-for x in (120,209):stamp(s,'candelabra',x,108)
-for x in (104,200,224):stamp(s,'balustrade',x,128)
-stamp(s,'stairs',140,135)
-# Left gallery turns toward the viewer in descending courses, then a nearer bay.
-for x,y in ((72,16),(27,41),(-18,68)):
-    stamp(s,'arch',x,y);stamp(s,'lancet',x+16,y+21)
-    stamp(s,'balustrade',x+9,y+73)
-for x,y,h in ((66,11,133),(21,34,137)):
-    column(s,x,y,h);stamp(s,'banner',x+17,y+13)
-column(s,-10,0,197,True)
-column(s,243,0,181,True)
-stamp(s,'arch',-17,-34,crop=[0,0,48,40])
-# Right wall remains quieter to support a standing character silhouette.
-stamp(s,'lancet',224,66)
-# No foreground cornice crossing candle stems or the open stage.
+tile(s,'wall-masonry',78,0,100,126,crop=[2,2,1,1])
+floor(s,256,126,128)
+runner(s,126,105,150,20,235)
+for y in (153,206):stamp(s,'runner-motif',120,y)
+# Continuous rear plinth: ends stop at the stair opening, all on one plane.
+for x,w in ((0,96),(160,96)):
+    tile(s,'trim-top',x,120,w,6,crop=[0,0,16,6])
+# Rose, lancets, stair and runner share the same center line.
+stamp(s,'rose',100,4)
+for x in (104,120,136):stamp(s,'lancet',x,61)
+stamp(s,'stairs',96,102)
+# Side bays belong to the same frontal wall; no descending diagonal gallery.
+for x in (14,194):
+    stamp(s,'arch',x,20)
+    stamp(s,'lancet',x+16,43)
+    stamp(s,'balustrade',x+12,102)
+for x in (64,176):column(s,x,8,118)
+# Banners occupy their own wall strips, clear of glass and column shafts.
+for x in (80,156):stamp(s,'banner',x,22)
+for x in (83,161):stamp(s,'candelabra',x,98)
+# A matched foreground frame defines the shallow stage without blocking actors.
+for x in (-10,242):column(s,x,0,166,True)
+tile(s,'trim-top',0,0,256,4,crop=[0,4,16,4])
 
 layouts={'schema':'mansion-translation-layout/v1','transforms':['integer-placement','crop','repeat','horizontal-reflection'],
 'gameplay':{'width':192,'height':240,'operations':g},'story':{'width':256,'height':240,'operations':s},
-'staging':{'gameplay_quiet_lane':[66,124,60,116],'story_actor_zones':[[44,128,32,44],[201,124,32,44]],'dialogue_box':[4,178,248,58]}}
+'staging':{'gameplay_quiet_lane':[66,124,60,116],'story_actor_zones':[[44,128,32,44],[180,128,32,44]],'dialogue_box':[4,174,248,62]}}
 (R/'layouts.json').write_text(json.dumps(layouts,separators=(',',':'))+'\n')
 print('Wrote two independent layouts')
