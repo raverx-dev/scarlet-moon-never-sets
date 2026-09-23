@@ -258,6 +258,7 @@ async function browserRun(kind, sourceDir, deadline) {
     browser = await chromium.launch({
       headless: true,
       executablePath: executable,
+      chromiumSandbox: true,
       timeout: remaining(deadline, 30_000),
       env: childEnv(),
       args: ['--autoplay-policy=no-user-gesture-required']

@@ -39,10 +39,10 @@ if host:
     if rc == 0:
         libc.ptrace(17, int(host), None, None)
 try:
-    os.read(3, 32)
-    print("FD3_READ")
+    os.read(5, 32)
+    print("FD5_READ")
 except OSError as exc:
-    print(f"FD3_DENIED errno={exc.errno}")
+    print(f"FD5_DENIED errno={exc.errno}")
 secret = os.environ.get("SECRET_PATH", "")
 if secret:
     try:
@@ -61,9 +61,9 @@ for target in ("/home/dellis/.config/gh/hosts.yml", "/home/dellis/.config/chromi
 print("PROBE_END")
 `);
 
-function runScript(args, env, extraFd) {
+function runScript(args, env, stdio) {
   return new Promise((resolve, reject) => {
-    const child = spawn(script, args, {env, stdio: extraFd ? ['ignore', 'pipe', 'pipe', extraFd] : ['ignore', 'pipe', 'pipe']});
+    const child = spawn(script, args, {env, stdio: stdio || ['ignore', 'pipe', 'pipe']});
     let stdout = '';
     let stderr = '';
     child.stdout.on('data', chunk => { stdout += chunk.toString('utf8'); });
@@ -108,14 +108,14 @@ test('confined process cannot read the parent, a leaked descriptor, or the fake 
       QA_CANARY_ENV: 'CANARY-ENV-SECRET-NOT-REAL',
       HOST_PID: String(process.pid),
       SECRET_PATH: secret
-    }, fd.fd);
+    }, ['ignore', 'pipe', 'pipe', 'ignore', 'ignore', fd.fd]);
     assert.equal(result.status, 0, result.stderr);
     assert.match(result.stdout, /env_canary ABSENT/);
     assert.match(result.stdout, /host_pid_visible False/);
     assert.match(result.stdout, new RegExp(`DENIED /proc/${process.pid}/environ errno=2`));
     assert.match(result.stdout, new RegExp(`DENIED /proc/${process.pid}/mem errno=2`));
     assert.match(result.stdout, /PTRACE DENIED errno=3/);
-    assert.match(result.stdout, /FD3_DENIED/);
+    assert.match(result.stdout, /FD5_DENIED/);
     assert.match(result.stdout, /SECRET_DENIED/);
     assert.match(result.stdout, /DENIED \/home\/dellis\/\.config\/gh\/hosts\.yml/);
     assert.doesNotMatch(result.stdout, /CANARY-FILE-SECRET-NOT-REAL|CANARY-FD-SECRET-NOT-REAL|CANARY-ENV-SECRET-NOT-REAL/);

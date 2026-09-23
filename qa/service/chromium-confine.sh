@@ -14,7 +14,9 @@ if [ ! -x "$bwrap_bin" ]; then
   exit 69
 fi
 
-for n in $(seq 3 255); do
+# Playwright's Chromium transport uses descriptors 3 and 4. Close every other
+# inherited descriptor so a leaked credential file cannot be read.
+for n in $(seq 5 255); do
   eval "exec ${n}>&-" || true
 done
 
