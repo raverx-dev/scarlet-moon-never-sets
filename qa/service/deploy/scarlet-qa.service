@@ -46,7 +46,9 @@ Environment=QA_SERVICE_HOST=127.0.0.1
 Environment=QA_SERVICE_PORT=3020
 Environment=QA_SERVICE_RUN_ROOT=/var/lib/scarlet-qa/runs
 Environment=QA_PINNED_SOURCE=/opt/scarlet-qa/pinned-source
-LoadCredential=qa-secret:/var/lib/scarlet-qa/secret
+# Root-owned source outside the writable state directory. Do not create it here.
+# systemd exposes the loaded bytes only as $CREDENTIALS_DIRECTORY/qa-secret.
+LoadCredential=qa-secret:/etc/scarlet-qa/qa-secret
 ExecStart=/usr/bin/node /opt/scarlet-qa/app/qa/service/server.mjs
 Restart=on-failure
 RestartSec=2s

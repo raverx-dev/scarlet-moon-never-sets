@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import fsSync from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
-import {spawn} from 'node:child_process';
+import {spawn, spawnSync} from 'node:child_process';
 import {CANONICAL_REPOSITORY, GAME_PATH, GAME_SHA256, PINNED_COMMIT} from './constants.mjs';
 import {QaInfrastructureError} from './errors.mjs';
 
@@ -145,35 +145,73 @@ export async function materializePinnedSource(runDir, pinnedSource, runRoot) {
 function assertStageDestination(destination) {
   if (!destination || !path.isAbsolute(destination)) throw new QaInfrastructureError('stage_destination_invalid', 'stage destination must be absolute');
   const resolved = path.resolve(destination);
-  if (resolved === path.parse(resolved).root || resolved.split(path.sep).length < 3) {
+  const base = path.basename(resolved);
+  if (resolved === path.parse(resolved).root || base === '.' || base === '..' || resolved.split(path.sep).length < 3) {
     throw new QaInfrastructureError('stage_destination_invalid', 'stage destination is too broad');
   }
+  let existing;
+  try { existing = fsSync.lstatSync(resolved); }
+  catch (error) {
+    if (error.code !== 'ENOENT') throw new QaInfrastructureError('stage_destination_invalid', 'stage destination could not be inspected');
+  }
+  if (existing) throw new QaInfrastructureError('stage_destination_exists', 'refusing to replace an existing staging destination');
+  const parent = path.dirname(resolved);
+  let parentStat;
+  try { parentStat = fsSync.lstatSync(parent); }
+  catch { throw new QaInfrastructureError('stage_destination_invalid', 'stage destination parent is missing'); }
+  if (!parentStat.isDirectory() || parentStat.isSymbolicLink()) {
+    throw new QaInfrastructureError('stage_destination_invalid', 'stage destination parent must be a real directory');
+  }
+  return {resolved, parent, base};
 }
 
-export async function stagePinnedSource(destination) {
-  assertStageDestination(destination);
-  try { return await validatePinnedSource(destination); }
-  catch (error) {
-    if (!(error instanceof QaInfrastructureError)) throw error;
-    if (!fsSync.existsSync(destination)) {
-      // create below
-    } else {
-      const entries = await fs.readdir(destination);
-      const marker = path.join(destination, '.git', 'scarlet-qa-pin');
-      if (entries.length > 0 && !fsSync.existsSync(marker)) {
-        throw new QaInfrastructureError('stage_destination_refused', 'refusing to replace a directory that is not a previous pin stage');
-      }
+function publishNewDirectory(source, destination) {
+  const script = `
+import ctypes, errno, os, sys
+libc = ctypes.CDLL(None, use_errno=True)
+if not hasattr(libc, "renameat2"):
+    sys.exit(2)
+AT_FDCWD = -100
+RENAME_NOREPLACE = 1
+libc.renameat2.argtypes = [ctypes.c_int, ctypes.c_char_p, ctypes.c_int, ctypes.c_char_p, ctypes.c_uint]
+rc = libc.renameat2(AT_FDCWD, os.fsencode(sys.argv[1]), AT_FDCWD, os.fsencode(sys.argv[2]), RENAME_NOREPLACE)
+if rc != 0:
+    sys.exit(17 if ctypes.get_errno() == errno.EEXIST else 1)
+`;
+  const result = spawnSync(process.env.PYTHON || '/usr/bin/python3', ['-c', script, source, destination], {encoding: 'utf8'});
+  if (result.status === 0) return;
+  if (result.status === 17) throw new QaInfrastructureError('stage_destination_exists', 'staging destination appeared before publication');
+  throw new QaInfrastructureError('stage_publish_failed', 'prepared source could not be published without replacement');
+}
+
+function isAttemptTemp(parent, candidate, base) {
+  const name = path.basename(candidate);
+  const prefix = `.${base}.staging-${process.pid}-`;
+  if (!name.startsWith(prefix)) return false;
+  return path.resolve(path.dirname(candidate)) === path.resolve(parent);
+}
+
+export async function stagePinnedSource(destination, {env = process.env} = {}) {
+  const {resolved, parent, base} = assertStageDestination(destination);
+  const temporary = path.join(parent, `.${base}.staging-${process.pid}-${crypto.randomBytes(6).toString('hex')}`);
+  const gitEnv = provisioningGitEnvironment(env);
+  let created = false;
+  try {
+    await fs.mkdir(temporary, {mode: 0o755});
+    created = true;
+    await runGit(['init', '--quiet'], {cwd: temporary, env: gitEnv, code: 'stage_init'});
+    await runGit(['remote', 'add', 'origin', CANONICAL_REPOSITORY], {cwd: temporary, env: gitEnv, code: 'stage_remote'});
+    await runGit(['-c', 'protocol.file.allow=never', 'fetch', '--quiet', '--depth=1', 'origin', PINNED_COMMIT], {
+      cwd: temporary, env: gitEnv, code: 'stage_fetch', timeoutMs: 120_000
+    });
+    await runGit(['checkout', '--quiet', '--detach', 'FETCH_HEAD'], {cwd: temporary, env: gitEnv, code: 'stage_checkout'});
+    await validatePinnedSource(temporary);
+    publishNewDirectory(temporary, resolved);
+    created = false;
+    return validatePinnedSource(resolved);
+  } finally {
+    if (created && isAttemptTemp(parent, temporary, base)) {
+      await fs.rm(temporary, {recursive: true, force: true}).catch(() => {});
     }
   }
-  await fs.rm(destination, {recursive: true, force: true});
-  await fs.mkdir(destination, {recursive: true, mode: 0o755});
-  const env = provisioningGitEnvironment();
-  await runGit(['init', '--quiet'], {cwd: destination, env, code: 'stage_init'});
-  await fs.writeFile(path.join(destination, '.git', 'scarlet-qa-pin'), `${PINNED_COMMIT}\n`, {mode: 0o644});
-  await runGit(['remote', 'add', 'origin', CANONICAL_REPOSITORY], {cwd: destination, env, code: 'stage_remote'});
-  await runGit(['-c', 'protocol.file.allow=never', 'fetch', '--quiet', '--depth=1', 'origin', PINNED_COMMIT], {
-    cwd: destination, env, code: 'stage_fetch', timeoutMs: 120_000
-  });
-  await runGit(['checkout', '--quiet', '--detach', 'FETCH_HEAD'], {cwd: destination, env, code: 'stage_checkout'});
-  return validatePinnedSource(destination);
 }

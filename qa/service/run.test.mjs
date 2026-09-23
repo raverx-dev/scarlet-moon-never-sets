@@ -8,7 +8,8 @@ import {CANONICAL_REPOSITORY, GAME_SHA256, PINNED_COMMIT} from './constants.mjs'
 import {materializePinnedSource, requestGitEnvironment, stagePinnedSource, validatePinnedSource} from './pinned-source.mjs';
 import {assertCaptureState, classifyCaptureIssues, classifyRegression, runQa, subprocessEnvironment} from './run.mjs';
 
-const pinnedSource = await stagePinnedSource(path.join(os.tmpdir(), `scarlet-qa19-pinned-source-${PINNED_COMMIT}`));
+const stageParent = await fs.mkdtemp(path.join(os.tmpdir(), 'scarlet-qa19-pin-stage-'));
+const pinnedSource = await stagePinnedSource(path.join(stageParent, 'source'));
 
 test('classifies real regression and browser failures truthfully', () => {
   assert.equal(classifyRegression({failed: 0}, [], []).status, 'passed');
@@ -167,4 +168,45 @@ test('QA request path does not fetch or stage a remote source', async () => {
   const server = await fs.readFile(new URL('./server.mjs', import.meta.url), 'utf8');
   assert.doesNotMatch(source, /git fetch|stagePinnedSource|cloneAndValidate/);
   assert.doesNotMatch(server, /git fetch|stagePinnedSource/);
+});
+
+test('first-install staging refuses existing, partial, and symlink destinations', async () => {
+  const parent = await fs.mkdtemp(path.join(os.tmpdir(), 'scarlet-qa19-stage-refuse-'));
+  try {
+    const empty = path.join(parent, 'empty');
+    await fs.mkdir(empty);
+    await assert.rejects(stagePinnedSource(empty), error => error.code === 'stage_destination_exists');
+    assert.deepEqual(await fs.readdir(empty), []);
+
+    const partial = path.join(parent, 'partial');
+    await fs.mkdir(path.join(partial, '.git'), {recursive: true});
+    await fs.writeFile(path.join(partial, '.git', 'scarlet-qa-pin'), 'partial\n');
+    await assert.rejects(stagePinnedSource(partial), error => error.code === 'stage_destination_exists');
+    assert.equal(await fs.readFile(path.join(partial, '.git', 'scarlet-qa-pin'), 'utf8'), 'partial\n');
+
+    const link = path.join(parent, 'link');
+    await fs.symlink(empty, link);
+    await assert.rejects(stagePinnedSource(link), error => error.code === 'stage_destination_exists');
+    await assert.rejects(stagePinnedSource(pinnedSource.sourceDir), error => error.code === 'stage_destination_exists');
+  } finally { await fs.rm(parent, {recursive: true, force: true}); }
+});
+
+test('unsuccessful staging publishes nothing and removes only its temporary directory', async () => {
+  const parent = await fs.mkdtemp(path.join(os.tmpdir(), 'scarlet-qa19-stage-fail-'));
+  const bin = path.join(parent, 'bin');
+  await fs.mkdir(bin);
+  await fs.writeFile(path.join(bin, 'git'), `#!/bin/sh
+for arg in "$@"; do
+  if [ "$arg" = "fetch" ]; then exit 44; fi
+done
+exec /usr/bin/git "$@"
+`, {mode: 0o755});
+  const destination = path.join(parent, 'source');
+  try {
+    await assert.rejects(stagePinnedSource(destination, {env: {...process.env, PATH: `${bin}:${process.env.PATH}`}}),
+      error => error.code === 'stage_fetch');
+    await assert.rejects(fs.lstat(destination), error => error.code === 'ENOENT');
+    const leftovers = (await fs.readdir(parent)).filter(name => name.includes('.staging-'));
+    assert.deepEqual(leftovers, []);
+  } finally { await fs.rm(parent, {recursive: true, force: true}); }
 });

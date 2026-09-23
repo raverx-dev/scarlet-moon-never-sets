@@ -19,6 +19,7 @@ import {
 } from './constants.mjs';
 import {QaInfrastructureError} from './errors.mjs';
 import {materializePinnedSource} from './pinned-source.mjs';
+import {resolveBrowserLaunch} from './browser-launch.mjs';
 
 export {QaInfrastructureError};
 
@@ -239,7 +240,8 @@ async function browserRun(kind, sourceDir, deadline) {
     code: 'qa_build'
   });
   if (!fsSync.existsSync(generatedFile)) throw new QaInfrastructureError('qa_build_missing', 'QA build did not create the generated page');
-  const executable = browserBinary();
+  const launch = resolveBrowserLaunch();
+  const executable = launch.confined ? launch.executable : browserBinary();
   if (!executable) throw new QaInfrastructureError('browser_missing', 'no supported Chromium-family browser was found');
 
   let browser;

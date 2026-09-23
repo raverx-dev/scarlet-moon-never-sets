@@ -7,7 +7,7 @@ import {Client} from '@modelcontextprotocol/sdk/client/index.js';
 import {StreamableHTTPClientTransport} from '@modelcontextprotocol/sdk/client/streamableHttp.js';
 import os from 'node:os';
 import {CASE_ID, CASE_SCENE, CASE_TICK, GAME_SHA256, LOGICAL_HEIGHT, LOGICAL_WIDTH, PINNED_COMMIT} from './constants.mjs';
-import {stagePinnedSource} from './pinned-source.mjs';
+import {stagePinnedSource, validatePinnedSource} from './pinned-source.mjs';
 import {startQaService} from './server.mjs';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
@@ -24,7 +24,9 @@ function dimensions(png) {
 }
 
 await fs.mkdir(outputRoot, {recursive: true});
-const prepared = await stagePinnedSource(process.env.QA_PINNED_SOURCE || path.join(os.tmpdir(), `scarlet-qa19-pinned-source-${PINNED_COMMIT}`));
+const prepared = process.env.QA_PINNED_SOURCE
+  ? await validatePinnedSource(process.env.QA_PINNED_SOURCE)
+  : await stagePinnedSource(path.join(await fs.mkdtemp(path.join(os.tmpdir(), 'scarlet-qa19-smoke-pin-')), 'source'));
 process.env.QA_PINNED_SOURCE = prepared.sourceDir;
 const service = await startQaService({port: 0, secret, runRoot});
 const client = new Client({name: 'qa19-local-smoke', version: '1.0.0'});
