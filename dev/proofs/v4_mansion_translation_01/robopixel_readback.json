@@ -1438,6 +1438,64 @@
         },
         "isError": false
       }
+    },
+    {
+      "name": "paving",
+      "op": "grid_paste",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "grid_paste committed revision 5 -> 6; changed_pixels=21."
+          }
+        ],
+        "structuredContent": {
+          "receipt": {
+            "transaction_id": "4cc94586559ab652438cad101f1e7116d422c7ddaad5bfe264734ec891712399",
+            "project_id": "scarlet-moon-never-sets",
+            "asset_id": "v4-mansion-trans01-paving",
+            "operation": "grid_paste",
+            "old_revision": 5,
+            "new_revision": 6,
+            "old_revision_hash": "ea5ad5194307245681a4b3d4f43db03a08e685377f202968fcbfd4226388dfb9",
+            "new_revision_hash": "a9173888c4d445e8aa077822fbb7362709b61e3a9c39c0653b45a6a0354f1023",
+            "changed_pixels": 21,
+            "changed_bbox": {
+              "x": 1,
+              "y": 3,
+              "width": 25,
+              "height": 13
+            },
+            "region_changes": [],
+            "layer_changes": [
+              {
+                "layer_id": "art",
+                "changed_pixels": 21
+              }
+            ],
+            "frame_changes": [
+              {
+                "frame_id": "default",
+                "changed_pixels": 21
+              }
+            ],
+            "guards": [],
+            "approval_invalidated": true
+          },
+          "resources": {
+            "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-paving",
+            "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-paving/revision/6",
+            "view": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-paving/revision/6/view",
+            "text": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-paving/revision/6/text",
+            "diff": "robopixel://diff/scarlet-moon-never-sets/v4-mansion-trans01-paving/5/6"
+          },
+          "presentation": {
+            "available": true,
+            "render": "none"
+          }
+        },
+        "isError": false
+      }
     }
   ],
   "assets": {
@@ -3995,8 +4053,8 @@
         "delivery": false,
         "project_id": "scarlet-moon-never-sets",
         "asset_id": "v4-mansion-trans01-paving",
-        "revision": 5,
-        "revision_hash": "ea5ad5194307245681a4b3d4f43db03a08e685377f202968fcbfd4226388dfb9",
+        "revision": 6,
+        "revision_hash": "a9173888c4d445e8aa077822fbb7362709b61e3a9c39c0653b45a6a0354f1023",
         "frame_id": "default",
         "layer_id": "art",
         "matrix": {
@@ -4006,8 +4064,8 @@
             "22222222222222207777777777777770",
             "1111111111111110JJJJJJJJJJJJJJJ0",
             "1111111111111110JJJJJJJJJJJJJJJ0",
-            "1133322221111110JJJJJJ787JJJJJJ0",
-            "1111123331111110JJJJJJJJJ7JJJJJ0",
+            "1111122221111110JJJJJJJJJJJJJJJ0",
+            "1111113331111110JJJJJJJJJJJJJJJ0",
             "1111122221111110JJJJJJJJJJJJJJJ0",
             "1111111111111110JJJJJJJJJJJJJJJ0",
             "1111111111111110JJJJJJ7777JJJJJ0",
@@ -4015,10 +4073,10 @@
             "1111111111111110JJJJJJJJJJJJJJJ0",
             "1111111111111110JJJJJJJJJJJJJJJ0",
             "1111111111111110JJJJJJJJJJJJJJJ0",
-            "1111122221111110JJJJJ772JJJJJJJ0",
             "1111111111111110JJJJJJJJJJJJJJJ0",
             "1111111111111110JJJJJJJJJJJJJJJ0",
-            "02220000000000000777000000000000"
+            "1111111111111110JJJJJJJJJJJJJJJ0",
+            "00000000000000000000000000000000"
           ],
           "symbols": {
             "0": {
@@ -4092,31 +4150,31 @@
           "cel_hash": true
         },
         "resources": {
-          "export": "robopixel://export/scarlet-moon-never-sets/v4-mansion-trans01-paving/revision/5/scarlet-moon-js"
+          "export": "robopixel://export/scarlet-moon-never-sets/v4-mansion-trans01-paving/revision/6/scarlet-moon-js"
         }
       },
       "view": {
         "content": [
           {
             "type": "text",
-            "text": "Rendered v4-mansion-trans01-paving revision 5 frame default (32x16)."
+            "text": "Rendered v4-mansion-trans01-paving revision 6 frame default (32x16)."
           },
           {
             "type": "image",
-            "data": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAYAAAB3AH1ZAAAAeUlEQVR42mPQUbH4Ty7m4BD4r6rjRTYG6WeQFNX4Ty4GGSAookg2HlwOcDENgGP0oCbHAaAgdvKtBNMkhwDIUmQHURoCuByB1wGUhsDQSwPUdgB6lhuQEECOxpEXBUPbAZRmQ1jCwxX3o1GA4gAQgV7FkorRq1hSMAA1haOQx4h09gAAAABJRU5ErkJggg==",
+            "data": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAYAAAB3AH1ZAAAAUUlEQVR42mPQUbH4Ty7m4BD4r6rjRTYG6WeQFNX4Ty4GGSAookg2HrwOQA/qAQkBF9MAOB6ZITDkEyF6lhuQEECOxpEXBaMOGHUA0Q4AEQOJAbgtm+dLlW+6AAAAAElFTkSuQmCC",
             "mimeType": "image/png"
           }
         ],
         "structuredContent": {
           "project_id": "scarlet-moon-never-sets",
           "asset_id": "v4-mansion-trans01-paving",
-          "revision": 5,
-          "revision_hash": "ea5ad5194307245681a4b3d4f43db03a08e685377f202968fcbfd4226388dfb9",
+          "revision": 6,
+          "revision_hash": "a9173888c4d445e8aa077822fbb7362709b61e3a9c39c0653b45a6a0354f1023",
           "frame_id": "default",
           "width": 32,
           "height": 16,
           "scale": 1,
-          "render_hash": "2ec17c0c17c19ec88711289c901f2f9ff0ade45e93a09c0a78ef0f446bfd1ce7",
+          "render_hash": "c5b1d81ab210436b6105cacbdfcbe6b483ebb6b8f23dde5e2feee6e3c5cca76e",
           "text": {
             "frame_id": "default",
             "width": 32,
@@ -4125,8 +4183,8 @@
               "22222222222222207777777777777770",
               "1111111111111110JJJJJJJJJJJJJJJ0",
               "1111111111111110JJJJJJJJJJJJJJJ0",
-              "1133322221111110JJJJJJ787JJJJJJ0",
-              "1111123331111110JJJJJJJJJ7JJJJJ0",
+              "1111122221111110JJJJJJJJJJJJJJJ0",
+              "1111113331111110JJJJJJJJJJJJJJJ0",
               "1111122221111110JJJJJJJJJJJJJJJ0",
               "1111111111111110JJJJJJJJJJJJJJJ0",
               "1111111111111110JJJJJJ7777JJJJJ0",
@@ -4134,14 +4192,14 @@
               "1111111111111110JJJJJJJJJJJJJJJ0",
               "1111111111111110JJJJJJJJJJJJJJJ0",
               "1111111111111110JJJJJJJJJJJJJJJ0",
-              "1111122221111110JJJJJ772JJJJJJJ0",
               "1111111111111110JJJJJJJJJJJJJJJ0",
               "1111111111111110JJJJJJJJJJJJJJJ0",
-              "02220000000000000777000000000000"
+              "1111111111111110JJJJJJJJJJJJJJJ0",
+              "00000000000000000000000000000000"
             ]
           },
           "resources": {
-            "view": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-paving/revision/5/view"
+            "view": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-paving/revision/6/view"
           }
         },
         "isError": false
@@ -4150,17 +4208,17 @@
         "content": [
           {
             "type": "text",
-            "text": "Current subject 525b95082c680b5bc8a35b82d294e02b4c3fb4994a824009b3ea3b43bee4da74 is not approved."
+            "text": "Current subject 6e525b9e028ad86ad9e78df449fafaf8d6cf0d261b3a83280a6151adfdf8ca4e is not approved."
           }
         ],
         "structuredContent": {
           "status": {
             "project_id": "scarlet-moon-never-sets",
             "asset_id": "v4-mansion-trans01-paving",
-            "revision": 5,
-            "revision_hash": "ea5ad5194307245681a4b3d4f43db03a08e685377f202968fcbfd4226388dfb9",
+            "revision": 6,
+            "revision_hash": "a9173888c4d445e8aa077822fbb7362709b61e3a9c39c0653b45a6a0354f1023",
             "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
-            "approval_subject_hash": "525b95082c680b5bc8a35b82d294e02b4c3fb4994a824009b3ea3b43bee4da74",
+            "approval_subject_hash": "6e525b9e028ad86ad9e78df449fafaf8d6cf0d261b3a83280a6151adfdf8ca4e",
             "approved": false,
             "active_approval_ids": [],
             "historical_approval_ids": []

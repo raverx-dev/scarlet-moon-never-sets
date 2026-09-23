@@ -1,4 +1,4 @@
-# Mansion Art Development 01 — candidate artwork
+# Mansion Art Development 01A — floor correction
 
 One Mansion-only art pass on the two **accepted compositions** at `4ef4080fc17f53f03393ac74e205220072360c0b`. Both placement maps are byte-identical to that checkpoint. No viewpoint, proportion, focal axis, carpet/stair join, actor anchor or dialogue coverage was changed. Artwork remains provisional; Owner visual review is required.
 
@@ -28,7 +28,7 @@ The full-scene [gameplay direction](references/gameplay-direction.png) and [stor
 
 `art_development_inputs.py` prepares indexed native pixel grids from immutable accepted exports in Git. Its integer raster operations are authoring inputs, not scene-level painting. Those grids were committed through RoboPixel `grid_paste` with exact expected revisions. Every final scene consumes only the actual read-back [exports](exports/), which match independent [canonical PNG views](canonical_previews/). There are no full-scene canonical assets, concept downscales, interpolation, recoloring, gradients or painted lighting in the compositor.
 
-Selected revisions: rose r3→r5, paving r3→r5, column r4→r5, cornice r3→r4; arch, lancet, banner, near pier, stairs, balustrade, candelabra and runner edge r2→r3. Four remaining assets are unchanged. Every selected asset remains unapproved; no delivery export or approval was issued.
+Selected revisions: rose r3→r5, paving now r6 after the floor-only correction, column r4→r5, cornice r3→r4; arch, lancet, banner, near pier, stairs, balustrade, candelabra and runner edge r2→r3. Four remaining assets are unchanged. Every selected asset remains unapproved; no delivery export or approval was issued.
 
 ## Composition, staging and verification
 
@@ -43,13 +43,21 @@ python3 unpack_readback.py
 python3 compose.py
 python3 review_context.py
 python3 art_review.py
-python3 verify_art_development.py
+python3 verify_floor_correction.py
 ```
 
-The [current verification](art_development_verification.json) checks all 16 canonical PNG/export correspondences, final submitted grids, exact native reproduction, byte-identical layout/source and staging, preserved accepted evidence, unchanged quiet center, continuous story stair-to-carpet color path, protected repository files and candidate approval status. `verify_story_correction.py` and its report are historical checks for the previous correction head, not the gate for this art pass.
+The [Art Development 01 verification](art_development_verification.json) checks all 16 canonical PNG/export correspondences, final submitted grids, exact native reproduction, byte-identical layout/source and staging, preserved accepted evidence, unchanged quiet center, continuous story stair-to-carpet color path, protected repository files and candidate approval status. `verify_story_correction.py` and its report are historical checks for the previous correction head, not the gate for this art pass.
 
 ## Remaining limitations
 
 This is still more schematic than the rich reference: repeated side bays, stylized rather than physically matched reflections, and compact symmetrical rose tracery. Lighting remains discrete highlights rather than animated candlelight. The fixed bullet witness samples only two shapes and does not establish dense moving-pattern readability. Final aesthetics, runtime correspondence and hardware constraints have not been approved or qualified.
 
 No playable V4 or frozen-version changes, other environments, RoboPixel product changes, runtime integration, merge, deployment, publication or formal asset approval.
+
+## Floor correction 01A — current review
+
+The Owner accepted Art Development 01 overall and requested only a cleaner floor. Only `v4-mansion-trans01-paving` changed, **r5 → r6**. Revision 6 restores the exact clearer r3 pixel matrix from the earlier accepted composition checkpoint: dark stone swatches and restrained seams, without the later repeated reflection streaks/highlighted seam fragments. Canvas, palette and all scene placements are unchanged. Every other canonical asset is unchanged.
+
+[Gameplay floor before/after](gameplay_floor_before_after.png) · [Story floor before/after](story_floor_before_after.png)
+
+[Floor provenance](floor_correction_provenance.json) records the exact r5 basis, mutation receipt and r6 export/PNG read-back. [Current floor verification](floor_correction_verification.json) proves all changed scene pixels belong to visible paving; every non-floor pixel in both scenes is identical to `41132bc77e632d06132989cf134b7ed9719211e3`. The prior art-development report is historical; use `verify_floor_correction.py` for the current candidate. Native images and static witnesses above reflect this correction. No further art pass or integration was performed.

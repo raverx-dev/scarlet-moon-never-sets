@@ -810,5 +810,63 @@
       },
       "isError": false
     }
+  },
+  {
+    "name": "paving",
+    "op": "grid_paste",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "grid_paste committed revision 5 -> 6; changed_pixels=21."
+        }
+      ],
+      "structuredContent": {
+        "receipt": {
+          "transaction_id": "4cc94586559ab652438cad101f1e7116d422c7ddaad5bfe264734ec891712399",
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-trans01-paving",
+          "operation": "grid_paste",
+          "old_revision": 5,
+          "new_revision": 6,
+          "old_revision_hash": "ea5ad5194307245681a4b3d4f43db03a08e685377f202968fcbfd4226388dfb9",
+          "new_revision_hash": "a9173888c4d445e8aa077822fbb7362709b61e3a9c39c0653b45a6a0354f1023",
+          "changed_pixels": 21,
+          "changed_bbox": {
+            "x": 1,
+            "y": 3,
+            "width": 25,
+            "height": 13
+          },
+          "region_changes": [],
+          "layer_changes": [
+            {
+              "layer_id": "art",
+              "changed_pixels": 21
+            }
+          ],
+          "frame_changes": [
+            {
+              "frame_id": "default",
+              "changed_pixels": 21
+            }
+          ],
+          "guards": [],
+          "approval_invalidated": true
+        },
+        "resources": {
+          "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-paving",
+          "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-paving/revision/6",
+          "view": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-paving/revision/6/view",
+          "text": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-paving/revision/6/text",
+          "diff": "robopixel://diff/scarlet-moon-never-sets/v4-mansion-trans01-paving/5/6"
+        },
+        "presentation": {
+          "available": true,
+          "render": "none"
+        }
+      },
+      "isError": false
+    }
   }
 ]

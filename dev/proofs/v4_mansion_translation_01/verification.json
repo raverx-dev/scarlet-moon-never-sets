@@ -104,8 +104,8 @@
     {
       "asset": "paving",
       "asset_id": "v4-mansion-trans01-paving",
-      "revision": 5,
-      "revision_hash": "ea5ad5194307245681a4b3d4f43db03a08e685377f202968fcbfd4226388dfb9",
+      "revision": 6,
+      "revision_hash": "a9173888c4d445e8aa077822fbb7362709b61e3a9c39c0653b45a6a0354f1023",
       "canonical_png_vs_export_rgba": "PASS",
       "submitted_rows": "PASS",
       "approved": false
@@ -155,7 +155,7 @@
       ],
       "reproduces_exactly": true,
       "palette_membership": true,
-      "sha256": "da820396d6bd6ac5dff50d1d2b84e838a66e8ed0bcd9eebad4fdf996870421ee"
+      "sha256": "4c01e4ec1c385e29bba28a6fc7c12a91600e086a84fdb71f3d4be6738d317fb3"
     },
     "story": {
       "dimensions": [
@@ -164,7 +164,7 @@
       ],
       "reproduces_exactly": true,
       "palette_membership": true,
-      "sha256": "ac940b238771a55f348f5aef2842f77b5f578ccacf10c17d04de3f92e1d8d979"
+      "sha256": "593e882aa958e5aef4e2e490da300bf7f96ea17bdd88255b8c211550a99efd49"
     }
   },
   "all_selected_assets_used": true,

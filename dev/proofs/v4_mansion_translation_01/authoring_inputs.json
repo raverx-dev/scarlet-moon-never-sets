@@ -915,13 +915,13 @@
       "kind": "reusable",
       "status": "revised",
       "revision": 3,
-      "from_revision": 3,
+      "from_revision": 5,
       "rows": [
         "22222222222222207777777777777770",
         "1111111111111110JJJJJJJJJJJJJJJ0",
         "1111111111111110JJJJJJJJJJJJJJJ0",
-        "1133322221111110JJJJJJ787JJJJJJ0",
-        "1111123331111110JJJJJJJJJ7JJJJJ0",
+        "1111122221111110JJJJJJJJJJJJJJJ0",
+        "1111113331111110JJJJJJJJJJJJJJJ0",
         "1111122221111110JJJJJJJJJJJJJJJ0",
         "1111111111111110JJJJJJJJJJJJJJJ0",
         "1111111111111110JJJJJJ7777JJJJJ0",
@@ -929,13 +929,13 @@
         "1111111111111110JJJJJJJJJJJJJJJ0",
         "1111111111111110JJJJJJJJJJJJJJJ0",
         "1111111111111110JJJJJJJJJJJJJJJ0",
-        "1111122221111110JJJJJ772JJJJJJJ0",
         "1111111111111110JJJJJJJJJJJJJJJ0",
         "1111111111111110JJJJJJJJJJJJJJJ0",
-        "02220000000000000777000000000000"
+        "1111111111111110JJJJJJJJJJJJJJJ0",
+        "00000000000000000000000000000000"
       ],
-      "basis_revision_hash": "a9173888c4d445e8aa077822fbb7362709b61e3a9c39c0653b45a6a0354f1023",
-      "art_change": "Fragmented polished-stone reflections and softened bevel seams, within accepted perspective strips"
+      "basis_revision_hash": "ea5ad5194307245681a4b3d4f43db03a08e685377f202968fcbfd4226388dfb9",
+      "art_change": "Floor 01A: restore the cleaner r3 paving pixels; remove repeated reflection streaks and highlighted seam fragments"
     },
     "column": {
       "asset_id": "v4-mansion-proof-column-01",

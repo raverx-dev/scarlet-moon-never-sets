@@ -15,7 +15,7 @@ All selected assets remain candidates in `scarlet-moon-never-sets`. Same 16 asse
 | `v4-mansion-trans01-runner` | 2 → 2 | 16×16 | reused | Unchanged |
 | `v4-mansion-trans01-runner-edge` | 2 → 3 | 8×16 | revised | Restrained woven border diamonds; center runner and motifs unchanged |
 | `v4-mansion-trans01-runner-motif` | 2 → 2 | 16×16 | reused | Unchanged |
-| `v4-mansion-trans01-paving` | 3 → 5 | 32×16 | revised | Fragmented polished-stone reflections and softened bevel seams, within accepted perspective strips |
+| `v4-mansion-trans01-paving` | 5 → 6 | 32×16 | floor-only correction | Restores exact cleaner r3 pixels; removes repeated reflection streaks and seam highlights. |
 | `v4-mansion-proof-column-01` | 4 → 5 | 16×64 | revised | Matched small acanthus capital, recessed fluting and carved base; accepted column dimensions retained |
 | `v4-mansion-proof-wall-masonry-01` | 2 → 2 | 32×16 | reused | Unchanged |
 | `v4-mansion-proof-trim-top-01` | 3 → 4 | 16×8 | revised | Alternating carved cornice dentils and restrained edge highlights |

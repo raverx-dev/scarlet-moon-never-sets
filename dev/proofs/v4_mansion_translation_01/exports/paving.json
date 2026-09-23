@@ -4,8 +4,8 @@
   "delivery": false,
   "project_id": "scarlet-moon-never-sets",
   "asset_id": "v4-mansion-trans01-paving",
-  "revision": 5,
-  "revision_hash": "ea5ad5194307245681a4b3d4f43db03a08e685377f202968fcbfd4226388dfb9",
+  "revision": 6,
+  "revision_hash": "a9173888c4d445e8aa077822fbb7362709b61e3a9c39c0653b45a6a0354f1023",
   "frame_id": "default",
   "layer_id": "art",
   "matrix": {
@@ -15,8 +15,8 @@
       "22222222222222207777777777777770",
       "1111111111111110JJJJJJJJJJJJJJJ0",
       "1111111111111110JJJJJJJJJJJJJJJ0",
-      "1133322221111110JJJJJJ787JJJJJJ0",
-      "1111123331111110JJJJJJJJJ7JJJJJ0",
+      "1111122221111110JJJJJJJJJJJJJJJ0",
+      "1111113331111110JJJJJJJJJJJJJJJ0",
       "1111122221111110JJJJJJJJJJJJJJJ0",
       "1111111111111110JJJJJJJJJJJJJJJ0",
       "1111111111111110JJJJJJ7777JJJJJ0",
@@ -24,10 +24,10 @@
       "1111111111111110JJJJJJJJJJJJJJJ0",
       "1111111111111110JJJJJJJJJJJJJJJ0",
       "1111111111111110JJJJJJJJJJJJJJJ0",
-      "1111122221111110JJJJJ772JJJJJJJ0",
       "1111111111111110JJJJJJJJJJJJJJJ0",
       "1111111111111110JJJJJJJJJJJJJJJ0",
-      "02220000000000000777000000000000"
+      "1111111111111110JJJJJJJJJJJJJJJ0",
+      "00000000000000000000000000000000"
     ],
     "symbols": {
       "0": {
@@ -101,6 +101,6 @@
     "cel_hash": true
   },
   "resources": {
-    "export": "robopixel://export/scarlet-moon-never-sets/v4-mansion-trans01-paving/revision/5/scarlet-moon-js"
+    "export": "robopixel://export/scarlet-moon-never-sets/v4-mansion-trans01-paving/revision/6/scarlet-moon-js"
   }
 }

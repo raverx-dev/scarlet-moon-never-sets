@@ -351,9 +351,9 @@
       "kind": "reusable",
       "width": 32,
       "height": 16,
-      "revision": 5,
-      "revision_hash": "ea5ad5194307245681a4b3d4f43db03a08e685377f202968fcbfd4226388dfb9",
-      "render_hash": "2ec17c0c17c19ec88711289c901f2f9ff0ade45e93a09c0a78ef0f446bfd1ce7",
+      "revision": 6,
+      "revision_hash": "a9173888c4d445e8aa077822fbb7362709b61e3a9c39c0653b45a6a0354f1023",
+      "render_hash": "c5b1d81ab210436b6105cacbdfcbe6b483ebb6b8f23dde5e2feee6e3c5cca76e",
       "round_trip": {
         "width": 32,
         "height": 16,
@@ -363,17 +363,17 @@
         "status": {
           "project_id": "scarlet-moon-never-sets",
           "asset_id": "v4-mansion-trans01-paving",
-          "revision": 5,
-          "revision_hash": "ea5ad5194307245681a4b3d4f43db03a08e685377f202968fcbfd4226388dfb9",
+          "revision": 6,
+          "revision_hash": "a9173888c4d445e8aa077822fbb7362709b61e3a9c39c0653b45a6a0354f1023",
           "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
-          "approval_subject_hash": "525b95082c680b5bc8a35b82d294e02b4c3fb4994a824009b3ea3b43bee4da74",
+          "approval_subject_hash": "6e525b9e028ad86ad9e78df449fafaf8d6cf0d261b3a83280a6151adfdf8ca4e",
           "approved": false,
           "active_approval_ids": [],
           "historical_approval_ids": []
         }
       },
-      "from_revision": 3,
-      "art_change": "Fragmented polished-stone reflections and softened bevel seams, within accepted perspective strips"
+      "from_revision": 5,
+      "art_change": "Floor 01A: restore the cleaner r3 paving pixels; remove repeated reflection streaks and highlighted seam fragments"
     },
     "column": {
       "asset_id": "v4-mansion-proof-column-01",
