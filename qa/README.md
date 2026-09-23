@@ -124,3 +124,51 @@ Those require review of captured frames, isolated audio, and human playtesting.
 ## Existing recovered tooling
 
 `regression.js` is recovered developer tooling from the original build session. `inspection.js`, `build.py`, `server.cjs`, `cases.json`, and `agent-run.mjs` make that tooling reusable outside the original sandbox.
+
+## Local-only MCP QA adapter
+
+`qa/service/` provides a deliberately narrow development adapter using the official MCP SDK's Streamable HTTP transport. It exposes exactly two tools:
+
+- `qa_capture` renders only `stage3-interior` (`stage3`, tick `900`) and returns the browser-derived 256×240 canvas PNG inline with structured source, runtime, state, artifact, and hash metadata.
+- `qa_regression` separately runs the existing recovered regression suite and acceptance diagnostics, and returns the real checks, diagnostics, browser console/page errors, and blocked requests.
+
+Both tools accept no arguments, or the optional exact values `exact_commit=d7054d2b9b111ff711f44cc3ee5b71268aca6ed8` and `case=stage3-interior`. Unknown fields and every other commit, case, path, branch, URL, JavaScript, or shell value are rejected before execution. This is not a general browser or filesystem service.
+
+Install and test from `qa/`:
+
+```bash
+npm install
+npm run service:test
+npm run service:smoke
+```
+
+The smoke starts an ephemeral loopback MCP server with a random test secret, calls both tools through MCP, verifies the inline PNG dimensions/hash and authenticated artifact copy, and writes `qa/output/service-smoke-summary.json`. Its per-run evidence is under `qa/output/service-runs/`; each completed run retains only its private `evidence/` directory.
+
+To start the service manually, configure an absolute dedicated run root and a generated secret with at least 32 bytes and 16 distinct characters:
+
+```bash
+cd qa
+export QA_SERVICE_SECRET="$(openssl rand -base64 48 | tr -d '\n')"
+export QA_SERVICE_RUN_ROOT="$(pwd)/output/service-runs"
+npm run service
+```
+
+The default endpoint is `http://127.0.0.1:3020/mcp`. Every MCP request, including `GET` discovery attempts, and every `/artifacts/<run-id>/<artifact-id>` request requires `Authorization: Bearer <secret>`. The process rejects every bind host except the literal `127.0.0.1`, rejects weak secrets, applies a 64 KiB request limit, serializes tool runs, and does not log the secret. Do not put the older `qa/server.cjs` on any externally reachable interface.
+
+Each request creates a random private run directory, fetches the fixed commit directly from the canonical GitHub repository without credential prompting, validates HEAD, the combined QA-tool revision, tracked symlink containment, game path, and game SHA-256, and builds inside that run. Chromium uses a fresh Playwright context without an ambient profile. Page routing permits only the run's ephemeral authenticated loopback origin; external and `file:` requests are blocked and reported. Browser/server processes and command output are bounded, and the fetched source tree is removed in `finally` while run-scoped evidence remains.
+
+Regression failures are successful MCP calls with structured `status: "failed"`; they are not disguised as infrastructure errors. Clone, hash, build, browser, timeout, or other infrastructure failures return structured `status: "infrastructure_error"` with MCP `isError: true` and a safe run-scoped error report.
+
+### External deployment is blocked
+
+This module is qualified only for local development use. It does **not** claim that OS-level isolation or remote-ingress controls are installed, reviewed, or sufficient. Before any future remote exposure, a separate host qualification must fail closed unless all of the following are independently implemented and verified:
+
+- a dedicated restricted service UID;
+- a Chromium sandbox suitable for untrusted content, without `--no-sandbox`;
+- filesystem/process isolation that exposes no host secrets or unrelated files;
+- outbound network restriction, with pinned source acquisition staged separately from browser execution;
+- OS-enforced per-run temporary isolation, cleanup, wall-clock, CPU, memory, process, and output caps;
+- authenticated TLS ingress through a trusted boundary, with secret rotation and request controls; and
+- artifact serving restricted to authorized run-scoped evidence only.
+
+No tunnel, public listener, system service, or ChatGPT connector is created by this QA module or its tests.
