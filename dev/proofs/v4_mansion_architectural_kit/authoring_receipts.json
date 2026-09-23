@@ -1,0 +1,322 @@
+{
+  "window-bay": {
+    "transaction_id": "bea08bbc08719418ff605091b39fea3ecdeb3f341f0399c59c5e5de368df80a7",
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-mansion-proof-window-bay-01",
+    "operation": "grid_paste",
+    "old_revision": 2,
+    "new_revision": 3,
+    "old_revision_hash": "e3b7ddebdb2f056ba9555902c8edecb1945a7d718ca7ab6ab37e0e494a3bd5a4",
+    "new_revision_hash": "728d687127e2ddc8ae6938ee5c8b74f40ce0f6df0b4fe01a990a78be5cba047d",
+    "changed_pixels": 1932,
+    "changed_bbox": {
+      "x": 0,
+      "y": 0,
+      "width": 32,
+      "height": 64
+    },
+    "region_changes": [],
+    "layer_changes": [
+      {
+        "layer_id": "art",
+        "changed_pixels": 1932
+      }
+    ],
+    "frame_changes": [
+      {
+        "frame_id": "default",
+        "changed_pixels": 1932
+      }
+    ],
+    "guards": [],
+    "approval_invalidated": true
+  },
+  "column": {
+    "transaction_id": "c9bc5182f53ee54aa4a5ad0f60aa6e255ab8abd338e410ad2482a19c14fe6b06",
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-mansion-proof-column-01",
+    "operation": "grid_paste",
+    "old_revision": 2,
+    "new_revision": 3,
+    "old_revision_hash": "e47e84fe44ac4e56650447a975e0f74243bff5e7951a01e4c9c55ffee4324882",
+    "new_revision_hash": "32b38f38f16c8deb716dfb79420d92cb52688a2a801fbb8a7e38218e6d0942a7",
+    "changed_pixels": 591,
+    "changed_bbox": {
+      "x": 0,
+      "y": 0,
+      "width": 16,
+      "height": 64
+    },
+    "region_changes": [],
+    "layer_changes": [
+      {
+        "layer_id": "art",
+        "changed_pixels": 591
+      }
+    ],
+    "frame_changes": [
+      {
+        "frame_id": "default",
+        "changed_pixels": 591
+      }
+    ],
+    "guards": [],
+    "approval_invalidated": true
+  },
+  "wall-panel": {
+    "transaction_id": "81c5a3097e9d25b2246fd436d873aeec3e755775c8bc2e2453c6baec92ef6f50",
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-mansion-proof-wall-panel-01",
+    "operation": "grid_paste",
+    "old_revision": 2,
+    "new_revision": 3,
+    "old_revision_hash": "2f278b3b90527375ba2900aaeb09f667d8ca9f89299cb587a9ba4135f623e4d2",
+    "new_revision_hash": "10c31697ac6a716fec2adc86af9d4b4c21c0f1b223c10b3b8673eab3bb7e1820",
+    "changed_pixels": 243,
+    "changed_bbox": {
+      "x": 0,
+      "y": 0,
+      "width": 16,
+      "height": 16
+    },
+    "region_changes": [],
+    "layer_changes": [
+      {
+        "layer_id": "art",
+        "changed_pixels": 243
+      }
+    ],
+    "frame_changes": [
+      {
+        "frame_id": "default",
+        "changed_pixels": 243
+      }
+    ],
+    "guards": [],
+    "approval_invalidated": true
+  },
+  "floor": {
+    "transaction_id": "7e6d1895f01915205d9164552831240426b29208f54aa7c1e17364cc7d8872ed",
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-mansion-proof-floor-01",
+    "operation": "grid_paste",
+    "old_revision": 3,
+    "new_revision": 4,
+    "old_revision_hash": "7b0fc715570ac539f61b25e35ca9817d95419ae7201b842e857ff2e1148861cc",
+    "new_revision_hash": "e2978708cc49db568511dbff6692a52517b862634fdb66befa16088f25034cd3",
+    "changed_pixels": 180,
+    "changed_bbox": {
+      "x": 0,
+      "y": 0,
+      "width": 32,
+      "height": 16
+    },
+    "region_changes": [],
+    "layer_changes": [
+      {
+        "layer_id": "art",
+        "changed_pixels": 180
+      }
+    ],
+    "frame_changes": [
+      {
+        "frame_id": "default",
+        "changed_pixels": 180
+      }
+    ],
+    "guards": [],
+    "approval_invalidated": true
+  },
+  "carpet-field": {
+    "transaction_id": "62b777d8dbceabe656c11b0d757e51a2cc1b61261de29dc7e16500c5f3d691aa",
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-mansion-proof-carpet-field-01",
+    "operation": "grid_paste",
+    "old_revision": 2,
+    "new_revision": 3,
+    "old_revision_hash": "fafa0dbff33a1c057c4361a8150a0b4e620574a5955df553eea5795e23e9b325",
+    "new_revision_hash": "1c4894a5369c9acaab528ec9d8c265a74068b9ed2189e597aa36de5e9164ef63",
+    "changed_pixels": 256,
+    "changed_bbox": {
+      "x": 0,
+      "y": 0,
+      "width": 16,
+      "height": 16
+    },
+    "region_changes": [],
+    "layer_changes": [
+      {
+        "layer_id": "art",
+        "changed_pixels": 256
+      }
+    ],
+    "frame_changes": [
+      {
+        "frame_id": "default",
+        "changed_pixels": 256
+      }
+    ],
+    "guards": [],
+    "approval_invalidated": true
+  },
+  "carpet-border": {
+    "transaction_id": "ce4180fd4926ce3afe32a766a8db08f1a058034141602599ce083e53009841e5",
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-mansion-proof-carpet-border-01",
+    "operation": "grid_paste",
+    "old_revision": 2,
+    "new_revision": 3,
+    "old_revision_hash": "50fc377bb429dd1fae569097ab4ab4413607c7779c2a90b4613f5a3c7eff0611",
+    "new_revision_hash": "121641ccad16b2cf4b1573f21cc833cc9585a20dc164c476252bf34093120738",
+    "changed_pixels": 192,
+    "changed_bbox": {
+      "x": 4,
+      "y": 0,
+      "width": 9,
+      "height": 32
+    },
+    "region_changes": [],
+    "layer_changes": [
+      {
+        "layer_id": "art",
+        "changed_pixels": 192
+      }
+    ],
+    "frame_changes": [
+      {
+        "frame_id": "default",
+        "changed_pixels": 192
+      }
+    ],
+    "guards": [],
+    "approval_invalidated": true
+  },
+  "trim-top": {
+    "transaction_id": "8e567adcc1626a9b7915b41c4d94198aa5a5df0aa9527435a4438fe950c710fd",
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-mansion-proof-trim-top-01",
+    "operation": "grid_paste",
+    "old_revision": 2,
+    "new_revision": 3,
+    "old_revision_hash": "ebf37d4123ade66f458d9e23786e81bf9fb90468b31c337792b245ac3b96e891",
+    "new_revision_hash": "9a1bad091af4ad029928d9bf36963a2476a8d589e47a34dde8f8f4104d1565cf",
+    "changed_pixels": 128,
+    "changed_bbox": {
+      "x": 0,
+      "y": 0,
+      "width": 16,
+      "height": 8
+    },
+    "region_changes": [],
+    "layer_changes": [
+      {
+        "layer_id": "art",
+        "changed_pixels": 128
+      }
+    ],
+    "frame_changes": [
+      {
+        "frame_id": "default",
+        "changed_pixels": 128
+      }
+    ],
+    "guards": [],
+    "approval_invalidated": true
+  },
+  "trim-side": {
+    "transaction_id": "2e79809e1a098ab77441de09b2219baaf5eb6619b3233f89d3179fc3c6ef0f12",
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-mansion-proof-trim-side-01",
+    "operation": "grid_paste",
+    "old_revision": 2,
+    "new_revision": 3,
+    "old_revision_hash": "0ded166d6dae583d964e7501ca912ace11280aa75777f63e1f818eb8e23637fa",
+    "new_revision_hash": "78843e6eedd30e67c59ed73b451edb71a8abfa184f0a9bec2861b47394e9d966",
+    "changed_pixels": 96,
+    "changed_bbox": {
+      "x": 1,
+      "y": 0,
+      "width": 6,
+      "height": 16
+    },
+    "region_changes": [],
+    "layer_changes": [
+      {
+        "layer_id": "art",
+        "changed_pixels": 96
+      }
+    ],
+    "frame_changes": [
+      {
+        "frame_id": "default",
+        "changed_pixels": 96
+      }
+    ],
+    "guards": [],
+    "approval_invalidated": true
+  },
+  "rose-apse": {
+    "transaction_id": "200727c1dff9c509ac08dc712e8fb578cae9a9d66d0d88a4002b2e9af67d6543",
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-mansion-proof-rose-apse-01",
+    "operation": "grid_paste",
+    "old_revision": 3,
+    "new_revision": 4,
+    "old_revision_hash": "4eab24a09ceee7c0aa844a17d2afe9348ad764b83e13d72a6e28ec264ce02314",
+    "new_revision_hash": "744aeb00758441dc9a1d2efbba79bce37786eebf3b8429a3f841a42da2e05e43",
+    "changed_pixels": 6,
+    "changed_bbox": {
+      "x": 17,
+      "y": 20,
+      "width": 14,
+      "height": 2
+    },
+    "region_changes": [],
+    "layer_changes": [
+      {
+        "layer_id": "art",
+        "changed_pixels": 6
+      }
+    ],
+    "frame_changes": [
+      {
+        "frame_id": "default",
+        "changed_pixels": 6
+      }
+    ],
+    "guards": [],
+    "approval_invalidated": true
+  },
+  "wall-masonry": {
+    "transaction_id": "0e64763516bfa3e2c82d31c558e61faee6c4d8df6e2c6ae4820233dc9589c591",
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-mansion-proof-wall-masonry-01",
+    "operation": "grid_paste",
+    "old_revision": 1,
+    "new_revision": 2,
+    "old_revision_hash": "c4001fa615366d6044eee080da39c5bba3051f20d91cfcd84412fabeeb146abf",
+    "new_revision_hash": "c7a7b82bb2ee25730e1fe092e52d2b9f59c9668c9f68087678d36ec58fd8564d",
+    "changed_pixels": 512,
+    "changed_bbox": {
+      "x": 0,
+      "y": 0,
+      "width": 32,
+      "height": 16
+    },
+    "region_changes": [],
+    "layer_changes": [
+      {
+        "layer_id": "art",
+        "changed_pixels": 512
+      }
+    ],
+    "frame_changes": [
+      {
+        "frame_id": "default",
+        "changed_pixels": 512
+      }
+    ],
+    "guards": [],
+    "approval_invalidated": true
+  }
+}

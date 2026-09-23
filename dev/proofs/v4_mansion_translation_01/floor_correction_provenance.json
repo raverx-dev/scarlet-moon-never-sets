@@ -1,0 +1,275 @@
+{
+  "source_head": "41132bc77e632d06132989cf134b7ed9719211e3",
+  "restored_pixel_basis": "paving r3 at 4ef4080fc17f53f03393ac74e205220072360c0b",
+  "before": {
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-mansion-trans01-paving",
+    "name": "Mansion Translation 01 / paving",
+    "class_id": "environment-structure",
+    "current_revision": 5,
+    "current_revision_hash": "ea5ad5194307245681a4b3d4f43db03a08e685377f202968fcbfd4226388dfb9",
+    "canvas": {
+      "width": 32,
+      "height": 16
+    },
+    "palette_id": "v4-mansion-translation-01",
+    "palette_hash": "9abf97cfd3caa5b861afc4c5c1db855d80a7eed084332b9064cd51e7454d025c",
+    "layers": [
+      {
+        "layer_id": "art",
+        "name": "Art",
+        "visible": true,
+        "order": 0
+      }
+    ],
+    "frames": [
+      {
+        "frame_id": "default",
+        "order": 0,
+        "duration_ms": 100
+      }
+    ],
+    "regions": [],
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-paving",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-paving/revision/5",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-paving/revision/5/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-paving/revision/5/text"
+    }
+  },
+  "receipt": {
+    "content": [
+      {
+        "type": "text",
+        "text": "grid_paste committed revision 5 -> 6; changed_pixels=21."
+      }
+    ],
+    "structuredContent": {
+      "receipt": {
+        "transaction_id": "4cc94586559ab652438cad101f1e7116d422c7ddaad5bfe264734ec891712399",
+        "project_id": "scarlet-moon-never-sets",
+        "asset_id": "v4-mansion-trans01-paving",
+        "operation": "grid_paste",
+        "old_revision": 5,
+        "new_revision": 6,
+        "old_revision_hash": "ea5ad5194307245681a4b3d4f43db03a08e685377f202968fcbfd4226388dfb9",
+        "new_revision_hash": "a9173888c4d445e8aa077822fbb7362709b61e3a9c39c0653b45a6a0354f1023",
+        "changed_pixels": 21,
+        "changed_bbox": {
+          "x": 1,
+          "y": 3,
+          "width": 25,
+          "height": 13
+        },
+        "region_changes": [],
+        "layer_changes": [
+          {
+            "layer_id": "art",
+            "changed_pixels": 21
+          }
+        ],
+        "frame_changes": [
+          {
+            "frame_id": "default",
+            "changed_pixels": 21
+          }
+        ],
+        "guards": [],
+        "approval_invalidated": true
+      },
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-paving",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-paving/revision/6",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-paving/revision/6/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-paving/revision/6/text",
+        "diff": "robopixel://diff/scarlet-moon-never-sets/v4-mansion-trans01-paving/5/6"
+      },
+      "presentation": {
+        "available": true,
+        "render": "none"
+      }
+    },
+    "isError": false
+  },
+  "readback": {
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mansion-trans01-paving",
+      "revision": 6,
+      "revision_hash": "a9173888c4d445e8aa077822fbb7362709b61e3a9c39c0653b45a6a0354f1023",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 32,
+        "height": 16,
+        "rows": [
+          "22222222222222207777777777777770",
+          "1111111111111110JJJJJJJJJJJJJJJ0",
+          "1111111111111110JJJJJJJJJJJJJJJ0",
+          "1111122221111110JJJJJJJJJJJJJJJ0",
+          "1111113331111110JJJJJJJJJJJJJJJ0",
+          "1111122221111110JJJJJJJJJJJJJJJ0",
+          "1111111111111110JJJJJJJJJJJJJJJ0",
+          "1111111111111110JJJJJJ7777JJJJJ0",
+          "1111111111111110JJJJJJJ222JJJJJ0",
+          "1111111111111110JJJJJJJJJJJJJJJ0",
+          "1111111111111110JJJJJJJJJJJJJJJ0",
+          "1111111111111110JJJJJJJJJJJJJJJ0",
+          "1111111111111110JJJJJJJJJJJJJJJ0",
+          "1111111111111110JJJJJJJJJJJJJJJ0",
+          "1111111111111110JJJJJJJJJJJJJJJ0",
+          "00000000000000000000000000000000"
+        ],
+        "symbols": {
+          "0": {
+            "hex": "#080810"
+          },
+          "1": {
+            "hex": "#191528"
+          },
+          "2": {
+            "hex": "#2c2438"
+          },
+          "3": {
+            "hex": "#443550"
+          },
+          "4": {
+            "hex": "#66506a"
+          },
+          "5": {
+            "hex": "#a18a92"
+          },
+          "6": {
+            "hex": "#d4c4a8"
+          },
+          "7": {
+            "hex": "#252c4a"
+          },
+          "8": {
+            "hex": "#424d79"
+          },
+          "9": {
+            "hex": "#819ca7"
+          },
+          ".": {
+            "transparent": true
+          },
+          "A": {
+            "hex": "#3a2038"
+          },
+          "B": {
+            "hex": "#6b2e49"
+          },
+          "C": {
+            "hex": "#a04c64"
+          },
+          "D": {
+            "hex": "#260b1c"
+          },
+          "E": {
+            "hex": "#490e28"
+          },
+          "F": {
+            "hex": "#84233e"
+          },
+          "G": {
+            "hex": "#ca4963"
+          },
+          "H": {
+            "hex": "#97764f"
+          },
+          "I": {
+            "hex": "#ffd19a"
+          },
+          "J": {
+            "hex": "#111421"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 32,
+        "height": 16,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mansion-trans01-paving/revision/6/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Rendered v4-mansion-trans01-paving revision 6 frame default (32x16)."
+        },
+        {
+          "type": "image",
+          "data": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAYAAAB3AH1ZAAAAUUlEQVR42mPQUbH4Ty7m4BD4r6rjRTYG6WeQFNX4Ty4GGSAookg2HrwOQA/qAQkBF9MAOB6ZITDkEyF6lhuQEECOxpEXBaMOGHUA0Q4AEQOJAbgtm+dLlW+6AAAAAElFTkSuQmCC",
+          "mimeType": "image/png"
+        }
+      ],
+      "structuredContent": {
+        "project_id": "scarlet-moon-never-sets",
+        "asset_id": "v4-mansion-trans01-paving",
+        "revision": 6,
+        "revision_hash": "a9173888c4d445e8aa077822fbb7362709b61e3a9c39c0653b45a6a0354f1023",
+        "frame_id": "default",
+        "width": 32,
+        "height": 16,
+        "scale": 1,
+        "render_hash": "c5b1d81ab210436b6105cacbdfcbe6b483ebb6b8f23dde5e2feee6e3c5cca76e",
+        "text": {
+          "frame_id": "default",
+          "width": 32,
+          "height": 16,
+          "rows": [
+            "22222222222222207777777777777770",
+            "1111111111111110JJJJJJJJJJJJJJJ0",
+            "1111111111111110JJJJJJJJJJJJJJJ0",
+            "1111122221111110JJJJJJJJJJJJJJJ0",
+            "1111113331111110JJJJJJJJJJJJJJJ0",
+            "1111122221111110JJJJJJJJJJJJJJJ0",
+            "1111111111111110JJJJJJJJJJJJJJJ0",
+            "1111111111111110JJJJJJ7777JJJJJ0",
+            "1111111111111110JJJJJJJ222JJJJJ0",
+            "1111111111111110JJJJJJJJJJJJJJJ0",
+            "1111111111111110JJJJJJJJJJJJJJJ0",
+            "1111111111111110JJJJJJJJJJJJJJJ0",
+            "1111111111111110JJJJJJJJJJJJJJJ0",
+            "1111111111111110JJJJJJJJJJJJJJJ0",
+            "1111111111111110JJJJJJJJJJJJJJJ0",
+            "00000000000000000000000000000000"
+          ]
+        },
+        "resources": {
+          "view": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-paving/revision/6/view"
+        }
+      },
+      "isError": false
+    },
+    "approval": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Current subject 6e525b9e028ad86ad9e78df449fafaf8d6cf0d261b3a83280a6151adfdf8ca4e is not approved."
+        }
+      ],
+      "structuredContent": {
+        "status": {
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-trans01-paving",
+          "revision": 6,
+          "revision_hash": "a9173888c4d445e8aa077822fbb7362709b61e3a9c39c0653b45a6a0354f1023",
+          "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+          "approval_subject_hash": "6e525b9e028ad86ad9e78df449fafaf8d6cf0d261b3a83280a6151adfdf8ca4e",
+          "approved": false,
+          "active_approval_ids": [],
+          "historical_approval_ids": []
+        }
+      },
+      "isError": false
+    }
+  }
+}

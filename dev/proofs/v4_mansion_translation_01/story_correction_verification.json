@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "reviewed_head": "37c2e611d469925fbc4e99e79bc84ddc7ed7934f",
+  "scope": "story only",
+  "gameplay_layout_unchanged": true,
+  "gameplay_png_sha256": "effc06c1749ca40119f555147898ba6c1f6793e9c7afd973d32e133ecb16f8bb",
+  "protected_translation_files_unchanged": 47,
+  "previous_story_preserved_exactly": true,
+  "story_dimensions": [
+    256,
+    240
+  ],
+  "story_sha256": "1cd3a22a4154101ce28b6d38c57c32f94ea299c12b6e89b7032a2ebd6ca2fec7",
+  "canonical_story_assets_reconfirmed": 15,
+  "canonical_assets_changed": 0,
+  "story_reproduces_exactly": true,
+  "continuous_crimson_path_stairs_to_runner": true,
+  "file_scope": "PASS",
+  "dialogue_coverage": [
+    4,
+    174,
+    248,
+    62
+  ],
+  "limits": "Static composition only; Owner visual review pending; no runtime or approval claim."
+}

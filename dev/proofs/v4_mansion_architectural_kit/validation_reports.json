@@ -1,0 +1,2125 @@
+{
+  "window-bay": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-eb2a66e6-dd1c-41a7-9a0a-b56a2d2a293e",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mansion-proof-window-bay-01",
+      "revision": 3,
+      "revision_hash": "728d687127e2ddc8ae6938ee5c8b74f40ce0f6df0b4fe01a990a78be5cba047d",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "3e8a645f02a067844acc740daa674c9399ee3d84026d910ee83d6b21d97d7b33",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (11, 7)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 11,
+            "y": 7
+          },
+          "fingerprint": "3e8a645f02a067844acc740daa674c9399ee3d84026d910ee83d6b21d97d7b33"
+        },
+        {
+          "finding_id": "c1fe88160191a87294ab05435c072ab55231d5ae0b604a960ef041433c291c4b",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (7, 11)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 7,
+            "y": 11
+          },
+          "fingerprint": "c1fe88160191a87294ab05435c072ab55231d5ae0b604a960ef041433c291c4b"
+        },
+        {
+          "finding_id": "3127f443d1b6e9b9cb0c301e6f479aa70db4ac0b0c84aac63c0d0af773948c13",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (5, 15)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 5,
+            "y": 15
+          },
+          "fingerprint": "3127f443d1b6e9b9cb0c301e6f479aa70db4ac0b0c84aac63c0d0af773948c13"
+        },
+        {
+          "finding_id": "f93cf9f146dba1e6d45c40411ba1c1e8bfab5c03c1c26b5f0ddc32e27293c901",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (6, 19)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 6,
+            "y": 19
+          },
+          "fingerprint": "f93cf9f146dba1e6d45c40411ba1c1e8bfab5c03c1c26b5f0ddc32e27293c901"
+        },
+        {
+          "finding_id": "881f98ca6a22863aeb03dcb720e9f8615a8c6117db36530bdd5c3355c4ed59aa",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (25, 19)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 25,
+            "y": 19
+          },
+          "fingerprint": "881f98ca6a22863aeb03dcb720e9f8615a8c6117db36530bdd5c3355c4ed59aa"
+        },
+        {
+          "finding_id": "576954a8fd5ee02a1b5f457b3dae3677317805d8b76be74abf4a2d9a87961040",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (27, 19)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 27,
+            "y": 19
+          },
+          "fingerprint": "576954a8fd5ee02a1b5f457b3dae3677317805d8b76be74abf4a2d9a87961040"
+        },
+        {
+          "finding_id": "7bc0465feb0f39a3586af4ba39c0484aa463db502a037ec7c1a11a8ed1031554",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-6' (index 7) is used 0 time(s); max_usage is 0",
+          "fingerprint": "7bc0465feb0f39a3586af4ba39c0484aa463db502a037ec7c1a11a8ed1031554"
+        },
+        {
+          "finding_id": "4b8ff8f42af55792b8ad4ab496f533cbe17b8ae5c851d5dec06a877d3af7c890",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-a' (index 11) is used 0 time(s); max_usage is 0",
+          "fingerprint": "4b8ff8f42af55792b8ad4ab496f533cbe17b8ae5c851d5dec06a877d3af7c890"
+        },
+        {
+          "finding_id": "f1a64214c4e7382a9b0ca62e99e0a9094ab981a34284cb27dca5c9d45a567c28",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-b' (index 12) is used 0 time(s); max_usage is 0",
+          "fingerprint": "f1a64214c4e7382a9b0ca62e99e0a9094ab981a34284cb27dca5c9d45a567c28"
+        },
+        {
+          "finding_id": "4a5b047024301e6f6a311e91db6f02abbc5a6cc6cc1b0efa4b7c14bf3f3765e7",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-c' (index 13) is used 0 time(s); max_usage is 0",
+          "fingerprint": "4a5b047024301e6f6a311e91db6f02abbc5a6cc6cc1b0efa4b7c14bf3f3765e7"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-09-22T09:55:33.342Z"
+    }
+  },
+  "wall-panel": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-318a1498-e9f1-4de5-8b78-0773607664fd",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mansion-proof-wall-panel-01",
+      "revision": 3,
+      "revision_hash": "10c31697ac6a716fec2adc86af9d4b4c21c0f1b223c10b3b8673eab3bb7e1820",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "941d74a95e2eece1f7fd6d8c17c5e926a61ce67ec5f5353a51d4dbb8e55feeca",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (7, 6)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 7,
+            "y": 6
+          },
+          "fingerprint": "941d74a95e2eece1f7fd6d8c17c5e926a61ce67ec5f5353a51d4dbb8e55feeca"
+        },
+        {
+          "finding_id": "df38d85fcb52495b70e7c3fdf7ac6bc728be8960896529d41796ae5bf3e3fe87",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-4' (index 5) is used 0 time(s); max_usage is 0",
+          "fingerprint": "df38d85fcb52495b70e7c3fdf7ac6bc728be8960896529d41796ae5bf3e3fe87"
+        },
+        {
+          "finding_id": "1733a7c4f7c26bc88744477fa73c20d88012579557233c58bf73282a2fcbbda2",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-5' (index 6) is used 0 time(s); max_usage is 0",
+          "fingerprint": "1733a7c4f7c26bc88744477fa73c20d88012579557233c58bf73282a2fcbbda2"
+        },
+        {
+          "finding_id": "7bc0465feb0f39a3586af4ba39c0484aa463db502a037ec7c1a11a8ed1031554",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-6' (index 7) is used 0 time(s); max_usage is 0",
+          "fingerprint": "7bc0465feb0f39a3586af4ba39c0484aa463db502a037ec7c1a11a8ed1031554"
+        },
+        {
+          "finding_id": "e5652ae794c7c8c6aa7128de4418437e647039d61830b56c3ab2d6d890924d8b",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-7' (index 8) is used 0 time(s); max_usage is 0",
+          "fingerprint": "e5652ae794c7c8c6aa7128de4418437e647039d61830b56c3ab2d6d890924d8b"
+        },
+        {
+          "finding_id": "c2ea84f9efaa9d06f8139a73fda146d856471ef4006b2e0df4b6253d5a642552",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-8' (index 9) is used 0 time(s); max_usage is 0",
+          "fingerprint": "c2ea84f9efaa9d06f8139a73fda146d856471ef4006b2e0df4b6253d5a642552"
+        },
+        {
+          "finding_id": "e902f2594a8df461800bac8485771be37d5edb5adfffd7768cf77817aa10f88e",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-9' (index 10) is used 0 time(s); max_usage is 0",
+          "fingerprint": "e902f2594a8df461800bac8485771be37d5edb5adfffd7768cf77817aa10f88e"
+        },
+        {
+          "finding_id": "4b8ff8f42af55792b8ad4ab496f533cbe17b8ae5c851d5dec06a877d3af7c890",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-a' (index 11) is used 0 time(s); max_usage is 0",
+          "fingerprint": "4b8ff8f42af55792b8ad4ab496f533cbe17b8ae5c851d5dec06a877d3af7c890"
+        },
+        {
+          "finding_id": "f1a64214c4e7382a9b0ca62e99e0a9094ab981a34284cb27dca5c9d45a567c28",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-b' (index 12) is used 0 time(s); max_usage is 0",
+          "fingerprint": "f1a64214c4e7382a9b0ca62e99e0a9094ab981a34284cb27dca5c9d45a567c28"
+        },
+        {
+          "finding_id": "4a5b047024301e6f6a311e91db6f02abbc5a6cc6cc1b0efa4b7c14bf3f3765e7",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-c' (index 13) is used 0 time(s); max_usage is 0",
+          "fingerprint": "4a5b047024301e6f6a311e91db6f02abbc5a6cc6cc1b0efa4b7c14bf3f3765e7"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-09-22T09:55:33.826Z"
+    }
+  },
+  "column": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-3436b270-75bd-48e5-a886-105e05e22fca",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mansion-proof-column-01",
+      "revision": 3,
+      "revision_hash": "32b38f38f16c8deb716dfb79420d92cb52688a2a801fbb8a7e38218e6d0942a7",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "299feeef2584b6586fc9dafccd6489c30467ab5cd66b70e54d882a26ed5a4d72",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (1, 2)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 1,
+            "y": 2
+          },
+          "fingerprint": "299feeef2584b6586fc9dafccd6489c30467ab5cd66b70e54d882a26ed5a4d72"
+        },
+        {
+          "finding_id": "a68644e2b92ea0eeba7a888a8e91c3a5af5f9736e569e8917af3adaf9f693b66",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 6 is an orphan authored pixel at (1, 3)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 1,
+            "y": 3
+          },
+          "fingerprint": "a68644e2b92ea0eeba7a888a8e91c3a5af5f9736e569e8917af3adaf9f693b66"
+        },
+        {
+          "finding_id": "092da4c7f4a40178e5b20f9a27b5ec47e8e74d11d85ecf4486e80cb31a9a0081",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (4, 4)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 4,
+            "y": 4
+          },
+          "fingerprint": "092da4c7f4a40178e5b20f9a27b5ec47e8e74d11d85ecf4486e80cb31a9a0081"
+        },
+        {
+          "finding_id": "b611642a9a4f55b53a0805f9b79fa6cffabff363b686bdc156040decb42c4c8c",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (7, 4)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 7,
+            "y": 4
+          },
+          "fingerprint": "b611642a9a4f55b53a0805f9b79fa6cffabff363b686bdc156040decb42c4c8c"
+        },
+        {
+          "finding_id": "e8eb0ef1a11d3a2f23e2cc34ad8dc49d9c67964ecb4ab1a6e03b4bf1c6392776",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (4, 9)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 4,
+            "y": 9
+          },
+          "fingerprint": "e8eb0ef1a11d3a2f23e2cc34ad8dc49d9c67964ecb4ab1a6e03b4bf1c6392776"
+        },
+        {
+          "finding_id": "027f8438b731ef15bb555a7e2e2b3655f80ab0eff094e1e7321db9c4de77cfac",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (4, 23)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 4,
+            "y": 23
+          },
+          "fingerprint": "027f8438b731ef15bb555a7e2e2b3655f80ab0eff094e1e7321db9c4de77cfac"
+        },
+        {
+          "finding_id": "59687fa59f69b9be9b72614228bc5aa9f6f922edbe6fe02f703dfdb11aaa0657",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (8, 23)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 8,
+            "y": 23
+          },
+          "fingerprint": "59687fa59f69b9be9b72614228bc5aa9f6f922edbe6fe02f703dfdb11aaa0657"
+        },
+        {
+          "finding_id": "f89acb9973c431d589fbbd64fac97f7f0927a8f53f20bcaeba6f6e05ae538c49",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (4, 39)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 4,
+            "y": 39
+          },
+          "fingerprint": "f89acb9973c431d589fbbd64fac97f7f0927a8f53f20bcaeba6f6e05ae538c49"
+        },
+        {
+          "finding_id": "bbf5ae7004159e6070a2dea416287f28b1739c1b27f8ca9b4de543be871c2f3f",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (8, 39)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 8,
+            "y": 39
+          },
+          "fingerprint": "bbf5ae7004159e6070a2dea416287f28b1739c1b27f8ca9b4de543be871c2f3f"
+        },
+        {
+          "finding_id": "bca4e4ce9b90a504956e39d3fa8ecd2c62068c022a893f9c599632ecb49e9b27",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (3, 53)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 3,
+            "y": 53
+          },
+          "fingerprint": "bca4e4ce9b90a504956e39d3fa8ecd2c62068c022a893f9c599632ecb49e9b27"
+        },
+        {
+          "finding_id": "96405ed8f1d22ed0467c83a1ed20d8fbf0a883bb7e4ddcfa8a2ad4fa8c35829f",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-1' (index 2) is used 0 time(s); max_usage is 0",
+          "fingerprint": "96405ed8f1d22ed0467c83a1ed20d8fbf0a883bb7e4ddcfa8a2ad4fa8c35829f"
+        },
+        {
+          "finding_id": "7bc0465feb0f39a3586af4ba39c0484aa463db502a037ec7c1a11a8ed1031554",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-6' (index 7) is used 0 time(s); max_usage is 0",
+          "fingerprint": "7bc0465feb0f39a3586af4ba39c0484aa463db502a037ec7c1a11a8ed1031554"
+        },
+        {
+          "finding_id": "e5652ae794c7c8c6aa7128de4418437e647039d61830b56c3ab2d6d890924d8b",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-7' (index 8) is used 0 time(s); max_usage is 0",
+          "fingerprint": "e5652ae794c7c8c6aa7128de4418437e647039d61830b56c3ab2d6d890924d8b"
+        },
+        {
+          "finding_id": "c2ea84f9efaa9d06f8139a73fda146d856471ef4006b2e0df4b6253d5a642552",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-8' (index 9) is used 0 time(s); max_usage is 0",
+          "fingerprint": "c2ea84f9efaa9d06f8139a73fda146d856471ef4006b2e0df4b6253d5a642552"
+        },
+        {
+          "finding_id": "e902f2594a8df461800bac8485771be37d5edb5adfffd7768cf77817aa10f88e",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-9' (index 10) is used 0 time(s); max_usage is 0",
+          "fingerprint": "e902f2594a8df461800bac8485771be37d5edb5adfffd7768cf77817aa10f88e"
+        },
+        {
+          "finding_id": "4b8ff8f42af55792b8ad4ab496f533cbe17b8ae5c851d5dec06a877d3af7c890",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-a' (index 11) is used 0 time(s); max_usage is 0",
+          "fingerprint": "4b8ff8f42af55792b8ad4ab496f533cbe17b8ae5c851d5dec06a877d3af7c890"
+        },
+        {
+          "finding_id": "f1a64214c4e7382a9b0ca62e99e0a9094ab981a34284cb27dca5c9d45a567c28",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-b' (index 12) is used 0 time(s); max_usage is 0",
+          "fingerprint": "f1a64214c4e7382a9b0ca62e99e0a9094ab981a34284cb27dca5c9d45a567c28"
+        },
+        {
+          "finding_id": "4a5b047024301e6f6a311e91db6f02abbc5a6cc6cc1b0efa4b7c14bf3f3765e7",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-c' (index 13) is used 0 time(s); max_usage is 0",
+          "fingerprint": "4a5b047024301e6f6a311e91db6f02abbc5a6cc6cc1b0efa4b7c14bf3f3765e7"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-09-22T09:55:34.349Z"
+    }
+  },
+  "floor": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-bdd30e4b-56c1-493a-8e5a-b923cdad17a0",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mansion-proof-floor-01",
+      "revision": 4,
+      "revision_hash": "e2978708cc49db568511dbff6692a52517b862634fdb66befa16088f25034cd3",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "f53ee787c0d314eb9cd5130df5f483992575c0e48059ed447554e86799564522",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (0, 0)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 0,
+            "y": 0
+          },
+          "fingerprint": "f53ee787c0d314eb9cd5130df5f483992575c0e48059ed447554e86799564522"
+        },
+        {
+          "finding_id": "1c01fb42d24d5a129a93a851ca87c082fda97880fa305b48806d24c03c1fd246",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (1, 0)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 1,
+            "y": 0
+          },
+          "fingerprint": "1c01fb42d24d5a129a93a851ca87c082fda97880fa305b48806d24c03c1fd246"
+        },
+        {
+          "finding_id": "86ab616924523d64c945ef7a7a4e29c925322e62a110334ed3318ee1e414ff1d",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (31, 0)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 31,
+            "y": 0
+          },
+          "fingerprint": "86ab616924523d64c945ef7a7a4e29c925322e62a110334ed3318ee1e414ff1d"
+        },
+        {
+          "finding_id": "a57cf5f157759b63800cfe0ca9c161785db515224b135b61a66c886079e929ea",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (2, 1)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 2,
+            "y": 1
+          },
+          "fingerprint": "a57cf5f157759b63800cfe0ca9c161785db515224b135b61a66c886079e929ea"
+        },
+        {
+          "finding_id": "dfabd83dd4005593f27688c2f346e02b151f8a171e4408d3fe8d5828dc0a7155",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (3, 1)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 3,
+            "y": 1
+          },
+          "fingerprint": "dfabd83dd4005593f27688c2f346e02b151f8a171e4408d3fe8d5828dc0a7155"
+        },
+        {
+          "finding_id": "b71767797d342c036f941791371cfee9cc509577f18d51bb0626d4f5096c3a11",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (29, 1)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 29,
+            "y": 1
+          },
+          "fingerprint": "b71767797d342c036f941791371cfee9cc509577f18d51bb0626d4f5096c3a11"
+        },
+        {
+          "finding_id": "a14d69ed5c9588eddcea086490b2910317777951c96c5b50bd55c10ada08deab",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (4, 2)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 4,
+            "y": 2
+          },
+          "fingerprint": "a14d69ed5c9588eddcea086490b2910317777951c96c5b50bd55c10ada08deab"
+        },
+        {
+          "finding_id": "6fed20a59c1d9e3361effd86b086ebdd7ff1343ad4146d33a1706283f38881b8",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (5, 2)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 5,
+            "y": 2
+          },
+          "fingerprint": "6fed20a59c1d9e3361effd86b086ebdd7ff1343ad4146d33a1706283f38881b8"
+        },
+        {
+          "finding_id": "a1b8218546edf147c38fc1c020ebdc3558283789104ae3b1fcb1408b4c15556a",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (27, 2)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 27,
+            "y": 2
+          },
+          "fingerprint": "a1b8218546edf147c38fc1c020ebdc3558283789104ae3b1fcb1408b4c15556a"
+        },
+        {
+          "finding_id": "4eab4b56ad149fe5958204df8d2b0bc18ba4f139cb57702b812ba32a4fcf07ac",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (6, 3)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 6,
+            "y": 3
+          },
+          "fingerprint": "4eab4b56ad149fe5958204df8d2b0bc18ba4f139cb57702b812ba32a4fcf07ac"
+        },
+        {
+          "finding_id": "3c74f0f6791e8b11cb42451195cd885fcd0a13dd71dd3b3e8bbab47365ada904",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (7, 3)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 7,
+            "y": 3
+          },
+          "fingerprint": "3c74f0f6791e8b11cb42451195cd885fcd0a13dd71dd3b3e8bbab47365ada904"
+        },
+        {
+          "finding_id": "499ff4a18022a6708ba032aa16a70c2047f813ffeb1662e0dc082488b085da99",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (25, 3)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 25,
+            "y": 3
+          },
+          "fingerprint": "499ff4a18022a6708ba032aa16a70c2047f813ffeb1662e0dc082488b085da99"
+        },
+        {
+          "finding_id": "23ab4c03afd418d2fb6d6b0e5f2093ec594aa9374e26e08c7b6d66be4306ae07",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (8, 4)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 8,
+            "y": 4
+          },
+          "fingerprint": "23ab4c03afd418d2fb6d6b0e5f2093ec594aa9374e26e08c7b6d66be4306ae07"
+        },
+        {
+          "finding_id": "51a8272a4a21fd98ca277814033b991c1ab0b9551a55ca4d30b7ac3228e82ff5",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (9, 4)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 9,
+            "y": 4
+          },
+          "fingerprint": "51a8272a4a21fd98ca277814033b991c1ab0b9551a55ca4d30b7ac3228e82ff5"
+        },
+        {
+          "finding_id": "e70c761535d9b779da5ea898da50e4fd406844f04d59681a5778ddb9dabf626b",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (23, 4)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 23,
+            "y": 4
+          },
+          "fingerprint": "e70c761535d9b779da5ea898da50e4fd406844f04d59681a5778ddb9dabf626b"
+        },
+        {
+          "finding_id": "99ca16b3039b3c671ba443eb61ae28b62c31f51347e34be7d47d24ad43b8b069",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (10, 5)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 10,
+            "y": 5
+          },
+          "fingerprint": "99ca16b3039b3c671ba443eb61ae28b62c31f51347e34be7d47d24ad43b8b069"
+        },
+        {
+          "finding_id": "fd31ab79e4e6d4bf09270a74613aff8d074cdf9e3f66f66eec03771ca8725235",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (11, 5)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 11,
+            "y": 5
+          },
+          "fingerprint": "fd31ab79e4e6d4bf09270a74613aff8d074cdf9e3f66f66eec03771ca8725235"
+        },
+        {
+          "finding_id": "f4bb9b65366ebf96ba75c85e85b2f762d662d9d679fd59ff7cde912193707670",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (21, 5)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 21,
+            "y": 5
+          },
+          "fingerprint": "f4bb9b65366ebf96ba75c85e85b2f762d662d9d679fd59ff7cde912193707670"
+        },
+        {
+          "finding_id": "6f5127a84a7028c662cfe9c7b7da4dcedfd2b29fbc7c2da6c7be926808f19b0d",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (12, 6)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 12,
+            "y": 6
+          },
+          "fingerprint": "6f5127a84a7028c662cfe9c7b7da4dcedfd2b29fbc7c2da6c7be926808f19b0d"
+        },
+        {
+          "finding_id": "6a1475d843f83332989abaeb9e2abf11f54d433c719c2747fc1044cc9ebabcfe",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (13, 6)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 13,
+            "y": 6
+          },
+          "fingerprint": "6a1475d843f83332989abaeb9e2abf11f54d433c719c2747fc1044cc9ebabcfe"
+        },
+        {
+          "finding_id": "51b0a29d29437decc5458f190e98e752772a2da8958530d290d2fc5b8b4e1e6e",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (15, 7)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 15,
+            "y": 7
+          },
+          "fingerprint": "51b0a29d29437decc5458f190e98e752772a2da8958530d290d2fc5b8b4e1e6e"
+        },
+        {
+          "finding_id": "c7537f310c9ee84b3827effb30e157f46524ae78b9e4f1632985ac40b96ab874",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (17, 8)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 17,
+            "y": 8
+          },
+          "fingerprint": "c7537f310c9ee84b3827effb30e157f46524ae78b9e4f1632985ac40b96ab874"
+        },
+        {
+          "finding_id": "f71d67be4e0f7597ad549f2cedc7f749b99dafce3b84d56f89c18a5dd326e423",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (13, 9)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 13,
+            "y": 9
+          },
+          "fingerprint": "f71d67be4e0f7597ad549f2cedc7f749b99dafce3b84d56f89c18a5dd326e423"
+        },
+        {
+          "finding_id": "3c576ee27b525a2e484592db41b6cd6783610088e4adca86d4dcad255784cc07",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (18, 9)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 18,
+            "y": 9
+          },
+          "fingerprint": "3c576ee27b525a2e484592db41b6cd6783610088e4adca86d4dcad255784cc07"
+        },
+        {
+          "finding_id": "1fc92ee60e4b37e770eaebf85f61a7109f0af611a8e6ffedf61da7ae4504c449",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (19, 9)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 19,
+            "y": 9
+          },
+          "fingerprint": "1fc92ee60e4b37e770eaebf85f61a7109f0af611a8e6ffedf61da7ae4504c449"
+        },
+        {
+          "finding_id": "08d780ad09669d1b68bcbd3df0e5d1bf7611e4eb8a2be4df15e7f3640497a67d",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (11, 10)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 11,
+            "y": 10
+          },
+          "fingerprint": "08d780ad09669d1b68bcbd3df0e5d1bf7611e4eb8a2be4df15e7f3640497a67d"
+        },
+        {
+          "finding_id": "5ea514124b0de0d1c3d699b6e495866297568b90c86469609551e7c370fbcce4",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (20, 10)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 20,
+            "y": 10
+          },
+          "fingerprint": "5ea514124b0de0d1c3d699b6e495866297568b90c86469609551e7c370fbcce4"
+        },
+        {
+          "finding_id": "04400ea186c81b6989c45abef1df22aa173fa62712d67942aa7d796a2d191d1d",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (21, 10)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 21,
+            "y": 10
+          },
+          "fingerprint": "04400ea186c81b6989c45abef1df22aa173fa62712d67942aa7d796a2d191d1d"
+        },
+        {
+          "finding_id": "40d281f3a1e2bea00d1d0e653e22d71f6014b5fc936d35556290c4b1fa7a4aa7",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (9, 11)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 9,
+            "y": 11
+          },
+          "fingerprint": "40d281f3a1e2bea00d1d0e653e22d71f6014b5fc936d35556290c4b1fa7a4aa7"
+        },
+        {
+          "finding_id": "53d76504d7b8a6f0fd5141a81150de608640d33f55517157e7f73a11efac4147",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (22, 11)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 22,
+            "y": 11
+          },
+          "fingerprint": "53d76504d7b8a6f0fd5141a81150de608640d33f55517157e7f73a11efac4147"
+        },
+        {
+          "finding_id": "c044c11b6b745f390eb81c57a1a5d83964b4f1f57d8315d121252f3fbbf9bb67",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (23, 11)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 23,
+            "y": 11
+          },
+          "fingerprint": "c044c11b6b745f390eb81c57a1a5d83964b4f1f57d8315d121252f3fbbf9bb67"
+        },
+        {
+          "finding_id": "34ad9934e7e9a17a81ca867f1c005227bd09108f7222e677a042011c049e8869",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (7, 12)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 7,
+            "y": 12
+          },
+          "fingerprint": "34ad9934e7e9a17a81ca867f1c005227bd09108f7222e677a042011c049e8869"
+        },
+        {
+          "finding_id": "0557434eaf3c198c3d6449a119fcd0e247e68d44be8b3523de5e963cc7bf5c44",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (24, 12)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 24,
+            "y": 12
+          },
+          "fingerprint": "0557434eaf3c198c3d6449a119fcd0e247e68d44be8b3523de5e963cc7bf5c44"
+        },
+        {
+          "finding_id": "4ccaf21e419b45c3daa5ad2aecb12b9cb88a3e402ad068b1676c97868d6168aa",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (25, 12)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 25,
+            "y": 12
+          },
+          "fingerprint": "4ccaf21e419b45c3daa5ad2aecb12b9cb88a3e402ad068b1676c97868d6168aa"
+        },
+        {
+          "finding_id": "f2cb6e36316cb268b04702a9248384f5cc14701982f4e78d9affdba0b6fb66fc",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (5, 13)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 5,
+            "y": 13
+          },
+          "fingerprint": "f2cb6e36316cb268b04702a9248384f5cc14701982f4e78d9affdba0b6fb66fc"
+        },
+        {
+          "finding_id": "7982cf4af209c0c6c2df29b1efa79f1d10a521771f6a0d7bce598bc264461bc6",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (26, 13)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 26,
+            "y": 13
+          },
+          "fingerprint": "7982cf4af209c0c6c2df29b1efa79f1d10a521771f6a0d7bce598bc264461bc6"
+        },
+        {
+          "finding_id": "2715c22b9caeb99b238bf30dd980f03f6058e0eaba700a213d7dddb64768edb7",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (27, 13)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 27,
+            "y": 13
+          },
+          "fingerprint": "2715c22b9caeb99b238bf30dd980f03f6058e0eaba700a213d7dddb64768edb7"
+        },
+        {
+          "finding_id": "e6997170d55767bbc34ad18d517968199e8bd1557dcc732bf8293d0c4f8ca6b2",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (3, 14)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 3,
+            "y": 14
+          },
+          "fingerprint": "e6997170d55767bbc34ad18d517968199e8bd1557dcc732bf8293d0c4f8ca6b2"
+        },
+        {
+          "finding_id": "d3a098b64b8da592e26244eaec8f8ab69f44ae8c8aae0c04adbc4991a94fc08a",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (28, 14)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 28,
+            "y": 14
+          },
+          "fingerprint": "d3a098b64b8da592e26244eaec8f8ab69f44ae8c8aae0c04adbc4991a94fc08a"
+        },
+        {
+          "finding_id": "a78c7142ee6908f81deaf743920936a4b1d4e4366202c26278ee478c9a85bf5a",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (29, 14)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 29,
+            "y": 14
+          },
+          "fingerprint": "a78c7142ee6908f81deaf743920936a4b1d4e4366202c26278ee478c9a85bf5a"
+        },
+        {
+          "finding_id": "3ffe8ef7b038a107cccadacc9867cd68fcdaa53275447cd1fff333d9da4739b7",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (1, 15)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 1,
+            "y": 15
+          },
+          "fingerprint": "3ffe8ef7b038a107cccadacc9867cd68fcdaa53275447cd1fff333d9da4739b7"
+        },
+        {
+          "finding_id": "2ec2097716b79eb0763ff6405a2649bc2a4b111fb46eb2c442fbd2e2e4f3d648",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (30, 15)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 30,
+            "y": 15
+          },
+          "fingerprint": "2ec2097716b79eb0763ff6405a2649bc2a4b111fb46eb2c442fbd2e2e4f3d648"
+        },
+        {
+          "finding_id": "da0529eb1ada8693339c6448f264dd41c5f1f6fb4bb6d0c85c5c38a83106a830",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (31, 15)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 31,
+            "y": 15
+          },
+          "fingerprint": "da0529eb1ada8693339c6448f264dd41c5f1f6fb4bb6d0c85c5c38a83106a830"
+        },
+        {
+          "finding_id": "a095a2421e826c13de8ab95f50d6f5406f5ae5e51c37597032a5a889f8b17518",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-0' (index 1) is used 0 time(s); max_usage is 0",
+          "fingerprint": "a095a2421e826c13de8ab95f50d6f5406f5ae5e51c37597032a5a889f8b17518"
+        },
+        {
+          "finding_id": "df38d85fcb52495b70e7c3fdf7ac6bc728be8960896529d41796ae5bf3e3fe87",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-4' (index 5) is used 0 time(s); max_usage is 0",
+          "fingerprint": "df38d85fcb52495b70e7c3fdf7ac6bc728be8960896529d41796ae5bf3e3fe87"
+        },
+        {
+          "finding_id": "1733a7c4f7c26bc88744477fa73c20d88012579557233c58bf73282a2fcbbda2",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-5' (index 6) is used 0 time(s); max_usage is 0",
+          "fingerprint": "1733a7c4f7c26bc88744477fa73c20d88012579557233c58bf73282a2fcbbda2"
+        },
+        {
+          "finding_id": "7bc0465feb0f39a3586af4ba39c0484aa463db502a037ec7c1a11a8ed1031554",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-6' (index 7) is used 0 time(s); max_usage is 0",
+          "fingerprint": "7bc0465feb0f39a3586af4ba39c0484aa463db502a037ec7c1a11a8ed1031554"
+        },
+        {
+          "finding_id": "e5652ae794c7c8c6aa7128de4418437e647039d61830b56c3ab2d6d890924d8b",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-7' (index 8) is used 0 time(s); max_usage is 0",
+          "fingerprint": "e5652ae794c7c8c6aa7128de4418437e647039d61830b56c3ab2d6d890924d8b"
+        },
+        {
+          "finding_id": "c2ea84f9efaa9d06f8139a73fda146d856471ef4006b2e0df4b6253d5a642552",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-8' (index 9) is used 0 time(s); max_usage is 0",
+          "fingerprint": "c2ea84f9efaa9d06f8139a73fda146d856471ef4006b2e0df4b6253d5a642552"
+        },
+        {
+          "finding_id": "e902f2594a8df461800bac8485771be37d5edb5adfffd7768cf77817aa10f88e",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-9' (index 10) is used 0 time(s); max_usage is 0",
+          "fingerprint": "e902f2594a8df461800bac8485771be37d5edb5adfffd7768cf77817aa10f88e"
+        },
+        {
+          "finding_id": "4b8ff8f42af55792b8ad4ab496f533cbe17b8ae5c851d5dec06a877d3af7c890",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-a' (index 11) is used 0 time(s); max_usage is 0",
+          "fingerprint": "4b8ff8f42af55792b8ad4ab496f533cbe17b8ae5c851d5dec06a877d3af7c890"
+        },
+        {
+          "finding_id": "f1a64214c4e7382a9b0ca62e99e0a9094ab981a34284cb27dca5c9d45a567c28",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-b' (index 12) is used 0 time(s); max_usage is 0",
+          "fingerprint": "f1a64214c4e7382a9b0ca62e99e0a9094ab981a34284cb27dca5c9d45a567c28"
+        },
+        {
+          "finding_id": "4a5b047024301e6f6a311e91db6f02abbc5a6cc6cc1b0efa4b7c14bf3f3765e7",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-c' (index 13) is used 0 time(s); max_usage is 0",
+          "fingerprint": "4a5b047024301e6f6a311e91db6f02abbc5a6cc6cc1b0efa4b7c14bf3f3765e7"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-09-22T09:55:34.796Z"
+    }
+  },
+  "carpet-field": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-491335bf-1699-46f1-8c74-2e6da72e8fc5",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mansion-proof-carpet-field-01",
+      "revision": 3,
+      "revision_hash": "1c4894a5369c9acaab528ec9d8c265a74068b9ed2189e597aa36de5e9164ef63",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "a095a2421e826c13de8ab95f50d6f5406f5ae5e51c37597032a5a889f8b17518",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-0' (index 1) is used 0 time(s); max_usage is 0",
+          "fingerprint": "a095a2421e826c13de8ab95f50d6f5406f5ae5e51c37597032a5a889f8b17518"
+        },
+        {
+          "finding_id": "8cc3413b35799bdb2fc00f02367bd67df728a52a70aa22f7422a8011f10bcff1",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-2' (index 3) is used 0 time(s); max_usage is 0",
+          "fingerprint": "8cc3413b35799bdb2fc00f02367bd67df728a52a70aa22f7422a8011f10bcff1"
+        },
+        {
+          "finding_id": "70b8e1236ac6ae93b4ccc4ac8478e2fff3cf472b4f302f16406d8ef801c13e36",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-3' (index 4) is used 0 time(s); max_usage is 0",
+          "fingerprint": "70b8e1236ac6ae93b4ccc4ac8478e2fff3cf472b4f302f16406d8ef801c13e36"
+        },
+        {
+          "finding_id": "df38d85fcb52495b70e7c3fdf7ac6bc728be8960896529d41796ae5bf3e3fe87",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-4' (index 5) is used 0 time(s); max_usage is 0",
+          "fingerprint": "df38d85fcb52495b70e7c3fdf7ac6bc728be8960896529d41796ae5bf3e3fe87"
+        },
+        {
+          "finding_id": "1733a7c4f7c26bc88744477fa73c20d88012579557233c58bf73282a2fcbbda2",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-5' (index 6) is used 0 time(s); max_usage is 0",
+          "fingerprint": "1733a7c4f7c26bc88744477fa73c20d88012579557233c58bf73282a2fcbbda2"
+        },
+        {
+          "finding_id": "7bc0465feb0f39a3586af4ba39c0484aa463db502a037ec7c1a11a8ed1031554",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-6' (index 7) is used 0 time(s); max_usage is 0",
+          "fingerprint": "7bc0465feb0f39a3586af4ba39c0484aa463db502a037ec7c1a11a8ed1031554"
+        },
+        {
+          "finding_id": "e5652ae794c7c8c6aa7128de4418437e647039d61830b56c3ab2d6d890924d8b",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-7' (index 8) is used 0 time(s); max_usage is 0",
+          "fingerprint": "e5652ae794c7c8c6aa7128de4418437e647039d61830b56c3ab2d6d890924d8b"
+        },
+        {
+          "finding_id": "c2ea84f9efaa9d06f8139a73fda146d856471ef4006b2e0df4b6253d5a642552",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-8' (index 9) is used 0 time(s); max_usage is 0",
+          "fingerprint": "c2ea84f9efaa9d06f8139a73fda146d856471ef4006b2e0df4b6253d5a642552"
+        },
+        {
+          "finding_id": "e902f2594a8df461800bac8485771be37d5edb5adfffd7768cf77817aa10f88e",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-9' (index 10) is used 0 time(s); max_usage is 0",
+          "fingerprint": "e902f2594a8df461800bac8485771be37d5edb5adfffd7768cf77817aa10f88e"
+        },
+        {
+          "finding_id": "f1a64214c4e7382a9b0ca62e99e0a9094ab981a34284cb27dca5c9d45a567c28",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-b' (index 12) is used 0 time(s); max_usage is 0",
+          "fingerprint": "f1a64214c4e7382a9b0ca62e99e0a9094ab981a34284cb27dca5c9d45a567c28"
+        },
+        {
+          "finding_id": "4a5b047024301e6f6a311e91db6f02abbc5a6cc6cc1b0efa4b7c14bf3f3765e7",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-c' (index 13) is used 0 time(s); max_usage is 0",
+          "fingerprint": "4a5b047024301e6f6a311e91db6f02abbc5a6cc6cc1b0efa4b7c14bf3f3765e7"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-09-22T09:55:35.278Z"
+    }
+  },
+  "carpet-border": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-bf29f98e-50c5-4f80-83bc-77170fa23023",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mansion-proof-carpet-border-01",
+      "revision": 3,
+      "revision_hash": "121641ccad16b2cf4b1573f21cc833cc9585a20dc164c476252bf34093120738",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "a095a2421e826c13de8ab95f50d6f5406f5ae5e51c37597032a5a889f8b17518",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-0' (index 1) is used 0 time(s); max_usage is 0",
+          "fingerprint": "a095a2421e826c13de8ab95f50d6f5406f5ae5e51c37597032a5a889f8b17518"
+        },
+        {
+          "finding_id": "8cc3413b35799bdb2fc00f02367bd67df728a52a70aa22f7422a8011f10bcff1",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-2' (index 3) is used 0 time(s); max_usage is 0",
+          "fingerprint": "8cc3413b35799bdb2fc00f02367bd67df728a52a70aa22f7422a8011f10bcff1"
+        },
+        {
+          "finding_id": "7bc0465feb0f39a3586af4ba39c0484aa463db502a037ec7c1a11a8ed1031554",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-6' (index 7) is used 0 time(s); max_usage is 0",
+          "fingerprint": "7bc0465feb0f39a3586af4ba39c0484aa463db502a037ec7c1a11a8ed1031554"
+        },
+        {
+          "finding_id": "e5652ae794c7c8c6aa7128de4418437e647039d61830b56c3ab2d6d890924d8b",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-7' (index 8) is used 0 time(s); max_usage is 0",
+          "fingerprint": "e5652ae794c7c8c6aa7128de4418437e647039d61830b56c3ab2d6d890924d8b"
+        },
+        {
+          "finding_id": "c2ea84f9efaa9d06f8139a73fda146d856471ef4006b2e0df4b6253d5a642552",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-8' (index 9) is used 0 time(s); max_usage is 0",
+          "fingerprint": "c2ea84f9efaa9d06f8139a73fda146d856471ef4006b2e0df4b6253d5a642552"
+        },
+        {
+          "finding_id": "e902f2594a8df461800bac8485771be37d5edb5adfffd7768cf77817aa10f88e",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-9' (index 10) is used 0 time(s); max_usage is 0",
+          "fingerprint": "e902f2594a8df461800bac8485771be37d5edb5adfffd7768cf77817aa10f88e"
+        },
+        {
+          "finding_id": "4a5b047024301e6f6a311e91db6f02abbc5a6cc6cc1b0efa4b7c14bf3f3765e7",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-c' (index 13) is used 0 time(s); max_usage is 0",
+          "fingerprint": "4a5b047024301e6f6a311e91db6f02abbc5a6cc6cc1b0efa4b7c14bf3f3765e7"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-09-22T09:55:35.690Z"
+    }
+  },
+  "trim-side": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-3ab6fc42-0e0c-45e1-85c9-b5ea35618b88",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mansion-proof-trim-side-01",
+      "revision": 3,
+      "revision_hash": "78843e6eedd30e67c59ed73b451edb71a8abfa184f0a9bec2861b47394e9d966",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "28a14d82698c6dc474f01a5b6b4bfecb9b86cd4e3a22fca568719787ceeae13d",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (2, 3)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 2,
+            "y": 3
+          },
+          "fingerprint": "28a14d82698c6dc474f01a5b6b4bfecb9b86cd4e3a22fca568719787ceeae13d"
+        },
+        {
+          "finding_id": "468052537da4218c600079729e80b5bb8df1fd762d43b231335c96d78a3df6ba",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (2, 11)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 2,
+            "y": 11
+          },
+          "fingerprint": "468052537da4218c600079729e80b5bb8df1fd762d43b231335c96d78a3df6ba"
+        },
+        {
+          "finding_id": "96405ed8f1d22ed0467c83a1ed20d8fbf0a883bb7e4ddcfa8a2ad4fa8c35829f",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-1' (index 2) is used 0 time(s); max_usage is 0",
+          "fingerprint": "96405ed8f1d22ed0467c83a1ed20d8fbf0a883bb7e4ddcfa8a2ad4fa8c35829f"
+        },
+        {
+          "finding_id": "7bc0465feb0f39a3586af4ba39c0484aa463db502a037ec7c1a11a8ed1031554",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-6' (index 7) is used 0 time(s); max_usage is 0",
+          "fingerprint": "7bc0465feb0f39a3586af4ba39c0484aa463db502a037ec7c1a11a8ed1031554"
+        },
+        {
+          "finding_id": "e5652ae794c7c8c6aa7128de4418437e647039d61830b56c3ab2d6d890924d8b",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-7' (index 8) is used 0 time(s); max_usage is 0",
+          "fingerprint": "e5652ae794c7c8c6aa7128de4418437e647039d61830b56c3ab2d6d890924d8b"
+        },
+        {
+          "finding_id": "c2ea84f9efaa9d06f8139a73fda146d856471ef4006b2e0df4b6253d5a642552",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-8' (index 9) is used 0 time(s); max_usage is 0",
+          "fingerprint": "c2ea84f9efaa9d06f8139a73fda146d856471ef4006b2e0df4b6253d5a642552"
+        },
+        {
+          "finding_id": "e902f2594a8df461800bac8485771be37d5edb5adfffd7768cf77817aa10f88e",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-9' (index 10) is used 0 time(s); max_usage is 0",
+          "fingerprint": "e902f2594a8df461800bac8485771be37d5edb5adfffd7768cf77817aa10f88e"
+        },
+        {
+          "finding_id": "4b8ff8f42af55792b8ad4ab496f533cbe17b8ae5c851d5dec06a877d3af7c890",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-a' (index 11) is used 0 time(s); max_usage is 0",
+          "fingerprint": "4b8ff8f42af55792b8ad4ab496f533cbe17b8ae5c851d5dec06a877d3af7c890"
+        },
+        {
+          "finding_id": "f1a64214c4e7382a9b0ca62e99e0a9094ab981a34284cb27dca5c9d45a567c28",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-b' (index 12) is used 0 time(s); max_usage is 0",
+          "fingerprint": "f1a64214c4e7382a9b0ca62e99e0a9094ab981a34284cb27dca5c9d45a567c28"
+        },
+        {
+          "finding_id": "4a5b047024301e6f6a311e91db6f02abbc5a6cc6cc1b0efa4b7c14bf3f3765e7",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-c' (index 13) is used 0 time(s); max_usage is 0",
+          "fingerprint": "4a5b047024301e6f6a311e91db6f02abbc5a6cc6cc1b0efa4b7c14bf3f3765e7"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-09-22T09:55:36.080Z"
+    }
+  },
+  "trim-top": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-3bc52131-3d34-421d-b3c3-7a425f4ff31c",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mansion-proof-trim-top-01",
+      "revision": 3,
+      "revision_hash": "9a1bad091af4ad029928d9bf36963a2476a8d589e47a34dde8f8f4104d1565cf",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "1f94860cf1c7eb3cd95eac39be227b4e0ab73a367871b7649b074cc4bdd7101a",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 5 is an orphan authored pixel at (0, 3)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 0,
+            "y": 3
+          },
+          "fingerprint": "1f94860cf1c7eb3cd95eac39be227b4e0ab73a367871b7649b074cc4bdd7101a"
+        },
+        {
+          "finding_id": "586b5c1313ee1fc8d49215fc70a8b388aa070d6232f6e6f55c16028ba0a6370e",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 5 is an orphan authored pixel at (2, 3)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 2,
+            "y": 3
+          },
+          "fingerprint": "586b5c1313ee1fc8d49215fc70a8b388aa070d6232f6e6f55c16028ba0a6370e"
+        },
+        {
+          "finding_id": "e442bca31a987d55dd8a59e9c88dd7db451ccf43f67ad5f82ea4942aaaae4848",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 5 is an orphan authored pixel at (4, 3)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 4,
+            "y": 3
+          },
+          "fingerprint": "e442bca31a987d55dd8a59e9c88dd7db451ccf43f67ad5f82ea4942aaaae4848"
+        },
+        {
+          "finding_id": "d183324405cd83dbe00af84114370db80283c6617e28299e49cea3379354393d",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 5 is an orphan authored pixel at (6, 3)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 6,
+            "y": 3
+          },
+          "fingerprint": "d183324405cd83dbe00af84114370db80283c6617e28299e49cea3379354393d"
+        },
+        {
+          "finding_id": "efc97dc3811a9230a1928b6a2ddcf45013aa670200d97182161875a52885c62a",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 5 is an orphan authored pixel at (8, 3)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 8,
+            "y": 3
+          },
+          "fingerprint": "efc97dc3811a9230a1928b6a2ddcf45013aa670200d97182161875a52885c62a"
+        },
+        {
+          "finding_id": "38c18b6f386cbb718635dae77c2cd78dd23089c6a1bbd9f5eee8afa5164950a4",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 5 is an orphan authored pixel at (10, 3)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 10,
+            "y": 3
+          },
+          "fingerprint": "38c18b6f386cbb718635dae77c2cd78dd23089c6a1bbd9f5eee8afa5164950a4"
+        },
+        {
+          "finding_id": "21f7e7e5a3b97d2d5af980052d3291bab21a3678b42d8eafaf00eb7ed2df5672",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 5 is an orphan authored pixel at (12, 3)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 12,
+            "y": 3
+          },
+          "fingerprint": "21f7e7e5a3b97d2d5af980052d3291bab21a3678b42d8eafaf00eb7ed2df5672"
+        },
+        {
+          "finding_id": "663f1a82523f081a712c1b644579ede0e2f8c78bbcc802f48de7b7fe04c5d31d",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 5 is an orphan authored pixel at (14, 3)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 14,
+            "y": 3
+          },
+          "fingerprint": "663f1a82523f081a712c1b644579ede0e2f8c78bbcc802f48de7b7fe04c5d31d"
+        },
+        {
+          "finding_id": "338065b5b9dee88ab67385ab6df4a698b6bbf42ab7b3163150e39bf2751e8a8e",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (0, 4)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 0,
+            "y": 4
+          },
+          "fingerprint": "338065b5b9dee88ab67385ab6df4a698b6bbf42ab7b3163150e39bf2751e8a8e"
+        },
+        {
+          "finding_id": "7aa9b25cea8bcb90ae065b4564432310df8fee36453fa7852aad5c6aaed10f73",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (2, 4)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 2,
+            "y": 4
+          },
+          "fingerprint": "7aa9b25cea8bcb90ae065b4564432310df8fee36453fa7852aad5c6aaed10f73"
+        },
+        {
+          "finding_id": "ed3db15556dbe0ae5d37fade841afd183c12751cbd754249be4d6cfd33f8f6ca",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (4, 4)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 4,
+            "y": 4
+          },
+          "fingerprint": "ed3db15556dbe0ae5d37fade841afd183c12751cbd754249be4d6cfd33f8f6ca"
+        },
+        {
+          "finding_id": "6496bedeea009794a13978154f7a2c8ed2f4f0206c707c5a68afef12e71b4131",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (6, 4)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 6,
+            "y": 4
+          },
+          "fingerprint": "6496bedeea009794a13978154f7a2c8ed2f4f0206c707c5a68afef12e71b4131"
+        },
+        {
+          "finding_id": "e366e3c95dbeec7e62cb821b2c8eceb223b703f2a38b7edd01fec225635da4cd",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (8, 4)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 8,
+            "y": 4
+          },
+          "fingerprint": "e366e3c95dbeec7e62cb821b2c8eceb223b703f2a38b7edd01fec225635da4cd"
+        },
+        {
+          "finding_id": "4734077d3723de05ce5d0238c1fb56d6b9726e55af8facbdc1fa393b61ed3aa1",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (10, 4)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 10,
+            "y": 4
+          },
+          "fingerprint": "4734077d3723de05ce5d0238c1fb56d6b9726e55af8facbdc1fa393b61ed3aa1"
+        },
+        {
+          "finding_id": "7771f8f30e5029614e95b6af154326b09034482ac0e4567b11a793d03e51fedf",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (12, 4)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 12,
+            "y": 4
+          },
+          "fingerprint": "7771f8f30e5029614e95b6af154326b09034482ac0e4567b11a793d03e51fedf"
+        },
+        {
+          "finding_id": "3722b2c893e485b00a37960176b23d81ca5b936c3d8bfd7910ef633fb9d00275",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (14, 4)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 14,
+            "y": 4
+          },
+          "fingerprint": "3722b2c893e485b00a37960176b23d81ca5b936c3d8bfd7910ef633fb9d00275"
+        },
+        {
+          "finding_id": "7bc0465feb0f39a3586af4ba39c0484aa463db502a037ec7c1a11a8ed1031554",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-6' (index 7) is used 0 time(s); max_usage is 0",
+          "fingerprint": "7bc0465feb0f39a3586af4ba39c0484aa463db502a037ec7c1a11a8ed1031554"
+        },
+        {
+          "finding_id": "e5652ae794c7c8c6aa7128de4418437e647039d61830b56c3ab2d6d890924d8b",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-7' (index 8) is used 0 time(s); max_usage is 0",
+          "fingerprint": "e5652ae794c7c8c6aa7128de4418437e647039d61830b56c3ab2d6d890924d8b"
+        },
+        {
+          "finding_id": "c2ea84f9efaa9d06f8139a73fda146d856471ef4006b2e0df4b6253d5a642552",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-8' (index 9) is used 0 time(s); max_usage is 0",
+          "fingerprint": "c2ea84f9efaa9d06f8139a73fda146d856471ef4006b2e0df4b6253d5a642552"
+        },
+        {
+          "finding_id": "e902f2594a8df461800bac8485771be37d5edb5adfffd7768cf77817aa10f88e",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-9' (index 10) is used 0 time(s); max_usage is 0",
+          "fingerprint": "e902f2594a8df461800bac8485771be37d5edb5adfffd7768cf77817aa10f88e"
+        },
+        {
+          "finding_id": "4b8ff8f42af55792b8ad4ab496f533cbe17b8ae5c851d5dec06a877d3af7c890",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-a' (index 11) is used 0 time(s); max_usage is 0",
+          "fingerprint": "4b8ff8f42af55792b8ad4ab496f533cbe17b8ae5c851d5dec06a877d3af7c890"
+        },
+        {
+          "finding_id": "f1a64214c4e7382a9b0ca62e99e0a9094ab981a34284cb27dca5c9d45a567c28",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-b' (index 12) is used 0 time(s); max_usage is 0",
+          "fingerprint": "f1a64214c4e7382a9b0ca62e99e0a9094ab981a34284cb27dca5c9d45a567c28"
+        },
+        {
+          "finding_id": "4a5b047024301e6f6a311e91db6f02abbc5a6cc6cc1b0efa4b7c14bf3f3765e7",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-c' (index 13) is used 0 time(s); max_usage is 0",
+          "fingerprint": "4a5b047024301e6f6a311e91db6f02abbc5a6cc6cc1b0efa4b7c14bf3f3765e7"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-09-22T09:55:36.515Z"
+    }
+  },
+  "rose-apse": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-7e395099-cf2f-4a46-97d8-bbf1eba996d0",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mansion-proof-rose-apse-01",
+      "revision": 4,
+      "revision_hash": "744aeb00758441dc9a1d2efbba79bce37786eebf3b8429a3f841a42da2e05e43",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "394b69558243df7901a7ef26f77cf1d854b6b3299c33fc48f9ee76c0d58ad009",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 5 is an orphan authored pixel at (20, 5)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 20,
+            "y": 5
+          },
+          "fingerprint": "394b69558243df7901a7ef26f77cf1d854b6b3299c33fc48f9ee76c0d58ad009"
+        },
+        {
+          "finding_id": "c4cd32b538b77bcd3f77f4324e910b292017fde7a8911b60db77ce9316570867",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (21, 5)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 21,
+            "y": 5
+          },
+          "fingerprint": "c4cd32b538b77bcd3f77f4324e910b292017fde7a8911b60db77ce9316570867"
+        },
+        {
+          "finding_id": "1991b35c52e20fdec133d655d1c747ed535d4f5b1394c1302a9cf2072e749383",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (26, 5)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 26,
+            "y": 5
+          },
+          "fingerprint": "1991b35c52e20fdec133d655d1c747ed535d4f5b1394c1302a9cf2072e749383"
+        },
+        {
+          "finding_id": "caea94eb9a0e32efbfcf2f8173e530f240ec2ce3f7ca792c9a2f496fc16c6119",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (27, 5)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 27,
+            "y": 5
+          },
+          "fingerprint": "caea94eb9a0e32efbfcf2f8173e530f240ec2ce3f7ca792c9a2f496fc16c6119"
+        },
+        {
+          "finding_id": "1c7440bd7a6d2ebfc4610bc67ea9b699d19720f9fa5400728abe641a3cddb19e",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 5 is an orphan authored pixel at (16, 6)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 16,
+            "y": 6
+          },
+          "fingerprint": "1c7440bd7a6d2ebfc4610bc67ea9b699d19720f9fa5400728abe641a3cddb19e"
+        },
+        {
+          "finding_id": "7017d3bf04d3d80f2574cac0dec3772a39f1fa883ce79d32c0e5be751ae8ed42",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (17, 6)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 17,
+            "y": 6
+          },
+          "fingerprint": "7017d3bf04d3d80f2574cac0dec3772a39f1fa883ce79d32c0e5be751ae8ed42"
+        },
+        {
+          "finding_id": "8c977eff374317ace77c1fecb1a18c0bfbbc7b31f2c61b3bdd8e834b78160df5",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (30, 6)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 30,
+            "y": 6
+          },
+          "fingerprint": "8c977eff374317ace77c1fecb1a18c0bfbbc7b31f2c61b3bdd8e834b78160df5"
+        },
+        {
+          "finding_id": "45d3f25a5f27ef8481bd792c9da853fb33c31759ccdf2d08362482906887f722",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (31, 6)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 31,
+            "y": 6
+          },
+          "fingerprint": "45d3f25a5f27ef8481bd792c9da853fb33c31759ccdf2d08362482906887f722"
+        },
+        {
+          "finding_id": "ee8065262d3c044f2159fa612541541be14f7766f7988aa8a079149b67b32948",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 5 is an orphan authored pixel at (14, 7)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 14,
+            "y": 7
+          },
+          "fingerprint": "ee8065262d3c044f2159fa612541541be14f7766f7988aa8a079149b67b32948"
+        },
+        {
+          "finding_id": "51b0a29d29437decc5458f190e98e752772a2da8958530d290d2fc5b8b4e1e6e",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (15, 7)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 15,
+            "y": 7
+          },
+          "fingerprint": "51b0a29d29437decc5458f190e98e752772a2da8958530d290d2fc5b8b4e1e6e"
+        },
+        {
+          "finding_id": "87dc0700a8692706b8b09c266626092cf3c837e24d218b859fcff7ccaddb6c84",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (32, 7)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 32,
+            "y": 7
+          },
+          "fingerprint": "87dc0700a8692706b8b09c266626092cf3c837e24d218b859fcff7ccaddb6c84"
+        },
+        {
+          "finding_id": "7909946f29e8ef778f5f46e5bcf6808fdf5fee848c19e0a7864875d4abf2e8ad",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (33, 7)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 33,
+            "y": 7
+          },
+          "fingerprint": "7909946f29e8ef778f5f46e5bcf6808fdf5fee848c19e0a7864875d4abf2e8ad"
+        },
+        {
+          "finding_id": "a7dad8857cf613863e084221e287f5125e853279d3d1a4d5eeb75f2e83132efd",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 6 is an orphan authored pixel at (19, 11)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 19,
+            "y": 11
+          },
+          "fingerprint": "a7dad8857cf613863e084221e287f5125e853279d3d1a4d5eeb75f2e83132efd"
+        },
+        {
+          "finding_id": "c255cc5c8d69d5ba6e1a06ce09bf754541723b237286aa916849b1c8ec96050a",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 6 is an orphan authored pixel at (28, 11)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 28,
+            "y": 11
+          },
+          "fingerprint": "c255cc5c8d69d5ba6e1a06ce09bf754541723b237286aa916849b1c8ec96050a"
+        },
+        {
+          "finding_id": "9d448f399d0ed8d87cdd365812276ec397c959cecdedb0fff168d8b1a262641d",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 6 is an orphan authored pixel at (19, 26)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 19,
+            "y": 26
+          },
+          "fingerprint": "9d448f399d0ed8d87cdd365812276ec397c959cecdedb0fff168d8b1a262641d"
+        },
+        {
+          "finding_id": "7979c2a273b2f1c17809c2d15613aa4f0d5e63341fcf2fc5e35853f3dc1e58f4",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 6 is an orphan authored pixel at (28, 26)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 28,
+            "y": 26
+          },
+          "fingerprint": "7979c2a273b2f1c17809c2d15613aa4f0d5e63341fcf2fc5e35853f3dc1e58f4"
+        },
+        {
+          "finding_id": "329c5e3eca0304119ae3327bcff8f3ca205f11366d6606756c045b25e9306ae6",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 5 is an orphan authored pixel at (14, 31)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 14,
+            "y": 31
+          },
+          "fingerprint": "329c5e3eca0304119ae3327bcff8f3ca205f11366d6606756c045b25e9306ae6"
+        },
+        {
+          "finding_id": "070a0f7fa62643a681a8765835eab992b900c3742ceca10b27578f390065c7d4",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (15, 31)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 15,
+            "y": 31
+          },
+          "fingerprint": "070a0f7fa62643a681a8765835eab992b900c3742ceca10b27578f390065c7d4"
+        },
+        {
+          "finding_id": "d6b2aa14b67cc5cc598ff0fe92d577476b00cf3ee2e628883b63a86fafde4bce",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (32, 31)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 32,
+            "y": 31
+          },
+          "fingerprint": "d6b2aa14b67cc5cc598ff0fe92d577476b00cf3ee2e628883b63a86fafde4bce"
+        },
+        {
+          "finding_id": "c6a3dc225571014ccdeb069a0023b483c84d1a60521ecc6dc2f54f933a9bd0ec",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (33, 31)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 33,
+            "y": 31
+          },
+          "fingerprint": "c6a3dc225571014ccdeb069a0023b483c84d1a60521ecc6dc2f54f933a9bd0ec"
+        },
+        {
+          "finding_id": "a88ceba463f8a888598dd7083c4bc6930d4cee29e28fd0211a908bea20415eaa",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 5 is an orphan authored pixel at (16, 32)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 16,
+            "y": 32
+          },
+          "fingerprint": "a88ceba463f8a888598dd7083c4bc6930d4cee29e28fd0211a908bea20415eaa"
+        },
+        {
+          "finding_id": "04216833ecad20956e35cc4eebab0df172840d3f0f433613bc978d617d64e055",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (17, 32)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 17,
+            "y": 32
+          },
+          "fingerprint": "04216833ecad20956e35cc4eebab0df172840d3f0f433613bc978d617d64e055"
+        },
+        {
+          "finding_id": "9428c61c48f7467d9ef523ab2f3b55dae84b49cdaaf9c50aa193819ec594007a",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (30, 32)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 30,
+            "y": 32
+          },
+          "fingerprint": "9428c61c48f7467d9ef523ab2f3b55dae84b49cdaaf9c50aa193819ec594007a"
+        },
+        {
+          "finding_id": "3f74044cfd42df68f35254d898d96cafd00d28eba622ecd672ee370db4fe3cdd",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (31, 32)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 31,
+            "y": 32
+          },
+          "fingerprint": "3f74044cfd42df68f35254d898d96cafd00d28eba622ecd672ee370db4fe3cdd"
+        },
+        {
+          "finding_id": "ae056b3b90282554d88dfc7f47bfc7aa721d7c7a119edf8b70bc8ff75b16f608",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 5 is an orphan authored pixel at (20, 33)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 20,
+            "y": 33
+          },
+          "fingerprint": "ae056b3b90282554d88dfc7f47bfc7aa721d7c7a119edf8b70bc8ff75b16f608"
+        },
+        {
+          "finding_id": "6be0cb3625925aeb970a34d1335355b953374934d7e14df943ffcac586f63f76",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (21, 33)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 21,
+            "y": 33
+          },
+          "fingerprint": "6be0cb3625925aeb970a34d1335355b953374934d7e14df943ffcac586f63f76"
+        },
+        {
+          "finding_id": "51ff0d728b98b868812c2909b1c2bfe09bed64ab773fad5c1e076281ba904969",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (26, 33)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 26,
+            "y": 33
+          },
+          "fingerprint": "51ff0d728b98b868812c2909b1c2bfe09bed64ab773fad5c1e076281ba904969"
+        },
+        {
+          "finding_id": "c21b19995fbbd58f74230b5596fc1560e9ed4338c5a8a6c274294864741cd403",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (27, 33)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 27,
+            "y": 33
+          },
+          "fingerprint": "c21b19995fbbd58f74230b5596fc1560e9ed4338c5a8a6c274294864741cd403"
+        },
+        {
+          "finding_id": "f1a64214c4e7382a9b0ca62e99e0a9094ab981a34284cb27dca5c9d45a567c28",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-b' (index 12) is used 0 time(s); max_usage is 0",
+          "fingerprint": "f1a64214c4e7382a9b0ca62e99e0a9094ab981a34284cb27dca5c9d45a567c28"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-09-22T09:55:36.914Z"
+    }
+  },
+  "wall-masonry": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-6f5eddfb-7b22-4167-bf50-e5e287d9899a",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mansion-proof-wall-masonry-01",
+      "revision": 2,
+      "revision_hash": "c7a7b82bb2ee25730e1fe092e52d2b9f59c9668c9f68087678d36ec58fd8564d",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "70b8e1236ac6ae93b4ccc4ac8478e2fff3cf472b4f302f16406d8ef801c13e36",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-3' (index 4) is used 0 time(s); max_usage is 0",
+          "fingerprint": "70b8e1236ac6ae93b4ccc4ac8478e2fff3cf472b4f302f16406d8ef801c13e36"
+        },
+        {
+          "finding_id": "df38d85fcb52495b70e7c3fdf7ac6bc728be8960896529d41796ae5bf3e3fe87",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-4' (index 5) is used 0 time(s); max_usage is 0",
+          "fingerprint": "df38d85fcb52495b70e7c3fdf7ac6bc728be8960896529d41796ae5bf3e3fe87"
+        },
+        {
+          "finding_id": "1733a7c4f7c26bc88744477fa73c20d88012579557233c58bf73282a2fcbbda2",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-5' (index 6) is used 0 time(s); max_usage is 0",
+          "fingerprint": "1733a7c4f7c26bc88744477fa73c20d88012579557233c58bf73282a2fcbbda2"
+        },
+        {
+          "finding_id": "7bc0465feb0f39a3586af4ba39c0484aa463db502a037ec7c1a11a8ed1031554",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-6' (index 7) is used 0 time(s); max_usage is 0",
+          "fingerprint": "7bc0465feb0f39a3586af4ba39c0484aa463db502a037ec7c1a11a8ed1031554"
+        },
+        {
+          "finding_id": "e5652ae794c7c8c6aa7128de4418437e647039d61830b56c3ab2d6d890924d8b",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-7' (index 8) is used 0 time(s); max_usage is 0",
+          "fingerprint": "e5652ae794c7c8c6aa7128de4418437e647039d61830b56c3ab2d6d890924d8b"
+        },
+        {
+          "finding_id": "c2ea84f9efaa9d06f8139a73fda146d856471ef4006b2e0df4b6253d5a642552",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-8' (index 9) is used 0 time(s); max_usage is 0",
+          "fingerprint": "c2ea84f9efaa9d06f8139a73fda146d856471ef4006b2e0df4b6253d5a642552"
+        },
+        {
+          "finding_id": "e902f2594a8df461800bac8485771be37d5edb5adfffd7768cf77817aa10f88e",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-9' (index 10) is used 0 time(s); max_usage is 0",
+          "fingerprint": "e902f2594a8df461800bac8485771be37d5edb5adfffd7768cf77817aa10f88e"
+        },
+        {
+          "finding_id": "4b8ff8f42af55792b8ad4ab496f533cbe17b8ae5c851d5dec06a877d3af7c890",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-a' (index 11) is used 0 time(s); max_usage is 0",
+          "fingerprint": "4b8ff8f42af55792b8ad4ab496f533cbe17b8ae5c851d5dec06a877d3af7c890"
+        },
+        {
+          "finding_id": "f1a64214c4e7382a9b0ca62e99e0a9094ab981a34284cb27dca5c9d45a567c28",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-b' (index 12) is used 0 time(s); max_usage is 0",
+          "fingerprint": "f1a64214c4e7382a9b0ca62e99e0a9094ab981a34284cb27dca5c9d45a567c28"
+        },
+        {
+          "finding_id": "4a5b047024301e6f6a311e91db6f02abbc5a6cc6cc1b0efa4b7c14bf3f3765e7",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'mansion-c' (index 13) is used 0 time(s); max_usage is 0",
+          "fingerprint": "4a5b047024301e6f6a311e91db6f02abbc5a6cc6cc1b0efa4b7c14bf3f3765e7"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-09-22T09:55:37.365Z"
+    }
+  }
+}

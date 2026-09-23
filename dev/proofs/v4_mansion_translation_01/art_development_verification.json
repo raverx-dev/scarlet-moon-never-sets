@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "accepted_checkpoint": "4ef4080fc17f53f03393ac74e205220072360c0b",
+  "layout_bytes_unchanged": true,
+  "layout_source_unchanged": true,
+  "canonical_asset_count": 16,
+  "revised": 12,
+  "reused": 4,
+  "new_assets": 0,
+  "changed_pixels_by_asset": {
+    "rose": 1810,
+    "lancet": 169,
+    "arch": 366,
+    "banner": 84,
+    "near-pier": 342,
+    "stairs": 162,
+    "balustrade": 112,
+    "candelabra": 79,
+    "runner": 0,
+    "runner-edge": 40,
+    "runner-motif": 0,
+    "paving": 21,
+    "column": 110,
+    "wall-masonry": 0,
+    "trim-top": 12,
+    "far-pier": 0
+  },
+  "palette_and_canvas_sizes_unchanged": true,
+  "accepted_images_and_manifest_preserved_exactly": true,
+  "actor_and_dialogue_staging_unchanged": true,
+  "quiet_gameplay_region_unchanged": [
+    76,
+    128,
+    116,
+    240
+  ],
+  "story_stair_runner_connection": "PASS",
+  "native_images": {
+    "gameplay": {
+      "size": [
+        192,
+        240
+      ],
+      "sha256": "da820396d6bd6ac5dff50d1d2b84e838a66e8ed0bcd9eebad4fdf996870421ee"
+    },
+    "story": {
+      "size": [
+        256,
+        240
+      ],
+      "sha256": "ac940b238771a55f348f5aef2842f77b5f578ccacf10c17d04de3f92e1d8d979"
+    }
+  },
+  "static_readability": "Unchanged actors/UI plus fixed before-after V3 diamond/star sample",
+  "scope": "Mansion static art only; protected older files verified by verify.py",
+  "limitations": [
+    "Owner art review pending",
+    "No live combat/animation QA",
+    "No runtime or NES hardware qualification",
+    "No asset approval/delivery"
+  ]
+}

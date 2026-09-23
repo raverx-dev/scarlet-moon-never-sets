@@ -1,0 +1,193 @@
+{
+  "base": "d7054d2b9b111ff711f44cc3ee5b71268aca6ed8",
+  "canonical_assets": {
+    "window-bay": {
+      "revision": 3,
+      "revision_hash": "728d687127e2ddc8ae6938ee5c8b74f40ce0f6df0b4fe01a990a78be5cba047d",
+      "rgba_equal": true,
+      "source_rows_equal": true,
+      "round_trip": true,
+      "approved": false,
+      "validation_passed": true,
+      "findings": {
+        "warning": 6,
+        "info": 4
+      }
+    },
+    "wall-panel": {
+      "revision": 3,
+      "revision_hash": "10c31697ac6a716fec2adc86af9d4b4c21c0f1b223c10b3b8673eab3bb7e1820",
+      "rgba_equal": true,
+      "source_rows_equal": true,
+      "round_trip": true,
+      "approved": false,
+      "validation_passed": true,
+      "findings": {
+        "warning": 1,
+        "info": 9
+      }
+    },
+    "column": {
+      "revision": 3,
+      "revision_hash": "32b38f38f16c8deb716dfb79420d92cb52688a2a801fbb8a7e38218e6d0942a7",
+      "rgba_equal": true,
+      "source_rows_equal": true,
+      "round_trip": true,
+      "approved": false,
+      "validation_passed": true,
+      "findings": {
+        "warning": 10,
+        "info": 8
+      }
+    },
+    "floor": {
+      "revision": 4,
+      "revision_hash": "e2978708cc49db568511dbff6692a52517b862634fdb66befa16088f25034cd3",
+      "rgba_equal": true,
+      "source_rows_equal": true,
+      "round_trip": true,
+      "approved": false,
+      "validation_passed": true,
+      "findings": {
+        "warning": 43,
+        "info": 10
+      }
+    },
+    "carpet-field": {
+      "revision": 3,
+      "revision_hash": "1c4894a5369c9acaab528ec9d8c265a74068b9ed2189e597aa36de5e9164ef63",
+      "rgba_equal": true,
+      "source_rows_equal": true,
+      "round_trip": true,
+      "approved": false,
+      "validation_passed": true,
+      "findings": {
+        "info": 11
+      }
+    },
+    "carpet-border": {
+      "revision": 3,
+      "revision_hash": "121641ccad16b2cf4b1573f21cc833cc9585a20dc164c476252bf34093120738",
+      "rgba_equal": true,
+      "source_rows_equal": true,
+      "round_trip": true,
+      "approved": false,
+      "validation_passed": true,
+      "findings": {
+        "info": 7
+      }
+    },
+    "trim-side": {
+      "revision": 3,
+      "revision_hash": "78843e6eedd30e67c59ed73b451edb71a8abfa184f0a9bec2861b47394e9d966",
+      "rgba_equal": true,
+      "source_rows_equal": true,
+      "round_trip": true,
+      "approved": false,
+      "validation_passed": true,
+      "findings": {
+        "warning": 2,
+        "info": 8
+      }
+    },
+    "trim-top": {
+      "revision": 3,
+      "revision_hash": "9a1bad091af4ad029928d9bf36963a2476a8d589e47a34dde8f8f4104d1565cf",
+      "rgba_equal": true,
+      "source_rows_equal": true,
+      "round_trip": true,
+      "approved": false,
+      "validation_passed": true,
+      "findings": {
+        "warning": 16,
+        "info": 7
+      }
+    },
+    "rose-apse": {
+      "revision": 4,
+      "revision_hash": "744aeb00758441dc9a1d2efbba79bce37786eebf3b8429a3f841a42da2e05e43",
+      "rgba_equal": true,
+      "source_rows_equal": true,
+      "round_trip": true,
+      "approved": false,
+      "validation_passed": true,
+      "findings": {
+        "warning": 28,
+        "info": 1
+      }
+    },
+    "wall-masonry": {
+      "revision": 2,
+      "revision_hash": "c7a7b82bb2ee25730e1fe092e52d2b9f59c9668c9f68087678d36ec58fd8564d",
+      "rgba_equal": true,
+      "source_rows_equal": true,
+      "round_trip": true,
+      "approved": false,
+      "validation_passed": true,
+      "findings": {
+        "info": 10
+      }
+    }
+  },
+  "previews": {
+    "gameplay": {
+      "dimensions": [
+        192,
+        240
+      ],
+      "colors": 13,
+      "palette_only": true,
+      "sha256": "01759cf4ea78cbfb54a11b99d3529a257e2e34719e51514c95069e6621965d96",
+      "asset_usage": {
+        "wall-panel": 5,
+        "wall-masonry": 1,
+        "floor": 4,
+        "rose-apse": 1,
+        "trim-top": 2,
+        "carpet-field": 164,
+        "carpet-border": 12,
+        "window-bay": 4,
+        "column": 18,
+        "trim-side": 2
+      }
+    },
+    "story": {
+      "dimensions": [
+        256,
+        240
+      ],
+      "colors": 13,
+      "palette_only": true,
+      "sha256": "2d9c95fdbc324a8d8665558b972583752bd284cafa09233474f75af62d220b46",
+      "asset_usage": {
+        "wall-panel": 4,
+        "wall-masonry": 1,
+        "floor": 1,
+        "rose-apse": 1,
+        "window-bay": 2,
+        "trim-top": 4,
+        "column": 18,
+        "carpet-field": 120,
+        "carpet-border": 8
+      }
+    }
+  },
+  "protected_files": {
+    "index.html": "202051484375c9551c8937c8c468e362f015881f83665caad314babe7346a8d9",
+    "versions/index.html": "13c8133bac7c0591849216abb0921e5dc382aab3c5f8f267161f39b54dfe7fbe",
+    "versions/original/index.html": "b891b4e6f4f7e6cd07111f584897219520bfe89ffde09c06db66d331fe222eb5",
+    "versions/p1-visual-audio/index.html": "724abb7d4a34a7814b65a332ffaf13891001404e05c22c418feaba51a65e8670",
+    "versions/sprite-redesign/index.html": "7c224ab6fd0e6bb0153a7f279af61e4332a2ad4228d60404f26351800e75d7d4",
+    "versions/v4/DELIVERY_PROVENANCE.md": "bf300a5a6b2cbc134d781be695470f61d3a7a8af6b01566598b3451bb445aaa9",
+    "versions/v4/assets/v4-can-cigarette-splash-logo-01.scarlet-moon.json": "f7b5f92c858b2b54873b3e2296170bb6be9265b93e550bce4b41a29b5a1dfea7",
+    "versions/v4/index.html": "11cf1b906aca600096827f15795ee6282547a7bb161567b868037028bc08d3a4"
+  },
+  "boundaries": {
+    "all_base_files_byte_identical": true,
+    "distinct_compositions": true,
+    "runtime_integration": false,
+    "artwork_approval": false,
+    "delivery_export": false,
+    "note": "Local static proof verification only; no live combat/browser regression or hardware-exact NES compliance claimed."
+  }
+}

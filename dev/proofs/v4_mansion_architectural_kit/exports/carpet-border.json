@@ -1,0 +1,101 @@
+{
+  "adapter_id": "scarlet-moon-js",
+  "preview": true,
+  "delivery": false,
+  "project_id": "scarlet-moon-never-sets",
+  "asset_id": "v4-mansion-proof-carpet-border-01",
+  "revision": 3,
+  "revision_hash": "121641ccad16b2cf4b1573f21cc833cc9585a20dc164c476252bf34093120738",
+  "frame_id": "default",
+  "layer_id": "art",
+  "matrix": {
+    "width": 16,
+    "height": 32,
+    "rows": [
+      ".......1B33BA...",
+      ".......1B43BA...",
+      ".......1B43BA...",
+      ".......1B53BA...",
+      ".......1B53BA...",
+      ".......1B43BA...",
+      ".......1B43BA...",
+      ".......1B33BA...",
+      "......1B33BA....",
+      "......1B43BA....",
+      "......1B43BA....",
+      "......1B53BA....",
+      "......1B53BA....",
+      "......1B43BA....",
+      "......1B43BA....",
+      "......1B33BA....",
+      ".....1B33BA.....",
+      ".....1B43BA.....",
+      ".....1B43BA.....",
+      ".....1B53BA.....",
+      ".....1B53BA.....",
+      ".....1B43BA.....",
+      ".....1B43BA.....",
+      ".....1B33BA.....",
+      "....1B33BA......",
+      "....1B43BA......",
+      "....1B43BA......",
+      "....1B53BA......",
+      "....1B53BA......",
+      "....1B43BA......",
+      "....1B43BA......",
+      "....1B33BA......"
+    ],
+    "symbols": {
+      "0": {
+        "hex": "#080810"
+      },
+      "1": {
+        "hex": "#191528"
+      },
+      "2": {
+        "hex": "#2c2438"
+      },
+      "3": {
+        "hex": "#443550"
+      },
+      "4": {
+        "hex": "#66506a"
+      },
+      "5": {
+        "hex": "#a18a92"
+      },
+      "6": {
+        "hex": "#d4c4a8"
+      },
+      "7": {
+        "hex": "#252c4a"
+      },
+      "8": {
+        "hex": "#424d79"
+      },
+      "9": {
+        "hex": "#819ca7"
+      },
+      ".": {
+        "transparent": true
+      },
+      "A": {
+        "hex": "#3a2038"
+      },
+      "B": {
+        "hex": "#6b2e49"
+      },
+      "C": {
+        "hex": "#a04c64"
+      }
+    }
+  },
+  "round_trip": {
+    "width": 16,
+    "height": 32,
+    "cel_hash": true
+  },
+  "resources": {
+    "export": "robopixel://export/scarlet-moon-never-sets/v4-mansion-proof-carpet-border-01/revision/3/scarlet-moon-js"
+  }
+}
