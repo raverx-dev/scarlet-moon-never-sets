@@ -1,0 +1,17 @@
+{
+  "role": "Owner-selected art-direction references; not canonical production assets",
+  "source": "Two images generated in this Work conversation, exported to requested native dimensions before this assignment",
+  "restriction": "Reference pixels are used only on comparison boards; not read by asset authoring or scene assembly",
+  "files": [
+    {
+      "file": "gameplay-direction.png",
+      "library_file_id": "libfile_8b87675516c48191936a5a7073cf389f",
+      "sha256": "ebd85f0a2cfb0435bd8aeb17efa7f803eaa4eeeb3f9ad5dcdcc360c8589b4b6f"
+    },
+    {
+      "file": "story-direction.png",
+      "library_file_id": "libfile_6608c40d8a4c8191a1b694df24c7f4eb",
+      "sha256": "9fd9483231187c968fafbd253756d0b59b41a66dd7394b4aa0b23210a58236d2"
+    }
+  ]
+}

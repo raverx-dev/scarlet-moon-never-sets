@@ -1,0 +1,106 @@
+{
+  "adapter_id": "scarlet-moon-js",
+  "preview": true,
+  "delivery": false,
+  "project_id": "scarlet-moon-never-sets",
+  "asset_id": "v4-mansion-trans01-paving",
+  "revision": 3,
+  "revision_hash": "a9173888c4d445e8aa077822fbb7362709b61e3a9c39c0653b45a6a0354f1023",
+  "frame_id": "default",
+  "layer_id": "art",
+  "matrix": {
+    "width": 32,
+    "height": 16,
+    "rows": [
+      "22222222222222207777777777777770",
+      "1111111111111110JJJJJJJJJJJJJJJ0",
+      "1111111111111110JJJJJJJJJJJJJJJ0",
+      "1111122221111110JJJJJJJJJJJJJJJ0",
+      "1111113331111110JJJJJJJJJJJJJJJ0",
+      "1111122221111110JJJJJJJJJJJJJJJ0",
+      "1111111111111110JJJJJJJJJJJJJJJ0",
+      "1111111111111110JJJJJJ7777JJJJJ0",
+      "1111111111111110JJJJJJJ222JJJJJ0",
+      "1111111111111110JJJJJJJJJJJJJJJ0",
+      "1111111111111110JJJJJJJJJJJJJJJ0",
+      "1111111111111110JJJJJJJJJJJJJJJ0",
+      "1111111111111110JJJJJJJJJJJJJJJ0",
+      "1111111111111110JJJJJJJJJJJJJJJ0",
+      "1111111111111110JJJJJJJJJJJJJJJ0",
+      "00000000000000000000000000000000"
+    ],
+    "symbols": {
+      "0": {
+        "hex": "#080810"
+      },
+      "1": {
+        "hex": "#191528"
+      },
+      "2": {
+        "hex": "#2c2438"
+      },
+      "3": {
+        "hex": "#443550"
+      },
+      "4": {
+        "hex": "#66506a"
+      },
+      "5": {
+        "hex": "#a18a92"
+      },
+      "6": {
+        "hex": "#d4c4a8"
+      },
+      "7": {
+        "hex": "#252c4a"
+      },
+      "8": {
+        "hex": "#424d79"
+      },
+      "9": {
+        "hex": "#819ca7"
+      },
+      ".": {
+        "transparent": true
+      },
+      "A": {
+        "hex": "#3a2038"
+      },
+      "B": {
+        "hex": "#6b2e49"
+      },
+      "C": {
+        "hex": "#a04c64"
+      },
+      "D": {
+        "hex": "#260b1c"
+      },
+      "E": {
+        "hex": "#490e28"
+      },
+      "F": {
+        "hex": "#84233e"
+      },
+      "G": {
+        "hex": "#ca4963"
+      },
+      "H": {
+        "hex": "#97764f"
+      },
+      "I": {
+        "hex": "#ffd19a"
+      },
+      "J": {
+        "hex": "#111421"
+      }
+    }
+  },
+  "round_trip": {
+    "width": 32,
+    "height": 16,
+    "cel_hash": true
+  },
+  "resources": {
+    "export": "robopixel://export/scarlet-moon-never-sets/v4-mansion-trans01-paving/revision/3/scarlet-moon-js"
+  }
+}
