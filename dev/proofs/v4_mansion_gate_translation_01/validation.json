@@ -1,0 +1,255 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "method": "Exact RGBA comparison; original file SHA-256; pinned canonical render hashes.",
+  "assets": [
+    {
+      "asset_id": "v4-mansion-gate-trans01-arcade-bridge",
+      "revision": 2,
+      "revision_hash": "a6bef77abba733356b955190139418b9a0251b8cab6c9d2c52cbe352076fe511",
+      "render_hash": "49673498a3444ba215799f563643c56232eed84dd0f54af5459f8c92620717e9",
+      "png_sha256": "32f424045bd2701e3a2cfd6787dba7d15eb25fbb8fb5034ebe13f00a4167131a",
+      "dimensions": [
+        77,
+        48
+      ],
+      "placement_counts": {
+        "gameplay": 1,
+        "story": 1
+      }
+    },
+    {
+      "asset_id": "v4-mansion-gate-trans01-banner-pier",
+      "revision": 2,
+      "revision_hash": "0b039bcf7f95d9ac0cd1feb7ac81bae7561aed1e0dc61a6356752e19a7a60818",
+      "render_hash": "50473f15dfd2b444dbe5c7816cf0a1a66beb525c9fac9ff6bacb747c949240c5",
+      "png_sha256": "3bf2f7ffed70675957ca3e8b8e7aae3cad5fa70ddc3f59e6263421cdb429f768",
+      "dimensions": [
+        33,
+        142
+      ],
+      "placement_counts": {
+        "gameplay": 2,
+        "story": 3
+      }
+    },
+    {
+      "asset_id": "v4-mansion-gate-trans01-closed-gate",
+      "revision": 2,
+      "revision_hash": "23bad0deec3b1607fa7a2ff49ddd8c52c0fe155ff1f4b62e8674a127a5cdf816",
+      "render_hash": "36468968aca894a5a72f0e6d31f981ae645e86739d18d06da7941e444983400c",
+      "png_sha256": "4479c13226fa00253fbeb0d957fdb24f05674abbab836a1182780cfcc8b3e427",
+      "dimensions": [
+        106,
+        104
+      ],
+      "placement_counts": {
+        "gameplay": 0,
+        "story": 1
+      }
+    },
+    {
+      "asset_id": "v4-mansion-gate-trans01-cloud-bank",
+      "revision": 2,
+      "revision_hash": "c912ed876dd1bdcfac310b07cb036db51925ff8e191f82c13705349fc364f26e",
+      "render_hash": "f2c00726d429fb8e6debdda9a3255fc201f891abd037f3cac0be2f54564ece1f",
+      "png_sha256": "0de8287d1049c7604f4e625e839394e0720a6aa9e508e6a171e63618300c7184",
+      "dimensions": [
+        106,
+        25
+      ],
+      "placement_counts": {
+        "gameplay": 2,
+        "story": 2
+      }
+    },
+    {
+      "asset_id": "v4-mansion-gate-trans01-crimson-vine",
+      "revision": 2,
+      "revision_hash": "7995c448c5784ffd10ebfab8112899e7797c63b7037ea4534ef3a8126433146a",
+      "render_hash": "f0404814ac560c4639757a4083a573e03b1dc986b70676ba3d3b3a9ca6d67e33",
+      "png_sha256": "2da102d07f62efc37f53d0d42771e94422fc457215af8522402aa7d83d1bc116",
+      "dimensions": [
+        40,
+        76
+      ],
+      "placement_counts": {
+        "gameplay": 6,
+        "story": 5
+      }
+    },
+    {
+      "asset_id": "v4-mansion-gate-trans01-cypress",
+      "revision": 2,
+      "revision_hash": "604e2e18b4fb1f5f6dd54fcc590167958857d2c78280b8a015396eed12b6422d",
+      "render_hash": "6239c5de499b91765752fec5780655157ea3aeda7306099e889a4c98483c3214",
+      "png_sha256": "3eeacd4d8f801c37a340fb668627d129192690ddc2c9c7d479ed90a94ffc85fa",
+      "dimensions": [
+        29,
+        89
+      ],
+      "placement_counts": {
+        "gameplay": 4,
+        "story": 4
+      }
+    },
+    {
+      "asset_id": "v4-mansion-gate-trans01-garden-stair",
+      "revision": 2,
+      "revision_hash": "4a08a8e5bc5817910c1ec2587cc89769099f8167f8cf210bb8f3adeba6ea2b3b",
+      "render_hash": "b9835cb9db44588a842bd03e99237db12f133fd9f3fda7f2dc54cc8f3e3cae46",
+      "png_sha256": "717d7a7e879028f83dbab4d713e354930187b094349b79364e6cc9bbd5bba9ec",
+      "dimensions": [
+        46,
+        49
+      ],
+      "placement_counts": {
+        "gameplay": 1,
+        "story": 1
+      }
+    },
+    {
+      "asset_id": "v4-mansion-gate-trans01-gargoyle",
+      "revision": 2,
+      "revision_hash": "ff9e29cc62f80580b0ea83161dd4220db91b4bf7145b2dc3bf469fa6879d75ab",
+      "render_hash": "3944bcd15325a7fe8fd75a266acb7ea8b5b2da80df23f7bf12b0abf9d8cce777",
+      "png_sha256": "89bb830dde0d861210eaefb9090edd3438a1d07ef3345d43cc08d1f9d434ab9e",
+      "dimensions": [
+        27,
+        27
+      ],
+      "placement_counts": {
+        "gameplay": 2,
+        "story": 3
+      }
+    },
+    {
+      "asset_id": "v4-mansion-gate-trans01-lantern",
+      "revision": 2,
+      "revision_hash": "92d66f27b0f025d54c4a10b410ca5215dec58806b8da3c19e06f974ae32652d0",
+      "render_hash": "dae86ff965c7d96d6de7f4dc575a67f4d683903384c4fca080d258010ad0ded5",
+      "png_sha256": "51c4d6bd969c74ce19c208d9d77c53bf9da497837c5f0595801c928d59b9c412",
+      "dimensions": [
+        10,
+        19
+      ],
+      "placement_counts": {
+        "gameplay": 2,
+        "story": 3
+      }
+    },
+    {
+      "asset_id": "v4-mansion-gate-trans01-low-fence",
+      "revision": 2,
+      "revision_hash": "59e63debdc8249fabb37bdd73d1c49d1d27cfb0cdbd937dbd0d0d93b881376d8",
+      "render_hash": "4ad456988ca9533646a36d41c33b590f9bf4b188af5c70d8c5734349bf9629fd",
+      "png_sha256": "91ab6a83bf210012da2f9667f0260415c528fd28e9e3da0e1da94b7c8651d69a",
+      "dimensions": [
+        67,
+        48
+      ],
+      "placement_counts": {
+        "gameplay": 2,
+        "story": 2
+      }
+    },
+    {
+      "asset_id": "v4-mansion-gate-trans01-mansion-facade",
+      "revision": 2,
+      "revision_hash": "fb95a77c9c053293e2c7024b3c1f0f325dabcd71da871062d8469461695821b2",
+      "render_hash": "15c83916224be2905e1b551a22356fa19401b0402229888473ab30a955e91a22",
+      "png_sha256": "82b68bb5c9630bd9e2120e538613ee4accd856d62110d6c893e8a629dff6cbb0",
+      "dimensions": [
+        136,
+        102
+      ],
+      "placement_counts": {
+        "gameplay": 1,
+        "story": 1
+      }
+    },
+    {
+      "asset_id": "v4-mansion-gate-trans01-moon",
+      "revision": 2,
+      "revision_hash": "f0048021d8ff1d4982b20bbbc3785ce7063fc0cf28b770506b4a0da60a86e075",
+      "render_hash": "61bf879fc1eed33041a42d9ef37d6bc520758a1921f2cb78b9d00d5aff5efa06",
+      "png_sha256": "375d371a943ac25572d4a06c2e974e0b69cf173e2f217f468521440baa669cb2",
+      "dimensions": [
+        37,
+        37
+      ],
+      "placement_counts": {
+        "gameplay": 1,
+        "story": 1
+      }
+    },
+    {
+      "asset_id": "v4-mansion-gate-trans01-open-gate-wing",
+      "revision": 2,
+      "revision_hash": "973818c1a4843651fe554256de44874f1026d14891a4a6bf3bd2e53e400c5d53",
+      "render_hash": "947c16983e9a8b917f9858569edc401f83e5dbb0a55bf2acf0d298ce59563215",
+      "png_sha256": "ee534631b896635608a493d04aebcf373c220e8761027f9a9da7ffb8d7e59ce2",
+      "dimensions": [
+        24,
+        136
+      ],
+      "placement_counts": {
+        "gameplay": 2,
+        "story": 0
+      }
+    },
+    {
+      "asset_id": "v4-mansion-gate-trans01-perspective-paving",
+      "revision": 2,
+      "revision_hash": "5d66b3db6618c4222ea1d108189279ce20544689761bad190fca8c3fe40b8e84",
+      "render_hash": "4485376e99f164f8d780b95ea870a7b47dfb778f7e838f0b97239303682a27b4",
+      "png_sha256": "1e9131e4b8b3c49918842275ad388ea109a113c1de9e2c21def68c3d600762ac",
+      "dimensions": [
+        256,
+        152
+      ],
+      "placement_counts": {
+        "gameplay": 1,
+        "story": 1
+      }
+    }
+  ],
+  "scenes": {
+    "gameplay": {
+      "original_sha256": "6e5c9e62c47ab47777c9530089ce8a65ede34df733a973a571b8575eeac9e7a9",
+      "original_dimensions": [
+        576,
+        720
+      ],
+      "native_dimensions": [
+        192,
+        240
+      ],
+      "native_rgba_sha256": "c3a52d7b6c56721534802372c7e70827f7dedd0521eeb6f572e21c3873670f0b",
+      "recomposed_rgba_sha256": "c3a52d7b6c56721534802372c7e70827f7dedd0521eeb6f572e21c3873670f0b",
+      "native_to_original_3x_differing_pixels": 0,
+      "canonical_to_native_differing_pixels": 0,
+      "canonical_to_original_3x_differing_pixels": 0,
+      "placements": 27,
+      "exact": true
+    },
+    "story": {
+      "original_sha256": "b6151fd7ccf91357dbf2cbcb9600c4760db57619bbd60b3327caaabf49af49cb",
+      "original_dimensions": [
+        768,
+        720
+      ],
+      "native_dimensions": [
+        256,
+        240
+      ],
+      "native_rgba_sha256": "6099e2c23a46e1a8401b7c11554700b5fdbd90077876142109a294bb08719f99",
+      "recomposed_rgba_sha256": "6099e2c23a46e1a8401b7c11554700b5fdbd90077876142109a294bb08719f99",
+      "native_to_original_3x_differing_pixels": 0,
+      "canonical_to_native_differing_pixels": 0,
+      "canonical_to_original_3x_differing_pixels": 0,
+      "placements": 28,
+      "exact": true
+    }
+  }
+}

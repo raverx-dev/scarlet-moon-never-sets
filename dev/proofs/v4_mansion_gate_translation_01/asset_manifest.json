@@ -1,0 +1,230 @@
+{
+  "project": "scarlet-moon-never-sets",
+  "assets": [
+    {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mansion-gate-trans01-arcade-bridge",
+      "revision": 2,
+      "revision_hash": "a6bef77abba733356b955190139418b9a0251b8cab6c9d2c52cbe352076fe511",
+      "frame_id": "default",
+      "width": 77,
+      "height": 48,
+      "scale": 1,
+      "render_hash": "49673498a3444ba215799f563643c56232eed84dd0f54af5459f8c92620717e9",
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-gate-trans01-arcade-bridge/revision/2/view"
+      },
+      "file": "assets/arcade-bridge.png",
+      "png_sha256": "32f424045bd2701e3a2cfd6787dba7d15eb25fbb8fb5034ebe13f00a4167131a"
+    },
+    {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mansion-gate-trans01-banner-pier",
+      "revision": 2,
+      "revision_hash": "0b039bcf7f95d9ac0cd1feb7ac81bae7561aed1e0dc61a6356752e19a7a60818",
+      "frame_id": "default",
+      "width": 33,
+      "height": 142,
+      "scale": 1,
+      "render_hash": "50473f15dfd2b444dbe5c7816cf0a1a66beb525c9fac9ff6bacb747c949240c5",
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-gate-trans01-banner-pier/revision/2/view"
+      },
+      "file": "assets/banner-pier.png",
+      "png_sha256": "3bf2f7ffed70675957ca3e8b8e7aae3cad5fa70ddc3f59e6263421cdb429f768"
+    },
+    {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mansion-gate-trans01-closed-gate",
+      "revision": 2,
+      "revision_hash": "23bad0deec3b1607fa7a2ff49ddd8c52c0fe155ff1f4b62e8674a127a5cdf816",
+      "frame_id": "default",
+      "width": 106,
+      "height": 104,
+      "scale": 1,
+      "render_hash": "36468968aca894a5a72f0e6d31f981ae645e86739d18d06da7941e444983400c",
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-gate-trans01-closed-gate/revision/2/view"
+      },
+      "file": "assets/closed-gate.png",
+      "png_sha256": "4479c13226fa00253fbeb0d957fdb24f05674abbab836a1182780cfcc8b3e427"
+    },
+    {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mansion-gate-trans01-cloud-bank",
+      "revision": 2,
+      "revision_hash": "c912ed876dd1bdcfac310b07cb036db51925ff8e191f82c13705349fc364f26e",
+      "frame_id": "default",
+      "width": 106,
+      "height": 25,
+      "scale": 1,
+      "render_hash": "f2c00726d429fb8e6debdda9a3255fc201f891abd037f3cac0be2f54564ece1f",
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-gate-trans01-cloud-bank/revision/2/view"
+      },
+      "file": "assets/cloud-bank.png",
+      "png_sha256": "0de8287d1049c7604f4e625e839394e0720a6aa9e508e6a171e63618300c7184"
+    },
+    {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mansion-gate-trans01-crimson-vine",
+      "revision": 2,
+      "revision_hash": "7995c448c5784ffd10ebfab8112899e7797c63b7037ea4534ef3a8126433146a",
+      "frame_id": "default",
+      "width": 40,
+      "height": 76,
+      "scale": 1,
+      "render_hash": "f0404814ac560c4639757a4083a573e03b1dc986b70676ba3d3b3a9ca6d67e33",
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-gate-trans01-crimson-vine/revision/2/view"
+      },
+      "file": "assets/crimson-vine.png",
+      "png_sha256": "2da102d07f62efc37f53d0d42771e94422fc457215af8522402aa7d83d1bc116"
+    },
+    {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mansion-gate-trans01-cypress",
+      "revision": 2,
+      "revision_hash": "604e2e18b4fb1f5f6dd54fcc590167958857d2c78280b8a015396eed12b6422d",
+      "frame_id": "default",
+      "width": 29,
+      "height": 89,
+      "scale": 1,
+      "render_hash": "6239c5de499b91765752fec5780655157ea3aeda7306099e889a4c98483c3214",
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-gate-trans01-cypress/revision/2/view"
+      },
+      "file": "assets/cypress.png",
+      "png_sha256": "3eeacd4d8f801c37a340fb668627d129192690ddc2c9c7d479ed90a94ffc85fa"
+    },
+    {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mansion-gate-trans01-garden-stair",
+      "revision": 2,
+      "revision_hash": "4a08a8e5bc5817910c1ec2587cc89769099f8167f8cf210bb8f3adeba6ea2b3b",
+      "frame_id": "default",
+      "width": 46,
+      "height": 49,
+      "scale": 1,
+      "render_hash": "b9835cb9db44588a842bd03e99237db12f133fd9f3fda7f2dc54cc8f3e3cae46",
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-gate-trans01-garden-stair/revision/2/view"
+      },
+      "file": "assets/garden-stair.png",
+      "png_sha256": "717d7a7e879028f83dbab4d713e354930187b094349b79364e6cc9bbd5bba9ec"
+    },
+    {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mansion-gate-trans01-gargoyle",
+      "revision": 2,
+      "revision_hash": "ff9e29cc62f80580b0ea83161dd4220db91b4bf7145b2dc3bf469fa6879d75ab",
+      "frame_id": "default",
+      "width": 27,
+      "height": 27,
+      "scale": 1,
+      "render_hash": "3944bcd15325a7fe8fd75a266acb7ea8b5b2da80df23f7bf12b0abf9d8cce777",
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-gate-trans01-gargoyle/revision/2/view"
+      },
+      "file": "assets/gargoyle.png",
+      "png_sha256": "89bb830dde0d861210eaefb9090edd3438a1d07ef3345d43cc08d1f9d434ab9e"
+    },
+    {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mansion-gate-trans01-lantern",
+      "revision": 2,
+      "revision_hash": "92d66f27b0f025d54c4a10b410ca5215dec58806b8da3c19e06f974ae32652d0",
+      "frame_id": "default",
+      "width": 10,
+      "height": 19,
+      "scale": 1,
+      "render_hash": "dae86ff965c7d96d6de7f4dc575a67f4d683903384c4fca080d258010ad0ded5",
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-gate-trans01-lantern/revision/2/view"
+      },
+      "file": "assets/lantern.png",
+      "png_sha256": "51c4d6bd969c74ce19c208d9d77c53bf9da497837c5f0595801c928d59b9c412"
+    },
+    {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mansion-gate-trans01-low-fence",
+      "revision": 2,
+      "revision_hash": "59e63debdc8249fabb37bdd73d1c49d1d27cfb0cdbd937dbd0d0d93b881376d8",
+      "frame_id": "default",
+      "width": 67,
+      "height": 48,
+      "scale": 1,
+      "render_hash": "4ad456988ca9533646a36d41c33b590f9bf4b188af5c70d8c5734349bf9629fd",
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-gate-trans01-low-fence/revision/2/view"
+      },
+      "file": "assets/low-fence.png",
+      "png_sha256": "91ab6a83bf210012da2f9667f0260415c528fd28e9e3da0e1da94b7c8651d69a"
+    },
+    {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mansion-gate-trans01-mansion-facade",
+      "revision": 2,
+      "revision_hash": "fb95a77c9c053293e2c7024b3c1f0f325dabcd71da871062d8469461695821b2",
+      "frame_id": "default",
+      "width": 136,
+      "height": 102,
+      "scale": 1,
+      "render_hash": "15c83916224be2905e1b551a22356fa19401b0402229888473ab30a955e91a22",
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-gate-trans01-mansion-facade/revision/2/view"
+      },
+      "file": "assets/mansion-facade.png",
+      "png_sha256": "82b68bb5c9630bd9e2120e538613ee4accd856d62110d6c893e8a629dff6cbb0"
+    },
+    {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mansion-gate-trans01-moon",
+      "revision": 2,
+      "revision_hash": "f0048021d8ff1d4982b20bbbc3785ce7063fc0cf28b770506b4a0da60a86e075",
+      "frame_id": "default",
+      "width": 37,
+      "height": 37,
+      "scale": 1,
+      "render_hash": "61bf879fc1eed33041a42d9ef37d6bc520758a1921f2cb78b9d00d5aff5efa06",
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-gate-trans01-moon/revision/2/view"
+      },
+      "file": "assets/moon.png",
+      "png_sha256": "375d371a943ac25572d4a06c2e974e0b69cf173e2f217f468521440baa669cb2"
+    },
+    {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mansion-gate-trans01-open-gate-wing",
+      "revision": 2,
+      "revision_hash": "973818c1a4843651fe554256de44874f1026d14891a4a6bf3bd2e53e400c5d53",
+      "frame_id": "default",
+      "width": 24,
+      "height": 136,
+      "scale": 1,
+      "render_hash": "947c16983e9a8b917f9858569edc401f83e5dbb0a55bf2acf0d298ce59563215",
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-gate-trans01-open-gate-wing/revision/2/view"
+      },
+      "file": "assets/open-gate-wing.png",
+      "png_sha256": "ee534631b896635608a493d04aebcf373c220e8761027f9a9da7ffb8d7e59ce2"
+    },
+    {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mansion-gate-trans01-perspective-paving",
+      "revision": 2,
+      "revision_hash": "5d66b3db6618c4222ea1d108189279ce20544689761bad190fca8c3fe40b8e84",
+      "frame_id": "default",
+      "width": 256,
+      "height": 152,
+      "scale": 1,
+      "render_hash": "4485376e99f164f8d780b95ea870a7b47dfb778f7e838f0b97239303682a27b4",
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-gate-trans01-perspective-paving/revision/2/view"
+      },
+      "file": "assets/perspective-paving.png",
+      "png_sha256": "1e9131e4b8b3c49918842275ad388ea109a113c1de9e2c21def68c3d600762ac"
+    }
+  ],
+  "source": "RoboPixel asset_view, revision 2, scale 1, default frame; exact returned PNG bytes; read-only; not approval/delivery."
+}
