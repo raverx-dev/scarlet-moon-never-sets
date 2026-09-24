@@ -1,0 +1,284 @@
+{
+  "adapter_id": "scarlet-moon-js",
+  "preview": true,
+  "delivery": false,
+  "project_id": "scarlet-moon-never-sets",
+  "asset_id": "v4-forest-trans01-elder-trunk",
+  "revision": 2,
+  "revision_hash": "97742bf2e0ffe0053ede7808fcdc6f502354e9e56fb238830c7919b9336ed81c",
+  "frame_id": "default",
+  "layer_id": "art",
+  "matrix": {
+    "width": 64,
+    "height": 176,
+    "rows": [
+      "ggggggggggggghhhhhhhhhhhhiiiiiiiihhggggggg.....................h",
+      "ggggggggggggghhhhhhhhhhhhiiiiiidddhggggggg....................hh",
+      ".gggggggggggghhhhhhhhhhhiiiiiiidddggggggg....................hhh",
+      ".gggggggggggghhhhhhh0hhhiiiiiidddhggggggg....................hhh",
+      "..ggggggg0ggghhhhhhh0hhhiiiiiidddhggggggg...................hhih",
+      "..ggggggg0ggghhhhhhh0hhiiiiiidddhggggggg...................hhiii",
+      "..gggggggg0gghhhhhhh0hhiiiiiidddhggggggg..................hhhiii",
+      "...ggggggg0gghhhhhhhh0hiiiiiieddhggggggg.................hhhiiii",
+      "...ggggggg0gghhhhhhhh0iiiiiieddhggggggg.................hhhiiiii",
+      "....ggggggg0ghhhhhhhh0iiiiiieddhggggggg.................hhiiiiih",
+      "....ggggggg0ghhhhhhhh0iiiiieddhhggggggg................hhhiiiihh",
+      ".....gggggg0ghhhhhhhh0iiiiieddhggggggg................hhhiiiihh.",
+      ".....ggggggg0ghhhhhh0iiiiiedddhggggggg...............hhhiiiiih..",
+      ".....ggggggg0ghhhhhh0iiiiieddhhggggggg..............hhhiiiiih...",
+      "......gggggg0ghhhhh0iiiiiidddhggggggg.............hhhhiiiiihh...",
+      "......ggggggg0hhhhh0iiiiidddhhggggggg............hhhhiiiiihj....",
+      ".......gggggg0hhhh0hiiiiidddhhgggggg............hhhhiiiiihj.....",
+      ".......gggggg0hhhh0iiiiidddhhggggggg...........hhhiiiiiihj......",
+      ".......gggggg0hhh0hiiiiidddhhgggggg...........hhhiiiiiihj.......",
+      "........ggggg0hhh0hiiiidddhhgggggg..........hhhhiiiiihhj........",
+      "........ggggg0hhh0iiiiidddhhgggggg.........hhhhiiiiihjjh........",
+      ".........ggg0ghhh0iiiidddhhgggggg.........hhhhiiiiihjhh.........",
+      ".........ggg0ghhh0iiiidddhhggggg........hhhhhiiiiihjhh..........",
+      ".........ggg0ghhh0iiieddhhgggggg.......hhhhhiiiiihjh............",
+      ".........ggg0ghhh0iiieddhhggggg......hhhhhiiiiiihj..............",
+      "..........gg0ghhh0iieddhhgggggg....hhhhhiiiiihhhj...............",
+      "..........gggghhi0iieddhhggggg...hhhhhhiiiihhhjj................",
+      "..........ggggghiiidedhhggggg...hhhhhiiiihhhjj..................",
+      "..........ggggghiiidedhhggggg.hhhhhiiiiihhjj....................",
+      "...........gggghiiieddhggggghhhhhiiiiihhjj......................",
+      "...........gggghhiieddhggggghhhhiiiihhjj........................",
+      "...........gggghhiidddggggghhhhhiiihjjh.........................",
+      ".......bb..ggggghidddhggggghhhhiiihjhhh.........................",
+      ".....bcdcb.ggggghidddgggggghhhhiiihjhh..........................",
+      "...bbcddcbb.gggghidddgggggghhhiiihjhhh..........................",
+      "..bcddcbbaabgggghidddggggghhhhiiijhhhh..........................",
+      "...ccdbaabbbgggghhdddggggghhhhiiijhhh...........................",
+      "....bbaa...agggghhihhggggghhhiiijhhhh...........................",
+      ".....a.......gggghihhggggghhhiijhhhh............................",
+      ".............gggghihhgggghhhiiijhhhh............................",
+      ".............gggghihhgggghhhiijhhhhh............................",
+      ".............gggghihhgggghhiiihhhhh.............................",
+      "............gggghiiihgggghhiiihhhhh.............................",
+      "............g0gghiiihggghhhiiihhhh..............................",
+      "............g0gghiiihggghhiiihhhhh..............................",
+      "...........gg0ghhiiihggghhiiihhhhh..............................",
+      "...........gg0ghiiiihggghiiihhhhh...............................",
+      "...........g0gghiiiihgghhiiihhhhh...............................",
+      "..........gg0ghhiiiihhghhhhhhhhhh...............................",
+      "..........gg0ghhiiiiihgghhhhhhhhh...............................",
+      "..........gg0ghiiiiicccghhhhhhhh................................",
+      ".........ggg0ghiiiiicccgghhhhhhh................................",
+      ".........ggg0hhiiiiiicccghhhhhhh................................",
+      ".........gg0ghhiiiiiicccgghhhhhh................................",
+      "........ggg0ghiiiiii0cccgghhhhh.................................",
+      "........ggg0hhiiiiii0icccgghhhhg................................",
+      "........ggg0hhiiiiiii0cccgghhhhg................................",
+      ".......gggg0hhiiiiiii0icccgghhhg................................",
+      ".......ggggh0iiiiiiii0icccgghhggg...............................",
+      ".......ggggh0iiiiiiii0iccchgghggg...............................",
+      "......gggggh0iiiiiiiii0icccggggggg..............................",
+      "......ggggghh0iiiiiiii0iccchgggggg..............................",
+      "......ggggggh0iiiiiiii0iccchgggggg..............................",
+      ".......gggggh0iiiiiiii0ccchhggggg...............................",
+      ".......gggggh0iiiiiii0iccchgggggg...............................",
+      ".......ggggghh0iiiiii0iccchgggggg...............................",
+      ".......ggggggh0iiiii0iccchhgggggg...............................",
+      "........gggggh0iiiii0iccchgggggg................................",
+      "........ggggghh0iiii0iccchgggggg................................",
+      "........ggggghh0iii0iiccchgggggg................................",
+      ".bb.....gggggghiiii0iccchggggggg................................",
+      "bccbb....ggggghiii0iiccchgggggg.................................",
+      "bcddcb...ggggghiii0iiccchgggggg.................................",
+      "abdcccb..ggggghhiiiiccchhgggggg.................................",
+      "aabdcc...ggggghhiiiiccchggggggg.................................",
+      "aaabb.....ggggghiiiiiihhgggggg..................................",
+      "..aa......ggggghiiiiiihhgggggg..................................",
+      "..........ggggghiiiiiihggggggg..................................",
+      "..........ggggghhiiiihhggggggg..................................",
+      "...........ggggghiiiihhgggggg...................................",
+      "...........ggggghiiiihggggggg...................................",
+      "...........ggggghiiiihggggggg...................................",
+      "...........ggggghiiiihggggggg...................................",
+      "..........gggggghiiiiiggggggg...................................",
+      "..........ggggghhiiiiihggggggg..................................",
+      "..........ggggghhigiiihggggggg..................................",
+      "..........gg0gghiggiiihggggggg..................................",
+      ".........ggg0gghigggiihggggggg..................................",
+      ".........ggg0ghhggggccchgggggg..................................",
+      ".........ggg0ghgjjgggcchgggggg..................................",
+      ".........gg0gghgjgjjgcchgggggg..................................",
+      ".........gg0gggjggggggchggggggg.................................",
+      "........ggg0gggjggggggcchgggggg.................................",
+      "........ggg0ghgjggggggcchgggggg.................................",
+      "........ggg0ghjgg0ggggcehgggggg.................................",
+      "........ggg0ggjgg0gggccehgggggg.................................",
+      ".......gggg0ggggg0gggccehhggggg.................................",
+      ".......ggg0gggggg0gggicehhgggggg................................",
+      ".......ggg0ghgggg0gggicechgggggg................................",
+      ".......ggg0ghhgggggggicechgggggg................................",
+      "......gggg0ghhggggggiiccchhggggg................................",
+      "......gggg0ghhhggggiiiccchhggggg................................",
+      "......gggg0hhhhgggiiiicchhhggggg................................",
+      "......ggggg0hhhigiiiiccchhggggg.................................",
+      "......ggggg0hhhhiiiiiccchhggggg.................................",
+      "......ggggg0hhhhiiiiiccchhggggg.................................",
+      "......ggggg0hhhhhiiiicchhhggggg.................................",
+      ".......gggg0hhhhhiiiccchhgggggg.................................",
+      ".......gggg0hhhhhhiiccchhggggg..................................",
+      ".......ggggh0hhhhhiiccchhggggg..................................",
+      ".......ggggh0hhhhhhicchhhggggg..................................",
+      ".......ggggg0hhhhhhccchhgggggg..................................",
+      ".......ggggg0hhhhhhccchhgggggg..................................",
+      ".......ggggghhhhhhhccchhggggg...................................",
+      ".......ggggghhhhhhhcchhgggggg...................................",
+      "........gggghhhhhhccchhgggggg...................................",
+      "........gggghhhhhhccchhgggggg...................................",
+      "........gggghhhhhhccchhgggggg...................................",
+      "....bb..gggghhhhhhhccigggggg....................................",
+      "..bbccb.gggghhhhh0hcccgggggg....................................",
+      ".bcddcbbgggghhhhh0hccegggggg....................................",
+      "bcccdbaabggghhhhh0iccegggggg....................................",
+      ".ccdbaa.gggghhhhh0iiccegggggg...................................",
+      "..bbaaabgggghhhhhh0iccegggggg...................................",
+      "...aa..a.ggghhhhhh0icceggggggg..................................",
+      ".........gggghhhhh0icceggggggg..................................",
+      ".........gggghhhhh0iicceggggggg.................................",
+      ".........gggghhhhh0iicceggggggg.................................",
+      ".........gggghhhhh0iicceggggggg.................................",
+      ".........gggghhhhh0iiccegggggggg................................",
+      "..........ggghhhhh0iiicceggggggg................................",
+      "..........ggghhhhhi0iiccegggggggg...............................",
+      "..........ggghhhhhh0iicccgggggggg...............................",
+      "...........ggghhhhh0iicccigggggggg..............................",
+      "...........ggghhhhh0iiiccigggggggg..............................",
+      "............gghhhhh0iiicccigggggggg.............................",
+      "............ggghhhhh0iiccccgggggggg.............................",
+      "............ggghhhhh0iicccciggggggg.............................",
+      ".............gghhhhhh0iiccccgggggggg............................",
+      ".............ggghhhhh0iicccccggggggg............................",
+      ".............ggghhhhhh0iiccccgggggggg...........................",
+      "..............gghhhhhh0iiiccecggggggg...........................",
+      "..............ggghhhhhh0iicccegggggggg..........................",
+      "...............gghhhhhh0iiiccecggggggg..........................",
+      "...............gghhhhhhi0iiiccecggggggg.........................",
+      "...............gghhhhhhhiiiiccecgggggggg........................",
+      "................gghhhhhhiiiiiccecgggggggg.......................",
+      "................gghhhhhhhiiiicceccgggggggg......................",
+      "................gghhhhhhhiiiiiccecggggggggg.....................",
+      ".................gghbbhhhhiiiiiccccggggggggg....................",
+      ".................gbcdcbhhhiiiiicccccggggggggg...................",
+      "................bbcddcbbhhhi0iiicccccggggggggg..................",
+      "...............bcddcbbaabhhhi0iiicccccggggggggg.................",
+      "................ccdbaabbbhhhii0iiicccccgggggggg.................",
+      ".................bbaahhhahhhhi0iiiicccccgggggggg................",
+      "..................agghhhhhhhhhi0iiiicccccgggggggg...............",
+      "....................ghhhhhhhhhhi0iiiiccccggggggggg..............",
+      ".....................ghhhhhhhhhii0iiiiceccggggggggg.............",
+      "......................ghhhhhhhhhi0iiiiiceccggggggggg............",
+      ".......................ghhhhhhhhhi0iiiicceccggggggggg...........",
+      "........................hhhhhhhhhi0iiiiicceccggggggggg..........",
+      "........................ghhhhhhhhh0iiiiiicceccggggggggg.........",
+      ".........................ghhhhhhhhh0iiiiiicceccggggggggg........",
+      "..........................ghhhhhhhh00iiiiiicceccggggggggg.......",
+      "...........................ghhhhhhh0i0iiiiiibbeggggggggggg......",
+      "............................ghhhhhh0hi0iiiibccbbgggggggggg......",
+      ".............................hhhhhhhhhi0iibbcddcbgggggggggg.....",
+      "..............................hhhhhhhhhi0baabdcccbggggggggg.....",
+      "...............................hhhhhhhhh0iiaabdccggggggggggg....",
+      "................................hhhhhhhhh0baaabbiggggggggggg....",
+      ".................................hhhhhhhhhaiiaaiigggggggggggg...",
+      ".................................ghhhhhhhhh0iiiiiggggggggggggg..",
+      "..................................hhhhhhhhhhiiiigggggggggggggg..",
+      "...................................hhhhhhhhhhiiihgggggggggggggg.",
+      "....................................hhhhhhhhhhiihgggggggggggggg.",
+      ".....................................hhhhhhhhhhihhgggggggggggggg"
+    ],
+    "symbols": {
+      "0": {
+        "hex": "#080e1b"
+      },
+      "1": {
+        "hex": "#101c29"
+      },
+      "2": {
+        "hex": "#182d38"
+      },
+      "3": {
+        "hex": "#23434a"
+      },
+      "4": {
+        "hex": "#315961"
+      },
+      "5": {
+        "hex": "#457078"
+      },
+      "6": {
+        "hex": "#5b8990"
+      },
+      ".": {
+        "transparent": true
+      },
+      "a": {
+        "hex": "#15282e"
+      },
+      "b": {
+        "hex": "#213b39"
+      },
+      "c": {
+        "hex": "#344f45"
+      },
+      "d": {
+        "hex": "#527159"
+      },
+      "e": {
+        "hex": "#789265"
+      },
+      "f": {
+        "hex": "#9caa76"
+      },
+      "g": {
+        "hex": "#181e26"
+      },
+      "h": {
+        "hex": "#292e2d"
+      },
+      "i": {
+        "hex": "#3c4035"
+      },
+      "j": {
+        "hex": "#565440"
+      },
+      "k": {
+        "hex": "#726c4b"
+      },
+      "l": {
+        "hex": "#35304e"
+      },
+      "m": {
+        "hex": "#62517b"
+      },
+      "n": {
+        "hex": "#a385b6"
+      },
+      "o": {
+        "hex": "#c8b2cb"
+      },
+      "p": {
+        "hex": "#5a3c38"
+      },
+      "q": {
+        "hex": "#9e603e"
+      },
+      "r": {
+        "hex": "#d99952"
+      },
+      "s": {
+        "hex": "#f1d48a"
+      }
+    }
+  },
+  "round_trip": {
+    "width": 64,
+    "height": 176,
+    "cel_hash": true
+  },
+  "resources": {
+    "export": "robopixel://export/scarlet-moon-never-sets/v4-forest-trans01-elder-trunk/revision/2/scarlet-moon-js"
+  }
+}

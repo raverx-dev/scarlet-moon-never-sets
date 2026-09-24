@@ -1,0 +1,148 @@
+{
+  "adapter_id": "scarlet-moon-js",
+  "preview": true,
+  "delivery": false,
+  "project_id": "scarlet-moon-never-sets",
+  "asset_id": "v4-forest-trans01-canopy",
+  "revision": 2,
+  "revision_hash": "219219aaa7262cdcf398b88c4e6989123b42ddabdf02add21a0e21a2c2dbbeba",
+  "frame_id": "default",
+  "layer_id": "art",
+  "matrix": {
+    "width": 64,
+    "height": 40,
+    "rows": [
+      "aaaaabbaaaaaaabaabdcccbaaaaaaaaabbaaaaaaaaaccdbaabbbaaaaabaaaaaa",
+      "aaabcdcbaaaaaaaaaabdccaaaaaaabbbccbbbbbbbbbbbbaabbbabbbbbbaaaaaa",
+      "bbbcddcbbbbbbbbbaaabbbbbbbbbbbcddcbbbbbbbbbbbabbbbbbbbbbbbbaaaaa",
+      "bcddcbbaabbbbbbabbaabbbbbbbbbcccdbaabbbbbbbbbbbbbbbbbbbbbccbbaaa",
+      "bccdbaabbbbbbbbbbeebbbbbbbbbbccdbaabbbbbbbbbbbbbbbbbbbbbbcddcbaa",
+      "bbbbaabbbabbbbbbbbdbbbbbbbbbbbbbaaabbbbbbbbbbbbbbbbbbbbaabdcccba",
+      "bbbabbbbbbbbbbbbbbbbbbbbbbbbbbbaabbabbbbbbbbbbbbbbbbbbbbaabdccaa",
+      "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaabbaaa",
+      "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbabbaabaaa",
+      "bbbbbbbbbbbbbbbbbbbbbbbbcdcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaa",
+      "bbbbbbbbbbbbbbbbbbbbbbbcddcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbaa",
+      "bbbbbbbbbbbbbbbbbbbbbcddcbbaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbaa",
+      "bbbbbbbbbbccbbbbbbbbbccdbaeebbbbbbbbbbccbbbbbbbbbbbbbaaaaaaaaaaa",
+      "bbbbbbbbcddcbbbbbbbbbbbbaabdbabbbbbbbbcddcbbbbbbbbbccbaaaaaaaaaa",
+      "bbbbbbbcccdbaabbbbbbbbbabbbbbbbbbbbbaabdcccbbbbbbcddcbbaaaaaaaaa",
+      "bbbbbbbccdbaeebbbbbbbbbbbbbbbbbbbbbbbaaeeccbbbbbcccdbaabaaaaaaaa",
+      "bbbbbbbbbbaaadbbbbbbbbbbbbbbbbbbbbbbbaaadbbbbbbbccdbaaaaaaaaaaaa",
+      "bbbbbbbbbaabbabbbbbbbbbbbbbbbbbbbbbbabbaabbbbbbbabbaaabaaaaaaaaa",
+      "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaaaaaaaaaa",
+      "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaaaaaaaaaaa",
+      "abbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaaa........",
+      "aabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaaaa........",
+      "aaabbbbbbbbbbbbbcdcbbbbbbbbbbbbccbbaaaabbbbbbbaaaaaaaaaaa.......",
+      "aaaabbbbbbbbbbbcddcbbbbbbbbbbbbcddcbaaaaaaabbaaaaaaaaaaaa.......",
+      "aaaabbbbbbbbbcddcbbaabbbbbbbbaabdcccbaaaabbccbaaaaaaaaaaa.......",
+      "aaaa.bbbbbbbbccdbaabbbbbbbbbbbaabdccaaaabcddcbbaaaaaaaaaa.......",
+      "a.....bbbbbaaabbaabbbabbbbbbbbaaabbaaaabcccdbaab....aaaaaa......",
+      ".......b....aaaaaaaabbbbbbbbaaaaaaaaaaaaccdbaaa..........a......",
+      "............aaaaaaaaabbbbbbaaaaaaaaaaaaaabbaaab.................",
+      "............aaaaaaaaaaabbbaaaaaaaaaaaaaaaaaaaaa.................",
+      ".............aaaaaaaaaaabaaaaaaaaaaa.aaaaaaaa...................",
+      ".............aaaaaaaaaaaaaaaaaaaaaaa..aaaaaaa...................",
+      "..............aaaaa....aaaaaaaaaaaa.....aaaa....................",
+      "..............a.........aaaaaaaaaa.......aaa....................",
+      ".........................aaaaaaaa.........a.....................",
+      "..........................aaaaaaa...............................",
+      "..........................aaaaaa................................",
+      "...........................aaaa.................................",
+      "............................aaa.................................",
+      ".............................a.................................."
+    ],
+    "symbols": {
+      "0": {
+        "hex": "#080e1b"
+      },
+      "1": {
+        "hex": "#101c29"
+      },
+      "2": {
+        "hex": "#182d38"
+      },
+      "3": {
+        "hex": "#23434a"
+      },
+      "4": {
+        "hex": "#315961"
+      },
+      "5": {
+        "hex": "#457078"
+      },
+      "6": {
+        "hex": "#5b8990"
+      },
+      ".": {
+        "transparent": true
+      },
+      "a": {
+        "hex": "#15282e"
+      },
+      "b": {
+        "hex": "#213b39"
+      },
+      "c": {
+        "hex": "#344f45"
+      },
+      "d": {
+        "hex": "#527159"
+      },
+      "e": {
+        "hex": "#789265"
+      },
+      "f": {
+        "hex": "#9caa76"
+      },
+      "g": {
+        "hex": "#181e26"
+      },
+      "h": {
+        "hex": "#292e2d"
+      },
+      "i": {
+        "hex": "#3c4035"
+      },
+      "j": {
+        "hex": "#565440"
+      },
+      "k": {
+        "hex": "#726c4b"
+      },
+      "l": {
+        "hex": "#35304e"
+      },
+      "m": {
+        "hex": "#62517b"
+      },
+      "n": {
+        "hex": "#a385b6"
+      },
+      "o": {
+        "hex": "#c8b2cb"
+      },
+      "p": {
+        "hex": "#5a3c38"
+      },
+      "q": {
+        "hex": "#9e603e"
+      },
+      "r": {
+        "hex": "#d99952"
+      },
+      "s": {
+        "hex": "#f1d48a"
+      }
+    }
+  },
+  "round_trip": {
+    "width": 64,
+    "height": 40,
+    "cel_hash": true
+  },
+  "resources": {
+    "export": "robopixel://export/scarlet-moon-never-sets/v4-forest-trans01-canopy/revision/2/scarlet-moon-js"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "adapter_id": "scarlet-moon-js",
+  "preview": true,
+  "delivery": false,
+  "project_id": "scarlet-moon-never-sets",
+  "asset_id": "v4-forest-trans01-mid-tree",
+  "revision": 2,
+  "revision_hash": "9e17712a07b736d3981f1e7fea83b0cb3e729cc81b8794df1ff12eb3ae07d7b1",
+  "frame_id": "default",
+  "layer_id": "art",
+  "matrix": {
+    "width": 36,
+    "height": 112,
+    "rows": [
+      "......bbcddcb...aaaaaa..............",
+      ".....baabdcccb..aabbaa..............",
+      ".......aabdcc..abbccba..............",
+      "..bb..baaabb...bcddcbb..............",
+      "bcdcb.a..aa...bcccdbaab.............",
+      "cddcbb........accdbaaa..............",
+      "dcbbaab......aaabbaaab..............",
+      "dbaabbb......aaaaaabaa......bb......",
+      "baa...a.....aaaaaabbaa....bcdcb.....",
+      "a..bbb......aaaabbbbaa..bbcddcbb....",
+      "...bbb......aaaabbbbaa.bcddcbbaab...",
+      "....bbb.....aaaabbbbaa..ccdbaabbb...",
+      "....bbb......aaabbbbaa...bbaa...a...",
+      "....bbb......aaaabbbaa....a....aaaa.",
+      "....bbb......aaaabbba..........aaaa.",
+      ".....bbb.....aaaabbba..........aaaa.",
+      ".....bbb......aaabbba.........aaaa..",
+      ".....bbb......aaabbba.........aaaa..",
+      ".....bbb......aaabbba....bb...aaaa..",
+      "......bbb.....aaabbbb...bccbb.aaaa..",
+      "......bbbb.....aabbbb..bbcddcbaaa...",
+      "......bbbb.....aaabbb.baabdcccbaa...",
+      ".......bbbb....aaabbb...aabdccaaa...",
+      ".......bbbbb...aaabbb..baaabbaaaa...",
+      "........bbbbb...aabbb..a..aaabba....",
+      ".........bbbb...aabbb.......bccbb...",
+      "..........bbbb..bbbbb......bbcddcb..",
+      "..........bbbbbbccbbb.....baabdcccb.",
+      "...........bbbcddcbbb......aaabdcc..",
+      "............bcccdbaab.....abaaabb...",
+      "............bccdbaabb.....aaaaaa....",
+      "....bb.......bbbaaabb....aaaaa......",
+      "..bbccb.......baabbaba...aaaa.......",
+      ".bcddcbb......bbbbbbba..aaaaa.......",
+      "bcccdbaab......bbbbbba.aaaaa........",
+      ".ccdbaa.........bbbbba.aaaa.........",
+      "..bbaaab........abbbbaaaaaa.........",
+      "...aa..a........abbbbaaaaa..........",
+      ".a.............aaabbbaaaaa..........",
+      "aaa............aaabbbaaaa...........",
+      "aaaa...........aaabbaaaaa...........",
+      "aaaaa..........aaabaaaaa............",
+      ".aaaaaa.bb.....aaabaaaa.............",
+      "..aaaabcdcb....aaaaaaaa.............",
+      "..aabbcddcbb...aaaaaaaa.............",
+      "...bcddcbbaab..aaaaaaaaa............",
+      "...accdbaabbb..aaaaaabaa............",
+      "....abbaa...a..aaaaaabaa............",
+      "....aaaaaa.....aaababbaa............",
+      ".....aaaaa.....aaabbbbaa............",
+      ".....aaaaaa....aabbbbba.............",
+      "......aaaaa...aaabbbbba.............",
+      "......aaaaaa..aaabbbbaa.............",
+      ".......aaaaa..aaabbbbaa.............",
+      ".......aaaaaa.aaabbbba..............",
+      "........aaaaaaaabbbbba..............",
+      "........aaaaaaaabbbbaa..............",
+      ".........aaaaaaabbbbaa..............",
+      ".........aaaaaaabbbba...............",
+      "..........aaaaaabbbba...............",
+      "..........aaaaaabbbaa...............",
+      "...........aaaaabbbaa...............",
+      "...........aaaaaabba................",
+      "...........aaaabbbba................",
+      "...........aaaabbbba................",
+      "...........aaaabbbaa................",
+      "..........aaaabbbba.................",
+      "..........aaaabbbba.................",
+      "..........aaaabbbba.................",
+      "..........aaaabbbaa.................",
+      "..........aaaabbbaa.................",
+      "...........aaabbbaa.................",
+      "...........aaaabbaaa................",
+      "...........aaaabbaaa................",
+      "...........aaaabbaaa................",
+      "...........aaaabbbaa................",
+      "...........aaaabbbaa................",
+      "...........aaaabbbaa................",
+      "............aaabbbaa................",
+      "............aaabbbaaa...............",
+      "............aaaabbaaa...............",
+      "............aaaabbaaa...............",
+      "............aaaabbbac...............",
+      "............aaaabbbac...............",
+      "............aaaabbbca...............",
+      ".............aaabbbca...............",
+      ".............aaabbcaaa..............",
+      ".............aaabbcaaa..............",
+      ".............aaaacbaaa..............",
+      ".............aaaacbbaa..............",
+      ".............aaacbbbaa..............",
+      "............aaaacbbbaa..............",
+      "............aaaacbbbaa..............",
+      "............aaaacbbbaaa.............",
+      "............aaaacbbbaaa.............",
+      "............aaaacbbbaaa.............",
+      "............aaaabcbbbaa.............",
+      "...........aaaaabcbbbaa.............",
+      "...........aaaaabcbbbaaa............",
+      "...........aaaaabcbbbaaa............",
+      "...........aaaaabcbbbaaaa...........",
+      "...........aaaabbcbbbbaaa...........",
+      "...........aaaabbbbbbbaaa...........",
+      "..........aaaaabbbbbbbaaaa..........",
+      "..........aaaaabbbbbbbaaaa..........",
+      "..........aaaaabbbbbbbbaaaa.........",
+      "..........aaaaabbbbbbbbaaaa.........",
+      "..........aaaabbbbbbbbbaaaa.........",
+      "..........aaaabbbbbbbbbaaaaa........",
+      ".........aaaaabbbbbbbbbbaaaa........",
+      ".........aaaaabbbbbbbbbbaaaaa.......",
+      ".........aaaaaaaaaaaaaaaaaaaa......."
+    ],
+    "symbols": {
+      "0": {
+        "hex": "#080e1b"
+      },
+      "1": {
+        "hex": "#101c29"
+      },
+      "2": {
+        "hex": "#182d38"
+      },
+      "3": {
+        "hex": "#23434a"
+      },
+      "4": {
+        "hex": "#315961"
+      },
+      "5": {
+        "hex": "#457078"
+      },
+      "6": {
+        "hex": "#5b8990"
+      },
+      ".": {
+        "transparent": true
+      },
+      "a": {
+        "hex": "#15282e"
+      },
+      "b": {
+        "hex": "#213b39"
+      },
+      "c": {
+        "hex": "#344f45"
+      },
+      "d": {
+        "hex": "#527159"
+      },
+      "e": {
+        "hex": "#789265"
+      },
+      "f": {
+        "hex": "#9caa76"
+      },
+      "g": {
+        "hex": "#181e26"
+      },
+      "h": {
+        "hex": "#292e2d"
+      },
+      "i": {
+        "hex": "#3c4035"
+      },
+      "j": {
+        "hex": "#565440"
+      },
+      "k": {
+        "hex": "#726c4b"
+      },
+      "l": {
+        "hex": "#35304e"
+      },
+      "m": {
+        "hex": "#62517b"
+      },
+      "n": {
+        "hex": "#a385b6"
+      },
+      "o": {
+        "hex": "#c8b2cb"
+      },
+      "p": {
+        "hex": "#5a3c38"
+      },
+      "q": {
+        "hex": "#9e603e"
+      },
+      "r": {
+        "hex": "#d99952"
+      },
+      "s": {
+        "hex": "#f1d48a"
+      }
+    }
+  },
+  "round_trip": {
+    "width": 36,
+    "height": 112,
+    "cel_hash": true
+  },
+  "resources": {
+    "export": "robopixel://export/scarlet-moon-never-sets/v4-forest-trans01-mid-tree/revision/2/scarlet-moon-js"
+  }
+}
