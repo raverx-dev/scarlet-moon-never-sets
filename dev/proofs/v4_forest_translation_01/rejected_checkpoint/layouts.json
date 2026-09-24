@@ -2,13 +2,13 @@
   "gameplay": {
     "width": 192,
     "height": 240,
-    "background": "1",
+    "background": "0",
     "placements": [
       {
         "asset": "quiet-ground",
         "x": 0,
         "y": 112,
-        "flip_x": true
+        "flip_x": false
       },
       {
         "asset": "quiet-ground",
@@ -20,7 +20,7 @@
         "asset": "quiet-ground",
         "x": 64,
         "y": 112,
-        "flip_x": true
+        "flip_x": false
       },
       {
         "asset": "quiet-ground",
@@ -32,7 +32,7 @@
         "asset": "quiet-ground",
         "x": 128,
         "y": 112,
-        "flip_x": true
+        "flip_x": false
       },
       {
         "asset": "quiet-ground",
@@ -50,7 +50,7 @@
         "asset": "quiet-ground",
         "x": 37,
         "y": 144,
-        "flip_x": true
+        "flip_x": false
       },
       {
         "asset": "quiet-ground",
@@ -62,7 +62,7 @@
         "asset": "quiet-ground",
         "x": 101,
         "y": 144,
-        "flip_x": true
+        "flip_x": false
       },
       {
         "asset": "quiet-ground",
@@ -74,13 +74,13 @@
         "asset": "quiet-ground",
         "x": 165,
         "y": 144,
-        "flip_x": true
+        "flip_x": false
       },
       {
         "asset": "quiet-ground",
         "x": 10,
         "y": 176,
-        "flip_x": true
+        "flip_x": false
       },
       {
         "asset": "quiet-ground",
@@ -92,7 +92,7 @@
         "asset": "quiet-ground",
         "x": 74,
         "y": 176,
-        "flip_x": true
+        "flip_x": false
       },
       {
         "asset": "quiet-ground",
@@ -104,7 +104,7 @@
         "asset": "quiet-ground",
         "x": 138,
         "y": 176,
-        "flip_x": true
+        "flip_x": false
       },
       {
         "asset": "quiet-ground",
@@ -122,7 +122,7 @@
         "asset": "quiet-ground",
         "x": 32,
         "y": 208,
-        "flip_x": true
+        "flip_x": false
       },
       {
         "asset": "quiet-ground",
@@ -134,7 +134,7 @@
         "asset": "quiet-ground",
         "x": 96,
         "y": 208,
-        "flip_x": true
+        "flip_x": false
       },
       {
         "asset": "quiet-ground",
@@ -146,7 +146,7 @@
         "asset": "quiet-ground",
         "x": 160,
         "y": 208,
-        "flip_x": true
+        "flip_x": false
       },
       {
         "asset": "depth-opening",
@@ -180,13 +180,13 @@
       },
       {
         "asset": "mid-tree",
-        "x": 20,
+        "x": 25,
         "y": 31,
         "flip_x": false
       },
       {
         "asset": "mid-tree",
-        "x": 139,
+        "x": 130,
         "y": 21,
         "flip_x": true
       },
@@ -228,20 +228,20 @@
       },
       {
         "asset": "far-thicket",
-        "x": 10,
-        "y": 94,
+        "x": 28,
+        "y": 90,
         "flip_x": false
       },
       {
         "asset": "far-thicket",
-        "x": 43,
-        "y": 78,
+        "x": 72,
+        "y": 98,
         "flip_x": true
       },
       {
         "asset": "far-thicket",
-        "x": 134,
-        "y": 92,
+        "x": 112,
+        "y": 91,
         "flip_x": false
       },
       {
@@ -465,13 +465,13 @@
   "story": {
     "width": 256,
     "height": 240,
-    "background": "1",
+    "background": "0",
     "placements": [
       {
         "asset": "quiet-ground",
         "x": 0,
         "y": 112,
-        "flip_x": true
+        "flip_x": false
       },
       {
         "asset": "quiet-ground",
@@ -483,7 +483,7 @@
         "asset": "quiet-ground",
         "x": 64,
         "y": 112,
-        "flip_x": true
+        "flip_x": false
       },
       {
         "asset": "quiet-ground",
@@ -495,7 +495,7 @@
         "asset": "quiet-ground",
         "x": 128,
         "y": 112,
-        "flip_x": true
+        "flip_x": false
       },
       {
         "asset": "quiet-ground",
@@ -507,7 +507,7 @@
         "asset": "quiet-ground",
         "x": 192,
         "y": 112,
-        "flip_x": true
+        "flip_x": false
       },
       {
         "asset": "quiet-ground",
@@ -525,7 +525,7 @@
         "asset": "quiet-ground",
         "x": 37,
         "y": 144,
-        "flip_x": true
+        "flip_x": false
       },
       {
         "asset": "quiet-ground",
@@ -537,7 +537,7 @@
         "asset": "quiet-ground",
         "x": 101,
         "y": 144,
-        "flip_x": true
+        "flip_x": false
       },
       {
         "asset": "quiet-ground",
@@ -549,7 +549,7 @@
         "asset": "quiet-ground",
         "x": 165,
         "y": 144,
-        "flip_x": true
+        "flip_x": false
       },
       {
         "asset": "quiet-ground",
@@ -561,13 +561,13 @@
         "asset": "quiet-ground",
         "x": 229,
         "y": 144,
-        "flip_x": true
+        "flip_x": false
       },
       {
         "asset": "quiet-ground",
         "x": 10,
         "y": 176,
-        "flip_x": true
+        "flip_x": false
       },
       {
         "asset": "quiet-ground",
@@ -579,7 +579,7 @@
         "asset": "quiet-ground",
         "x": 74,
         "y": 176,
-        "flip_x": true
+        "flip_x": false
       },
       {
         "asset": "quiet-ground",
@@ -591,7 +591,7 @@
         "asset": "quiet-ground",
         "x": 138,
         "y": 176,
-        "flip_x": true
+        "flip_x": false
       },
       {
         "asset": "quiet-ground",
@@ -603,7 +603,7 @@
         "asset": "quiet-ground",
         "x": 202,
         "y": 176,
-        "flip_x": true
+        "flip_x": false
       },
       {
         "asset": "quiet-ground",
@@ -621,7 +621,7 @@
         "asset": "quiet-ground",
         "x": 32,
         "y": 208,
-        "flip_x": true
+        "flip_x": false
       },
       {
         "asset": "quiet-ground",
@@ -633,7 +633,7 @@
         "asset": "quiet-ground",
         "x": 96,
         "y": 208,
-        "flip_x": true
+        "flip_x": false
       },
       {
         "asset": "quiet-ground",
@@ -645,7 +645,7 @@
         "asset": "quiet-ground",
         "x": 160,
         "y": 208,
-        "flip_x": true
+        "flip_x": false
       },
       {
         "asset": "quiet-ground",
@@ -657,7 +657,7 @@
         "asset": "quiet-ground",
         "x": 224,
         "y": 208,
-        "flip_x": true
+        "flip_x": false
       },
       {
         "asset": "depth-opening",
@@ -745,26 +745,26 @@
       },
       {
         "asset": "far-thicket",
-        "x": 15,
-        "y": 82,
+        "x": 22,
+        "y": 75,
         "flip_x": false
       },
       {
         "asset": "far-thicket",
         "x": 67,
-        "y": 71,
+        "y": 79,
         "flip_x": true
       },
       {
         "asset": "far-thicket",
-        "x": 122,
-        "y": 78,
+        "x": 118,
+        "y": 82,
         "flip_x": false
       },
       {
         "asset": "far-thicket",
-        "x": 178,
-        "y": 86,
+        "x": 171,
+        "y": 80,
         "flip_x": true
       },
       {

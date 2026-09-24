@@ -5,16 +5,16 @@ ROOT=Path(__file__).resolve().parent
 L={}
 def scene(name,w):
  global P
- P=[];L[name]={'width':w,'height':240,'background':'0','placements':P}
+ P=[];L[name]={'width':w,'height':240,'background':'1','placements':P}
 def put(asset,x,y,flip=False):P.append({'asset':asset,'x':x,'y':y,'flip_x':flip})
 scene('gameplay',192)
 for y in range(112,240,32):
- for x in range(0,192,32):put('quiet-ground',x+(y//32%3)*5,y)
+ for x in range(0,192,32):put('quiet-ground',x+(y//32%3)*5,y,(x//32+y//32)%2==1)
 put('depth-opening',56,0)
 for x,y,f in [(44,0,False),(88,-9,True),(115,7,False),(13,3,True)]:put('far-grove',x,y,f)
-for x,y,f in [(25,31,False),(130,21,True),(1,57,True),(147,39,False)]:put('mid-tree',x,y,f)
+for x,y,f in [(20,31,False),(139,21,True),(1,57,True),(147,39,False)]:put('mid-tree',x,y,f)
 for x,y,f in [(26,90,False),(129,84,True),(11,117,False),(149,121,True)]:put('understory',x,y,f)
-for x,y,f in [(28,90,False),(72,98,True),(112,91,False)]:put('far-thicket',x,y,f)
+for x,y,f in [(10,94,False),(43,78,True),(134,92,False)]:put('far-thicket',x,y,f)
 put('elder-trunk',-8,-6);put('fork-trunk',157,4)
 put('root-crook',-13,164,True);put('root-crook',156,173)
 put('root-bank',-22,151);put('root-bank',158,155,True)
@@ -28,12 +28,12 @@ put('mushrooms',7,145);put('mushrooms',171,211,True)
 put('firefly',43,91);put('firefly',149,143)
 scene('story',256)
 for y in range(112,240,32):
- for x in range(0,256,32):put('quiet-ground',x+(y//32%3)*5,y)
+ for x in range(0,256,32):put('quiet-ground',x+(y//32%3)*5,y,(x//32+y//32)%2==1)
 put('depth-opening',127,-12)
 for x,y,f in [(27,-4,False),(75,-17,True),(128,-10,False),(168,3,True),(207,-15,False)]:put('far-grove',x,y,f)
 for x,y,f in [(59,-25,False),(100,-29,True),(193,-8,True),(221,-14,False)]:put('mid-tree',x,y,f)
 for x,y,f in [(27,73,False),(79,64,True),(165,70,False),(202,83,True)]:put('understory',x,y,f)
-for x,y,f in [(22,75,False),(67,79,True),(118,82,False),(171,80,True)]:put('far-thicket',x,y,f)
+for x,y,f in [(15,82,False),(67,71,True),(122,78,False),(178,86,True)]:put('far-thicket',x,y,f)
 put('elder-trunk',-12,-24);put('fork-trunk',218,-11)
 put('root-crook',-21,152,True);put('root-crook',228,142)
 put('root-bank',-16,133);put('root-bank',214,127,True)

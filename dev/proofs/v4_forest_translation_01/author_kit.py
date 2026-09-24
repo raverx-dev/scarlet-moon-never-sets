@@ -1,160 +1,201 @@
-"""Native indexed pixel authoring aid. No reference image is loaded or sampled.
-Integer silhouettes, explicit bark ribbons and hand-designed leaf/fern clusters.
-Canonical RoboPixel grid exports, not this script, are final composition inputs.
+"""Correction 01: native raster cluster authoring, no reference sampling.
+Substantial scanline trunk masses, bark grooves, buttresses, and dense leaf stencils.
+All drawing is at final integer resolution; no vector render, resize or antialiasing.
+The resulting grids must be committed and read back through RoboPixel.
 """
 from pathlib import Path
-from PIL import Image,ImageDraw
-import json
-ROOT=Path(__file__).resolve().parent
-COLORS={'.':'#00000000','0':'#080e1b','1':'#101c29','2':'#182d38','3':'#23434a','4':'#315961','5':'#457078','6':'#5b8990',
- 'a':'#15282e','b':'#213b39','c':'#344f45','d':'#527159','e':'#789265','f':'#9caa76',
- 'g':'#181e26','h':'#292e2d','i':'#3c4035','j':'#565440','k':'#726c4b',
- 'l':'#35304e','m':'#62517b','n':'#a385b6','o':'#c8b2cb','p':'#5a3c38','q':'#9e603e','r':'#d99952','s':'#f1d48a'}
-TOKENS=''.join(COLORS); A={}
-def canvas(w,h,bg='.'):
- global im,d
- im=Image.new('L',(w,h),TOKENS.index(bg));d=ImageDraw.Draw(im)
-def poly(pts,c):d.polygon(pts,fill=TOKENS.index(c))
-def line(pts,c,w=1):d.line(pts,fill=TOKENS.index(c),width=w)
-def rect(box,c):d.rectangle(box,fill=TOKENS.index(c))
-def pattern(rows,x,y,colors=None,flip=False):
+from PIL import Image
+import json,math
+R=Path(__file__).resolve().parent
+old=json.loads((R/'rejected_checkpoint/authoring_inputs.json').read_text())
+P=old['palette'];T=''.join(e['text_token'] for e in P['entries']);A={}
+def new(w,h,bg='.'):
+ global im
+ im=Image.new('L',(w,h),T.index(bg))
+def px(x,y,c):
+ x,y=int(x),int(y)
+ if 0<=x<im.width and 0<=y<im.height:im.putpixel((x,y),T.index(c))
+def at(x,y):return T[im.getpixel((x,y))] if 0<=x<im.width and 0<=y<im.height else '.'
+def stamp(rows,x,y,m={},flip=False):
  for yy,row in enumerate(rows):
   for xx,c in enumerate(row):
-   if c!='.':
-    px=x+(len(row)-xx-1 if flip else xx);py=y+yy
-    if 0<=px<im.width and 0<=py<im.height:im.putpixel((px,py),TOKENS.index((colors or {}).get(c,c)))
-def save(name,role):
- A[name]={'asset_id':'v4-forest-trans01-'+name,'role':role,'width':im.width,'height':im.height,'rows':[''.join(TOKENS[im.getpixel((x,y))] for x in range(im.width)) for y in range(im.height)]}
-# Cluster edges intentionally broken, asymmetric; not oval stamping.
-LEAF=['....cc....','..ccddc...','.cdeedcc..','cdddecbbc.','.ddecbb...','..ccbbbc..','...bb..b..']
-LEAF2=['.....cc.....','...cdedc....','.ccdeedcc...','cdeedccbbc..','.ddecbbccc..','..ccbb...b..','...b........']
-def leaves(points,ramp=('b','c','d','e'),variant=0):
- remap=dict(zip('bcde',ramp))
- for i,(x,y) in enumerate(points):pattern(LEAF2 if (i+variant)%3==0 else LEAF,x,y,remap,flip=(i%3==1))
-# An atmospheric opening with deliberate stepped contours, not a painted gradient.
-canvas(80,112,'1')
-poly([(7,0),(75,0),(79,37),(72,58),(76,75),(62,94),(45,107),(30,101),(14,85),(6,70),(0,49)],'2')
-poly([(18,0),(66,0),(68,14),(59,27),(61,40),(49,56),(48,74),(32,82),(24,70),(28,55),(15,37),(20,23)],'3')
-poly([(30,0),(55,0),(55,12),(49,19),(52,31),(42,44),(34,47),(29,37),(33,28),(27,13)],'4')
-poly([(40,0),(49,0),(49,7),(44,13),(38,11)],'5')
-for pts in [[(0,62),(18,75),(24,91),(43,96),(56,88),(68,80),(79,79),(79,111),(0,111)],[(0,94),(25,101),(56,100),(79,91),(79,111),(0,111)]]:poly(pts,'1')
-save('depth-opening','Stepped, low-contrast distant opening; never stretched')
-# A group of irregular distant trunks and crowns.
-canvas(56,104)
-for pts in [[(3,103),(6,57),(4,35),(8,12),(12,6),(11,41),(14,72),(13,103)],[(28,103),(28,53),(23,27),(25,13),(30,24),(33,52),(33,103)],[(46,103),(48,48),(44,24),(49,0),(52,0),(51,38),(54,65),(52,103)]]:poly(pts,'3')
-for pts in [[(9,47),(0,29)],[(12,62),(22,38)],[(30,47),(40,29)],[(48,35),(37,19)]]:line(pts,'3',3)
-leaves([(-6,21),(0,14),(10,27),(17,19),(28,17),(36,4),(44,8),(40,30),(20,37),(2,49)],('2','3','3','4'))
-# Break the baseline of every distant trunk into irregular low-contrast roots.
-for yy in range(78,104):
- for xx in range(56):
-  if im.getpixel((xx,yy)):
-   if yy>96+(xx*3%7):im.putpixel((xx,yy),0)
-   elif yy>84+(xx%5):im.putpixel((xx,yy),TOKENS.index('2'))
-save('far-grove','Distant crooked-tree group with restrained canopy')
-# Medium tree: narrow twisting trunk; branch junctions vary.
-canvas(36,112)
-poly([(9,111),(13,88),(10,67),(15,49),(16,26),(12,9),(16,0),(21,0),(20,28),(23,48),(18,68),(22,96),(28,111)],'a')
-poly([(14,110),(17,91),(14,68),(18,47),(18,25),(16,9),(19,7),(20,29),(21,49),(16,71),(20,99),(23,110)],'b')
-line([(18,47),(30,26),(33,13)],'a',4);line([(14,63),(4,43),(0,39)],'a',5)
-line([(19,37),(7,20),(4,9)],'b',3)
-leaves([(-3,3),(4,-2),(14,1),(23,7),(21,18),(0,31),(3,42),(25,24),(12,26)],('a','b','c','d'))
-line([(20,82),(16,91),(17,101)],'c');save('mid-tree','Middle-distance crooked trunk and branch clusters')
-# Major old-growth trunk, 64x176. Explicit ribbons follow the bends.
-canvas(64,176)
-poly([(0,0),(41,0),(36,15),(27,29),(26,43),(33,61),(28,80),(31,100),(27,120),(37,143),(56,163),(63,175),(37,175),(19,155),(9,128),(6,102),(11,80),(6,61),(13,40),(9,22)],'g')
-poly([(13,0),(34,0),(28,18),(20,33),(20,46),(27,62),(21,81),(26,101),(20,123),(28,147),(43,166),(49,175),(37,175),(21,156),(13,131),(11,104),(16,81),(11,59),(17,40),(14,24)],'h')
-poly([(25,0),(32,0),(24,20),(18,35),(19,47),(25,62),(20,79),(23,97),(20,113),(15,102),(17,80),(13,60),(18,39),(16,27)],'i')
-poly([(19,110),(23,129),(33,151),(48,169),(47,175),(36,164),(25,148),(18,130)],'i')
-# Branch swept right, visibly interlocks the trunk.
-poly([(23,48),(28,29),(42,21),(54,11),(63,0),(63,10),(53,22),(39,29),(33,44),(29,59)],'h')
-line([(26,47),(33,30),(46,23),(58,12),(63,5)],'i',3)
-line([(30,40),(36,31),(47,26),(59,15)],'j')
-# Moss side ribbon and broken clusters, avoids a uniform luminous contour.
-line([(32,1),(26,16),(20,27),(19,36)],'d',3)
-line([(21,50),(25,61),(21,74)],'c',3)
-line([(21,88),(23,100),(19,116),(24,136),(33,150),(46,164)],'c',3)
-for pts in [[(29,7),(26,13)],[(21,23),(19,30)],[(23,94),(23,99)],[(21,120),(24,131)],[(28,141),(32,148)],[(39,157),(46,164)]]:line(pts,'e')
-# Bark fissures turn with the wood; side branches and a dark knot.
-for pts in [[(9,4),(13,16),(12,25)],[(20,3),(21,10),(17,19),(17,26)],[(13,43),(11,56),(15,69)],[(20,54),(22,62),(18,72)],[(12,86),(10,100),(12,112)],[(17,119),(19,135),(24,144)],[(28,151),(34,159),(35,165)],[(36,163),(43,171)]]:line(pts,'0')
-poly([(14,91),(18,85),(21,91),(20,99),(16,103),(13,98)],'g');line([(14,95),(16,89),(19,90)],'j');line([(17,94),(17,98)],'0')
-leaves([(2,32),(-3,70),(0,118),(15,149),(40,164)],('a','b','c','d'))
-save('elder-trunk','Twisted foreground elder trunk, moss ribbons, knot and rising branch')
-# Slender contrasting right-hand fork.
-canvas(40,160)
-poly([(16,159),(19,130),(15,105),(18,80),(15,59),(17,37),(12,22),(10,0),(18,0),(20,21),(23,38),(20,60),(24,81),(21,108),(26,137),(39,159)],'g')
-poly([(20,159),(23,131),(19,105),(21,80),(18,59),(20,37),(16,19),(14,0),(17,0),(21,25),(23,38),(20,60),(24,81),(21,108),(26,137),(35,159)],'i')
-poly([(18,49),(28,29),(31,10),(37,0),(39,0),(35,18),(32,36),(23,62)],'h')
-line([(24,47),(30,32),(33,14)],'j');line([(21,133),(22,118),(19,107),(21,85)],'c',2)
-line([(22,145),(29,157)],'d',2)
-line([(18,26),(19,37),(17,53)],'c',2)
-for pts in [[(17,66),(20,80),(18,96)],[(22,137),(26,145)],[(31,25),(31,32)]]:line(pts,'0')
-leaves([(1,17),(21,8),(22,44),(0,70),(20,107),(5,136)],('a','b','c','d'))
-save('fork-trunk','Narrow forked foreground tree with asymmetric root foot')
-# Broad irregular canopy with hand-positioned layered leaf clusters.
-canvas(64,40)
-poly([(0,0),(63,0),(63,19),(55,19),(57,27),(47,25),(42,34),(36,29),(29,39),(22,31),(14,33),(10,23),(0,26)],'a')
-poly([(0,2),(57,0),(61,11),(50,12),(44,23),(33,21),(24,30),(15,24),(7,27),(0,19)],'b')
-leaves([(0,0),(13,-3),(28,0),(42,-4),(53,2),(6,11),(20,8),(34,11),(47,12),(12,21),(27,21),(39,23)],('a','b','c','d'))
-# A few light-facing leaf tips only.
-for x,y in [(17,4),(39,15),(26,12),(12,15)]:pattern(['ee.','.d.'],x,y)
-save('canopy','Asymmetric canopy mass; layered lobe clusters, broken underside')
-canvas(40,28)
-poly([(0,16),(5,10),(11,12),(16,3),(24,0),(29,8),(35,7),(39,16),(35,25),(15,27),(0,23)],'a')
-leaves([(0,12),(8,9),(16,0),(24,5),(29,12),(17,12),(5,18),(22,20)],('a','b','c','d'))
-save('understory','Low irregular shrub with readable leaf masses')
-# Fern built from explicitly stepped leaflets along curved fronds, no ovals.
-canvas(28,30)
-for pts in [[(13,29),(13,16),(8,8),(1,4)],[(13,29),(16,17),(24,10),(27,10)],[(13,29),(11,17),(3,14),(0,16)],[(13,29),(19,23),(27,22)],[(13,29),(17,12),(18,3)]]:line(pts,'c')
-for x,y,flip in [(2,4,0),(6,7,0),(9,11,0),(2,14,0),(6,16,0),(10,20,0),(18,5,1),(17,10,1),(20,14,1),(24,11,1),(18,23,1),(24,22,1)]:
- pattern(['..d..','.dec.','ddc..','.b...'],x-2,y,flip=bool(flip))
-line([(13,27),(14,18),(16,12)],'d');save('fern','Stepped fern fronds, deliberately sparse silhouette')
-# Root shelf anchors trees; broken top moss edge, shadow undercuts.
-canvas(64,32)
-poly([(0,6),(7,3),(17,7),(26,9),(35,8),(43,16),(53,20),(63,26),(63,31),(0,31)],'g')
-poly([(0,7),(8,6),(18,11),(29,12),(35,11),(45,20),(59,27),(51,28),(37,23),(27,17),(14,16),(0,13)],'i')
-line([(0,8),(7,7),(17,12),(28,13),(35,12),(45,21),(58,27)],'c',3)
-for pts in [[(1,7),(7,7),(12,9)],[(19,12),(27,13)],[(34,12),(40,17)],[(47,23),(52,25)]]:line(pts,'e')
-line([(0,19),(12,20),(21,26),(35,29)],'h',3)
-leaves([(0,1),(15,6),(37,18)],('a','b','c','d'));save('root-bank','Root and moss transition shelf for lower edge framing')
-canvas(32,32,'0')
-# Intentionally extremely low contrast floor marks; no fixed brick/grid pattern.
-for box in [(5,9,9,9),(22,27,25,27)]:rect(box,'1')
-save('quiet-ground','Dark native ground field with sparse horizontal marks')
-canvas(32,16)
-for pts,c in [([(0,10),(8,7),(12,8),(21,3),(30,4),(27,7),(17,9),(9,12),(0,12)],'b'), ([(7,9),(14,8),(20,5),(24,5)],'c'), ([(18,5),(22,4)],'d')]:
- if len(pts)>4:poly(pts,c)
- else:line(pts,c)
-save('moss-seam','Broken moss ledge for quiet clearing edges')
-canvas(10,20)
-line([(4,0),(4,5)],'i');pattern(['...jj...','..jpqj..','.jqqqqj.','.pqrrqp.','.pqssqp.','.pqrsqp.','.pqrrqp.','..pqqp..','...jj...'],0,5)
-rect((3,17,4,18),'h');save('lantern','Small hanging amber lantern, hard pixel light not glow')
-canvas(16,16)
-pattern(['....mm......','..mmnnm.....','.mnnonnm....','mmnnnnnmm...','..lllll.....','....io......','....io......','....ii......','...bhhb.....'],0,1)
-pattern(['..mm..','.mnnm.','mmnnmm','..ll..','..i...','..i...'],9,8)
-save('mushrooms','Two restrained violet mushroom caps')
-canvas(5,5)
-pattern(['.....','..r..','.rsr.','..r..','.....'],0,0);save('firefly','Single restrained edge light accent')
-# Foreground serpentine root continuation: tapered turns with bark splits.
-canvas(60,72)
-poly([(0,0),(17,0),(22,9),(20,21),(28,35),(40,42),(48,52),(59,68),(53,71),(40,62),(30,52),(16,43),(10,31),(12,21),(9,11),(0,8)],'g')
-poly([(5,0),(13,0),(18,11),(16,23),(23,38),(37,47),(46,57),(55,69),(49,66),(37,56),(23,48),(15,35),(14,25),(14,14)],'i')
-line([(11,1),(16,13),(14,24),(20,38),(34,49),(44,58),(52,68)],'c',3)
-for pts in [[(12,3),(15,11)],[(15,24),(18,32)],[(22,41),(30,47)],[(36,52),(41,57)]]:line(pts,'e')
-line([(7,2),(12,15),(10,24),(14,37),(25,50),(38,57)],'0')
-leaves([(-3,5),(0,35),(18,51),(39,61)],('a','b','c','d'))
-save('root-crook','Curved near-root continuation, with broken moss crest')
-canvas(64,32)
-poly([(0,16),(5,11),(11,13),(16,5),(23,4),(27,9),(34,7),(40,12),(48,7),(54,12),(63,10),(63,23),(58,25),(53,23),(48,27),(43,24),(38,26),(33,23),(29,25),(23,24),(19,27),(14,24),(8,25),(4,22),(0,24)],'1')
-leaves([(-2,10),(8,6),(20,2),(30,8),(43,5),(54,9),(4,21),(20,16),(37,19),(52,18)],('1','2','3','3'))
-save('far-thicket','Low-contrast horizon thicket conceals hard trunk endpoints')
-palette={'schema':'robopixel.palette/v1','palette_id':'v4-forest-translation-01','version':1,'entries':[]}
-for i,(s,c) in enumerate(COLORS.items()):
- rgba=[0,0,0,0] if s=='.' else list(bytes.fromhex(c[1:]))+[255]
- palette['entries'].append({'index':i,'color_id':'transparent' if s=='.' else 'forest-'+s,'text_token':s,'adapter_symbols':{'scarlet-moon-js':s},'rgba':rgba})
-(ROOT/'authoring_inputs.json').write_text(json.dumps({'palette':palette,'assets':A},indent=2)+'\n')
-(ROOT/'palette.json').write_text(json.dumps(COLORS,indent=2)+'\n')
-# Local authoring previews only; later compose.py consumes verified canonical exports.
-for name,a in A.items():
- p=Image.new('RGBA',(a['width'],a['height']));p.putdata([tuple(e['rgba']) for row in a['rows'] for e in [palette['entries'][TOKENS.index(s)] for s in row]])
- p.save(ROOT/'assets'/f'{name}.png')
-print(f'{len(A)} assets authored, {sum(a["width"]*a["height"] for a in A.values())} indexed cells')
+   if c!='.':px(x+(len(row)-1-xx if flip else xx),y+yy,m.get(c,c))
+def stroke(points,c,width=1):
+ for (x0,y0),(x1,y1) in zip(points,points[1:]):
+  n=max(abs(x1-x0),abs(y1-y0),1)
+  for i in range(n+1):
+   x=round(x0+(x1-x0)*i/n);y=round(y0+(y1-y0)*i/n)
+   for yy in range(y-width//2,y+(width+1)//2):
+    for xx in range(x-width//2,x+(width+1)//2):px(xx,yy,c)
+def save(n):
+ a=old['assets'][n].copy();a['rows']=[''.join(T[im.getpixel((x,y))] for x in range(im.width)) for y in range(im.height)];A[n]=a
+# Interlocking clustered leaves: connected bodies, lit crowns, dark undersides.
+LEAF=[
+'......ccc.......',
+'...cccdedcc.....',
+'..cddeeeeddc....',
+'.cdeeffeededdc..',
+'cddeeeedddedcc..',
+'cdeddccdddddcbc.',
+'.cdddccbbcddbbc.',
+'..ccbcb.bbccbbc.',
+'...bbb...bbbb...',
+'....b......b....']
+SMALL=['...ccc...','..cdedc..','.cdeeddc.','cddedcbc.','.ccddbbc.','..bbbbb..','...b.b...']
+def leaf(x,y,level=0,flip=False,small=False):
+ ramps=[dict(zip('bcdef','bcdef')),dict(zip('bcdef','abcde')),dict(zip('bcdef','12344')),dict(zip('bcdef','aabcd'))]
+ stamp(SMALL if small else LEAF,x,y,ramps[level],flip)
+def leaves_region(w,h,level=0):
+ # Explicit stagger and variable cluster sizes avoid a tiled stamp rhythm.
+ for j,y in enumerate(range(-5,h,7)):
+  for i,x in enumerate(range(-9,w,11)):
+   leaf(x+(j*7+i*3)%9,y+(i*5+j)%4,level,(i+j)%2==1,(i+2*j)%5==0)
+def tree(w,h,center,width,phase=0,far=False):
+ """Connected substantial wood; grooved highlights follow twisting longitudinal grain."""
+ new(w,h)
+ # Roots widen at foot, rather than a narrow stem ending on a flat baseline.
+ limits=[]
+ for y in range(h):
+  turn=round(3*math.sin(y/23+phase)+2*math.sin(y/47))
+  c=center+turn
+  flare=round(max(0,(y/h-.70))*w*1.35)
+  half=width//2+flare+round(2*math.sin(y/16+phase))
+  left=max(0,c-half);right=min(w-1,c+half)
+  limits.append((left,right,c))
+  for x in range(left,right+1):
+   u=(x-left)/max(1,right-left)
+   col=('2' if u<.20 or u>.82 else '3') if far else ('g' if u<.12 or u>.91 else 'h' if u<.30 or u>.74 else 'i')
+   px(x,y,col)
+ # Wind-shaped branches are thick, stepped, and shaded within the silhouette.
+ for pts,bw in [([(center,42),(center+9,29),(w-8,14),(w-1,8)],max(3,width//3)), ([(center,66),(center-9,50),(2,39)],max(3,width//4))]:
+  stroke(pts,'2' if far else 'g',bw+3);stroke(pts,'3' if far else 'h',bw)
+ if far:return
+ # Native bark ribbons: discontinuous ridges and black fissures, no single flat polygon.
+ for y in range(h):
+  left,right,c=limits[y]
+  for k in range(-4,6):
+   x=c+k*5+round(2*math.sin(y/17+k*.9)+math.sin(y/6+k))
+   for xx,col in [(x,'g'),(x+1,'j'),(x+2,'i')]:
+    if left+2<xx<right-2 and at(xx,y)!='.' and not ((y+k*11)%31>25):px(xx,y,col)
+  # Small bark plates grouped along ridges, not uniform speckle.
+  if y%13 in (1,2,3):
+   x=c-5+round(3*math.sin(y/14))
+   for xx in range(x,x+3):
+    if left+3<xx<right-2:px(xx,y,'j')
+  # Patchy moss climbs one uneven light-facing rim.
+  mx=right-3-(y//9%3)
+  if (y//7)%6 not in (2,5):
+   for xx in range(mx-2,mx+1):px(xx,y,'c' if xx<mx else 'd')
+   if y%7 in (1,2):px(mx,y,'e')
+ # Hollow knot: exact small stencil, shaded rim, irregular shoulders.
+ knot=['....jjj....','..jjihhjj..','.jiiggggij.','jig0000gij.','jig0000ggij','jig0000ggij','.ig000ggij.','.iiggggij..','..iiihij...','....hh.....']
+ stamp(knot,max(1,center-5),int(h*.53))
+ # Buttress ridges diverge into anchored soil near the base.
+ for k in [-1,0,1]:
+  points=[(center+k*4,h-38),(center+k*8,h-19),(max(1,min(w-2,center+k*(width//2+10))),h-2)]
+  stroke(points,'g',3);stroke([(x+2,y) for x,y in points],'j',1)
+new(80,112,'1')
+# Distant illumination is broken by actual little canopy clusters, not nested polygons.
+for y in range(112):
+ for x in range(80):
+  distance=abs(x-43)+y*.30
+  c='4' if distance<19 and y<47 else '3' if distance<32 and y<79 else '2' if distance<44 and y<100 else '1'
+  if (y//5+x//9)%7==0 and c=='4':c='3'
+  px(x,y,c)
+for x,y in [(0,9),(63,18),(6,37),(58,50),(14,74),(43,89)]:leaf(x,y,2,small=True)
+save('depth-opening')
+# Far trees: a group of different substantial forms with branched crowns.
+new(56,104);combined=im.copy()
+for cx,ww,ph,yy in [(7,9,1,6),(27,12,2,-5),(49,8,4,0)]:
+ tree(56,104,cx,ww,ph,True);layer=im
+ for y in range(104):
+  for x in range(56):
+   if layer.getpixel((x,y)) and 0<=y+yy<104:combined.putpixel((x,y+yy),layer.getpixel((x,y)))
+im=combined
+# Recede the branches into shade and clothe their angular joints in crowns.
+for y in range(104):
+ for x in range(56):
+  c=at(x,y)
+  if c=='3':px(x,y,'2')
+  elif c=='2':px(x,y,'1')
+for x,y in [(-7,6),(8,0),(26,8),(42,1),(-2,27),(20,22),(37,35),(4,43),(22,39),(42,47)]:leaf(x,y,2)
+for y in range(87,104):
+ for x in range(56):
+  if at(x,y)!='.':px(x,y,'2' if y<96 else '1')
+save('far-grove')
+tree(36,112,17,17,1)
+# Midground stays cooler and less contrasted than near bark.
+mapping={'g':'1','h':'a','i':'b','j':'c','d':'c','e':'d','0':'1'}
+for y in range(112):
+ for x in range(36):
+  c=at(x,y)
+  if c in mapping:px(x,y,mapping[c])
+for x,y in [(-6,0),(12,9),(20,26),(-2,39)]:leaf(x,y,1)
+save('mid-tree')
+tree(64,176,25,35,.4)
+for x,y in [(-4,15),(39,34),(4,119),(25,153)]:leaf(x,y,1,small=True)
+save('elder-trunk')
+tree(40,160,18,24,2.7)
+for x,y in [(20,12),(-3,47),(19,125)]:leaf(x,y,1,small=True)
+save('fork-trunk')
+new(64,40)
+leaves_region(64,31,0)
+# A scalloped lower edge made from leaf shapes, not a solid angular slab.
+for x,y in [(-4,24),(14,28),(35,25),(49,20)]:leaf(x,y,1)
+save('canopy')
+new(40,28)
+for x,y in [(10,0),(22,4),(-3,7),(6,9),(18,12),(30,13),(0,17),(12,19)]:leaf(x,y,1)
+for x,y in [(9,1),(20,5),(1,9)]:leaf(x,y,0,small=True)
+save('understory')
+new(28,30)
+# Broader unfurling fern fans; paired 2-3px leaflets, stepped tips.
+for pts in [[(13,29),(12,17),(7,8),(0,4)],[(13,29),(17,17),(24,8),(27,8)],[(13,29),(8,19),(1,16)],[(13,29),(22,21),(27,20)],[(13,29),(16,13),(16,1)]]:
+ stroke(pts,'c',2)
+for x,y,flip in [(2,5,0),(6,8,0),(9,12,0),(4,17,0),(9,20,0),(16,4,1),(16,9,1),(20,14,1),(24,10,1),(21,22,1)]:stamp(['..e..','.ded.','dddc.','.cc..'],x-2,y,{},flip)
+save('fern')
+new(64,32)
+for y in range(32):
+ for x in range(64):
+  top=7+round(3*math.sin(x/9)+2*math.sin(x/4))
+  if y>=top:
+   c='c' if y<top+2 else 'b' if y<top+5 else 'h' if y<top+10 else 'g'
+   px(x,y,c)
+for pts in [[(0,20),(16,17),(30,23),(45,24),(63,29)],[(10,12),(24,18),(39,18),(59,24)],[(2,28),(15,23),(25,28)]]:
+ stroke(pts,'g',4);stroke([(x,y-1) for x,y in pts],'i',2);stroke([(x,y-2) for x,y in pts],'j')
+for x,y in [(-3,0),(15,2),(36,3),(51,0)]:leaf(x,y,1,small=True)
+save('root-bank')
+new(32,32,'1')
+# Broken loam patches, not connected wave bands or isolated repeated dashes.
+for rows,x,y in [(['..1111....','11111111..','.111111111','...11111..'],1,3),
+                 (['....111...','..1111111.','11111111..','.1111.....'],17,13),
+                 (['..111111..','1111111111','.111111...','...11.....'],4,24),
+                 (['1111....','111111..','..111...'],25,29)]:stamp(rows,x,y,{'1':'0'})
+save('quiet-ground')
+new(32,16)
+for x,y in [(-3,5),(6,2),(16,3),(24,7)]:leaf(x,y,3,small=True)
+for x in range(3,28):
+ if x%5<3:px(x,13+(x//8%2),'a')
+save('moss-seam')
+# Keep successful small lights/flora rather than inflate scope.
+for n in ['lantern','mushrooms','firefly']:A[n]=old['assets'][n]
+new(60,72)
+# Multiple interlocking roots and soil, not one floating curved stripe.
+for y in range(72):
+ for x in range(60):
+  edge=21+round(8*math.sin(y/20))+int(y*.2)
+  if x<edge:px(x,y,'a' if x>edge-4 else 'g')
+for i,pts in enumerate([[(6,0),(14,14),(18,31),(35,45),(52,65)],[(22,0),(19,15),(29,27),(36,48),(58,58)],[(2,23),(9,38),(17,47),(26,70)]]):
+ stroke(pts,'g',12-i*2);stroke([(x-1,y) for x,y in pts],'h',8-i);stroke([(x-2,y) for x,y in pts],'i',4);stroke([(x-3,y) for x,y in pts],'c',2)
+for x,y in [(-4,0),(9,17),(-3,33),(20,43),(38,58),(2,58)]:leaf(x,y,1,small=True)
+save('root-crook')
+new(64,32)
+for x,y in [(1,8),(13,1),(26,7),(40,0),(53,6),(-4,18),(11,16),(29,17),(45,15)]:leaf(x,y,2)
+# Low near-shadow fill connects clumps into the ground.
+for y in range(24,32):
+ for x in range(64):
+  if at(x,y)!='.':px(x,y,'1' if y>27 else '2')
+save('far-thicket')
+(R/'authoring_inputs.json').write_text(json.dumps({'palette':P,'assets':A},indent=2)+'\n')
+for n,a in A.items():
+ p=Image.new('RGBA',(a['width'],a['height']));p.putdata([tuple(P['entries'][T.index(c)]['rgba']) for row in a['rows'] for c in row]);p.save(R/'assets'/f'{n}.png')
+print('Native correction authored:',len(A),'assets;',sum(A[n]['rows']!=old['assets'][n]['rows'] for n in A),'substantially rebuilt')

@@ -3,10 +3,6 @@
   "scope": "static proof only; not runtime QA or Owner art acceptance",
   "base_commit": "d7054d2b9b111ff711f44cc3ee5b71268aca6ed8",
   "protected_base_files": 23,
-  "correction_changed_pixels": {
-    "gameplay": 38792,
-    "story": 53308
-  },
   "checks": {
     "all_16_canonical_matrix_and_png_round_trips": true,
     "recompose_all_proof_pngs_byte_identical": true,
@@ -15,14 +11,11 @@
     "all_16_assets_reused_in_both_compositions": true,
     "lower_gameplay_lane_80x112_contains_only_two_dark_ground_colors": true,
     "all_base_tracked_files_unchanged": true,
-    "accepted_reference_hashes_preserved": true,
-    "rejected_checkpoint_preserved_byte_exact": true,
-    "all_assets_unapproved_candidates": true,
-    "both_scenes_substantially_redrawn": true
+    "accepted_reference_hashes_preserved": true
   },
   "assets": {
     "depth-opening": {
-      "revision": 3,
+      "revision": 2,
       "matrix_equals_submitted": true,
       "canonical_png_equals_composition_asset": true,
       "size": [
@@ -31,7 +24,7 @@
       ]
     },
     "far-grove": {
-      "revision": 3,
+      "revision": 2,
       "matrix_equals_submitted": true,
       "canonical_png_equals_composition_asset": true,
       "size": [
@@ -40,7 +33,7 @@
       ]
     },
     "mid-tree": {
-      "revision": 3,
+      "revision": 2,
       "matrix_equals_submitted": true,
       "canonical_png_equals_composition_asset": true,
       "size": [
@@ -49,7 +42,7 @@
       ]
     },
     "elder-trunk": {
-      "revision": 3,
+      "revision": 2,
       "matrix_equals_submitted": true,
       "canonical_png_equals_composition_asset": true,
       "size": [
@@ -58,7 +51,7 @@
       ]
     },
     "fork-trunk": {
-      "revision": 3,
+      "revision": 2,
       "matrix_equals_submitted": true,
       "canonical_png_equals_composition_asset": true,
       "size": [
@@ -67,7 +60,7 @@
       ]
     },
     "canopy": {
-      "revision": 3,
+      "revision": 2,
       "matrix_equals_submitted": true,
       "canonical_png_equals_composition_asset": true,
       "size": [
@@ -76,7 +69,7 @@
       ]
     },
     "understory": {
-      "revision": 3,
+      "revision": 2,
       "matrix_equals_submitted": true,
       "canonical_png_equals_composition_asset": true,
       "size": [
@@ -85,7 +78,7 @@
       ]
     },
     "fern": {
-      "revision": 3,
+      "revision": 2,
       "matrix_equals_submitted": true,
       "canonical_png_equals_composition_asset": true,
       "size": [
@@ -94,7 +87,7 @@
       ]
     },
     "root-bank": {
-      "revision": 3,
+      "revision": 2,
       "matrix_equals_submitted": true,
       "canonical_png_equals_composition_asset": true,
       "size": [
@@ -103,7 +96,7 @@
       ]
     },
     "quiet-ground": {
-      "revision": 3,
+      "revision": 2,
       "matrix_equals_submitted": true,
       "canonical_png_equals_composition_asset": true,
       "size": [
@@ -112,7 +105,7 @@
       ]
     },
     "moss-seam": {
-      "revision": 3,
+      "revision": 2,
       "matrix_equals_submitted": true,
       "canonical_png_equals_composition_asset": true,
       "size": [
@@ -148,7 +141,7 @@
       ]
     },
     "root-crook": {
-      "revision": 3,
+      "revision": 2,
       "matrix_equals_submitted": true,
       "canonical_png_equals_composition_asset": true,
       "size": [
@@ -157,7 +150,7 @@
       ]
     },
     "far-thicket": {
-      "revision": 3,
+      "revision": 2,
       "matrix_equals_submitted": true,
       "canonical_png_equals_composition_asset": true,
       "size": [
@@ -168,20 +161,20 @@
   },
   "native_outputs": {
     "forest_gameplay_preview_192x240.png": {
-      "sha256": "ab75c273be10e13e0dd0431bedf73c38a828269f580f894e64547c8773b18394",
+      "sha256": "6ed495d101ac59519e4350dd469b083f231a162c7f8ef14ab1236a720745e3df",
       "size": [
         192,
         240
       ],
-      "rgba_sha256": "4306375bca0fd257a9cc268670671a98318851367f2f77ec4a266f13f6e6e01f"
+      "rgba_sha256": "04b25da65795d6a60a458eec26f3ad67bff7f45d1eb4cd8dad3253881886f139"
     },
     "forest_story_preview_256x240.png": {
-      "sha256": "ff5d234a62134b5527286e83a0dac3e1d2a12003d798333948b4c3266e976faa",
+      "sha256": "df9526f7bbd516c8bc81be2f4afed97b8672b6960ee16b569636e751b40dc721",
       "size": [
         256,
         240
       ],
-      "rgba_sha256": "ff5a2551504bcb4417e10af4832f45e0acd5901f7527018b7f12d4b1b600c800"
+      "rgba_sha256": "5bb7ff9e693309fd61fa1216ad91c1d76e128e25330b0ef7f2b1a5d52db18ae5"
     }
   }
 }

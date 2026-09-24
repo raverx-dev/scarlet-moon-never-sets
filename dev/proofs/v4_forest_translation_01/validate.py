@@ -54,5 +54,21 @@ checks['all_base_tracked_files_unchanged']=True
 refhash={'gameplay-REFERENCE-192x240.png':'20defa25e289b4d9c9b145c56b8f29a01e5aadcda95919ba7ce92ac85ed2a395','story-REFERENCE-256x240.png':'7e41e52e252a922f26e51aaa3d26290cea96f5c37cdea81361d868de96593d1e'}
 assert all(digest(ROOT/'references'/n)==h for n,h in refhash.items())
 checks['accepted_reference_hashes_preserved']=True
-report={'status':'PASS','scope':'static proof only; not runtime QA or Owner art acceptance','base_commit':base,'protected_base_files':len(tracked),'checks':checks,'assets':details,'native_outputs':{p.name:{'sha256':digest(p),'size':list(pixels(p).size),'rgba_sha256':hashlib.sha256(pixels(p).tobytes()).hexdigest()} for p in [ROOT/'forest_gameplay_preview_192x240.png',ROOT/'forest_story_preview_256x240.png']}}
+# The rejected checkpoint must remain an exact copy of the reviewed Git commit.
+checkpoint='fa929a5627c17ac283ebb5e0bc9da2a1f26c71b7'
+for p in (ROOT/'rejected_checkpoint').iterdir():
+ if p.name=='SOURCE.txt':continue
+ expected=subprocess.check_output(['git','show',checkpoint+':'+prefix+p.name],cwd=REPO)
+ assert p.read_bytes()==expected,p.name+' rejected checkpoint changed'
+checks['rejected_checkpoint_preserved_byte_exact']=True
+assert all(not a['approval']['status']['approved'] for a in M['assets'].values())
+checks['all_assets_unapproved_candidates']=True
+correction_changes={}
+for name,w in [('gameplay',192),('story',256)]:
+ b=pixels(ROOT/'rejected_checkpoint'/f'forest_{name}_preview_{w}x240.png')
+ a=pixels(ROOT/f'forest_{name}_preview_{w}x240.png')
+ correction_changes[name]=sum(x!=y for x,y in zip(b.getdata(),a.getdata()))
+checks['both_scenes_substantially_redrawn']=all(n>10000 for n in correction_changes.values())
+assert checks['both_scenes_substantially_redrawn']
+report={'status':'PASS','scope':'static proof only; not runtime QA or Owner art acceptance','base_commit':base,'protected_base_files':len(tracked),'correction_changed_pixels':correction_changes,'checks':checks,'assets':details,'native_outputs':{p.name:{'sha256':digest(p),'size':list(pixels(p).size),'rgba_sha256':hashlib.sha256(pixels(p).tobytes()).hexdigest()} for p in [ROOT/'forest_gameplay_preview_192x240.png',ROOT/'forest_story_preview_256x240.png']}}
 (ROOT/'verification.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps({k:report[k] for k in ['status','protected_base_files','checks']},indent=2))

@@ -1,21 +1,6 @@
 # Forest of Magic — Translation 01
 
-**Correction 01 candidate for Owner review. The fa929a5 artwork was artistically REJECTED; technical proof retained. No runtime integration or art approval.**
-
-## Bounded artistic correction
-
-The Owner subsequently authorized one substantial correction on the same PR #26. Thirteen existing canonical assets were rebuilt at revision 3; lantern, mushrooms and firefly remain unchanged at revision 2. No new asset IDs, palette changes or other-environment work.
-
-- Replaced narrow ribbon-like trunks with substantial bark-covered masses, irregular grain, knots and flared buttresses.
-- Replaced floating root streaks with branching root systems anchored in soil banks.
-- Replaced fragmented leaf marks and flat canopy slabs with connected overlapping crown clusters and fuller understory.
-- Rebuilt the distant grove/thicket, staggered horizon placement and kept near/mid/far color separation.
-- Replaced empty near-black fill and repeated isolated dashes with low-contrast loam patches on a readable ground plane. The center remains quiet; the story remains a separate broad clearing.
-
-[Gameplay rejected → corrected](gameplay_correction_before_after.png) · [Story rejected → corrected](story_correction_before_after.png)
-
-The original native images, atlas, source grids, layouts, manifest, README and verification are preserved byte-for-byte in `rejected_checkpoint/`, anchored to `fa929a5627c17ac283ebb5e0bc9da2a1f26c71b7`. Its technical PASS never meant artistic acceptance. `correction_receipts.json` records this pass; the original `authoring_receipts.json` remains historical evidence.
-
+**Candidate static pixel-art proof for Owner review. No runtime integration or art approval.**
 
 This package translates the Owner-accepted generated Forest references into 16 canonical RoboPixel pieces and two independently arranged native scenes. It preserves twisted old growth, cool layered woodland, edge lanterns/violet mushrooms and an intentionally dark combat corridor. It does not preserve every painted detail from the references.
 
@@ -34,9 +19,9 @@ This package translates the Owner-accepted generated Forest references into 16 c
 ## Exact sources and repeatable workflow
 
 - Project: `scarlet-moon-never-sets`. Asset IDs use `v4-forest-trans01-`; exact revision/hash, role, current approval status and paths are in `robopixel_manifest.json`.
-- All 16 assets remain **unapproved candidates**: 13 revised from r2 to r3 by `grid_paste`; three retained at r2. Each revised matrix and PNG was freshly read back through `export_preview` and canonical `asset_view`. No delivery or approval was requested. `authoring_receipts.json` preserves the committed transaction receipts.
+- All 16 new assets are **revision 2, unapproved candidates**: created blank through `asset_create`, filled through `grid_paste`, then read back through `export_preview` and canonical `asset_view`. No delivery or approval was requested. `authoring_receipts.json` preserves the committed transaction receipts.
 - `exports/*.json` contains the exact canonical indexed matrices, palette symbols, revision hashes and adapter round-trip results. `exports/*.png` is the actual canonical PNG read-back. `assets/*.png` is independently decoded from the matrices and compared pixel-for-pixel against those read-backs.
-- `authoring_inputs.json` preserves the submitted exact editable token grids and indexed palette. `author_kit.py` documents the integer pixel authoring operations; it never opens a generated reference, samples its pixels, traces it, resizes it or quantizes it into assets. The correction uses substantial native scanline masses, irregular longitudinal bark grooves, buttresses and interlocking leaf stencils. They are not SVGs or procedural game rendering.
+- `authoring_inputs.json` preserves the submitted exact editable token grids and indexed palette. `author_kit.py` documents the integer pixel authoring operations; it never opens a generated reference, samples its pixels, traces it, resizes it or quantizes it into assets. Substantial shapes are native stepped silhouettes with explicit bark ribbons and small designed leaf/fern clusters. They are not SVGs or procedural game rendering.
 - `layouts.json` is the composition source: integer placements, optional horizontal reflection, alpha crop at the canvas edge and a solid background color only. No scene scaling, smoothing, palette remapping, pixel repainting or post-composition correction. `compose.py` consumes canonical exports by default. `--author-preview` is explicitly pre-submission only.
 - `build_layouts.py` preserves the editable placement recipe. Both views reuse all 16 pieces, but have distinct layouts. Story is not any 192-wide crop of gameplay; the far opening is offset and the broad character stage is independently arranged.
 
@@ -80,7 +65,7 @@ Gameplay weights bark, roots, ferns and lights toward the edges. The lower centr
 
 Story gives the existing Reimu (56,124), Marisa (152,108), grimoire and panel x4–251/y174–235 their own stage. The witness uses existing baseline pixels, not newly authored sprites or UI. A broad clearing replaces the gameplay passage; canopy, near trunks, horizon and roots have separate placements.
 
-Painterly light shafts and individual leaf detail remain simplified, but the rejected flat silhouettes have been rebuilt into materially thicker wood, connected crowns and grounded roots. Lantern light is a few hard pixels. There is no blur, alpha glow or generated-image asset conversion.
+Painterly light shafts, dense microtexture and individual leaf detail were intentionally reduced to stepped color groups, bark ribbons and repeated native clusters. Lantern light is a few hard pixels. There is no blur, alpha glow or generated-image asset conversion.
 
 ## Provenance and authority
 
@@ -94,8 +79,4 @@ Painterly light shafts and individual leaf detail remain simplified, but the rej
 
 `verification.json` records the actual static results. All 23 base-tracked files, including every historical version and `versions/v4/index.html`, are byte-identical to the base. All new files are inside this proof directory. Git cleanliness and remote exact head are checked after committing and reported in the review return.
 
-This proves canonical native-asset persistence, exact export/read-back and reusable composition at the two target sizes. **It does not claim artistic acceptance.** This is one serious correction pass. Reused crown motifs and stylized distant branches remain visible; fine reference detail is deliberately simplified. The Owner decides whether the revised visual language is acceptable. No further polish is started automatically. This pass does not include scrolling/seam design, animation, dense moving bullet QA, runtime integration, music, character changes, formal asset approval/delivery, merging or release.
-
-### Method reference
-
-Reviewed RoboPixel `docs/REFERENCE_TO_SPRITE_WORKFLOW.md`: whole-image silhouette and overlap planning, native clusters, bounded revision and separate Owner visual judgment. No image-generated target grid was used as an answer key. Technical read-back/recomposition validation is separately authorized by this proof assignment and does not establish art acceptance.
+This proves canonical native-asset persistence, exact export/read-back and reusable composition at the two target sizes. **It does not claim final artistic acceptance.** The translation is intentionally simpler than the reference: crown/leaf variation, natural horizon transitions, root texture and lighting can receive a focused Owner-directed refinement. This pass does not include scrolling/seam design, animation, dense moving bullet QA, runtime integration, music, character changes, formal asset approval/delivery, merging or release.

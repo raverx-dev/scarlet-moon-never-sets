@@ -44,3 +44,12 @@ for n,im in assets.items():
  x+=w+12;rowh=max(rowh,h)
 board.crop((0,0,768,y+rowh+12)).save(ROOT/'forest_asset_atlas_2x.png')
 print('Composed gameplay192x240 and story256x240 from',len(assets),'assets')
+
+# Immutable rejected checkpoint -> current canonical candidate.
+for name,w in [('gameplay',192),('story',256)]:
+ before=Image.open(ROOT/'rejected_checkpoint'/f'forest_{name}_preview_{w}x240.png').convert('RGB')
+ after=Image.open(ROOT/f'forest_{name}_preview_{w}x240.png').convert('RGB')
+ board=Image.new('RGB',(w*6+36,768),'#10151e');draw=ImageDraw.Draw(board)
+ for i,(pic,title) in enumerate([(before,'REJECTED fa929a5'),(after,'CORRECTION candidate')]):
+  x=12+i*(w*3+12);draw.text((x,12),title,fill='white',font=font);board.paste(pic.resize((w*3,720),Image.Resampling.NEAREST),(x,36))
+ board.save(ROOT/f'{name}_correction_before_after.png')

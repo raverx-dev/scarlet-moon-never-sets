@@ -4,8 +4,8 @@
   "delivery": false,
   "project_id": "scarlet-moon-never-sets",
   "asset_id": "v4-forest-trans01-moss-seam",
-  "revision": 2,
-  "revision_hash": "c073395bd7564a6c5aa4a4bb39af4aed3865a18fe12953ce4cf49144c369dde9",
+  "revision": 3,
+  "revision_hash": "6e2728103f0bc3501a35eda8ac144e45d7305b45c311ec5ece9ef547b9fd1b5a",
   "frame_id": "default",
   "layer_id": "art",
   "matrix": {
@@ -14,19 +14,19 @@
     "rows": [
       "................................",
       "................................",
-      "................................",
-      ".....................b..........",
-      "...................bdddbbbbbbbb.",
-      ".................bddcccccbbbbb..",
-      "................bccbbbbbbbbbb...",
-      "........b.....bccbbbbbbbbbbb....",
-      ".....bbbbbbccccbbbbbbbb.........",
-      "...bbbbccccbbbbbbb..............",
-      "bbbbbbbbbbbbbbb.................",
-      "bbbbbbbbbbbbb...................",
-      "bbbbbbbbbb......................",
-      "................................",
-      "................................",
+      ".........aaa....................",
+      "........abcba......aaa..........",
+      ".......abccbba....abcba.........",
+      "aaa...abbcbaaa...abccbba........",
+      "bcba...aabbaaa..abbcbaaa........",
+      "ccbba...aaaaa....aabbaaa...aaa..",
+      "cbaaa....a.a......aaaaa...abcba.",
+      "bbaaa..............a.a...abccbba",
+      "aaaa....................abbcbaaa",
+      "a.a......................aabbaaa",
+      "..........................aaaaa.",
+      ".....aaa........aa..aaa....a.a..",
+      "..........aaa..a.........aaa....",
       "................................"
     ],
     "symbols": {
@@ -119,6 +119,6 @@
     "cel_hash": true
   },
   "resources": {
-    "export": "robopixel://export/scarlet-moon-never-sets/v4-forest-trans01-moss-seam/revision/2/scarlet-moon-js"
+    "export": "robopixel://export/scarlet-moon-never-sets/v4-forest-trans01-moss-seam/revision/3/scarlet-moon-js"
   }
 }
