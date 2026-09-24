@@ -1,0 +1,218 @@
+{
+  "depth-opening": {
+    "content": [
+      {
+        "type": "text",
+        "text": "grid_paste committed revision 3 -> 4; changed_pixels=4616."
+      }
+    ],
+    "structuredContent": {
+      "receipt": {
+        "transaction_id": "6cea4bbb425dadd05780a4694dadaa6364ca801f7aa0f85e5e09709281dd0cc1",
+        "project_id": "scarlet-moon-never-sets",
+        "asset_id": "v4-forest-trans01-depth-opening",
+        "operation": "grid_paste",
+        "old_revision": 3,
+        "new_revision": 4,
+        "old_revision_hash": "78f8b81bff5ea935bb9fb5201f4ff78abeef4b1c923e33da8338f620b5ec09bd",
+        "new_revision_hash": "a26ebd59c1a1bea03f5a684c0608ca574fdbfa6f7f2797303bbad215f75b66f6",
+        "changed_pixels": 4616,
+        "changed_bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 80,
+          "height": 100
+        },
+        "region_changes": [],
+        "layer_changes": [
+          {
+            "layer_id": "art",
+            "changed_pixels": 4616
+          }
+        ],
+        "frame_changes": [
+          {
+            "frame_id": "default",
+            "changed_pixels": 4616
+          }
+        ],
+        "guards": [],
+        "approval_invalidated": true
+      },
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-forest-trans01-depth-opening",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-forest-trans01-depth-opening/revision/4",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-forest-trans01-depth-opening/revision/4/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-forest-trans01-depth-opening/revision/4/text",
+        "diff": "robopixel://diff/scarlet-moon-never-sets/v4-forest-trans01-depth-opening/3/4"
+      },
+      "presentation": {
+        "available": true,
+        "render": "none"
+      }
+    },
+    "isError": false
+  },
+  "far-grove": {
+    "content": [
+      {
+        "type": "text",
+        "text": "grid_paste committed revision 3 -> 4; changed_pixels=4374."
+      }
+    ],
+    "structuredContent": {
+      "receipt": {
+        "transaction_id": "842215627852d8361ecc47c6576e1b50b9c0e84b39c1ff862db2a79872390634",
+        "project_id": "scarlet-moon-never-sets",
+        "asset_id": "v4-forest-trans01-far-grove",
+        "operation": "grid_paste",
+        "old_revision": 3,
+        "new_revision": 4,
+        "old_revision_hash": "b2c4893746ccbab5f2a9cf89824d7a483aef98f6e92e59ef67b862b7ce026296",
+        "new_revision_hash": "48e4464a1ac884fd47d61afe5023aaee08049392d8a5713d7565ee82789dd014",
+        "changed_pixels": 4374,
+        "changed_bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 56,
+          "height": 104
+        },
+        "region_changes": [],
+        "layer_changes": [
+          {
+            "layer_id": "art",
+            "changed_pixels": 4374
+          }
+        ],
+        "frame_changes": [
+          {
+            "frame_id": "default",
+            "changed_pixels": 4374
+          }
+        ],
+        "guards": [],
+        "approval_invalidated": true
+      },
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-forest-trans01-far-grove",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-forest-trans01-far-grove/revision/4",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-forest-trans01-far-grove/revision/4/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-forest-trans01-far-grove/revision/4/text",
+        "diff": "robopixel://diff/scarlet-moon-never-sets/v4-forest-trans01-far-grove/3/4"
+      },
+      "presentation": {
+        "available": true,
+        "render": "none"
+      }
+    },
+    "isError": false
+  },
+  "mid-tree": {
+    "content": [
+      {
+        "type": "text",
+        "text": "grid_paste committed revision 3 -> 4; changed_pixels=2243."
+      }
+    ],
+    "structuredContent": {
+      "receipt": {
+        "transaction_id": "1c676e542237fff8db9be74771793a65a5375d9286cb183705804f00d6483660",
+        "project_id": "scarlet-moon-never-sets",
+        "asset_id": "v4-forest-trans01-mid-tree",
+        "operation": "grid_paste",
+        "old_revision": 3,
+        "new_revision": 4,
+        "old_revision_hash": "20f8820f987fb91477479fe6e9481007695d85b2b68ecd7eedb23c2bf9532eaf",
+        "new_revision_hash": "43e165ce0d617e729703df7068db3f562973381e79de0fa3656a99ffc9c0864c",
+        "changed_pixels": 2243,
+        "changed_bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 36,
+          "height": 112
+        },
+        "region_changes": [],
+        "layer_changes": [
+          {
+            "layer_id": "art",
+            "changed_pixels": 2243
+          }
+        ],
+        "frame_changes": [
+          {
+            "frame_id": "default",
+            "changed_pixels": 2243
+          }
+        ],
+        "guards": [],
+        "approval_invalidated": true
+      },
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-forest-trans01-mid-tree",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-forest-trans01-mid-tree/revision/4",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-forest-trans01-mid-tree/revision/4/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-forest-trans01-mid-tree/revision/4/text",
+        "diff": "robopixel://diff/scarlet-moon-never-sets/v4-forest-trans01-mid-tree/3/4"
+      },
+      "presentation": {
+        "available": true,
+        "render": "none"
+      }
+    },
+    "isError": false
+  },
+  "fork-trunk": {
+    "content": [
+      {
+        "type": "text",
+        "text": "grid_paste committed revision 3 -> 4; changed_pixels=3885."
+      }
+    ],
+    "structuredContent": {
+      "receipt": {
+        "transaction_id": "9d6c9b112483f6c782c6585334a775566e1f2f6c93296ba3a224ce378c40d117",
+        "project_id": "scarlet-moon-never-sets",
+        "asset_id": "v4-forest-trans01-fork-trunk",
+        "operation": "grid_paste",
+        "old_revision": 3,
+        "new_revision": 4,
+        "old_revision_hash": "389cd3d3296d99c016079281c109d51e8ea9c71d7ae18251279a406eb4d6ce4d",
+        "new_revision_hash": "f5b808f1b7cfafd0d0797e5afce261becaadc8da2f59ee21bf5d4183af48db0d",
+        "changed_pixels": 3885,
+        "changed_bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 40,
+          "height": 160
+        },
+        "region_changes": [],
+        "layer_changes": [
+          {
+            "layer_id": "art",
+            "changed_pixels": 3885
+          }
+        ],
+        "frame_changes": [
+          {
+            "frame_id": "default",
+            "changed_pixels": 3885
+          }
+        ],
+        "guards": [],
+        "approval_invalidated": true
+      },
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-forest-trans01-fork-trunk",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-forest-trans01-fork-trunk/revision/4",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-forest-trans01-fork-trunk/revision/4/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-forest-trans01-fork-trunk/revision/4/text",
+        "diff": "robopixel://diff/scarlet-moon-never-sets/v4-forest-trans01-fork-trunk/3/4"
+      },
+      "presentation": {
+        "available": true,
+        "render": "none"
+      }
+    },
+    "isError": false
+  }
+}

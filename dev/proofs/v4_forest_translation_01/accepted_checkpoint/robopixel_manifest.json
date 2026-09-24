@@ -8,17 +8,17 @@
       "role": "Stepped, low-contrast distant opening; never stretched",
       "width": 80,
       "height": 112,
-      "revision": 4,
-      "revision_hash": "a26ebd59c1a1bea03f5a684c0608ca574fdbfa6f7f2797303bbad215f75b66f6",
-      "render_hash": "ebf70563ddf34019820da651e4098038f9f92d7177fa79bd528cf8e1c8e9415f",
+      "revision": 3,
+      "revision_hash": "78f8b81bff5ea935bb9fb5201f4ff78abeef4b1c923e33da8338f620b5ec09bd",
+      "render_hash": "7546c9ecc8e1b6fdc93670505e1bee638227020ae676c252b0aa6dd0ca0375bb",
       "approval": {
         "status": {
           "project_id": "scarlet-moon-never-sets",
           "asset_id": "v4-forest-trans01-depth-opening",
-          "revision": 4,
-          "revision_hash": "a26ebd59c1a1bea03f5a684c0608ca574fdbfa6f7f2797303bbad215f75b66f6",
+          "revision": 3,
+          "revision_hash": "78f8b81bff5ea935bb9fb5201f4ff78abeef4b1c923e33da8338f620b5ec09bd",
           "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
-          "approval_subject_hash": "87867eb4ad6e9ec46dcf545fb10d2a07d4cfbec357d41d6bb851ac33e1259308",
+          "approval_subject_hash": "14a8c66067004db5c0de9609e638f1eeb4280d5c23347d01e10dc6f875278446",
           "approved": false,
           "active_approval_ids": [],
           "historical_approval_ids": []
@@ -26,26 +26,26 @@
       },
       "export_file": "exports/depth-opening.json",
       "canonical_png": "exports/depth-opening.png",
-      "from_revision": 3,
-      "from_revision_hash": "78f8b81bff5ea935bb9fb5201f4ff78abeef4b1c923e33da8338f620b5ec09bd",
-      "changed_pixels": 4616
+      "from_revision": 2,
+      "from_revision_hash": "d0c20ab824b449fb7070105a96339b176d52e67dfd7fe75370a2797fc3ff29d2",
+      "changed_pixels": 2615
     },
     "far-grove": {
       "asset_id": "v4-forest-trans01-far-grove",
       "role": "Distant crooked-tree group with restrained canopy",
       "width": 56,
       "height": 104,
-      "revision": 4,
-      "revision_hash": "48e4464a1ac884fd47d61afe5023aaee08049392d8a5713d7565ee82789dd014",
-      "render_hash": "ef9e190abafb9da905986b096ed5de2a34c3e2f33d432c959298578d92d03a1c",
+      "revision": 3,
+      "revision_hash": "b2c4893746ccbab5f2a9cf89824d7a483aef98f6e92e59ef67b862b7ce026296",
+      "render_hash": "e51fbcc3c36696f39a0875665464cc546e1ebb2a632f3e82802a44515c8a74cb",
       "approval": {
         "status": {
           "project_id": "scarlet-moon-never-sets",
           "asset_id": "v4-forest-trans01-far-grove",
-          "revision": 4,
-          "revision_hash": "48e4464a1ac884fd47d61afe5023aaee08049392d8a5713d7565ee82789dd014",
+          "revision": 3,
+          "revision_hash": "b2c4893746ccbab5f2a9cf89824d7a483aef98f6e92e59ef67b862b7ce026296",
           "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
-          "approval_subject_hash": "b44520b9e3207e743d7ef75774f926c5af0f763e4812709f1f32f60f241907fa",
+          "approval_subject_hash": "804a82e4a355f8c997a59c8f08bb2abed2f51be702d83ab06414734891c6a343",
           "approved": false,
           "active_approval_ids": [],
           "historical_approval_ids": []
@@ -53,26 +53,26 @@
       },
       "export_file": "exports/far-grove.json",
       "canonical_png": "exports/far-grove.png",
-      "from_revision": 3,
-      "from_revision_hash": "b2c4893746ccbab5f2a9cf89824d7a483aef98f6e92e59ef67b862b7ce026296",
-      "changed_pixels": 4374
+      "from_revision": 2,
+      "from_revision_hash": "3563373b8e38cdd17b23aeafe9131bb13291483943aeed31471bebe5e8fda2e9",
+      "changed_pixels": 4803
     },
     "mid-tree": {
       "asset_id": "v4-forest-trans01-mid-tree",
       "role": "Middle-distance crooked trunk and branch clusters",
       "width": 36,
       "height": 112,
-      "revision": 4,
-      "revision_hash": "43e165ce0d617e729703df7068db3f562973381e79de0fa3656a99ffc9c0864c",
-      "render_hash": "b29b38c3200df8e1edefd9a1548cc6b4ea0a845b5e8cc0aaf8a6b731bdd5d8e3",
+      "revision": 3,
+      "revision_hash": "20f8820f987fb91477479fe6e9481007695d85b2b68ecd7eedb23c2bf9532eaf",
+      "render_hash": "97cf97913ce11672a47f8c1879b187bbebeb34a534143cff93d64d291a8fa7bf",
       "approval": {
         "status": {
           "project_id": "scarlet-moon-never-sets",
           "asset_id": "v4-forest-trans01-mid-tree",
-          "revision": 4,
-          "revision_hash": "43e165ce0d617e729703df7068db3f562973381e79de0fa3656a99ffc9c0864c",
+          "revision": 3,
+          "revision_hash": "20f8820f987fb91477479fe6e9481007695d85b2b68ecd7eedb23c2bf9532eaf",
           "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
-          "approval_subject_hash": "36871b866cfd3a559e2427703770a4c5482e295d534e353b3fafc74d6312024b",
+          "approval_subject_hash": "c878a9cf67b1b8206aba923571f88e45515ff8daa60bd8c4906dab45970de898",
           "approved": false,
           "active_approval_ids": [],
           "historical_approval_ids": []
@@ -80,9 +80,9 @@
       },
       "export_file": "exports/mid-tree.json",
       "canonical_png": "exports/mid-tree.png",
-      "from_revision": 3,
-      "from_revision_hash": "20f8820f987fb91477479fe6e9481007695d85b2b68ecd7eedb23c2bf9532eaf",
-      "changed_pixels": 2243
+      "from_revision": 2,
+      "from_revision_hash": "9e17712a07b736d3981f1e7fea83b0cb3e729cc81b8794df1ff12eb3ae07d7b1",
+      "changed_pixels": 2468
     },
     "elder-trunk": {
       "asset_id": "v4-forest-trans01-elder-trunk",
@@ -116,17 +116,17 @@
       "role": "Narrow forked foreground tree with asymmetric root foot",
       "width": 40,
       "height": 160,
-      "revision": 4,
-      "revision_hash": "f5b808f1b7cfafd0d0797e5afce261becaadc8da2f59ee21bf5d4183af48db0d",
-      "render_hash": "4e0e879902e0143eeb096707bf98067e2849cca3306aeaf147bfbd09db41b302",
+      "revision": 3,
+      "revision_hash": "389cd3d3296d99c016079281c109d51e8ea9c71d7ae18251279a406eb4d6ce4d",
+      "render_hash": "184cf59487a1399533c25b1ed7ca4a536205adaa0b138149afbe8c6f697b299a",
       "approval": {
         "status": {
           "project_id": "scarlet-moon-never-sets",
           "asset_id": "v4-forest-trans01-fork-trunk",
-          "revision": 4,
-          "revision_hash": "f5b808f1b7cfafd0d0797e5afce261becaadc8da2f59ee21bf5d4183af48db0d",
+          "revision": 3,
+          "revision_hash": "389cd3d3296d99c016079281c109d51e8ea9c71d7ae18251279a406eb4d6ce4d",
           "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
-          "approval_subject_hash": "a366607ad2bcf9c3f6dd09bdec3c116633d35b26569fe8dc67437174687eeb59",
+          "approval_subject_hash": "06f0178404b8c3665e8b9c3b96bc0599567e460f33cb9cdfd4b958832ce2e01f",
           "approved": false,
           "active_approval_ids": [],
           "historical_approval_ids": []
@@ -134,9 +134,9 @@
       },
       "export_file": "exports/fork-trunk.json",
       "canonical_png": "exports/fork-trunk.png",
-      "from_revision": 3,
-      "from_revision_hash": "389cd3d3296d99c016079281c109d51e8ea9c71d7ae18251279a406eb4d6ce4d",
-      "changed_pixels": 3885
+      "from_revision": 2,
+      "from_revision_hash": "a283927700e896e383f67991eaca4b41fb0216ea48b192e46e92c7517639ece3",
+      "changed_pixels": 4334
     },
     "canopy": {
       "asset_id": "v4-forest-trans01-canopy",
@@ -429,15 +429,5 @@
   },
   "correction_base_commit": "fa929a5627c17ac283ebb5e0bc9da2a1f26c71b7",
   "art_status": "Candidate correction; previous artwork rejected; new Owner visual review pending",
-  "correction_receipts": "correction_receipts.json",
-  "correction_02": {
-    "starting_working_candidate": "a58f4ebb1f09557b6de5f09713a948df5da8e516",
-    "formal_approval": false,
-    "revised_assets": [
-      "depth-opening",
-      "far-grove",
-      "mid-tree",
-      "fork-trunk"
-    ]
-  }
+  "correction_receipts": "correction_receipts.json"
 }

@@ -1,22 +1,21 @@
 # Forest of Magic — Translation 01
 
-**Correction 02 candidate for Owner review, building on the Owner-accepted working checkpoint a58f4eb. No runtime integration or formal asset approval.**
+**Correction 01 candidate for Owner review. The fa929a5 artwork was artistically REJECTED; technical proof retained. No runtime integration or art approval.**
 
-## Bounded artistic correction 02
+## Bounded artistic correction
 
-The Owner accepted `a58f4ebb1f09557b6de5f09713a948df5da8e516` as the current **working** Forest candidate, with artistic follow-ups. This pass addresses those follow-ups on the same branch / PR #26. It does not record formal asset approval.
+The Owner subsequently authorized one substantial correction on the same PR #26. Thirteen existing canonical assets were rebuilt at revision 3; lantern, mushrooms and firefly remain unchanged at revision 2. No new asset IDs, palette changes or other-environment work.
 
-Four assets rebuilt from r3 to r4: `mid-tree`, `fork-trunk`, `far-grove`, `depth-opening`. Twelve assets, palette, sizes and both placement recipes are unchanged.
+- Replaced narrow ribbon-like trunks with substantial bark-covered masses, irregular grain, knots and flared buttresses.
+- Replaced floating root streaks with branching root systems anchored in soil banks.
+- Replaced fragmented leaf marks and flat canopy slabs with connected overlapping crown clusters and fuller understory.
+- Rebuilt the distant grove/thicket, staggered horizon placement and kept near/mid/far color separation.
+- Replaced empty near-black fill and repeated isolated dashes with low-contrast loam patches on a readable ground plane. The center remains quiet; the story remains a separate broad clearing.
 
-- Only the elder trunk retains a hollow knot. Mid and fork trees have no knotholes.
-- Replaced the strand-like mid tree with a solid leaning bole, short bark plates and grounded flare.
-- Differentiated the fork tree with a high split, blockier broken bark, blunt limb and asymmetric buttress. The broader elder keeps its twisted grain.
-- Removed oversized diagonal far branches and the geometric opening funnel. Smaller unequal boles, compact crown pockets and restrained contrast separate the distant woods from the middle trees.
-- Preserved the fuller foliage, roots, lanterns, quiet lower gameplay lane and separate story clearing.
+[Gameplay rejected → corrected](gameplay_correction_before_after.png) · [Story rejected → corrected](story_correction_before_after.png)
 
-[Accepted working checkpoint → revised gameplay](gameplay_working_before_after.png) · [Accepted working checkpoint → revised story](story_working_before_after.png)
+The original native images, atlas, source grids, layouts, manifest, README and verification are preserved byte-for-byte in `rejected_checkpoint/`, anchored to `fa929a5627c17ac283ebb5e0bc9da2a1f26c71b7`. Its technical PASS never meant artistic acceptance. `correction_receipts.json` records this pass; the original `authoring_receipts.json` remains historical evidence.
 
-`accepted_checkpoint/` preserves exact source grids, authoring recipe, manifest, previews, atlas, layouts, README and verification from a58f4eb. `rejected_checkpoint/` still preserves fa929a5. Earlier transaction receipts remain untouched; `correction_02_receipts.json` records this pass. Git history retains every prior file.
 
 This package translates the Owner-accepted generated Forest references into 16 canonical RoboPixel pieces and two independently arranged native scenes. It preserves twisted old growth, cool layered woodland, edge lanterns/violet mushrooms and an intentionally dark combat corridor. It does not preserve every painted detail from the references.
 
@@ -35,9 +34,9 @@ This package translates the Owner-accepted generated Forest references into 16 c
 ## Exact sources and repeatable workflow
 
 - Project: `scarlet-moon-never-sets`. Asset IDs use `v4-forest-trans01-`; exact revision/hash, role, current approval status and paths are in `robopixel_manifest.json`.
-- All 16 assets remain **unapproved candidates**: four at r4, nine retained at r3, and three retained at r2. Each revised matrix and PNG was freshly read back through `export_preview` and canonical `asset_view`. No delivery or approval was requested. `authoring_receipts.json` preserves the committed transaction receipts.
+- All 16 assets remain **unapproved candidates**: 13 revised from r2 to r3 by `grid_paste`; three retained at r2. Each revised matrix and PNG was freshly read back through `export_preview` and canonical `asset_view`. No delivery or approval was requested. `authoring_receipts.json` preserves the committed transaction receipts.
 - `exports/*.json` contains the exact canonical indexed matrices, palette symbols, revision hashes and adapter round-trip results. `exports/*.png` is the actual canonical PNG read-back. `assets/*.png` is independently decoded from the matrices and compared pixel-for-pixel against those read-backs.
-- `authoring_inputs.json` preserves the submitted exact editable token grids and indexed palette. `author_kit.py` documents the integer pixel authoring operations; it never opens a generated reference, samples its pixels, traces it, resizes it or quantizes it into assets. This correction edits four pieces using native scanlines and short cluster stencils; twelve accepted working pieces are copied exactly from the preserved checkpoint. They are not SVGs or procedural game rendering.
+- `authoring_inputs.json` preserves the submitted exact editable token grids and indexed palette. `author_kit.py` documents the integer pixel authoring operations; it never opens a generated reference, samples its pixels, traces it, resizes it or quantizes it into assets. The correction uses substantial native scanline masses, irregular longitudinal bark grooves, buttresses and interlocking leaf stencils. They are not SVGs or procedural game rendering.
 - `layouts.json` is the composition source: integer placements, optional horizontal reflection, alpha crop at the canvas edge and a solid background color only. No scene scaling, smoothing, palette remapping, pixel repainting or post-composition correction. `compose.py` consumes canonical exports by default. `--author-preview` is explicitly pre-submission only.
 - `build_layouts.py` preserves the editable placement recipe. Both views reuse all 16 pieces, but have distinct layouts. Story is not any 192-wide crop of gameplay; the far opening is offset and the broad character stage is independently arranged.
 
@@ -56,11 +55,11 @@ The validator checks canonical grid/PNG correspondence, output dimensions, all P
 
 | Piece | Native size | Role |
 | --- | --- | --- |
-| depth-opening | 80×112 | Low-contrast distant woodland pockets and slim boles |
-| far-grove | 56×104 | Unequal distant upright trees and small crown pockets |
-| mid-tree | 36×112 | Stout leaning middle-distance bole, short bark plates, no knot |
+| depth-opening | 80×112 | Stepped, low-contrast distant opening; never stretched |
+| far-grove | 56×104 | Distant crooked-tree group with restrained canopy |
+| mid-tree | 36×112 | Middle-distance crooked trunk and branch clusters |
 | elder-trunk | 64×176 | Twisted foreground elder trunk, moss ribbons, knot and rising branch |
-| fork-trunk | 40×160 | High-split foreground oak with broken bark and asymmetric buttress |
+| fork-trunk | 40×160 | Narrow forked foreground tree with asymmetric root foot |
 | canopy | 64×40 | Asymmetric canopy mass; layered lobe clusters, broken underside |
 | understory | 40×28 | Low irregular shrub with readable leaf masses |
 | fern | 28×30 | Stepped fern fronds, deliberately sparse silhouette |
@@ -95,7 +94,7 @@ Painterly light shafts and individual leaf detail remain simplified, but the rej
 
 `verification.json` records the actual static results. All 23 base-tracked files, including every historical version and `versions/v4/index.html`, are byte-identical to the base. All new files are inside this proof directory. Git cleanliness and remote exact head are checked after committing and reported in the review return.
 
-This proves canonical native-asset persistence, exact export/read-back and reusable composition at the two target sizes. **The new correction awaits visual review.** The starting checkpoint is accepted as working art, not final approved assets. Reused foliage motifs remain a kit simplification; fine reference detail is deliberately omitted. The Owner decides whether the revised visual language is acceptable. No further polish is started automatically. This pass does not include scrolling/seam design, animation, dense moving bullet QA, runtime integration, music, character changes, formal asset approval/delivery, merging or release.
+This proves canonical native-asset persistence, exact export/read-back and reusable composition at the two target sizes. **It does not claim artistic acceptance.** This is one serious correction pass. Reused crown motifs and stylized distant branches remain visible; fine reference detail is deliberately simplified. The Owner decides whether the revised visual language is acceptable. No further polish is started automatically. This pass does not include scrolling/seam design, animation, dense moving bullet QA, runtime integration, music, character changes, formal asset approval/delivery, merging or release.
 
 ### Method reference
 

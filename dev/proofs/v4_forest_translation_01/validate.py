@@ -61,6 +61,16 @@ for p in (ROOT/'rejected_checkpoint').iterdir():
  expected=subprocess.check_output(['git','show',checkpoint+':'+prefix+p.name],cwd=REPO)
  assert p.read_bytes()==expected,p.name+' rejected checkpoint changed'
 checks['rejected_checkpoint_preserved_byte_exact']=True
+for p in (ROOT/'accepted_checkpoint').iterdir():
+ if p.name=='SOURCE.txt':continue
+ expected=subprocess.check_output(['git','show','a58f4ebb1f09557b6de5f09713a948df5da8e516:'+prefix+p.name],cwd=REPO)
+ assert p.read_bytes()==expected,p.name+' accepted checkpoint changed'
+checks['accepted_working_checkpoint_preserved_byte_exact']=True
+prior=json.loads((ROOT/'accepted_checkpoint/authoring_inputs.json').read_text())['assets']
+revised={n for n in A if A[n]['rows']!=prior[n]['rows']}
+assert revised=={'mid-tree','fork-trunk','depth-opening','far-grove'}
+assert (ROOT/'layouts.json').read_bytes()==(ROOT/'accepted_checkpoint/layouts.json').read_bytes()
+checks['only_four_target_assets_changed_and_layouts_preserved']=True
 assert all(not a['approval']['status']['approved'] for a in M['assets'].values())
 checks['all_assets_unapproved_candidates']=True
 correction_changes={}
