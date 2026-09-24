@@ -1,0 +1,189 @@
+{
+  "status": "PASS",
+  "scope": "static proof only; not runtime QA or Owner art acceptance",
+  "base_commit": "d7054d2b9b111ff711f44cc3ee5b71268aca6ed8",
+  "protected_base_files": 23,
+  "correction_changed_pixels": {
+    "gameplay": 39033,
+    "story": 53020
+  },
+  "checks": {
+    "all_16_canonical_matrix_and_png_round_trips": true,
+    "recompose_all_proof_pngs_byte_identical": true,
+    "native_sizes_and_exact_nearest_neighbor_enlargements": true,
+    "story_not_any_gameplay_width_crop": true,
+    "all_16_assets_reused_in_both_compositions": true,
+    "lower_gameplay_lane_80x112_contains_only_two_dark_ground_colors": true,
+    "all_base_tracked_files_unchanged": true,
+    "accepted_reference_hashes_preserved": true,
+    "rejected_checkpoint_preserved_byte_exact": true,
+    "accepted_working_checkpoint_preserved_byte_exact": true,
+    "only_four_target_assets_changed_and_layouts_preserved": true,
+    "all_assets_unapproved_candidates": true,
+    "both_scenes_substantially_redrawn": true
+  },
+  "assets": {
+    "depth-opening": {
+      "revision": 4,
+      "matrix_equals_submitted": true,
+      "canonical_png_equals_composition_asset": true,
+      "size": [
+        80,
+        112
+      ]
+    },
+    "far-grove": {
+      "revision": 4,
+      "matrix_equals_submitted": true,
+      "canonical_png_equals_composition_asset": true,
+      "size": [
+        56,
+        104
+      ]
+    },
+    "mid-tree": {
+      "revision": 4,
+      "matrix_equals_submitted": true,
+      "canonical_png_equals_composition_asset": true,
+      "size": [
+        36,
+        112
+      ]
+    },
+    "elder-trunk": {
+      "revision": 3,
+      "matrix_equals_submitted": true,
+      "canonical_png_equals_composition_asset": true,
+      "size": [
+        64,
+        176
+      ]
+    },
+    "fork-trunk": {
+      "revision": 4,
+      "matrix_equals_submitted": true,
+      "canonical_png_equals_composition_asset": true,
+      "size": [
+        40,
+        160
+      ]
+    },
+    "canopy": {
+      "revision": 3,
+      "matrix_equals_submitted": true,
+      "canonical_png_equals_composition_asset": true,
+      "size": [
+        64,
+        40
+      ]
+    },
+    "understory": {
+      "revision": 3,
+      "matrix_equals_submitted": true,
+      "canonical_png_equals_composition_asset": true,
+      "size": [
+        40,
+        28
+      ]
+    },
+    "fern": {
+      "revision": 3,
+      "matrix_equals_submitted": true,
+      "canonical_png_equals_composition_asset": true,
+      "size": [
+        28,
+        30
+      ]
+    },
+    "root-bank": {
+      "revision": 3,
+      "matrix_equals_submitted": true,
+      "canonical_png_equals_composition_asset": true,
+      "size": [
+        64,
+        32
+      ]
+    },
+    "quiet-ground": {
+      "revision": 3,
+      "matrix_equals_submitted": true,
+      "canonical_png_equals_composition_asset": true,
+      "size": [
+        32,
+        32
+      ]
+    },
+    "moss-seam": {
+      "revision": 3,
+      "matrix_equals_submitted": true,
+      "canonical_png_equals_composition_asset": true,
+      "size": [
+        32,
+        16
+      ]
+    },
+    "lantern": {
+      "revision": 2,
+      "matrix_equals_submitted": true,
+      "canonical_png_equals_composition_asset": true,
+      "size": [
+        10,
+        20
+      ]
+    },
+    "mushrooms": {
+      "revision": 2,
+      "matrix_equals_submitted": true,
+      "canonical_png_equals_composition_asset": true,
+      "size": [
+        16,
+        16
+      ]
+    },
+    "firefly": {
+      "revision": 2,
+      "matrix_equals_submitted": true,
+      "canonical_png_equals_composition_asset": true,
+      "size": [
+        5,
+        5
+      ]
+    },
+    "root-crook": {
+      "revision": 3,
+      "matrix_equals_submitted": true,
+      "canonical_png_equals_composition_asset": true,
+      "size": [
+        60,
+        72
+      ]
+    },
+    "far-thicket": {
+      "revision": 3,
+      "matrix_equals_submitted": true,
+      "canonical_png_equals_composition_asset": true,
+      "size": [
+        64,
+        32
+      ]
+    }
+  },
+  "native_outputs": {
+    "forest_gameplay_preview_192x240.png": {
+      "sha256": "af7a7be919a0264a8a496dcb88191f08ebc661d7e295883ee583f8e7da34a30d",
+      "size": [
+        192,
+        240
+      ],
+      "rgba_sha256": "033898987687fea721c601c284c858f89fef533097244a2e4ffe8d6d12e933f9"
+    },
+    "forest_story_preview_256x240.png": {
+      "sha256": "892dab0376214e5fe79453c4e2bce31ce1cbb6dc503b8fc21b5a1a88d9a974a5",
+      "size": [
+        256,
+        240
+      ],
+      "rgba_sha256": "ea559c1c894262657c959d99c982a737585c49912daa91b744ffd423d728ee24"
+    }
+  }
+}
