@@ -1,0 +1,32 @@
+{
+  "name": "forest-depth",
+  "width": 65,
+  "height": 25,
+  "rows": [
+    ".............n...................................................",
+    "............nnn..................................................",
+    "............nbn..........................n.......................",
+    "...........nnbnn........................nnn......................",
+    "..........nnbbnnn.......................nbn......................",
+    "...........nbnnn......................nnbnn......................",
+    ".........nnnbbnnnn...................nnbbnnn.....................",
+    "..........nnbbnnn.......n..............nbnn......................",
+    "........nnnnbbnnnn.....nnn...........nnnbbnnn....................",
+    ".........nnnbbnnn.....nnbnn...........nnbbnn......n..............",
+    ".......nnnnbbbnnnn....nbbnnn........nnnbbnnnn....nnn.............",
+    "........nnnbbbnnn...nnnbbnnnn........nnbbbnnn...nnbnn............",
+    "......nnnnnbbbnnnn...nnbbnnn.......nnnnbbbnnnn..nbbnnn...........",
+    ".......nnnnbbbnnn..nnnbbbnnnn.......nnnbbbnnn..nnnbbnnn..........",
+    ".....nnnnnnbbbnnnn..nnbbbnnn......nnnnbbbbnnnn..nnbbnnn..........",
+    "......nnnnnbbbnnn.nnnnbbbnnnn......nnnbbbbnnn.nnnnbbbnnn.........",
+    "....nnnnnnnbbbnnnn.nnnnbbnnn.....nnnnnbbbbnnnn.nnnnbbnn..........",
+    ".....nnnnnnbbbnnn.nnnnnbbbnnnn....nnnnbbbbnnn.nnnnnbbbnnn........",
+    "...nnnnnnnnbbbnnnn.nnnnbbbnnn...nnnnnnbbbbnnnn.nnnnbbbnn.........",
+    "....nnnnnnnbbbnnn.nnnnnbbbnnnn...nnnnnbbbbnnn.nnnnnbbbnnnn.......",
+    "..nnnnnnnnnbbbnnnn.nnnnbbbnnn..nnnnnnnbbbbnnnn.nnnnbbbnnn........",
+    "...nnnnnnnnbbbnnn.nnnnnbbbnnnn..nnnnnnbbbbnnn.nnnnnbbbnnnn.......",
+    ".nnnnnnnnnnbbbnnnn.nnnnbbbnnn.nnnnnnnnbbbbnnnn.nnnnbbbnnn........",
+    "nnnnnnnnnnnbbbnnnnnnnnnbbbnnnnnnnnnnnnbbbbnnnnnnnnnbbbnnnnnnnnnnn",
+    "nnnnnnnnnnnbbbnnnnnnnnnbbbnnnnnnnnnnnnbbbbnnnnnnnnnbbbnnnnnnnnnnn"
+  ]
+}
