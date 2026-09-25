@@ -1,0 +1,82 @@
+{
+  "create": {
+    "receipt": {
+      "transaction_id": "de2faaec8ec9903dcaf3419a887906323dcebc89291d36bf78b362b446e0f987",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-approach-stairs-night",
+      "operation": "asset_create",
+      "name": "Shrine Translation 01 / approach-stairs-night",
+      "class_id": "environment-structure",
+      "revision": 1,
+      "revision_hash": "17983cb82595d8b8fe05ea0b388cdd1be732b7122c907106f342c316cf493646",
+      "canvas": {
+        "width": 82,
+        "height": 26
+      },
+      "palette_id": "v4-shrine-trans01-approach-stairs-night",
+      "palette_hash": "d8f6a58539824446a97f1cb51164cb2e356fa0655ae920fa987948a5fab0855a",
+      "frame_id": "default",
+      "layer_id": "art",
+      "created_at": "2026-09-25T12:20:12.671Z",
+      "policy_id": "d12-art-policy",
+      "policy_version": 1,
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "guards": []
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-approach-stairs-night",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-approach-stairs-night/revision/1",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-approach-stairs-night/revision/1/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-approach-stairs-night/revision/1/text"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  "paste": {
+    "receipt": {
+      "transaction_id": "349060608383d6d0f51be2b4a08ecccff43533acd98ab13da3eea2ac20e12961",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-approach-stairs-night",
+      "operation": "grid_paste",
+      "old_revision": 1,
+      "new_revision": 2,
+      "old_revision_hash": "17983cb82595d8b8fe05ea0b388cdd1be732b7122c907106f342c316cf493646",
+      "new_revision_hash": "26fb573efb88f5fb779126b02fd65c3262e1eb1edaf6f3495ce9f5afa30ad7c8",
+      "changed_pixels": 1729,
+      "changed_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 82,
+        "height": 25
+      },
+      "region_changes": [],
+      "layer_changes": [
+        {
+          "layer_id": "art",
+          "changed_pixels": 1729
+        }
+      ],
+      "frame_changes": [
+        {
+          "frame_id": "default",
+          "changed_pixels": 1729
+        }
+      ],
+      "guards": [],
+      "approval_invalidated": true
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-approach-stairs-night",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-approach-stairs-night/revision/2",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-approach-stairs-night/revision/2/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-approach-stairs-night/revision/2/text",
+      "diff": "robopixel://diff/scarlet-moon-never-sets/v4-shrine-trans01-approach-stairs-night/1/2"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  }
+}

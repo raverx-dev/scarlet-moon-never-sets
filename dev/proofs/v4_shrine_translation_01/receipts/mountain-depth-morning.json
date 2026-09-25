@@ -1,0 +1,82 @@
+{
+  "create": {
+    "receipt": {
+      "transaction_id": "b82be4506cca6ec886061f672c600806e3c25965ae8b0e2246c82f946e6e594c",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-mountain-depth-morning",
+      "operation": "asset_create",
+      "name": "Shrine Translation 01 / mountain-depth-morning",
+      "class_id": "environment-structure",
+      "revision": 1,
+      "revision_hash": "8f46c53926eba90debe4ec618c4b895e2037cc845a34cac63d5f66dc528f3832",
+      "canvas": {
+        "width": 256,
+        "height": 84
+      },
+      "palette_id": "v4-shrine-trans01-mountain-depth-morning",
+      "palette_hash": "a0b65bc5e251173d8794d409c477be973794dcd7d0e3f0eaff6676ff596622bd",
+      "frame_id": "default",
+      "layer_id": "art",
+      "created_at": "2026-09-25T12:20:03.052Z",
+      "policy_id": "d12-art-policy",
+      "policy_version": 1,
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "guards": []
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-mountain-depth-morning",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-mountain-depth-morning/revision/1",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-mountain-depth-morning/revision/1/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-mountain-depth-morning/revision/1/text"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  "paste": {
+    "receipt": {
+      "transaction_id": "5f2087c306f559bf93ac895a5f62f57534551095c0ecf09adf20a042e6c38661",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-mountain-depth-morning",
+      "operation": "grid_paste",
+      "old_revision": 1,
+      "new_revision": 2,
+      "old_revision_hash": "8f46c53926eba90debe4ec618c4b895e2037cc845a34cac63d5f66dc528f3832",
+      "new_revision_hash": "1bb06105ae8a36b98110a46fc9d85b434601922e139bf42322eb9d03486b3544",
+      "changed_pixels": 16545,
+      "changed_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 84
+      },
+      "region_changes": [],
+      "layer_changes": [
+        {
+          "layer_id": "art",
+          "changed_pixels": 16545
+        }
+      ],
+      "frame_changes": [
+        {
+          "frame_id": "default",
+          "changed_pixels": 16545
+        }
+      ],
+      "guards": [],
+      "approval_invalidated": true
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-mountain-depth-morning",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-mountain-depth-morning/revision/2",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-mountain-depth-morning/revision/2/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-mountain-depth-morning/revision/2/text",
+      "diff": "robopixel://diff/scarlet-moon-never-sets/v4-shrine-trans01-mountain-depth-morning/1/2"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  }
+}

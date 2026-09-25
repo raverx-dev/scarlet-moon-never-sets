@@ -1,0 +1,82 @@
+{
+  "create": {
+    "receipt": {
+      "transaction_id": "5dcee49fa11ed1bebd18bb35a9c89343afc1c848492b4ab5b304e28e5cd885bf",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-torii-night",
+      "operation": "asset_create",
+      "name": "Shrine Translation 01 / torii-night",
+      "class_id": "environment-structure",
+      "revision": 1,
+      "revision_hash": "1a7328aa4344cf672ae36c3a117fae6df1b90ead009942df0a70fb3f38adb1df",
+      "canvas": {
+        "width": 87,
+        "height": 116
+      },
+      "palette_id": "v4-shrine-trans01-torii-night",
+      "palette_hash": "e5c11403c5a6eb2b075cafd54ab79a2d41b567a2adb5c62c12e83ec4f8d79ed6",
+      "frame_id": "default",
+      "layer_id": "art",
+      "created_at": "2026-09-25T12:20:14.870Z",
+      "policy_id": "d12-art-policy",
+      "policy_version": 1,
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "guards": []
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-torii-night",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-torii-night/revision/1",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-torii-night/revision/1/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-torii-night/revision/1/text"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  "paste": {
+    "receipt": {
+      "transaction_id": "bff8440293a19c3f42600161a873cdece1e42b09ce2118bbaeaac914ee0fd6fb",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-torii-night",
+      "operation": "grid_paste",
+      "old_revision": 1,
+      "new_revision": 2,
+      "old_revision_hash": "1a7328aa4344cf672ae36c3a117fae6df1b90ead009942df0a70fb3f38adb1df",
+      "new_revision_hash": "aebd78843cfa695ad017cb09402183957163abfe4d009a7a5ea01c7c4e0031e2",
+      "changed_pixels": 3465,
+      "changed_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 86,
+        "height": 112
+      },
+      "region_changes": [],
+      "layer_changes": [
+        {
+          "layer_id": "art",
+          "changed_pixels": 3465
+        }
+      ],
+      "frame_changes": [
+        {
+          "frame_id": "default",
+          "changed_pixels": 3465
+        }
+      ],
+      "guards": [],
+      "approval_invalidated": true
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-torii-night",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-torii-night/revision/2",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-torii-night/revision/2/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-torii-night/revision/2/text",
+      "diff": "robopixel://diff/scarlet-moon-never-sets/v4-shrine-trans01-torii-night/1/2"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  }
+}

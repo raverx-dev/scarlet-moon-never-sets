@@ -1,0 +1,82 @@
+{
+  "create": {
+    "receipt": {
+      "transaction_id": "8d0ef78e8e71bf8338c607e20a5b353b7b5d2c6eb351a0599d8ff9561189e5e1",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-courtyard-morning",
+      "operation": "asset_create",
+      "name": "Shrine Translation 01 / courtyard-morning",
+      "class_id": "environment-structure",
+      "revision": 1,
+      "revision_hash": "8fbca3afdf20492955e9bbbde332a77253e5fa42e9f503bda46bbdb16c9918fc",
+      "canvas": {
+        "width": 256,
+        "height": 93
+      },
+      "palette_id": "v4-shrine-trans01-courtyard-morning",
+      "palette_hash": "9781d102c465a9fee9e3f3a2ba88a9d0791e26b0ec906fa5fc7f7f1812e5662c",
+      "frame_id": "default",
+      "layer_id": "art",
+      "created_at": "2026-09-25T12:20:11.464Z",
+      "policy_id": "d12-art-policy",
+      "policy_version": 1,
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "guards": []
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-courtyard-morning",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-courtyard-morning/revision/1",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-courtyard-morning/revision/1/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-courtyard-morning/revision/1/text"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  "paste": {
+    "receipt": {
+      "transaction_id": "4c57effeff0e5dadd7e8671f47fd4ca46aaba9f8acf8985c8d8f2b8bd1628e55",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-courtyard-morning",
+      "operation": "grid_paste",
+      "old_revision": 1,
+      "new_revision": 2,
+      "old_revision_hash": "8fbca3afdf20492955e9bbbde332a77253e5fa42e9f503bda46bbdb16c9918fc",
+      "new_revision_hash": "ef2a2fc46930a40d8ad0c81b434ad57edb9efa9c17e71ec28007a756a20cdd79",
+      "changed_pixels": 23808,
+      "changed_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 93
+      },
+      "region_changes": [],
+      "layer_changes": [
+        {
+          "layer_id": "art",
+          "changed_pixels": 23808
+        }
+      ],
+      "frame_changes": [
+        {
+          "frame_id": "default",
+          "changed_pixels": 23808
+        }
+      ],
+      "guards": [],
+      "approval_invalidated": true
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-courtyard-morning",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-courtyard-morning/revision/2",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-courtyard-morning/revision/2/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-courtyard-morning/revision/2/text",
+      "diff": "robopixel://diff/scarlet-moon-never-sets/v4-shrine-trans01-courtyard-morning/1/2"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  }
+}

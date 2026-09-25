@@ -1,0 +1,82 @@
+{
+  "create": {
+    "receipt": {
+      "transaction_id": "4dd378bad56a50be1b55e765270dc9cef6dcc1efc95b4d6d60fa25b7ef079051",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-stone-lantern-morning",
+      "operation": "asset_create",
+      "name": "Shrine Translation 01 / stone-lantern-morning",
+      "class_id": "environment-structure",
+      "revision": 1,
+      "revision_hash": "f672f8bf7c32b2e68079a37084ad153a0bbdc56aa7cb2ff49409334743d786bd",
+      "canvas": {
+        "width": 24,
+        "height": 49
+      },
+      "palette_id": "v4-shrine-trans01-stone-lantern-morning",
+      "palette_hash": "c2f6ba21b1578ab766b4edcfbf25fc0edb5518a228a0cd9967db0f542e21db72",
+      "frame_id": "default",
+      "layer_id": "art",
+      "created_at": "2026-09-25T12:20:17.734Z",
+      "policy_id": "d12-art-policy",
+      "policy_version": 1,
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "guards": []
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-stone-lantern-morning",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-stone-lantern-morning/revision/1",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-stone-lantern-morning/revision/1/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-stone-lantern-morning/revision/1/text"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  "paste": {
+    "receipt": {
+      "transaction_id": "2faa0b4d19f40cd066fde811c7a151ebc5cb616844abba8e525d2bb367f1a3b8",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-stone-lantern-morning",
+      "operation": "grid_paste",
+      "old_revision": 1,
+      "new_revision": 2,
+      "old_revision_hash": "f672f8bf7c32b2e68079a37084ad153a0bbdc56aa7cb2ff49409334743d786bd",
+      "new_revision_hash": "13931e0614bb3fa0beeaab88b6aa60a90359ecff4912b9b9f09390c5182874cc",
+      "changed_pixels": 602,
+      "changed_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 24,
+        "height": 47
+      },
+      "region_changes": [],
+      "layer_changes": [
+        {
+          "layer_id": "art",
+          "changed_pixels": 602
+        }
+      ],
+      "frame_changes": [
+        {
+          "frame_id": "default",
+          "changed_pixels": 602
+        }
+      ],
+      "guards": [],
+      "approval_invalidated": true
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-stone-lantern-morning",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-stone-lantern-morning/revision/2",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-stone-lantern-morning/revision/2/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-stone-lantern-morning/revision/2/text",
+      "diff": "robopixel://diff/scarlet-moon-never-sets/v4-shrine-trans01-stone-lantern-morning/1/2"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  }
+}
