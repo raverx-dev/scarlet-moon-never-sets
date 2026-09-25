@@ -1,0 +1,31 @@
+{
+  "name": "parapet",
+  "width": 33,
+  "height": 24,
+  "rows": [
+    "hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh.",
+    "mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm.",
+    "ssssssssssssssssssssssssssssssss.",
+    "dddddddddddddddddddddddddddddddd.",
+    "msddmmmmmmmddmsddmmmmmmmddmsddmmm",
+    "msdmms...smmdmsdmms...smmdmsdmms.",
+    "msmms.....smmsmms.....smmsmms....",
+    "msms.......smsms.......smsms.....",
+    "msms.......smsms.......smsms.....",
+    "msms.......smsms.......smsms.....",
+    "msmms.....smmsmms.....smmsmms....",
+    "msdmms...smmdmsdmms...smmdmsdmms.",
+    "msddmms.smmddmsddmms.smmddmsddmms",
+    "msdddmmsmmdddmsdddmmsmmdddmsdddmm",
+    "msdddmsmsddddmsdddmsmsddddmsdddms",
+    "msddmmsmmsdddmsddmmsmmsdddmsddmms",
+    "mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm.",
+    "ssssssssssssssssssssssssssssssss.",
+    "dddddddddddddddddddddddddddddddd.",
+    "msbbbbbbbbdbbbbbbbbbbbdbbbbbbbbd.",
+    "msbbbbsbbbdbbbbbbsbbbbdbbbbbbbbd.",
+    "msbbbbbbbbdbbbbbbbbbbbdbbbbbbbbd.",
+    "mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm.",
+    "ssssssssssssssssssssssssssssssss."
+  ]
+}
