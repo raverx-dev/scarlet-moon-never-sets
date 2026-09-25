@@ -1,0 +1,179 @@
+{
+  "proof": "c2241001946ac5456293f9f2b8be137e5c5bc648",
+  "base": "d7054d2b9b111ff711f44cc3ee5b71268aca6ed8",
+  "historic_verification_source_commit": "44530dd918ce498544025ca1919e91faccb619d4",
+  "historic_verification_status": "PASS",
+  "floor_correction_status": "PASS",
+  "floor_correction_baseline": "41132bc77e632d06132989cf134b7ed9719211e3",
+  "qualification": "pixel equality with the two accepted PNGs at the proof commit; floor_correction_verification.json is the current paving PASS. historic verification.json source_commit is not the accepted head.",
+  "paving": {
+    "asset_id": "v4-mansion-trans01-paving",
+    "revision": 6,
+    "revision_hash": "a9173888c4d445e8aa077822fbb7362709b61e3a9c39c0653b45a6a0354f1023"
+  },
+  "assets": [
+    {
+      "stem": "rose",
+      "asset_id": "v4-mansion-trans01-rose",
+      "revision": 5,
+      "revision_hash": "64879b97226e22fb53211a3d8e92b00cca5aacdc12507b0129a2acbc794b35c3"
+    },
+    {
+      "stem": "lancet",
+      "asset_id": "v4-mansion-trans01-lancet",
+      "revision": 3,
+      "revision_hash": "af680c698f85531a5abda37c4723c1caa7e657931f031918d2e0f8a26935f2bb"
+    },
+    {
+      "stem": "arch",
+      "asset_id": "v4-mansion-trans01-arch",
+      "revision": 3,
+      "revision_hash": "4d6618fd9074150adaed2b2ae80e204467480bf0ecf556aab751ec6065b3e25e"
+    },
+    {
+      "stem": "banner",
+      "asset_id": "v4-mansion-trans01-banner",
+      "revision": 3,
+      "revision_hash": "af2ed3b4c4f83b158092cf0791a8b43eac72fa10a6109d7aa802e371fe56f7dc"
+    },
+    {
+      "stem": "near-pier",
+      "asset_id": "v4-mansion-trans01-near-pier",
+      "revision": 3,
+      "revision_hash": "e6b60afaaf0b61b431f4188246f38430c4111d6026c1259b28a6e2fb38c3e3ee"
+    },
+    {
+      "stem": "stairs",
+      "asset_id": "v4-mansion-trans01-stairs",
+      "revision": 3,
+      "revision_hash": "a66add7f1da69ae0abc28604378e198cc48193de8cf394e518c541445a3d383a"
+    },
+    {
+      "stem": "balustrade",
+      "asset_id": "v4-mansion-trans01-balustrade",
+      "revision": 3,
+      "revision_hash": "26f0156d6762eeb1c272e618a87877e6229f9aaf1bdbc4427b9dd8d6c0c91ab0"
+    },
+    {
+      "stem": "candelabra",
+      "asset_id": "v4-mansion-trans01-candelabra",
+      "revision": 3,
+      "revision_hash": "689ed8480042d1be1c500a1a4ea818cd8e281e1643f142a1ddbb1859528e5df2"
+    },
+    {
+      "stem": "runner",
+      "asset_id": "v4-mansion-trans01-runner",
+      "revision": 2,
+      "revision_hash": "173e9f8275c5bc5246eda7d905610092a5e8041060a2fe551e0f92963d1d2c49"
+    },
+    {
+      "stem": "runner-edge",
+      "asset_id": "v4-mansion-trans01-runner-edge",
+      "revision": 3,
+      "revision_hash": "cddfff0d226fa5fcf710981f840a247482f67131090b70b1d13c046f4d992810"
+    },
+    {
+      "stem": "runner-motif",
+      "asset_id": "v4-mansion-trans01-runner-motif",
+      "revision": 2,
+      "revision_hash": "99fc40e679eb25161067272e5f7193cc37ded52d6a92df2f3c27912d7f31e648"
+    },
+    {
+      "stem": "paving",
+      "asset_id": "v4-mansion-trans01-paving",
+      "revision": 6,
+      "revision_hash": "a9173888c4d445e8aa077822fbb7362709b61e3a9c39c0653b45a6a0354f1023"
+    },
+    {
+      "stem": "column",
+      "asset_id": "v4-mansion-proof-column-01",
+      "revision": 5,
+      "revision_hash": "1f85384467a30319209ee886869688d29c61e18c829ad2ca707fffebdd11e41f"
+    },
+    {
+      "stem": "wall-masonry",
+      "asset_id": "v4-mansion-proof-wall-masonry-01",
+      "revision": 2,
+      "revision_hash": "c7a7b82bb2ee25730e1fe092e52d2b9f59c9668c9f68087678d36ec58fd8564d"
+    },
+    {
+      "stem": "trim-top",
+      "asset_id": "v4-mansion-proof-trim-top-01",
+      "revision": 4,
+      "revision_hash": "508da795c7aa3a327f82fa94cb89fe920328408e5a5eee8af566fde293a1552d"
+    },
+    {
+      "stem": "far-pier",
+      "asset_id": "v4-mansion-ref01-far-pier-01",
+      "revision": 2,
+      "revision_hash": "73411389d2256b01f59c07a749f84ca1000f81484d34bbcc5665edff2fac9918"
+    }
+  ],
+  "layout_assets": [
+    "arch",
+    "balustrade",
+    "banner",
+    "candelabra",
+    "column",
+    "far-pier",
+    "lancet",
+    "near-pier",
+    "paving",
+    "rose",
+    "runner",
+    "runner-edge",
+    "runner-motif",
+    "stairs",
+    "trim-top",
+    "wall-masonry"
+  ],
+  "scenes": {
+    "gameplay": {
+      "width": 192,
+      "height": 240,
+      "png_sha256": "4c01e4ec1c385e29bba28a6fc7c12a91600e086a84fdb71f3d4be6738d317fb3",
+      "rgb_sha256": "2d9f1b6d171870d4ac06fc6dde626410ad90b574c35461a2118e0934ff598bd8",
+      "kind": "index",
+      "palette_size": 17,
+      "floor_correction_png_sha256": "4c01e4ec1c385e29bba28a6fc7c12a91600e086a84fdb71f3d4be6738d317fb3",
+      "historic_verification_png_sha256": "4c01e4ec1c385e29bba28a6fc7c12a91600e086a84fdb71f3d4be6738d317fb3"
+    },
+    "story": {
+      "width": 256,
+      "height": 240,
+      "png_sha256": "593e882aa958e5aef4e2e490da300bf7f96ea17bdd88255b8c211550a99efd49",
+      "rgb_sha256": "710d55e8d60248ba801fe3011584050d0325862a54bd592c3d6fe0e5a019642f",
+      "kind": "index",
+      "palette_size": 17,
+      "floor_correction_png_sha256": "593e882aa958e5aef4e2e490da300bf7f96ea17bdd88255b8c211550a99efd49",
+      "historic_verification_png_sha256": "593e882aa958e5aef4e2e490da300bf7f96ea17bdd88255b8c211550a99efd49"
+    }
+  },
+  "inputs_sha256": {
+    "compose.py": "bc21d7f51db4fd6593d239b7e43a3fe35997ec37e6ddb2faa9093a4407b96c7b",
+    "layouts.json": "a9ae7395635f327cb18bd48cfe392223b85034724d2e17df061b395e87e1a037",
+    "robopixel_manifest.json": "66f12572aaa57c453dae799b8ecd8c49c2521d2af7fd8426c14fdb4983a62041",
+    "floor_correction_verification.json": "0322b918654932539636cebef99ed2b520f2329e2297e65d85a3cc09ac740741",
+    "historic_verification.json": "375812fc8cef5dc6482fe69e7fb2ef8de9b34f3e34fceb3a33803447867d4eb5",
+    "accepted/mansion_gameplay_preview_192x240.png": "4c01e4ec1c385e29bba28a6fc7c12a91600e086a84fdb71f3d4be6738d317fb3",
+    "accepted/mansion_story_preview_256x240.png": "593e882aa958e5aef4e2e490da300bf7f96ea17bdd88255b8c211550a99efd49",
+    "exports/arch.json": "0cf46191eb2e160f62990497908ec079cfe8f2067185b0a347b9f100314c4365",
+    "exports/balustrade.json": "9cb552efff818517ae92d89f9e0b09808f92c8aa319ba2804bfd2c8515337d66",
+    "exports/banner.json": "92fd50af7d21d43b8a60fb5d48d41f36ffde49116a073f47890f274a49e02e4d",
+    "exports/candelabra.json": "7abff29bc7c85568c66b6b583c2e87b14cb77cb7fcdec94f530d6bf4f667b08c",
+    "exports/column.json": "5da32e7aa7bbff2d7a12ed8f0c711dd3e210cf02a3e6f9a9a3626e782e6e328a",
+    "exports/far-pier.json": "9672b1c1dc309d1e6a1f2546ae7afc4ae51e49e6b63fc235af34482a7b5e6b0d",
+    "exports/lancet.json": "c0c2d249c15032f2e79c26e83d0e041831d5140c32001029306b1a3d133020c5",
+    "exports/near-pier.json": "a30a193e0113faa38a0eec99a847104378b7cbcf84c387be88c209fa1d7132a6",
+    "exports/paving.json": "12522d89d93f599d6b56b829ebaf83122dded07d47e0fc2cb9dc5a8d1b3f636f",
+    "exports/rose.json": "88bfddc895c2e4474893ad179ac27bcef621471d14631d05a0a35437919c4371",
+    "exports/runner-edge.json": "73ada15110c536d1773d6b8a5b463a21851d441e5fec2e49e3bfc5d3d2e636ff",
+    "exports/runner-motif.json": "9a60cda4a7e7297aa342fa606f6b848e3e5738bac560165f7d5c61a195e52a87",
+    "exports/runner.json": "a6b6a1207c1800d9d9775b842d0b98a242b4ee03a0e282c2db06c4e8cda049d1",
+    "exports/stairs.json": "8e50bdf79f4bd293de4ba6999495cd45f58132226cde8413334e7d33cca609cb",
+    "exports/trim-top.json": "dc6625a69d7cf6318e35186426582904fdc1bad0b337833594afbb0997c82f5b",
+    "exports/wall-masonry.json": "421238e7555fecdeb61ef4330a079b98d675ac6e4df762e820c61161591d270d"
+  },
+  "command": "python3 dev/v4_mansion_runtime/build_embedded.py --apply",
+  "embedded_sha256": "362cfdce806e8c13a1b5b2fcb2c44804bb7a5d76214a0451e49d953c3ad682f4"
+}
