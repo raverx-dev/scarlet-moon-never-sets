@@ -1,0 +1,315 @@
+[
+  {
+    "path": "before/gameplay.png",
+    "sha256": "2307c4ca3f9d5a7ec16712889c9d286654ebe8bd3750cdca9393c0a2f4eeaa15",
+    "parts": [
+      "correction01-2307c4ca3f9d5a7e-00.b64"
+    ]
+  },
+  {
+    "path": "before/story.png",
+    "sha256": "2f62fb8d28ee48acf5ce946db4d526bfde1652bffc69d9b80e5be22210331a05",
+    "parts": [
+      "correction01-2f62fb8d28ee48ac-00.b64"
+    ]
+  },
+  {
+    "path": "exports/blue-ripples.png",
+    "sha256": "688b3251c422a92bd7a8ac3ce164f6361f1cd1ef36f3549e8e6cb16e17222011",
+    "parts": [
+      "correction01-688b3251c422a92b-00.b64"
+    ]
+  },
+  {
+    "path": "exports/boulder.png",
+    "sha256": "64e1f53d10bc187ad0d73b1c18305a13d2916205403a368fd26eedfdd118bb40",
+    "parts": [
+      "01-00.b64"
+    ]
+  },
+  {
+    "path": "exports/deep-water.png",
+    "sha256": "2d5f4137fe98e1d0d62e8f07cd7e0fb9038cbd27e2675b6f3381924adfae7a3a",
+    "parts": [
+      "correction01-2d5f4137fe98e1d0-00.b64"
+    ]
+  },
+  {
+    "path": "exports/distant-torii.png",
+    "sha256": "c4243492d3e78600f35e3a24a1c5b449d5f23f2499b97ebfcea23cb0644ddb18",
+    "parts": [
+      "03-00.b64"
+    ]
+  },
+  {
+    "path": "exports/east-woods.png",
+    "sha256": "71e3ec2840fff271aec6e25e4cf88eda09ee14244bdc1d56785ba6937f1f0f38",
+    "parts": [
+      "correction01-71e3ec2840fff271-00.b64"
+    ]
+  },
+  {
+    "path": "exports/far-ridges.png",
+    "sha256": "43436bffa702cd516dd3ced113567019be0cc08f679293790beb351afa768f8c",
+    "parts": [
+      "correction01-43436bffa702cd51-00.b64"
+    ]
+  },
+  {
+    "path": "exports/flat-stones.png",
+    "sha256": "1b0f899e2116f926ca7fc513667667d475c204afe6996f74222155ce4b2150ea",
+    "parts": [
+      "06-00.b64"
+    ]
+  },
+  {
+    "path": "exports/frosted-point.png",
+    "sha256": "87ea71afc8a4804189eaad236509b5af2eb68ff71c9fca9e66a80fb4df48a1e5",
+    "parts": [
+      "correction01-87ea71afc8a48041-00.b64"
+    ]
+  },
+  {
+    "path": "exports/ice-cluster.png",
+    "sha256": "11fd545e3bac4fe21c89d47044e91aa633cf29d6ce07003e324404695aa47c60",
+    "parts": [
+      "08-00.b64"
+    ]
+  },
+  {
+    "path": "exports/mist-bank.png",
+    "sha256": "2c7f282829adb2edc6de36bfcb9a4e18a3923bffcb4db15942a0d2fb516bdf82",
+    "parts": [
+      "correction01-2c7f282829adb2ed-00.b64"
+    ]
+  },
+  {
+    "path": "exports/scarlet-cloud.png",
+    "sha256": "c7aa60e4b5c5748d6fe07b79dbb5da4bab82c79cbfb94ffa14e7fe2127bfd0e3",
+    "parts": [
+      "correction01-c7aa60e4b5c5748d-00.b64"
+    ]
+  },
+  {
+    "path": "exports/scarlet-moon.png",
+    "sha256": "6c3bd51978744b753598e9484529b63ea2d06ce0149251315aa6e40261079bd2",
+    "parts": [
+      "correction01-6c3bd51978744b75-00.b64"
+    ]
+  },
+  {
+    "path": "exports/scarlet-reflection.png",
+    "sha256": "2c4f86755588c69683533625f11aedf15322d3d6350d9f9201fe680b0f914498",
+    "parts": [
+      "correction01-2c4f86755588c696-00.b64"
+    ]
+  },
+  {
+    "path": "exports/shore-tree.png",
+    "sha256": "b3be1aa6857a5399cf93a12edef88d5b7bcaf3e2fa5e9df22223ae52c498302e",
+    "parts": [
+      "correction01-b3be1aa6857a5399-00.b64"
+    ]
+  },
+  {
+    "path": "exports/silver-reeds.png",
+    "sha256": "5627aa2eca546c8ad04c32368204df6509d66419f65e3cda4700128bb280d569",
+    "parts": [
+      "correction01-5627aa2eca546c8a-00.b64"
+    ]
+  },
+  {
+    "path": "exports/small-rock.png",
+    "sha256": "776e2654063bd243f8bc0d15a4d6fe344fc0fb2bad1029cf60a19876b0be225d",
+    "parts": [
+      "15-00.b64"
+    ]
+  },
+  {
+    "path": "exports/story-shore.png",
+    "sha256": "35e2034885752c2c0737725fcf11856294119e09cd4979900d6daff493e08fa9",
+    "parts": [
+      "correction01-35e2034885752c2c-00.b64"
+    ]
+  },
+  {
+    "path": "exports/twilight.png",
+    "sha256": "dcb35658affb19a9b7d0ba83cb146c6e77285f52dfc9760c8fc6173315ad882c",
+    "parts": [
+      "17-00.b64"
+    ]
+  },
+  {
+    "path": "exports/west-woods.png",
+    "sha256": "5670f54c655b1d6d089b65bf6d43c1dbf6f18c3415354d45d935ea6bd89a1eb2",
+    "parts": [
+      "correction01-5670f54c655b1d6d-00.b64"
+    ]
+  },
+  {
+    "path": "previews/assets_before_corrected.png",
+    "sha256": "ff04a308f3cf55167032d735f4bdc071857d3029657fb8e5bb2137b67274c196",
+    "parts": [
+      "correction01-ff04a308f3cf5516-00.b64"
+    ]
+  },
+  {
+    "path": "previews/atlas.png",
+    "sha256": "ac3b3e41735a438625d7218701728cf4f612119f5b25318cbb164edf59e5d1ae",
+    "parts": [
+      "correction01-ac3b3e41735a4386-00.b64"
+    ]
+  },
+  {
+    "path": "previews/baseline_v3_gameplay.png",
+    "sha256": "dc04351ceeb2e2455bd6a36d875ac5e3767233e90f2cc69e900cd21241ff6d01",
+    "parts": [
+      "20-00.b64"
+    ]
+  },
+  {
+    "path": "previews/baseline_v3_story.png",
+    "sha256": "1730ef9b2aa0d921323ecf94a266f138835039fae888a38eb8e60e21f0bca986",
+    "parts": [
+      "21-00.b64"
+    ]
+  },
+  {
+    "path": "previews/baseline_v4_gameplay.png",
+    "sha256": "dc04351ceeb2e2455bd6a36d875ac5e3767233e90f2cc69e900cd21241ff6d01",
+    "parts": [
+      "22-00.b64"
+    ]
+  },
+  {
+    "path": "previews/baseline_v4_story.png",
+    "sha256": "1730ef9b2aa0d921323ecf94a266f138835039fae888a38eb8e60e21f0bca986",
+    "parts": [
+      "23-00.b64"
+    ]
+  },
+  {
+    "path": "previews/gameplay_192x240.png",
+    "sha256": "ee1e6f87e995a6705771d989fbf2ce2b3affb6566812283cbd62d3a04ead908d",
+    "parts": [
+      "correction01-ee1e6f87e995a670-00.b64"
+    ]
+  },
+  {
+    "path": "previews/gameplay_3x.png",
+    "sha256": "337fea1c182b0dbcbf53e9831db425cab58dc102a99bb3b75dbb63b9151e0023",
+    "parts": [
+      "correction01-337fea1c182b0dbc-00.b64"
+    ]
+  },
+  {
+    "path": "previews/gameplay_before_corrected.png",
+    "sha256": "04293bd0ede3c94d14acd4f0bbeafe33fe3bcde379ce298ef2f0600eb1f4dbca",
+    "parts": [
+      "correction01-04293bd0ede3c94d-00.b64"
+    ]
+  },
+  {
+    "path": "previews/gameplay_comparison.png",
+    "sha256": "f851f6a366639c718e81be0a679cdfc7b3b1c93dc9af2b14cdf423e77ecf5cd0",
+    "parts": [
+      "correction01-f851f6a366639c71-00.b64"
+    ]
+  },
+  {
+    "path": "previews/gameplay_witness.png",
+    "sha256": "0b05f477eb285a612be917a7e168ed0f9c4a0dd1756e77f1f1f9bcc89213da43",
+    "parts": [
+      "correction01-0b05f477eb285a61-00.b64"
+    ]
+  },
+  {
+    "path": "previews/gameplay_witness_3x.png",
+    "sha256": "7a9cbac41a9e25a4639e8f577ae7b796a197e0e80c2f68fcbf937de886672a73",
+    "parts": [
+      "correction01-7a9cbac41a9e25a4-00.b64"
+    ]
+  },
+  {
+    "path": "previews/story_256x240.png",
+    "sha256": "0bbf081c38b0bee6aeeee2f9e2aa6d88774bc4f85240e552e8bef4c573ed0438",
+    "parts": [
+      "correction01-0bbf081c38b0bee6-00.b64"
+    ]
+  },
+  {
+    "path": "previews/story_3x.png",
+    "sha256": "3426e4f9cc8ad656c2c4c4ec30704afb04bbf876dca6323fca7a3f62b84dde3a",
+    "parts": [
+      "correction01-3426e4f9cc8ad656-00.b64"
+    ]
+  },
+  {
+    "path": "previews/story_before_corrected.png",
+    "sha256": "0797a0a681d83a32ca1c827370860ac4f9066cc4073b3b4c9b16233f1573426b",
+    "parts": [
+      "correction01-0797a0a681d83a32-00.b64"
+    ]
+  },
+  {
+    "path": "previews/story_comparison.png",
+    "sha256": "313429140116401cab6e8f5275c343141915555301ad2f90cdcbef1de59fea34",
+    "parts": [
+      "correction01-313429140116401c-00.b64"
+    ]
+  },
+  {
+    "path": "previews/story_witness.png",
+    "sha256": "bda8ecdddd20814300bc9589a6c225a90ba538f7d9c2df7ae08c9290b5876463",
+    "parts": [
+      "correction01-bda8ecdddd208143-00.b64"
+    ]
+  },
+  {
+    "path": "previews/story_witness_3x.png",
+    "sha256": "7cb1ed7eadc3a48bd341481dc925e13d9043a6d0aa1aed091f99b8a1c144e9a3",
+    "parts": [
+      "correction01-7cb1ed7eadc3a48b-00.b64"
+    ]
+  },
+  {
+    "path": "references/image-a-gameplay.png",
+    "sha256": "1b43dad4b36684d71e71fa3e01ae315146a32fb59b8ff04f0f4c6f5eac61bf91",
+    "parts": [
+      "34-00.b64",
+      "34-01.b64",
+      "34-02.b64",
+      "34-03.b64",
+      "34-04.b64",
+      "34-05.b64",
+      "34-06.b64",
+      "34-07.b64",
+      "34-08.b64",
+      "34-09.b64",
+      "34-10.b64",
+      "34-11.b64",
+      "34-12.b64",
+      "34-13.b64"
+    ]
+  },
+  {
+    "path": "references/image-b-story.png",
+    "sha256": "77d9d2b97dbace2933ff02b9e216e8023867d8002a7926fdd83067a68e46bc98",
+    "parts": [
+      "35-00.b64",
+      "35-01.b64",
+      "35-02.b64",
+      "35-03.b64",
+      "35-04.b64",
+      "35-05.b64",
+      "35-06.b64",
+      "35-07.b64",
+      "35-08.b64",
+      "35-09.b64",
+      "35-10.b64",
+      "35-11.b64",
+      "35-12.b64",
+      "35-13.b64"
+    ]
+  }
+]
