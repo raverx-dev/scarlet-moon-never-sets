@@ -1,23 +1,9 @@
 [
   {
-    "path": "before/gameplay.png",
-    "sha256": "2307c4ca3f9d5a7ec16712889c9d286654ebe8bd3750cdca9393c0a2f4eeaa15",
-    "parts": [
-      "correction01-2307c4ca3f9d5a7e-00.b64"
-    ]
-  },
-  {
-    "path": "before/story.png",
-    "sha256": "2f62fb8d28ee48acf5ce946db4d526bfde1652bffc69d9b80e5be22210331a05",
-    "parts": [
-      "correction01-2f62fb8d28ee48ac-00.b64"
-    ]
-  },
-  {
     "path": "exports/blue-ripples.png",
-    "sha256": "688b3251c422a92bd7a8ac3ce164f6361f1cd1ef36f3549e8e6cb16e17222011",
+    "sha256": "ecd60bbcc89712765c63e55e211c44df97021b88db3c0b14c69dc717fed0a65d",
     "parts": [
-      "correction01-688b3251c422a92b-00.b64"
+      "00-00.b64"
     ]
   },
   {
@@ -29,9 +15,9 @@
   },
   {
     "path": "exports/deep-water.png",
-    "sha256": "2d5f4137fe98e1d0d62e8f07cd7e0fb9038cbd27e2675b6f3381924adfae7a3a",
+    "sha256": "e910c6a546f4223940183859ada43730bb4f5a6f6094eccc2a88465453b5130d",
     "parts": [
-      "correction01-2d5f4137fe98e1d0-00.b64"
+      "02-00.b64"
     ]
   },
   {
@@ -43,16 +29,16 @@
   },
   {
     "path": "exports/east-woods.png",
-    "sha256": "71e3ec2840fff271aec6e25e4cf88eda09ee14244bdc1d56785ba6937f1f0f38",
+    "sha256": "64defe49a281b20bcd53461c7d7e97c342b33aa6d1259ec96ab5cb6d0b0cb965",
     "parts": [
-      "correction01-71e3ec2840fff271-00.b64"
+      "04-00.b64"
     ]
   },
   {
     "path": "exports/far-ridges.png",
-    "sha256": "43436bffa702cd516dd3ced113567019be0cc08f679293790beb351afa768f8c",
+    "sha256": "c5e753cb539637bb7637ed854ade98361851cd7e493763f8a57171ba51930e83",
     "parts": [
-      "correction01-43436bffa702cd51-00.b64"
+      "05-00.b64"
     ]
   },
   {
@@ -64,9 +50,9 @@
   },
   {
     "path": "exports/frosted-point.png",
-    "sha256": "87ea71afc8a4804189eaad236509b5af2eb68ff71c9fca9e66a80fb4df48a1e5",
+    "sha256": "e805026bae8c109784de8c65ebb2171260466077b621f5715fb77625ba7d86e4",
     "parts": [
-      "correction01-87ea71afc8a48041-00.b64"
+      "07-00.b64"
     ]
   },
   {
@@ -78,44 +64,44 @@
   },
   {
     "path": "exports/mist-bank.png",
-    "sha256": "2c7f282829adb2edc6de36bfcb9a4e18a3923bffcb4db15942a0d2fb516bdf82",
+    "sha256": "9c9fce7de8399ceee276039df33890408ebaa644ce5d9ee84fe17cb61ffd615d",
     "parts": [
-      "correction01-2c7f282829adb2ed-00.b64"
+      "09-00.b64"
     ]
   },
   {
     "path": "exports/scarlet-cloud.png",
-    "sha256": "c7aa60e4b5c5748d6fe07b79dbb5da4bab82c79cbfb94ffa14e7fe2127bfd0e3",
+    "sha256": "4ec712600cb61de26b8d4f877d1c0adbcd8ba2bc008e8ca4f7d413db82fbce41",
     "parts": [
-      "correction01-c7aa60e4b5c5748d-00.b64"
+      "10-00.b64"
     ]
   },
   {
     "path": "exports/scarlet-moon.png",
-    "sha256": "6c3bd51978744b753598e9484529b63ea2d06ce0149251315aa6e40261079bd2",
+    "sha256": "0fd97b2218b46276217f6ce43269fb9f9c6937c936ae0a081ed7f3c0f549b4d8",
     "parts": [
-      "correction01-6c3bd51978744b75-00.b64"
+      "11-00.b64"
     ]
   },
   {
     "path": "exports/scarlet-reflection.png",
-    "sha256": "2c4f86755588c69683533625f11aedf15322d3d6350d9f9201fe680b0f914498",
+    "sha256": "b330bacde2605247b5c1e3964cb784962d4472be59abdb4f3b5449e5fc6f575e",
     "parts": [
-      "correction01-2c4f86755588c696-00.b64"
+      "12-00.b64"
     ]
   },
   {
     "path": "exports/shore-tree.png",
-    "sha256": "b3be1aa6857a5399cf93a12edef88d5b7bcaf3e2fa5e9df22223ae52c498302e",
+    "sha256": "cb6fc91dead7a7e143c0bc275ad80ebecffb756b4c680a43eb4a8687ecf123a4",
     "parts": [
-      "correction01-b3be1aa6857a5399-00.b64"
+      "13-00.b64"
     ]
   },
   {
     "path": "exports/silver-reeds.png",
-    "sha256": "5627aa2eca546c8ad04c32368204df6509d66419f65e3cda4700128bb280d569",
+    "sha256": "e8935eaf7f24fcd72553aba21d6399c8d99878cbd61d901aed031acad0d77257",
     "parts": [
-      "correction01-5627aa2eca546c8a-00.b64"
+      "14-00.b64"
     ]
   },
   {
@@ -127,9 +113,9 @@
   },
   {
     "path": "exports/story-shore.png",
-    "sha256": "35e2034885752c2c0737725fcf11856294119e09cd4979900d6daff493e08fa9",
+    "sha256": "ff6884d08e995fdc84e637165470a5ebc4005d3a73a649337b342b7650f9495a",
     "parts": [
-      "correction01-35e2034885752c2c-00.b64"
+      "16-00.b64"
     ]
   },
   {
@@ -141,23 +127,16 @@
   },
   {
     "path": "exports/west-woods.png",
-    "sha256": "5670f54c655b1d6d089b65bf6d43c1dbf6f18c3415354d45d935ea6bd89a1eb2",
+    "sha256": "6fe17f62c03a57b6aeb25600156b32ccb51e81454b2efeab441047c86fa2edce",
     "parts": [
-      "correction01-5670f54c655b1d6d-00.b64"
-    ]
-  },
-  {
-    "path": "previews/assets_before_corrected.png",
-    "sha256": "ff04a308f3cf55167032d735f4bdc071857d3029657fb8e5bb2137b67274c196",
-    "parts": [
-      "correction01-ff04a308f3cf5516-00.b64"
+      "18-00.b64"
     ]
   },
   {
     "path": "previews/atlas.png",
-    "sha256": "ac3b3e41735a438625d7218701728cf4f612119f5b25318cbb164edf59e5d1ae",
+    "sha256": "d0d7dad6d535dd91088e9ecdf33631e424c797d893020accfd64067567a57b67",
     "parts": [
-      "correction01-ac3b3e41735a4386-00.b64"
+      "19-00.b64"
     ]
   },
   {
@@ -190,86 +169,72 @@
   },
   {
     "path": "previews/gameplay_192x240.png",
-    "sha256": "ee1e6f87e995a6705771d989fbf2ce2b3affb6566812283cbd62d3a04ead908d",
+    "sha256": "2307c4ca3f9d5a7ec16712889c9d286654ebe8bd3750cdca9393c0a2f4eeaa15",
     "parts": [
-      "correction01-ee1e6f87e995a670-00.b64"
+      "24-00.b64"
     ]
   },
   {
     "path": "previews/gameplay_3x.png",
-    "sha256": "337fea1c182b0dbcbf53e9831db425cab58dc102a99bb3b75dbb63b9151e0023",
+    "sha256": "a513ea7342900954e03b9e87e2addb002a56d0ee2054ebe274c589ebcfd0709c",
     "parts": [
-      "correction01-337fea1c182b0dbc-00.b64"
-    ]
-  },
-  {
-    "path": "previews/gameplay_before_corrected.png",
-    "sha256": "04293bd0ede3c94d14acd4f0bbeafe33fe3bcde379ce298ef2f0600eb1f4dbca",
-    "parts": [
-      "correction01-04293bd0ede3c94d-00.b64"
+      "25-00.b64"
     ]
   },
   {
     "path": "previews/gameplay_comparison.png",
-    "sha256": "f851f6a366639c718e81be0a679cdfc7b3b1c93dc9af2b14cdf423e77ecf5cd0",
+    "sha256": "37806f0644829f57e1c078b320bfe3e8121b537c3a5af2ff32e5068d11924a1e",
     "parts": [
-      "correction01-f851f6a366639c71-00.b64"
+      "26-00.b64"
     ]
   },
   {
     "path": "previews/gameplay_witness.png",
-    "sha256": "0b05f477eb285a612be917a7e168ed0f9c4a0dd1756e77f1f1f9bcc89213da43",
+    "sha256": "495a42f45fe4ebabac5d767a8092ab4c48a6fa325b9f4daff5feb1d8738b1dfb",
     "parts": [
-      "correction01-0b05f477eb285a61-00.b64"
+      "27-00.b64"
     ]
   },
   {
     "path": "previews/gameplay_witness_3x.png",
-    "sha256": "7a9cbac41a9e25a4639e8f577ae7b796a197e0e80c2f68fcbf937de886672a73",
+    "sha256": "ae1281ef8fe80056cf98057f03703dfff1590572c1eb592f3dec0f643b9354c3",
     "parts": [
-      "correction01-7a9cbac41a9e25a4-00.b64"
+      "28-00.b64"
     ]
   },
   {
     "path": "previews/story_256x240.png",
-    "sha256": "0bbf081c38b0bee6aeeee2f9e2aa6d88774bc4f85240e552e8bef4c573ed0438",
+    "sha256": "2f62fb8d28ee48acf5ce946db4d526bfde1652bffc69d9b80e5be22210331a05",
     "parts": [
-      "correction01-0bbf081c38b0bee6-00.b64"
+      "29-00.b64"
     ]
   },
   {
     "path": "previews/story_3x.png",
-    "sha256": "3426e4f9cc8ad656c2c4c4ec30704afb04bbf876dca6323fca7a3f62b84dde3a",
+    "sha256": "bf321fbeae5ba55f9a34c7e54b674a866ed685aaaec55b35ea9e80d31716ceb3",
     "parts": [
-      "correction01-3426e4f9cc8ad656-00.b64"
-    ]
-  },
-  {
-    "path": "previews/story_before_corrected.png",
-    "sha256": "0797a0a681d83a32ca1c827370860ac4f9066cc4073b3b4c9b16233f1573426b",
-    "parts": [
-      "correction01-0797a0a681d83a32-00.b64"
+      "30-00.b64"
     ]
   },
   {
     "path": "previews/story_comparison.png",
-    "sha256": "313429140116401cab6e8f5275c343141915555301ad2f90cdcbef1de59fea34",
+    "sha256": "c72a4b25d6bd0b885910d586bded72034ac80e3ba4aa1da7da12fa327a41c0c6",
     "parts": [
-      "correction01-313429140116401c-00.b64"
+      "31-00.b64"
     ]
   },
   {
     "path": "previews/story_witness.png",
-    "sha256": "bda8ecdddd20814300bc9589a6c225a90ba538f7d9c2df7ae08c9290b5876463",
+    "sha256": "cdfd3e8b595c7e19fb7aa9ed81321b0f624bd2a4072002050d6441a1b48271b4",
     "parts": [
-      "correction01-bda8ecdddd208143-00.b64"
+      "32-00.b64"
     ]
   },
   {
     "path": "previews/story_witness_3x.png",
-    "sha256": "7cb1ed7eadc3a48bd341481dc925e13d9043a6d0aa1aed091f99b8a1c144e9a3",
+    "sha256": "49755755bf517b124b083dbe4ec4ca5e158bc27e54bdf31e4cd3e4e61d2ce863",
     "parts": [
-      "correction01-7cb1ed7eadc3a48b-00.b64"
+      "33-00.b64"
     ]
   },
   {

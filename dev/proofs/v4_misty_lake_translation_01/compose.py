@@ -33,12 +33,13 @@ def build(check=False):
   outputs[f'previews/{name}_{im.width}x240.png']=encoded(im)
   outputs[f'previews/{name}_3x.png']=encoded(im.resize((im.width*3,720),Image.Resampling.NEAREST))
  # Readable contact sheet: exact native assets placed without resampling.
- atlas=Image.new('RGBA',(600,790),'#101725');d=ImageDraw.Draw(atlas)
- x=y=12;rowh=0
+ atlas=Image.new('RGBA',(600,1600),'#101725');d=ImageDraw.Draw(atlas)
+ x=y=12;rowh=0;atlas_bounds=[]
  for n,im in assets.items():
   if x+max(im.width,160)>590:x=12;y+=rowh+30;rowh=0
-  d.text((x,y),n,fill='#d4dded');atlas.alpha_composite(im,(x,y+17));x+=max(im.width,160)+18;rowh=max(rowh,im.height)
+  d.text((x,y),n+' / r'+str(exports[n]['revision']),fill='#d4dded');atlas.alpha_composite(im,(x,y+17));atlas_bounds.append((n,x,y+17,im.width,im.height));x+=max(im.width,160)+18;rowh=max(rowh,im.height)
  atlas=atlas.crop((0,0,600,y+rowh+29));outputs['previews/atlas.png']=encoded(atlas)
+ assert len(atlas_bounds)==19 and all(x+w<=atlas.width and y+h<=atlas.height for n,x,y,w,h in atlas_bounds)
  assert scenes['story'].crop((0,0,192,240)).tobytes()!=scenes['gameplay'].tobytes()
  # Exact static source reconstructions; these are not browser/live captures.
  source=load('evidence/source-matrices.json');baselines={}
@@ -70,6 +71,29 @@ def build(check=False):
   for i,(label,im) in enumerate(panels):
    x=8+i*(w+8);d.text((x,6),label,fill='#d4dded');board.alpha_composite(im,(x,26))
   outputs[f'previews/{n}_comparison.png']=encoded(board)
+ # Owner correction comparisons preserve the rejected checkpoint exactly.
+ before=load('before/canonical.json');before_layouts=load('before/layouts.json')
+ assert layouts==before_layouts,'Correction unexpectedly recomposed scene'
+ before_assets={n:matrix(e['matrix']) for n,e in before.items()}
+ for n,s in before_layouts.items():
+  im=Image.new('RGBA',(s['width'],s['height']),s['background'])
+  for p in s['placements']:
+   a=before_assets[p['asset']]
+   if p.get('flip_x'):a=a.transpose(Image.Transpose.FLIP_LEFT_RIGHT)
+   im.alpha_composite(a,(p['x'],p['y']))
+  assert im.tobytes()==Image.open(ROOT/'before'/f'{n}.png').convert('RGBA').tobytes()
+  width=im.width*2;board=Image.new('RGBA',(width*2+36,518),'#101725');d=ImageDraw.Draw(board)
+  for x,label,a in [(12,'BEFORE / 90a6d3e (rejected)',im),(width+24,'CORRECTED / OWNER REVIEW',scenes[n])]:
+   d.text((x,8),label,fill='#d4dded');board.alpha_composite(a.resize((width,480),Image.Resampling.NEAREST),(x,28))
+  outputs[f'previews/{n}_before_corrected.png']=encoded(board)
+ chosen=['silver-reeds','shore-tree','far-ridges','deep-water','blue-ripples','scarlet-reflection','story-shore']
+ h=sum(max(45,assets[n].height)+34 for n in chosen)+35
+ board=Image.new('RGBA',(568,h),'#101725');d=ImageDraw.Draw(board);d.text((12,8),'BEFORE',fill='#d4dded');d.text((292,8),'CORRECTED',fill='#d4dded');y=30
+ for n in chosen:
+  for x,ims in [(12,before_assets),(292,assets)]:
+   d.text((x,y),n,fill='#a8bbd7');board.alpha_composite(ims[n],(x,y+16))
+  y+=max(45,assets[n].height)+34
+ outputs['previews/assets_before_corrected.png']=encoded(board)
  for p,b in outputs.items():
   path=ROOT/p
   if check:assert path.read_bytes()==b,f'Reproduction mismatch: {p}'

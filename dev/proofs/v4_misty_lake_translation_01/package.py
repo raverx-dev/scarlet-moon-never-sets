@@ -9,17 +9,26 @@ refs=[]
 for role,n,original in [('A / gameplay','image-a-gameplay.png','6f48a305-2539-433d-b235-149c149d6067.png'),('B / story','image-b-story.png','17603529-92cd-43ab-8cd7-7cb50ff8fd79.png')]:
  refs.append({'role':role,'original_filename':original,'path':'references/'+n,'sha256':sha(ROOT/'references'/n),'authority':'Owner-selected art direction supplied with this assignment; not production pixels'})
 counts=collections.Counter((f['rule_id'],f['disposition']) for d in valid.values() for f in d['report']['findings'])
+before=json.loads((ROOT/'before/manifest.json').read_text())
+old_assets={a['name']:a for a in before['assets']}
+changes=[{'asset_id':a['asset_id'],'name':a['name'],'old_revision':old_assets[a['name']]['revision'],'new_revision':a['revision'],'old_revision_hash':old_assets[a['name']]['revision_hash'],'new_revision_hash':a['revision_hash']} for a in v['assets'] if a['revision']!=old_assets[a['name']]['revision']]
 manifest={'schema':'scarlet-moon.static-art-proof/v1','project_id':'scarlet-moon-never-sets','unit':'v4-misty-lake-translation-01','governing_issues':[17,24,31,32],'source_commit':'d7054d2b9b111ff711f44cc3ee5b71268aca6ed8','source_paths':['versions/v4/index.html','versions/sprite-redesign/index.html'],'branch':'v4-misty-lake-translation-01','scope':'Static art candidate only. No runtime integration, approval, delivery, merge, publication or release acceptance.','references':refs,'palette_id':'v4-misty-lake-trans01','palette_hash':'a3653262fb23fce79d8bc0a4788636077cb422778da949c9e282f2d6d03fd952','assets':v['assets'],'validation':{'passed_assets':sum(d['report']['passed'] for d in valid.values()),'findings':[{'rule':r,'disposition':d,'count':c} for (r,d),c in counts.items()],'waivers':0},'proof_outputs':v['outputs'],'limitations':['Static overlays are illustrative, not live gameplay QA.','Witness sprites retain existing runtime art and orientation; no character fixes were authorized.','Reference microtexture and tonal range are deliberately simplified to 23 opaque palette colors at native resolution.','Pixel-orphan warnings and unused shared-palette information remain unwaived.','Mist and reflection are static; animation and defeat/attract routing require later runtime qualification.'],'method':'Original native integer indexed drafting from visual interpretation; D6 asset_create and grid_paste; exact D7 export and D3 render readback; proof-local integer composition. No reference raster sampling in production.'}
+manifest['correction']={'status':'MISTY LAKE ART CORRECTION — OWNER REVIEW REQUIRED','before_head':'90a6d3efbebcdd8ca30cb937086ad164e63a6396','benchmark_head':'796f76d4c173ce4ae5287d20d74d9c37b8f1c8c4','changes':changes,'layouts_unchanged':True,'method':'Explicit native token matrices and cluster placement in correct_clusters.py; no vector primitives, interpolation, random texture, or reference-pixel sampling. Existing author.py is rejected-before historical evidence only.'}
 (ROOT/'manifest.json').write_text(json.dumps(manifest,indent=2))
 table='\n'.join(f"| `{a['asset_id']}` | {a['revision']} | {a['width']}×{a['height']} |" for a in v['assets'])
 readme=f'''# Misty Lake — static art candidate 01
 
-**Ready for Owner visual review, not accepted art or runtime integration.**
+**MISTY LAKE ART CORRECTION — OWNER REVIEW REQUIRED**
+
+The candidate at `90a6d3efbebcdd8ca30cb937086ad164e63a6396` was rejected by the Owner.
+This is one bounded correction on the same PR #34 and same branch.
+Before-state exports, renders, manifest, layouts and validation are in `before/`;
+the original head and original transport payloads remain retrievable.
 
 Open `review.html` for both native views, 3× enlargements, exact source comparisons,
 separate readability witnesses, atlas and reference viewing thumbnails. It is self-contained.
 GitHub transport is text-only: exact PNG bytes are preserved in `transport/`.
-Run `python hydrate.py` to restore all 36 original PNG files, then run the check below.
+Run `python hydrate.py` in a fresh checkout to restore all 41 exact PNG files, then run the check below.
 
 ## Authority and source
 
@@ -60,7 +69,7 @@ No RoboPixel service, GitHub, authoring generator or game runtime is needed to r
 `python compose.py` rebuilds outputs. `python package.py` rebuilds review/provenance.
 `node extract-baseline.cjs` re-extracts baseline evidence only when the repository files match the pinned source.
 
-`author.py` and `draft-grids.json` are original drafting evidence, not the compositor's inputs or
+`author.py` and `draft-grids.json` are REJECTED BEFORE-state drafting evidence, not the compositor's inputs or
 a replacement for canonical RoboPixel state. For future edits reopen the exact asset ID with an
 expected current revision; persist a new revision, read it back, then update proof inputs.
 
@@ -69,8 +78,8 @@ expected current revision; persist a new revision, read it back, then update pro
 - 19/19 canonical export matrices exactly match decoded RoboPixel PNG RGBA; zero pixel differences.
 - 19/19 Scarlet adapter logical round trips pass.
 - Native outputs are opaque 192×240 and 256×240; layouts are distinct.
-- 34 generated PNGs reproduce byte-for-byte with `compose.py --check`.
-- 19/19 RoboPixel validation reports pass, with 388 pixel-orphan warnings and 338 unused-color information findings.
+- 37 generated PNGs reproduce byte-for-byte with `compose.py --check`.
+- 19/19 RoboPixel validation reports pass, with {counts[('pixel-orphans','warning')]} pixel-orphan warnings and {counts[('unused-colors','info')]} unused-color information findings.
   These concern fine stars/frost/texture and a shared family palette. They remain visible and unwaived;
   technical validation is not a visual quality approval.
 - Runtime and protected versions are untouched. No unrelated branch or asset was changed.
@@ -92,15 +101,46 @@ Full revision, render, palette, RGBA and PNG hashes are in `manifest.json` and t
 - `previews/`: native/3× scenes, atlas, V3/V4 reconstructions, comparison boards and separate static witnesses.
 - `references/`: both unchanged Owner-selected images.
 - `manifest.json`, `verification.json`, `README.md`, `review.html`, `changed-files.txt`: provenance and review.
-- `author.py`, `draft-grids.json`, `palette.json`, `extract-baseline.cjs`, `package.py`: reproduction/authoring evidence.
+- `correct_clusters.py`, `correction-grids.json`: explicit native correction grids; each character is one pixel.
+- `author.py`, `draft-grids.json`: historical rejected-before drafting evidence only.
+- `palette.json`, `extract-baseline.cjs`, `package.py`: reproduction/packaging evidence.
 
 ## Limits and stop
 
 Static proof only. No animated mist, moving-bullet test, in-game performance or defeat/attract routing qualification.
 The story witness uses original sprites and a substitute static text font; it does not fix known Cirno orientation.
+The corrected crags/clouds remain stylized and some reusable foliage motifs remain recognizable;
+only the Owner can decide whether their craftsmanship now meets the desired standard.
 Owner visual acceptance remains pending. No formal per-asset delivery, runtime integration, merge,
 publication, freeze or release acceptance is claimed. Corrections should stay on this branch/PR.
 '''
+change_table='\n'.join(f"| `{a['asset_id']}` | {a['old_revision']} → {a['new_revision']} |" for a in changes)
+correction=f'''## Correction 01
+
+All 19 canonical assets were inspected against the existing scene, approved references and
+accepted Mansion Gate native previews/atlas. Thirteen were revised, six retained. Palette and
+both layout files remain unchanged. No new asset IDs were created.
+
+- Reeds: thick grouped blades, restrained seedheads and substantial shadow bases.
+- Shore tree: stepped trunk/bark blocks, broader branch junctions and frost foliage masses.
+- Ridges/banks: connected foliage clusters, broken ridge steps and nested rock/shadow patches.
+- Water/reflection: sparse authored wave groups and broken red light fragments, with calmer gaps.
+- Clouds/moon/mist: explicit stepped token grids and limited highlight clusters.
+- Story shore: layered turf/frost and soil groups along the original diagonal.
+- Atlas: fixed height calculation so all 19 assets, including the shore tree, are visible.
+
+| Canonical asset | Old → selected revision |
+| --- | --- |
+{change_table}
+
+Retained at r2: twilight, distant-torii, boulder, flat-stones, small-rock and ice-cluster.
+The rocks/ice retain useful compact facets; the torii remains a distant landmark, and the
+sky remains a low-detail backing. No formal approvals or deliveries were recorded.
+
+Before/corrected gameplay and story comparisons plus the seven-asset comparison are in `previews/`
+after hydration and embedded in `review.html`. Approval-reference comparisons and witnesses remain included.
+'''
+readme=readme.replace('## Canonical selected revisions',correction+'\n## Canonical selected revisions')
 (ROOT/'README.md').write_text(readme)
 def img(p,klass='',width=None):
  raw=(ROOT/p).read_bytes()
@@ -111,6 +151,9 @@ parts=['<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewpor
 for n,w in [('gameplay',192),('story',256)]:parts.append(f'<figure>{img(f"previews/{n}_{w}x240.png","pixel")}<figcaption>{n.title()} — {w}×240</figcaption></figure>')
 parts.append('</div><h2>Pixel inspection / 3×</h2>')
 for n in ['gameplay','story']:parts.append(f'<figure>{img(f"previews/{n}_3x.png","pixel large")}<figcaption>{n.title()} — exact nearest-neighbor enlargement</figcaption></figure>')
+parts.append('<h2>Before → corrected</h2><p>The before checkpoint was rejected. These comparisons show one bounded correction; both layouts are unchanged.</p>')
+for n in ['gameplay','story']:parts.append(img(f'previews/{n}_before_corrected.png','pixel'))
+parts.append('<h2>Selected asset corrections</h2>'+img('previews/assets_before_corrected.png','pixel'))
 parts.append('<h2>Separate illustrative witnesses</h2><p>Existing source sprites and dialogue frame. Representative bullets/items and substitute text font. Static staging only; not live QA.</p>')
 for n in ['gameplay','story']:parts.append(img(f'previews/{n}_witness_3x.png','pixel large'))
 parts.append('<h2>Source → reference → canonical</h2><p>V3 and current V4 are exact static sheet reconstructions at the inspected commit. The reference panel is resized for comparison only.</p>')
@@ -119,7 +162,7 @@ parts.append('<h2>Canonical asset atlas</h2>'+img('previews/atlas.png','pixel'))
 parts.append('<h2>Approved art-direction references</h2>')
 for r in refs:parts.append(f'<details><summary>Image {r["role"]} — viewing thumbnail; exact original in transport bundle</summary>{img(r["path"])}</details>')
 parts.append('<h2>Production report and reproducibility</h2><pre>'+html.escape(readme)+'</pre></main></html>')
-(ROOT/'review.html').write_text(''.join(parts))
+(ROOT/'review.html').write_text(''.join(parts).replace('<h1>Misty Lake / static art candidate</h1>','<h1>Misty Lake art correction</h1><p><strong>OWNER REVIEW REQUIRED</strong> — same PR #34; the prior candidate was rejected.</p>'))
 files=sorted(str(p.relative_to(ROOT)) for p in ROOT.rglob('*') if p.is_file() and '__pycache__' not in str(p) and p.name!='changed-files.txt' and p.suffix!='.png')+['changed-files.txt']
 (ROOT/'changed-files.txt').write_text('\n'.join(sorted(files))+'\n')
 print('Packaged',len(files),'files; standalone review, manifest and full inventory ready')
