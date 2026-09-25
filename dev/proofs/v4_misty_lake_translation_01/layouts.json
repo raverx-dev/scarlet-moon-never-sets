@@ -1,0 +1,388 @@
+{
+  "gameplay": {
+    "width": 192,
+    "height": 240,
+    "background": "#101b42",
+    "placements": [
+      {
+        "asset": "deep-water",
+        "x": 0,
+        "y": 64
+      },
+      {
+        "asset": "deep-water",
+        "x": 0,
+        "y": 192
+      },
+      {
+        "asset": "deep-water",
+        "x": 128,
+        "y": 64
+      },
+      {
+        "asset": "deep-water",
+        "x": 128,
+        "y": 192
+      },
+      {
+        "asset": "twilight",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "asset": "scarlet-moon",
+        "x": 132,
+        "y": 8
+      },
+      {
+        "asset": "scarlet-cloud",
+        "x": -40,
+        "y": -5
+      },
+      {
+        "asset": "scarlet-cloud",
+        "x": 85,
+        "y": 3
+      },
+      {
+        "asset": "scarlet-cloud",
+        "x": 21,
+        "y": -24
+      },
+      {
+        "asset": "far-ridges",
+        "x": -27,
+        "y": 30
+      },
+      {
+        "asset": "west-woods",
+        "x": -17,
+        "y": 9
+      },
+      {
+        "asset": "east-woods",
+        "x": 127,
+        "y": 26
+      },
+      {
+        "asset": "distant-torii",
+        "x": 5,
+        "y": 8
+      },
+      {
+        "asset": "scarlet-reflection",
+        "x": 127,
+        "y": 78
+      },
+      {
+        "asset": "mist-bank",
+        "x": 1,
+        "y": 59
+      },
+      {
+        "asset": "mist-bank",
+        "x": 105,
+        "y": 64,
+        "flip_x": true
+      },
+      {
+        "asset": "frosted-point",
+        "x": -15,
+        "y": 36
+      },
+      {
+        "asset": "frosted-point",
+        "x": 170,
+        "y": 53,
+        "flip_x": true
+      },
+      {
+        "asset": "blue-ripples",
+        "x": -14,
+        "y": 83
+      },
+      {
+        "asset": "blue-ripples",
+        "x": 157,
+        "y": 93,
+        "flip_x": true
+      },
+      {
+        "asset": "blue-ripples",
+        "x": -6,
+        "y": 179,
+        "flip_x": true
+      },
+      {
+        "asset": "silver-reeds",
+        "x": -7,
+        "y": 92
+      },
+      {
+        "asset": "boulder",
+        "x": -12,
+        "y": 123
+      },
+      {
+        "asset": "small-rock",
+        "x": 16,
+        "y": 137
+      },
+      {
+        "asset": "ice-cluster",
+        "x": 2,
+        "y": 139
+      },
+      {
+        "asset": "silver-reeds",
+        "x": 179,
+        "y": 140,
+        "flip_x": true
+      },
+      {
+        "asset": "boulder",
+        "x": 168,
+        "y": 171,
+        "flip_x": true
+      },
+      {
+        "asset": "flat-stones",
+        "x": 166,
+        "y": 190,
+        "flip_x": true
+      },
+      {
+        "asset": "ice-cluster",
+        "x": 177,
+        "y": 181,
+        "flip_x": true
+      },
+      {
+        "asset": "silver-reeds",
+        "x": -9,
+        "y": 181
+      },
+      {
+        "asset": "boulder",
+        "x": -6,
+        "y": 211
+      },
+      {
+        "asset": "flat-stones",
+        "x": 13,
+        "y": 227
+      },
+      {
+        "asset": "small-rock",
+        "x": 41,
+        "y": 232
+      },
+      {
+        "asset": "silver-reeds",
+        "x": 169,
+        "y": 209,
+        "flip_x": true
+      },
+      {
+        "asset": "boulder",
+        "x": 161,
+        "y": 231,
+        "flip_x": true
+      }
+    ]
+  },
+  "story": {
+    "width": 256,
+    "height": 240,
+    "background": "#101b42",
+    "placements": [
+      {
+        "asset": "deep-water",
+        "x": 0,
+        "y": 75
+      },
+      {
+        "asset": "deep-water",
+        "x": 0,
+        "y": 203
+      },
+      {
+        "asset": "deep-water",
+        "x": 128,
+        "y": 75
+      },
+      {
+        "asset": "deep-water",
+        "x": 128,
+        "y": 203
+      },
+      {
+        "asset": "twilight",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "asset": "scarlet-moon",
+        "x": 186,
+        "y": 10
+      },
+      {
+        "asset": "scarlet-cloud",
+        "x": 130,
+        "y": 0
+      },
+      {
+        "asset": "scarlet-cloud",
+        "x": 21,
+        "y": -18
+      },
+      {
+        "asset": "scarlet-cloud",
+        "x": -69,
+        "y": 7
+      },
+      {
+        "asset": "far-ridges",
+        "x": 0,
+        "y": 34
+      },
+      {
+        "asset": "west-woods",
+        "x": 0,
+        "y": 23
+      },
+      {
+        "asset": "east-woods",
+        "x": 176,
+        "y": 33
+      },
+      {
+        "asset": "distant-torii",
+        "x": 34,
+        "y": 24
+      },
+      {
+        "asset": "scarlet-reflection",
+        "x": 178,
+        "y": 91
+      },
+      {
+        "asset": "mist-bank",
+        "x": 38,
+        "y": 73
+      },
+      {
+        "asset": "mist-bank",
+        "x": 149,
+        "y": 77,
+        "flip_x": true
+      },
+      {
+        "asset": "frosted-point",
+        "x": -4,
+        "y": 45
+      },
+      {
+        "asset": "blue-ripples",
+        "x": 2,
+        "y": 97
+      },
+      {
+        "asset": "blue-ripples",
+        "x": 115,
+        "y": 115,
+        "flip_x": true
+      },
+      {
+        "asset": "blue-ripples",
+        "x": 222,
+        "y": 94
+      },
+      {
+        "asset": "story-shore",
+        "x": 0,
+        "y": 149
+      },
+      {
+        "asset": "silver-reeds",
+        "x": -6,
+        "y": 115
+      },
+      {
+        "asset": "boulder",
+        "x": 5,
+        "y": 144
+      },
+      {
+        "asset": "flat-stones",
+        "x": 31,
+        "y": 159
+      },
+      {
+        "asset": "boulder",
+        "x": 63,
+        "y": 169
+      },
+      {
+        "asset": "flat-stones",
+        "x": 105,
+        "y": 182
+      },
+      {
+        "asset": "small-rock",
+        "x": 152,
+        "y": 185
+      },
+      {
+        "asset": "boulder",
+        "x": 202,
+        "y": 181,
+        "flip_x": true
+      },
+      {
+        "asset": "ice-cluster",
+        "x": 90,
+        "y": 174
+      },
+      {
+        "asset": "silver-reeds",
+        "x": 232,
+        "y": 151,
+        "flip_x": true
+      },
+      {
+        "asset": "ice-cluster",
+        "x": 225,
+        "y": 183,
+        "flip_x": true
+      },
+      {
+        "asset": "boulder",
+        "x": -9,
+        "y": 209
+      },
+      {
+        "asset": "silver-reeds",
+        "x": 5,
+        "y": 198
+      },
+      {
+        "asset": "flat-stones",
+        "x": 218,
+        "y": 227,
+        "flip_x": true
+      },
+      {
+        "asset": "silver-reeds",
+        "x": 238,
+        "y": 208,
+        "flip_x": true
+      },
+      {
+        "asset": "shore-tree",
+        "x": -2,
+        "y": -7
+      }
+    ]
+  }
+}
