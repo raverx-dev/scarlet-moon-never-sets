@@ -179,3 +179,5 @@ jobs:
           git add dev/v4_mansion_runtime
           git commit -m "Record V4 mansion runtime qualification"
           git push origin HEAD:v4-mansion-runtime-integration-2c9b8d7c
+
+# trigger: bounded mansion qualification
