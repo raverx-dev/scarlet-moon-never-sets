@@ -1,0 +1,106 @@
+{
+  "adapter_id": "scarlet-moon-js",
+  "preview": true,
+  "delivery": false,
+  "project_id": "scarlet-moon-never-sets",
+  "asset_id": "v4-mansion-trans01-runner-motif",
+  "revision": 2,
+  "revision_hash": "99fc40e679eb25161067272e5f7193cc37ded52d6a92df2f3c27912d7f31e648",
+  "frame_id": "default",
+  "layer_id": "art",
+  "matrix": {
+    "width": 16,
+    "height": 16,
+    "rows": [
+      "................",
+      "................",
+      ".......E........",
+      ".......E........",
+      ".......EE.......",
+      "......EEE.......",
+      "..E...EEEE..E...",
+      ".EEEEEEEEEEEEE..",
+      "..E...EEE...E...",
+      "......EEE.......",
+      ".......E........",
+      ".......E........",
+      ".......E........",
+      "................",
+      "................",
+      "................"
+    ],
+    "symbols": {
+      "0": {
+        "hex": "#080810"
+      },
+      "1": {
+        "hex": "#191528"
+      },
+      "2": {
+        "hex": "#2c2438"
+      },
+      "3": {
+        "hex": "#443550"
+      },
+      "4": {
+        "hex": "#66506a"
+      },
+      "5": {
+        "hex": "#a18a92"
+      },
+      "6": {
+        "hex": "#d4c4a8"
+      },
+      "7": {
+        "hex": "#252c4a"
+      },
+      "8": {
+        "hex": "#424d79"
+      },
+      "9": {
+        "hex": "#819ca7"
+      },
+      ".": {
+        "transparent": true
+      },
+      "A": {
+        "hex": "#3a2038"
+      },
+      "B": {
+        "hex": "#6b2e49"
+      },
+      "C": {
+        "hex": "#a04c64"
+      },
+      "D": {
+        "hex": "#260b1c"
+      },
+      "E": {
+        "hex": "#490e28"
+      },
+      "F": {
+        "hex": "#84233e"
+      },
+      "G": {
+        "hex": "#ca4963"
+      },
+      "H": {
+        "hex": "#97764f"
+      },
+      "I": {
+        "hex": "#ffd19a"
+      },
+      "J": {
+        "hex": "#111421"
+      }
+    }
+  },
+  "round_trip": {
+    "width": 16,
+    "height": 16,
+    "cel_hash": true
+  },
+  "resources": {
+    "export": "robopixel://export/scarlet-moon-never-sets/v4-mansion-trans01-runner-motif/revision/2/scarlet-moon-js"
+  }
+}

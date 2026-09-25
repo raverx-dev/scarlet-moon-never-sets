@@ -1,0 +1,106 @@
+{
+  "adapter_id": "scarlet-moon-js",
+  "preview": true,
+  "delivery": false,
+  "project_id": "scarlet-moon-never-sets",
+  "asset_id": "v4-mansion-trans01-runner-edge",
+  "revision": 3,
+  "revision_hash": "cddfff0d226fa5fcf710981f840a247482f67131090b70b1d13c046f4d992810",
+  "frame_id": "default",
+  "layer_id": "art",
+  "matrix": {
+    "width": 8,
+    "height": 16,
+    "rows": [
+      "E5DDDDEE",
+      "EHDDDDEE",
+      "EHDDFDEE",
+      "EHDDCDEE",
+      "E5DFFFEE",
+      "EHDDEDEE",
+      "EHDDFDEE",
+      "EHDDDDEE",
+      "E5DDDDEE",
+      "EHDDDDEE",
+      "EHDDFDEE",
+      "EHDDCDEE",
+      "E5DFFFEE",
+      "EHDDEDEE",
+      "EHDDFDEE",
+      "EHDDDDEE"
+    ],
+    "symbols": {
+      "0": {
+        "hex": "#080810"
+      },
+      "1": {
+        "hex": "#191528"
+      },
+      "2": {
+        "hex": "#2c2438"
+      },
+      "3": {
+        "hex": "#443550"
+      },
+      "4": {
+        "hex": "#66506a"
+      },
+      "5": {
+        "hex": "#a18a92"
+      },
+      "6": {
+        "hex": "#d4c4a8"
+      },
+      "7": {
+        "hex": "#252c4a"
+      },
+      "8": {
+        "hex": "#424d79"
+      },
+      "9": {
+        "hex": "#819ca7"
+      },
+      ".": {
+        "transparent": true
+      },
+      "A": {
+        "hex": "#3a2038"
+      },
+      "B": {
+        "hex": "#6b2e49"
+      },
+      "C": {
+        "hex": "#a04c64"
+      },
+      "D": {
+        "hex": "#260b1c"
+      },
+      "E": {
+        "hex": "#490e28"
+      },
+      "F": {
+        "hex": "#84233e"
+      },
+      "G": {
+        "hex": "#ca4963"
+      },
+      "H": {
+        "hex": "#97764f"
+      },
+      "I": {
+        "hex": "#ffd19a"
+      },
+      "J": {
+        "hex": "#111421"
+      }
+    }
+  },
+  "round_trip": {
+    "width": 8,
+    "height": 16,
+    "cel_hash": true
+  },
+  "resources": {
+    "export": "robopixel://export/scarlet-moon-never-sets/v4-mansion-trans01-runner-edge/revision/3/scarlet-moon-js"
+  }
+}

@@ -1,0 +1,181 @@
+name: V4 Mansion Runtime Integration Qualification
+
+on:
+  push:
+    branches:
+      - v4-mansion-runtime-integration-2c9b8d7c
+
+permissions:
+  contents: write
+
+jobs:
+  qualify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact seed
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install deterministic QA dependencies
+        run: |
+          python -m pip install --disable-pip-version-check pillow
+          npm ci --prefix qa
+          cd qa
+          npx playwright-core install --with-deps chromium
+
+      - name: Resolve Chromium
+        run: |
+          BROWSER="$(node --input-type=module -e "import {chromium} from './qa/node_modules/playwright-core/index.mjs'; console.log(chromium.executablePath())")"
+          test -x "$BROWSER"
+          echo "BROWSER_BIN=$BROWSER" >> "$GITHUB_ENV"
+
+      - name: Capture baseline live scenes
+        run: |
+          rm -rf dev/v4_mansion_runtime/review/before dev/v4_mansion_runtime/review/after
+          mkdir -p dev/v4_mansion_runtime/review/before dev/v4_mansion_runtime/review/after
+          node dev/v4_mansion_runtime/verify_runtime_pixels.mjs --shots dev/v4_mansion_runtime/review/before
+          mv dev/v4_mansion_runtime/review-shots.json dev/v4_mansion_runtime/review/before/shots.json
+
+      - name: Build exact accepted Mansion backgrounds
+        run: |
+          python3 dev/v4_mansion_runtime/build_embedded.py --apply
+          echo "3eca1db52b24d6d8369e0d63bb1dc796f6e90b2c848012316d0572bb0bdf00ab  versions/v4/index.html" | sha256sum -c -
+
+      - name: Commit exact game candidate
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add versions/v4/index.html dev/v4_mansion_runtime/generation_receipt.json
+          git commit -m "Integrate accepted V4 mansion backgrounds into the playable build"
+          echo "GAME_COMMIT=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+
+      - name: Verify live pixels and capture integrated scenes
+        run: |
+          node dev/v4_mansion_runtime/verify_runtime_pixels.mjs --pixels --shots dev/v4_mansion_runtime/review/after
+
+      - name: Run 32-group no-captures regression
+        env:
+          SCARLET_QA_SOURCE: versions/v4/index.html
+        run: |
+          npm run agent:no-captures --prefix qa
+          cp qa/output/agent-report.json dev/v4_mansion_runtime/qa_agent_no_captures.json
+
+      - name: Run full browser capture regression
+        env:
+          SCARLET_QA_SOURCE: versions/v4/index.html
+        run: |
+          npm run agent --prefix qa
+          cp qa/output/agent-report.json dev/v4_mansion_runtime/qa_agent_full.json
+
+      - name: Build fail-closed qualification record
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, os
+          from pathlib import Path
+          from PIL import Image
+
+          root = Path(".")
+          evidence = root / "dev/v4_mansion_runtime"
+          expected_html = "3eca1db52b24d6d8369e0d63bb1dc796f6e90b2c848012316d0572bb0bdf00ab"
+          html_sha = hashlib.sha256((root/"versions/v4/index.html").read_bytes()).hexdigest()
+          assert html_sha == expected_html, (html_sha, expected_html)
+
+          runtime = json.loads((evidence/"runtime_pixel_report.json").read_text())
+          assert not runtime["errors"], runtime["errors"]
+          assert runtime["pixels"] and all(runtime["pixels"]["checks"].values()), runtime["pixels"]
+
+          no_cap = json.loads((evidence/"qa_agent_no_captures.json").read_text())
+          full = json.loads((evidence/"qa_agent_full.json").read_text())
+          for label, report in (("no_captures", no_cap), ("full", full)):
+              reg = report["regression"]
+              assert reg["passed"] == 32 and reg["failed"] == 0, (label, reg)
+
+          assert len(full.get("captures", [])) == 40, len(full.get("captures", []))
+
+          negatives = ["gate", "stage3-roof", "remilia-dialogue", "r5-final"]
+          negative = {}
+          for name in negatives:
+              before = (evidence/f"review/before/{name}.png").read_bytes()
+              after = (evidence/f"review/after/{name}.png").read_bytes()
+              bh = hashlib.sha256(before).hexdigest()
+              ah = hashlib.sha256(after).hexdigest()
+              assert before == after, name
+              negative[name] = {"before_sha256": bh, "after_sha256": ah, "byte_equal": True}
+
+          changed = {}
+          for name in ["stage3-interior", "sakuya-dialogue", "s1", "s2-frozen", "undecorated-gameplay", "undecorated-story"]:
+              before = (evidence/f"review/before/{name}.png").read_bytes()
+              after = (evidence/f"review/after/{name}.png").read_bytes()
+              changed[name] = {
+                  "before_sha256": hashlib.sha256(before).hexdigest(),
+                  "after_sha256": hashlib.sha256(after).hexdigest(),
+                  "changed": before != after,
+                  "after_dimensions": list(Image.open(evidence/f"review/after/{name}.png").size),
+              }
+              assert before != after, name
+
+          accepted_dims = {
+              "gameplay": list(Image.open(evidence/"accepted/mansion_gameplay_preview_192x240.png").size),
+              "story": list(Image.open(evidence/"accepted/mansion_story_preview_256x240.png").size),
+          }
+          assert accepted_dims == {"gameplay":[192,240], "story":[256,240]}, accepted_dims
+
+          qual = {
+              "status": "PASS",
+              "verified_base": "d7054d2b9b111ff711f44cc3ee5b71268aca6ed8",
+              "accepted_proof": "c2241001946ac5456293f9f2b8be137e5c5bc648",
+              "game_commit": os.environ["GAME_COMMIT"],
+              "tested_html": "versions/v4/index.html",
+              "tested_html_sha256": html_sha,
+              "accepted_dimensions": accepted_dims,
+              "decoded_pixel_checks": runtime["pixels"],
+              "negative_scope": negative,
+              "changed_review_scenes": changed,
+              "regression": {
+                  "no_captures": no_cap["regression"],
+                  "full": full["regression"],
+                  "full_capture_count": len(full.get("captures", [])),
+                  "no_captures_console_errors": no_cap.get("consoleErrors", []),
+                  "full_console_errors": full.get("consoleErrors", []),
+              },
+              "review_scene_ids": [x["id"] for x in runtime["shots"]],
+              "commands": [
+                  "python3 dev/v4_mansion_runtime/build_embedded.py --apply",
+                  "node dev/v4_mansion_runtime/verify_runtime_pixels.mjs --pixels --shots dev/v4_mansion_runtime/review/after",
+                  "SCARLET_QA_SOURCE=versions/v4/index.html npm run agent:no-captures --prefix qa",
+                  "SCARLET_QA_SOURCE=versions/v4/index.html npm run agent --prefix qa",
+              ],
+              "owner_visual_acceptance": "PENDING",
+          }
+          (evidence/"qualification.json").write_text(json.dumps(qual, indent=2)+"\n")
+          PY
+
+      - name: Preserve qualification artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v4-mansion-runtime-qualification
+          path: |
+            versions/v4/index.html
+            dev/v4_mansion_runtime
+            qa/output/agent-report.json
+          if-no-files-found: warn
+
+      - name: Commit evidence and remove temporary workflow
+        if: success()
+        run: |
+          git rm .github/workflows/v4-mansion-runtime-integration.yml
+          git add dev/v4_mansion_runtime
+          git commit -m "Record V4 mansion runtime qualification"
+          git push origin HEAD:v4-mansion-runtime-integration-2c9b8d7c
