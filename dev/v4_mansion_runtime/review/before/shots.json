@@ -1,0 +1,73 @@
+{
+  "browser": "/home/runner/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+  "pixels": null,
+  "shots": [
+    {
+      "id": "stage3-interior",
+      "scene": "stage3",
+      "tick": 900,
+      "bytes": 26830,
+      "sha256": "ef924eca369051a648fbb044ba9e93f89db6d729e99ccc2128fd3eafe97aed5d"
+    },
+    {
+      "id": "sakuya-dialogue",
+      "scene": "dialogue:sakuya_before",
+      "tick": 60,
+      "bytes": 26901,
+      "sha256": "599b0988e4d4289cb4f835886e101500d35771f3f354e61c59662ef442da18dd"
+    },
+    {
+      "id": "s1",
+      "scene": "boss:sakuya:0",
+      "tick": 340,
+      "bytes": 31846,
+      "sha256": "b02dd333bf42ff84ed067c8f071628015b9b673a9466ea52df227cd9683ac0cc"
+    },
+    {
+      "id": "s2-frozen",
+      "scene": "boss:sakuya:1",
+      "tick": 200,
+      "bytes": 31882,
+      "sha256": "f0f8f020e73df2df7483756735e31a3906259f329c8b37ba19950d3f104badf0"
+    },
+    {
+      "id": "gate",
+      "scene": "gate",
+      "tick": 150,
+      "bytes": 22000,
+      "sha256": "c9b9b72d3137241892a6610175f85860e7673675772e26c8fd6177e5699871b0"
+    },
+    {
+      "id": "stage3-roof",
+      "scene": "stage3",
+      "tick": 4300,
+      "bytes": 12036,
+      "sha256": "f73053ca2c7850f6fa2f8ca6575d28f2e1d8161f333833133c87956d7eb827eb"
+    },
+    {
+      "id": "remilia-dialogue",
+      "scene": "dialogue:remilia_before",
+      "tick": 60,
+      "bytes": 18899,
+      "sha256": "277d08899c6a748411377babc47ee5a47bf62748264e5d91f832cabeec2ba8dd"
+    },
+    {
+      "id": "r5-final",
+      "scene": "boss:remilia:4",
+      "tick": 1850,
+      "bytes": 12981,
+      "sha256": "86d889dde88bff9d11c2e42a277cf3844f7677199947ff3092a4bfb7757f95c6"
+    },
+    {
+      "id": "undecorated-gameplay",
+      "bytes": 21827,
+      "sha256": "fd2a46e81c2f19f197404032f976fa33fe2b09a5d7ff6d4884f8d74ff392f3ca"
+    },
+    {
+      "id": "undecorated-story",
+      "bytes": 27891,
+      "sha256": "e9f77b14aba36c3d114950bfe29a9d09d84d3429fc2fe51d1c9484f9f27d771e"
+    }
+  ],
+  "errors": []
+}
