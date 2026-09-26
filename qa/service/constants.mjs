@@ -1,0 +1,12 @@
+export const PINNED_COMMIT = 'd7054d2b9b111ff711f44cc3ee5b71268aca6ed8';
+export const CANONICAL_REPOSITORY = 'https://github.com/raverx-dev/scarlet-moon-never-sets.git';
+export const GAME_PATH = 'versions/v4/index.html';
+export const GAME_SHA256 = '11cf1b906aca600096827f15795ee6282547a7bb161567b868037028bc08d3a4';
+export const CASE_ID = 'stage3-interior';
+export const CASE_SCENE = 'stage3';
+export const CASE_TICK = 900;
+export const LOGICAL_WIDTH = 256;
+export const LOGICAL_HEIGHT = 240;
+export const MAX_REQUEST_BYTES = 64 * 1024;
+export const DEFAULT_PORT = 3020;
+export const RUN_TIMEOUT_MS = 150_000;

@@ -1,0 +1,63 @@
+# INERT — DO NOT INSTALL.
+# This unit matches the offline pinned-source service. It is not authorized to be enabled.
+# A QA request does not fetch. GitHub egress is intentionally absent.
+# The bearer is not stored in this file.
+
+[Unit]
+Description=Scarlet Moon local-only QA MCP
+After=network-online.target
+
+[Service]
+Type=simple
+User=scarlet-qa
+Group=scarlet-qa
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+PrivateTmp=yes
+PrivateDevices=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+ProtectHostname=yes
+ProtectClock=yes
+RestrictSUIDSGID=yes
+LockPersonality=yes
+RestrictRealtime=yes
+# Allow the namespace types Chromium used for seccomp on this host.
+# RestrictNamespaces=yes would disable that sandbox. This is not a network boundary.
+RestrictNamespaces=cgroup ipc mnt net pid user uts
+MemoryDenyWriteExecute=no
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+IPAddressDeny=any
+IPAddressAllow=localhost
+CapabilityBoundingSet=
+AmbientCapabilities=
+SystemCallArchitectures=native
+UMask=0077
+StateDirectory=scarlet-qa
+StateDirectoryMode=0700
+# Pin lives outside the writable state directory.
+ReadOnlyPaths=/opt/scarlet-qa/pinned-source
+WorkingDirectory=/var/lib/scarlet-qa
+Environment=PATH=/usr/bin:/bin
+Environment=PYTHON=/usr/bin/python3
+Environment=QA_SERVICE_HOST=127.0.0.1
+Environment=QA_SERVICE_PORT=3020
+Environment=QA_SERVICE_RUN_ROOT=/var/lib/scarlet-qa/runs
+Environment=QA_PINNED_SOURCE=/opt/scarlet-qa/pinned-source
+# Root-owned source outside the writable state directory. Do not create it here.
+# systemd exposes the loaded bytes only as $CREDENTIALS_DIRECTORY/qa-secret.
+LoadCredential=qa-secret:/etc/scarlet-qa/qa-secret
+ExecStart=/usr/bin/node /opt/scarlet-qa/app/qa/service/server.mjs
+Restart=on-failure
+RestartSec=2s
+KillMode=control-group
+TimeoutStopSec=20s
+MemoryMax=2G
+CPUQuota=150%
+TasksMax=256
+LimitNOFILE=1024
+
+[Install]
+WantedBy=multi-user.target
