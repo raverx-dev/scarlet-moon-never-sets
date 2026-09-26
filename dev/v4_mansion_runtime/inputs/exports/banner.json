@@ -1,0 +1,146 @@
+{
+  "adapter_id": "scarlet-moon-js",
+  "preview": true,
+  "delivery": false,
+  "project_id": "scarlet-moon-never-sets",
+  "asset_id": "v4-mansion-trans01-banner",
+  "revision": 3,
+  "revision_hash": "af2ed3b4c4f83b158092cf0791a8b43eac72fa10a6109d7aa802e371fe56f7dc",
+  "frame_id": "default",
+  "layer_id": "art",
+  "matrix": {
+    "width": 20,
+    "height": 56,
+    "rows": [
+      "HH5555555555555555HH",
+      "6H6666666666666666H6",
+      "HHHHHHHHHHHHHHHHHHHH",
+      "...HEEEEEEEEEEEEH...",
+      "...HEFFEEEEEDDDEH...",
+      "...HEFFEEEEEDDDEH...",
+      "...HEFFEEEEEEDDEH...",
+      "...H6FFEEHEEEEDHH...",
+      "...HEFFEHHEEEEDEH...",
+      "...HEFFEHHEEEEDEH...",
+      "...HEFFEHHHEEDDEH...",
+      "...HEFFEEHHHDDDEH...",
+      "...HEFGEEEEEDDDEH...",
+      "...H6FGEEEFEDDDHH...",
+      "...HEFGEEFEFDDDEH...",
+      "...HEFFEFEEEFDDEH...",
+      "...HEFFEEEEEDDDEH...",
+      "...HEFFEEEHEDDDEH...",
+      "...HEFFEEEHEDDDEH...",
+      "...HEFFEE66HDDDHH...",
+      "...HEFFEE66HDDDHH...",
+      "...HEFFEH6IHHHDHH...",
+      "...HEFFHH66HHHDHH...",
+      "...HEFF6H66H6HDEH...",
+      "...HEFGHH66HHHDEH...",
+      "...HEFGHH66HHHDEH...",
+      "...HEFGEEHHHDDDEH...",
+      "...HEFFEEHHHDDDEH...",
+      "...HEFFEEEHEDDDEH...",
+      "...HEFFEEEHEDDDEH...",
+      "...HEFFEEHHEDDDEH...",
+      "...HEFFEEHHEDDDEH...",
+      "...HEFFEHHHEHDDEH...",
+      "...HEFFEEHHEDDDEH...",
+      "...HEFFEEHHEDDDEH...",
+      "...HEFFEEHHEDDDEH...",
+      "...HEFGEEHHEDDDEH...",
+      "...H6FGEEEEEDDDHH...",
+      "...HEFGEEHEEDDDEH...",
+      "...HEFFEEEEEDDDEH...",
+      "...HEFFEEE6EDDDEH...",
+      "...HEFFEEEEEDDDEH...",
+      "...HEFFEEEEEDDDEH...",
+      "...H6EEEEEEEDDDHH...",
+      "...HHEEEEEEEEEEHH...",
+      "....HHEEEEEEEEEH....",
+      "....HHEEEEEEEEHH....",
+      ".....HHEEEEEEHH.....",
+      "......HHEE6EEHH.....",
+      ".......HHEEEHH......",
+      ".......HHEEEH.......",
+      "........HHEHH.......",
+      ".........HHH........",
+      ".........HHH........",
+      "..........H.........",
+      "...................."
+    ],
+    "symbols": {
+      "0": {
+        "hex": "#080810"
+      },
+      "1": {
+        "hex": "#191528"
+      },
+      "2": {
+        "hex": "#2c2438"
+      },
+      "3": {
+        "hex": "#443550"
+      },
+      "4": {
+        "hex": "#66506a"
+      },
+      "5": {
+        "hex": "#a18a92"
+      },
+      "6": {
+        "hex": "#d4c4a8"
+      },
+      "7": {
+        "hex": "#252c4a"
+      },
+      "8": {
+        "hex": "#424d79"
+      },
+      "9": {
+        "hex": "#819ca7"
+      },
+      ".": {
+        "transparent": true
+      },
+      "A": {
+        "hex": "#3a2038"
+      },
+      "B": {
+        "hex": "#6b2e49"
+      },
+      "C": {
+        "hex": "#a04c64"
+      },
+      "D": {
+        "hex": "#260b1c"
+      },
+      "E": {
+        "hex": "#490e28"
+      },
+      "F": {
+        "hex": "#84233e"
+      },
+      "G": {
+        "hex": "#ca4963"
+      },
+      "H": {
+        "hex": "#97764f"
+      },
+      "I": {
+        "hex": "#ffd19a"
+      },
+      "J": {
+        "hex": "#111421"
+      }
+    }
+  },
+  "round_trip": {
+    "width": 20,
+    "height": 56,
+    "cel_hash": true
+  },
+  "resources": {
+    "export": "robopixel://export/scarlet-moon-never-sets/v4-mansion-trans01-banner/revision/3/scarlet-moon-js"
+  }
+}

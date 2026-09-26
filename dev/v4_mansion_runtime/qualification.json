@@ -1,0 +1,507 @@
+{
+  "status": "PASS",
+  "verified_base": "d7054d2b9b111ff711f44cc3ee5b71268aca6ed8",
+  "accepted_proof": "c2241001946ac5456293f9f2b8be137e5c5bc648",
+  "game_commit": "6d5cee21d736120057fee410286f5e67fd7c957d",
+  "tested_html": "versions/v4/index.html",
+  "tested_html_sha256": "3eca1db52b24d6d8369e0d63bb1dc796f6e90b2c848012316d0572bb0bdf00ab",
+  "accepted_dimensions": {
+    "gameplay": [
+      192,
+      240
+    ],
+    "story": [
+      256,
+      240
+    ]
+  },
+  "decoded_pixel_checks": {
+    "hashes": {
+      "gameplay": "2d9f1b6d171870d4ac06fc6dde626410ad90b574c35461a2118e0934ff598bd8",
+      "story": "710d55e8d60248ba801fe3011584050d0325862a54bd592c3d6fe0e5a019642f",
+      "dialogueBg": "710d55e8d60248ba801fe3011584050d0325862a54bd592c3d6fe0e5a019642f",
+      "stageBg": "2d9f1b6d171870d4ac06fc6dde626410ad90b574c35461a2118e0934ff598bd8",
+      "sakuyaDim": "fa02a672545be6185796f740695316d72848a8a37b47e37b20048ff5809adca2",
+      "remilia": "dac5678cd794d759582114d0d751e3add20a50e9f3f4e0688e7356a0005bbaea",
+      "roof": "6f0e39bba148b0881f45f494129a8e148379fd26a4f9c6648a8339e99f37e6a1",
+      "sakuyaTop": "e41f525d51eb297340689e96ca7cb7c59e4734bb19c561affd643a827df22f87"
+    },
+    "expected": {
+      "gameplay": "2d9f1b6d171870d4ac06fc6dde626410ad90b574c35461a2118e0934ff598bd8",
+      "story": "710d55e8d60248ba801fe3011584050d0325862a54bd592c3d6fe0e5a019642f",
+      "storyTop": "e41f525d51eb297340689e96ca7cb7c59e4734bb19c561affd643a827df22f87"
+    },
+    "checks": {
+      "drawInterior_gameplay_192": true,
+      "drawInterior_story_256": true,
+      "stage3_play_background_is_gameplay": true,
+      "sakuya_dialogue_background_is_story": true,
+      "sakuya_draw_top_rows_are_story": true,
+      "sakuya_boss_dim_changes_pixels": true,
+      "remilia_play_is_not_mansion_gameplay": true,
+      "roof_mode_is_not_mansion_story": true
+    }
+  },
+  "negative_scope": {
+    "gate": {
+      "before_sha256": "c9b9b72d3137241892a6610175f85860e7673675772e26c8fd6177e5699871b0",
+      "after_sha256": "c9b9b72d3137241892a6610175f85860e7673675772e26c8fd6177e5699871b0",
+      "byte_equal": true
+    },
+    "stage3-roof": {
+      "before_sha256": "f73053ca2c7850f6fa2f8ca6575d28f2e1d8161f333833133c87956d7eb827eb",
+      "after_sha256": "f73053ca2c7850f6fa2f8ca6575d28f2e1d8161f333833133c87956d7eb827eb",
+      "byte_equal": true
+    },
+    "remilia-dialogue": {
+      "before_sha256": "277d08899c6a748411377babc47ee5a47bf62748264e5d91f832cabeec2ba8dd",
+      "after_sha256": "277d08899c6a748411377babc47ee5a47bf62748264e5d91f832cabeec2ba8dd",
+      "byte_equal": true
+    },
+    "r5-final": {
+      "before_sha256": "86d889dde88bff9d11c2e42a277cf3844f7677199947ff3092a4bfb7757f95c6",
+      "after_sha256": "86d889dde88bff9d11c2e42a277cf3844f7677199947ff3092a4bfb7757f95c6",
+      "byte_equal": true
+    }
+  },
+  "changed_review_scenes": {
+    "stage3-interior": {
+      "before_sha256": "ef924eca369051a648fbb044ba9e93f89db6d729e99ccc2128fd3eafe97aed5d",
+      "after_sha256": "6433adc739a1d5e842b81955ea5de49b163264e2b8b37553cafba44116bd2f6e",
+      "changed": true,
+      "after_dimensions": [
+        256,
+        240
+      ]
+    },
+    "sakuya-dialogue": {
+      "before_sha256": "599b0988e4d4289cb4f835886e101500d35771f3f354e61c59662ef442da18dd",
+      "after_sha256": "ffca96c320ae22a938d8b4bf0817fd77168a06f67cdd592e52f893b6d41648fd",
+      "changed": true,
+      "after_dimensions": [
+        256,
+        240
+      ]
+    },
+    "s1": {
+      "before_sha256": "b02dd333bf42ff84ed067c8f071628015b9b673a9466ea52df227cd9683ac0cc",
+      "after_sha256": "191975e78506d6fd1a61e3c720af652d4c89e7bac9c9d982e51042994635993a",
+      "changed": true,
+      "after_dimensions": [
+        256,
+        240
+      ]
+    },
+    "s2-frozen": {
+      "before_sha256": "f0f8f020e73df2df7483756735e31a3906259f329c8b37ba19950d3f104badf0",
+      "after_sha256": "af820aa0165d0547845d9b54f2fc4e3a9e581280f02e628d67c1c6033da49c3d",
+      "changed": true,
+      "after_dimensions": [
+        256,
+        240
+      ]
+    },
+    "undecorated-gameplay": {
+      "before_sha256": "fd2a46e81c2f19f197404032f976fa33fe2b09a5d7ff6d4884f8d74ff392f3ca",
+      "after_sha256": "3dbc223918f5cbb962a401ba18fc061f3e647c2563f59ec3bf81ae21f5393133",
+      "changed": true,
+      "after_dimensions": [
+        256,
+        240
+      ]
+    },
+    "undecorated-story": {
+      "before_sha256": "e9f77b14aba36c3d114950bfe29a9d09d84d3429fc2fe51d1c9484f9f27d771e",
+      "after_sha256": "0f1ef25a82794483e371238bf736ef8f020ed3d15a158aeead92d7d2f3f433ed",
+      "changed": true,
+      "after_dimensions": [
+        256,
+        240
+      ]
+    }
+  },
+  "regression": {
+    "no_captures": {
+      "passed": 32,
+      "failed": 0,
+      "checks": [
+        "Fresh resources: 3 lives, 3 bombs, power 1",
+        "Immediate movement; normalized diagonals; focus speed",
+        "Held Z firing and four shot levels",
+        "Point and power pickups, max power score, collection line",
+        "Tiny hitbox, one graze per bullet, delayed death",
+        "Deathbomb on last available frame preserves life",
+        "No bomb at zero stock; death loses power",
+        "Pause/resume stops simulation and resets input",
+        "Continue restores resources, resets score, restarts boss",
+        "Continue timeout returns title; another run resets state",
+        "Player shots destroy enemies and damage bosses",
+        "Spell capture bonus and bomb forfeiture",
+        "Laser telegraph harmless, active beam lethal",
+        "Final survival duration resists early damage clear",
+        "All dialogue pages and boss scenes render without exceptions",
+        "cirno / Cold Snap",
+        "cirno / Icicle Fall",
+        "cirno / Perfect Freeze",
+        "marisa / Star Sweep",
+        "marisa / Stardust Reverie",
+        "marisa / Non-Directional Laser",
+        "marisa / Master Spark",
+        "sakuya / Killing Doll",
+        "sakuya / Private Square",
+        "remilia / Scarlet Waltz",
+        "remilia / Scarlet Shoot",
+        "remilia / Spear the Gungnir",
+        "remilia / Scarlet Gensokyo",
+        "remilia / Red Magic",
+        "All stages, dialogues, bosses, ending, credits and second run",
+        "Attract mode and how-to-play round trip",
+        "Audio initialization, all track changes, effects and mute"
+      ],
+      "errors": [],
+      "metrics": [
+        {
+          "phase": "c1",
+          "max": 44,
+          "frozen": 0,
+          "beams": 0,
+          "spears": 0
+        },
+        {
+          "phase": "c2",
+          "max": 37,
+          "frozen": 0,
+          "beams": 0,
+          "spears": 0
+        },
+        {
+          "phase": "c3",
+          "max": 91,
+          "frozen": 700,
+          "beams": 0,
+          "spears": 0
+        },
+        {
+          "phase": "m1",
+          "max": 62,
+          "frozen": 0,
+          "beams": 0,
+          "spears": 0
+        },
+        {
+          "phase": "m2",
+          "max": 102,
+          "frozen": 0,
+          "beams": 0,
+          "spears": 0
+        },
+        {
+          "phase": "m3",
+          "max": 41,
+          "frozen": 0,
+          "beams": 1144,
+          "spears": 0
+        },
+        {
+          "phase": "m4",
+          "max": 65,
+          "frozen": 0,
+          "beams": 1352,
+          "spears": 0
+        },
+        {
+          "phase": "s1",
+          "max": 55,
+          "frozen": 0,
+          "beams": 0,
+          "spears": 0
+        },
+        {
+          "phase": "s2",
+          "max": 117,
+          "frozen": 620,
+          "beams": 0,
+          "spears": 0
+        },
+        {
+          "phase": "r1",
+          "max": 80,
+          "frozen": 0,
+          "beams": 0,
+          "spears": 0
+        },
+        {
+          "phase": "r2",
+          "max": 62,
+          "frozen": 0,
+          "beams": 0,
+          "spears": 0
+        },
+        {
+          "phase": "r3",
+          "max": 78,
+          "frozen": 0,
+          "beams": 845,
+          "spears": 886
+        },
+        {
+          "phase": "r4",
+          "max": 122,
+          "frozen": 0,
+          "beams": 0,
+          "spears": 0
+        },
+        {
+          "phase": "r5",
+          "max": 194,
+          "frozen": 0,
+          "beams": 0,
+          "spears": 0
+        }
+      ],
+      "timing": {
+        "combatSeconds": 670,
+        "fastDialogueRunSeconds": 743
+      },
+      "flow": [
+        "dialogue:intro",
+        "stagecard",
+        "stage:1",
+        "dialogue:cirno_before",
+        "cirno:0",
+        "cirno:1",
+        "cirno:2",
+        "defeat",
+        "dialogue:cirno_after",
+        "stage:2",
+        "dialogue:marisa_before",
+        "marisa:0",
+        "marisa:1",
+        "marisa:2",
+        "marisa:3",
+        "dialogue:marisa_after",
+        "gate",
+        "stage:3",
+        "dialogue:sakuya_before",
+        "sakuya:0",
+        "sakuya:1",
+        "dialogue:sakuya_after",
+        "dialogue:remilia_before",
+        "remilia:0",
+        "remilia:1",
+        "remilia:2",
+        "remilia:3",
+        "remilia:4",
+        "dialogue:remilia_after",
+        "dawn",
+        "endingScene",
+        "dialogue:ending",
+        "endingExit",
+        "theend",
+        "credits"
+      ]
+    },
+    "full": {
+      "passed": 32,
+      "failed": 0,
+      "checks": [
+        "Fresh resources: 3 lives, 3 bombs, power 1",
+        "Immediate movement; normalized diagonals; focus speed",
+        "Held Z firing and four shot levels",
+        "Point and power pickups, max power score, collection line",
+        "Tiny hitbox, one graze per bullet, delayed death",
+        "Deathbomb on last available frame preserves life",
+        "No bomb at zero stock; death loses power",
+        "Pause/resume stops simulation and resets input",
+        "Continue restores resources, resets score, restarts boss",
+        "Continue timeout returns title; another run resets state",
+        "Player shots destroy enemies and damage bosses",
+        "Spell capture bonus and bomb forfeiture",
+        "Laser telegraph harmless, active beam lethal",
+        "Final survival duration resists early damage clear",
+        "All dialogue pages and boss scenes render without exceptions",
+        "cirno / Cold Snap",
+        "cirno / Icicle Fall",
+        "cirno / Perfect Freeze",
+        "marisa / Star Sweep",
+        "marisa / Stardust Reverie",
+        "marisa / Non-Directional Laser",
+        "marisa / Master Spark",
+        "sakuya / Killing Doll",
+        "sakuya / Private Square",
+        "remilia / Scarlet Waltz",
+        "remilia / Scarlet Shoot",
+        "remilia / Spear the Gungnir",
+        "remilia / Scarlet Gensokyo",
+        "remilia / Red Magic",
+        "All stages, dialogues, bosses, ending, credits and second run",
+        "Attract mode and how-to-play round trip",
+        "Audio initialization, all track changes, effects and mute"
+      ],
+      "errors": [],
+      "metrics": [
+        {
+          "phase": "c1",
+          "max": 44,
+          "frozen": 0,
+          "beams": 0,
+          "spears": 0
+        },
+        {
+          "phase": "c2",
+          "max": 37,
+          "frozen": 0,
+          "beams": 0,
+          "spears": 0
+        },
+        {
+          "phase": "c3",
+          "max": 91,
+          "frozen": 700,
+          "beams": 0,
+          "spears": 0
+        },
+        {
+          "phase": "m1",
+          "max": 62,
+          "frozen": 0,
+          "beams": 0,
+          "spears": 0
+        },
+        {
+          "phase": "m2",
+          "max": 102,
+          "frozen": 0,
+          "beams": 0,
+          "spears": 0
+        },
+        {
+          "phase": "m3",
+          "max": 41,
+          "frozen": 0,
+          "beams": 1144,
+          "spears": 0
+        },
+        {
+          "phase": "m4",
+          "max": 65,
+          "frozen": 0,
+          "beams": 1352,
+          "spears": 0
+        },
+        {
+          "phase": "s1",
+          "max": 55,
+          "frozen": 0,
+          "beams": 0,
+          "spears": 0
+        },
+        {
+          "phase": "s2",
+          "max": 117,
+          "frozen": 620,
+          "beams": 0,
+          "spears": 0
+        },
+        {
+          "phase": "r1",
+          "max": 80,
+          "frozen": 0,
+          "beams": 0,
+          "spears": 0
+        },
+        {
+          "phase": "r2",
+          "max": 62,
+          "frozen": 0,
+          "beams": 0,
+          "spears": 0
+        },
+        {
+          "phase": "r3",
+          "max": 78,
+          "frozen": 0,
+          "beams": 845,
+          "spears": 886
+        },
+        {
+          "phase": "r4",
+          "max": 122,
+          "frozen": 0,
+          "beams": 0,
+          "spears": 0
+        },
+        {
+          "phase": "r5",
+          "max": 194,
+          "frozen": 0,
+          "beams": 0,
+          "spears": 0
+        }
+      ],
+      "timing": {
+        "combatSeconds": 670,
+        "fastDialogueRunSeconds": 743
+      },
+      "flow": [
+        "dialogue:intro",
+        "stagecard",
+        "stage:1",
+        "dialogue:cirno_before",
+        "cirno:0",
+        "cirno:1",
+        "cirno:2",
+        "defeat",
+        "dialogue:cirno_after",
+        "stage:2",
+        "dialogue:marisa_before",
+        "marisa:0",
+        "marisa:1",
+        "marisa:2",
+        "marisa:3",
+        "dialogue:marisa_after",
+        "gate",
+        "stage:3",
+        "dialogue:sakuya_before",
+        "sakuya:0",
+        "sakuya:1",
+        "dialogue:sakuya_after",
+        "dialogue:remilia_before",
+        "remilia:0",
+        "remilia:1",
+        "remilia:2",
+        "remilia:3",
+        "remilia:4",
+        "dialogue:remilia_after",
+        "dawn",
+        "endingScene",
+        "dialogue:ending",
+        "endingExit",
+        "theend",
+        "credits"
+      ]
+    },
+    "full_capture_count": 40,
+    "no_captures_console_errors": [],
+    "full_console_errors": []
+  },
+  "review_scene_ids": [
+    "stage3-interior",
+    "sakuya-dialogue",
+    "s1",
+    "s2-frozen",
+    "gate",
+    "stage3-roof",
+    "remilia-dialogue",
+    "r5-final",
+    "undecorated-gameplay",
+    "undecorated-story"
+  ],
+  "commands": [
+    "python3 dev/v4_mansion_runtime/build_embedded.py --apply",
+    "node dev/v4_mansion_runtime/verify_runtime_pixels.mjs --pixels --shots dev/v4_mansion_runtime/review/after",
+    "SCARLET_QA_SOURCE=versions/v4/index.html npm run agent:no-captures --prefix qa",
+    "SCARLET_QA_SOURCE=versions/v4/index.html npm run agent --prefix qa"
+  ],
+  "owner_visual_acceptance": "PENDING"
+}
