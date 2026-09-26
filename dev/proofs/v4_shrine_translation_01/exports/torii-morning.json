@@ -1,0 +1,257 @@
+{
+  "adapter_id": "scarlet-moon-js",
+  "preview": true,
+  "delivery": false,
+  "project_id": "scarlet-moon-never-sets",
+  "asset_id": "v4-shrine-trans01-torii-morning",
+  "revision": 2,
+  "revision_hash": "805f8d3b5ca16e3066747cc5f01d8b9fe478980dc82412f5ff9d016cdd865721",
+  "frame_id": "default",
+  "layer_id": "art",
+  "matrix": {
+    "width": 87,
+    "height": 116,
+    "rows": [
+      "dd.................................................................................dd..",
+      "addd.............................................................................ddda..",
+      "abccdddd.....................................................................ddddccba..",
+      "abbcccccdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddcccccbbba.",
+      "aabbcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccbbbbaa..",
+      "aaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaa..",
+      "aaaahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhaaaa...",
+      ".rrsstttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttsssrr....",
+      "..rssuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuusssr......",
+      "...rsssttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttsssr......",
+      "....rsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssr........",
+      ".....rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr........",
+      "..........rrhhhhhhhrrr................rhhhhr....................rrhhhhhhhrrr...........",
+      "..........rttiijjiittr................hijjih....................rttiijjiittr...........",
+      "..........rsuuuuuuttsr................hirrih....................rsuuuuuuttsr...........",
+      "..........rrssssssssrr................hitrih....................rrssssssssrr...........",
+      "............suuutttrrs................hirrih......................suuutttrrs...........",
+      "............svuutttrrs................hijjih......................suuutttrrs...........",
+      "............svuutttrrs................rhhhhr......................svuutttrrs...........",
+      "............svuutttrrs............................................svuutttrrs...........",
+      "............svuutttrrs............................................svuutttrrs...........",
+      "............svuutttrrs............................................svuutttrrs...........",
+      "............svuutttrrs............................................svuutttrrs...........",
+      "............svuutttrrs............................................svuutttrrs...........",
+      "............svuutttrrs............................................svuutttrrs...........",
+      "............suuutttrrs............................................svuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      ".....uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu...",
+      ".....uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu...",
+      ".....uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu...",
+      ".....ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt...",
+      ".....ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt...",
+      ".....ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt...",
+      ".....ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt...",
+      ".......rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr....",
+      ".......rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr....",
+      ".......hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh....",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutrtrrs............................................suuutrtrrs...........",
+      "............suuutrtrrs............................................suuutrtrrs...........",
+      "............suuurrtrrs............................................suuurrtrrs...........",
+      "............suuurstrrs............................................suuurstrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............svsutttrrs............................................svsutttrrs...........",
+      "............svsutttrrs............................................svsutttrrs...........",
+      "............svrutttrrs............................................svrutttrrs...........",
+      "............svrutttrrs............................................svrutttrrs...........",
+      "............surutttrrs............................................surutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "............suuutttrrs............................................suuutttrrs...........",
+      "...........dddccddddds...........................................dddccddddds...........",
+      "..........ddcccccccccdd.........................................ddcccccccccdd..........",
+      ".........ddcbbbbcccccccd.......................................ddcbbbbcccccccd.........",
+      ".........cbbbabbbbbabbbbd......................................cbbbabbbbbabbbbd........",
+      ".........bbbbbbbbbbbbbbb.......................................bbbbbbbbbbbbbbb.........",
+      ".........abbbbbbbabbbbba.......................................abbbbbbbabbbbba.........",
+      ".........aabbbaabbbbbbaa.......................................aabbbaabbbbbbaa.........",
+      ".........aaaaaaaaaaaaaaa.......................................aaaaaaaaaaaaaaa.........",
+      ".......................................................................................",
+      ".......................................................................................",
+      ".......................................................................................",
+      "......................................................................................."
+    ],
+    "symbols": {
+      ".": {
+        "transparent": true
+      },
+      "K": {
+        "hex": "#252839"
+      },
+      "a": {
+        "hex": "#3b4352"
+      },
+      "b": {
+        "hex": "#596375"
+      },
+      "c": {
+        "hex": "#829098"
+      },
+      "d": {
+        "hex": "#bdc0b4"
+      },
+      "e": {
+        "hex": "#747a83"
+      },
+      "f": {
+        "hex": "#b1a29b"
+      },
+      "g": {
+        "hex": "#dfc7a0"
+      },
+      "r": {
+        "hex": "#362c33"
+      },
+      "s": {
+        "hex": "#65403c"
+      },
+      "t": {
+        "hex": "#994f42"
+      },
+      "u": {
+        "hex": "#c87452"
+      },
+      "v": {
+        "hex": "#e1a26b"
+      },
+      "h": {
+        "hex": "#867047"
+      },
+      "i": {
+        "hex": "#c09956"
+      },
+      "j": {
+        "hex": "#f0cc7c"
+      },
+      "l": {
+        "hex": "#233d43"
+      },
+      "m": {
+        "hex": "#35534c"
+      },
+      "n": {
+        "hex": "#4d725b"
+      },
+      "o": {
+        "hex": "#7f9565"
+      },
+      "p": {
+        "hex": "#b5b776"
+      },
+      "q": {
+        "hex": "#edcf84"
+      },
+      "A": {
+        "hex": "#647688"
+      },
+      "B": {
+        "hex": "#8297a2"
+      },
+      "C": {
+        "hex": "#aec0bd"
+      },
+      "D": {
+        "hex": "#d4d5bc"
+      },
+      "E": {
+        "hex": "#7facca"
+      },
+      "F": {
+        "hex": "#a4c3d1"
+      },
+      "G": {
+        "hex": "#d1d7cd"
+      },
+      "H": {
+        "hex": "#edd4ad"
+      },
+      "I": {
+        "hex": "#fff0bf"
+      },
+      "J": {
+        "hex": "#efc17a"
+      },
+      "L": {
+        "hex": "#d99476"
+      },
+      "M": {
+        "hex": "#b87c78"
+      },
+      "N": {
+        "hex": "#c4d0c5"
+      },
+      "O": {
+        "hex": "#f2e0b8"
+      },
+      "P": {
+        "hex": "#f2bd83"
+      }
+    }
+  },
+  "round_trip": {
+    "width": 87,
+    "height": 116,
+    "cel_hash": true
+  },
+  "resources": {
+    "export": "robopixel://export/scarlet-moon-never-sets/v4-shrine-trans01-torii-morning/revision/2/scarlet-moon-js"
+  }
+}

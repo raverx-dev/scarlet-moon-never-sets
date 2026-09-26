@@ -1,0 +1,82 @@
+{
+  "create": {
+    "receipt": {
+      "transaction_id": "033d9694f24fb991bf5599098451d806c8872d10457d9c8ccf8db5c8963dff7e",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-foreground-banks-morning",
+      "operation": "asset_create",
+      "name": "Shrine Translation 01 / foreground-banks-morning",
+      "class_id": "environment-structure",
+      "revision": 1,
+      "revision_hash": "61567fad2812f7042a1f08cb96fe1e41911289f140f82800e4d164eb67c10161",
+      "canvas": {
+        "width": 256,
+        "height": 44
+      },
+      "palette_id": "v4-shrine-trans01-foreground-banks-morning",
+      "palette_hash": "412e318def9fb7953dd0d8ab8cf575660a05e3070e7e2d00d94ffdd348637b54",
+      "frame_id": "default",
+      "layer_id": "art",
+      "created_at": "2026-09-25T12:20:21.682Z",
+      "policy_id": "d12-art-policy",
+      "policy_version": 1,
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "guards": []
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-foreground-banks-morning",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-foreground-banks-morning/revision/1",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-foreground-banks-morning/revision/1/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-foreground-banks-morning/revision/1/text"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  "paste": {
+    "receipt": {
+      "transaction_id": "141157fb9b780649039ef1762445c1458876c58882ac3ba5f29b2e603e153f42",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-foreground-banks-morning",
+      "operation": "grid_paste",
+      "old_revision": 1,
+      "new_revision": 2,
+      "old_revision_hash": "61567fad2812f7042a1f08cb96fe1e41911289f140f82800e4d164eb67c10161",
+      "new_revision_hash": "6071010838f37b43bde4546363b1abfda147b5cecf3727f0f7cab22249092e80",
+      "changed_pixels": 2078,
+      "changed_bbox": {
+        "x": 0,
+        "y": 2,
+        "width": 256,
+        "height": 42
+      },
+      "region_changes": [],
+      "layer_changes": [
+        {
+          "layer_id": "art",
+          "changed_pixels": 2078
+        }
+      ],
+      "frame_changes": [
+        {
+          "frame_id": "default",
+          "changed_pixels": 2078
+        }
+      ],
+      "guards": [],
+      "approval_invalidated": true
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-foreground-banks-morning",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-foreground-banks-morning/revision/2",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-foreground-banks-morning/revision/2/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-foreground-banks-morning/revision/2/text",
+      "diff": "robopixel://diff/scarlet-moon-never-sets/v4-shrine-trans01-foreground-banks-morning/1/2"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  }
+}

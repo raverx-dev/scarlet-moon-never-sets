@@ -1,0 +1,67 @@
+{
+  "width": 256,
+  "height": 240,
+  "placements": [
+    {
+      "asset": "sky-morning",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "asset": "mountain-depth-morning",
+      "x": 0,
+      "y": 27
+    },
+    {
+      "asset": "wooded-frame-morning",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "asset": "courtyard-morning",
+      "x": 0,
+      "y": 147
+    },
+    {
+      "asset": "hall-body-morning",
+      "x": 89,
+      "y": 103
+    },
+    {
+      "asset": "hall-roof-morning",
+      "x": 79,
+      "y": 48
+    },
+    {
+      "asset": "approach-stairs-morning",
+      "x": 114,
+      "y": 142
+    },
+    {
+      "asset": "torii-morning",
+      "x": 1,
+      "y": 63
+    },
+    {
+      "asset": "stone-lantern-morning",
+      "x": 12,
+      "y": 147
+    },
+    {
+      "asset": "stone-lantern-morning",
+      "x": 224,
+      "y": 147
+    },
+    {
+      "asset": "donation-box-morning",
+      "x": 112,
+      "y": 171
+    },
+    {
+      "asset": "foreground-banks-morning",
+      "x": 0,
+      "y": 196
+    }
+  ],
+  "intent": "Shared architectural anchors preserve the same place; independently authored morning atmosphere and light."
+}

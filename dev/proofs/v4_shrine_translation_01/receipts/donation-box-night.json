@@ -1,0 +1,82 @@
+{
+  "create": {
+    "receipt": {
+      "transaction_id": "7bb950759da2da4f47003e408172f4a695d34bf96b2b791197614388d1f8442f",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-donation-box-night",
+      "operation": "asset_create",
+      "name": "Shrine Translation 01 / donation-box-night",
+      "class_id": "environment-structure",
+      "revision": 1,
+      "revision_hash": "24439797ccd35fc9ebef54487993f2cd36dd3af28fa62a5edfa5f3185bbe8ccf",
+      "canvas": {
+        "width": 32,
+        "height": 22
+      },
+      "palette_id": "v4-shrine-trans01-donation-box-night",
+      "palette_hash": "9d78adba8a7eef9a589b732d3b48a7c8f7020784633daf21d8482ed4aeba9092",
+      "frame_id": "default",
+      "layer_id": "art",
+      "created_at": "2026-09-25T12:20:18.659Z",
+      "policy_id": "d12-art-policy",
+      "policy_version": 1,
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "guards": []
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-donation-box-night",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-donation-box-night/revision/1",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-donation-box-night/revision/1/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-donation-box-night/revision/1/text"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  "paste": {
+    "receipt": {
+      "transaction_id": "f2b7ebf363a07f1a40765e5097e928ebef2b78c1891e9eef41567bebbd926ed2",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-donation-box-night",
+      "operation": "grid_paste",
+      "old_revision": 1,
+      "new_revision": 2,
+      "old_revision_hash": "24439797ccd35fc9ebef54487993f2cd36dd3af28fa62a5edfa5f3185bbe8ccf",
+      "new_revision_hash": "48c4174c816270dbf2f4595fda19a748ad98749d083e9efeebb8eabf16752a77",
+      "changed_pixels": 645,
+      "changed_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 32,
+        "height": 22
+      },
+      "region_changes": [],
+      "layer_changes": [
+        {
+          "layer_id": "art",
+          "changed_pixels": 645
+        }
+      ],
+      "frame_changes": [
+        {
+          "frame_id": "default",
+          "changed_pixels": 645
+        }
+      ],
+      "guards": [],
+      "approval_invalidated": true
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-donation-box-night",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-donation-box-night/revision/2",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-donation-box-night/revision/2/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-donation-box-night/revision/2/text",
+      "diff": "robopixel://diff/scarlet-moon-never-sets/v4-shrine-trans01-donation-box-night/1/2"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  }
+}

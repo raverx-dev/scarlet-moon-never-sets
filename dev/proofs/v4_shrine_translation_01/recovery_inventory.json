@@ -1,0 +1,156 @@
+[
+  {
+    "asset_id": "v4-shrine-trans01-approach-stairs-morning",
+    "name": "Shrine Translation 01 / approach-stairs-morning",
+    "current_revision": 2,
+    "current_revision_hash": "9f9a6de07d6614a9982f65de4d71ec8e390240bc4b8e74f44607f043cc1d2c79",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-approach-stairs-morning"
+  },
+  {
+    "asset_id": "v4-shrine-trans01-approach-stairs-night",
+    "name": "Shrine Translation 01 / approach-stairs-night",
+    "current_revision": 2,
+    "current_revision_hash": "26fb573efb88f5fb779126b02fd65c3262e1eb1edaf6f3495ce9f5afa30ad7c8",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-approach-stairs-night"
+  },
+  {
+    "asset_id": "v4-shrine-trans01-courtyard-morning",
+    "name": "Shrine Translation 01 / courtyard-morning",
+    "current_revision": 2,
+    "current_revision_hash": "ef2a2fc46930a40d8ad0c81b434ad57edb9efa9c17e71ec28007a756a20cdd79",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-courtyard-morning"
+  },
+  {
+    "asset_id": "v4-shrine-trans01-courtyard-night",
+    "name": "Shrine Translation 01 / courtyard-night",
+    "current_revision": 2,
+    "current_revision_hash": "7a9526a4e7d3e5ba1fa056b63caafb5573eee7fb894bf7af48bd17aeea9419f6",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-courtyard-night"
+  },
+  {
+    "asset_id": "v4-shrine-trans01-donation-box-morning",
+    "name": "Shrine Translation 01 / donation-box-morning",
+    "current_revision": 2,
+    "current_revision_hash": "a80ade78dde049ee167801bb7c435d5854775b4c3d57eb991155832aa82758ee",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-donation-box-morning"
+  },
+  {
+    "asset_id": "v4-shrine-trans01-donation-box-night",
+    "name": "Shrine Translation 01 / donation-box-night",
+    "current_revision": 2,
+    "current_revision_hash": "48c4174c816270dbf2f4595fda19a748ad98749d083e9efeebb8eabf16752a77",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-donation-box-night"
+  },
+  {
+    "asset_id": "v4-shrine-trans01-foreground-banks-morning",
+    "name": "Shrine Translation 01 / foreground-banks-morning",
+    "current_revision": 2,
+    "current_revision_hash": "6071010838f37b43bde4546363b1abfda147b5cecf3727f0f7cab22249092e80",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-foreground-banks-morning"
+  },
+  {
+    "asset_id": "v4-shrine-trans01-foreground-banks-night",
+    "name": "Shrine Translation 01 / foreground-banks-night",
+    "current_revision": 2,
+    "current_revision_hash": "5b35243a8e94dc0e8664f1a46e7198bcac2e4c4d7f997d8df11466c3a233dc3a",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-foreground-banks-night"
+  },
+  {
+    "asset_id": "v4-shrine-trans01-hall-body-morning",
+    "name": "Shrine Translation 01 / hall-body-morning",
+    "current_revision": 2,
+    "current_revision_hash": "774a6ec32eab5780fcbbec3a6fe134d09606248cb0717b0513d2cab54e5a5f38",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-body-morning"
+  },
+  {
+    "asset_id": "v4-shrine-trans01-hall-body-night",
+    "name": "Shrine Translation 01 / hall-body-night",
+    "current_revision": 2,
+    "current_revision_hash": "d009a703778649c1632aa1ff241ed576ce0db444d91729635d7810ec8a38c375",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-body-night"
+  },
+  {
+    "asset_id": "v4-shrine-trans01-hall-roof-morning",
+    "name": "Shrine Translation 01 / hall-roof-morning",
+    "current_revision": 2,
+    "current_revision_hash": "dfb0c1b89fd1f9b9d0ade0eb19c6be40feaa08f087b7cbc489e24bf4ce72f28a",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-roof-morning"
+  },
+  {
+    "asset_id": "v4-shrine-trans01-hall-roof-night",
+    "name": "Shrine Translation 01 / hall-roof-night",
+    "current_revision": 2,
+    "current_revision_hash": "13ee65cb0863170b275dcbb93d156cf794f6bc5bad25b65c39e6248950b2a645",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-roof-night"
+  },
+  {
+    "asset_id": "v4-shrine-trans01-mountain-depth-morning",
+    "name": "Shrine Translation 01 / mountain-depth-morning",
+    "current_revision": 2,
+    "current_revision_hash": "1bb06105ae8a36b98110a46fc9d85b434601922e139bf42322eb9d03486b3544",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-mountain-depth-morning"
+  },
+  {
+    "asset_id": "v4-shrine-trans01-mountain-depth-night",
+    "name": "Shrine Translation 01 / mountain-depth-night",
+    "current_revision": 2,
+    "current_revision_hash": "2888874a3dcfeb34b2f6117e62c66af68e33ee0fa8c542a6869706bf8007ccc6",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-mountain-depth-night"
+  },
+  {
+    "asset_id": "v4-shrine-trans01-sky-morning",
+    "name": "Shrine Translation 01 / sky-morning",
+    "current_revision": 2,
+    "current_revision_hash": "59906de74d7e3677bdfea98e50fd863bb891c99c9dab289414038d17791bf3ba",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-sky-morning"
+  },
+  {
+    "asset_id": "v4-shrine-trans01-sky-night",
+    "name": "Shrine Translation 01 / sky-night",
+    "current_revision": 2,
+    "current_revision_hash": "e4c5e4094128fffbcc9cb348a402b0bcc248aa914bb2df8a9ab0d32937a45cf9",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-sky-night"
+  },
+  {
+    "asset_id": "v4-shrine-trans01-stone-lantern-morning",
+    "name": "Shrine Translation 01 / stone-lantern-morning",
+    "current_revision": 2,
+    "current_revision_hash": "13931e0614bb3fa0beeaab88b6aa60a90359ecff4912b9b9f09390c5182874cc",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-stone-lantern-morning"
+  },
+  {
+    "asset_id": "v4-shrine-trans01-stone-lantern-night",
+    "name": "Shrine Translation 01 / stone-lantern-night",
+    "current_revision": 2,
+    "current_revision_hash": "b8e9781e5f157306b7ac579987c78dd30e939cc64cddeed872a89bcaafe220bd",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-stone-lantern-night"
+  },
+  {
+    "asset_id": "v4-shrine-trans01-torii-morning",
+    "name": "Shrine Translation 01 / torii-morning",
+    "current_revision": 2,
+    "current_revision_hash": "805f8d3b5ca16e3066747cc5f01d8b9fe478980dc82412f5ff9d016cdd865721",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-torii-morning"
+  },
+  {
+    "asset_id": "v4-shrine-trans01-torii-night",
+    "name": "Shrine Translation 01 / torii-night",
+    "current_revision": 2,
+    "current_revision_hash": "aebd78843cfa695ad017cb09402183957163abfe4d009a7a5ea01c7c4e0031e2",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-torii-night"
+  },
+  {
+    "asset_id": "v4-shrine-trans01-wooded-frame-morning",
+    "name": "Shrine Translation 01 / wooded-frame-morning",
+    "current_revision": 2,
+    "current_revision_hash": "643e2505b12d3641234091aa858146a69f746e5a4a48158c97abfe98519213b8",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-wooded-frame-morning"
+  },
+  {
+    "asset_id": "v4-shrine-trans01-wooded-frame-night",
+    "name": "Shrine Translation 01 / wooded-frame-night",
+    "current_revision": 2,
+    "current_revision_hash": "b4f42ebb1c583ff8a72a663b7e864f52784a76a4ca5db53967c9a10b4ca328fc",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-wooded-frame-night"
+  }
+]

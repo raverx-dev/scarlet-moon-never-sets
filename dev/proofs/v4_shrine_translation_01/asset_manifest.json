@@ -1,0 +1,1190 @@
+[
+  {
+    "name": "sky-night",
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-shrine-trans01-sky-night",
+    "revision": 2,
+    "revision_hash": "e4c5e4094128fffbcc9cb348a402b0bcc248aa914bb2df8a9ab0d32937a45cf9",
+    "frame_id": "default",
+    "width": 256,
+    "height": 120,
+    "scale": 1,
+    "render_hash": "6a1703aede458f662b1a5b3d3ec01e454a1ca36fbff8b3b975095feced1fc080",
+    "resources": {
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-sky-night/revision/2/view"
+    },
+    "png": "assets/sky-night.png",
+    "export": "exports/sky-night.json",
+    "description": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-sky-night",
+      "name": "Shrine Translation 01 / sky-night",
+      "class_id": "environment-structure",
+      "current_revision": 2,
+      "current_revision_hash": "e4c5e4094128fffbcc9cb348a402b0bcc248aa914bb2df8a9ab0d32937a45cf9",
+      "canvas": {
+        "width": 256,
+        "height": 120
+      },
+      "palette_id": "v4-shrine-trans01-sky-night",
+      "palette_hash": "1d28b5aedfb231543f1b1fadb77cb35bf932ae3a550dc58e488efc086f64ed61",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-sky-night",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-sky-night/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-sky-night/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-sky-night/revision/2/text"
+      }
+    },
+    "png_sha256": "b6e6dc65819938d0e04a248419f9014ae2e6b14a51905c9fb2278db8b0cfee52"
+  },
+  {
+    "name": "sky-morning",
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-shrine-trans01-sky-morning",
+    "revision": 2,
+    "revision_hash": "59906de74d7e3677bdfea98e50fd863bb891c99c9dab289414038d17791bf3ba",
+    "frame_id": "default",
+    "width": 256,
+    "height": 120,
+    "scale": 1,
+    "render_hash": "933b2e8535d7781e4eabdf3d50ebece83c9ed8e2c308fe36ea39405da22fa343",
+    "resources": {
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-sky-morning/revision/2/view"
+    },
+    "png": "assets/sky-morning.png",
+    "export": "exports/sky-morning.json",
+    "description": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-sky-morning",
+      "name": "Shrine Translation 01 / sky-morning",
+      "class_id": "environment-structure",
+      "current_revision": 2,
+      "current_revision_hash": "59906de74d7e3677bdfea98e50fd863bb891c99c9dab289414038d17791bf3ba",
+      "canvas": {
+        "width": 256,
+        "height": 120
+      },
+      "palette_id": "v4-shrine-trans01-sky-morning",
+      "palette_hash": "1c4bec99c5e80dee6f5878e3af9c513c33205d6886c724edfd4ac29b52d119de",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-sky-morning",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-sky-morning/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-sky-morning/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-sky-morning/revision/2/text"
+      }
+    },
+    "png_sha256": "39b717af8b0bdc8ff86012d4717f9afa24c9c683d948c67a33f583547d48db5e"
+  },
+  {
+    "name": "mountain-depth-night",
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-shrine-trans01-mountain-depth-night",
+    "revision": 2,
+    "revision_hash": "2888874a3dcfeb34b2f6117e62c66af68e33ee0fa8c542a6869706bf8007ccc6",
+    "frame_id": "default",
+    "width": 256,
+    "height": 84,
+    "scale": 1,
+    "render_hash": "52fff14fefc0ca65f6bb8b5f826f445d93874de540ddf3db05be24721c8f5eee",
+    "resources": {
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-mountain-depth-night/revision/2/view"
+    },
+    "png": "assets/mountain-depth-night.png",
+    "export": "exports/mountain-depth-night.json",
+    "description": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-mountain-depth-night",
+      "name": "Shrine Translation 01 / mountain-depth-night",
+      "class_id": "environment-structure",
+      "current_revision": 2,
+      "current_revision_hash": "2888874a3dcfeb34b2f6117e62c66af68e33ee0fa8c542a6869706bf8007ccc6",
+      "canvas": {
+        "width": 256,
+        "height": 84
+      },
+      "palette_id": "v4-shrine-trans01-mountain-depth-night",
+      "palette_hash": "6cc6571aaa1f3c6aefe2a57abc0ac4ef48803b9b249bc730302c7d2a77b70a14",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-mountain-depth-night",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-mountain-depth-night/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-mountain-depth-night/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-mountain-depth-night/revision/2/text"
+      }
+    },
+    "png_sha256": "6a7cd4a9ffed9514ca41af2d0d77bea0ac11300eb5f414bb95235522a8a18a4f"
+  },
+  {
+    "name": "mountain-depth-morning",
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-shrine-trans01-mountain-depth-morning",
+    "revision": 2,
+    "revision_hash": "1bb06105ae8a36b98110a46fc9d85b434601922e139bf42322eb9d03486b3544",
+    "frame_id": "default",
+    "width": 256,
+    "height": 84,
+    "scale": 1,
+    "render_hash": "5d33451892cfeee86fc10f6fcd36cba758ccc385f4e20868ed26cb331bd93f32",
+    "resources": {
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-mountain-depth-morning/revision/2/view"
+    },
+    "png": "assets/mountain-depth-morning.png",
+    "export": "exports/mountain-depth-morning.json",
+    "description": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-mountain-depth-morning",
+      "name": "Shrine Translation 01 / mountain-depth-morning",
+      "class_id": "environment-structure",
+      "current_revision": 2,
+      "current_revision_hash": "1bb06105ae8a36b98110a46fc9d85b434601922e139bf42322eb9d03486b3544",
+      "canvas": {
+        "width": 256,
+        "height": 84
+      },
+      "palette_id": "v4-shrine-trans01-mountain-depth-morning",
+      "palette_hash": "a0b65bc5e251173d8794d409c477be973794dcd7d0e3f0eaff6676ff596622bd",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-mountain-depth-morning",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-mountain-depth-morning/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-mountain-depth-morning/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-mountain-depth-morning/revision/2/text"
+      }
+    },
+    "png_sha256": "a2883148aa649283efae1a1e3376d51ba7a91a0d9cff33188cbc413276b07565"
+  },
+  {
+    "name": "wooded-frame-night",
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-shrine-trans01-wooded-frame-night",
+    "revision": 2,
+    "revision_hash": "b4f42ebb1c583ff8a72a663b7e864f52784a76a4ca5db53967c9a10b4ca328fc",
+    "frame_id": "default",
+    "width": 256,
+    "height": 160,
+    "scale": 1,
+    "render_hash": "1be24f8e0b8425d390d07581c3bd633756137ec77b4095f9508d6ff26703e8c2",
+    "resources": {
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-wooded-frame-night/revision/2/view"
+    },
+    "png": "assets/wooded-frame-night.png",
+    "export": "exports/wooded-frame-night.json",
+    "description": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-wooded-frame-night",
+      "name": "Shrine Translation 01 / wooded-frame-night",
+      "class_id": "environment-structure",
+      "current_revision": 2,
+      "current_revision_hash": "b4f42ebb1c583ff8a72a663b7e864f52784a76a4ca5db53967c9a10b4ca328fc",
+      "canvas": {
+        "width": 256,
+        "height": 160
+      },
+      "palette_id": "v4-shrine-trans01-wooded-frame-night",
+      "palette_hash": "85e0b778b66c7c3c96ffe2aa60edb57d8e7bf1ee98c49ce535276da693d1b5e9",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-wooded-frame-night",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-wooded-frame-night/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-wooded-frame-night/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-wooded-frame-night/revision/2/text"
+      }
+    },
+    "png_sha256": "a4e8e306c267c55e15e5507d9c2cc321f530efd947d02761681d9f80779f75c6"
+  },
+  {
+    "name": "wooded-frame-morning",
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-shrine-trans01-wooded-frame-morning",
+    "revision": 2,
+    "revision_hash": "643e2505b12d3641234091aa858146a69f746e5a4a48158c97abfe98519213b8",
+    "frame_id": "default",
+    "width": 256,
+    "height": 160,
+    "scale": 1,
+    "render_hash": "7fac94d875be3239c5a6cafa4c2bfefd46bee88fd06894de2ac07c5a8a39dbac",
+    "resources": {
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-wooded-frame-morning/revision/2/view"
+    },
+    "png": "assets/wooded-frame-morning.png",
+    "export": "exports/wooded-frame-morning.json",
+    "description": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-wooded-frame-morning",
+      "name": "Shrine Translation 01 / wooded-frame-morning",
+      "class_id": "environment-structure",
+      "current_revision": 2,
+      "current_revision_hash": "643e2505b12d3641234091aa858146a69f746e5a4a48158c97abfe98519213b8",
+      "canvas": {
+        "width": 256,
+        "height": 160
+      },
+      "palette_id": "v4-shrine-trans01-wooded-frame-morning",
+      "palette_hash": "69c13f1f460f255b687bfa18c4ac9472e059dc14666b4cd4b4e5994e824b339f",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-wooded-frame-morning",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-wooded-frame-morning/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-wooded-frame-morning/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-wooded-frame-morning/revision/2/text"
+      }
+    },
+    "png_sha256": "b77cdbc6dfbe8dad5f51fa5437f47943f80314516286104989979bae91a3efb1"
+  },
+  {
+    "name": "hall-roof-night",
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-shrine-trans01-hall-roof-night",
+    "revision": 2,
+    "revision_hash": "13ee65cb0863170b275dcbb93d156cf794f6bc5bad25b65c39e6248950b2a645",
+    "frame_id": "default",
+    "width": 152,
+    "height": 63,
+    "scale": 1,
+    "render_hash": "08d23109814ca19010faa404a999c072d69b1c0c1b648b5126a2f664d920fd07",
+    "resources": {
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-roof-night/revision/2/view"
+    },
+    "png": "assets/hall-roof-night.png",
+    "export": "exports/hall-roof-night.json",
+    "description": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-hall-roof-night",
+      "name": "Shrine Translation 01 / hall-roof-night",
+      "class_id": "environment-structure",
+      "current_revision": 2,
+      "current_revision_hash": "13ee65cb0863170b275dcbb93d156cf794f6bc5bad25b65c39e6248950b2a645",
+      "canvas": {
+        "width": 152,
+        "height": 63
+      },
+      "palette_id": "v4-shrine-trans01-hall-roof-night",
+      "palette_hash": "b2c13bc276e5ada9a12e9c64e7e5df79f33f555c66deebb3ade84000396bcecf",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-roof-night",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-roof-night/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-roof-night/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-roof-night/revision/2/text"
+      }
+    },
+    "png_sha256": "c40ee4f35492322c4c667be7843ac525fe0128eaa0356f5cfc0340602c6fa354"
+  },
+  {
+    "name": "hall-roof-morning",
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-shrine-trans01-hall-roof-morning",
+    "revision": 2,
+    "revision_hash": "dfb0c1b89fd1f9b9d0ade0eb19c6be40feaa08f087b7cbc489e24bf4ce72f28a",
+    "frame_id": "default",
+    "width": 152,
+    "height": 63,
+    "scale": 1,
+    "render_hash": "78e298bf88b3964621dae97a5523b85953578510c5ea24c64f833801c59fc11a",
+    "resources": {
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-roof-morning/revision/2/view"
+    },
+    "png": "assets/hall-roof-morning.png",
+    "export": "exports/hall-roof-morning.json",
+    "description": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-hall-roof-morning",
+      "name": "Shrine Translation 01 / hall-roof-morning",
+      "class_id": "environment-structure",
+      "current_revision": 2,
+      "current_revision_hash": "dfb0c1b89fd1f9b9d0ade0eb19c6be40feaa08f087b7cbc489e24bf4ce72f28a",
+      "canvas": {
+        "width": 152,
+        "height": 63
+      },
+      "palette_id": "v4-shrine-trans01-hall-roof-morning",
+      "palette_hash": "3a2fd5bff5730b9e480c2b87a9a9df0dc790792b185f85725a610555ad4b0b23",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-roof-morning",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-roof-morning/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-roof-morning/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-roof-morning/revision/2/text"
+      }
+    },
+    "png_sha256": "03653f04c8a1c5e33d42f50ec6e5d18b4db5e073691c7c4a738c610a0d633aa6"
+  },
+  {
+    "name": "hall-body-night",
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-shrine-trans01-hall-body-night",
+    "revision": 2,
+    "revision_hash": "d009a703778649c1632aa1ff241ed576ce0db444d91729635d7810ec8a38c375",
+    "frame_id": "default",
+    "width": 132,
+    "height": 49,
+    "scale": 1,
+    "render_hash": "446d379ae83e6581e0f3240b35b64262fa5a8567cadb997b72a208706b135f46",
+    "resources": {
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-body-night/revision/2/view"
+    },
+    "png": "assets/hall-body-night.png",
+    "export": "exports/hall-body-night.json",
+    "description": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-hall-body-night",
+      "name": "Shrine Translation 01 / hall-body-night",
+      "class_id": "environment-structure",
+      "current_revision": 2,
+      "current_revision_hash": "d009a703778649c1632aa1ff241ed576ce0db444d91729635d7810ec8a38c375",
+      "canvas": {
+        "width": 132,
+        "height": 49
+      },
+      "palette_id": "v4-shrine-trans01-hall-body-night",
+      "palette_hash": "99aecaf14ecd14add86894cb75dafa9312a0862f158d55692e656f48554005c8",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-body-night",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-body-night/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-body-night/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-body-night/revision/2/text"
+      }
+    },
+    "png_sha256": "9caaa1547a0857942474cbc6cfb85897af4a1e0512acfbfea0994ffd8ff5b96d"
+  },
+  {
+    "name": "hall-body-morning",
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-shrine-trans01-hall-body-morning",
+    "revision": 2,
+    "revision_hash": "774a6ec32eab5780fcbbec3a6fe134d09606248cb0717b0513d2cab54e5a5f38",
+    "frame_id": "default",
+    "width": 132,
+    "height": 49,
+    "scale": 1,
+    "render_hash": "b47eb93aa93dfd01cecf2d8e75af887c829163929620e68bd83a3f1e94a790c4",
+    "resources": {
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-body-morning/revision/2/view"
+    },
+    "png": "assets/hall-body-morning.png",
+    "export": "exports/hall-body-morning.json",
+    "description": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-hall-body-morning",
+      "name": "Shrine Translation 01 / hall-body-morning",
+      "class_id": "environment-structure",
+      "current_revision": 2,
+      "current_revision_hash": "774a6ec32eab5780fcbbec3a6fe134d09606248cb0717b0513d2cab54e5a5f38",
+      "canvas": {
+        "width": 132,
+        "height": 49
+      },
+      "palette_id": "v4-shrine-trans01-hall-body-morning",
+      "palette_hash": "94483bbdfeeedbdcb172994dafe5f3a33e33427161c6d473ca03653745b965aa",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-body-morning",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-body-morning/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-body-morning/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-body-morning/revision/2/text"
+      }
+    },
+    "png_sha256": "bef054a1d0e26622ce61f4d7b8c2af4023dc5ea5408838786e4b9d43c77d9d43"
+  },
+  {
+    "name": "courtyard-night",
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-shrine-trans01-courtyard-night",
+    "revision": 2,
+    "revision_hash": "7a9526a4e7d3e5ba1fa056b63caafb5573eee7fb894bf7af48bd17aeea9419f6",
+    "frame_id": "default",
+    "width": 256,
+    "height": 93,
+    "scale": 1,
+    "render_hash": "447b7b377bcf52c3f1e24f48d6189c3cb617261ca91811fb9f9334d06115f708",
+    "resources": {
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-courtyard-night/revision/2/view"
+    },
+    "png": "assets/courtyard-night.png",
+    "export": "exports/courtyard-night.json",
+    "description": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-courtyard-night",
+      "name": "Shrine Translation 01 / courtyard-night",
+      "class_id": "environment-structure",
+      "current_revision": 2,
+      "current_revision_hash": "7a9526a4e7d3e5ba1fa056b63caafb5573eee7fb894bf7af48bd17aeea9419f6",
+      "canvas": {
+        "width": 256,
+        "height": 93
+      },
+      "palette_id": "v4-shrine-trans01-courtyard-night",
+      "palette_hash": "6bdbb78ec6e8d01daf2097e9e3e4dfef71b943cd6f399347172d52a6d09545b7",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-courtyard-night",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-courtyard-night/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-courtyard-night/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-courtyard-night/revision/2/text"
+      }
+    },
+    "png_sha256": "1551cbe1823ff77c71cdb3d683e8f9a508997f0fb6593e0b9a63526873cebe88"
+  },
+  {
+    "name": "courtyard-morning",
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-shrine-trans01-courtyard-morning",
+    "revision": 2,
+    "revision_hash": "ef2a2fc46930a40d8ad0c81b434ad57edb9efa9c17e71ec28007a756a20cdd79",
+    "frame_id": "default",
+    "width": 256,
+    "height": 93,
+    "scale": 1,
+    "render_hash": "1f4134d0a196157a018459ab08f21c3bc111a487a566c6431d723e29bdaaf206",
+    "resources": {
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-courtyard-morning/revision/2/view"
+    },
+    "png": "assets/courtyard-morning.png",
+    "export": "exports/courtyard-morning.json",
+    "description": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-courtyard-morning",
+      "name": "Shrine Translation 01 / courtyard-morning",
+      "class_id": "environment-structure",
+      "current_revision": 2,
+      "current_revision_hash": "ef2a2fc46930a40d8ad0c81b434ad57edb9efa9c17e71ec28007a756a20cdd79",
+      "canvas": {
+        "width": 256,
+        "height": 93
+      },
+      "palette_id": "v4-shrine-trans01-courtyard-morning",
+      "palette_hash": "9781d102c465a9fee9e3f3a2ba88a9d0791e26b0ec906fa5fc7f7f1812e5662c",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-courtyard-morning",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-courtyard-morning/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-courtyard-morning/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-courtyard-morning/revision/2/text"
+      }
+    },
+    "png_sha256": "15b6acc4f5418d872d4c2fe72590695426ffb663fb523ad01f20aecf15a6ec7f"
+  },
+  {
+    "name": "approach-stairs-night",
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-shrine-trans01-approach-stairs-night",
+    "revision": 2,
+    "revision_hash": "26fb573efb88f5fb779126b02fd65c3262e1eb1edaf6f3495ce9f5afa30ad7c8",
+    "frame_id": "default",
+    "width": 82,
+    "height": 26,
+    "scale": 1,
+    "render_hash": "d2a84db8c5a9b09aa126c0dfbb6f98253468824b94ff137648d6f146978abbdb",
+    "resources": {
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-approach-stairs-night/revision/2/view"
+    },
+    "png": "assets/approach-stairs-night.png",
+    "export": "exports/approach-stairs-night.json",
+    "description": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-approach-stairs-night",
+      "name": "Shrine Translation 01 / approach-stairs-night",
+      "class_id": "environment-structure",
+      "current_revision": 2,
+      "current_revision_hash": "26fb573efb88f5fb779126b02fd65c3262e1eb1edaf6f3495ce9f5afa30ad7c8",
+      "canvas": {
+        "width": 82,
+        "height": 26
+      },
+      "palette_id": "v4-shrine-trans01-approach-stairs-night",
+      "palette_hash": "d8f6a58539824446a97f1cb51164cb2e356fa0655ae920fa987948a5fab0855a",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-approach-stairs-night",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-approach-stairs-night/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-approach-stairs-night/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-approach-stairs-night/revision/2/text"
+      }
+    },
+    "png_sha256": "452b9ee98252b0316f3632d9378da7511a32409ba9ab8c685eb6f8ad72c3cebc"
+  },
+  {
+    "name": "approach-stairs-morning",
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-shrine-trans01-approach-stairs-morning",
+    "revision": 2,
+    "revision_hash": "9f9a6de07d6614a9982f65de4d71ec8e390240bc4b8e74f44607f043cc1d2c79",
+    "frame_id": "default",
+    "width": 82,
+    "height": 26,
+    "scale": 1,
+    "render_hash": "02964042d8fa819afa5408dfe5bfa8548ea00a58099b7b6eab5fe37fa0437e9e",
+    "resources": {
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-approach-stairs-morning/revision/2/view"
+    },
+    "png": "assets/approach-stairs-morning.png",
+    "export": "exports/approach-stairs-morning.json",
+    "description": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-approach-stairs-morning",
+      "name": "Shrine Translation 01 / approach-stairs-morning",
+      "class_id": "environment-structure",
+      "current_revision": 2,
+      "current_revision_hash": "9f9a6de07d6614a9982f65de4d71ec8e390240bc4b8e74f44607f043cc1d2c79",
+      "canvas": {
+        "width": 82,
+        "height": 26
+      },
+      "palette_id": "v4-shrine-trans01-approach-stairs-morning",
+      "palette_hash": "6c17bb7a115d927c2ee6f51f22357fde09e05d536af7bddb106ff8d264de6fa0",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-approach-stairs-morning",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-approach-stairs-morning/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-approach-stairs-morning/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-approach-stairs-morning/revision/2/text"
+      }
+    },
+    "png_sha256": "d63039e265cb52fcd424d5a2351e18beef08c3514191d395be5a2ed08bb29b7c"
+  },
+  {
+    "name": "torii-night",
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-shrine-trans01-torii-night",
+    "revision": 2,
+    "revision_hash": "aebd78843cfa695ad017cb09402183957163abfe4d009a7a5ea01c7c4e0031e2",
+    "frame_id": "default",
+    "width": 87,
+    "height": 116,
+    "scale": 1,
+    "render_hash": "d923e19d41b19e5777851a1669aca7443acf075a377d26fc5f7759475f9a5bf0",
+    "resources": {
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-torii-night/revision/2/view"
+    },
+    "png": "assets/torii-night.png",
+    "export": "exports/torii-night.json",
+    "description": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-torii-night",
+      "name": "Shrine Translation 01 / torii-night",
+      "class_id": "environment-structure",
+      "current_revision": 2,
+      "current_revision_hash": "aebd78843cfa695ad017cb09402183957163abfe4d009a7a5ea01c7c4e0031e2",
+      "canvas": {
+        "width": 87,
+        "height": 116
+      },
+      "palette_id": "v4-shrine-trans01-torii-night",
+      "palette_hash": "e5c11403c5a6eb2b075cafd54ab79a2d41b567a2adb5c62c12e83ec4f8d79ed6",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-torii-night",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-torii-night/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-torii-night/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-torii-night/revision/2/text"
+      }
+    },
+    "png_sha256": "4fdac4ef0dab027c053e4d457bd28f7727abee2793a97c8ad9e976ab2c5fdbb9"
+  },
+  {
+    "name": "torii-morning",
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-shrine-trans01-torii-morning",
+    "revision": 2,
+    "revision_hash": "805f8d3b5ca16e3066747cc5f01d8b9fe478980dc82412f5ff9d016cdd865721",
+    "frame_id": "default",
+    "width": 87,
+    "height": 116,
+    "scale": 1,
+    "render_hash": "22a9bb86851f6e8bc4b42938ed6d552200d0584a56cab96426776b33b515020b",
+    "resources": {
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-torii-morning/revision/2/view"
+    },
+    "png": "assets/torii-morning.png",
+    "export": "exports/torii-morning.json",
+    "description": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-torii-morning",
+      "name": "Shrine Translation 01 / torii-morning",
+      "class_id": "environment-structure",
+      "current_revision": 2,
+      "current_revision_hash": "805f8d3b5ca16e3066747cc5f01d8b9fe478980dc82412f5ff9d016cdd865721",
+      "canvas": {
+        "width": 87,
+        "height": 116
+      },
+      "palette_id": "v4-shrine-trans01-torii-morning",
+      "palette_hash": "d9c1997403457a1cd9dfd69972bab4a524b1f8e4584533b39ffc76e8b22d25f1",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-torii-morning",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-torii-morning/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-torii-morning/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-torii-morning/revision/2/text"
+      }
+    },
+    "png_sha256": "6ba0303423df5e797d5be9c4d5e7c4f10c859137207a8e1b7927e1142cadde4b"
+  },
+  {
+    "name": "stone-lantern-night",
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-shrine-trans01-stone-lantern-night",
+    "revision": 2,
+    "revision_hash": "b8e9781e5f157306b7ac579987c78dd30e939cc64cddeed872a89bcaafe220bd",
+    "frame_id": "default",
+    "width": 24,
+    "height": 49,
+    "scale": 1,
+    "render_hash": "f0dd8e598061fdf68b54b879799071e021fc96115ff4a91cf915b95ed275acfb",
+    "resources": {
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-stone-lantern-night/revision/2/view"
+    },
+    "png": "assets/stone-lantern-night.png",
+    "export": "exports/stone-lantern-night.json",
+    "description": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-stone-lantern-night",
+      "name": "Shrine Translation 01 / stone-lantern-night",
+      "class_id": "environment-structure",
+      "current_revision": 2,
+      "current_revision_hash": "b8e9781e5f157306b7ac579987c78dd30e939cc64cddeed872a89bcaafe220bd",
+      "canvas": {
+        "width": 24,
+        "height": 49
+      },
+      "palette_id": "v4-shrine-trans01-stone-lantern-night",
+      "palette_hash": "05ffc65865a5168a33f083e836397530789db41a13f3c1873f90afa740154687",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-stone-lantern-night",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-stone-lantern-night/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-stone-lantern-night/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-stone-lantern-night/revision/2/text"
+      }
+    },
+    "png_sha256": "73f6630508f245feab7bc593114625215ce08e57c2cc93ea8961b207d26a1769"
+  },
+  {
+    "name": "stone-lantern-morning",
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-shrine-trans01-stone-lantern-morning",
+    "revision": 2,
+    "revision_hash": "13931e0614bb3fa0beeaab88b6aa60a90359ecff4912b9b9f09390c5182874cc",
+    "frame_id": "default",
+    "width": 24,
+    "height": 49,
+    "scale": 1,
+    "render_hash": "40547f0f08d5e58228780a4b8bf24b3a1c2630416e7367ac7eb4db9235b7f800",
+    "resources": {
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-stone-lantern-morning/revision/2/view"
+    },
+    "png": "assets/stone-lantern-morning.png",
+    "export": "exports/stone-lantern-morning.json",
+    "description": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-stone-lantern-morning",
+      "name": "Shrine Translation 01 / stone-lantern-morning",
+      "class_id": "environment-structure",
+      "current_revision": 2,
+      "current_revision_hash": "13931e0614bb3fa0beeaab88b6aa60a90359ecff4912b9b9f09390c5182874cc",
+      "canvas": {
+        "width": 24,
+        "height": 49
+      },
+      "palette_id": "v4-shrine-trans01-stone-lantern-morning",
+      "palette_hash": "c2f6ba21b1578ab766b4edcfbf25fc0edb5518a228a0cd9967db0f542e21db72",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-stone-lantern-morning",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-stone-lantern-morning/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-stone-lantern-morning/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-stone-lantern-morning/revision/2/text"
+      }
+    },
+    "png_sha256": "0eac91e0c109108c6c52c7727c20ec5880d4d4fa55262947cf7826937cea49e0"
+  },
+  {
+    "name": "donation-box-night",
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-shrine-trans01-donation-box-night",
+    "revision": 2,
+    "revision_hash": "48c4174c816270dbf2f4595fda19a748ad98749d083e9efeebb8eabf16752a77",
+    "frame_id": "default",
+    "width": 32,
+    "height": 22,
+    "scale": 1,
+    "render_hash": "30e58f3b50588a9d9414ba1374f435200bebe75ab10fce6c5e312a427b61568d",
+    "resources": {
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-donation-box-night/revision/2/view"
+    },
+    "png": "assets/donation-box-night.png",
+    "export": "exports/donation-box-night.json",
+    "description": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-donation-box-night",
+      "name": "Shrine Translation 01 / donation-box-night",
+      "class_id": "environment-structure",
+      "current_revision": 2,
+      "current_revision_hash": "48c4174c816270dbf2f4595fda19a748ad98749d083e9efeebb8eabf16752a77",
+      "canvas": {
+        "width": 32,
+        "height": 22
+      },
+      "palette_id": "v4-shrine-trans01-donation-box-night",
+      "palette_hash": "9d78adba8a7eef9a589b732d3b48a7c8f7020784633daf21d8482ed4aeba9092",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-donation-box-night",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-donation-box-night/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-donation-box-night/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-donation-box-night/revision/2/text"
+      }
+    },
+    "png_sha256": "6cccf8f9d5dc2a722b039cb3c3293638a031dab825200a8169bc04053e73857d"
+  },
+  {
+    "name": "donation-box-morning",
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-shrine-trans01-donation-box-morning",
+    "revision": 2,
+    "revision_hash": "a80ade78dde049ee167801bb7c435d5854775b4c3d57eb991155832aa82758ee",
+    "frame_id": "default",
+    "width": 32,
+    "height": 22,
+    "scale": 1,
+    "render_hash": "66c67dba9674cacb7b18e5e6b99f0ecf9c6ffbbd47a22558ff9b69a58e6cc10c",
+    "resources": {
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-donation-box-morning/revision/2/view"
+    },
+    "png": "assets/donation-box-morning.png",
+    "export": "exports/donation-box-morning.json",
+    "description": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-donation-box-morning",
+      "name": "Shrine Translation 01 / donation-box-morning",
+      "class_id": "environment-structure",
+      "current_revision": 2,
+      "current_revision_hash": "a80ade78dde049ee167801bb7c435d5854775b4c3d57eb991155832aa82758ee",
+      "canvas": {
+        "width": 32,
+        "height": 22
+      },
+      "palette_id": "v4-shrine-trans01-donation-box-morning",
+      "palette_hash": "62cdc032e8199b548f342155ce2811eb0e864ccef4a91cfe92210e3bd29a65a1",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-donation-box-morning",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-donation-box-morning/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-donation-box-morning/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-donation-box-morning/revision/2/text"
+      }
+    },
+    "png_sha256": "047587dc24db35244160cf15e97d213ef16b0ab540affa6123aa6874f2f74916"
+  },
+  {
+    "name": "foreground-banks-night",
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-shrine-trans01-foreground-banks-night",
+    "revision": 2,
+    "revision_hash": "5b35243a8e94dc0e8664f1a46e7198bcac2e4c4d7f997d8df11466c3a233dc3a",
+    "frame_id": "default",
+    "width": 256,
+    "height": 44,
+    "scale": 1,
+    "render_hash": "f37ae1d446e3178b609d750b3ac3127d50c558c85bf127166d76158aee81c36f",
+    "resources": {
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-foreground-banks-night/revision/2/view"
+    },
+    "png": "assets/foreground-banks-night.png",
+    "export": "exports/foreground-banks-night.json",
+    "description": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-foreground-banks-night",
+      "name": "Shrine Translation 01 / foreground-banks-night",
+      "class_id": "environment-structure",
+      "current_revision": 2,
+      "current_revision_hash": "5b35243a8e94dc0e8664f1a46e7198bcac2e4c4d7f997d8df11466c3a233dc3a",
+      "canvas": {
+        "width": 256,
+        "height": 44
+      },
+      "palette_id": "v4-shrine-trans01-foreground-banks-night",
+      "palette_hash": "876444fbdee696c48e9f1b4df463d2fe84adaa6e9ac308dd7436e7606ef2f82e",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-foreground-banks-night",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-foreground-banks-night/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-foreground-banks-night/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-foreground-banks-night/revision/2/text"
+      }
+    },
+    "png_sha256": "baf75dd4ff85862669f66f4dd2ea9574e91280c6c0538acfdf733561566c5f41"
+  },
+  {
+    "name": "foreground-banks-morning",
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-shrine-trans01-foreground-banks-morning",
+    "revision": 2,
+    "revision_hash": "6071010838f37b43bde4546363b1abfda147b5cecf3727f0f7cab22249092e80",
+    "frame_id": "default",
+    "width": 256,
+    "height": 44,
+    "scale": 1,
+    "render_hash": "629ccce86ab5dfd0b8afda6ff6cca97ad03180d1bb39eb535324162547216078",
+    "resources": {
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-foreground-banks-morning/revision/2/view"
+    },
+    "png": "assets/foreground-banks-morning.png",
+    "export": "exports/foreground-banks-morning.json",
+    "description": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-foreground-banks-morning",
+      "name": "Shrine Translation 01 / foreground-banks-morning",
+      "class_id": "environment-structure",
+      "current_revision": 2,
+      "current_revision_hash": "6071010838f37b43bde4546363b1abfda147b5cecf3727f0f7cab22249092e80",
+      "canvas": {
+        "width": 256,
+        "height": 44
+      },
+      "palette_id": "v4-shrine-trans01-foreground-banks-morning",
+      "palette_hash": "412e318def9fb7953dd0d8ab8cf575660a05e3070e7e2d00d94ffdd348637b54",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-foreground-banks-morning",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-foreground-banks-morning/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-foreground-banks-morning/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-foreground-banks-morning/revision/2/text"
+      }
+    },
+    "png_sha256": "eacea7f161f063e151ca742354d78b038688ddb8c67e775b5802756ab179f8f3"
+  }
+]

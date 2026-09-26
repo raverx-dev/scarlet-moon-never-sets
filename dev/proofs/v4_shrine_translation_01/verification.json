@@ -1,0 +1,226 @@
+{
+  "status": "PASS",
+  "base": "d7054d2b9b111ff711f44cc3ee5b71268aca6ed8",
+  "canonical_assets": 22,
+  "assets": [
+    {
+      "asset_id": "v4-shrine-trans01-sky-night",
+      "revision": 2,
+      "revision_hash": "e4c5e4094128fffbcc9cb348a402b0bcc248aa914bb2df8a9ab0d32937a45cf9",
+      "png_sha256": "b6e6dc65819938d0e04a248419f9014ae2e6b14a51905c9fb2278db8b0cfee52",
+      "export_png_differing_pixels": 0,
+      "authoring_rows_exact": true
+    },
+    {
+      "asset_id": "v4-shrine-trans01-sky-morning",
+      "revision": 2,
+      "revision_hash": "59906de74d7e3677bdfea98e50fd863bb891c99c9dab289414038d17791bf3ba",
+      "png_sha256": "39b717af8b0bdc8ff86012d4717f9afa24c9c683d948c67a33f583547d48db5e",
+      "export_png_differing_pixels": 0,
+      "authoring_rows_exact": true
+    },
+    {
+      "asset_id": "v4-shrine-trans01-mountain-depth-night",
+      "revision": 2,
+      "revision_hash": "2888874a3dcfeb34b2f6117e62c66af68e33ee0fa8c542a6869706bf8007ccc6",
+      "png_sha256": "6a7cd4a9ffed9514ca41af2d0d77bea0ac11300eb5f414bb95235522a8a18a4f",
+      "export_png_differing_pixels": 0,
+      "authoring_rows_exact": true
+    },
+    {
+      "asset_id": "v4-shrine-trans01-mountain-depth-morning",
+      "revision": 2,
+      "revision_hash": "1bb06105ae8a36b98110a46fc9d85b434601922e139bf42322eb9d03486b3544",
+      "png_sha256": "a2883148aa649283efae1a1e3376d51ba7a91a0d9cff33188cbc413276b07565",
+      "export_png_differing_pixels": 0,
+      "authoring_rows_exact": true
+    },
+    {
+      "asset_id": "v4-shrine-trans01-wooded-frame-night",
+      "revision": 2,
+      "revision_hash": "b4f42ebb1c583ff8a72a663b7e864f52784a76a4ca5db53967c9a10b4ca328fc",
+      "png_sha256": "a4e8e306c267c55e15e5507d9c2cc321f530efd947d02761681d9f80779f75c6",
+      "export_png_differing_pixels": 0,
+      "authoring_rows_exact": true
+    },
+    {
+      "asset_id": "v4-shrine-trans01-wooded-frame-morning",
+      "revision": 2,
+      "revision_hash": "643e2505b12d3641234091aa858146a69f746e5a4a48158c97abfe98519213b8",
+      "png_sha256": "b77cdbc6dfbe8dad5f51fa5437f47943f80314516286104989979bae91a3efb1",
+      "export_png_differing_pixels": 0,
+      "authoring_rows_exact": true
+    },
+    {
+      "asset_id": "v4-shrine-trans01-hall-roof-night",
+      "revision": 2,
+      "revision_hash": "13ee65cb0863170b275dcbb93d156cf794f6bc5bad25b65c39e6248950b2a645",
+      "png_sha256": "c40ee4f35492322c4c667be7843ac525fe0128eaa0356f5cfc0340602c6fa354",
+      "export_png_differing_pixels": 0,
+      "authoring_rows_exact": true
+    },
+    {
+      "asset_id": "v4-shrine-trans01-hall-roof-morning",
+      "revision": 2,
+      "revision_hash": "dfb0c1b89fd1f9b9d0ade0eb19c6be40feaa08f087b7cbc489e24bf4ce72f28a",
+      "png_sha256": "03653f04c8a1c5e33d42f50ec6e5d18b4db5e073691c7c4a738c610a0d633aa6",
+      "export_png_differing_pixels": 0,
+      "authoring_rows_exact": true
+    },
+    {
+      "asset_id": "v4-shrine-trans01-hall-body-night",
+      "revision": 2,
+      "revision_hash": "d009a703778649c1632aa1ff241ed576ce0db444d91729635d7810ec8a38c375",
+      "png_sha256": "9caaa1547a0857942474cbc6cfb85897af4a1e0512acfbfea0994ffd8ff5b96d",
+      "export_png_differing_pixels": 0,
+      "authoring_rows_exact": true
+    },
+    {
+      "asset_id": "v4-shrine-trans01-hall-body-morning",
+      "revision": 2,
+      "revision_hash": "774a6ec32eab5780fcbbec3a6fe134d09606248cb0717b0513d2cab54e5a5f38",
+      "png_sha256": "bef054a1d0e26622ce61f4d7b8c2af4023dc5ea5408838786e4b9d43c77d9d43",
+      "export_png_differing_pixels": 0,
+      "authoring_rows_exact": true
+    },
+    {
+      "asset_id": "v4-shrine-trans01-courtyard-night",
+      "revision": 2,
+      "revision_hash": "7a9526a4e7d3e5ba1fa056b63caafb5573eee7fb894bf7af48bd17aeea9419f6",
+      "png_sha256": "1551cbe1823ff77c71cdb3d683e8f9a508997f0fb6593e0b9a63526873cebe88",
+      "export_png_differing_pixels": 0,
+      "authoring_rows_exact": true
+    },
+    {
+      "asset_id": "v4-shrine-trans01-courtyard-morning",
+      "revision": 2,
+      "revision_hash": "ef2a2fc46930a40d8ad0c81b434ad57edb9efa9c17e71ec28007a756a20cdd79",
+      "png_sha256": "15b6acc4f5418d872d4c2fe72590695426ffb663fb523ad01f20aecf15a6ec7f",
+      "export_png_differing_pixels": 0,
+      "authoring_rows_exact": true
+    },
+    {
+      "asset_id": "v4-shrine-trans01-approach-stairs-night",
+      "revision": 2,
+      "revision_hash": "26fb573efb88f5fb779126b02fd65c3262e1eb1edaf6f3495ce9f5afa30ad7c8",
+      "png_sha256": "452b9ee98252b0316f3632d9378da7511a32409ba9ab8c685eb6f8ad72c3cebc",
+      "export_png_differing_pixels": 0,
+      "authoring_rows_exact": true
+    },
+    {
+      "asset_id": "v4-shrine-trans01-approach-stairs-morning",
+      "revision": 2,
+      "revision_hash": "9f9a6de07d6614a9982f65de4d71ec8e390240bc4b8e74f44607f043cc1d2c79",
+      "png_sha256": "d63039e265cb52fcd424d5a2351e18beef08c3514191d395be5a2ed08bb29b7c",
+      "export_png_differing_pixels": 0,
+      "authoring_rows_exact": true
+    },
+    {
+      "asset_id": "v4-shrine-trans01-torii-night",
+      "revision": 2,
+      "revision_hash": "aebd78843cfa695ad017cb09402183957163abfe4d009a7a5ea01c7c4e0031e2",
+      "png_sha256": "4fdac4ef0dab027c053e4d457bd28f7727abee2793a97c8ad9e976ab2c5fdbb9",
+      "export_png_differing_pixels": 0,
+      "authoring_rows_exact": true
+    },
+    {
+      "asset_id": "v4-shrine-trans01-torii-morning",
+      "revision": 2,
+      "revision_hash": "805f8d3b5ca16e3066747cc5f01d8b9fe478980dc82412f5ff9d016cdd865721",
+      "png_sha256": "6ba0303423df5e797d5be9c4d5e7c4f10c859137207a8e1b7927e1142cadde4b",
+      "export_png_differing_pixels": 0,
+      "authoring_rows_exact": true
+    },
+    {
+      "asset_id": "v4-shrine-trans01-stone-lantern-night",
+      "revision": 2,
+      "revision_hash": "b8e9781e5f157306b7ac579987c78dd30e939cc64cddeed872a89bcaafe220bd",
+      "png_sha256": "73f6630508f245feab7bc593114625215ce08e57c2cc93ea8961b207d26a1769",
+      "export_png_differing_pixels": 0,
+      "authoring_rows_exact": true
+    },
+    {
+      "asset_id": "v4-shrine-trans01-stone-lantern-morning",
+      "revision": 2,
+      "revision_hash": "13931e0614bb3fa0beeaab88b6aa60a90359ecff4912b9b9f09390c5182874cc",
+      "png_sha256": "0eac91e0c109108c6c52c7727c20ec5880d4d4fa55262947cf7826937cea49e0",
+      "export_png_differing_pixels": 0,
+      "authoring_rows_exact": true
+    },
+    {
+      "asset_id": "v4-shrine-trans01-donation-box-night",
+      "revision": 2,
+      "revision_hash": "48c4174c816270dbf2f4595fda19a748ad98749d083e9efeebb8eabf16752a77",
+      "png_sha256": "6cccf8f9d5dc2a722b039cb3c3293638a031dab825200a8169bc04053e73857d",
+      "export_png_differing_pixels": 0,
+      "authoring_rows_exact": true
+    },
+    {
+      "asset_id": "v4-shrine-trans01-donation-box-morning",
+      "revision": 2,
+      "revision_hash": "a80ade78dde049ee167801bb7c435d5854775b4c3d57eb991155832aa82758ee",
+      "png_sha256": "047587dc24db35244160cf15e97d213ef16b0ab540affa6123aa6874f2f74916",
+      "export_png_differing_pixels": 0,
+      "authoring_rows_exact": true
+    },
+    {
+      "asset_id": "v4-shrine-trans01-foreground-banks-night",
+      "revision": 2,
+      "revision_hash": "5b35243a8e94dc0e8664f1a46e7198bcac2e4c4d7f997d8df11466c3a233dc3a",
+      "png_sha256": "baf75dd4ff85862669f66f4dd2ea9574e91280c6c0538acfdf733561566c5f41",
+      "export_png_differing_pixels": 0,
+      "authoring_rows_exact": true
+    },
+    {
+      "asset_id": "v4-shrine-trans01-foreground-banks-morning",
+      "revision": 2,
+      "revision_hash": "6071010838f37b43bde4546363b1abfda147b5cecf3727f0f7cab22249092e80",
+      "png_sha256": "eacea7f161f063e151ca742354d78b038688ddb8c67e775b5802756ab179f8f3",
+      "export_png_differing_pixels": 0,
+      "authoring_rows_exact": true
+    }
+  ],
+  "scenes": {
+    "night": {
+      "size": [
+        256,
+        240
+      ],
+      "rgba_sha256": "f6232d7489ac80453222700b29354e0003ae8272a824d08beaad0f1e4112dd05",
+      "deterministic_differing_pixels": 0,
+      "opaque": true,
+      "layout": "night_layout.json"
+    },
+    "morning": {
+      "size": [
+        256,
+        240
+      ],
+      "rgba_sha256": "552aef0a1cb6ea600ce8b491431e0600d65ffb70be2c4573181e5327c8bf8212",
+      "deterministic_differing_pixels": 0,
+      "opaque": true,
+      "layout": "morning_layout.json"
+    }
+  },
+  "references": {
+    "night": {
+      "sha256": "2fa833ed6c3ebb2fca995d66e70e8b59a7ab88cefb761cc0e301f99edbb7e769",
+      "size": [
+        1448,
+        1086
+      ]
+    },
+    "morning": {
+      "sha256": "fce5623f68b48b5ea89daa7209f64429d1b872fbb4fd44c99c47297dd5e94471",
+      "size": [
+        1448,
+        1086
+      ]
+    }
+  },
+  "protected_files_unchanged": true,
+  "recovered_live_inventory_matches": true,
+  "witness_dimensions_and_nearest_neighbor": "PASS",
+  "base_tracked_files_verified": 23,
+  "artistic_acceptance": "OWNER REVIEW REQUIRED; technical checks do not confer acceptance"
+}
