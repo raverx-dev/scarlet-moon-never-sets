@@ -1,0 +1,526 @@
+{
+  "schema": "scarlet-moon-v4-character-reference-packets/v1",
+  "status": "OWNER_MANAGER_REVIEW_REQUIRED",
+  "governing_issue": 42,
+  "parent_issue": 28,
+  "master_plan_issue": 24,
+  "baseline": {
+    "branch": "main",
+    "sha": "d2586870b92551e931f784631ddfc891208df35b"
+  },
+  "reconnaissance": {
+    "path": "dev/reviews/v4_character_art_reconnaissance/Scarlet-Moon-Character-Review-2026-09-24.html",
+    "git_blob_sha": "e86e9a8641356daf79fe0ae7ad80da3a25d0fdd4",
+    "sha256": "7c66f576c6ef5ce12958dd3b99bfb98bc9b60ad34454f9f189775735af0b12bc",
+    "size_bytes": 924648
+  },
+  "source": {
+    "path": "versions/v4/index.html",
+    "sha": "d2586870b92551e931f784631ddfc891208df35b"
+  },
+  "authority_order": [
+    "scarlet_moon_source_and_recon",
+    "official_touhou_reference_vocabulary",
+    "owner_approved_v4_design_sheet",
+    "late_famicom_nes_translation_target"
+  ],
+  "design_sheet_policy": "Owner-approved binaries not copied into repo; exact supplied filename, dimensions and SHA-256 identify each input.",
+  "reimu_rejected_r2": {
+    "disposition": "rejected_evidence_only",
+    "reason": [
+      "over-simplified identity/silhouette",
+      "weak state differentiation",
+      "insufficient late-Famicom/NES refinement"
+    ],
+    "baseline": false
+  },
+  "orientation_note": {
+    "character": "Reimu",
+    "issue42_request": "include official rear-facing/player-shooter reference vocabulary",
+    "live_source_contract": "current Scarlet Moon gameplay remains side-facing",
+    "resolution": "document both; do not change canonical orientation without explicit Owner/Manager direction"
+  },
+  "packets": {
+    "reimu": {
+      "name": "Reimu Hakurei",
+      "status": "complete_review_ready",
+      "packet_path": "dev/reviews/v4_character_reference_packets/reimu/README.md",
+      "approved_sheet": {
+        "filename": "image-gen-1(20260927-092333).png",
+        "dimensions": "1122×1402",
+        "sha256": "2eb22de905cd9b4738f4b5540fd9f6c8167c828ecfb865becc05171ef9435f7a",
+        "committed": false
+      },
+      "coverage": [
+        {
+          "asset": "reimu",
+          "native_canvas": "16×24",
+          "use": "Gameplay player in every stage",
+          "meaning": "Idle A",
+          "reuse_class": "Reusable gameplay body",
+          "notes": "Idle cadence via (frame>>4)&1; normal gohei layered separately at [8,-5]. Preserve player coordinate/hitbox contract and existing clipping.",
+          "source_line": 45
+        },
+        {
+          "asset": "reimuB",
+          "native_canvas": "16×24",
+          "use": "Gameplay player in every stage",
+          "meaning": "Idle B",
+          "reuse_class": "Reusable gameplay body",
+          "notes": "Same body scale/anchor as idle A; normal gohei offset [7,-5].",
+          "source_line": 71
+        },
+        {
+          "asset": "reimuFocus",
+          "native_canvas": "16×24",
+          "use": "Gameplay while focus is held",
+          "meaning": "Focused stance",
+          "reuse_class": "Reusable gameplay body",
+          "notes": "State override; normal gohei offset [8,-5]. Do not change movement or hitbox to fit art.",
+          "source_line": 97
+        },
+        {
+          "asset": "reimuFire",
+          "native_canvas": "16×24",
+          "use": "Gameplay while firing and alive",
+          "meaning": "Firing stance",
+          "reuse_class": "Reusable gameplay body",
+          "notes": "State override; fire gohei layered at [9,-4].",
+          "source_line": 123
+        },
+        {
+          "asset": "reimuGohei",
+          "native_canvas": "10×14",
+          "use": "Layered with idle A/B and focus",
+          "meaning": "Normal held purification rod",
+          "reuse_class": "Reusable independent prop",
+          "notes": "Keep body anchor independent of asymmetric prop; may clip at playfield edges under current movement bounds.",
+          "source_line": 149
+        },
+        {
+          "asset": "reimuGoheiFire",
+          "native_canvas": "12×14",
+          "use": "Layered with reimuFire",
+          "meaning": "Firing gohei state",
+          "reuse_class": "Reusable independent prop",
+          "notes": "Separate asset/extent from normal gohei; do not fuse into body.",
+          "source_line": 165
+        },
+        {
+          "asset": "reimuStoryA",
+          "native_canvas": "24×32",
+          "use": "Intro/opening, dialogue staging, gate transit, defeat staging, ending and credits",
+          "meaning": "Story idle A",
+          "reuse_class": "Reusable story body",
+          "notes": "Full 256×240 presentation family; alternates on the same frame parity.",
+          "source_line": 231
+        },
+        {
+          "asset": "reimuStoryB",
+          "native_canvas": "24×32",
+          "use": "Same story/presentation uses",
+          "meaning": "Story idle B",
+          "reuse_class": "Reusable story body",
+          "notes": "Stable story-body scale and anchor across A/B.",
+          "source_line": 265
+        },
+        {
+          "asset": "reimuStoryTalkA",
+          "native_canvas": "24×32",
+          "use": "Dialogue while Reimu is active speaker and text is printing",
+          "meaning": "Talking A",
+          "reuse_class": "Reusable story body",
+          "notes": "Selected by storyReimu; do not turn text timing into animation timing.",
+          "source_line": 299
+        },
+        {
+          "asset": "reimuStoryTalkB",
+          "native_canvas": "24×32",
+          "use": "Same speaking use",
+          "meaning": "Talking B",
+          "reuse_class": "Reusable story body",
+          "notes": "Must remain recognizably the same 24×32 body family.",
+          "source_line": 333
+        },
+        {
+          "asset": "p_reimu",
+          "native_canvas": "32×32",
+          "use": "Dialogue portrait bezel",
+          "meaning": "Portrait",
+          "reuse_class": "Presentation-specific UI art",
+          "notes": "Clipped to the 32×32 portrait interior; compose for clipping, not for a larger hidden canvas.",
+          "source_line": 1012
+        },
+        {
+          "asset": "reimuTitle",
+          "native_canvas": "32×48",
+          "use": "Title screen only",
+          "meaning": "Independent title presentation",
+          "reuse_class": "Presentation-specific independent art",
+          "notes": "Current title moves around x≈128±46, y≈48±5 in the 256×240 title scene; do not force gameplay proportions onto it.",
+          "source_line": 181
+        }
+      ],
+      "official_references": [
+        {
+          "title": "Imperishable Night / playable Reimu — character page",
+          "url": "https://en.touhouwiki.net/wiki/Reimu_Hakurei",
+          "use": "Rear-facing/player-shooter orientation and compact Reimu silhouette vocabulary.",
+          "teaches": "How bow, hair mass and shrine-maiden costume remain legible from a shooter-facing view; useful comparison material for gameplay orientation.",
+          "do_not_copy": "Do not trace official pixels, import its palette/canvas, or silently change Scarlet Moon's current side-facing gameplay contract."
+        },
+        {
+          "title": "Embodiment of Scarlet Devil official image archive",
+          "url": "https://en.touhouwiki.net/wiki/Category:Embodiment_of_Scarlet_Devil_Images",
+          "use": "Early Windows official Reimu presentation/identity reference.",
+          "teaches": "Face, bow, red/white costume and early-series simplification vocabulary relevant to portrait/title translation.",
+          "do_not_copy": "Do not downscale the illustration or copy its pixel clusters literally."
+        }
+      ]
+    },
+    "marisa": {
+      "name": "Marisa Kirisame",
+      "status": "complete_review_ready",
+      "packet_path": "dev/reviews/v4_character_reference_packets/marisa/README.md",
+      "approved_sheet": {
+        "filename": "image-gen-3(5).png",
+        "dimensions": "1122×1402",
+        "sha256": "b36b542d012b3d1a89198ae43d2feda0c9502bfc1e5b686c6807a355dbd20003",
+        "committed": false
+      },
+      "coverage": [
+        {
+          "asset": "marisa",
+          "native_canvas": "32×32",
+          "use": "Boss, dialogue, defeat, attract and flying credits",
+          "meaning": "Idle A",
+          "reuse_class": "Reusable body/broom family",
+          "notes": "Body and broom are authored together in the current sprite; boss anchor is shared with other bosses.",
+          "source_line": 469
+        },
+        {
+          "asset": "marisaB",
+          "native_canvas": "32×32",
+          "use": "Same body-family uses",
+          "meaning": "Idle B",
+          "reuse_class": "Reusable body/broom family",
+          "notes": "Recon notes alternate-frame silhouette loss; V4 must keep stable body/hat/broom scale.",
+          "source_line": 503
+        },
+        {
+          "asset": "marisaAttack",
+          "native_canvas": "32×32",
+          "use": "Boss phases m3/m4",
+          "meaning": "Attack / high-power state",
+          "reuse_class": "Reusable special body pose",
+          "notes": "Selector chooses this for Non-Directional Laser/Master Spark phases; preserve semantic distinction without enlarging body.",
+          "source_line": 537
+        },
+        {
+          "asset": "p_marisa",
+          "native_canvas": "32×32",
+          "use": "Dialogue portrait bezel",
+          "meaning": "Portrait",
+          "reuse_class": "Presentation-specific UI art",
+          "notes": "Clipped to the 32×32 portrait interior.",
+          "source_line": 1080
+        },
+        {
+          "asset": "dialogue book (procedural current presentation)",
+          "native_canvas": "≈12×16 visible envelope",
+          "use": "Marisa dialogue only, drawn separately near x=136,y=118",
+          "meaning": "Book prop / presentation cue",
+          "reuse_class": "Presentation-specific separate concern",
+          "notes": "Not a SPRITES definition. Keep separate from Marisa body/broom; current source draws a small procedural book, so later redraw may be its own anchored prop without inventing new character states.",
+          "source_line": 2040
+        }
+      ],
+      "official_references": [
+        {
+          "title": "Imperishable Night / playable Marisa — character page",
+          "url": "https://en.touhouwiki.net/wiki/Marisa_Kirisame",
+          "use": "Playable shooter/back-sprite lineage and recurring hat/broom silhouette.",
+          "teaches": "How the wide hat, blonde head mass and broom communicate Marisa under small shooter-scale constraints.",
+          "do_not_copy": "Do not copy official pixel clusters, animation timing or exact broom angle as a required Scarlet Moon pose."
+        },
+        {
+          "title": "Embodiment of Scarlet Devil official image archive",
+          "url": "https://en.touhouwiki.net/wiki/Category:Embodiment_of_Scarlet_Devil_Images",
+          "use": "Early Windows official Marisa artwork/presentation.",
+          "teaches": "Hat/bow, black-white costume and face/hair vocabulary for portrait/body cohesion.",
+          "do_not_copy": "Do not downscale official artwork or preserve decorative details that fight the 32×32 envelope."
+        }
+      ]
+    },
+    "cirno": {
+      "name": "Cirno",
+      "status": "complete_review_ready",
+      "packet_path": "dev/reviews/v4_character_reference_packets/cirno/README.md",
+      "approved_sheet": {
+        "filename": "image-gen-2(20260927-092334).png",
+        "dimensions": "1122×1402",
+        "sha256": "3722af4d2914d212dfb993af17bacfe8d6b373bb46974175858922d9a913811f",
+        "committed": false
+      },
+      "coverage": [
+        {
+          "asset": "cirno",
+          "native_canvas": "24×32",
+          "use": "Boss, before/after dialogue, defeat, attract sequence and credits",
+          "meaning": "Idle A",
+          "reuse_class": "Reusable body family",
+          "notes": "Boss at standard boss anchor; dialogue uses partner staging; wings belong to the body silhouette.",
+          "source_line": 367
+        },
+        {
+          "asset": "cirnoB",
+          "native_canvas": "24×32",
+          "use": "Same body-family uses",
+          "meaning": "Idle B",
+          "reuse_class": "Reusable body family",
+          "notes": "Recon notes alternate-frame silhouette loss; V4 must keep wing/body bounds coherent.",
+          "source_line": 401
+        },
+        {
+          "asset": "cirnoFreeze",
+          "native_canvas": "24×32",
+          "use": "Frozen-bullet condition; frozen credits vignette",
+          "meaning": "Freeze special pose",
+          "reuse_class": "Reusable special body pose",
+          "notes": "Distinct state must remain distinct. Do not repeat the rejected experiment's substitution of base art for freeze.",
+          "source_line": 435
+        },
+        {
+          "asset": "p_cirno",
+          "native_canvas": "32×32",
+          "use": "Dialogue portrait bezel",
+          "meaning": "Portrait",
+          "reuse_class": "Presentation-specific UI art",
+          "notes": "Clipped to the 32×32 portrait interior.",
+          "source_line": 1046
+        }
+      ],
+      "official_references": [
+        {
+          "title": "Embodiment of Scarlet Devil Cirno — character page",
+          "url": "https://en.touhouwiki.net/wiki/Cirno",
+          "use": "Official EoSD boss sprite and character design.",
+          "teaches": "Compact boss silhouette, aqua hair, ribbon and icicle-wing vocabulary; official page also records the wing shape.",
+          "do_not_copy": "Do not copy the exact EoSD boss pixels or use later-game detail to expand Scarlet Moon's 24×32 contract."
+        },
+        {
+          "title": "Embodiment of Scarlet Devil official image archive",
+          "url": "https://en.touhouwiki.net/wiki/Category:Embodiment_of_Scarlet_Devil_Images",
+          "use": "Th06CirnoSprite / official artwork cross-check.",
+          "teaches": "Boss-scale wing/body proportion versus larger official art, useful for deciding what survives the tiny sprite.",
+          "do_not_copy": "Do not treat one official illustration accessory as a required Scarlet Moon state or copy the sheet literally."
+        }
+      ]
+    },
+    "sakuya": {
+      "name": "Sakuya Izayoi",
+      "status": "complete_review_ready",
+      "packet_path": "dev/reviews/v4_character_reference_packets/sakuya/README.md",
+      "approved_sheet": {
+        "filename": "image-gen-5(3).png",
+        "dimensions": "1122×1402",
+        "sha256": "4b743abd1410b4f7b1154855349509d19f53b8485fcc4ebc30767748520e332a",
+        "committed": false
+      },
+      "coverage": [
+        {
+          "asset": "sakuya",
+          "native_canvas": "32×32",
+          "use": "Boss, dialogue, defeat, attract and credits",
+          "meaning": "Idle A",
+          "reuse_class": "Reusable body family",
+          "notes": "Standard boss anchor; dialogue staged at x=208,y=108.",
+          "source_line": 571
+        },
+        {
+          "asset": "sakuyaB",
+          "native_canvas": "32×32",
+          "use": "Same body-family uses",
+          "meaning": "Idle B",
+          "reuse_class": "Reusable body family",
+          "notes": "Keep same apparent height/width and maid silhouette as idle A.",
+          "source_line": 605
+        },
+        {
+          "asset": "sakuyaStop",
+          "native_canvas": "32×32",
+          "use": "Frozen-bullet/time-stop condition; timed credits vignette",
+          "meaning": "Time-stop special pose",
+          "reuse_class": "Reusable special body pose",
+          "notes": "State selector is semantic contract; knife/clock/projectile effects remain separate presentation systems.",
+          "source_line": 639
+        },
+        {
+          "asset": "p_sakuya",
+          "native_canvas": "32×32",
+          "use": "Dialogue portrait bezel",
+          "meaning": "Portrait",
+          "reuse_class": "Presentation-specific UI art",
+          "notes": "Clipped to the 32×32 portrait interior.",
+          "source_line": 1114
+        }
+      ],
+      "official_references": [
+        {
+          "title": "Perfect Cherry Blossom / Imperishable Night Sakuya — character page",
+          "url": "https://en.touhouwiki.net/wiki/Sakuya_Izayoi",
+          "use": "Official back sprites plus EoSD/Windows sprite lineage.",
+          "teaches": "Maid silhouette, silver hair/headdress and shooter-facing compact body vocabulary; recurring knife identity.",
+          "do_not_copy": "Do not trace sprite pixels or import official animation timing/weapon count."
+        },
+        {
+          "title": "Embodiment of Scarlet Devil Stage 5 spell-card archive",
+          "url": "https://en.touhouwiki.net/wiki/Embodiment_of_Scarlet_Devil/Spell_Cards/Stage_5",
+          "use": "Official knife/time manipulation presentation vocabulary.",
+          "teaches": "How Sakuya's time/knife identity is communicated around the body without requiring the body sprite itself to carry every effect.",
+          "do_not_copy": "Do not copy projectile patterns, timings or spell-card layouts into Scarlet Moon."
+        }
+      ]
+    },
+    "meiling": {
+      "name": "Hong Meiling",
+      "status": "complete_review_ready",
+      "packet_path": "dev/reviews/v4_character_reference_packets/meiling/README.md",
+      "approved_sheet": {
+        "filename": "image-gen-4(4).png",
+        "dimensions": "1122×1402",
+        "sha256": "4f7741ab795936039491516e9631cd9c8d73671820e556d4be709a2ad5c9a951",
+        "committed": false
+      },
+      "coverage": [
+        {
+          "asset": "meilingSleep",
+          "native_canvas": "24×16",
+          "use": "Mansion gate arrival and credits, both drawn at 2×",
+          "meaning": "Sleeping gatekeeper",
+          "reuse_class": "Reusable active presentation sprite",
+          "notes": "This is the actual production requirement. Current placements: gate (204,186)×2 and credits (128,165)×2.",
+          "source_line": 869
+        },
+        {
+          "asset": "meiling",
+          "native_canvas": "16×16",
+          "use": "No live call site found",
+          "meaning": "Standing definition",
+          "reuse_class": "Inventory only — NOT a production requirement",
+          "notes": "Keep documented so it is not accidentally mistaken for a missing boss/dialogue family. Do not create a new role from this unused definition.",
+          "source_line": 851
+        }
+      ],
+      "official_references": [
+        {
+          "title": "Embodiment of Scarlet Devil Hong Meiling — character page",
+          "url": "https://en.touhouwiki.net/Hong_Meiling",
+          "use": "Official EoSD boss/design identity.",
+          "teaches": "Scarlet hair, green beret/dress, traditional-Chinese silhouette and gold-star/dragon cap vocabulary.",
+          "do_not_copy": "Do not turn the official standing/boss pose into a new Scarlet Moon combat or dialogue requirement."
+        },
+        {
+          "title": "Embodiment of Scarlet Devil official image archive",
+          "url": "https://en.touhouwiki.net/wiki/Category:Embodiment_of_Scarlet_Devil_Images",
+          "use": "Th06 Hong/Meiling sprite and artwork cross-check.",
+          "teaches": "How compact official boss art reduces the red/green silhouette, useful for identity even though Scarlet Moon needs a sleeping pose.",
+          "do_not_copy": "Do not copy official boss pixels or infer unused states from the archive."
+        }
+      ]
+    },
+    "remilia": {
+      "name": "Remilia Scarlet",
+      "status": "complete_review_ready",
+      "packet_path": "dev/reviews/v4_character_reference_packets/remilia/README.md",
+      "approved_sheet": {
+        "filename": "image-gen-6(3).png",
+        "dimensions": "1122×1402",
+        "sha256": "ffee33a38617885a585ea5d4eb0431d176820c4ec21363c8ba317f9009d09265",
+        "committed": false
+      },
+      "coverage": [
+        {
+          "asset": "remilia",
+          "native_canvas": "32×32",
+          "use": "Boss, dialogue, defeat, credits and ending exit",
+          "meaning": "Idle A / base body",
+          "reuse_class": "Reusable combat/story body",
+          "notes": "Current family is also reused outside combat; keep body scale independent of wing articulation.",
+          "source_line": 673
+        },
+        {
+          "asset": "remiliaB",
+          "native_canvas": "32×32",
+          "use": "Same body-family uses",
+          "meaning": "Idle B",
+          "reuse_class": "Reusable combat/story body",
+          "notes": "Recon flags current idle body-scale discontinuity; V4 should correct it.",
+          "source_line": 707
+        },
+        {
+          "asset": "remiliaFinal",
+          "native_canvas": "32×32",
+          "use": "Boss phase r5 / Red Magic",
+          "meaning": "Final-phase special pose",
+          "reuse_class": "Reusable special combat pose",
+          "notes": "Must remain same apparent body scale and readable inside boss combat bounds.",
+          "source_line": 741
+        },
+        {
+          "asset": "p_remilia",
+          "native_canvas": "32×32",
+          "use": "Dialogue portrait bezel",
+          "meaning": "Portrait",
+          "reuse_class": "Presentation-specific UI art",
+          "notes": "Clipped to the 32×32 portrait interior.",
+          "source_line": 1148
+        },
+        {
+          "asset": "remiliaParasol",
+          "native_canvas": "32×32",
+          "use": "Shrine morning ending arrival",
+          "meaning": "Parasol arrival",
+          "reuse_class": "Presentation-specific independent art",
+          "notes": "Enters from the right toward x=126 at y=160. Parasol/body/wings must fit this independent 32×32 presentation.",
+          "source_line": 775
+        },
+        {
+          "asset": "remiliaAttract",
+          "native_canvas": "64×40",
+          "use": "Distinct attract card on black",
+          "meaning": "Attract presentation art",
+          "reuse_class": "Presentation-specific independent art",
+          "notes": "Rendered at (128,88) in the attract sequence; larger canvas permits more identity but still needs NES-like cluster discipline.",
+          "source_line": 809
+        }
+      ],
+      "official_references": [
+        {
+          "title": "Embodiment of Scarlet Devil / Imperishable Night Remilia — character page",
+          "url": "https://en.touhouwiki.net/wiki/Remilia_Scarlet",
+          "use": "Official boss/playable silhouette, bat wings and parasol context.",
+          "teaches": "Small vampire body against large black bat wings; official page also records the shrine parasol appearance and IN back sprite.",
+          "do_not_copy": "Do not copy EoSD/IN pixels, fighting-game proportions, or infer a new runtime pose from official material."
+        },
+        {
+          "title": "Embodiment of Scarlet Devil official image archive",
+          "url": "https://en.touhouwiki.net/wiki/Category:Embodiment_of_Scarlet_Devil_Images",
+          "use": "Remilia boss/bat sprite and official artwork cross-check.",
+          "teaches": "Wing span, compact body and early-Windows portrait vocabulary; useful to distinguish Remilia from Flandre.",
+          "do_not_copy": "Do not literal-copy the boss/bat frames or replace Scarlet Moon's distinct parasol/attract compositions."
+        }
+      ]
+    }
+  },
+  "changed_scope": [
+    "dev/reviews/v4_character_reference_packets/**"
+  ],
+  "forbidden_changes_confirmed": [
+    "canonical RoboPixel character art",
+    "versions/v4 runtime/game code",
+    "V1-V3 history",
+    "gameplay behavior",
+    "integration/merge/publication"
+  ]
+}
