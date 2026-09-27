@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scarlet Moon V4 Environmental Style Guide — v0.2 Evidence Board</title>
+  <style>
+    :root{color-scheme:dark;--bg:#0b0d10;--panel:#14181d;--panel2:#0f1317;--line:#303741;--text:#e3e7eb;--muted:#aeb7c1;--red:#ec6b72;--gold:#e2bc69;--blue:#7ab6d9;--green:#85c49a}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}main{max-width:1240px;margin:auto;padding:24px}h1{font-size:clamp(1.8rem,4vw,3rem);line-height:1.05;margin:.25rem 0}h2{margin:3rem 0 1rem;padding-top:1rem;border-top:1px solid var(--line)}h3{margin:.35rem 0 1rem}p{max-width:78ch}.lede{font-size:1.08rem;color:#d7dce2}.muted,figcaption{color:var(--muted)}a{color:#9bd3f3}.toc{display:flex;flex-wrap:wrap;gap:.4rem;margin:1.5rem 0}.toc a,.tag{border:1px solid var(--line);background:var(--panel2);border-radius:999px;padding:.28rem .65rem;text-decoration:none}.axis,.group,.stop{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px}.axis-grid,.cards,.images{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:16px}.group{margin:1rem 0}.images{align-items:start}.image-card{min-width:0;background:var(--panel2);border:1px solid #252b33;border-radius:8px;padding:12px;overflow:auto}.image-card figure{margin:0}.image-card img{display:block;height:auto;max-width:none;background:#07090b}.pixel{image-rendering:pixelated;image-rendering:crisp-edges}.fit{max-width:100%!important}.pair{display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap}.pair figure{margin:0}.native-1x img{width:auto}.zoom-2x img.w192{width:384px}.zoom-2x img.w256{width:512px}.caption-title{display:block;color:var(--text);font-weight:700;margin-top:8px}.role{display:inline-block;margin-top:8px;color:#0b0d10;background:var(--blue);border-radius:3px;padding:.1rem .4rem;font-size:.76rem;font-weight:800;letter-spacing:.03em;text-transform:uppercase}.role.v3{background:var(--gold)}.role.atlas{background:var(--green)}.role.negative{background:var(--red)}.role.compare{background:#b0a1dc}ul{padding-left:1.2rem}li+li{margin-top:.3rem}.compact{margin:.6rem 0}.external li{margin:.6rem 0}code{font:13px ui-monospace,SFMono-Regular,Consolas,monospace;color:#f2c5c8}.stop{border-color:#824047;background:#211316}.stop strong{color:#ff989d}.eyebrow{color:var(--red);font-weight:800;letter-spacing:.08em;text-transform:uppercase}.checklist{columns:2;column-gap:2rem}.checklist li{break-inside:avoid;margin-bottom:.55rem}@media(max-width:760px){main{padding:16px}.zoom-2x{display:none}.checklist{columns:1}}
+  </style>
+</head>
+<body><main>
+  <p class="eyebrow">Issue #40 · v0.2 · evidence-board assembly only</p>
+  <h1>Scarlet Moon V4 Environmental Style Guide</h1>
+  <p class="lede">V4 should look like the same game rendered by a more mature late-Famicom/NES-era art team: substantial readable forms, deliberate native clusters, controlled values, material-specific detail, and strong depth. The target is constraint-informed authenticity—not literal hardware compliance and not unrestricted modern pixel art with an NES-ish palette. Unification means shared workmanship and construction economy while every location keeps its own identity.</p>
+  <nav class="toc" aria-label="Sections"><a href="#axes">Two axes</a><a href="#gate">Gate</a><a href="#interior">Interior</a><a href="#v3">V3 signature</a><a href="#forest">Forest</a><a href="#lake">Misty Lake</a><a href="#roof">Rooftop</a><a href="#shrine">Shrine</a><a href="#external">External links</a><a href="#checklist">Checklist</a></nav>
+
+  <section id="axes">
+    <h2>1–2. Thesis and two-axis benchmark</h2>
+    <div class="axis-grid">
+      <article class="axis"><h3>Workmanship</h3><p><strong>Gate first; Interior second.</strong> Ask how confident, rich, readable, and materially authored V4 should feel. Transfer massing, hierarchy, depth, cluster control, and selective detail—not Gothic subject matter.</p></article>
+      <article class="axis"><h3>Constraint signature</h3><p><strong>V3 construction evidence + linked NES/Famicom vocabulary.</strong> Ask why the result still reads like economical console game graphics: visible tile/metatile reuse, local palette discipline, stepped bands, and bounded variants.</p></article>
+    </div>
+    <p class="muted">A future polished scene must satisfy both axes. Gate is not claimed hardware-perfect; V3 is not the V4 quality ceiling.</p>
+  </section>
+
+  <section id="gate">
+    <h2>3. Gate — primary workmanship benchmark</h2>
+    <div class="group">
+      <div class="pair">
+        <figure class="native-1x"><img class="pixel w192" src="images/gate/gate_gameplay_native.png" width="192" height="240" alt="Gate gameplay native proof at one-to-one size"><figcaption><span class="role">Native authored proof · 1×</span><span class="caption-title">Gameplay, exact 192×240</span></figcaption></figure>
+        <figure class="zoom-2x"><img class="pixel w192" src="images/gate/gate_gameplay_native.png" width="384" height="480" alt="Gate gameplay proof enlarged two times"><figcaption>CSS 2× nearest-neighbor inspection</figcaption></figure>
+        <figure class="native-1x"><img class="pixel w256" src="images/gate/gate_story_native.png" width="256" height="240" alt="Gate story native proof at one-to-one size"><figcaption><span class="role">Native authored proof · 1×</span><span class="caption-title">Story, exact 256×240</span></figcaption></figure>
+        <figure class="zoom-2x"><img class="pixel w256" src="images/gate/gate_story_native.png" width="512" height="480" alt="Gate story proof enlarged two times"><figcaption>CSS 2× nearest-neighbor inspection</figcaption></figure>
+      </div>
+      <ul class="compact"><li>Large facade, gate, paving, vegetation, and sky masses read before ornament.</li><li>Stepped clusters and overlaps separate material and depth with confidence.</li><li>Rich detail stays inside readable forms; preserve quiet/negative space.</li><li>Use as workmanship, not as a hardware-perfect specimen or motif source.</li></ul>
+    </div>
+    <div class="image-card"><figure><img class="pixel fit" src="images/gate/gate_asset_atlas.png" alt="Gate asset atlas"><figcaption><span class="role atlas">Atlas</span><span class="caption-title">Material and cluster vocabulary</span> Substantial pieces support the scene rather than dissolving into generic noise.</figcaption></figure></div>
+  </section>
+
+  <section id="interior">
+    <h2>4. Interior — secondary workmanship benchmark</h2>
+    <div class="group">
+      <div class="pair">
+        <figure class="native-1x"><img class="pixel w192" src="images/interior/mansion_gameplay_preview_192x240.png" width="192" height="240" alt="Interior gameplay native proof at one-to-one size"><figcaption><span class="role">Native authored proof · 1×</span><span class="caption-title">Gameplay, exact 192×240</span></figcaption></figure>
+        <figure class="zoom-2x"><img class="pixel w192" src="images/interior/mansion_gameplay_preview_192x240.png" width="384" height="480" alt="Interior gameplay proof enlarged two times"><figcaption>CSS 2× nearest-neighbor inspection</figcaption></figure>
+        <figure class="native-1x"><img class="pixel w256" src="images/interior/mansion_story_preview_256x240.png" width="256" height="240" alt="Interior story native proof at one-to-one size"><figcaption><span class="role">Native authored proof · 1×</span><span class="caption-title">Story, exact 256×240</span></figcaption></figure>
+        <figure class="zoom-2x"><img class="pixel w256" src="images/interior/mansion_story_preview_256x240.png" width="512" height="480" alt="Interior story proof enlarged two times"><figcaption>CSS 2× nearest-neighbor inspection</figcaption></figure>
+      </div>
+      <ul class="compact"><li>Controlled hierarchy nests ornament inside broad architectural and shadow fields.</li><li>Stone, glass, fabric, brass, and paving use distinct treatment.</li><li>The gameplay lane stays quiet enough for actors and bullets.</li></ul>
+    </div>
+    <div class="images">
+      <div class="image-card"><figure><img class="pixel fit" src="images/interior/asset_atlas.png" alt="Interior asset atlas"><figcaption><span class="role atlas">Atlas</span><span class="caption-title">Localized ornament and material vocabulary</span></figcaption></figure></div>
+      <div class="image-card"><figure><img class="pixel fit" src="images/interior/gameplay_floor_before_after.png" alt="Interior gameplay floor before and after comparison"><figcaption><span class="role negative">Negative example</span><span class="caption-title">Floor rollback: detail for detail’s sake</span> Removing repeated reflection activity restored clearer dark stone. More pixels are not automatically better.</figcaption></figure></div>
+    </div>
+  </section>
+
+  <section id="v3">
+    <h2>5. V3 constraint-signature baseline</h2>
+    <div class="images">
+      <div class="image-card"><figure><img class="pixel" src="images/forest/gameplay-V3-source-render.png" width="192" height="240" alt="Forest V3 gameplay source"><figcaption><span class="role v3">V3/current source evidence</span><span class="caption-title">Forest · 1×</span></figcaption></figure></div>
+      <div class="image-card"><figure><img class="pixel" src="images/rooftop/v3_current_gameplay.png" width="192" height="240" alt="Rooftop V3 current gameplay source"><figcaption><span class="role v3">V3/current source evidence</span><span class="caption-title">Rooftop · 1×</span></figcaption></figure></div>
+      <div class="image-card"><figure><img class="pixel" src="images/shrine/v3_night.png" width="256" height="240" alt="Shrine V3 night source"><figcaption><span class="role v3">V3/current source evidence</span><span class="caption-title">Shrine night · 1×</span></figcaption></figure></div>
+    </div>
+    <ul><li>Study the finite visible tile vocabulary, compact local palette logic, and repeated modules.</li><li>Notice stepped/banded treatment and reuse as part of the medium’s texture—not defects by default.</li><li>Preserve coherent economy; improve crude repetition, thin forms, weak depth, or under-described materials.</li><li><strong>V3 is a construction-signature reference, not the V4 quality ceiling.</strong></li></ul>
+  </section>
+
+  <section id="forest">
+    <h2>6. Forest discrepancy</h2>
+    <div class="group">
+      <div class="pair">
+        <figure class="native-1x"><img class="pixel w192" src="images/forest/forest_gameplay_preview_192x240.png" width="192" height="240" alt="Forest gameplay native proof at one-to-one size"><figcaption><span class="role">Native authored proof · 1×</span><span class="caption-title">Gameplay</span></figcaption></figure>
+        <figure class="zoom-2x"><img class="pixel w192" src="images/forest/forest_gameplay_preview_192x240.png" width="384" height="480" alt="Forest gameplay enlarged two times"><figcaption>CSS 2× nearest-neighbor inspection</figcaption></figure>
+        <figure class="native-1x"><img class="pixel w256" src="images/forest/forest_story_preview_256x240.png" width="256" height="240" alt="Forest story native proof at one-to-one size"><figcaption><span class="role">Native authored proof · 1×</span><span class="caption-title">Story</span></figcaption></figure>
+      </div>
+      <ul><li><strong>Preserve:</strong> cool enclosed mood, dark gameplay lane, grounded trunks/roots, and edge framing.</li><li><strong>Polish later:</strong> stronger tree identities, woodland depth, and less obvious motif repetition.</li><li><strong>Constraint question:</strong> which repetition should remain visibly tile/metatile-like instead of being naturalized away?</li></ul>
+    </div>
+    <div class="images">
+      <div class="image-card"><figure><img class="pixel fit" src="images/forest/forest_asset_atlas_2x.png" alt="Forest asset atlas"><figcaption><span class="role atlas">Atlas</span><span class="caption-title">Organic construction vocabulary</span></figcaption></figure></div>
+      <div class="image-card"><figure><img class="pixel fit" src="images/forest/gameplay_working_before_after.png" alt="Forest gameplay working before and after"><figcaption><span class="role negative">Negative / comparison board</span><span class="caption-title">Organic grounding and repetition</span> Thicker grounded forms improve the lane; future work should distinguish console-like reuse from procedural-looking repetition.</figcaption></figure></div>
+    </div>
+  </section>
+
+  <section id="lake">
+    <h2>7. Misty Lake discrepancy + primary Astra Flash warning</h2>
+    <div class="group">
+      <div class="pair">
+        <figure class="native-1x"><img class="pixel w192" src="images/misty_lake/gameplay_192x240.png" width="192" height="240" alt="Misty Lake corrected gameplay native proof at one-to-one size"><figcaption><span class="role">Hydrated native authored proof · 1×</span><span class="caption-title">Corrected gameplay</span></figcaption></figure>
+        <figure class="zoom-2x"><img class="pixel w192" src="images/misty_lake/gameplay_192x240.png" width="384" height="480" alt="Misty Lake gameplay enlarged two times"><figcaption>CSS 2× nearest-neighbor inspection</figcaption></figure>
+        <figure class="native-1x"><img class="pixel w256" src="images/misty_lake/story_256x240.png" width="256" height="240" alt="Misty Lake corrected story native proof at one-to-one size"><figcaption><span class="role">Hydrated native authored proof · 1×</span><span class="caption-title">Corrected story</span></figcaption></figure>
+      </div>
+      <ul><li><strong>Preserve:</strong> open water lane, cold atmosphere, scarlet reflection, and distant landmarks.</li><li><strong>Polish later:</strong> natural hierarchy, depth, and less recognizable repeated foliage/patchy texture.</li><li><strong>Constraint opportunity:</strong> water and mist can use deliberate repeated tiles, stepped bands, and sparse patterned gradients.</li></ul>
+    </div>
+    <div class="images">
+      <div class="image-card"><figure><img class="pixel fit" src="images/misty_lake/atlas.png" alt="Misty Lake corrected complete atlas"><figcaption><span class="role atlas">Hydrated atlas</span><span class="caption-title">Corrected complete asset set</span></figcaption></figure></div>
+      <div class="image-card"><figure><img class="pixel fit" src="images/misty_lake/gameplay_before_corrected.png" alt="Misty Lake rejected before and corrected gameplay comparison"><figcaption><span class="role negative">Negative example</span><span class="caption-title">Rejected-before → corrected</span> Primary historical Astra Flash warning: replace thin continuous/shape-first drafting and procedural strokes with substantial grouped clusters and calm gaps.</figcaption></figure></div>
+      <div class="image-card"><figure><img class="pixel fit" src="images/misty_lake/assets_before_corrected.png" alt="Misty Lake focused asset correction comparison"><figcaption><span class="role compare">Focused comparison board</span><span class="caption-title">Line/shape-first → explicit clusters</span> Reeds, tree, ridges, water, clouds, mist, and reflection show the construction change without altering the broad scene concept.</figcaption></figure></div>
+    </div>
+  </section>
+
+  <section id="roof">
+    <h2>8. Rooftop discrepancy</h2>
+    <div class="group">
+      <div class="pair">
+        <figure class="native-1x"><img class="pixel w192" src="images/rooftop/gameplay_native.png" width="192" height="240" alt="Rooftop gameplay native proof at one-to-one size"><figcaption><span class="role">Native authored proof · 1×</span><span class="caption-title">Gameplay</span></figcaption></figure>
+        <figure class="zoom-2x"><img class="pixel w192" src="images/rooftop/gameplay_native.png" width="384" height="480" alt="Rooftop gameplay enlarged two times"><figcaption>CSS 2× nearest-neighbor inspection</figcaption></figure>
+        <figure class="native-1x"><img class="pixel w256" src="images/rooftop/story_native.png" width="256" height="240" alt="Rooftop story native proof at one-to-one size"><figcaption><span class="role">Native authored proof · 1×</span><span class="caption-title">Story</span></figcaption></figure>
+      </div>
+      <ul><li><strong>Preserve:</strong> skyline, moon, open combat space, distinct story staging, and restrained crimson.</li><li><strong>Polish later:</strong> paving/parapet/cloud richness and selective distant detail.</li><li><strong>Constraint question:</strong> regular paving and modular architecture can be authentic tiling; distinguish intentional modules from crude repetition.</li></ul>
+    </div>
+    <div class="images">
+      <div class="image-card"><figure><img class="pixel fit" src="images/rooftop/asset_atlas.png" alt="Rooftop asset atlas"><figcaption><span class="role atlas">Atlas</span><span class="caption-title">Skyline, stone, and modular pieces</span></figcaption></figure></div>
+      <div class="image-card"><figure><img class="pixel fit" src="images/rooftop/gameplay_comparison.png" alt="Rooftop gameplay comparison"><figcaption><span class="role compare">Comparison board</span><span class="caption-title">Current source → authored checkpoint</span> Preserve negative space; do not solve sparse richness by decorating every surface.</figcaption></figure></div>
+    </div>
+  </section>
+
+  <section id="shrine">
+    <h2>9. Shrine discrepancy</h2>
+    <div class="group">
+      <div class="pair">
+        <figure class="native-1x"><img class="pixel w256" src="images/shrine/night_native.png" width="256" height="240" alt="Shrine night native proof at one-to-one size"><figcaption><span class="role">Native authored proof · 1×</span><span class="caption-title">Night</span></figcaption></figure>
+        <figure class="zoom-2x"><img class="pixel w256" src="images/shrine/night_native.png" width="512" height="480" alt="Shrine night enlarged two times"><figcaption>CSS 2× nearest-neighbor inspection</figcaption></figure>
+        <figure class="native-1x"><img class="pixel w256" src="images/shrine/morning_native.png" width="256" height="240" alt="Shrine morning native proof at one-to-one size"><figcaption><span class="role">Native authored proof · 1×</span><span class="caption-title">Morning</span></figcaption></figure>
+      </div>
+      <ul><li><strong>Preserve:</strong> frontal identity, time-of-day continuity, and solid readable structure.</li><li><strong>Polish later:</strong> landscape variation, roof/courtyard material, and depth behind the hall.</li><li><strong>Constraint question:</strong> retain believable repeated architectural/landscape modules while improving variants and palette discipline.</li></ul>
+    </div>
+    <div class="images">
+      <div class="image-card"><figure><img class="pixel fit" src="images/shrine/asset_atlas.png" alt="Shrine asset atlas"><figcaption><span class="role atlas">Atlas</span><span class="caption-title">Shared location kit across time of day</span></figcaption></figure></div>
+      <div class="image-card"><figure><img class="pixel fit" src="images/shrine/night_comparison.png" alt="Shrine night comparison"><figcaption><span class="role compare">Comparison board</span><span class="caption-title">Night continuity and structural upgrade</span></figcaption></figure></div>
+      <div class="image-card"><figure><img class="pixel fit" src="images/shrine/morning_comparison.png" alt="Shrine morning comparison"><figcaption><span class="role compare">Comparison board</span><span class="caption-title">Morning is more than a palette swap</span></figcaption></figure></div>
+    </div>
+  </section>
+
+  <section id="external">
+    <h2>10. External vocabulary and technical references</h2>
+    <p>No third-party screenshot is copied here. These links support visual vocabulary and technical understanding; they are not repository assets and not instructions to copy art.</p>
+    <div class="axis-grid">
+      <article class="axis"><h3>Screenshot sets — links only</h3><ul class="external"><li><a href="https://www.mobygames.com/game/7356/ninja-gaiden/screenshots/">Ninja Gaiden (NES)</a> — study shared grammar across architecture, natural stages, and dramatic heights.</li><li><a href="https://www.mobygames.com/game/2466/ninja-gaiden-ii-the-dark-sword-of-chaos/screenshots/nes/">Ninja Gaiden II (NES)</a> — study palette-banded atmosphere and scene variety under one direction.</li><li><a href="https://www.mobygames.com/game/7415/castlevania-iii-draculas-curse/screenshots/">Castlevania III (NES/Famicom)</a> — study detailed Gothic/material vocabulary with visible tile economy.</li></ul></article>
+      <article class="axis"><h3>Technical primers</h3><ul class="external"><li><a href="https://www.nesdev.org/wiki/PPU_palettes">NESdev: PPU palettes</a></li><li><a href="https://www.nesdev.org/wiki/PPU_programmer_reference">NESdev: PPU programmer reference</a></li><li><a href="https://www.nesdev.org/wiki/MMC3">NESdev: MMC3</a></li><li><a href="https://nerdy-nights.nes.science/#week6">Nerdy Nights: backgrounds</a></li><li><a href="https://megacatstudios.com/blogs/retro-development/creating-nes-graphics">Mega Cat Studios: creating NES graphics</a></li></ul></article>
+    </div>
+    <p class="muted">Visual consequence: reason in reusable 8×8 motifs and 16×16 color regions, compact local ramps, finite visible vocabulary, and stepped/patterned gradients. Late-era mapper sophistication expands the vocabulary; it does not erase tile/palette structure.</p>
+  </section>
+
+  <section id="checklist">
+    <h2>11. Final artist checklist</h2>
+    <ul class="checklist">
+      <li><strong>Silhouette:</strong> major forms read at 1× before internal texture.</li><li><strong>Clusters:</strong> edges are deliberately stepped, not smooth contours rasterized later.</li><li><strong>Value/color:</strong> coherent ramps and local palette groups separate focal forms, distance, and quiet areas.</li><li><strong>Depth:</strong> overlap, scale, contrast, placement, and detail compression establish layers.</li><li><strong>Materials:</strong> stone, wood, foliage, water, fabric, glass, and metal do not share generic noise.</li><li><strong>Detail density:</strong> detail supports landmarks and transitions; gameplay/dialogue lanes stay calm.</li><li><strong>Negative space:</strong> actors, bullets, dialogue, and UI remain legible.</li><li><strong>Repetition:</strong> decide what authentic tile/metatile reuse stays and what procedural stamping changes.</li><li><strong>Gradients:</strong> favor bands, sparse dithering, repeated patterns, and regional palette steps.</li><li><strong>Scene identity:</strong> preserve each location’s architecture, mood, framing, and landmarks.</li><li><strong>Family identity:</strong> compare workmanship to Gate/Interior and construction economy to the constraint baseline.</li><li><strong>Before mutation:</strong> inspect guide + benchmarks + target proof, then write a bounded preserve/change plan.</li><li><strong>Reference continuity:</strong> shared brief → shared board → adjacent family generation → whole-family review → separate canonical authoring.</li><li><strong>Authority:</strong> Owner visual acceptance remains decisive; no automated art score substitutes for review.</li>
+    </ul>
+  </section>
+
+  <section class="stop">
+    <h2>12. Explicit stop</h2>
+    <p><strong>Evidence board only.</strong> This artifact grants no authority to mutate canonical art, change RoboPixel state, alter V1–V4 or any proof branch, integrate runtime assets, publish, merge, freeze, release, or begin the later unified polish pass. Stop for Owner review.</p>
+  </section>
+</main></body></html>

@@ -1,0 +1,237 @@
+{
+  "schema_version": 1,
+  "issue": 40,
+  "base_commit": "45e701cf41ef089808babd567a59574b4e326deb",
+  "notes": [
+    "PNG bytes are copied unchanged from the exact source commit/path.",
+    "Misty Lake presentation PNGs were restored by the pinned package hydrate.py and verified against its committed transport index.",
+    "External reference screenshots are linked in review.html and are not copied."
+  ],
+  "images": [
+    {
+      "source_commit": "796f76d4c173ce4ae5287d20d74d9c37b8f1c8c4",
+      "source_path": "dev/proofs/v4_mansion_gate_translation_01/gate_gameplay_native.png",
+      "copied_path": "images/gate/gate_gameplay_native.png",
+      "sha256": "6dbb3d0e0ded6a1d1f8aa376d221ac664361c9c6770867b1a0b458c0db21fe87",
+      "role": "native authored proof",
+      "annotation_category": "workmanship positive"
+    },
+    {
+      "source_commit": "796f76d4c173ce4ae5287d20d74d9c37b8f1c8c4",
+      "source_path": "dev/proofs/v4_mansion_gate_translation_01/gate_story_native.png",
+      "copied_path": "images/gate/gate_story_native.png",
+      "sha256": "849fffee174b5fbe724c18ff8c48bed1cd8e52d86c859e819f6f44299ec75a2a",
+      "role": "native authored proof",
+      "annotation_category": "workmanship positive"
+    },
+    {
+      "source_commit": "796f76d4c173ce4ae5287d20d74d9c37b8f1c8c4",
+      "source_path": "dev/proofs/v4_mansion_gate_translation_01/gate_asset_atlas.png",
+      "copied_path": "images/gate/gate_asset_atlas.png",
+      "sha256": "fb8763f1311d1bd85f31bdc870990a4fb785b997672f64ee586b4eb3a04c2be2",
+      "role": "atlas",
+      "annotation_category": "workmanship positive"
+    },
+    {
+      "source_commit": "c2241001946ac5456293f9f2b8be137e5c5bc648",
+      "source_path": "dev/proofs/v4_mansion_translation_01/mansion_gameplay_preview_192x240.png",
+      "copied_path": "images/interior/mansion_gameplay_preview_192x240.png",
+      "sha256": "4c01e4ec1c385e29bba28a6fc7c12a91600e086a84fdb71f3d4be6738d317fb3",
+      "role": "native authored proof",
+      "annotation_category": "workmanship positive"
+    },
+    {
+      "source_commit": "c2241001946ac5456293f9f2b8be137e5c5bc648",
+      "source_path": "dev/proofs/v4_mansion_translation_01/mansion_story_preview_256x240.png",
+      "copied_path": "images/interior/mansion_story_preview_256x240.png",
+      "sha256": "593e882aa958e5aef4e2e490da300bf7f96ea17bdd88255b8c211550a99efd49",
+      "role": "native authored proof",
+      "annotation_category": "workmanship positive"
+    },
+    {
+      "source_commit": "c2241001946ac5456293f9f2b8be137e5c5bc648",
+      "source_path": "dev/proofs/v4_mansion_translation_01/asset_atlas.png",
+      "copied_path": "images/interior/asset_atlas.png",
+      "sha256": "70fea002f1eab40e349fbb49b9054a2f9e2fd58c04ce316a8454ecd64968e7df",
+      "role": "atlas",
+      "annotation_category": "workmanship positive"
+    },
+    {
+      "source_commit": "c2241001946ac5456293f9f2b8be137e5c5bc648",
+      "source_path": "dev/proofs/v4_mansion_translation_01/gameplay_floor_before_after.png",
+      "copied_path": "images/interior/gameplay_floor_before_after.png",
+      "sha256": "30b5e32a2e55b632954cbca8ae55d93c6e7248ea7078e13b5d8a341365ff411e",
+      "role": "comparison board",
+      "annotation_category": "negative example: detail density"
+    },
+    {
+      "source_commit": "08c2c5364d7e4a5eaa4fbb43e97209e5abf145e0",
+      "source_path": "dev/proofs/v4_forest_translation_01/forest_gameplay_preview_192x240.png",
+      "copied_path": "images/forest/forest_gameplay_preview_192x240.png",
+      "sha256": "af7a7be919a0264a8a496dcb88191f08ebc661d7e295883ee583f8e7da34a30d",
+      "role": "native authored proof",
+      "annotation_category": "discrepancy"
+    },
+    {
+      "source_commit": "08c2c5364d7e4a5eaa4fbb43e97209e5abf145e0",
+      "source_path": "dev/proofs/v4_forest_translation_01/forest_story_preview_256x240.png",
+      "copied_path": "images/forest/forest_story_preview_256x240.png",
+      "sha256": "892dab0376214e5fe79453c4e2bce31ce1cbb6dc503b8fc21b5a1a88d9a974a5",
+      "role": "native authored proof",
+      "annotation_category": "discrepancy"
+    },
+    {
+      "source_commit": "08c2c5364d7e4a5eaa4fbb43e97209e5abf145e0",
+      "source_path": "dev/proofs/v4_forest_translation_01/forest_asset_atlas_2x.png",
+      "copied_path": "images/forest/forest_asset_atlas_2x.png",
+      "sha256": "5bb123c56fccebfb0a01ec5fc253e2ad6ce209e0d7486e655953ed7e9b7929de",
+      "role": "atlas",
+      "annotation_category": "discrepancy"
+    },
+    {
+      "source_commit": "08c2c5364d7e4a5eaa4fbb43e97209e5abf145e0",
+      "source_path": "dev/proofs/v4_forest_translation_01/gameplay_working_before_after.png",
+      "copied_path": "images/forest/gameplay_working_before_after.png",
+      "sha256": "505d349c83c0f780623e4733c7fd186f95256a3460119e02cb6066fa04009742",
+      "role": "comparison board",
+      "annotation_category": "negative example: organic repetition"
+    },
+    {
+      "source_commit": "08c2c5364d7e4a5eaa4fbb43e97209e5abf145e0",
+      "source_path": "dev/proofs/v4_forest_translation_01/references/gameplay-V3-source-render.png",
+      "copied_path": "images/forest/gameplay-V3-source-render.png",
+      "sha256": "10e9038cfca3adbbd5e26fdb032648071814d537ffb878296adeac0e6ca0d3d1",
+      "role": "V3/current source evidence",
+      "annotation_category": "constraint positive"
+    },
+    {
+      "source_commit": "040c405e912c85b38f08d7ba4a0660e76cb821a1",
+      "source_path": "dev/proofs/v4_misty_lake_translation_01/previews/gameplay_192x240.png",
+      "copied_path": "images/misty_lake/gameplay_192x240.png",
+      "sha256": "ee1e6f87e995a6705771d989fbf2ce2b3affb6566812283cbd62d3a04ead908d",
+      "role": "hydrated native authored proof",
+      "annotation_category": "discrepancy"
+    },
+    {
+      "source_commit": "040c405e912c85b38f08d7ba4a0660e76cb821a1",
+      "source_path": "dev/proofs/v4_misty_lake_translation_01/previews/story_256x240.png",
+      "copied_path": "images/misty_lake/story_256x240.png",
+      "sha256": "0bbf081c38b0bee6aeeee2f9e2aa6d88774bc4f85240e552e8bef4c573ed0438",
+      "role": "hydrated native authored proof",
+      "annotation_category": "discrepancy"
+    },
+    {
+      "source_commit": "040c405e912c85b38f08d7ba4a0660e76cb821a1",
+      "source_path": "dev/proofs/v4_misty_lake_translation_01/previews/atlas.png",
+      "copied_path": "images/misty_lake/atlas.png",
+      "sha256": "ac3b3e41735a438625d7218701728cf4f612119f5b25318cbb164edf59e5d1ae",
+      "role": "hydrated atlas",
+      "annotation_category": "discrepancy"
+    },
+    {
+      "source_commit": "040c405e912c85b38f08d7ba4a0660e76cb821a1",
+      "source_path": "dev/proofs/v4_misty_lake_translation_01/previews/gameplay_before_corrected.png",
+      "copied_path": "images/misty_lake/gameplay_before_corrected.png",
+      "sha256": "04293bd0ede3c94d14acd4f0bbeafe33fe3bcde379ce298ef2f0600eb1f4dbca",
+      "role": "hydrated comparison board",
+      "annotation_category": "negative example: Astra Flash"
+    },
+    {
+      "source_commit": "040c405e912c85b38f08d7ba4a0660e76cb821a1",
+      "source_path": "dev/proofs/v4_misty_lake_translation_01/previews/assets_before_corrected.png",
+      "copied_path": "images/misty_lake/assets_before_corrected.png",
+      "sha256": "ff04a308f3cf55167032d735f4bdc071857d3029657fb8e5bb2137b67274c196",
+      "role": "hydrated comparison board",
+      "annotation_category": "negative example: line/shape-first clusters"
+    },
+    {
+      "source_commit": "468e793d03b90d5c30b2ac09ea8992b9af7eb6c9",
+      "source_path": "dev/proofs/v4_mansion_rooftop_translation_01/gameplay_native.png",
+      "copied_path": "images/rooftop/gameplay_native.png",
+      "sha256": "0113db73d01f8eea4a89015e39a0a478311531ddb216465f503df1b6af968974",
+      "role": "native authored proof",
+      "annotation_category": "discrepancy"
+    },
+    {
+      "source_commit": "468e793d03b90d5c30b2ac09ea8992b9af7eb6c9",
+      "source_path": "dev/proofs/v4_mansion_rooftop_translation_01/story_native.png",
+      "copied_path": "images/rooftop/story_native.png",
+      "sha256": "157b3272283346354e3da13929063e1f02358537fa414c32cc25bf6bc25e21cd",
+      "role": "native authored proof",
+      "annotation_category": "discrepancy"
+    },
+    {
+      "source_commit": "468e793d03b90d5c30b2ac09ea8992b9af7eb6c9",
+      "source_path": "dev/proofs/v4_mansion_rooftop_translation_01/asset_atlas.png",
+      "copied_path": "images/rooftop/asset_atlas.png",
+      "sha256": "9aa9ade6effdbae6703c148916fddab9668a3c41805202c5ed81be7b80a1a71e",
+      "role": "atlas",
+      "annotation_category": "discrepancy"
+    },
+    {
+      "source_commit": "468e793d03b90d5c30b2ac09ea8992b9af7eb6c9",
+      "source_path": "dev/proofs/v4_mansion_rooftop_translation_01/gameplay_comparison.png",
+      "copied_path": "images/rooftop/gameplay_comparison.png",
+      "sha256": "3ab3172efea9c9cd1d2ca2e029d0b9b5510139d85634acce111b6bfe5b8fc6aa",
+      "role": "comparison board",
+      "annotation_category": "discrepancy"
+    },
+    {
+      "source_commit": "468e793d03b90d5c30b2ac09ea8992b9af7eb6c9",
+      "source_path": "dev/proofs/v4_mansion_rooftop_translation_01/current/gameplay.png",
+      "copied_path": "images/rooftop/v3_current_gameplay.png",
+      "sha256": "facaafaf0f1e61bd7f06012086688227c1a578ded14a6335075b71c79e2c377c",
+      "role": "V3/current source evidence",
+      "annotation_category": "constraint positive"
+    },
+    {
+      "source_commit": "8438cd4e04e82c12a9f16932ed4fc639f5c2979b",
+      "source_path": "dev/proofs/v4_shrine_translation_01/night_native.png",
+      "copied_path": "images/shrine/night_native.png",
+      "sha256": "8b8a26b965ccb7563a9d3bed784ea828766257cc17206fe43fc43a13b5c08ce7",
+      "role": "native authored proof",
+      "annotation_category": "discrepancy"
+    },
+    {
+      "source_commit": "8438cd4e04e82c12a9f16932ed4fc639f5c2979b",
+      "source_path": "dev/proofs/v4_shrine_translation_01/morning_native.png",
+      "copied_path": "images/shrine/morning_native.png",
+      "sha256": "286af59f759f0c8f757eafb7bf9dace0b703a9cc2fae2fc8c39d68c93183c32b",
+      "role": "native authored proof",
+      "annotation_category": "discrepancy"
+    },
+    {
+      "source_commit": "8438cd4e04e82c12a9f16932ed4fc639f5c2979b",
+      "source_path": "dev/proofs/v4_shrine_translation_01/asset_atlas.png",
+      "copied_path": "images/shrine/asset_atlas.png",
+      "sha256": "8a3bbef45b4e5ae1a56521915413182a69a87ceea1e6d35b4dd59b7dbcf6558a",
+      "role": "atlas",
+      "annotation_category": "discrepancy"
+    },
+    {
+      "source_commit": "8438cd4e04e82c12a9f16932ed4fc639f5c2979b",
+      "source_path": "dev/proofs/v4_shrine_translation_01/night_comparison.png",
+      "copied_path": "images/shrine/night_comparison.png",
+      "sha256": "df736ffae2d42745de78d0410287bbaf0d35a970aa66d520bcfdf326bb9127ff",
+      "role": "comparison board",
+      "annotation_category": "discrepancy"
+    },
+    {
+      "source_commit": "8438cd4e04e82c12a9f16932ed4fc639f5c2979b",
+      "source_path": "dev/proofs/v4_shrine_translation_01/morning_comparison.png",
+      "copied_path": "images/shrine/morning_comparison.png",
+      "sha256": "9e9d8638f71813373cb31925e05eb7acbb0c1eb606b33cd4d284b31c0214bda1",
+      "role": "comparison board",
+      "annotation_category": "discrepancy"
+    },
+    {
+      "source_commit": "8438cd4e04e82c12a9f16932ed4fc639f5c2979b",
+      "source_path": "dev/proofs/v4_shrine_translation_01/current/v3_night.png",
+      "copied_path": "images/shrine/v3_night.png",
+      "sha256": "c79ed434d71a266111242484f336f8d2582712e32a5ad11fab5646989f2cd622",
+      "role": "V3/current source evidence",
+      "annotation_category": "constraint positive"
+    }
+  ]
+}
+
