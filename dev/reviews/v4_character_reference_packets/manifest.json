@@ -1,5 +1,5 @@
 {
-  "schema": "scarlet-moon-v4-character-reference-packets/v1",
+  "schema": "scarlet-moon-v4-character-reference-packets/v2",
   "status": "OWNER_MANAGER_REVIEW_REQUIRED",
   "governing_issue": 42,
   "parent_issue": 28,
@@ -19,12 +19,32 @@
     "sha": "d2586870b92551e931f784631ddfc891208df35b"
   },
   "authority_order": [
-    "scarlet_moon_source_and_recon",
-    "official_touhou_reference_vocabulary",
-    "owner_approved_v4_design_sheet",
+    "scarlet_moon_source_and_recon_state_contract",
+    "selected_official_touhou_sprite_sheet_state_vocabulary",
+    "committed_owner_approved_v4_design_sheet",
     "late_famicom_nes_translation_target"
   ],
-  "design_sheet_policy": "Owner-approved binaries not copied into repo; exact supplied filename, dimensions and SHA-256 identify each input.",
+  "reimu_orientation": {
+    "decision": "V4 gameplay rear-facing/back-view",
+    "decision_source": "issue #28 Owner decision, 2026-09-27",
+    "historical_current_art": "side-facing V3/current-V4 pixels are historical/source evidence only",
+    "fixed_contract": [
+      "idle A/B/focus/fire semantics",
+      "16x24 body canvases",
+      "separate 10x14/12x14 gohei extents",
+      "player coordinates",
+      "hitbox",
+      "movement bounds",
+      "selectors/timing",
+      "edge clipping/staging"
+    ],
+    "primary_official_vocabulary": [
+      "TH07 Perfect Cherry Blossom Characters sheet — Reimu playable back-view group",
+      "TH08 Imperishable Night Playable Characters sheet — Reimu playable back-view group"
+    ],
+    "rejected_r2_promoted": false
+  },
+  "design_sheet_policy": "Exact six Owner-approved generated V4 design-sheet PNG binaries are committed under dev/reviews/v4_character_reference_packets/design-sheets/. Official Touhou material remains link/metadata-only.",
   "reimu_rejected_r2": {
     "disposition": "rejected_evidence_only",
     "reason": [
@@ -34,12 +54,6 @@
     ],
     "baseline": false
   },
-  "orientation_note": {
-    "character": "Reimu",
-    "issue42_request": "include official rear-facing/player-shooter reference vocabulary",
-    "live_source_contract": "current Scarlet Moon gameplay remains side-facing",
-    "resolution": "document both; do not change canonical orientation without explicit Owner/Manager direction"
-  },
   "packets": {
     "reimu": {
       "name": "Reimu Hakurei",
@@ -47,9 +61,13 @@
       "packet_path": "dev/reviews/v4_character_reference_packets/reimu/README.md",
       "approved_sheet": {
         "filename": "image-gen-1(20260927-092333).png",
+        "path": "dev/reviews/v4_character_reference_packets/design-sheets/image-gen-1(20260927-092333).png",
         "dimensions": "1122×1402",
+        "size_bytes": 2155565,
         "sha256": "2eb22de905cd9b4738f4b5540fd9f6c8167c828ecfb865becc05171ef9435f7a",
-        "committed": false
+        "committed": true,
+        "displayed_in_review": true,
+        "displayed_in_packet": true
       },
       "coverage": [
         {
@@ -58,7 +76,7 @@
           "use": "Gameplay player in every stage",
           "meaning": "Idle A",
           "reuse_class": "Reusable gameplay body",
-          "notes": "Idle cadence via (frame>>4)&1; normal gohei layered separately at [8,-5]. Preserve player coordinate/hitbox contract and existing clipping.",
+          "notes": "V4 orientation is rear-facing/back-view. Preserve the existing idle-A semantics, player coordinate/hitbox contract, clipping and normal-gohei layering; the current side-facing pixels are historical evidence only.",
           "source_line": 45
         },
         {
@@ -67,7 +85,7 @@
           "use": "Gameplay player in every stage",
           "meaning": "Idle B",
           "reuse_class": "Reusable gameplay body",
-          "notes": "Same body scale/anchor as idle A; normal gohei offset [7,-5].",
+          "notes": "Rear-facing/back-view V4. Same body scale/anchor as idle A; preserve existing idle cadence and normal-gohei relationship.",
           "source_line": 71
         },
         {
@@ -76,7 +94,7 @@
           "use": "Gameplay while focus is held",
           "meaning": "Focused stance",
           "reuse_class": "Reusable gameplay body",
-          "notes": "State override; normal gohei offset [8,-5]. Do not change movement or hitbox to fit art.",
+          "notes": "Rear-facing/back-view V4. Focus remains the existing state override; movement/hitbox/coordinates are unchanged.",
           "source_line": 97
         },
         {
@@ -85,7 +103,7 @@
           "use": "Gameplay while firing and alive",
           "meaning": "Firing stance",
           "reuse_class": "Reusable gameplay body",
-          "notes": "State override; fire gohei layered at [9,-4].",
+          "notes": "Rear-facing/back-view V4. Fire remains the existing state override; fire gohei remains independent.",
           "source_line": 123
         },
         {
@@ -94,7 +112,7 @@
           "use": "Layered with idle A/B and focus",
           "meaning": "Normal held purification rod",
           "reuse_class": "Reusable independent prop",
-          "notes": "Keep body anchor independent of asymmetric prop; may clip at playfield edges under current movement bounds.",
+          "notes": "Current compatible extent and body/prop separation remain evidence/contract. Author the V4 prop to work with the new rear-facing body without moving the player anchor.",
           "source_line": 149
         },
         {
@@ -103,7 +121,7 @@
           "use": "Layered with reimuFire",
           "meaning": "Firing gohei state",
           "reuse_class": "Reusable independent prop",
-          "notes": "Separate asset/extent from normal gohei; do not fuse into body.",
+          "notes": "Separate extent/state from normal gohei; do not fuse into body or change selectors.",
           "source_line": 165
         },
         {
@@ -112,7 +130,7 @@
           "use": "Intro/opening, dialogue staging, gate transit, defeat staging, ending and credits",
           "meaning": "Story idle A",
           "reuse_class": "Reusable story body",
-          "notes": "Full 256×240 presentation family; alternates on the same frame parity.",
+          "notes": "Story orientation/staging is not changed by the gameplay back-view decision; preserve actual scene semantics and 256×240 placement.",
           "source_line": 231
         },
         {
@@ -130,7 +148,7 @@
           "use": "Dialogue while Reimu is active speaker and text is printing",
           "meaning": "Talking A",
           "reuse_class": "Reusable story body",
-          "notes": "Selected by storyReimu; do not turn text timing into animation timing.",
+          "notes": "Selected by storyReimu; do not convert text timing into animation timing.",
           "source_line": 299
         },
         {
@@ -139,7 +157,7 @@
           "use": "Same speaking use",
           "meaning": "Talking B",
           "reuse_class": "Reusable story body",
-          "notes": "Must remain recognizably the same 24×32 body family.",
+          "notes": "Must remain recognizably the same 24×32 story family.",
           "source_line": 333
         },
         {
@@ -148,7 +166,7 @@
           "use": "Dialogue portrait bezel",
           "meaning": "Portrait",
           "reuse_class": "Presentation-specific UI art",
-          "notes": "Clipped to the 32×32 portrait interior; compose for clipping, not for a larger hidden canvas.",
+          "notes": "Clipped to the 32×32 portrait interior; compose for clipping.",
           "source_line": 1012
         },
         {
@@ -157,24 +175,34 @@
           "use": "Title screen only",
           "meaning": "Independent title presentation",
           "reuse_class": "Presentation-specific independent art",
-          "notes": "Current title moves around x≈128±46, y≈48±5 in the 256×240 title scene; do not force gameplay proportions onto it.",
+          "notes": "Current title staging moves the asset around the 256×240 title composition; do not force gameplay proportions/orientation onto it.",
           "source_line": 181
         }
       ],
       "official_references": [
         {
-          "title": "Imperishable Night / playable Reimu — character page",
-          "url": "https://en.touhouwiki.net/wiki/Reimu_Hakurei",
-          "use": "Rear-facing/player-shooter orientation and compact Reimu silhouette vocabulary.",
-          "teaches": "How bow, hair mass and shrine-maiden costume remain legible from a shooter-facing view; useful comparison material for gameplay orientation.",
-          "do_not_copy": "Do not trace official pixels, import its palette/canvas, or silently change Scarlet Moon's current side-facing gameplay contract."
+          "title": "TH07 Perfect Cherry Blossom — Characters sheet",
+          "url": "https://www.spriters-resource.com/pc_computer/touhouyouyoumuperfectcherryblossom/sheet/44412/",
+          "inspect_target": "Inspect Reimu's playable-character rear-facing/back-view sprite group, especially neutral/movement/shot-scale silhouettes.",
+          "teaches": "Primary shooter vocabulary for how Reimu's giant bow, hair mass, detached sleeves and red/white body read from behind at small player scale.",
+          "do_not_copy": "Do not trace pixels, inherit its canvas, or import TH07 timing/shot mechanics.",
+          "repository_copy": false
         },
         {
-          "title": "Embodiment of Scarlet Devil official image archive",
-          "url": "https://en.touhouwiki.net/wiki/Category:Embodiment_of_Scarlet_Devil_Images",
-          "use": "Early Windows official Reimu presentation/identity reference.",
-          "teaches": "Face, bow, red/white costume and early-series simplification vocabulary relevant to portrait/title translation.",
-          "do_not_copy": "Do not downscale the illustration or copy its pixel clusters literally."
+          "title": "TH08 Imperishable Night — Playable Characters sheet",
+          "url": "https://www.spriters-resource.com/pc_computer/touhoueiyashouimperishablenight/asset/34544/page-1/",
+          "inspect_target": "Inspect Reimu's playable back sprite group in the Reimu/Yukari player set; compare compact rear silhouette and state readability.",
+          "teaches": "Second official shooter-generation check for rear-facing body economy and recognizable bow/sleeve construction.",
+          "do_not_copy": "Do not average or copy official pixels; Scarlet Moon keeps its own 16×24/state/anchor contract.",
+          "repository_copy": false
+        },
+        {
+          "title": "TH06 Embodiment of Scarlet Devil — Reimu official artwork file",
+          "url": "https://en.touhouwiki.net/wiki/File:Th06Reimu.png",
+          "inspect_target": "Inspect only for early-Windows face/bow/costume presentation cues relevant to portrait/title families.",
+          "teaches": "Useful identity/presentation vocabulary at larger scale without overriding the approved V4 sheet.",
+          "do_not_copy": "Do not downscale the artwork or use it as gameplay-pose authority.",
+          "repository_copy": false
         }
       ]
     },
@@ -184,9 +212,13 @@
       "packet_path": "dev/reviews/v4_character_reference_packets/marisa/README.md",
       "approved_sheet": {
         "filename": "image-gen-3(5).png",
+        "path": "dev/reviews/v4_character_reference_packets/design-sheets/image-gen-3(5).png",
         "dimensions": "1122×1402",
+        "size_bytes": 2265744,
         "sha256": "b36b542d012b3d1a89198ae43d2feda0c9502bfc1e5b686c6807a355dbd20003",
-        "committed": false
+        "committed": true,
+        "displayed_in_review": true,
+        "displayed_in_packet": true
       },
       "coverage": [
         {
@@ -195,7 +227,7 @@
           "use": "Boss, dialogue, defeat, attract and flying credits",
           "meaning": "Idle A",
           "reuse_class": "Reusable body/broom family",
-          "notes": "Body and broom are authored together in the current sprite; boss anchor is shared with other bosses.",
+          "notes": "Body and broom are authored together in the current sprite; preserve actual boss/dialogue/credit staging.",
           "source_line": 469
         },
         {
@@ -204,7 +236,7 @@
           "use": "Same body-family uses",
           "meaning": "Idle B",
           "reuse_class": "Reusable body/broom family",
-          "notes": "Recon notes alternate-frame silhouette loss; V4 must keep stable body/hat/broom scale.",
+          "notes": "Current alternate-frame silhouette loss is a defect to avoid; keep stable body/hat/broom scale.",
           "source_line": 503
         },
         {
@@ -213,7 +245,7 @@
           "use": "Boss phases m3/m4",
           "meaning": "Attack / high-power state",
           "reuse_class": "Reusable special body pose",
-          "notes": "Selector chooses this for Non-Directional Laser/Master Spark phases; preserve semantic distinction without enlarging body.",
+          "notes": "Selector semantics remain fixed; make the attack visibly distinct without enlarging body.",
           "source_line": 537
         },
         {
@@ -228,27 +260,37 @@
         {
           "asset": "dialogue book (procedural current presentation)",
           "native_canvas": "≈12×16 visible envelope",
-          "use": "Marisa dialogue only, drawn separately near x=136,y=118",
+          "use": "Marisa dialogue only, drawn separately near current book staging",
           "meaning": "Book prop / presentation cue",
           "reuse_class": "Presentation-specific separate concern",
-          "notes": "Not a SPRITES definition. Keep separate from Marisa body/broom; current source draws a small procedural book, so later redraw may be its own anchored prop without inventing new character states.",
+          "notes": "Not a SPRITES definition; keep separate from reusable body/broom and do not invent extra character states.",
           "source_line": 2040
         }
       ],
       "official_references": [
         {
-          "title": "Imperishable Night / playable Marisa — character page",
-          "url": "https://en.touhouwiki.net/wiki/Marisa_Kirisame",
-          "use": "Playable shooter/back-sprite lineage and recurring hat/broom silhouette.",
-          "teaches": "How the wide hat, blonde head mass and broom communicate Marisa under small shooter-scale constraints.",
-          "do_not_copy": "Do not copy official pixel clusters, animation timing or exact broom angle as a required Scarlet Moon pose."
+          "title": "TH07 Perfect Cherry Blossom — Characters sheet",
+          "url": "https://www.spriters-resource.com/pc_computer/touhouyouyoumuperfectcherryblossom/sheet/44412/",
+          "inspect_target": "Inspect Marisa's playable player-sprite group, especially witch-hat width, broom relationship and rear/flight silhouette.",
+          "teaches": "How hat, blonde head mass, dark/light costume and broom remain readable at shooter scale.",
+          "do_not_copy": "Do not copy frame clusters, broom angle or animation timing as Scarlet Moon requirements.",
+          "repository_copy": false
         },
         {
-          "title": "Embodiment of Scarlet Devil official image archive",
-          "url": "https://en.touhouwiki.net/wiki/Category:Embodiment_of_Scarlet_Devil_Images",
-          "use": "Early Windows official Marisa artwork/presentation.",
-          "teaches": "Hat/bow, black-white costume and face/hair vocabulary for portrait/body cohesion.",
-          "do_not_copy": "Do not downscale official artwork or preserve decorative details that fight the 32×32 envelope."
+          "title": "TH08 Imperishable Night — Playable Characters sheet",
+          "url": "https://www.spriters-resource.com/pc_computer/touhoueiyashouimperishablenight/asset/34544/page-1/",
+          "inspect_target": "Inspect Marisa's playable back-sprite group for a second shooter-generation hat/broom/body-scale check.",
+          "teaches": "Useful continuity reference for compact witch/broom silhouette and stable player footprint.",
+          "do_not_copy": "Do not import TH08 canvas, mechanics or exact pixels.",
+          "repository_copy": false
+        },
+        {
+          "title": "TH06 Embodiment of Scarlet Devil — Marisa official artwork file",
+          "url": "https://en.touhouwiki.net/wiki/File:Th06Marisa.png",
+          "inspect_target": "Inspect only for early official face, hat/bow and black/white costume cues relevant to portrait identity.",
+          "teaches": "Portrait-scale identity vocabulary that can be reconciled with the accepted V4 sheet.",
+          "do_not_copy": "Do not downscale it or let artwork detail override the 32×32 body contract.",
+          "repository_copy": false
         }
       ]
     },
@@ -258,9 +300,13 @@
       "packet_path": "dev/reviews/v4_character_reference_packets/cirno/README.md",
       "approved_sheet": {
         "filename": "image-gen-2(20260927-092334).png",
+        "path": "dev/reviews/v4_character_reference_packets/design-sheets/image-gen-2(20260927-092334).png",
         "dimensions": "1122×1402",
+        "size_bytes": 2100443,
         "sha256": "3722af4d2914d212dfb993af17bacfe8d6b373bb46974175858922d9a913811f",
-        "committed": false
+        "committed": true,
+        "displayed_in_review": true,
+        "displayed_in_packet": true
       },
       "coverage": [
         {
@@ -269,7 +315,7 @@
           "use": "Boss, before/after dialogue, defeat, attract sequence and credits",
           "meaning": "Idle A",
           "reuse_class": "Reusable body family",
-          "notes": "Boss at standard boss anchor; dialogue uses partner staging; wings belong to the body silhouette.",
+          "notes": "Boss/dialogue/credits share this family; wings belong to the body silhouette.",
           "source_line": 367
         },
         {
@@ -278,7 +324,7 @@
           "use": "Same body-family uses",
           "meaning": "Idle B",
           "reuse_class": "Reusable body family",
-          "notes": "Recon notes alternate-frame silhouette loss; V4 must keep wing/body bounds coherent.",
+          "notes": "Keep wing/body bounds coherent; avoid current alternate-frame silhouette loss.",
           "source_line": 401
         },
         {
@@ -287,7 +333,7 @@
           "use": "Frozen-bullet condition; frozen credits vignette",
           "meaning": "Freeze special pose",
           "reuse_class": "Reusable special body pose",
-          "notes": "Distinct state must remain distinct. Do not repeat the rejected experiment's substitution of base art for freeze.",
+          "notes": "Distinct state must remain distinct; do not substitute base art for freeze.",
           "source_line": 435
         },
         {
@@ -302,18 +348,28 @@
       ],
       "official_references": [
         {
-          "title": "Embodiment of Scarlet Devil Cirno — character page",
-          "url": "https://en.touhouwiki.net/wiki/Cirno",
-          "use": "Official EoSD boss sprite and character design.",
-          "teaches": "Compact boss silhouette, aqua hair, ribbon and icicle-wing vocabulary; official page also records the wing shape.",
-          "do_not_copy": "Do not copy the exact EoSD boss pixels or use later-game detail to expand Scarlet Moon's 24×32 contract."
+          "title": "TH06 Embodiment of Scarlet Devil — Cirno isolated boss sprite",
+          "url": "https://en.touhouwiki.net/wiki/File:Th06CirnoSprite.png",
+          "inspect_target": "Inspect the isolated official boss sprite for compact body/wing proportions and silhouette economy.",
+          "teaches": "Direct small-sprite evidence for aqua head mass, dress footprint and icicle-wing read.",
+          "do_not_copy": "Do not copy pixels or expand Scarlet Moon beyond its 24×32 envelope.",
+          "repository_copy": false
         },
         {
-          "title": "Embodiment of Scarlet Devil official image archive",
-          "url": "https://en.touhouwiki.net/wiki/Category:Embodiment_of_Scarlet_Devil_Images",
-          "use": "Th06CirnoSprite / official artwork cross-check.",
-          "teaches": "Boss-scale wing/body proportion versus larger official art, useful for deciding what survives the tiny sprite.",
-          "do_not_copy": "Do not treat one official illustration accessory as a required Scarlet Moon state or copy the sheet literally."
+          "title": "TH06 Embodiment of Scarlet Devil — Stage 2 spell card 06, Freeze Sign “Perfect Freeze”",
+          "url": "https://en.touhouwiki.net/wiki/Embodiment_of_Scarlet_Devil/Spell_Cards/Stage_2",
+          "inspect_target": "Inspect the official Perfect Freeze state/presentation context only.",
+          "teaches": "Confirms the freeze visual vocabulary and frozen-bullet identity that Scarlet Moon's cirnoFreeze state references.",
+          "do_not_copy": "Do not copy bullet pattern, spell timing or treat it as an exact body-pose blueprint.",
+          "repository_copy": false
+        },
+        {
+          "title": "TH06 Embodiment of Scarlet Devil — Cirno official artwork file",
+          "url": "https://en.touhouwiki.net/wiki/File:Th06Cirno.png",
+          "inspect_target": "Inspect only for face, bow, dress and wing identity at portrait scale.",
+          "teaches": "Useful portrait/identity vocabulary to reconcile with the V4 sheet.",
+          "do_not_copy": "Do not downscale it or import illustrative detail into the tiny body frames.",
+          "repository_copy": false
         }
       ]
     },
@@ -323,9 +379,13 @@
       "packet_path": "dev/reviews/v4_character_reference_packets/sakuya/README.md",
       "approved_sheet": {
         "filename": "image-gen-5(3).png",
+        "path": "dev/reviews/v4_character_reference_packets/design-sheets/image-gen-5(3).png",
         "dimensions": "1122×1402",
+        "size_bytes": 2195028,
         "sha256": "4b743abd1410b4f7b1154855349509d19f53b8485fcc4ebc30767748520e332a",
-        "committed": false
+        "committed": true,
+        "displayed_in_review": true,
+        "displayed_in_packet": true
       },
       "coverage": [
         {
@@ -334,7 +394,7 @@
           "use": "Boss, dialogue, defeat, attract and credits",
           "meaning": "Idle A",
           "reuse_class": "Reusable body family",
-          "notes": "Standard boss anchor; dialogue staged at x=208,y=108.",
+          "notes": "Standard boss/dialogue family; preserve actual placement semantics.",
           "source_line": 571
         },
         {
@@ -352,7 +412,7 @@
           "use": "Frozen-bullet/time-stop condition; timed credits vignette",
           "meaning": "Time-stop special pose",
           "reuse_class": "Reusable special body pose",
-          "notes": "State selector is semantic contract; knife/clock/projectile effects remain separate presentation systems.",
+          "notes": "State selector is fixed; knife/clock/projectile effects remain separate presentation systems.",
           "source_line": 639
         },
         {
@@ -367,18 +427,36 @@
       ],
       "official_references": [
         {
-          "title": "Perfect Cherry Blossom / Imperishable Night Sakuya — character page",
-          "url": "https://en.touhouwiki.net/wiki/Sakuya_Izayoi",
-          "use": "Official back sprites plus EoSD/Windows sprite lineage.",
-          "teaches": "Maid silhouette, silver hair/headdress and shooter-facing compact body vocabulary; recurring knife identity.",
-          "do_not_copy": "Do not trace sprite pixels or import official animation timing/weapon count."
+          "title": "TH06 Embodiment of Scarlet Devil — Sakuya isolated boss sprite",
+          "url": "https://en.touhouwiki.net/wiki/File:Th06SakuyaSprite.png",
+          "inspect_target": "Inspect the isolated official Stage 5 boss sprite for maid silhouette, silver-hair head mass and compact arm/knife read.",
+          "teaches": "Small official boss-scale evidence for Sakuya's recognizable body proportions.",
+          "do_not_copy": "Do not trace pixels or use its canvas/pose as a mandatory Scarlet Moon frame.",
+          "repository_copy": false
         },
         {
-          "title": "Embodiment of Scarlet Devil Stage 5 spell-card archive",
-          "url": "https://en.touhouwiki.net/wiki/Embodiment_of_Scarlet_Devil/Spell_Cards/Stage_5",
-          "use": "Official knife/time manipulation presentation vocabulary.",
-          "teaches": "How Sakuya's time/knife identity is communicated around the body without requiring the body sprite itself to carry every effect.",
-          "do_not_copy": "Do not copy projectile patterns, timings or spell-card layouts into Scarlet Moon."
+          "title": "TH07 Perfect Cherry Blossom — Characters sheet",
+          "url": "https://www.spriters-resource.com/pc_computer/touhouyouyoumuperfectcherryblossom/sheet/44412/",
+          "inspect_target": "Inspect Sakuya's playable player-sprite group for compact rear/flight silhouette and maid/headdress continuity.",
+          "teaches": "Shooter-scale economy for silver hair, headdress and navy/white maid massing.",
+          "do_not_copy": "Do not import player mechanics, exact animation or frame clusters.",
+          "repository_copy": false
+        },
+        {
+          "title": "TH7.5 Immaterial and Missing Power — Sakuya spell cards, Time Sign “Private Square”",
+          "url": "https://en.touhouwiki.net/index.php?mobileaction=toggle_view_desktop&title=Immaterial_and_Missing_Power%2FSpell_Cards%2FSakuya_Izayoi",
+          "inspect_target": "Inspect Private Square / Sakuya's World as exact official time-stop state vocabulary.",
+          "teaches": "Supports a distinct controlled time-stop attitude while keeping knives/effects conceptually separable from the body.",
+          "do_not_copy": "Do not copy fighter pose sequences, effects or timing into Scarlet Moon.",
+          "repository_copy": false
+        },
+        {
+          "title": "TH06 Embodiment of Scarlet Devil — Sakuya official artwork file",
+          "url": "https://en.touhouwiki.net/wiki/File:Th06Sakuya.png",
+          "inspect_target": "Inspect only for face/headdress/maid-costume cues relevant to the 32×32 portrait.",
+          "teaches": "Portrait identity vocabulary complementary to the approved V4 design sheet.",
+          "do_not_copy": "Do not downscale illustration or overload the native body sprites with lace detail.",
+          "repository_copy": false
         }
       ]
     },
@@ -388,9 +466,13 @@
       "packet_path": "dev/reviews/v4_character_reference_packets/meiling/README.md",
       "approved_sheet": {
         "filename": "image-gen-4(4).png",
+        "path": "dev/reviews/v4_character_reference_packets/design-sheets/image-gen-4(4).png",
         "dimensions": "1122×1402",
+        "size_bytes": 2170592,
         "sha256": "4f7741ab795936039491516e9631cd9c8d73671820e556d4be709a2ad5c9a951",
-        "committed": false
+        "committed": true,
+        "displayed_in_review": true,
+        "displayed_in_packet": true
       },
       "coverage": [
         {
@@ -399,7 +481,7 @@
           "use": "Mansion gate arrival and credits, both drawn at 2×",
           "meaning": "Sleeping gatekeeper",
           "reuse_class": "Reusable active presentation sprite",
-          "notes": "This is the actual production requirement. Current placements: gate (204,186)×2 and credits (128,165)×2.",
+          "notes": "Actual production requirement; preserve exact 2× gate/credit staging.",
           "source_line": 869
         },
         {
@@ -408,24 +490,26 @@
           "use": "No live call site found",
           "meaning": "Standing definition",
           "reuse_class": "Inventory only — NOT a production requirement",
-          "notes": "Keep documented so it is not accidentally mistaken for a missing boss/dialogue family. Do not create a new role from this unused definition.",
+          "notes": "Keep documented only; do not create boss/dialogue/portrait requirements from this unused definition.",
           "source_line": 851
         }
       ],
       "official_references": [
         {
-          "title": "Embodiment of Scarlet Devil Hong Meiling — character page",
-          "url": "https://en.touhouwiki.net/Hong_Meiling",
-          "use": "Official EoSD boss/design identity.",
-          "teaches": "Scarlet hair, green beret/dress, traditional-Chinese silhouette and gold-star/dragon cap vocabulary.",
-          "do_not_copy": "Do not turn the official standing/boss pose into a new Scarlet Moon combat or dialogue requirement."
+          "title": "TH06 Embodiment of Scarlet Devil — Hong Meiling isolated boss sprite",
+          "url": "https://en.touhouwiki.net/wiki/File:Th06HongSprite.png",
+          "inspect_target": "Inspect the isolated official boss sprite only for compact red-hair/green-costume/cap identity and silhouette economy.",
+          "teaches": "Small official evidence for the minimum recognizable Meiling color/silhouette vocabulary.",
+          "do_not_copy": "Do not turn the standing boss pose into a Scarlet Moon combat/dialogue requirement.",
+          "repository_copy": false
         },
         {
-          "title": "Embodiment of Scarlet Devil official image archive",
-          "url": "https://en.touhouwiki.net/wiki/Category:Embodiment_of_Scarlet_Devil_Images",
-          "use": "Th06 Hong/Meiling sprite and artwork cross-check.",
-          "teaches": "How compact official boss art reduces the red/green silhouette, useful for identity even though Scarlet Moon needs a sleeping pose.",
-          "do_not_copy": "Do not copy official boss pixels or infer unused states from the archive."
+          "title": "TH06 Embodiment of Scarlet Devil — Meiling official artwork file",
+          "url": "https://en.touhouwiki.net/wiki/File:Th06Meiling.png",
+          "inspect_target": "Inspect cap, red hair and Chinese-style costume identity; not as a sleeping-pose blueprint.",
+          "teaches": "Identity vocabulary for translating the approved sheet into the horizontal sleeping silhouette.",
+          "do_not_copy": "Do not downscale it or invent a portrait/standing production family.",
+          "repository_copy": false
         }
       ]
     },
@@ -435,9 +519,13 @@
       "packet_path": "dev/reviews/v4_character_reference_packets/remilia/README.md",
       "approved_sheet": {
         "filename": "image-gen-6(3).png",
+        "path": "dev/reviews/v4_character_reference_packets/design-sheets/image-gen-6(3).png",
         "dimensions": "1122×1402",
+        "size_bytes": 2229817,
         "sha256": "ffee33a38617885a585ea5d4eb0431d176820c4ec21363c8ba317f9009d09265",
-        "committed": false
+        "committed": true,
+        "displayed_in_review": true,
+        "displayed_in_packet": true
       },
       "coverage": [
         {
@@ -446,7 +534,7 @@
           "use": "Boss, dialogue, defeat, credits and ending exit",
           "meaning": "Idle A / base body",
           "reuse_class": "Reusable combat/story body",
-          "notes": "Current family is also reused outside combat; keep body scale independent of wing articulation.",
+          "notes": "Keep one stable body scale independent of wing articulation.",
           "source_line": 673
         },
         {
@@ -455,7 +543,7 @@
           "use": "Same body-family uses",
           "meaning": "Idle B",
           "reuse_class": "Reusable combat/story body",
-          "notes": "Recon flags current idle body-scale discontinuity; V4 should correct it.",
+          "notes": "Correct current idle apparent-body-scale discontinuity.",
           "source_line": 707
         },
         {
@@ -464,7 +552,7 @@
           "use": "Boss phase r5 / Red Magic",
           "meaning": "Final-phase special pose",
           "reuse_class": "Reusable special combat pose",
-          "notes": "Must remain same apparent body scale and readable inside boss combat bounds.",
+          "notes": "Same apparent body scale; readable inside current combat bounds.",
           "source_line": 741
         },
         {
@@ -482,7 +570,7 @@
           "use": "Shrine morning ending arrival",
           "meaning": "Parasol arrival",
           "reuse_class": "Presentation-specific independent art",
-          "notes": "Enters from the right toward x=126 at y=160. Parasol/body/wings must fit this independent 32×32 presentation.",
+          "notes": "Current ending arrival staging/trajectory remains authoritative.",
           "source_line": 775
         },
         {
@@ -491,24 +579,42 @@
           "use": "Distinct attract card on black",
           "meaning": "Attract presentation art",
           "reuse_class": "Presentation-specific independent art",
-          "notes": "Rendered at (128,88) in the attract sequence; larger canvas permits more identity but still needs NES-like cluster discipline.",
+          "notes": "Larger independent canvas; still deliberate NES-like construction.",
           "source_line": 809
         }
       ],
       "official_references": [
         {
-          "title": "Embodiment of Scarlet Devil / Imperishable Night Remilia — character page",
-          "url": "https://en.touhouwiki.net/wiki/Remilia_Scarlet",
-          "use": "Official boss/playable silhouette, bat wings and parasol context.",
-          "teaches": "Small vampire body against large black bat wings; official page also records the shrine parasol appearance and IN back sprite.",
-          "do_not_copy": "Do not copy EoSD/IN pixels, fighting-game proportions, or infer a new runtime pose from official material."
+          "title": "TH06 Embodiment of Scarlet Devil — Remilia isolated boss sprite",
+          "url": "https://en.touhouwiki.net/wiki/File:Th06RemiliaSprite.png",
+          "inspect_target": "Inspect the isolated official boss sprite for compact vampire body, cap/head mass and wing-to-body proportion.",
+          "teaches": "Primary small-sprite reference for keeping Remilia tiny while her bat-wing silhouette stays dominant.",
+          "do_not_copy": "Do not trace pixels or inherit TH06 canvas/animation.",
+          "repository_copy": false
         },
         {
-          "title": "Embodiment of Scarlet Devil official image archive",
-          "url": "https://en.touhouwiki.net/wiki/Category:Embodiment_of_Scarlet_Devil_Images",
-          "use": "Remilia boss/bat sprite and official artwork cross-check.",
-          "teaches": "Wing span, compact body and early-Windows portrait vocabulary; useful to distinguish Remilia from Flandre.",
-          "do_not_copy": "Do not literal-copy the boss/bat frames or replace Scarlet Moon's distinct parasol/attract compositions."
+          "title": "TH06 Embodiment of Scarlet Devil — Remilia bat-form sprite",
+          "url": "https://en.touhouwiki.net/wiki/File:Th06RemiliaBatSprite.png",
+          "inspect_target": "Inspect only for official bat-wing shape language and dark membrane economy.",
+          "teaches": "Helps keep Remilia's wings recognizably bat-like and distinct from Flandre's crystal-wing vocabulary.",
+          "do_not_copy": "Do not turn bat form into a new Scarlet Moon state or copy the exact bat sprite.",
+          "repository_copy": false
+        },
+        {
+          "title": "TH06 Embodiment of Scarlet Devil — Ending & Credits sheet",
+          "url": "https://www.spriters-resource.com/pc_computer/touhoukoumakyoutheembodimentofscarletdevil/asset/33550/",
+          "inspect_target": "Inspect the Reimu A ending material specifically for Remilia's shrine/parasol presentation context.",
+          "teaches": "Official parasol/presentation vocabulary for the independent Scarlet Moon morning-arrival asset.",
+          "do_not_copy": "Do not copy ending composition, pixels or story staging; Scarlet Moon keeps its own 32×32 arrival contract.",
+          "repository_copy": false
+        },
+        {
+          "title": "TH06 Embodiment of Scarlet Devil — Remilia official artwork file",
+          "url": "https://en.touhouwiki.net/wiki/File:Th06Remilia.png",
+          "inspect_target": "Inspect only for face, cap, dress and wing identity relevant to portrait/attract treatment.",
+          "teaches": "Larger official identity vocabulary that can inform the 32×32 portrait and 64×40 attract art.",
+          "do_not_copy": "Do not downscale it or replace the approved V4 design.",
+          "repository_copy": false
         }
       ]
     }
@@ -521,6 +627,7 @@
     "versions/v4 runtime/game code",
     "V1-V3 history",
     "gameplay behavior",
+    "hitbox/movement/selectors/timing",
     "integration/merge/publication"
   ]
 }

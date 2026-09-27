@@ -6,50 +6,63 @@
 
 ## Authority and provenance
 
-Scarlet Moon current source + the merged reconnaissance define what must exist, how it is used, and all runtime/staging constraints. Official Touhou material below is pose/silhouette/prop vocabulary only. The Owner-approved V4 sheet is appearance authority. Final art is a new late-Famicom/NES-style reinterpretation, not a literal official-sprite copy or a downscaled illustration.
+Scarlet Moon current source + the merged reconnaissance define what must exist, how it is used, and all runtime/staging constraints. Official Touhou material below is narrowly selected pose/silhouette/state vocabulary only. The committed Owner-approved V4 sheet is appearance authority. Final art is a new late-Famicom/NES-style reinterpretation, not a literal official-sprite copy or a downscaled illustration.
 
 - Reconnaissance: https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/dev/reviews/v4_character_art_reconnaissance/Scarlet-Moon-Character-Review-2026-09-24.html
 - Current source: https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html
-- Approved sheet supplied to the coordinator: **image-gen-1(20260927-092333).png**, 1122×1402, SHA-256 `2eb22de905cd9b4738f4b5540fd9f6c8167c828ecfb865becc05171ef9435f7a`
-- Sheet binary is intentionally **not copied into this repository**. The filename + hash identify the exact Owner-approved input that must be supplied to the later artist.
+- Approved V4 sheet: [`image-gen-1(20260927-092333).png`](../design-sheets/image-gen-1(20260927-092333).png)
+- Repository path: `dev/reviews/v4_character_reference_packets/design-sheets/image-gen-1(20260927-092333).png`
+- Dimensions: **1122×1402**
+- File size: **2155565 bytes**
+- SHA-256: `2eb22de905cd9b4738f4b5540fd9f6c8167c828ecfb865becc05171ef9435f7a`
+
+![Owner-approved V4 Reimu Hakurei design sheet](../design-sheets/image-gen-1(20260927-092333).png)
 
 ## 1. Complete coverage matrix
 
 | State / asset | Native canvas | Actual scene/use | Meaning | Reuse class | Runtime / staging notes | Evidence |
 |---|---:|---|---|---|---|---|
-| `reimu` | 16×24 | Gameplay player in every stage | Idle A | Reusable gameplay body | Idle cadence via (frame>>4)&1; normal gohei layered separately at [8,-5]. Preserve player coordinate/hitbox contract and existing clipping. | [source](https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L45) |
-| `reimuB` | 16×24 | Gameplay player in every stage | Idle B | Reusable gameplay body | Same body scale/anchor as idle A; normal gohei offset [7,-5]. | [source](https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L71) |
-| `reimuFocus` | 16×24 | Gameplay while focus is held | Focused stance | Reusable gameplay body | State override; normal gohei offset [8,-5]. Do not change movement or hitbox to fit art. | [source](https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L97) |
-| `reimuFire` | 16×24 | Gameplay while firing and alive | Firing stance | Reusable gameplay body | State override; fire gohei layered at [9,-4]. | [source](https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L123) |
-| `reimuGohei` | 10×14 | Layered with idle A/B and focus | Normal held purification rod | Reusable independent prop | Keep body anchor independent of asymmetric prop; may clip at playfield edges under current movement bounds. | [source](https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L149) |
-| `reimuGoheiFire` | 12×14 | Layered with reimuFire | Firing gohei state | Reusable independent prop | Separate asset/extent from normal gohei; do not fuse into body. | [source](https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L165) |
-| `reimuStoryA` | 24×32 | Intro/opening, dialogue staging, gate transit, defeat staging, ending and credits | Story idle A | Reusable story body | Full 256×240 presentation family; alternates on the same frame parity. | [source](https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L231) |
+| `reimu` | 16×24 | Gameplay player in every stage | Idle A | Reusable gameplay body | V4 orientation is rear-facing/back-view. Preserve the existing idle-A semantics, player coordinate/hitbox contract, clipping and normal-gohei layering; the current side-facing pixels are historical evidence only. | [source](https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L45) |
+| `reimuB` | 16×24 | Gameplay player in every stage | Idle B | Reusable gameplay body | Rear-facing/back-view V4. Same body scale/anchor as idle A; preserve existing idle cadence and normal-gohei relationship. | [source](https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L71) |
+| `reimuFocus` | 16×24 | Gameplay while focus is held | Focused stance | Reusable gameplay body | Rear-facing/back-view V4. Focus remains the existing state override; movement/hitbox/coordinates are unchanged. | [source](https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L97) |
+| `reimuFire` | 16×24 | Gameplay while firing and alive | Firing stance | Reusable gameplay body | Rear-facing/back-view V4. Fire remains the existing state override; fire gohei remains independent. | [source](https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L123) |
+| `reimuGohei` | 10×14 | Layered with idle A/B and focus | Normal held purification rod | Reusable independent prop | Current compatible extent and body/prop separation remain evidence/contract. Author the V4 prop to work with the new rear-facing body without moving the player anchor. | [source](https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L149) |
+| `reimuGoheiFire` | 12×14 | Layered with reimuFire | Firing gohei state | Reusable independent prop | Separate extent/state from normal gohei; do not fuse into body or change selectors. | [source](https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L165) |
+| `reimuStoryA` | 24×32 | Intro/opening, dialogue staging, gate transit, defeat staging, ending and credits | Story idle A | Reusable story body | Story orientation/staging is not changed by the gameplay back-view decision; preserve actual scene semantics and 256×240 placement. | [source](https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L231) |
 | `reimuStoryB` | 24×32 | Same story/presentation uses | Story idle B | Reusable story body | Stable story-body scale and anchor across A/B. | [source](https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L265) |
-| `reimuStoryTalkA` | 24×32 | Dialogue while Reimu is active speaker and text is printing | Talking A | Reusable story body | Selected by storyReimu; do not turn text timing into animation timing. | [source](https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L299) |
-| `reimuStoryTalkB` | 24×32 | Same speaking use | Talking B | Reusable story body | Must remain recognizably the same 24×32 body family. | [source](https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L333) |
-| `p_reimu` | 32×32 | Dialogue portrait bezel | Portrait | Presentation-specific UI art | Clipped to the 32×32 portrait interior; compose for clipping, not for a larger hidden canvas. | [source](https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L1012) |
-| `reimuTitle` | 32×48 | Title screen only | Independent title presentation | Presentation-specific independent art | Current title moves around x≈128±46, y≈48±5 in the 256×240 title scene; do not force gameplay proportions onto it. | [source](https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L181) |
+| `reimuStoryTalkA` | 24×32 | Dialogue while Reimu is active speaker and text is printing | Talking A | Reusable story body | Selected by storyReimu; do not convert text timing into animation timing. | [source](https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L299) |
+| `reimuStoryTalkB` | 24×32 | Same speaking use | Talking B | Reusable story body | Must remain recognizably the same 24×32 story family. | [source](https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L333) |
+| `p_reimu` | 32×32 | Dialogue portrait bezel | Portrait | Presentation-specific UI art | Clipped to the 32×32 portrait interior; compose for clipping. | [source](https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L1012) |
+| `reimuTitle` | 32×48 | Title screen only | Independent title presentation | Presentation-specific independent art | Current title staging moves the asset around the 256×240 title composition; do not force gameplay proportions/orientation onto it. | [source](https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L181) |
 
 ## 2. Current Scarlet Moon evidence
 
-- Current source definitions: gameplay/body/props/title/story start at https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L45; selector and prop layering are at https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L1775–https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L1777; story selector is at https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L1778.
-- Current staging: gameplay player render https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L2027; dialogue/story positions https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L2038–https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L2041; title use https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L2056; credits https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L2096; gate/defeat/ending uses https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L2108–https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L2115.
-- Reconnaissance explicitly records 12 Reimu definitions, side-facing current gameplay, independent gohei anchoring, edge clipping risk, 32×32 portrait clipping, and title art as independent presentation.
-- The first six-asset Reimu r2 canonical attempt is rejected evidence only: it was over-simplified, weakened identity/state differentiation, and is not a baseline.
-- Reconnaissance source-rendered evidence and full frame inventory: https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/dev/reviews/v4_character_art_reconnaissance/Scarlet-Moon-Character-Review-2026-09-24.html
+- Current source definitions remain at https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L45 onward; selector/prop composition remains https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L1775–https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L1777. These are semantic/runtime evidence, not the V4 orientation target.
+- Current gameplay render/coordinates remain https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L2027 and movement bounds remain in the existing play step; those mechanics are unchanged by the art-direction decision.
+- Current story/dialogue/title staging remains https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L2038–https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L2056 and https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L2108–https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/versions/v4/index.html#L2115.
+- The 2026-09-27 Owner decision on #28 supersedes the side-facing V3/current visual orientation for V4 gameplay: V4 gameplay is rear-facing/back-view. Side-facing current art remains historical evidence only.
+- The rejected six-asset Reimu r2 attempt remains rejected evidence; choosing back-view does not promote its design or simplification.
+- Full source-rendered reconnaissance/frame inventory: https://github.com/raverx-dev/scarlet-moon-never-sets/blob/d2586870b92551e931f784631ddfc891208df35b/dev/reviews/v4_character_art_reconnaissance/Scarlet-Moon-Character-Review-2026-09-24.html
 
-## 3. Curated official Touhou reference set
+## 3. Selected official Touhou production references
 
-1. **Imperishable Night / playable Reimu — character page** — Rear-facing/player-shooter orientation and compact Reimu silhouette vocabulary.
-   - Source: https://en.touhouwiki.net/wiki/Reimu_Hakurei
-   - Teaches: How bow, hair mass and shrine-maiden costume remain legible from a shooter-facing view; useful comparison material for gameplay orientation.
-   - Do not copy: Do not trace official pixels, import its palette/canvas, or silently change Scarlet Moon's current side-facing gameplay contract.
-2. **Embodiment of Scarlet Devil official image archive** — Early Windows official Reimu presentation/identity reference.
-   - Source: https://en.touhouwiki.net/wiki/Category:Embodiment_of_Scarlet_Devil_Images
-   - Teaches: Face, bow, red/white costume and early-series simplification vocabulary relevant to portrait/title translation.
-   - Do not copy: Do not downscale the illustration or copy its pixel clusters literally.
+1. **TH07 Perfect Cherry Blossom — Characters sheet**
+   - Exact reference: https://www.spriters-resource.com/pc_computer/touhouyouyoumuperfectcherryblossom/sheet/44412/
+   - Inspect: Inspect Reimu's playable-character rear-facing/back-view sprite group, especially neutral/movement/shot-scale silhouettes.
+   - Teaches: Primary shooter vocabulary for how Reimu's giant bow, hair mass, detached sleeves and red/white body read from behind at small player scale.
+   - Do not copy: Do not trace pixels, inherit its canvas, or import TH07 timing/shot mechanics.
+2. **TH08 Imperishable Night — Playable Characters sheet**
+   - Exact reference: https://www.spriters-resource.com/pc_computer/touhoueiyashouimperishablenight/asset/34544/page-1/
+   - Inspect: Inspect Reimu's playable back sprite group in the Reimu/Yukari player set; compare compact rear silhouette and state readability.
+   - Teaches: Second official shooter-generation check for rear-facing body economy and recognizable bow/sleeve construction.
+   - Do not copy: Do not average or copy official pixels; Scarlet Moon keeps its own 16×24/state/anchor contract.
+3. **TH06 Embodiment of Scarlet Devil — Reimu official artwork file**
+   - Exact reference: https://en.touhouwiki.net/wiki/File:Th06Reimu.png
+   - Inspect: Inspect only for early-Windows face/bow/costume presentation cues relevant to portrait/title families.
+   - Teaches: Useful identity/presentation vocabulary at larger scale without overriding the approved V4 sheet.
+   - Do not copy: Do not downscale the artwork or use it as gameplay-pose authority.
 
-These are reference links/metadata only. No third-party sprite sheet is copied into the repository.
+These references are deliberately small and specific. They tell the later artist **which sheet/file/state to inspect**. Third-party sprite sheets remain external link/metadata only and are not copied into this repository.
 
 ## 4. Owner-approved V4 design sheet
 
@@ -58,22 +71,20 @@ These are reference links/metadata only. No third-party sprite sheet is copied i
 - Gohei/ofuda vocabulary is explicit; red footwear and ribbon accents support the lower silhouette.
 - At tiny scale preserve bow, dark hair mass, red/white separation, detached-sleeve read and gohei; discard decorative pattern noise before sacrificing identity.
 
-The sheet is a design authority, not an exact pose blueprint. Generated labels or ornamental details that conflict with actual character identity or the live Scarlet Moon contract are non-authoritative.
+The committed sheet is the exact Owner-approved design authority identified by path, dimensions and SHA-256 above. It is not an exact pose blueprint; incidental generated labels or decorative details that conflict with actual character identity or the live Scarlet Moon contract remain non-authoritative.
 
 ## 5. Translation notes
 
-- State contract wins: preserve all four 16×24 gameplay meanings, two independent gohei states, four 24×32 story states, portrait and independent title art.
-- Use official rear-facing shooter material as vocabulary because #42 explicitly requests it, but current Scarlet Moon/recon is side-facing. A canonical orientation change needs an explicit Owner/Manager decision; this packet does not invent one.
-- At 16×24, spend pixels on the giant bow, dark-hair head mass, red/white body split and gohei readability before frill/pattern detail.
-- At 24×32 and 32×32, restore enough face/sleeve/hair information to unify story and portrait with gameplay without merely enlarging the small sprite.
-- Title 32×48 is a separate composition problem: retain Reimu identity but design for its moving title silhouette and surrounding moon/logo staging.
+- Gameplay body orientation is now resolved: all four 16×24 V4 gameplay bodies are rear-facing/back-view. This is an art-direction change only.
+- Preserve existing idle A/B/focus/fire meanings, 16×24 canvases, separate 10×14/12×14 gohei extents, player coordinates, hitbox, movement bounds, selector timing and edge/staging behavior.
+- Use the selected TH07/TH08 rear-facing shooter sprites as pose/orientation vocabulary, then redraw as the Owner-approved Scarlet Moon V4 Reimu rather than tracing them.
+- At 16×24, spend pixels on the giant bow, dark-hair head mass, red/white body split, sleeves and gohei readability before frill/pattern detail.
+- Story, portrait and title families remain separate presentation problems; the gameplay back-view decision does not silently force those scenes into a rear view.
 
-The translation equation for the later artist is:
-
-**Scarlet Moon state contract + official Touhou visual vocabulary + exact approved V4 design sheet + deliberate late-Famicom/NES construction.**
+**Translation equation:** Scarlet Moon state contract + selected official Touhou vocabulary + exact approved V4 design sheet + deliberate late-Famicom/NES construction.
 
 ## 6. Production-brief seed
 
-> Author Reimu as one coherent V4 family from the exact state/canvas matrix above. Treat live Scarlet Moon semantics, anchors, selector timing and staging as fixed; use official Touhou only for pose/orientation/silhouette vocabulary; use the approved sheet hash as appearance authority. Translate to deliberate late-Famicom/NES pixel construction with stable body scale and distinct states. Keep gohei separate. Return native 1× plus nearest-neighbor review witnesses for gameplay, story, portrait and title; do not modify runtime or promote rejected r2.
+> Author Reimu as one coherent V4 family. For gameplay, redraw reimu/reimuB/reimuFocus/reimuFire as rear-facing/back-view 16×24 bodies, using the selected TH07/TH08 official shooter player sprites only for orientation/pose vocabulary and the committed approved V4 sheet for appearance. Preserve all existing state semantics, canvases, coordinates, hitbox, movement, selectors/timing, clipping and separate gohei extents. Treat current side-facing pixels and rejected r2 as historical/negative evidence only. Continue story/talk, portrait and title from the same V4 identity without changing their actual staging. No runtime mutation.
 
 **Do not execute that art from this packet-preparation branch.** Canonical RoboPixel authoring and runtime integration remain separately authorized work.
