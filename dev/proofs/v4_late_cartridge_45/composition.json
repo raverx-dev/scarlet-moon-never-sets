@@ -1,0 +1,1962 @@
+[
+  {
+    "name": "neutral",
+    "width": 256,
+    "height": 240,
+    "render_hash": "43f2634d14403f303e580d4a09bf752587c0453652689ae0e1e347d6ff1ca286",
+    "placements": [
+      {
+        "asset": "cornice",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "asset": "cornice",
+        "x": 16,
+        "y": 0
+      },
+      {
+        "asset": "cornice",
+        "x": 32,
+        "y": 0
+      },
+      {
+        "asset": "cornice",
+        "x": 48,
+        "y": 0
+      },
+      {
+        "asset": "cornice",
+        "x": 64,
+        "y": 0
+      },
+      {
+        "asset": "cornice",
+        "x": 80,
+        "y": 0
+      },
+      {
+        "asset": "cornice",
+        "x": 96,
+        "y": 0
+      },
+      {
+        "asset": "cornice",
+        "x": 112,
+        "y": 0
+      },
+      {
+        "asset": "cornice",
+        "x": 128,
+        "y": 0
+      },
+      {
+        "asset": "cornice",
+        "x": 144,
+        "y": 0
+      },
+      {
+        "asset": "cornice",
+        "x": 160,
+        "y": 0
+      },
+      {
+        "asset": "cornice",
+        "x": 176,
+        "y": 0
+      },
+      {
+        "asset": "pier-cap",
+        "x": 0,
+        "y": 16
+      },
+      {
+        "asset": "hanging-top",
+        "x": 16,
+        "y": 16
+      },
+      {
+        "asset": "pier-cap",
+        "x": 32,
+        "y": 16
+      },
+      {
+        "asset": "wall",
+        "x": 48,
+        "y": 16
+      },
+      {
+        "asset": "arch-left",
+        "x": 64,
+        "y": 16
+      },
+      {
+        "asset": "rose-00",
+        "x": 80,
+        "y": 16
+      },
+      {
+        "asset": "rose-01",
+        "x": 96,
+        "y": 16
+      },
+      {
+        "asset": "arch-right",
+        "x": 112,
+        "y": 16
+      },
+      {
+        "asset": "wall",
+        "x": 128,
+        "y": 16
+      },
+      {
+        "asset": "pier-cap",
+        "x": 144,
+        "y": 16
+      },
+      {
+        "asset": "hanging-top",
+        "x": 160,
+        "y": 16
+      },
+      {
+        "asset": "pier-cap",
+        "x": 176,
+        "y": 16
+      },
+      {
+        "asset": "pier",
+        "x": 0,
+        "y": 32
+      },
+      {
+        "asset": "hanging-end",
+        "x": 16,
+        "y": 32
+      },
+      {
+        "asset": "pier",
+        "x": 32,
+        "y": 32
+      },
+      {
+        "asset": "window-head",
+        "x": 48,
+        "y": 32
+      },
+      {
+        "asset": "wall",
+        "x": 64,
+        "y": 32
+      },
+      {
+        "asset": "rose-10",
+        "x": 80,
+        "y": 32
+      },
+      {
+        "asset": "rose-11",
+        "x": 96,
+        "y": 32
+      },
+      {
+        "asset": "wall",
+        "x": 112,
+        "y": 32
+      },
+      {
+        "asset": "window-head",
+        "x": 128,
+        "y": 32
+      },
+      {
+        "asset": "pier",
+        "x": 144,
+        "y": 32
+      },
+      {
+        "asset": "hanging-end",
+        "x": 160,
+        "y": 32
+      },
+      {
+        "asset": "pier",
+        "x": 176,
+        "y": 32
+      },
+      {
+        "asset": "pier",
+        "x": 0,
+        "y": 48
+      },
+      {
+        "asset": "wall",
+        "x": 16,
+        "y": 48
+      },
+      {
+        "asset": "pier",
+        "x": 32,
+        "y": 48
+      },
+      {
+        "asset": "window-body",
+        "x": 48,
+        "y": 48
+      },
+      {
+        "asset": "arch-left",
+        "x": 64,
+        "y": 48
+      },
+      {
+        "asset": "door",
+        "x": 80,
+        "y": 48
+      },
+      {
+        "asset": "door",
+        "x": 96,
+        "y": 48
+      },
+      {
+        "asset": "arch-right",
+        "x": 112,
+        "y": 48
+      },
+      {
+        "asset": "window-body",
+        "x": 128,
+        "y": 48
+      },
+      {
+        "asset": "pier",
+        "x": 144,
+        "y": 48
+      },
+      {
+        "asset": "wall",
+        "x": 160,
+        "y": 48
+      },
+      {
+        "asset": "pier",
+        "x": 176,
+        "y": 48
+      },
+      {
+        "asset": "pier",
+        "x": 0,
+        "y": 64
+      },
+      {
+        "asset": "window-head",
+        "x": 16,
+        "y": 64
+      },
+      {
+        "asset": "pier",
+        "x": 32,
+        "y": 64
+      },
+      {
+        "asset": "window-foot",
+        "x": 48,
+        "y": 64
+      },
+      {
+        "asset": "pier-cap",
+        "x": 64,
+        "y": 64
+      },
+      {
+        "asset": "door",
+        "x": 80,
+        "y": 64
+      },
+      {
+        "asset": "door",
+        "x": 96,
+        "y": 64
+      },
+      {
+        "asset": "pier-cap",
+        "x": 112,
+        "y": 64
+      },
+      {
+        "asset": "window-foot",
+        "x": 128,
+        "y": 64
+      },
+      {
+        "asset": "pier",
+        "x": 144,
+        "y": 64
+      },
+      {
+        "asset": "window-head",
+        "x": 160,
+        "y": 64
+      },
+      {
+        "asset": "pier",
+        "x": 176,
+        "y": 64
+      },
+      {
+        "asset": "pier",
+        "x": 0,
+        "y": 80
+      },
+      {
+        "asset": "window-body",
+        "x": 16,
+        "y": 80
+      },
+      {
+        "asset": "pier",
+        "x": 32,
+        "y": 80
+      },
+      {
+        "asset": "sconce",
+        "x": 48,
+        "y": 80
+      },
+      {
+        "asset": "pier-foot",
+        "x": 64,
+        "y": 80
+      },
+      {
+        "asset": "carpet-steps",
+        "x": 80,
+        "y": 80
+      },
+      {
+        "asset": "carpet-steps",
+        "x": 96,
+        "y": 80
+      },
+      {
+        "asset": "pier-foot",
+        "x": 112,
+        "y": 80
+      },
+      {
+        "asset": "sconce",
+        "x": 128,
+        "y": 80
+      },
+      {
+        "asset": "pier",
+        "x": 144,
+        "y": 80
+      },
+      {
+        "asset": "window-body",
+        "x": 160,
+        "y": 80
+      },
+      {
+        "asset": "pier",
+        "x": 176,
+        "y": 80
+      },
+      {
+        "asset": "pier",
+        "x": 0,
+        "y": 96
+      },
+      {
+        "asset": "window-foot",
+        "x": 16,
+        "y": 96
+      },
+      {
+        "asset": "pier",
+        "x": 32,
+        "y": 96
+      },
+      {
+        "asset": "steps",
+        "x": 48,
+        "y": 96
+      },
+      {
+        "asset": "steps",
+        "x": 64,
+        "y": 96
+      },
+      {
+        "asset": "carpet-steps",
+        "x": 80,
+        "y": 96
+      },
+      {
+        "asset": "carpet-steps",
+        "x": 96,
+        "y": 96
+      },
+      {
+        "asset": "steps",
+        "x": 112,
+        "y": 96
+      },
+      {
+        "asset": "steps",
+        "x": 128,
+        "y": 96
+      },
+      {
+        "asset": "pier",
+        "x": 144,
+        "y": 96
+      },
+      {
+        "asset": "window-foot",
+        "x": 160,
+        "y": 96
+      },
+      {
+        "asset": "pier",
+        "x": 176,
+        "y": 96
+      },
+      {
+        "asset": "pier-foot",
+        "x": 0,
+        "y": 112
+      },
+      {
+        "asset": "floor",
+        "x": 16,
+        "y": 112
+      },
+      {
+        "asset": "pier-foot",
+        "x": 32,
+        "y": 112
+      },
+      {
+        "asset": "floor",
+        "x": 48,
+        "y": 112
+      },
+      {
+        "asset": "carpet-left",
+        "x": 64,
+        "y": 112
+      },
+      {
+        "asset": "carpet",
+        "x": 80,
+        "y": 112
+      },
+      {
+        "asset": "carpet",
+        "x": 96,
+        "y": 112
+      },
+      {
+        "asset": "carpet-right",
+        "x": 112,
+        "y": 112
+      },
+      {
+        "asset": "floor",
+        "x": 128,
+        "y": 112
+      },
+      {
+        "asset": "pier-foot",
+        "x": 144,
+        "y": 112
+      },
+      {
+        "asset": "floor",
+        "x": 160,
+        "y": 112
+      },
+      {
+        "asset": "pier-foot",
+        "x": 176,
+        "y": 112
+      },
+      {
+        "asset": "pier",
+        "x": 0,
+        "y": 128
+      },
+      {
+        "asset": "floor",
+        "x": 16,
+        "y": 128
+      },
+      {
+        "asset": "floor",
+        "x": 32,
+        "y": 128
+      },
+      {
+        "asset": "floor",
+        "x": 48,
+        "y": 128
+      },
+      {
+        "asset": "carpet-left",
+        "x": 64,
+        "y": 128
+      },
+      {
+        "asset": "carpet",
+        "x": 80,
+        "y": 128
+      },
+      {
+        "asset": "carpet",
+        "x": 96,
+        "y": 128
+      },
+      {
+        "asset": "carpet-right",
+        "x": 112,
+        "y": 128
+      },
+      {
+        "asset": "floor",
+        "x": 128,
+        "y": 128
+      },
+      {
+        "asset": "floor",
+        "x": 144,
+        "y": 128
+      },
+      {
+        "asset": "floor",
+        "x": 160,
+        "y": 128
+      },
+      {
+        "asset": "pier",
+        "x": 176,
+        "y": 128
+      },
+      {
+        "asset": "pier",
+        "x": 0,
+        "y": 144
+      },
+      {
+        "asset": "floor",
+        "x": 16,
+        "y": 144
+      },
+      {
+        "asset": "floor-joint",
+        "x": 32,
+        "y": 144
+      },
+      {
+        "asset": "floor",
+        "x": 48,
+        "y": 144
+      },
+      {
+        "asset": "carpet-left",
+        "x": 64,
+        "y": 144
+      },
+      {
+        "asset": "carpet",
+        "x": 80,
+        "y": 144
+      },
+      {
+        "asset": "carpet",
+        "x": 96,
+        "y": 144
+      },
+      {
+        "asset": "carpet-right",
+        "x": 112,
+        "y": 144
+      },
+      {
+        "asset": "floor",
+        "x": 128,
+        "y": 144
+      },
+      {
+        "asset": "floor",
+        "x": 144,
+        "y": 144
+      },
+      {
+        "asset": "floor",
+        "x": 160,
+        "y": 144
+      },
+      {
+        "asset": "pier",
+        "x": 176,
+        "y": 144
+      },
+      {
+        "asset": "pier",
+        "x": 0,
+        "y": 160
+      },
+      {
+        "asset": "floor",
+        "x": 16,
+        "y": 160
+      },
+      {
+        "asset": "floor",
+        "x": 32,
+        "y": 160
+      },
+      {
+        "asset": "floor",
+        "x": 48,
+        "y": 160
+      },
+      {
+        "asset": "carpet-left",
+        "x": 64,
+        "y": 160
+      },
+      {
+        "asset": "carpet",
+        "x": 80,
+        "y": 160
+      },
+      {
+        "asset": "carpet",
+        "x": 96,
+        "y": 160
+      },
+      {
+        "asset": "carpet-right",
+        "x": 112,
+        "y": 160
+      },
+      {
+        "asset": "floor",
+        "x": 128,
+        "y": 160
+      },
+      {
+        "asset": "floor",
+        "x": 144,
+        "y": 160
+      },
+      {
+        "asset": "floor",
+        "x": 160,
+        "y": 160
+      },
+      {
+        "asset": "pier",
+        "x": 176,
+        "y": 160
+      },
+      {
+        "asset": "pier",
+        "x": 0,
+        "y": 176
+      },
+      {
+        "asset": "floor",
+        "x": 16,
+        "y": 176
+      },
+      {
+        "asset": "floor",
+        "x": 32,
+        "y": 176
+      },
+      {
+        "asset": "floor",
+        "x": 48,
+        "y": 176
+      },
+      {
+        "asset": "carpet-left",
+        "x": 64,
+        "y": 176
+      },
+      {
+        "asset": "carpet",
+        "x": 80,
+        "y": 176
+      },
+      {
+        "asset": "carpet",
+        "x": 96,
+        "y": 176
+      },
+      {
+        "asset": "carpet-right",
+        "x": 112,
+        "y": 176
+      },
+      {
+        "asset": "floor",
+        "x": 128,
+        "y": 176
+      },
+      {
+        "asset": "floor-joint",
+        "x": 144,
+        "y": 176
+      },
+      {
+        "asset": "floor",
+        "x": 160,
+        "y": 176
+      },
+      {
+        "asset": "pier",
+        "x": 176,
+        "y": 176
+      },
+      {
+        "asset": "pier-foot",
+        "x": 0,
+        "y": 192
+      },
+      {
+        "asset": "floor",
+        "x": 16,
+        "y": 192
+      },
+      {
+        "asset": "floor",
+        "x": 32,
+        "y": 192
+      },
+      {
+        "asset": "floor",
+        "x": 48,
+        "y": 192
+      },
+      {
+        "asset": "carpet-left",
+        "x": 64,
+        "y": 192
+      },
+      {
+        "asset": "carpet",
+        "x": 80,
+        "y": 192
+      },
+      {
+        "asset": "carpet",
+        "x": 96,
+        "y": 192
+      },
+      {
+        "asset": "carpet-right",
+        "x": 112,
+        "y": 192
+      },
+      {
+        "asset": "floor",
+        "x": 128,
+        "y": 192
+      },
+      {
+        "asset": "floor",
+        "x": 144,
+        "y": 192
+      },
+      {
+        "asset": "floor",
+        "x": 160,
+        "y": 192
+      },
+      {
+        "asset": "pier-foot",
+        "x": 176,
+        "y": 192
+      },
+      {
+        "asset": "floor-edge",
+        "x": 0,
+        "y": 208
+      },
+      {
+        "asset": "floor",
+        "x": 16,
+        "y": 208
+      },
+      {
+        "asset": "floor-joint",
+        "x": 32,
+        "y": 208
+      },
+      {
+        "asset": "floor",
+        "x": 48,
+        "y": 208
+      },
+      {
+        "asset": "carpet-left",
+        "x": 64,
+        "y": 208
+      },
+      {
+        "asset": "carpet",
+        "x": 80,
+        "y": 208
+      },
+      {
+        "asset": "carpet",
+        "x": 96,
+        "y": 208
+      },
+      {
+        "asset": "carpet-right",
+        "x": 112,
+        "y": 208
+      },
+      {
+        "asset": "floor",
+        "x": 128,
+        "y": 208
+      },
+      {
+        "asset": "floor",
+        "x": 144,
+        "y": 208
+      },
+      {
+        "asset": "floor",
+        "x": 160,
+        "y": 208
+      },
+      {
+        "asset": "floor-edge",
+        "x": 176,
+        "y": 208
+      },
+      {
+        "asset": "floor-edge",
+        "x": 0,
+        "y": 224
+      },
+      {
+        "asset": "floor",
+        "x": 16,
+        "y": 224
+      },
+      {
+        "asset": "floor",
+        "x": 32,
+        "y": 224
+      },
+      {
+        "asset": "floor",
+        "x": 48,
+        "y": 224
+      },
+      {
+        "asset": "carpet-left",
+        "x": 64,
+        "y": 224
+      },
+      {
+        "asset": "carpet",
+        "x": 80,
+        "y": 224
+      },
+      {
+        "asset": "carpet",
+        "x": 96,
+        "y": 224
+      },
+      {
+        "asset": "carpet-right",
+        "x": 112,
+        "y": 224
+      },
+      {
+        "asset": "floor",
+        "x": 128,
+        "y": 224
+      },
+      {
+        "asset": "floor",
+        "x": 144,
+        "y": 224
+      },
+      {
+        "asset": "floor",
+        "x": 160,
+        "y": 224
+      },
+      {
+        "asset": "floor-edge",
+        "x": 176,
+        "y": 224
+      },
+      {
+        "asset": "hud",
+        "x": 192,
+        "y": 0
+      },
+      {
+        "asset": "bat-familiar",
+        "x": 51,
+        "y": 61
+      },
+      {
+        "asset": "bat-familiar",
+        "x": 131,
+        "y": 61
+      },
+      {
+        "asset": "bullet-pink",
+        "x": 37,
+        "y": 109
+      },
+      {
+        "asset": "bullet-pink",
+        "x": 61,
+        "y": 125
+      },
+      {
+        "asset": "bullet-pink",
+        "x": 85,
+        "y": 141
+      },
+      {
+        "asset": "bullet-blue",
+        "x": 109,
+        "y": 141
+      },
+      {
+        "asset": "bullet-blue",
+        "x": 133,
+        "y": 125
+      },
+      {
+        "asset": "bullet-blue",
+        "x": 157,
+        "y": 109
+      },
+      {
+        "asset": "bullet-pink",
+        "x": 45,
+        "y": 165
+      },
+      {
+        "asset": "bullet-blue",
+        "x": 141,
+        "y": 165
+      },
+      {
+        "asset": "gohei-normal",
+        "x": 99,
+        "y": 188
+      },
+      {
+        "asset": "reimu-neutral",
+        "x": 88,
+        "y": 188
+      }
+    ],
+    "current_source": "v3-neutral",
+    "reference_source": "v4-neutral"
+  },
+  {
+    "name": "fire",
+    "width": 256,
+    "height": 240,
+    "render_hash": "fa9af5e2a0ba920afcbaa1b2b83c4a12f61184498871e5a7e0b0a9ac4db77221",
+    "placements": [
+      {
+        "asset": "cornice",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "asset": "cornice",
+        "x": 16,
+        "y": 0
+      },
+      {
+        "asset": "cornice",
+        "x": 32,
+        "y": 0
+      },
+      {
+        "asset": "cornice",
+        "x": 48,
+        "y": 0
+      },
+      {
+        "asset": "cornice",
+        "x": 64,
+        "y": 0
+      },
+      {
+        "asset": "cornice",
+        "x": 80,
+        "y": 0
+      },
+      {
+        "asset": "cornice",
+        "x": 96,
+        "y": 0
+      },
+      {
+        "asset": "cornice",
+        "x": 112,
+        "y": 0
+      },
+      {
+        "asset": "cornice",
+        "x": 128,
+        "y": 0
+      },
+      {
+        "asset": "cornice",
+        "x": 144,
+        "y": 0
+      },
+      {
+        "asset": "cornice",
+        "x": 160,
+        "y": 0
+      },
+      {
+        "asset": "cornice",
+        "x": 176,
+        "y": 0
+      },
+      {
+        "asset": "pier-cap",
+        "x": 0,
+        "y": 16
+      },
+      {
+        "asset": "hanging-top",
+        "x": 16,
+        "y": 16
+      },
+      {
+        "asset": "pier-cap",
+        "x": 32,
+        "y": 16
+      },
+      {
+        "asset": "wall",
+        "x": 48,
+        "y": 16
+      },
+      {
+        "asset": "arch-left",
+        "x": 64,
+        "y": 16
+      },
+      {
+        "asset": "rose-00",
+        "x": 80,
+        "y": 16
+      },
+      {
+        "asset": "rose-01",
+        "x": 96,
+        "y": 16
+      },
+      {
+        "asset": "arch-right",
+        "x": 112,
+        "y": 16
+      },
+      {
+        "asset": "wall",
+        "x": 128,
+        "y": 16
+      },
+      {
+        "asset": "pier-cap",
+        "x": 144,
+        "y": 16
+      },
+      {
+        "asset": "hanging-top",
+        "x": 160,
+        "y": 16
+      },
+      {
+        "asset": "pier-cap",
+        "x": 176,
+        "y": 16
+      },
+      {
+        "asset": "pier",
+        "x": 0,
+        "y": 32
+      },
+      {
+        "asset": "hanging-end",
+        "x": 16,
+        "y": 32
+      },
+      {
+        "asset": "pier",
+        "x": 32,
+        "y": 32
+      },
+      {
+        "asset": "window-head",
+        "x": 48,
+        "y": 32
+      },
+      {
+        "asset": "wall",
+        "x": 64,
+        "y": 32
+      },
+      {
+        "asset": "rose-10",
+        "x": 80,
+        "y": 32
+      },
+      {
+        "asset": "rose-11",
+        "x": 96,
+        "y": 32
+      },
+      {
+        "asset": "wall",
+        "x": 112,
+        "y": 32
+      },
+      {
+        "asset": "window-head",
+        "x": 128,
+        "y": 32
+      },
+      {
+        "asset": "pier",
+        "x": 144,
+        "y": 32
+      },
+      {
+        "asset": "hanging-end",
+        "x": 160,
+        "y": 32
+      },
+      {
+        "asset": "pier",
+        "x": 176,
+        "y": 32
+      },
+      {
+        "asset": "pier",
+        "x": 0,
+        "y": 48
+      },
+      {
+        "asset": "wall",
+        "x": 16,
+        "y": 48
+      },
+      {
+        "asset": "pier",
+        "x": 32,
+        "y": 48
+      },
+      {
+        "asset": "window-body",
+        "x": 48,
+        "y": 48
+      },
+      {
+        "asset": "arch-left",
+        "x": 64,
+        "y": 48
+      },
+      {
+        "asset": "door",
+        "x": 80,
+        "y": 48
+      },
+      {
+        "asset": "door",
+        "x": 96,
+        "y": 48
+      },
+      {
+        "asset": "arch-right",
+        "x": 112,
+        "y": 48
+      },
+      {
+        "asset": "window-body",
+        "x": 128,
+        "y": 48
+      },
+      {
+        "asset": "pier",
+        "x": 144,
+        "y": 48
+      },
+      {
+        "asset": "wall",
+        "x": 160,
+        "y": 48
+      },
+      {
+        "asset": "pier",
+        "x": 176,
+        "y": 48
+      },
+      {
+        "asset": "pier",
+        "x": 0,
+        "y": 64
+      },
+      {
+        "asset": "window-head",
+        "x": 16,
+        "y": 64
+      },
+      {
+        "asset": "pier",
+        "x": 32,
+        "y": 64
+      },
+      {
+        "asset": "window-foot",
+        "x": 48,
+        "y": 64
+      },
+      {
+        "asset": "pier-cap",
+        "x": 64,
+        "y": 64
+      },
+      {
+        "asset": "door",
+        "x": 80,
+        "y": 64
+      },
+      {
+        "asset": "door",
+        "x": 96,
+        "y": 64
+      },
+      {
+        "asset": "pier-cap",
+        "x": 112,
+        "y": 64
+      },
+      {
+        "asset": "window-foot",
+        "x": 128,
+        "y": 64
+      },
+      {
+        "asset": "pier",
+        "x": 144,
+        "y": 64
+      },
+      {
+        "asset": "window-head",
+        "x": 160,
+        "y": 64
+      },
+      {
+        "asset": "pier",
+        "x": 176,
+        "y": 64
+      },
+      {
+        "asset": "pier",
+        "x": 0,
+        "y": 80
+      },
+      {
+        "asset": "window-body",
+        "x": 16,
+        "y": 80
+      },
+      {
+        "asset": "pier",
+        "x": 32,
+        "y": 80
+      },
+      {
+        "asset": "sconce",
+        "x": 48,
+        "y": 80
+      },
+      {
+        "asset": "pier-foot",
+        "x": 64,
+        "y": 80
+      },
+      {
+        "asset": "carpet-steps",
+        "x": 80,
+        "y": 80
+      },
+      {
+        "asset": "carpet-steps",
+        "x": 96,
+        "y": 80
+      },
+      {
+        "asset": "pier-foot",
+        "x": 112,
+        "y": 80
+      },
+      {
+        "asset": "sconce",
+        "x": 128,
+        "y": 80
+      },
+      {
+        "asset": "pier",
+        "x": 144,
+        "y": 80
+      },
+      {
+        "asset": "window-body",
+        "x": 160,
+        "y": 80
+      },
+      {
+        "asset": "pier",
+        "x": 176,
+        "y": 80
+      },
+      {
+        "asset": "pier",
+        "x": 0,
+        "y": 96
+      },
+      {
+        "asset": "window-foot",
+        "x": 16,
+        "y": 96
+      },
+      {
+        "asset": "pier",
+        "x": 32,
+        "y": 96
+      },
+      {
+        "asset": "steps",
+        "x": 48,
+        "y": 96
+      },
+      {
+        "asset": "steps",
+        "x": 64,
+        "y": 96
+      },
+      {
+        "asset": "carpet-steps",
+        "x": 80,
+        "y": 96
+      },
+      {
+        "asset": "carpet-steps",
+        "x": 96,
+        "y": 96
+      },
+      {
+        "asset": "steps",
+        "x": 112,
+        "y": 96
+      },
+      {
+        "asset": "steps",
+        "x": 128,
+        "y": 96
+      },
+      {
+        "asset": "pier",
+        "x": 144,
+        "y": 96
+      },
+      {
+        "asset": "window-foot",
+        "x": 160,
+        "y": 96
+      },
+      {
+        "asset": "pier",
+        "x": 176,
+        "y": 96
+      },
+      {
+        "asset": "pier-foot",
+        "x": 0,
+        "y": 112
+      },
+      {
+        "asset": "floor",
+        "x": 16,
+        "y": 112
+      },
+      {
+        "asset": "pier-foot",
+        "x": 32,
+        "y": 112
+      },
+      {
+        "asset": "floor",
+        "x": 48,
+        "y": 112
+      },
+      {
+        "asset": "carpet-left",
+        "x": 64,
+        "y": 112
+      },
+      {
+        "asset": "carpet",
+        "x": 80,
+        "y": 112
+      },
+      {
+        "asset": "carpet",
+        "x": 96,
+        "y": 112
+      },
+      {
+        "asset": "carpet-right",
+        "x": 112,
+        "y": 112
+      },
+      {
+        "asset": "floor",
+        "x": 128,
+        "y": 112
+      },
+      {
+        "asset": "pier-foot",
+        "x": 144,
+        "y": 112
+      },
+      {
+        "asset": "floor",
+        "x": 160,
+        "y": 112
+      },
+      {
+        "asset": "pier-foot",
+        "x": 176,
+        "y": 112
+      },
+      {
+        "asset": "pier",
+        "x": 0,
+        "y": 128
+      },
+      {
+        "asset": "floor",
+        "x": 16,
+        "y": 128
+      },
+      {
+        "asset": "floor",
+        "x": 32,
+        "y": 128
+      },
+      {
+        "asset": "floor",
+        "x": 48,
+        "y": 128
+      },
+      {
+        "asset": "carpet-left",
+        "x": 64,
+        "y": 128
+      },
+      {
+        "asset": "carpet",
+        "x": 80,
+        "y": 128
+      },
+      {
+        "asset": "carpet",
+        "x": 96,
+        "y": 128
+      },
+      {
+        "asset": "carpet-right",
+        "x": 112,
+        "y": 128
+      },
+      {
+        "asset": "floor",
+        "x": 128,
+        "y": 128
+      },
+      {
+        "asset": "floor",
+        "x": 144,
+        "y": 128
+      },
+      {
+        "asset": "floor",
+        "x": 160,
+        "y": 128
+      },
+      {
+        "asset": "pier",
+        "x": 176,
+        "y": 128
+      },
+      {
+        "asset": "pier",
+        "x": 0,
+        "y": 144
+      },
+      {
+        "asset": "floor",
+        "x": 16,
+        "y": 144
+      },
+      {
+        "asset": "floor-joint",
+        "x": 32,
+        "y": 144
+      },
+      {
+        "asset": "floor",
+        "x": 48,
+        "y": 144
+      },
+      {
+        "asset": "carpet-left",
+        "x": 64,
+        "y": 144
+      },
+      {
+        "asset": "carpet",
+        "x": 80,
+        "y": 144
+      },
+      {
+        "asset": "carpet",
+        "x": 96,
+        "y": 144
+      },
+      {
+        "asset": "carpet-right",
+        "x": 112,
+        "y": 144
+      },
+      {
+        "asset": "floor",
+        "x": 128,
+        "y": 144
+      },
+      {
+        "asset": "floor",
+        "x": 144,
+        "y": 144
+      },
+      {
+        "asset": "floor",
+        "x": 160,
+        "y": 144
+      },
+      {
+        "asset": "pier",
+        "x": 176,
+        "y": 144
+      },
+      {
+        "asset": "pier",
+        "x": 0,
+        "y": 160
+      },
+      {
+        "asset": "floor",
+        "x": 16,
+        "y": 160
+      },
+      {
+        "asset": "floor",
+        "x": 32,
+        "y": 160
+      },
+      {
+        "asset": "floor",
+        "x": 48,
+        "y": 160
+      },
+      {
+        "asset": "carpet-left",
+        "x": 64,
+        "y": 160
+      },
+      {
+        "asset": "carpet",
+        "x": 80,
+        "y": 160
+      },
+      {
+        "asset": "carpet",
+        "x": 96,
+        "y": 160
+      },
+      {
+        "asset": "carpet-right",
+        "x": 112,
+        "y": 160
+      },
+      {
+        "asset": "floor",
+        "x": 128,
+        "y": 160
+      },
+      {
+        "asset": "floor",
+        "x": 144,
+        "y": 160
+      },
+      {
+        "asset": "floor",
+        "x": 160,
+        "y": 160
+      },
+      {
+        "asset": "pier",
+        "x": 176,
+        "y": 160
+      },
+      {
+        "asset": "pier",
+        "x": 0,
+        "y": 176
+      },
+      {
+        "asset": "floor",
+        "x": 16,
+        "y": 176
+      },
+      {
+        "asset": "floor",
+        "x": 32,
+        "y": 176
+      },
+      {
+        "asset": "floor",
+        "x": 48,
+        "y": 176
+      },
+      {
+        "asset": "carpet-left",
+        "x": 64,
+        "y": 176
+      },
+      {
+        "asset": "carpet",
+        "x": 80,
+        "y": 176
+      },
+      {
+        "asset": "carpet",
+        "x": 96,
+        "y": 176
+      },
+      {
+        "asset": "carpet-right",
+        "x": 112,
+        "y": 176
+      },
+      {
+        "asset": "floor",
+        "x": 128,
+        "y": 176
+      },
+      {
+        "asset": "floor-joint",
+        "x": 144,
+        "y": 176
+      },
+      {
+        "asset": "floor",
+        "x": 160,
+        "y": 176
+      },
+      {
+        "asset": "pier",
+        "x": 176,
+        "y": 176
+      },
+      {
+        "asset": "pier-foot",
+        "x": 0,
+        "y": 192
+      },
+      {
+        "asset": "floor",
+        "x": 16,
+        "y": 192
+      },
+      {
+        "asset": "floor",
+        "x": 32,
+        "y": 192
+      },
+      {
+        "asset": "floor",
+        "x": 48,
+        "y": 192
+      },
+      {
+        "asset": "carpet-left",
+        "x": 64,
+        "y": 192
+      },
+      {
+        "asset": "carpet",
+        "x": 80,
+        "y": 192
+      },
+      {
+        "asset": "carpet",
+        "x": 96,
+        "y": 192
+      },
+      {
+        "asset": "carpet-right",
+        "x": 112,
+        "y": 192
+      },
+      {
+        "asset": "floor",
+        "x": 128,
+        "y": 192
+      },
+      {
+        "asset": "floor",
+        "x": 144,
+        "y": 192
+      },
+      {
+        "asset": "floor",
+        "x": 160,
+        "y": 192
+      },
+      {
+        "asset": "pier-foot",
+        "x": 176,
+        "y": 192
+      },
+      {
+        "asset": "floor-edge",
+        "x": 0,
+        "y": 208
+      },
+      {
+        "asset": "floor",
+        "x": 16,
+        "y": 208
+      },
+      {
+        "asset": "floor-joint",
+        "x": 32,
+        "y": 208
+      },
+      {
+        "asset": "floor",
+        "x": 48,
+        "y": 208
+      },
+      {
+        "asset": "carpet-left",
+        "x": 64,
+        "y": 208
+      },
+      {
+        "asset": "carpet",
+        "x": 80,
+        "y": 208
+      },
+      {
+        "asset": "carpet",
+        "x": 96,
+        "y": 208
+      },
+      {
+        "asset": "carpet-right",
+        "x": 112,
+        "y": 208
+      },
+      {
+        "asset": "floor",
+        "x": 128,
+        "y": 208
+      },
+      {
+        "asset": "floor",
+        "x": 144,
+        "y": 208
+      },
+      {
+        "asset": "floor",
+        "x": 160,
+        "y": 208
+      },
+      {
+        "asset": "floor-edge",
+        "x": 176,
+        "y": 208
+      },
+      {
+        "asset": "floor-edge",
+        "x": 0,
+        "y": 224
+      },
+      {
+        "asset": "floor",
+        "x": 16,
+        "y": 224
+      },
+      {
+        "asset": "floor",
+        "x": 32,
+        "y": 224
+      },
+      {
+        "asset": "floor",
+        "x": 48,
+        "y": 224
+      },
+      {
+        "asset": "carpet-left",
+        "x": 64,
+        "y": 224
+      },
+      {
+        "asset": "carpet",
+        "x": 80,
+        "y": 224
+      },
+      {
+        "asset": "carpet",
+        "x": 96,
+        "y": 224
+      },
+      {
+        "asset": "carpet-right",
+        "x": 112,
+        "y": 224
+      },
+      {
+        "asset": "floor",
+        "x": 128,
+        "y": 224
+      },
+      {
+        "asset": "floor",
+        "x": 144,
+        "y": 224
+      },
+      {
+        "asset": "floor",
+        "x": 160,
+        "y": 224
+      },
+      {
+        "asset": "floor-edge",
+        "x": 176,
+        "y": 224
+      },
+      {
+        "asset": "hud",
+        "x": 192,
+        "y": 0
+      },
+      {
+        "asset": "bat-familiar",
+        "x": 51,
+        "y": 61
+      },
+      {
+        "asset": "bat-familiar",
+        "x": 131,
+        "y": 61
+      },
+      {
+        "asset": "bullet-pink",
+        "x": 37,
+        "y": 109
+      },
+      {
+        "asset": "bullet-pink",
+        "x": 61,
+        "y": 125
+      },
+      {
+        "asset": "bullet-pink",
+        "x": 85,
+        "y": 141
+      },
+      {
+        "asset": "bullet-blue",
+        "x": 109,
+        "y": 141
+      },
+      {
+        "asset": "bullet-blue",
+        "x": 133,
+        "y": 125
+      },
+      {
+        "asset": "bullet-blue",
+        "x": 157,
+        "y": 109
+      },
+      {
+        "asset": "bullet-pink",
+        "x": 45,
+        "y": 165
+      },
+      {
+        "asset": "bullet-blue",
+        "x": 141,
+        "y": 165
+      },
+      {
+        "asset": "shot",
+        "x": 94,
+        "y": 157
+      },
+      {
+        "asset": "shot",
+        "x": 94,
+        "y": 133
+      },
+      {
+        "asset": "gohei-fire",
+        "x": 99,
+        "y": 189
+      },
+      {
+        "asset": "reimu-fire",
+        "x": 88,
+        "y": 188
+      }
+    ],
+    "current_source": "v3-fire",
+    "reference_source": "v4-fire"
+  }
+]

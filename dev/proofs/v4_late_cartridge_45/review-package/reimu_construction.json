@@ -1,0 +1,158 @@
+{
+  "body_anchor": [
+    8,
+    12
+  ],
+  "body_size": [
+    16,
+    24
+  ],
+  "cell_size": [
+    8,
+    8
+  ],
+  "cells": {
+    "neutral": [
+      {
+        "origin": [
+          0,
+          0
+        ],
+        "subpalette": "SP0",
+        "render_hash": "bfb0259b80a841d14dbb960b57de34cf6c161ee59ba4c54f971f581c428d88f2"
+      },
+      {
+        "origin": [
+          8,
+          0
+        ],
+        "subpalette": "SP0",
+        "render_hash": "5be17eba10a62fde17517277c5f1625278381dbd2e8fd8061805df768c8d2ac8"
+      },
+      {
+        "origin": [
+          0,
+          8
+        ],
+        "subpalette": "SP0",
+        "render_hash": "f20e16de4a324dd77c5a1fab438efe4b4b98b33299cad599aea40e4deba033b5"
+      },
+      {
+        "origin": [
+          8,
+          8
+        ],
+        "subpalette": "SP0",
+        "render_hash": "ec67712847d0aaaf291c731ef9463ba31a1406dc7acc7d9656c9198b93bed32e"
+      },
+      {
+        "origin": [
+          0,
+          16
+        ],
+        "subpalette": "SP0",
+        "render_hash": "7675e451dc21dcdae945edccab9f8d087686911860dcbceda13907beee50cd16"
+      },
+      {
+        "origin": [
+          8,
+          16
+        ],
+        "subpalette": "SP0",
+        "render_hash": "97a721974fa50143f44bc8fdbae905ebd3bdd0ef8749c53528ba44606bfa40ce"
+      }
+    ],
+    "fire": [
+      {
+        "origin": [
+          0,
+          0
+        ],
+        "subpalette": "SP0",
+        "render_hash": "3d62aba77a7ea42c0d542786f997b7226fecd337fc50bf3c1864fedffc310b26"
+      },
+      {
+        "origin": [
+          8,
+          0
+        ],
+        "subpalette": "SP0",
+        "render_hash": "e9b7ea6ba670fc0642725db534f69349237d4bc0e60659c9dd12c416451f5fea"
+      },
+      {
+        "origin": [
+          0,
+          8
+        ],
+        "subpalette": "SP0",
+        "render_hash": "daf41c6afd2cca90589033284f95bffd154fab9b9666db6f25fe1a882648802e"
+      },
+      {
+        "origin": [
+          8,
+          8
+        ],
+        "subpalette": "SP0",
+        "render_hash": "7552f4f866c916990aca21bfd7c31ec7053ee392beb6ea1c0e2c03eef39bb6a2"
+      },
+      {
+        "origin": [
+          0,
+          16
+        ],
+        "subpalette": "SP0",
+        "render_hash": "8399529153eae370febdf0c51eeafeafa5c98219b523a719d39ce32ed8d97e23"
+      },
+      {
+        "origin": [
+          8,
+          16
+        ],
+        "subpalette": "SP0",
+        "render_hash": "dc6d1ff2c65570bc7a4b78e76d0a9d13fed76f1438dfec31801aad3f65129ea7"
+      }
+    ]
+  },
+  "changed_body_pixels": 70,
+  "shared_top_rows": 6,
+  "normal_gohei_size": [
+    10,
+    14
+  ],
+  "fire_gohei_size": [
+    12,
+    14
+  ],
+  "offsets": {
+    "neutral": [
+      8,
+      -5
+    ],
+    "fire": [
+      9,
+      -4
+    ]
+  },
+  "sprite_palettes": [
+    [
+      "#201b2a",
+      "#d64053",
+      "#fff0da"
+    ],
+    [
+      "#201b2a",
+      "#987451",
+      "#fff0da"
+    ],
+    [
+      "#201b2a",
+      "#58abc2",
+      "#fff0da"
+    ],
+    [
+      "#201b2a",
+      "#de718e",
+      "#fff0da"
+    ]
+  ]
+}
