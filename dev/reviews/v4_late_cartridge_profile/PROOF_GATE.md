@@ -17,6 +17,12 @@ Use:
 - representative ordinary bullets/effects/actors;
 - actual 256×240 presentation with 192×240 playfield.
 
+The HUD/sidebar's **layout, information content and behavior are fixed** for this
+proof. Its visual pixel treatment remains subject to the Late-Cartridge rules.
+#45 MAY make only the minimum bounded visual-only pixel, palette or bitmap-glyph
+treatment needed to make the existing HUD comply. It must not redesign unrelated
+UI or change HUD behavior.
+
 Do not expand the proof into another scene, another playable character, a full
 Mansion redesign, title art, dialogue, ending art or broad runtime integration.
 
@@ -47,14 +53,20 @@ its tile logic inspectable.
 
 ### Reimu
 
-Provide:
-- 16×24 native body;
-- logical 2×3 8×8 cell decomposition;
-- separate gohei construction where applicable;
-- sprite subpalette assignment;
+Provide, at minimum:
+
+- one neutral gameplay state at native 16×24;
+- one meaningfully different active gameplay state at native 16×24 — **focus or
+  fire**;
+- logical 2×3 8×8 cell decomposition for both states;
+- the corresponding separate gohei state where applicable;
+- sprite subpalette assignment for both states;
 - rear-facing/back-view readable at 1×;
-- state comparison sufficient to show that the construction can extend beyond
-  one frozen pose.
+- evidence that both states use the same accepted metasprite, palette and
+  cluster-construction logic rather than being independently styled one-offs.
+
+This is a two-state construction proof, not authorization to complete the full
+Reimu family.
 
 Do not enlarge Reimu's gameplay envelope merely to make the design easier.
 
@@ -81,9 +93,49 @@ Target baseline:
 - 4 background subpalettes × 3 local colors + shared backdrop;
 - 4 sprite subpalettes × 3 visible colors + transparency.
 
+These are **global live pools for the ordinary gameplay frame**, not per-surface
+or per-asset budgets:
+
+- Mansion/playfield and HUD/sidebar background treatment share the same four
+  background subpalettes;
+- Reimu, enemies, bullets and effects share the same four sprite subpalettes;
+- the HUD gets no automatic extra background palette;
+- actors/effects get no private sprite-palette pools.
+
+Any mid-frame/raster/phase palette replacement must be identified in the ledger
+as an explicit Late-Cartridge trick/exception, including what is replaced and
+when.
+
 An exception is reviewable; an undocumented exception fails the proof.
 
-## 5. Hard fail conditions
+## 5. Canonical reproducibility
+
+The accepted proof pixels must come from durable canonical production state, not
+a one-off mockup.
+
+Provide:
+
+- exact canonical RoboPixel asset IDs for all newly authored/revised proof assets;
+- selected RoboPixel revisions;
+- exact canonical content/export hashes;
+- compact durable artist checkpoint identifying those exact assets/revisions;
+- deterministic composition/export inputs and provenance for the reviewed native
+  proof;
+- a mechanical verification that the reviewed native pixels correspond to the
+  selected canonical sources and declared composition;
+- the compact review package produced from that durable state.
+
+Use RoboPixel **Production Handoff v1**:
+
+`artist → compact durable checkpoint → mechanical packager/publisher → compact review package`
+
+Do **not** use model-mediated Base64/blob proof publishing.
+
+If a proof image cannot be reproduced from the recorded canonical state and
+deterministic composition/export path, it does not establish the production
+doctrine even if it looks correct.
+
+## 6. Hard fail conditions
 
 The proof fails mechanically/art-directionally if any of these occur:
 
@@ -92,6 +144,17 @@ The proof fails mechanically/art-directionally if any of these occur:
 - acceptance depends on CRT/scanline/shader treatment;
 - no inspectable 8×8/16×16 environment logic exists;
 - no palette ledger exists;
+- the HUD or an actor/effect silently receives a private extra palette pool;
+- a mid-frame palette replacement is used without being ledgered as an explicit
+  trick/exception;
+- exact canonical RoboPixel IDs/revisions/hashes are missing for authored proof
+  assets;
+- the reviewed proof cannot be mechanically reproduced from the recorded
+  canonical state and deterministic composition/export provenance;
+- Production Handoff v1 is bypassed or model-mediated Base64/blob publishing is
+  used;
+- the required neutral + active Reimu state demonstration is missing or the two
+  states do not share one construction logic;
 - Reimu is enlarged beyond the controlling gameplay envelope without separate
   Owner authority;
 - official PC Touhou sprite rendering is used as the target construction style;
@@ -100,7 +163,7 @@ The proof fails mechanically/art-directionally if any of these occur:
 - the proof silently changes gameplay mechanics, hitbox, stage flow or unrelated
   V4 surfaces.
 
-## 6. Owner visual questions
+## 7. Owner visual questions
 
 After hard gates pass, review the native frame with these questions:
 
@@ -140,7 +203,7 @@ After hard gates pass, review the native frame with these questions:
 - Are we confident enough in the rules to stop rediscovering "late Famicom"
   asset by asset?
 
-## 7. Acceptance outcomes
+## 8. Acceptance outcomes
 
 ### ACCEPT
 
@@ -164,7 +227,7 @@ The profile does not produce the desired visual generation.
 Preserve the proof as evidence, revise the doctrine, and repeat the same bounded
 gate before broad production.
 
-## 8. Stop
+## 9. Stop
 
 No result from #45 automatically authorizes:
 - merging old art PRs;
