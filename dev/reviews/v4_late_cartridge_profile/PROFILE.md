@@ -134,6 +134,28 @@ Every gameplay proof must include a **palette ledger** separating:
 
 Do not treat the larger NES color gamut as an unrestricted paint box.
 
+### LC-PAL-1A — live palette budget is global — MUST
+
+For an ordinary gameplay frame, the machine fiction has **one shared live pool**
+of up to four background subpalettes and **one shared live pool** of up to four
+sprite subpalettes.
+
+That budget is global across the complete 256×240 gameplay presentation:
+
+- Mansion/playfield background and HUD/sidebar background treatment share the
+  same four-background-subpalette pool;
+- the HUD/sidebar does **not** receive an automatic fifth or private background
+  palette family;
+- Reimu, enemies, bullets and effects share the same four-sprite-subpalette
+  pool;
+- an actor, bullet family or effect does **not** receive its own private
+  four-palette sprite pool.
+
+A mid-frame, raster, phase or otherwise time-dependent palette replacement MAY
+be used only as an explicit Late-Cartridge trick/exception. The palette ledger
+must identify what is replaced, when it is replaced, and why the trick remains
+credible under the cartridge fiction.
+
 ### LC-PAL-2 — background baseline — SHOULD
 
 Default still-frame fiction:
@@ -183,7 +205,9 @@ Late-era richness MAY come from explicit palette changes by:
 - story/presentation screen.
 
 These are deliberate state changes, not permission for unrestricted per-object
-colors in one ordinary frame.
+colors in one ordinary frame. Any palette replacement that occurs within an
+ordinary gameplay frame must be documented as a concrete trick/exception under
+LC-PAL-1A rather than silently increasing the live palette pool.
 
 ---
 
@@ -321,7 +345,10 @@ profile.
 The 64-pixel sidebar is not a modern overlay pasted onto retro gameplay.
 
 Its lettering, icons, borders, counters and palette use must fit the same
-tile/subpalette/cluster discipline as the playfield.
+tile/subpalette/cluster discipline as the playfield. The sidebar shares the
+global live background/sprite palette budgets defined by LC-PAL-1A; it does not
+receive private palette capacity merely because it occupies a separate screen
+region.
 
 ### LC-UI-2 — bitmap typography — SHOULD
 
@@ -415,6 +442,22 @@ For later units, the minimum expected set is:
 - explicit waiver list;
 - comparison against the prior V3/current/pre-profile state where useful;
 - gameplay/readability witness for gameplay surfaces.
+
+### LC-EVID-1 — canonical reproducibility — MUST
+
+A visually successful one-off raster does not establish the Late-Cartridge
+production doctrine.
+
+Canonical authored proof assets must be traceable to durable RoboPixel state
+with exact asset IDs, selected revisions and content/export hashes. The reviewed
+native composition must have deterministic composition/export provenance and
+evidence that its reviewed pixels correspond to those canonical sources.
+
+Production publication follows RoboPixel **Production Handoff v1**:
+
+`artist → compact durable checkpoint → mechanical packager/publisher → compact review package`
+
+Do not route binary proof payloads through model-mediated Base64/blob publishing.
 
 Do not substitute a prose claim of "NES style" for this evidence.
 
