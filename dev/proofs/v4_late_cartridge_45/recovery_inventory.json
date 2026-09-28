@@ -1,0 +1,261 @@
+{
+  "project_id": "scarlet-moon-never-sets",
+  "selected_count": 35,
+  "durable_count": 36,
+  "all_selected_revision_hashes_match": true,
+  "unselected_asset": "v4-lc45-bat",
+  "assets": [
+    {
+      "asset_id": "v4-lc45-arch-left",
+      "name": "LC45 arch-left",
+      "current_revision": 2,
+      "current_revision_hash": "a71f4ad7f4551b8312a90324fbd350d4e1cfff25f36a153eb3510e186fb3c2c6",
+      "uri": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-arch-left"
+    },
+    {
+      "asset_id": "v4-lc45-arch-right",
+      "name": "LC45 arch-right",
+      "current_revision": 2,
+      "current_revision_hash": "0da541810595cfa4f548c0bd5b1ee87567b1455e5a704ce867357a71ee3bd401",
+      "uri": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-arch-right"
+    },
+    {
+      "asset_id": "v4-lc45-bat",
+      "name": "LC45 bat",
+      "current_revision": 2,
+      "current_revision_hash": "860ea1d854a047d031b6398616a86719f083e87d0f33a8cb0cba86d187145bfa",
+      "uri": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-bat"
+    },
+    {
+      "asset_id": "v4-lc45-bat-familiar",
+      "name": "LC45 bat familiar",
+      "current_revision": 2,
+      "current_revision_hash": "97bcd9870f3844ee49b6158975e92fb7e3bc76cafca578f89d9689e45e71a442",
+      "uri": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-bat-familiar"
+    },
+    {
+      "asset_id": "v4-lc45-bullet-blue",
+      "name": "LC45 bullet-blue",
+      "current_revision": 2,
+      "current_revision_hash": "70af647ad6c174b56e003bde66ef3a9624f032ac41c1cb87c2b13e1236f70d8c",
+      "uri": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-bullet-blue"
+    },
+    {
+      "asset_id": "v4-lc45-bullet-pink",
+      "name": "LC45 bullet-pink",
+      "current_revision": 2,
+      "current_revision_hash": "a460a078310fa479cc566e6c1b56f6a8dae5f6422c7d3693c9280b6690239622",
+      "uri": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-bullet-pink"
+    },
+    {
+      "asset_id": "v4-lc45-carpet",
+      "name": "LC45 carpet",
+      "current_revision": 2,
+      "current_revision_hash": "01d26b3c4c36a273fa9a29b3c62f61e6baa18ae7620f025d761ef116bebb972f",
+      "uri": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-carpet"
+    },
+    {
+      "asset_id": "v4-lc45-carpet-left",
+      "name": "LC45 carpet-left",
+      "current_revision": 2,
+      "current_revision_hash": "b62ba95580ea76558cf2099d92d8e37066626e6394a205d058f81826753e44bb",
+      "uri": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-carpet-left"
+    },
+    {
+      "asset_id": "v4-lc45-carpet-right",
+      "name": "LC45 carpet-right",
+      "current_revision": 2,
+      "current_revision_hash": "3296def288344cf2238ccf1a9f7dfb4792460bcdfd3af501a0c93c30ed57c41f",
+      "uri": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-carpet-right"
+    },
+    {
+      "asset_id": "v4-lc45-carpet-steps",
+      "name": "LC45 carpet-steps",
+      "current_revision": 2,
+      "current_revision_hash": "5194c2e36ee8b7191f2bc67e8ca2c8a8ad055d51fca50776792f186178d6183a",
+      "uri": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-carpet-steps"
+    },
+    {
+      "asset_id": "v4-lc45-cornice",
+      "name": "LC45 cornice",
+      "current_revision": 2,
+      "current_revision_hash": "7801b01c371d0979f40c8ef4892f95777b970a1ea1ff830670d82f2cbe8f2930",
+      "uri": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-cornice"
+    },
+    {
+      "asset_id": "v4-lc45-door",
+      "name": "LC45 door",
+      "current_revision": 2,
+      "current_revision_hash": "21c0c818b3e47d9774f0e912498f6be840dc24e536b4ded2239317490dd9ea36",
+      "uri": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-door"
+    },
+    {
+      "asset_id": "v4-lc45-floor",
+      "name": "LC45 floor",
+      "current_revision": 2,
+      "current_revision_hash": "60d0af908236571fe56e4c34b1a3a0807a3570420bb946aefa5eab522adc706e",
+      "uri": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-floor"
+    },
+    {
+      "asset_id": "v4-lc45-floor-edge",
+      "name": "LC45 floor-edge",
+      "current_revision": 2,
+      "current_revision_hash": "9e5630434a2bb302f66aa5ccdabad27606ba4570e0e29ac429e8db058c8a2ccc",
+      "uri": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-floor-edge"
+    },
+    {
+      "asset_id": "v4-lc45-floor-joint",
+      "name": "LC45 floor-joint",
+      "current_revision": 2,
+      "current_revision_hash": "31d0de9b8e660fc84b3edb067194d828ae2a345fc5bbe6aa2aee3f5b769d97b0",
+      "uri": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-floor-joint"
+    },
+    {
+      "asset_id": "v4-lc45-gohei-fire",
+      "name": "LC45 gohei-fire",
+      "current_revision": 2,
+      "current_revision_hash": "389b09b9f854128320776bb10dcd45e1e8c3c2fdd256bfc041c0e074b5450240",
+      "uri": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-gohei-fire"
+    },
+    {
+      "asset_id": "v4-lc45-gohei-normal",
+      "name": "LC45 gohei-normal",
+      "current_revision": 2,
+      "current_revision_hash": "63f131ef789273bc27acb2d4f06895a927248ed0a9c06cb953a3fd88cf010409",
+      "uri": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-gohei-normal"
+    },
+    {
+      "asset_id": "v4-lc45-hanging-end",
+      "name": "LC45 hanging-end",
+      "current_revision": 2,
+      "current_revision_hash": "68020fc5546042408e78624c6bb3a1d18b8e809e8fc0ce3d8d98f205787246dc",
+      "uri": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-hanging-end"
+    },
+    {
+      "asset_id": "v4-lc45-hanging-top",
+      "name": "LC45 hanging-top",
+      "current_revision": 2,
+      "current_revision_hash": "28762d01671626aa84a79fb0c100c62ee057f23566d516dcd582a55d44837929",
+      "uri": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-hanging-top"
+    },
+    {
+      "asset_id": "v4-lc45-hud",
+      "name": "LC45 hud",
+      "current_revision": 2,
+      "current_revision_hash": "eb9d48aa37baff7c61ebb8e69880ae0169cea9b4474a9b4a88bd692628ec65f4",
+      "uri": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-hud"
+    },
+    {
+      "asset_id": "v4-lc45-pier",
+      "name": "LC45 pier",
+      "current_revision": 2,
+      "current_revision_hash": "8e875146c86f637534031839e4fd44e045a9992e269d885580adb38e811ccb1b",
+      "uri": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-pier"
+    },
+    {
+      "asset_id": "v4-lc45-pier-cap",
+      "name": "LC45 pier-cap",
+      "current_revision": 2,
+      "current_revision_hash": "2edc89bf0cbbcbc956e3e1c14e3e91be530635fe29ca5d857c5c8c55b2d9d286",
+      "uri": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-pier-cap"
+    },
+    {
+      "asset_id": "v4-lc45-pier-foot",
+      "name": "LC45 pier-foot",
+      "current_revision": 2,
+      "current_revision_hash": "340c02822661ab1b00e505ae53f9aa2f6462b263b3ad6654b426291d3faffe4d",
+      "uri": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-pier-foot"
+    },
+    {
+      "asset_id": "v4-lc45-reimu-fire",
+      "name": "LC45 reimu-fire",
+      "current_revision": 2,
+      "current_revision_hash": "bacd40ebc485446017058f5655b14b2abaefd03db6f87b9684ff42c0c7c0e53c",
+      "uri": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-reimu-fire"
+    },
+    {
+      "asset_id": "v4-lc45-reimu-neutral",
+      "name": "LC45 Reimu neutral",
+      "current_revision": 2,
+      "current_revision_hash": "38316c86ad74b807fc2c84ec81bce8d162b27357b6ba8e9d08f2692066cbdb08",
+      "uri": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-reimu-neutral"
+    },
+    {
+      "asset_id": "v4-lc45-rose-00",
+      "name": "LC45 rose-00",
+      "current_revision": 2,
+      "current_revision_hash": "2842be32c8b2113d074a065ca027e97685e7a38905c86a27a1403a4827c4aae5",
+      "uri": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-rose-00"
+    },
+    {
+      "asset_id": "v4-lc45-rose-01",
+      "name": "LC45 rose-01",
+      "current_revision": 2,
+      "current_revision_hash": "8f9bf626e0e754911fce9e0689505230d80d32afe7c7f735d0f952a63d3572ad",
+      "uri": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-rose-01"
+    },
+    {
+      "asset_id": "v4-lc45-rose-10",
+      "name": "LC45 rose-10",
+      "current_revision": 2,
+      "current_revision_hash": "291328973ac92d28a611794d875e4023fe0dfdf4471eedfbf44ce425afbf6985",
+      "uri": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-rose-10"
+    },
+    {
+      "asset_id": "v4-lc45-rose-11",
+      "name": "LC45 rose-11",
+      "current_revision": 2,
+      "current_revision_hash": "f99421fc59296d2b49463a72aae258c290ed8049288d720d2c55d914ce4f58ae",
+      "uri": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-rose-11"
+    },
+    {
+      "asset_id": "v4-lc45-sconce",
+      "name": "LC45 sconce",
+      "current_revision": 2,
+      "current_revision_hash": "01e4aae60be7814be48fca82158390788143c5e018d722f75e5e01e38b7c716d",
+      "uri": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-sconce"
+    },
+    {
+      "asset_id": "v4-lc45-shot",
+      "name": "LC45 shot",
+      "current_revision": 2,
+      "current_revision_hash": "aa76376d374aa3386ed8bdd2568cce3ffa1ebb3156d28d3fecfc24d04c2b0f0c",
+      "uri": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-shot"
+    },
+    {
+      "asset_id": "v4-lc45-steps",
+      "name": "LC45 steps",
+      "current_revision": 2,
+      "current_revision_hash": "c6e0be39a351a1037e63768cba453e5f31e892f97040a82917bc73523dedd596",
+      "uri": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-steps"
+    },
+    {
+      "asset_id": "v4-lc45-wall",
+      "name": "LC45 wall",
+      "current_revision": 2,
+      "current_revision_hash": "51b40e1c771b55af22c7c403c3664187933264645bfa1804f69c9934a7fe747e",
+      "uri": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-wall"
+    },
+    {
+      "asset_id": "v4-lc45-window-body",
+      "name": "LC45 window-body",
+      "current_revision": 2,
+      "current_revision_hash": "533b968b3a55886bbf265432b79a95983e62e8c12d9daf7723039c490b9c9f0b",
+      "uri": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-window-body"
+    },
+    {
+      "asset_id": "v4-lc45-window-foot",
+      "name": "LC45 window-foot",
+      "current_revision": 2,
+      "current_revision_hash": "5b3fff9d57762d82a4bfe8d973ec0d5590065982467be25d0d5e159474352fe7",
+      "uri": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-window-foot"
+    },
+    {
+      "asset_id": "v4-lc45-window-head",
+      "name": "LC45 window-head",
+      "current_revision": 2,
+      "current_revision_hash": "8bc8829bd47ef22cb62c8b50a5050e6a3da28a90ceb97da9335e6a879d23b7c7",
+      "uri": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-window-head"
+    }
+  ]
+}

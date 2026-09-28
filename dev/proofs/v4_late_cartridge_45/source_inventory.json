@@ -1,0 +1,98 @@
+{
+  "source_commit": "e2891954abfb4505283898eea098fb9db4f822c4",
+  "required_base_files": [
+    {
+      "key": "v4-source",
+      "path": "versions/v4/index.html",
+      "sha256": "11cf1b906aca600096827f15795ee6282547a7bb161567b868037028bc08d3a4"
+    },
+    {
+      "key": "v3-source",
+      "path": "versions/sprite-redesign/index.html",
+      "sha256": "7c224ab6fd0e6bb0153a7f279af61e4332a2ad4228d60404f26351800e75d7d4"
+    }
+  ],
+  "supplied_evidence_files": [
+    {
+      "key": "canonical-exports-json",
+      "path": "dev/proofs/v4_late_cartridge_45/canonical_exports.json",
+      "sha256": "a325a9f35a7d77daaed5d938d85fbd40430bc64c0c4c98ba6fd3669ba0a4c4e4"
+    },
+    {
+      "key": "export-hashes-json",
+      "path": "dev/proofs/v4_late_cartridge_45/export_hashes.json",
+      "sha256": "33e334d1d869ba9c475d08253d7798b7999db09b3b421290fa6179d15e4fac74"
+    },
+    {
+      "key": "construction-json",
+      "path": "dev/proofs/v4_late_cartridge_45/construction.json",
+      "sha256": "614aa82c275209e9c4701ae8ebebc7f7bc70e882b2adc3d2949ad77b410d6ff6"
+    },
+    {
+      "key": "authoring-json",
+      "path": "dev/proofs/v4_late_cartridge_45/authoring.json",
+      "sha256": "2e1d5ec92a9f33051d49b8ed34a1909c8f1e43ff1249e9909667fefdecba23a1"
+    },
+    {
+      "key": "validation-selected-json",
+      "path": "dev/proofs/v4_late_cartridge_45/validation_selected.json",
+      "sha256": "8cbf20b02952ab5b84adf066098ca989771ee9f42f7e8f9a45d4b097656a39e5"
+    },
+    {
+      "key": "evidence-md",
+      "path": "dev/proofs/v4_late_cartridge_45/evidence.md",
+      "sha256": "ad71cd585846116b31f26f7c688a0998ade012f2bf1180bb3db8971bf1c76546"
+    },
+    {
+      "key": "supplement-py",
+      "path": "dev/proofs/v4_late_cartridge_45/supplement.py",
+      "sha256": "df8fc017f91076097104b4ef214a7b1b5953873d257fe037ff1ee3ffd412d948"
+    },
+    {
+      "key": "source-raster-cjs",
+      "path": "dev/proofs/v4_late_cartridge_45/source_raster.cjs",
+      "sha256": "093d64612a893113def3453f9467d127e0be7d78884e0abeeb01f67fe6ac8ed4"
+    },
+    {
+      "key": "capture-sources-cjs",
+      "path": "dev/proofs/v4_late_cartridge_45/capture_sources.cjs",
+      "sha256": "c774c1e227ee72ac9c5a26e02c36c2938b96e3e8109caf7478eb63c69cb575c6"
+    },
+    {
+      "key": "run-capture-cjs",
+      "path": "dev/proofs/v4_late_cartridge_45/run_capture.cjs",
+      "sha256": "39507000019e2d1879c1d8dd53503e613811d1ad8fb2daa76626928358c4792f"
+    }
+  ],
+  "supplied_comparison_sources": [
+    {
+      "key": "v3-neutral",
+      "path": "dev/proofs/v4_late_cartridge_45/inputs/v3-neutral.png",
+      "sha256": "10b5382ab41b152e6b8d1e40d7db8e0d340a9e3dd807553c31353fbeb1bd1c4d",
+      "width": 256,
+      "height": 240
+    },
+    {
+      "key": "v3-fire",
+      "path": "dev/proofs/v4_late_cartridge_45/inputs/v3-fire.png",
+      "sha256": "296babf531be2dc9a75898ebc29e84f7d2fcb91c3e49563d7c2592420226faef",
+      "width": 256,
+      "height": 240
+    },
+    {
+      "key": "v4-neutral",
+      "path": "dev/proofs/v4_late_cartridge_45/inputs/v4-neutral.png",
+      "sha256": "10b5382ab41b152e6b8d1e40d7db8e0d340a9e3dd807553c31353fbeb1bd1c4d",
+      "width": 256,
+      "height": 240
+    },
+    {
+      "key": "v4-fire",
+      "path": "dev/proofs/v4_late_cartridge_45/inputs/v4-fire.png",
+      "sha256": "296babf531be2dc9a75898ebc29e84f7d2fcb91c3e49563d7c2592420226faef",
+      "width": 256,
+      "height": 240
+    }
+  ],
+  "checkpoint_sha256": "6087ac0a7171ab63845be352e9153f2686b661bf46233c372e7e2bb38d3b710f"
+}

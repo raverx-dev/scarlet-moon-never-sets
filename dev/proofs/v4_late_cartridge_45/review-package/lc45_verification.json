@@ -1,0 +1,29 @@
+{
+  "phase": "local-D4-package-plus-supplement",
+  "selected_assets": 35,
+  "canonical_render_matches": 35,
+  "opaque_or_transparent_only": true,
+  "background_live_subpalettes": 4,
+  "sprite_live_subpalettes": 4,
+  "hud_private_palette": false,
+  "palette_swaps": [],
+  "palette_exceptions": [],
+  "mansion_metatiles": 26,
+  "mansion_unique_8x8_tiles": 67,
+  "mansion_metatile_cells": 180,
+  "reimu_changed_pixels": 70,
+  "hud_exact_declared_recolor": true,
+  "scenes": [
+    {
+      "name": "neutral",
+      "render_hash": "43f2634d14403f303e580d4a09bf752587c0453652689ae0e1e347d6ff1ca286",
+      "opaque": true
+    },
+    {
+      "name": "fire",
+      "render_hash": "fa9af5e2a0ba920afcbaa1b2b83c4a12f61184498871e5a7e0b0a9ac4db77221",
+      "opaque": true
+    }
+  ],
+  "runtime_modified": false
+}

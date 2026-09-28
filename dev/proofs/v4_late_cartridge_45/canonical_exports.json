@@ -1,0 +1,2238 @@
+{
+  "wall": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-lc45-wall",
+    "revision": 2,
+    "revision_hash": "51b40e1c771b55af22c7c403c3664187933264645bfa1804f69c9934a7fe747e",
+    "frame_id": "default",
+    "layer_id": "art",
+    "matrix": {
+      "width": 16,
+      "height": 16,
+      "rows": [
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111001111111",
+        "0000000000000000",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "0111111111111110",
+        "0000000000000000"
+      ],
+      "symbols": {
+        "0": {
+          "hex": "#10121e"
+        },
+        "1": {
+          "hex": "#232637"
+        },
+        "2": {
+          "hex": "#48475c"
+        },
+        "3": {
+          "hex": "#898299"
+        },
+        ".": {
+          "transparent": true
+        }
+      }
+    },
+    "round_trip": {
+      "width": 16,
+      "height": 16,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-wall/revision/2/scarlet-moon-js"
+    }
+  },
+  "cornice": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-lc45-cornice",
+    "revision": 2,
+    "revision_hash": "7801b01c371d0979f40c8ef4892f95777b970a1ea1ff830670d82f2cbe8f2930",
+    "frame_id": "default",
+    "layer_id": "art",
+    "matrix": {
+      "width": 16,
+      "height": 16,
+      "rows": [
+        "3333333333333333",
+        "2222222222222222",
+        "0000000000000000",
+        "2222222221121112",
+        "1211121121121112",
+        "1211121111111111",
+        "1111111111111111",
+        "0000000000000000",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111001111111",
+        "0000000000000000"
+      ],
+      "symbols": {
+        "0": {
+          "hex": "#10121e"
+        },
+        "1": {
+          "hex": "#232637"
+        },
+        "2": {
+          "hex": "#48475c"
+        },
+        "3": {
+          "hex": "#898299"
+        },
+        ".": {
+          "transparent": true
+        }
+      }
+    },
+    "round_trip": {
+      "width": 16,
+      "height": 16,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-cornice/revision/2/scarlet-moon-js"
+    }
+  },
+  "pier-cap": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-lc45-pier-cap",
+    "revision": 2,
+    "revision_hash": "2edc89bf0cbbcbc956e3e1c14e3e91be530635fe29ca5d857c5c8c55b2d9d286",
+    "frame_id": "default",
+    "layer_id": "art",
+    "matrix": {
+      "width": 16,
+      "height": 16,
+      "rows": [
+        "0000000000000000",
+        "3333333333333333",
+        "2222222222222222",
+        "0333333003333330",
+        "0022220000222200",
+        "0002200000022000",
+        "0013310000133100",
+        "0123321001233210",
+        "0123321001233210",
+        "0123321001233210",
+        "0123321001233210",
+        "0123321001233210",
+        "0123321001233210",
+        "0123321001233210",
+        "0123321001233210",
+        "0123321001233210"
+      ],
+      "symbols": {
+        "0": {
+          "hex": "#10121e"
+        },
+        "1": {
+          "hex": "#232637"
+        },
+        "2": {
+          "hex": "#48475c"
+        },
+        "3": {
+          "hex": "#898299"
+        },
+        ".": {
+          "transparent": true
+        }
+      }
+    },
+    "round_trip": {
+      "width": 16,
+      "height": 16,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-pier-cap/revision/2/scarlet-moon-js"
+    }
+  },
+  "pier": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-lc45-pier",
+    "revision": 2,
+    "revision_hash": "8e875146c86f637534031839e4fd44e045a9992e269d885580adb38e811ccb1b",
+    "frame_id": "default",
+    "layer_id": "art",
+    "matrix": {
+      "width": 16,
+      "height": 16,
+      "rows": [
+        "0123321001233210",
+        "0123321001233210",
+        "0123321001233210",
+        "0123321001233210",
+        "0123321001233210",
+        "0123321001233210",
+        "0123321001233210",
+        "0123321001233210",
+        "0123321001233210",
+        "0123321001233210",
+        "0123321001233210",
+        "0123321001233210",
+        "0123321001233210",
+        "0123321001233210",
+        "0123321001233210",
+        "0123321001233210"
+      ],
+      "symbols": {
+        "0": {
+          "hex": "#10121e"
+        },
+        "1": {
+          "hex": "#232637"
+        },
+        "2": {
+          "hex": "#48475c"
+        },
+        "3": {
+          "hex": "#898299"
+        },
+        ".": {
+          "transparent": true
+        }
+      }
+    },
+    "round_trip": {
+      "width": 16,
+      "height": 16,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-pier/revision/2/scarlet-moon-js"
+    }
+  },
+  "pier-foot": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-lc45-pier-foot",
+    "revision": 2,
+    "revision_hash": "340c02822661ab1b00e505ae53f9aa2f6462b263b3ad6654b426291d3faffe4d",
+    "frame_id": "default",
+    "layer_id": "art",
+    "matrix": {
+      "width": 16,
+      "height": 16,
+      "rows": [
+        "0123321001233210",
+        "0123321001233210",
+        "0123321001233210",
+        "0123321001233210",
+        "0123321001233210",
+        "0123321001233210",
+        "0123321001233210",
+        "0123321001233210",
+        "0123321001233210",
+        "0123321001233210",
+        "0123321001233210",
+        "1233332112333321",
+        "0222222002222220",
+        "2333333223333332",
+        "2222222222222222",
+        "0000000000000000"
+      ],
+      "symbols": {
+        "0": {
+          "hex": "#10121e"
+        },
+        "1": {
+          "hex": "#232637"
+        },
+        "2": {
+          "hex": "#48475c"
+        },
+        "3": {
+          "hex": "#898299"
+        },
+        ".": {
+          "transparent": true
+        }
+      }
+    },
+    "round_trip": {
+      "width": 16,
+      "height": 16,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-pier-foot/revision/2/scarlet-moon-js"
+    }
+  },
+  "floor": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-lc45-floor",
+    "revision": 2,
+    "revision_hash": "60d0af908236571fe56e4c34b1a3a0807a3570420bb946aefa5eab522adc706e",
+    "frame_id": "default",
+    "layer_id": "art",
+    "matrix": {
+      "width": 16,
+      "height": 16,
+      "rows": [
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111"
+      ],
+      "symbols": {
+        "0": {
+          "hex": "#10121e"
+        },
+        "1": {
+          "hex": "#232637"
+        },
+        "2": {
+          "hex": "#48475c"
+        },
+        "3": {
+          "hex": "#898299"
+        },
+        ".": {
+          "transparent": true
+        }
+      }
+    },
+    "round_trip": {
+      "width": 16,
+      "height": 16,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-floor/revision/2/scarlet-moon-js"
+    }
+  },
+  "floor-joint": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-lc45-floor-joint",
+    "revision": 2,
+    "revision_hash": "31d0de9b8e660fc84b3edb067194d828ae2a345fc5bbe6aa2aee3f5b769d97b0",
+    "frame_id": "default",
+    "layer_id": "art",
+    "matrix": {
+      "width": 16,
+      "height": 16,
+      "rows": [
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111000001111"
+      ],
+      "symbols": {
+        "0": {
+          "hex": "#10121e"
+        },
+        "1": {
+          "hex": "#232637"
+        },
+        "2": {
+          "hex": "#48475c"
+        },
+        "3": {
+          "hex": "#898299"
+        },
+        ".": {
+          "transparent": true
+        }
+      }
+    },
+    "round_trip": {
+      "width": 16,
+      "height": 16,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-floor-joint/revision/2/scarlet-moon-js"
+    }
+  },
+  "floor-edge": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-lc45-floor-edge",
+    "revision": 2,
+    "revision_hash": "9e5630434a2bb302f66aa5ccdabad27606ba4570e0e29ac429e8db058c8a2ccc",
+    "frame_id": "default",
+    "layer_id": "art",
+    "matrix": {
+      "width": 16,
+      "height": 16,
+      "rows": [
+        "0000000111111111",
+        "0000000111111111",
+        "0000000111111111",
+        "0000000111111111",
+        "0000000111111111",
+        "0000000111111111",
+        "0000000111111111",
+        "0000000111111111",
+        "0000000111111111",
+        "0000000111111111",
+        "0000000111111111",
+        "0000000111111111",
+        "0000000111111111",
+        "0000000111111111",
+        "0000000111111111",
+        "0000000111111111"
+      ],
+      "symbols": {
+        "0": {
+          "hex": "#10121e"
+        },
+        "1": {
+          "hex": "#232637"
+        },
+        "2": {
+          "hex": "#48475c"
+        },
+        "3": {
+          "hex": "#898299"
+        },
+        ".": {
+          "transparent": true
+        }
+      }
+    },
+    "round_trip": {
+      "width": 16,
+      "height": 16,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-floor-edge/revision/2/scarlet-moon-js"
+    }
+  },
+  "carpet": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-lc45-carpet",
+    "revision": 2,
+    "revision_hash": "01d26b3c4c36a273fa9a29b3c62f61e6baa18ae7620f025d761ef116bebb972f",
+    "frame_id": "default",
+    "layer_id": "art",
+    "matrix": {
+      "width": 16,
+      "height": 16,
+      "rows": [
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111"
+      ],
+      "symbols": {
+        "0": {
+          "hex": "#10121e"
+        },
+        "1": {
+          "hex": "#301b2b"
+        },
+        "2": {
+          "hex": "#6c293f"
+        },
+        "3": {
+          "hex": "#c56879"
+        },
+        ".": {
+          "transparent": true
+        }
+      }
+    },
+    "round_trip": {
+      "width": 16,
+      "height": 16,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-carpet/revision/2/scarlet-moon-js"
+    }
+  },
+  "carpet-left": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-lc45-carpet-left",
+    "revision": 2,
+    "revision_hash": "b62ba95580ea76558cf2099d92d8e37066626e6394a205d058f81826753e44bb",
+    "frame_id": "default",
+    "layer_id": "art",
+    "matrix": {
+      "width": 16,
+      "height": 16,
+      "rows": [
+        "0012211111111111",
+        "0012311111111111",
+        "0012211111111111",
+        "0012211111111111",
+        "0012211111111111",
+        "0012311111111111",
+        "0012211111111111",
+        "0012211111111111",
+        "0012211111111111",
+        "0012211111111111",
+        "0012211111111111",
+        "0012311111111111",
+        "0012211111111111",
+        "0012211111111111",
+        "0012211111111111",
+        "0012211111111111"
+      ],
+      "symbols": {
+        "0": {
+          "hex": "#10121e"
+        },
+        "1": {
+          "hex": "#301b2b"
+        },
+        "2": {
+          "hex": "#6c293f"
+        },
+        "3": {
+          "hex": "#c56879"
+        },
+        ".": {
+          "transparent": true
+        }
+      }
+    },
+    "round_trip": {
+      "width": 16,
+      "height": 16,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-carpet-left/revision/2/scarlet-moon-js"
+    }
+  },
+  "carpet-right": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-lc45-carpet-right",
+    "revision": 2,
+    "revision_hash": "3296def288344cf2238ccf1a9f7dfb4792460bcdfd3af501a0c93c30ed57c41f",
+    "frame_id": "default",
+    "layer_id": "art",
+    "matrix": {
+      "width": 16,
+      "height": 16,
+      "rows": [
+        "1111111111122100",
+        "1111111111132100",
+        "1111111111122100",
+        "1111111111122100",
+        "1111111111122100",
+        "1111111111132100",
+        "1111111111122100",
+        "1111111111122100",
+        "1111111111122100",
+        "1111111111122100",
+        "1111111111122100",
+        "1111111111132100",
+        "1111111111122100",
+        "1111111111122100",
+        "1111111111122100",
+        "1111111111122100"
+      ],
+      "symbols": {
+        "0": {
+          "hex": "#10121e"
+        },
+        "1": {
+          "hex": "#301b2b"
+        },
+        "2": {
+          "hex": "#6c293f"
+        },
+        "3": {
+          "hex": "#c56879"
+        },
+        ".": {
+          "transparent": true
+        }
+      }
+    },
+    "round_trip": {
+      "width": 16,
+      "height": 16,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-carpet-right/revision/2/scarlet-moon-js"
+    }
+  },
+  "steps": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-lc45-steps",
+    "revision": 2,
+    "revision_hash": "c6e0be39a351a1037e63768cba453e5f31e892f97040a82917bc73523dedd596",
+    "frame_id": "default",
+    "layer_id": "art",
+    "matrix": {
+      "width": 16,
+      "height": 16,
+      "rows": [
+        "2222222222222222",
+        "3333333333333333",
+        "0000000000000000",
+        "1111111111111111",
+        "1111111111111111",
+        "2222222222222222",
+        "3333333333333333",
+        "0000000000000000",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "2222222222222222",
+        "3333333333333333",
+        "0000000000000000",
+        "1111111111111111",
+        "1111111111111111"
+      ],
+      "symbols": {
+        "0": {
+          "hex": "#10121e"
+        },
+        "1": {
+          "hex": "#232637"
+        },
+        "2": {
+          "hex": "#48475c"
+        },
+        "3": {
+          "hex": "#898299"
+        },
+        ".": {
+          "transparent": true
+        }
+      }
+    },
+    "round_trip": {
+      "width": 16,
+      "height": 16,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-steps/revision/2/scarlet-moon-js"
+    }
+  },
+  "carpet-steps": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-lc45-carpet-steps",
+    "revision": 2,
+    "revision_hash": "5194c2e36ee8b7191f2bc67e8ca2c8a8ad055d51fca50776792f186178d6183a",
+    "frame_id": "default",
+    "layer_id": "art",
+    "matrix": {
+      "width": 16,
+      "height": 16,
+      "rows": [
+        "2222222222222222",
+        "3333333333333333",
+        "0000000000000000",
+        "1111111111111111",
+        "1111111111111111",
+        "2222222222222222",
+        "3333333333333333",
+        "0000000000000000",
+        "1111111111111111",
+        "1111111111111111",
+        "1111111111111111",
+        "2222222222222222",
+        "3333333333333333",
+        "0000000000000000",
+        "1111111111111111",
+        "1111111111111111"
+      ],
+      "symbols": {
+        "0": {
+          "hex": "#10121e"
+        },
+        "1": {
+          "hex": "#301b2b"
+        },
+        "2": {
+          "hex": "#6c293f"
+        },
+        "3": {
+          "hex": "#c56879"
+        },
+        ".": {
+          "transparent": true
+        }
+      }
+    },
+    "round_trip": {
+      "width": 16,
+      "height": 16,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-carpet-steps/revision/2/scarlet-moon-js"
+    }
+  },
+  "window-head": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-lc45-window-head",
+    "revision": 2,
+    "revision_hash": "8bc8829bd47ef22cb62c8b50a5050e6a3da28a90ceb97da9335e6a879d23b7c7",
+    "frame_id": "default",
+    "layer_id": "art",
+    "matrix": {
+      "width": 16,
+      "height": 16,
+      "rows": [
+        "0000000000000000",
+        "0000000000000000",
+        "0000000220000000",
+        "0000002332000000",
+        "0000023113200000",
+        "0000231111320000",
+        "0002311221132000",
+        "0023112222113200",
+        "0023112222113200",
+        "0231112222111320",
+        "0231211221121320",
+        "0231221111221320",
+        "0231211221121320",
+        "0231112222111320",
+        "0231112222111320",
+        "0231112222111320"
+      ],
+      "symbols": {
+        "0": {
+          "hex": "#10121e"
+        },
+        "1": {
+          "hex": "#203447"
+        },
+        "2": {
+          "hex": "#426b81"
+        },
+        "3": {
+          "hex": "#9bbbc5"
+        },
+        ".": {
+          "transparent": true
+        }
+      }
+    },
+    "round_trip": {
+      "width": 16,
+      "height": 16,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-window-head/revision/2/scarlet-moon-js"
+    }
+  },
+  "window-body": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-lc45-window-body",
+    "revision": 2,
+    "revision_hash": "533b968b3a55886bbf265432b79a95983e62e8c12d9daf7723039c490b9c9f0b",
+    "frame_id": "default",
+    "layer_id": "art",
+    "matrix": {
+      "width": 16,
+      "height": 16,
+      "rows": [
+        "0231112222111320",
+        "0231112222111320",
+        "0231211221121320",
+        "0231221111221320",
+        "0231211221121320",
+        "0231112222111320",
+        "0231112222111320",
+        "0231112222111320",
+        "0232222222222320",
+        "0233333333333320",
+        "0231112222111320",
+        "0231112222111320",
+        "0231112222111320",
+        "0231112222111320",
+        "0231112222111320",
+        "0231112222111320"
+      ],
+      "symbols": {
+        "0": {
+          "hex": "#10121e"
+        },
+        "1": {
+          "hex": "#203447"
+        },
+        "2": {
+          "hex": "#426b81"
+        },
+        "3": {
+          "hex": "#9bbbc5"
+        },
+        ".": {
+          "transparent": true
+        }
+      }
+    },
+    "round_trip": {
+      "width": 16,
+      "height": 16,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-window-body/revision/2/scarlet-moon-js"
+    }
+  },
+  "window-foot": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-lc45-window-foot",
+    "revision": 2,
+    "revision_hash": "5b3fff9d57762d82a4bfe8d973ec0d5590065982467be25d0d5e159474352fe7",
+    "frame_id": "default",
+    "layer_id": "art",
+    "matrix": {
+      "width": 16,
+      "height": 16,
+      "rows": [
+        "0231112222111320",
+        "0231112222111320",
+        "0231112222111320",
+        "0231112222111320",
+        "0231112222111320",
+        "0231112222111320",
+        "0233333333333320",
+        "0222222222222220",
+        "0000000000000000",
+        "2222222222222222",
+        "3333333333333333",
+        "2222222222222222",
+        "0011111111111100",
+        "0011111111111100",
+        "0011111111111100",
+        "0000000000000000"
+      ],
+      "symbols": {
+        "0": {
+          "hex": "#10121e"
+        },
+        "1": {
+          "hex": "#203447"
+        },
+        "2": {
+          "hex": "#426b81"
+        },
+        "3": {
+          "hex": "#9bbbc5"
+        },
+        ".": {
+          "transparent": true
+        }
+      }
+    },
+    "round_trip": {
+      "width": 16,
+      "height": 16,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-window-foot/revision/2/scarlet-moon-js"
+    }
+  },
+  "hanging-top": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-lc45-hanging-top",
+    "revision": 2,
+    "revision_hash": "28762d01671626aa84a79fb0c100c62ee057f23566d516dcd582a55d44837929",
+    "frame_id": "default",
+    "layer_id": "art",
+    "matrix": {
+      "width": 16,
+      "height": 16,
+      "rows": [
+        "0000000000000000",
+        "3333333333333333",
+        "2222222222222222",
+        "0032222222222300",
+        "0032222222222300",
+        "0032212222122300",
+        "0032212222122300",
+        "0032212222122300",
+        "0032212222122300",
+        "0032121221212300",
+        "0032212222122300",
+        "0032222222222300",
+        "0032222222222300",
+        "0032222222222300",
+        "0032212222122300",
+        "0032212222122300"
+      ],
+      "symbols": {
+        "0": {
+          "hex": "#10121e"
+        },
+        "1": {
+          "hex": "#301b2b"
+        },
+        "2": {
+          "hex": "#6c293f"
+        },
+        "3": {
+          "hex": "#c56879"
+        },
+        ".": {
+          "transparent": true
+        }
+      }
+    },
+    "round_trip": {
+      "width": 16,
+      "height": 16,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-hanging-top/revision/2/scarlet-moon-js"
+    }
+  },
+  "hanging-end": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-lc45-hanging-end",
+    "revision": 2,
+    "revision_hash": "68020fc5546042408e78624c6bb3a1d18b8e809e8fc0ce3d8d98f205787246dc",
+    "frame_id": "default",
+    "layer_id": "art",
+    "matrix": {
+      "width": 16,
+      "height": 16,
+      "rows": [
+        "0032212222122300",
+        "0032212222122300",
+        "0032212222122300",
+        "0032222222222300",
+        "0032222222222300",
+        "0032222222222300",
+        "0032222222222300",
+        "0032222222222300",
+        "0032222222222300",
+        "0032222222222300",
+        "0032222222222300",
+        "0003222222223000",
+        "0000322222230000",
+        "0000032222300000",
+        "0000003223000000",
+        "0000000330000000"
+      ],
+      "symbols": {
+        "0": {
+          "hex": "#10121e"
+        },
+        "1": {
+          "hex": "#301b2b"
+        },
+        "2": {
+          "hex": "#6c293f"
+        },
+        "3": {
+          "hex": "#c56879"
+        },
+        ".": {
+          "transparent": true
+        }
+      }
+    },
+    "round_trip": {
+      "width": 16,
+      "height": 16,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-hanging-end/revision/2/scarlet-moon-js"
+    }
+  },
+  "rose-00": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-lc45-rose-00",
+    "revision": 2,
+    "revision_hash": "2842be32c8b2113d074a065ca027e97685e7a38905c86a27a1403a4827c4aae5",
+    "frame_id": "default",
+    "layer_id": "art",
+    "matrix": {
+      "width": 16,
+      "height": 16,
+      "rows": [
+        "0000000000000000",
+        "0000000000002222",
+        "0000000002233333",
+        "0000000223300000",
+        "0000002330012221",
+        "0000023300123332",
+        "0000233000123321",
+        "0002330120012210",
+        "0023301232011100",
+        "0023012333200000",
+        "0230012332100122",
+        "0230122321001233",
+        "2330121210012332",
+        "2300120100123321",
+        "2300000001222210",
+        "2300122212332100"
+      ],
+      "symbols": {
+        "0": {
+          "hex": "#10121e"
+        },
+        "1": {
+          "hex": "#301b2b"
+        },
+        "2": {
+          "hex": "#6c293f"
+        },
+        "3": {
+          "hex": "#c56879"
+        },
+        ".": {
+          "transparent": true
+        }
+      }
+    },
+    "round_trip": {
+      "width": 16,
+      "height": 16,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-rose-00/revision/2/scarlet-moon-js"
+    }
+  },
+  "rose-01": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-lc45-rose-01",
+    "revision": 2,
+    "revision_hash": "8f9bf626e0e754911fce9e0689505230d80d32afe7c7f735d0f952a63d3572ad",
+    "frame_id": "default",
+    "layer_id": "art",
+    "matrix": {
+      "width": 16,
+      "height": 16,
+      "rows": [
+        "0000000000000000",
+        "2222000000000000",
+        "3333322000000000",
+        "0000033220000000",
+        "1222100332000000",
+        "2333210033200000",
+        "1233210003320000",
+        "0122100210332000",
+        "0011102321033200",
+        "0000023332103200",
+        "2210012332100320",
+        "3321001232210320",
+        "2332100121210332",
+        "1233210010210032",
+        "0122221000000032",
+        "0012332122210032"
+      ],
+      "symbols": {
+        "0": {
+          "hex": "#10121e"
+        },
+        "1": {
+          "hex": "#301b2b"
+        },
+        "2": {
+          "hex": "#6c293f"
+        },
+        "3": {
+          "hex": "#c56879"
+        },
+        ".": {
+          "transparent": true
+        }
+      }
+    },
+    "round_trip": {
+      "width": 16,
+      "height": 16,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-rose-01/revision/2/scarlet-moon-js"
+    }
+  },
+  "rose-10": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-lc45-rose-10",
+    "revision": 2,
+    "revision_hash": "291328973ac92d28a611794d875e4023fe0dfdf4471eedfbf44ce425afbf6985",
+    "frame_id": "default",
+    "layer_id": "art",
+    "matrix": {
+      "width": 16,
+      "height": 16,
+      "rows": [
+        "2300122212332100",
+        "2300000001222210",
+        "2300120100123321",
+        "2330121210012332",
+        "0230122321001233",
+        "0230012332100122",
+        "0023012333200000",
+        "0023301232011100",
+        "0002330120012210",
+        "0000233000123321",
+        "0000023300123332",
+        "0000002330012221",
+        "0000000223300000",
+        "0000000002233333",
+        "0000000000002222",
+        "0000000000000000"
+      ],
+      "symbols": {
+        "0": {
+          "hex": "#10121e"
+        },
+        "1": {
+          "hex": "#301b2b"
+        },
+        "2": {
+          "hex": "#6c293f"
+        },
+        "3": {
+          "hex": "#c56879"
+        },
+        ".": {
+          "transparent": true
+        }
+      }
+    },
+    "round_trip": {
+      "width": 16,
+      "height": 16,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-rose-10/revision/2/scarlet-moon-js"
+    }
+  },
+  "rose-11": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-lc45-rose-11",
+    "revision": 2,
+    "revision_hash": "f99421fc59296d2b49463a72aae258c290ed8049288d720d2c55d914ce4f58ae",
+    "frame_id": "default",
+    "layer_id": "art",
+    "matrix": {
+      "width": 16,
+      "height": 16,
+      "rows": [
+        "0012332122210032",
+        "0122221000000032",
+        "1233210010210032",
+        "2332100121210332",
+        "3321001232210320",
+        "2210012332100320",
+        "0000023332103200",
+        "0011102321033200",
+        "0122100210332000",
+        "1233210003320000",
+        "2333210033200000",
+        "1222100332000000",
+        "0000033220000000",
+        "3333322000000000",
+        "2222000000000000",
+        "0000000000000000"
+      ],
+      "symbols": {
+        "0": {
+          "hex": "#10121e"
+        },
+        "1": {
+          "hex": "#301b2b"
+        },
+        "2": {
+          "hex": "#6c293f"
+        },
+        "3": {
+          "hex": "#c56879"
+        },
+        ".": {
+          "transparent": true
+        }
+      }
+    },
+    "round_trip": {
+      "width": 16,
+      "height": 16,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-rose-11/revision/2/scarlet-moon-js"
+    }
+  },
+  "arch-left": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-lc45-arch-left",
+    "revision": 2,
+    "revision_hash": "a71f4ad7f4551b8312a90324fbd350d4e1cfff25f36a153eb3510e186fb3c2c6",
+    "frame_id": "default",
+    "layer_id": "art",
+    "matrix": {
+      "width": 16,
+      "height": 16,
+      "rows": [
+        "0000000000002233",
+        "0000000000223322",
+        "0000000002332210",
+        "0000000023321000",
+        "0000000033210000",
+        "0000000032100000",
+        "0000000221000000",
+        "0000002310000000",
+        "0000023300000000",
+        "0000233200000000",
+        "0002332100000000",
+        "0023321000000000",
+        "0233210000000000",
+        "0232100000000000",
+        "2332100000000000",
+        "2321000000000000"
+      ],
+      "symbols": {
+        "0": {
+          "hex": "#10121e"
+        },
+        "1": {
+          "hex": "#232637"
+        },
+        "2": {
+          "hex": "#48475c"
+        },
+        "3": {
+          "hex": "#898299"
+        },
+        ".": {
+          "transparent": true
+        }
+      }
+    },
+    "round_trip": {
+      "width": 16,
+      "height": 16,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-arch-left/revision/2/scarlet-moon-js"
+    }
+  },
+  "arch-right": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-lc45-arch-right",
+    "revision": 2,
+    "revision_hash": "0da541810595cfa4f548c0bd5b1ee87567b1455e5a704ce867357a71ee3bd401",
+    "frame_id": "default",
+    "layer_id": "art",
+    "matrix": {
+      "width": 16,
+      "height": 16,
+      "rows": [
+        "3322000000000000",
+        "2233220000000000",
+        "0122332000000000",
+        "0001233200000000",
+        "0000123300000000",
+        "0000012300000000",
+        "0000001220000000",
+        "0000000132000000",
+        "0000000033200000",
+        "0000000023320000",
+        "0000000012332000",
+        "0000000001233200",
+        "0000000000123320",
+        "0000000000012320",
+        "0000000000012332",
+        "0000000000001232"
+      ],
+      "symbols": {
+        "0": {
+          "hex": "#10121e"
+        },
+        "1": {
+          "hex": "#232637"
+        },
+        "2": {
+          "hex": "#48475c"
+        },
+        "3": {
+          "hex": "#898299"
+        },
+        ".": {
+          "transparent": true
+        }
+      }
+    },
+    "round_trip": {
+      "width": 16,
+      "height": 16,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-arch-right/revision/2/scarlet-moon-js"
+    }
+  },
+  "door": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-lc45-door",
+    "revision": 2,
+    "revision_hash": "21c0c818b3e47d9774f0e912498f6be840dc24e536b4ded2239317490dd9ea36",
+    "frame_id": "default",
+    "layer_id": "art",
+    "matrix": {
+      "width": 16,
+      "height": 16,
+      "rows": [
+        "0011211000112110",
+        "0011211000112110",
+        "0011211000112110",
+        "0011211000112110",
+        "0011211000112110",
+        "0011211000112110",
+        "0011211000112110",
+        "0011211000112110",
+        "0011211000112110",
+        "0011211000112110",
+        "0011211000112110",
+        "0012211000122110",
+        "0013311000133110",
+        "0012211000122110",
+        "0011211000112110",
+        "0011211000112110"
+      ],
+      "symbols": {
+        "0": {
+          "hex": "#10121e"
+        },
+        "1": {
+          "hex": "#392d30"
+        },
+        "2": {
+          "hex": "#846349"
+        },
+        "3": {
+          "hex": "#d4b185"
+        },
+        ".": {
+          "transparent": true
+        }
+      }
+    },
+    "round_trip": {
+      "width": 16,
+      "height": 16,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-door/revision/2/scarlet-moon-js"
+    }
+  },
+  "sconce": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-lc45-sconce",
+    "revision": 2,
+    "revision_hash": "01e4aae60be7814be48fca82158390788143c5e018d722f75e5e01e38b7c716d",
+    "frame_id": "default",
+    "layer_id": "art",
+    "matrix": {
+      "width": 16,
+      "height": 16,
+      "rows": [
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0000003003000000",
+        "0000033003300000",
+        "0000032002300000",
+        "0000022002200000",
+        "0000033003300000",
+        "0000022002200000",
+        "0000002222000000",
+        "0000001221000000"
+      ],
+      "symbols": {
+        "0": {
+          "hex": "#10121e"
+        },
+        "1": {
+          "hex": "#392d30"
+        },
+        "2": {
+          "hex": "#846349"
+        },
+        "3": {
+          "hex": "#d4b185"
+        },
+        ".": {
+          "transparent": true
+        }
+      }
+    },
+    "round_trip": {
+      "width": 16,
+      "height": 16,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-sconce/revision/2/scarlet-moon-js"
+    }
+  },
+  "reimu-neutral": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-lc45-reimu-neutral",
+    "revision": 2,
+    "revision_hash": "38316c86ad74b807fc2c84ec81bce8d162b27357b6ba8e9d08f2692066cbdb08",
+    "frame_id": "default",
+    "layer_id": "art",
+    "matrix": {
+      "width": 16,
+      "height": 24,
+      "rows": [
+        ".21110....01112.",
+        ".211110..011112.",
+        "..211111111112..",
+        "..211110011112..",
+        "...2110000112...",
+        "...0000000000...",
+        "...0000000000...",
+        "...0000000000...",
+        "...0000000000...",
+        "..220000000022..",
+        "..221000000122..",
+        ".22210000001222.",
+        ".22110000001122.",
+        "..211100001112..",
+        "...0111111110...",
+        "...0112112110...",
+        "...0111111110...",
+        "..011111111110..",
+        "..011101101110..",
+        ".01111011011110.",
+        ".02222222222220.",
+        "..022022220220..",
+        "....20....02....",
+        "...0110..0110..."
+      ],
+      "symbols": {
+        "0": {
+          "hex": "#201b2a"
+        },
+        "1": {
+          "hex": "#d64053"
+        },
+        "2": {
+          "hex": "#fff0da"
+        },
+        ".": {
+          "transparent": true
+        }
+      }
+    },
+    "round_trip": {
+      "width": 16,
+      "height": 24,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-reimu-neutral/revision/2/scarlet-moon-js"
+    }
+  },
+  "reimu-fire": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-lc45-reimu-fire",
+    "revision": 2,
+    "revision_hash": "bacd40ebc485446017058f5655b14b2abaefd03db6f87b9684ff42c0c7c0e53c",
+    "frame_id": "default",
+    "layer_id": "art",
+    "matrix": {
+      "width": 16,
+      "height": 24,
+      "rows": [
+        ".21110....01112.",
+        ".211110..011112.",
+        "..211111111112..",
+        "..211110011112..",
+        "...2110000112...",
+        "...0000000000...",
+        "..200000000002..",
+        ".22200000000222.",
+        "2221000000001222",
+        "2211000000001122",
+        ".21100000000112.",
+        "..110000000011..",
+        "...1000000001...",
+        "...1100000011...",
+        "...0111111110...",
+        "...0112112110...",
+        "...0111111110...",
+        "..011111111110..",
+        ".01111011011110.",
+        ".01110111101110.",
+        "0222222222222220",
+        ".02202222220220.",
+        "....20....02....",
+        "...0110..0110..."
+      ],
+      "symbols": {
+        "0": {
+          "hex": "#201b2a"
+        },
+        "1": {
+          "hex": "#d64053"
+        },
+        "2": {
+          "hex": "#fff0da"
+        },
+        ".": {
+          "transparent": true
+        }
+      }
+    },
+    "round_trip": {
+      "width": 16,
+      "height": 24,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-reimu-fire/revision/2/scarlet-moon-js"
+    }
+  },
+  "gohei-normal": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-lc45-gohei-normal",
+    "revision": 2,
+    "revision_hash": "63f131ef789273bc27acb2d4f06895a927248ed0a9c06cb953a3fd88cf010409",
+    "frame_id": "default",
+    "layer_id": "art",
+    "matrix": {
+      "width": 10,
+      "height": 14,
+      "rows": [
+        ".........1",
+        "........11",
+        ".......11.",
+        "......11..",
+        ".....112..",
+        "....11222.",
+        "...11.22..",
+        "..11.222..",
+        ".11...222.",
+        "11...222..",
+        "......22..",
+        ".....222..",
+        "......2...",
+        ".........."
+      ],
+      "symbols": {
+        "0": {
+          "hex": "#201b2a"
+        },
+        "1": {
+          "hex": "#987451"
+        },
+        "2": {
+          "hex": "#fff0da"
+        },
+        ".": {
+          "transparent": true
+        }
+      }
+    },
+    "round_trip": {
+      "width": 10,
+      "height": 14,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-gohei-normal/revision/2/scarlet-moon-js"
+    }
+  },
+  "gohei-fire": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-lc45-gohei-fire",
+    "revision": 2,
+    "revision_hash": "389b09b9f854128320776bb10dcd45e1e8c3c2fdd256bfc041c0e074b5450240",
+    "frame_id": "default",
+    "layer_id": "art",
+    "matrix": {
+      "width": 12,
+      "height": 14,
+      "rows": [
+        "..........11",
+        "........111.",
+        "......111.2.",
+        "....111..222",
+        "..111...222.",
+        "111......22.",
+        "........222.",
+        ".......222..",
+        "........22..",
+        ".......222..",
+        "........2...",
+        "............",
+        "............",
+        "............"
+      ],
+      "symbols": {
+        "0": {
+          "hex": "#201b2a"
+        },
+        "1": {
+          "hex": "#987451"
+        },
+        "2": {
+          "hex": "#fff0da"
+        },
+        ".": {
+          "transparent": true
+        }
+      }
+    },
+    "round_trip": {
+      "width": 12,
+      "height": 14,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-gohei-fire/revision/2/scarlet-moon-js"
+    }
+  },
+  "bullet-pink": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-lc45-bullet-pink",
+    "revision": 2,
+    "revision_hash": "a460a078310fa479cc566e6c1b56f6a8dae5f6422c7d3693c9280b6690239622",
+    "frame_id": "default",
+    "layer_id": "art",
+    "matrix": {
+      "width": 7,
+      "height": 7,
+      "rows": [
+        "..000..",
+        ".01110.",
+        "0122110",
+        "0122110",
+        "0111110",
+        ".01110.",
+        "..000.."
+      ],
+      "symbols": {
+        "0": {
+          "hex": "#201b2a"
+        },
+        "1": {
+          "hex": "#de718e"
+        },
+        "2": {
+          "hex": "#fff0da"
+        },
+        ".": {
+          "transparent": true
+        }
+      }
+    },
+    "round_trip": {
+      "width": 7,
+      "height": 7,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-bullet-pink/revision/2/scarlet-moon-js"
+    }
+  },
+  "bullet-blue": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-lc45-bullet-blue",
+    "revision": 2,
+    "revision_hash": "70af647ad6c174b56e003bde66ef3a9624f032ac41c1cb87c2b13e1236f70d8c",
+    "frame_id": "default",
+    "layer_id": "art",
+    "matrix": {
+      "width": 7,
+      "height": 7,
+      "rows": [
+        "..000..",
+        ".01110.",
+        "0122110",
+        "0122110",
+        "0111110",
+        ".01110.",
+        "..000.."
+      ],
+      "symbols": {
+        "0": {
+          "hex": "#201b2a"
+        },
+        "1": {
+          "hex": "#58abc2"
+        },
+        "2": {
+          "hex": "#fff0da"
+        },
+        ".": {
+          "transparent": true
+        }
+      }
+    },
+    "round_trip": {
+      "width": 7,
+      "height": 7,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-bullet-blue/revision/2/scarlet-moon-js"
+    }
+  },
+  "shot": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-lc45-shot",
+    "revision": 2,
+    "revision_hash": "aa76376d374aa3386ed8bdd2568cce3ffa1ebb3156d28d3fecfc24d04c2b0f0c",
+    "frame_id": "default",
+    "layer_id": "art",
+    "matrix": {
+      "width": 5,
+      "height": 10,
+      "rows": [
+        "22222",
+        "21112",
+        "21112",
+        "21112",
+        "21112",
+        "21112",
+        "21112",
+        "21112",
+        "21112",
+        "22222"
+      ],
+      "symbols": {
+        "0": {
+          "hex": "#201b2a"
+        },
+        "1": {
+          "hex": "#d64053"
+        },
+        "2": {
+          "hex": "#fff0da"
+        },
+        ".": {
+          "transparent": true
+        }
+      }
+    },
+    "round_trip": {
+      "width": 5,
+      "height": 10,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-shot/revision/2/scarlet-moon-js"
+    }
+  },
+  "bat-familiar": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-lc45-bat-familiar",
+    "revision": 2,
+    "revision_hash": "97bcd9870f3844ee49b6158975e92fb7e3bc76cafca578f89d9689e45e71a442",
+    "frame_id": "default",
+    "layer_id": "art",
+    "matrix": {
+      "width": 11,
+      "height": 7,
+      "rows": [
+        "0.........0",
+        "00..000..00",
+        "01002220010",
+        ".011222110.",
+        "..0111110..",
+        "...01210...",
+        "....000...."
+      ],
+      "symbols": {
+        "0": {
+          "hex": "#201b2a"
+        },
+        "1": {
+          "hex": "#de718e"
+        },
+        "2": {
+          "hex": "#fff0da"
+        },
+        ".": {
+          "transparent": true
+        }
+      }
+    },
+    "round_trip": {
+      "width": 11,
+      "height": 7,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-bat-familiar/revision/2/scarlet-moon-js"
+    }
+  },
+  "hud": {
+    "adapter_id": "scarlet-moon-js",
+    "preview": true,
+    "delivery": false,
+    "project_id": "scarlet-moon-never-sets",
+    "asset_id": "v4-lc45-hud",
+    "revision": 2,
+    "revision_hash": "eb9d48aa37baff7c61ebb8e69880ae0169cea9b4474a9b4a88bd692628ec65f4",
+    "frame_id": "default",
+    "layer_id": "art",
+    "matrix": {
+      "width": 64,
+      "height": 240,
+      "rows": [
+        "2222222222222222222222222222222222222222222222222222222222222222",
+        "2111111111111111111111111111111111111111111111111111111111111112",
+        "2110000000000000000000000000000000000000000000000000000000000012",
+        "2113300000000000000000000000000000000000000000000000000000033012",
+        "2113000000000000000000000000000000000000000000000000000000003012",
+        "2130000000000000000000000000000000000000000000000000000000000012",
+        "2130000000000000000000000000000000000000000000000000000000000012",
+        "2130000000000000000000000000000000000000000000000000000000000012",
+        "2130100333300333300333003333003333300000000000000000000000010012",
+        "2130003000003000003000303000303000000000000000000000000000000012",
+        "2130003000003000003000303000303000000000000000000000000000000012",
+        "2110000333003000003000303333003333000000000000000000000000000012",
+        "2110000000303000003000303030003000000000000000000000000000000012",
+        "2110000000303000003000303003003000000000000000000000000000000012",
+        "2110003333000333300333003000303333300000000000000000000000000012",
+        "2110000000000000000000000000000000000000000000000000000000000012",
+        "2110100000000000000000000000000000000000000000000000000000010012",
+        "2110000000000000000000000000000000000000000000000000000000000012",
+        "2110000333000333000030000333003333000003003333300333000000000012",
+        "2110003000303000300330003000300000300033003000003000300000000012",
+        "2110003003303003300030000000300000300303003000003003300000000012",
+        "2110003030303030300030000003000333003003003333003030300000000012",
+        "2110003300303300300030000030000000303333300000303300300000000012",
+        "2110003000303000300030000300000000300003000000303000300000000012",
+        "2110100333000333000333003333303333000003003333000333000000010012",
+        "2110000000000000000000000000000000000000000000000000000000000012",
+        "2110000000000000000000000000000000000000000000000000000000000012",
+        "2110000000000000000000000000000000000000000000000000000000000012",
+        "2110000000000000000000000000000000000000000000000000000000000012",
+        "2110000000000000000000000000000000000000000000000000000000000012",
+        "2110000000000000000000000000000000000000000000000000000000000012",
+        "2110000000000000000000000000000000000000000000000000000000000012",
+        "2110100000000000000000000000000000000000000000000000000000010012",
+        "2110000000000000000000000000000000000000000000000000000000000012",
+        "2110003000303333300000000333300333300333003333003333300000000012",
+        "2110003000300030000000003000003000003000303000303000000000000012",
+        "2110003000300030000000003000003000003000303000303000000000000012",
+        "2110003333300030003333300333003000003000303333003333000000000012",
+        "2110003000300030000000000000303000003000303030003000000000000012",
+        "2110003000300030000000000000303000003000303003003000000000000012",
+        "2110103000303333300000003333000333300333003000303333300000010012",
+        "2110000000000000000000000000000000000000000000000000000000000012",
+        "2110000000000000000000000000000000000000000000000000000000000012",
+        "2110000000000000000000000000000000000000000000000000000000000012",
+        "2110000333000333000333003333300333000333000333000333000000000012",
+        "2110003000303000303000303000003000303000303000303000300000000012",
+        "2110003003303003300000303000003003303003303003303003300000000012",
+        "2110003030303030300003003333003030303030303030303030300000000012",
+        "BAA0A0CC00C0CC00C000C0000000C0CC00C0CC00C0CC00C0CC00C000000A00AB",
+        "BAA000C000C0C000C00C00000000C0C000C0C000C0C000C0C000C000000000AB",
+        "BAA0000CCC000CCC00CCCCC0CCCC000CCC000CCC000CCC000CCC0000000000AB",
+        "BAA00000000000000000000000000000000000000000000000000000000000AB",
+        "BAA00000000000000000000000000000000000000000000000000000000000AB",
+        "BAA00000000000000000000000000000000000000000000000000000000000AB",
+        "BAA00000000000000000000000000000000000000000000000000000000000AB",
+        "BAA0BBB00000000000000000000000000000000000000000000000000BBB00AB",
+        "BAA0BBBAAACCCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACCCAAABBB00AB",
+        "BAA0AAA00000000000000000000000000000000000000000000000000AAA00AB",
+        "BAA00000000000000000000000000000000000000000000000000000000000AB",
+        "BAA00000000000000000000000000000000000000000000000000000000000AB",
+        "BAA00000000000000000000000000000000000000000000000000000000000AB",
+        "BAA00000000000000000000000000000000000000000000000000000000000AB",
+        "BAA000C00000CCCCC0C000C0CCCCC00CCCC000000000000000000000000000AB",
+        "BAA000C0000000C000C000C0C00000C0000000000000000000000000000000AB",
+        "BAA0A0C0000000C000C000C0C00000C0000000000000000000000000000A00AB",
+        "BAA000C0000000C000C000C0CCCC000CCC0000000000000000000000000000AB",
+        "BAA000C0000000C000C000C0C000000000C000000000000000000000000000AB",
+        "BAA000C0000000C0000C0C00C000000000C000000000000000000000000000AB",
+        "BAA000CCCCC0CCCCC000C000CCCCC0CCCC0000000000000000000000000000AB",
+        "BAA00000000000000000000000000000000000000000000000000000000000AB",
+        "BAA00000000000000000000000000000000000000000000000000000000000AB",
+        "BAA00000000000000000000000000000000000000000000000000000000000AB",
+        "BAA0A0000000BBB0000000000000BBB0000000000000BBB000000000000A00AB",
+        "BAA00000000BCCAB00000000000BCCAB00000000000BCCAB00000000000000AB",
+        "BAA0000000BCBBCCB000000000BCBBCCB000000000BCBBCCB0000000000000AB",
+        "BAA0000000BCBABCB000000000BCBABCB000000000BCBABCB0000000000000AB",
+        "BAA0000000BCCBBCB000000000BCCBBCB000000000BCCBBCB0000000000000AB",
+        "BAA00000000BACCB00000000000BACCB00000000000BACCB00000000000000AB",
+        "BAA000000000BBB0000000000000BBB0000000000000BBB000000000000000AB",
+        "BAA0000000000A000000000000000A000000000000000A0000000000000000AB",
+        "BAA0A000000000000000000000000000000000000000000000000000000A00AB",
+        "BAA00000000000000000000000000000000000000000000000000000000000AB",
+        "BAA00000000000000000000000000000000000000000000000000000000000AB",
+        "BAA00000000000000000000000000000000000000000000000000000000000AB",
+        "BAA00000000000000000000000000000000000000000000000000000000000AB",
+        "BAA00000000000000000000000000000000000000000000000000000000000AB",
+        "BAA00000000000000000000000000000000000000000000000000000000000AB",
+        "BAA00000000000000000000000000000000000000000000000000000000000AB",
+        "BAA0A000000000000000000000000000000000000000000000000000000A00AB",
+        "BAA00000000000000000000000000000000000000000000000000000000000AB",
+        "BAA000CCCC000CCC00C000C0CCCC000CCCC000000000000000000000000000AB",
+        "BAA000C000C0C000C0CC0CC0C000C0C0000000000000000000000000000000AB",
+        "BAA000C000C0C000C0C0C0C0C000C0C0000000000000000000000000000000AB",
+        "BAA000CCCC00C000C0C0C0C0CCCC000CCC0000000000000000000000000000AB",
+        "BAA000C000C0C000C0C000C0C000C00000C000000000000000000000000000AB",
+        "BAA000C000C0C000C0C000C0C000C00000C000000000000000000000000000AB",
+        "BAA0A0CCCC000CCC00C000C0CCCC00CCCC0000000000000000000000000A00AB",
+        "BAA00000000000000000000000000000000000000000000000000000000000AB",
+        "BAA00000000000000000000000000000000000000000000000000000000000AB",
+        "BAA00000000000000000000000000000000000000000000000000000000000AB",
+        "BAA0000000000C000000000000000C00000000000000000000000000000000AB",
+        "BAA00000000C0B0C00000000000C0B0C000000000000000000000000000000AB",
+        "BAA000000000BBB0000000000000BBB0000000000000000000000000000000AB",
+        "BAA0000000CBBCBCC000000000CBBCBCC00000000000000000000000000000AB",
+        "BAA0A0000000BCB0000000000000BCB0000000000000000000000000000A00AB",
+        "BAA00000000C0BB0C0000000000C0BB0C00000000000000000000000000000AB",
+        "BAA0000000000C000000000000000C00000000000000000000000000000000AB",
+        "BAA000000000A0A0000000000000A0A0000000000000000000000000000000AB",
+        "BAA00000000000000000000000000000000000000000000000000000000000AB",
+        "BAA00000000000000000000000000000000000000000000000000000000000AB",
+        "BAA00000000000000000000000000000000000000000000000000000000000AB",
+        "BAA00000000000000000000000000000000000000000000000000000000000AB",
+        "2110100000000000000000000000000000000000000000000000000000010012",
+        "2110222000000000000000000000000000000000000000000000000002220012",
+        "2110222111333111111111111111111111111111111111111113331112220012",
+        "2110111000000000000000000000000000000000000000000000000001110012",
+        "2110000000000000000000000000000000000000000000000000000000000012",
+        "2110000000000000000000000000000000000000000000000000000000000012",
+        "2110003333000333003000303333303333000000000000000000000000000012",
+        "2110003000303000303000303000003000300000000000000000000000000012",
+        "2110103000303000303000303000003000300000000000000000000000010012",
+        "2110003333003000303030303333003333000000000000000000000000000012",
+        "2110003000003000303030303000003030000000000000000000000000000012",
+        "2110003000003000303303303000003003000000000000000000000000000012",
+        "2110003000000333003000303333303000300000000000000000000000000012",
+        "2110000000000000000000000000000000000000000000000000000000000012",
+        "2110000000000000000000000000000000000000000000000000000000000012",
+        "2110000000000000000000000000000000000000000000000000000000000012",
+        "8770700000000000000000000000000000000000000000000000000000070078",
+        "8770000000000000000000000000000000000000000000000000000000000078",
+        "8770009999999990000000000000000000000000000000000000000000000078",
+        "8770009888800090008888888800777777770077777777007777777700000078",
+        "8770009899989090008999999800777777770077777777007777777700000078",
+        "8770009890089090008999999800770000770077000077007700007700000078",
+        "8770009888809090008998899800770770770077077077007707707700000078",
+        "8770009890009090008998899800770770770077077077007707707700000078",
+        "8770709899999090008999999800770000770077000077007700007700070078",
+        "8770009800000090008999999800777777770077777777007777777700000078",
+        "8770009999999990008888888800777777770077777777007777777700000078",
+        "8770000000000000000000000000000000000000000000000000000000000078",
+        "8770000000000000000000000000000000000000000000000000000000000078",
+        "8770000000000000000000000000000000000000000000000000000000000078",
+        "8770000000000000000000000000000000000000000000000000000000000078",
+        "8770000000000000000000000000000000000000000000000000000000000078",
+        "BAA0A0AA000000000000000000000000000000000000000000000000AA0A00AB",
+        "BAA000BBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABB0000AB",
+        "BAA000AA000000000000000000000000000000000000000000000000AA0000AB",
+        "BAA00000000000000000000000000000000000000000000000000000000000AB",
+        "BAA0000CCCC0CCCC000CCC00CCCCC0CCCCC000000000000000000000000000AB",
+        "BAA000C00000C000C0C000C00000C0C0000000000000000000000000000000AB",
+        "BAA000C00000C000C0C000C0000C00C0000000000000000000000000000000AB",
+        "BAA000C0CCC0CCCC00CCCCC000C000CCCC0000000000000000000000000000AB",
+        "BAA0A0C000C0C0C000C000C00C0000C0000000000000000000000000000A00AB",
+        "BAA000C000C0C00C00C000C0C00000C0000000000000000000000000000000AB",
+        "BAA0000CCCC0C000C0C000C0CCCCC0CCCCC000000000000000000000000000AB",
+        "BAA00000000000000000000000000000000000000000000000000000000000AB",
+        "BAA00000000000000000000000000000000000000000000000000000000000AB",
+        "BAA00000000000000000000000000000000000000000000000000000000000AB",
+        "BAA0000CCC000CCC0000C0000CCC000CCC0000000000000000000000000000AB",
+        "BAA000C000C0C000C00CC000C000C0C000C000000000000000000000000000AB",
+        "2110103003303003300030000000303000300000000000000000000000010012",
+        "2110003030303030300030000003000333000000000000000000000000000012",
+        "2110003300303300300030000030003000300000000000000000000000000012",
+        "2110003000303000300030000300003000300000000000000000000000000012",
+        "2110000333000333000333003333300333000000000000000000000000000012",
+        "2110000000000000000000000000000000000000000000000000000000000012",
+        "2110000000000000000000000000000000000000000000000000000000000012",
+        "2110000000000000000000000000000000000000000000000000000000000012",
+        "2110100000000000000000000000000000000000000000000000000000010012",
+        "2110000000000000000000000000000000000000000000000000000000000012",
+        "2110000000000000000000000000000000000000000000000000000000000012",
+        "2110000000000000000000000000000000000000000000000000000000000012",
+        "2110000000000000000000000000000000000000000000000000000000000012",
+        "2110222000000000000000000000000000000000000000000000000002220012",
+        "2110222111333111111111111111111111111111111111111113331112220012",
+        "2110111000000000000000000000000000000000000000000000000001110012",
+        "8770700000000000000000000000000000000000000000000000000000070078",
+        "8770000000000000000000000000000000000000000000000000000000000078",
+        "8770000000000000000000000000000000000000000000000000000000000078",
+        "8770000000000000000000000000000000000000000000000000000000000078",
+        "8770000999909999900999000999909999900000009999000000000000000078",
+        "8770009000000090009000909000009000000000000000900000000000000078",
+        "8770009000000090009000909000009000000000000000900000000000000078",
+        "8770000999000090009999909099909999000000000999000000000000000078",
+        "8770700000900090009000909000909000000000000000900000000000070078",
+        "8770000000900090009000909000909000000000000000900000000000000078",
+        "8770009999000090009000900999909999900000009999000000000000000078",
+        "8770000000000000000000000000000000000000000000000000000000000078",
+        "8770000000000000000000000000000000000000000000000000000000000078",
+        "8770000000000000000000000000000000000000000000000000000000000078",
+        "8770000888800888800888008888008000008888808888800000000000000078",
+        "8770008000008000008000808000808000008000000080000000000000000078",
+        "8770708000008000008000808000808000008000000080000000000000070078",
+        "8770000888008000008888808888008000008888000080000000000000000078",
+        "8770000000808000008000808080008000008000000080000000000000000078",
+        "8770000000808000008000808008008000008000000080000000000000000078",
+        "8770008888000888808000808000808888808888800080000000000000000078",
+        "8770000000000000000000000000000000000000000000000000000000000078",
+        "8770000000000000000000000000000000000000000000000000000000000078",
+        "8770008000800888008000800888808888800888008000800000000000000078",
+        "8770708808808000808800808000000080008000808800800000000000070078",
+        "8770008080808000808080808000000080008000808080800000000000000078",
+        "8770008080808888808008800888000080008000808008800000000000000078",
+        "8770008000808000808000800000800080008000808000800000000000000078",
+        "8770008000808000808008877777877787778777878000800000000000000078",
+        "8770008000808000808007808888008888800888098000800000000000000078",
+        "8770000000000000000007000000000000000000007000000000000000000078",
+        "8770000000000000000007000000007700000000007000000000000000000078",
+        "8770700000000000000007000000077770000000007000000000000000070078",
+        "8770000000000000000007000000777777000000007000000000000000000078",
+        "8770000000000000000007000077777777770000007000000000000000000078",
+        "8770000000000000000007000777777777777000007000000000000000000078",
+        "8770000000000000000007000777777777777000007000000000000000000078",
+        "8770000000000000000007000777887788777000007000000000000000000078",
+        "8770000000000000000007000777887788777000007000000000000000000078",
+        "8770000000000000000007000777777777777000007000000000000000000078",
+        "8770700000000000000007000777777777777000007000000000000000070078",
+        "8770000000000000000007000777770077777000007000000000000000000078",
+        "8770000000000000000007000777770077777000007000000000000000000078",
+        "8770000000000000000007000777770077777000007000000000000000000078",
+        "8770000000000000000007000777777777777000007000000000000000000078",
+        "8770000000000000000007000000000000000000007000000000000000000078",
+        "8770000000000000000007000000000000000000007000000000000000000078",
+        "8770000000000000000007000000000000000000007000000000000000000078",
+        "2110100000000000000001300000000000000000031000000000000000010012",
+        "2110000000000000000002111111111111111111112000000000000000000012",
+        "2110000000000000000000000000000000000000000000000000000000000012",
+        "2110222000000000000000000000000000000000000000000000000002220012",
+        "2110222111333111111111111111111111111111111111111113331112220012",
+        "2130111000000000000000000000000000000000000000000000000001110012",
+        "2130000000000000000000000000000000000000000000000000000000000012",
+        "2130000000000000000000000000000000000000000000000000000000000012",
+        "2130002000200000000222002000200000000000000000000000000000000012",
+        "2130002202200022002000202200200000000000000000000000000000000012",
+        "2130002020200022002000202020200000000000000000000000000000000012",
+        "2113002020200000002000202002200000000000000000000000000000003012",
+        "2113302000200022002000202000200000000000000000000000000000033012",
+        "2110002000200022002000202000200000000000000000000000000000000012",
+        "2111112111211111111222112111211111111111111111111111111111111112",
+        "2222222222222222222222222222222222222222222222222222222222222222"
+      ],
+      "symbols": {
+        "0": {
+          "hex": "#10121e"
+        },
+        "1": {
+          "hex": "#232637"
+        },
+        "2": {
+          "hex": "#48475c"
+        },
+        "3": {
+          "hex": "#898299"
+        },
+        "4": {
+          "hex": "#301b2b"
+        },
+        "5": {
+          "hex": "#6c293f"
+        },
+        "6": {
+          "hex": "#c56879"
+        },
+        "7": {
+          "hex": "#392d30"
+        },
+        "8": {
+          "hex": "#846349"
+        },
+        "9": {
+          "hex": "#d4b185"
+        },
+        ".": {
+          "transparent": true
+        },
+        "A": {
+          "hex": "#203447"
+        },
+        "B": {
+          "hex": "#426b81"
+        },
+        "C": {
+          "hex": "#9bbbc5"
+        }
+      }
+    },
+    "round_trip": {
+      "width": 64,
+      "height": 240,
+      "cel_hash": true
+    },
+    "resources": {
+      "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-hud/revision/2/scarlet-moon-js"
+    }
+  }
+}
