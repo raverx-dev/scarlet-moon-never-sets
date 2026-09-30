@@ -52,16 +52,50 @@ not override problems visible at 1×.
 
 ### LC-SCREEN-3 — no resolution laundering — MUST NOT
 
+Do not produce canonical Scarlet Moon pixel art by taking smooth or
+conventionally high-resolution illustration/vector artwork and then using
+arbitrary shrinking, soft resampling, antialiasing, blur, post-hoc palette
+reduction or pixelation filters to disguise it as native low-resolution authored
+art.
+
 Do not:
-- paint high-resolution art and downsample it;
 - anti-alias then quantize;
-- use soft resampling;
+- use soft resampling as the source→native art method;
 - use vector/smooth-shape construction as the final drawing method;
 - hide weak native pixels behind CRT shaders, scanlines, blur, curvature or
   phosphor effects during acceptance.
 
 Those effects may be explored later as presentation options, never as proof that
 the underlying pixels work.
+
+### LC-SCREEN-3A — deterministic raster recovery — MAY
+
+An enlarged, intentionally **pixel-structured recovery source** MAY be
+deterministically translated into a declared native logical canvas when all of
+the following hold:
+
+- the source was generated/authored for a known native target under an accepted
+  recovery-source contract;
+- the source already expresses hard-edged low-resolution pixel/cluster intent
+  rather than smooth illustrative detail;
+- the translation uses an approved deterministic recipe with exact source
+  identity, crop, fit/resampler, ordered palette and quantization provenance;
+- the recovered logical matrix, not the enlarged source, is the canonical art;
+- the recovered result is reviewed at **1× native size**;
+- no later LLM redraw/reconstruction stage artistically reinterprets the
+  recovered pixels.
+
+For the recovered Scarlet Moon character workflow documented by RoboPixel #34,
+`Pillow Image.Resampling.BOX` is the proven source→native reduction and
+NEAREST enlargement is review/presentation only.
+
+This exception is **not** permission to downsample arbitrary high-resolution
+illustration. It distinguishes deterministic recovery of an intentionally
+pixel-structured enlarged sprite source from resolution laundering.
+
+Character-raster recovery is documented separately from environment/tile
+production. This rule does not by itself establish a tile-generation or
+tile-recovery workflow.
 
 ---
 
