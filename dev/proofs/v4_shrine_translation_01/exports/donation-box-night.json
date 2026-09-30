@@ -1,0 +1,163 @@
+{
+  "adapter_id": "scarlet-moon-js",
+  "preview": true,
+  "delivery": false,
+  "project_id": "scarlet-moon-never-sets",
+  "asset_id": "v4-shrine-trans01-donation-box-night",
+  "revision": 2,
+  "revision_hash": "48c4174c816270dbf2f4595fda19a748ad98749d083e9efeebb8eabf16752a77",
+  "frame_id": "default",
+  "layer_id": "art",
+  "matrix": {
+    "width": 32,
+    "height": 22,
+    "rows": [
+      "..iiiiiiiiiiiiiiiiiiiiiiiiiiii..",
+      ".ijjjjjjjjjjjjjjjjjjjjjjjjjjjji.",
+      "ijrhhrhhrhhrhhrhhrhhrhhrhhrhhrji",
+      "ijrhhrhhrhhrhhrhhrhhrhhrhhrhhrji",
+      "ijjjjjjjjjjjjjjjjjjjjjjjjjjjjjji",
+      "rrhhhhhhhhhhhhhhhhhhhhhhhhhhhhrr",
+      "rsrrssssssssssssssssssssssssrrsr",
+      "rsurssrssrssrssrssrssrssrssrrusr",
+      "rsurssrssrssrhhhhrrssrssrssrrusr",
+      "rsurssrssrrhhiijjhhrrssrssrrusr.",
+      "rsurssrssrhhijjjjjjhrrsrssrrusr.",
+      "rsurssrssrhijhijhijhrssrssrrusr.",
+      "rsurssrssrhijjjjjjjhrssrssrrusr.",
+      "rsurssrssrhijhijhijhrssrssrrusr.",
+      "rsurssrssrhhijjjjjhhrrsrssrrusr.",
+      "rsurssrssrrhhiijjhhrrssrssrrusr.",
+      "rsurssrssrssrhhhhrrssrssrssrrusr",
+      "rshhhhhhhhhhhhhhhhhhhhhhhhhhhsr.",
+      "rrhhhhhhhhhhhhhhhhhhhhhhhhhhhrr.",
+      ".rrrrr..................rrrrr...",
+      ".rrrrr..................rrrrr...",
+      "llllllllllllllllllllllllllllllll"
+    ],
+    "symbols": {
+      ".": {
+        "transparent": true
+      },
+      "K": {
+        "hex": "#101323"
+      },
+      "a": {
+        "hex": "#202338"
+      },
+      "b": {
+        "hex": "#303550"
+      },
+      "c": {
+        "hex": "#484b65"
+      },
+      "d": {
+        "hex": "#707080"
+      },
+      "e": {
+        "hex": "#544c5d"
+      },
+      "f": {
+        "hex": "#867277"
+      },
+      "g": {
+        "hex": "#b09a8c"
+      },
+      "r": {
+        "hex": "#291c2c"
+      },
+      "s": {
+        "hex": "#49293b"
+      },
+      "t": {
+        "hex": "#743544"
+      },
+      "u": {
+        "hex": "#a45250"
+      },
+      "v": {
+        "hex": "#c27a66"
+      },
+      "h": {
+        "hex": "#6e4d45"
+      },
+      "i": {
+        "hex": "#b38359"
+      },
+      "j": {
+        "hex": "#e3ad74"
+      },
+      "l": {
+        "hex": "#121d2a"
+      },
+      "m": {
+        "hex": "#1c303e"
+      },
+      "n": {
+        "hex": "#304752"
+      },
+      "o": {
+        "hex": "#435b63"
+      },
+      "p": {
+        "hex": "#677475"
+      },
+      "q": {
+        "hex": "#9b8e75"
+      },
+      "A": {
+        "hex": "#292842"
+      },
+      "B": {
+        "hex": "#3c3a59"
+      },
+      "C": {
+        "hex": "#525170"
+      },
+      "D": {
+        "hex": "#68617e"
+      },
+      "E": {
+        "hex": "#171d38"
+      },
+      "F": {
+        "hex": "#232845"
+      },
+      "G": {
+        "hex": "#35314e"
+      },
+      "H": {
+        "hex": "#54405b"
+      },
+      "I": {
+        "hex": "#f8d79a"
+      },
+      "J": {
+        "hex": "#e99b5b"
+      },
+      "L": {
+        "hex": "#bd6256"
+      },
+      "M": {
+        "hex": "#8e4053"
+      },
+      "N": {
+        "hex": "#62617b"
+      },
+      "O": {
+        "hex": "#d4c3ae"
+      },
+      "P": {
+        "hex": "#ca6470"
+      }
+    }
+  },
+  "round_trip": {
+    "width": 32,
+    "height": 22,
+    "cel_hash": true
+  },
+  "resources": {
+    "export": "robopixel://export/scarlet-moon-never-sets/v4-shrine-trans01-donation-box-night/revision/2/scarlet-moon-js"
+  }
+}

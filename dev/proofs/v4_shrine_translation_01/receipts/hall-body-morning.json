@@ -1,0 +1,82 @@
+{
+  "create": {
+    "receipt": {
+      "transaction_id": "a586c4d696ea33d83c9547d5b63bdd07285b54593c4fcbf3058b84a6e534a527",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-hall-body-morning",
+      "operation": "asset_create",
+      "name": "Shrine Translation 01 / hall-body-morning",
+      "class_id": "environment-structure",
+      "revision": 1,
+      "revision_hash": "abf7d72622c6fac9e1e1d6328454c52749a115fbd1cb2cbbde2a6f068b92eb2f",
+      "canvas": {
+        "width": 132,
+        "height": 49
+      },
+      "palette_id": "v4-shrine-trans01-hall-body-morning",
+      "palette_hash": "94483bbdfeeedbdcb172994dafe5f3a33e33427161c6d473ca03653745b965aa",
+      "frame_id": "default",
+      "layer_id": "art",
+      "created_at": "2026-09-25T12:20:09.616Z",
+      "policy_id": "d12-art-policy",
+      "policy_version": 1,
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "guards": []
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-body-morning",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-body-morning/revision/1",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-body-morning/revision/1/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-body-morning/revision/1/text"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  "paste": {
+    "receipt": {
+      "transaction_id": "7a97c3acfe9b05af1a1dfe8a34944b08452c9f70454d5a2db1f725288cfc4e0a",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-hall-body-morning",
+      "operation": "grid_paste",
+      "old_revision": 1,
+      "new_revision": 2,
+      "old_revision_hash": "abf7d72622c6fac9e1e1d6328454c52749a115fbd1cb2cbbde2a6f068b92eb2f",
+      "new_revision_hash": "774a6ec32eab5780fcbbec3a6fe134d09606248cb0717b0513d2cab54e5a5f38",
+      "changed_pixels": 6264,
+      "changed_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 132,
+        "height": 49
+      },
+      "region_changes": [],
+      "layer_changes": [
+        {
+          "layer_id": "art",
+          "changed_pixels": 6264
+        }
+      ],
+      "frame_changes": [
+        {
+          "frame_id": "default",
+          "changed_pixels": 6264
+        }
+      ],
+      "guards": [],
+      "approval_invalidated": true
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-body-morning",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-body-morning/revision/2",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-body-morning/revision/2/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-body-morning/revision/2/text",
+      "diff": "robopixel://diff/scarlet-moon-never-sets/v4-shrine-trans01-hall-body-morning/1/2"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  }
+}

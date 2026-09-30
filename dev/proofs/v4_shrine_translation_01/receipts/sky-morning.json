@@ -1,0 +1,82 @@
+{
+  "create": {
+    "receipt": {
+      "transaction_id": "2ff0f96ec890b7182aba20a4fbe69ae0a129c806891ca2e8f1a5fca8be0c5bb7",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-sky-morning",
+      "operation": "asset_create",
+      "name": "Shrine Translation 01 / sky-morning",
+      "class_id": "environment-structure",
+      "revision": 1,
+      "revision_hash": "a7d03718325dd8c312de01271e99c466e98c43765420967197966b9a9ec639ee",
+      "canvas": {
+        "width": 256,
+        "height": 120
+      },
+      "palette_id": "v4-shrine-trans01-sky-morning",
+      "palette_hash": "1c4bec99c5e80dee6f5878e3af9c513c33205d6886c724edfd4ac29b52d119de",
+      "frame_id": "default",
+      "layer_id": "art",
+      "created_at": "2026-09-25T12:20:00.890Z",
+      "policy_id": "d12-art-policy",
+      "policy_version": 1,
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "guards": []
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-sky-morning",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-sky-morning/revision/1",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-sky-morning/revision/1/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-sky-morning/revision/1/text"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  "paste": {
+    "receipt": {
+      "transaction_id": "a85e2ebf2808bb0efcd72ae733587ca4319c874a0d86458608382312a3e6bb40",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-sky-morning",
+      "operation": "grid_paste",
+      "old_revision": 1,
+      "new_revision": 2,
+      "old_revision_hash": "a7d03718325dd8c312de01271e99c466e98c43765420967197966b9a9ec639ee",
+      "new_revision_hash": "59906de74d7e3677bdfea98e50fd863bb891c99c9dab289414038d17791bf3ba",
+      "changed_pixels": 30720,
+      "changed_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 120
+      },
+      "region_changes": [],
+      "layer_changes": [
+        {
+          "layer_id": "art",
+          "changed_pixels": 30720
+        }
+      ],
+      "frame_changes": [
+        {
+          "frame_id": "default",
+          "changed_pixels": 30720
+        }
+      ],
+      "guards": [],
+      "approval_invalidated": true
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-sky-morning",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-sky-morning/revision/2",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-sky-morning/revision/2/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-sky-morning/revision/2/text",
+      "diff": "robopixel://diff/scarlet-moon-never-sets/v4-shrine-trans01-sky-morning/1/2"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  }
+}
