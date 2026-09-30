@@ -1,0 +1,23 @@
+{
+  "name": "meilingSleep",
+  "width": 24,
+  "height": 16,
+  "rows": [
+    "........................",
+    "........................",
+    "......................ee",
+    "....................Heh.",
+    ".............hH.eeeeH...",
+    "........hRH.RrRRrrRee...",
+    ".......RRRRRRWRrRrRRF...",
+    ".....ReeeFReWwRRFrrRe...",
+    "...HRRevvvveWWRFfFRrH...",
+    "...RRHeeeeFvFFHHWvRRRR..",
+    "..HWWWveeeFWWFFeFRvRRrRh",
+    "HHHHvWveevFevvRfFRrHRRRR",
+    ".HHHveWvFvWvH....hh..h..",
+    "........................",
+    "........................",
+    "........................"
+  ]
+}

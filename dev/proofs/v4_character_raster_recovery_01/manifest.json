@@ -1,0 +1,568 @@
+{
+  "source_path": "/home/dellis/Downloads/Scarlet-Moon-V4-Approved-Character-State-Sheet.png",
+  "source_sha256": "9e50e1a48440882187df834085b3c76b3b538460166daad023f4ec94e3b7fcc5",
+  "origin_main_sha": "bd857570e5c55d261392e0e819720cff3637b8c5",
+  "palette_source": "versions/v4/index.html:32,43 at origin/main",
+  "palette": {
+    "r": "#e83a51",
+    "R": "#9a2438",
+    "w": "#fff0ce",
+    "W": "#d4c4a8",
+    "h": "#191528",
+    "H": "#2c2438",
+    "f": "#f6b993",
+    "F": "#e08a72",
+    "k": "#080810",
+    "b": "#424d9d",
+    "B": "#2a3160",
+    "c": "#81d8ed",
+    "C": "#c8f2ff",
+    "g": "#f5cb70",
+    "G": "#64b58a",
+    "p": "#ff93b4",
+    "P": "#c45a88",
+    "m": "#ae68d7",
+    "M": "#6b3d9a",
+    "y": "#ffe08a",
+    "s": "#c8c8d8",
+    "S": "#8a8aa0",
+    "u": "#704638",
+    "o": "#c47a4a",
+    "i": "#4aa0c8",
+    "n": "#171b39",
+    "e": "#21423e",
+    "d": "#3a2040",
+    "x": "#87243b",
+    "v": "#5a8f6a",
+    "l": "#d0e8ff",
+    "t": "#8b5a3c",
+    "a": "#a9a4b6",
+    "z": "#ffd0e0"
+  },
+  "threshold_max_rgb_gt": 35,
+  "padding": 0,
+  "background_rgb": "#080810",
+  "reduction": "Pillow Image.Resampling.BOX",
+  "fit": "aspect-preserving, rounded dimensions, centered with floor offset",
+  "quantization": "weighted squared RGB (0.30, 0.59, 0.11), subset order tie-break, no dithering",
+  "preview": "Pillow Image.Resampling.NEAREST x8",
+  "manual_corrections": {},
+  "assets": {
+    "reimuStoryA": {
+      "character": "Reimu",
+      "dimensions": [
+        24,
+        32
+      ],
+      "crop": [
+        28,
+        93,
+        215,
+        308
+      ],
+      "content_bounds": [
+        29,
+        95,
+        212,
+        306
+      ],
+      "palette_subset": "rRwWhHfFgk",
+      "corrections": [],
+      "atlas_xywh": [
+        8,
+        4,
+        24,
+        32
+      ]
+    },
+    "reimuStoryB": {
+      "character": "Reimu",
+      "dimensions": [
+        24,
+        32
+      ],
+      "crop": [
+        224,
+        93,
+        403,
+        308
+      ],
+      "content_bounds": [
+        225,
+        95,
+        397,
+        306
+      ],
+      "palette_subset": "rRwWhHfFgk",
+      "corrections": [],
+      "atlas_xywh": [
+        48,
+        4,
+        24,
+        32
+      ]
+    },
+    "reimuStoryTalkA": {
+      "character": "Reimu",
+      "dimensions": [
+        24,
+        32
+      ],
+      "crop": [
+        410,
+        93,
+        556,
+        308
+      ],
+      "content_bounds": [
+        411,
+        95,
+        556,
+        306
+      ],
+      "palette_subset": "rRwWhHfFgk",
+      "corrections": [],
+      "atlas_xywh": [
+        88,
+        4,
+        24,
+        32
+      ]
+    },
+    "reimuStoryTalkB": {
+      "character": "Reimu",
+      "dimensions": [
+        24,
+        32
+      ],
+      "crop": [
+        589,
+        93,
+        739,
+        308
+      ],
+      "content_bounds": [
+        589,
+        93,
+        734,
+        306
+      ],
+      "palette_subset": "rRwWhHfFgk",
+      "corrections": [],
+      "atlas_xywh": [
+        128,
+        4,
+        24,
+        32
+      ]
+    },
+    "cirno": {
+      "character": "Cirno",
+      "dimensions": [
+        24,
+        32
+      ],
+      "crop": [
+        44,
+        429,
+        217,
+        663
+      ],
+      "content_bounds": [
+        46,
+        432,
+        212,
+        663
+      ],
+      "palette_subset": "cCbiBlwWfFhH",
+      "corrections": [],
+      "atlas_xywh": [
+        8,
+        44,
+        24,
+        32
+      ]
+    },
+    "cirnoB": {
+      "character": "Cirno",
+      "dimensions": [
+        24,
+        32
+      ],
+      "crop": [
+        242,
+        429,
+        413,
+        663
+      ],
+      "content_bounds": [
+        250,
+        432,
+        411,
+        662
+      ],
+      "palette_subset": "cCbiBlwWfFhH",
+      "corrections": [],
+      "atlas_xywh": [
+        48,
+        44,
+        24,
+        32
+      ]
+    },
+    "cirnoFreeze": {
+      "character": "Cirno",
+      "dimensions": [
+        24,
+        32
+      ],
+      "crop": [
+        437,
+        428,
+        735,
+        663
+      ],
+      "content_bounds": [
+        441,
+        431,
+        731,
+        661
+      ],
+      "palette_subset": "cCbiBlwWfFhH",
+      "corrections": [],
+      "atlas_xywh": [
+        88,
+        44,
+        24,
+        32
+      ]
+    },
+    "marisa": {
+      "character": "Marisa",
+      "dimensions": [
+        32,
+        32
+      ],
+      "crop": [
+        788,
+        78,
+        1027,
+        312
+      ],
+      "content_bounds": [
+        790,
+        83,
+        1026,
+        312
+      ],
+      "palette_subset": "hHMwWfFygotbB",
+      "corrections": [],
+      "atlas_xywh": [
+        124,
+        44,
+        32,
+        32
+      ]
+    },
+    "marisaB": {
+      "character": "Marisa",
+      "dimensions": [
+        32,
+        32
+      ],
+      "crop": [
+        1030,
+        78,
+        1220,
+        312
+      ],
+      "content_bounds": [
+        1031,
+        78,
+        1215,
+        312
+      ],
+      "palette_subset": "hHMwWfFygotbB",
+      "corrections": [],
+      "atlas_xywh": [
+        4,
+        84,
+        32,
+        32
+      ]
+    },
+    "marisaAttack": {
+      "character": "Marisa",
+      "dimensions": [
+        32,
+        32
+      ],
+      "crop": [
+        1235,
+        100,
+        1512,
+        312
+      ],
+      "content_bounds": [
+        1235,
+        107,
+        1508,
+        305
+      ],
+      "palette_subset": "hHMwWfFygotbB",
+      "corrections": [],
+      "atlas_xywh": [
+        44,
+        84,
+        32,
+        32
+      ]
+    },
+    "sakuya": {
+      "character": "Sakuya",
+      "dimensions": [
+        32,
+        32
+      ],
+      "crop": [
+        800,
+        426,
+        1008,
+        668
+      ],
+      "content_bounds": [
+        806,
+        426,
+        1004,
+        668
+      ],
+      "palette_subset": "sSwWbBcCfFhH",
+      "corrections": [],
+      "atlas_xywh": [
+        84,
+        84,
+        32,
+        32
+      ]
+    },
+    "sakuyaB": {
+      "character": "Sakuya",
+      "dimensions": [
+        32,
+        32
+      ],
+      "crop": [
+        1008,
+        417,
+        1221,
+        668
+      ],
+      "content_bounds": [
+        1008,
+        417,
+        1221,
+        668
+      ],
+      "palette_subset": "sSwWbBcCfFhH",
+      "corrections": [],
+      "atlas_xywh": [
+        124,
+        84,
+        32,
+        32
+      ]
+    },
+    "sakuyaStop": {
+      "character": "Sakuya",
+      "dimensions": [
+        32,
+        32
+      ],
+      "crop": [
+        1237,
+        412,
+        1495,
+        668
+      ],
+      "content_bounds": [
+        1242,
+        415,
+        1495,
+        668
+      ],
+      "palette_subset": "sSwWbBcCfFhH",
+      "corrections": [],
+      "atlas_xywh": [
+        4,
+        124,
+        32,
+        32
+      ]
+    },
+    "remilia": {
+      "character": "Remilia",
+      "dimensions": [
+        32,
+        32
+      ],
+      "crop": [
+        29,
+        772,
+        283,
+        986
+      ],
+      "content_bounds": [
+        32,
+        776,
+        277,
+        986
+      ],
+      "palette_subset": "pPzrRwWbBhHfFx",
+      "corrections": [],
+      "atlas_xywh": [
+        44,
+        124,
+        32,
+        32
+      ]
+    },
+    "remiliaB": {
+      "character": "Remilia",
+      "dimensions": [
+        32,
+        32
+      ],
+      "crop": [
+        291,
+        755,
+        554,
+        986
+      ],
+      "content_bounds": [
+        291,
+        759,
+        554,
+        986
+      ],
+      "palette_subset": "pPzrRwWbBhHfFx",
+      "corrections": [],
+      "atlas_xywh": [
+        84,
+        124,
+        32,
+        32
+      ]
+    },
+    "remiliaFinal": {
+      "character": "Remilia",
+      "dimensions": [
+        32,
+        32
+      ],
+      "crop": [
+        556,
+        750,
+        911,
+        990
+      ],
+      "content_bounds": [
+        556,
+        754,
+        909,
+        990
+      ],
+      "palette_subset": "pPzrRwWbBhHfFx",
+      "corrections": [],
+      "atlas_xywh": [
+        124,
+        124,
+        32,
+        32
+      ]
+    },
+    "meilingSleep": {
+      "character": "Meiling",
+      "dimensions": [
+        24,
+        16
+      ],
+      "crop": [
+        1019,
+        777,
+        1386,
+        936
+      ],
+      "content_bounds": [
+        1025,
+        777,
+        1368,
+        933
+      ],
+      "palette_subset": "rRGgevwWfFhH",
+      "corrections": [],
+      "atlas_xywh": [
+        8,
+        172,
+        24,
+        16
+      ]
+    }
+  },
+  "output_sha256": {
+    "README.md": "47531c116234f0f738323d996127b6ebb3cc03b247678fe285d78999b03de27f",
+    "comparison/whole-cast-review.png": "429d75a303e3c5da762e4ac64958d6f156c784b7f6ff8564ade915408b29348a",
+    "matrices/cirno.json": "07279cbf999db647be319fcc4b1c596a281625539ec85526e21d50af9219aa76",
+    "matrices/cirnoB.json": "e5520b7fc9c7ba4afd1479483e613e0ebd8fec902049806334518ab689b59cac",
+    "matrices/cirnoFreeze.json": "50ea4d25d6ba338f0d2762c23eab3f790d51ac24f4d55f3348b85023ee3a8229",
+    "matrices/marisa.json": "658a642db45e9719b9260ae9527499bd8946ae29c34b5a25d2c9531945c24ae1",
+    "matrices/marisaAttack.json": "30b343e6b67401b0aaeb93e1d75cca106989e18aaff2ef970c19c69b20eef81f",
+    "matrices/marisaB.json": "c3b25161a92dd1ad94b8a2c54aafdd451e4efaab671c4e296cd5ce2c3c93cc8e",
+    "matrices/meilingSleep.json": "f5f810a363b2de1ef724665ac11b041ffe0135e11dcad8fbe6acb124143be47b",
+    "matrices/reimuStoryA.json": "c02d160759832207c1d82b1eecc607a5d519ab1ddd961fe21c3124afa889362b",
+    "matrices/reimuStoryB.json": "58e49105d2d53ceeca69495d92475372e72b96fc4f7ab59d1f99011b8d2abcad",
+    "matrices/reimuStoryTalkA.json": "b8263c717631f50ee40a464863bb5bc585d468120fb563663aa37c42241d2bd3",
+    "matrices/reimuStoryTalkB.json": "88b2aac6da20bce3d756247edf0ff4eabdbf8b872ede06d50808fc31e884fffa",
+    "matrices/remilia.json": "ec6e2f770e916d703c975c27ab625a515aa08ba904ac1e2ae5b601dae802d956",
+    "matrices/remiliaB.json": "0e5a6a07902767c0fcfac65c888213a45b47dc01a0754c83428dd885cf7a4ebc",
+    "matrices/remiliaFinal.json": "e2980498a345a31ab6f21a34cdbc396401cfd21b68ac4f9c400f7bbb4e8aede0",
+    "matrices/sakuya.json": "e808f9f213b32d75f191694eed6eb275f9557a1c77d14d6207f23355d048ffaf",
+    "matrices/sakuyaB.json": "63f86edf6fee8eb39fa1ba977b673d39dbf0fc3ea8b0153526dbe0a737f927de",
+    "matrices/sakuyaStop.json": "3ffd2f998aab004cd8221308b1e6aae43279ae4782e4d6449daee6266dce224c",
+    "native-atlas.png": "c3e74d974241d188741c93b39adf747ec7901ca5b9c6f3505526359ee8e935a8",
+    "native/cirno.png": "f6b34d0ce6d485e8637893bca1d7435702674c8ad98333415dc428f8365d0c5b",
+    "native/cirnoB.png": "7b5fe9e52f370663b8e605d44804e4582003c6f17fa68b7882f2ee92775ce5a2",
+    "native/cirnoFreeze.png": "e7a29ef5b87755e8fea4c32be6913160e48755e00412c32f256fe49ccf0aa707",
+    "native/marisa.png": "6bdc311ac979d55c96f2392eea91fa95e6c2067cda597791474b184b6da0c626",
+    "native/marisaAttack.png": "f05d6b35ad8282a1fa5f8c0041045dc69bfe766891564a242522f07cdd5d3804",
+    "native/marisaB.png": "b77ab268f7c5871af26f00a001ee1510565128deb74e92c08576c07ef2e7f025",
+    "native/meilingSleep.png": "13786a71457681f141fe8b1bfeeff9607459f3990de80e0d55ad64cf8b1112bc",
+    "native/reimuStoryA.png": "4110fbd08a0b5601e1be7bbfc45de215ac66ccc7fc805e1ac985a32c58b6cccb",
+    "native/reimuStoryB.png": "7973be031ee0c7830369c0bde778b47b75500d4ceaa934f3f2a668ffae5acccf",
+    "native/reimuStoryTalkA.png": "846a8c05292c41e29fffac4e322c9e9a39584df1e4b482d6688f143075132db4",
+    "native/reimuStoryTalkB.png": "d6deb0d343b0698b0320948f91aed78d7f555236f513ff6c51cf420a5e6e6c9a",
+    "native/remilia.png": "f389a6c7061c8dd851b7ea218f8347c9ea090f01f25187cd7a0c5d2d68a42197",
+    "native/remiliaB.png": "9114f52012d2360565f0fb683c0a80160bd11db7cbef21e47c3ea416e72db7a0",
+    "native/remiliaFinal.png": "e60a47a88ae0c393b15af8b119be56a825f86005ed9a4c08f3b5f26478653300",
+    "native/sakuya.png": "1fb62446d4ea99d60a055d47ab92c01d2e829b76b484a58c83b150d8d71cd72e",
+    "native/sakuyaB.png": "1e48070e277afca8e8d5ff28c595fea20b4aae71a4c902f8f1ef52e64969dfb8",
+    "native/sakuyaStop.png": "10fceb8a748a0351ac5724bf4680fb451e3f69a90686f3652f235e15ea6d71f7",
+    "previews/cirno.png": "04cc633059c829172b2145fcdb574e38d6be09910c5c73d7699d604b2ca5a55e",
+    "previews/cirnoB.png": "1132020516fc4f556dde98a6a0b01aefffe58eeb56c35e4ad2644bfd2cc3135a",
+    "previews/cirnoFreeze.png": "72ee161b5f9ab78e68c9775f160189f7fe1ffc3c11517fbab89df44b5b215085",
+    "previews/marisa.png": "008863079418cb0fa534eda3585dba5c50d2ca19783f0031c9b85d04c68748f5",
+    "previews/marisaAttack.png": "4ac89712cf10debb000edbc0fd299472c6927acedecbcaf163eca88519afb6ff",
+    "previews/marisaB.png": "41b8567fd0fab39e742598c89154f8b99c4312a75895f78231fce75e1c5ebc94",
+    "previews/meilingSleep.png": "83c49b5f8259c1013c75ecec7b4e536a0f7008c680cb420fed7aa49a1fbb235c",
+    "previews/reimuStoryA.png": "906a8607084d16221b64a2fcef30294b36c2d842c3e15d36db80aaf23dab4ff6",
+    "previews/reimuStoryB.png": "f2f9d76d718eed81b801b61c4e6e461bd14ddfaed693533ef0a08774f26937a7",
+    "previews/reimuStoryTalkA.png": "0221ddaa74620bbabe55e90f3eb2071aade9b70136fea2b8507d3cfa361086e1",
+    "previews/reimuStoryTalkB.png": "0c32a5f77a017ef01d2d27960e0e50f32954698e61fbf27cf1319d113b0e2f2a",
+    "previews/remilia.png": "13f78d0508404a99dcbcbbae4c205dc35fc71703f900da1067136628a037d2c1",
+    "previews/remiliaB.png": "b19f1008fa8b232846d9f2c52beab098d9ab1b6bbee953d9d1e2a832e6bc08db",
+    "previews/remiliaFinal.png": "334d74fab9d45b154a03a66efbed828148e97449e853d090abf7dddd740bb67e",
+    "previews/sakuya.png": "cdf1cebc9067194fe8eed766faddb70d86d88459291e3dcf3faf05111a379d71",
+    "previews/sakuyaB.png": "15a5a131b29d3229842c752da20a643f3422458bcd6faa824ee6bc73cd4f090c",
+    "previews/sakuyaStop.png": "56fbc408ff4943eea15be08b5042c017fa7076ace7dc41de8ee2c3395cf0c118",
+    "recover_v4_characters.py": "1ef69fdaed809020e5f878716c6790ebc28c1500baf9fafd135629d41a5eea80"
+  }
+}
