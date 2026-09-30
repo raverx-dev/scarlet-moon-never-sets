@@ -1,0 +1,23 @@
+{
+  "name": "cloud-violet",
+  "width": 58,
+  "height": 16,
+  "rows": [
+    ".........................FF...............................",
+    ".......................FFFFF........FF....................",
+    "...................FFFFFFFFFFF....FFFFF...................",
+    "..............FFFFFmmmFFFFFFFFFFFFFFmmmmFF................",
+    "...........FFFFmmmmmmFFFFFFFFFFFFmmmmmmFFFF...............",
+    "........FFFFmmmmmmmFFFFFFFffffFFFFmmmmFFFFFFFF............",
+    "...FFFFFFFFmmmFFFFFffffffffffffFFFFmFFFFFFFmmmFFF.........",
+    ".FFFmmmmFFFFFFFffffffffffffffffFFFFFFFmmmmmmmmmFFFF.......",
+    "FFFmmmmFFFFFFfffffffffbbbffffffFFFFFmmmmmmmmFFFFFFFF......",
+    "..FFFFFffffffffffbbbbbffffffFFFFFFFFmmmFFFFFFFFFFFFFFF....",
+    "....fffffffffbbbbbbbffffffffFFFFFffffFFFFFFFffffffffFFFF..",
+    ".....ffffffbbbbbbffffffffffffffffffffffffffffffffffffffF..",
+    "........ffffffbbbfffffffffffffffbbbbfffffffffffffffffff...",
+    "...........ffffffffffbbbbbbbbbbbbbbbfffffffffffff.........",
+    "................ffffffffffffffbbbbbbffffffffff............",
+    "....................fffffffffffffffffff..................."
+  ]
+}

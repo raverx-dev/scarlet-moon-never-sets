@@ -1,0 +1,102 @@
+{
+  "adapter_id": "scarlet-moon-js",
+  "preview": true,
+  "delivery": false,
+  "project_id": "scarlet-moon-never-sets",
+  "asset_id": "v4-rooftop-trans01-cloud-scarlet",
+  "revision": 2,
+  "revision_hash": "2f6d745287b09942fa1f1c6687587c5f4234458eb18ec01e34bd3b2ad06e5113",
+  "frame_id": "default",
+  "layer_id": "art",
+  "matrix": {
+    "width": 67,
+    "height": 15,
+    "rows": [
+      ".......................rrr.........................................",
+      "....................rrrRRrr..........rr............................",
+      "................rrrrRRRRRRrrr......rrRRr...........................",
+      ".........rrrrrrrrRRppRRRRRrrrrrrrrrrRRRRrrr........................",
+      "......rrrrRRRRRRRppppRRRrrrrrrrrRRRRpRRRRRRrrrr....................",
+      "....rrrrRRppppRRRRRRrrrrqqqqrrRRRpppppRRRRRrrrrrrr.................",
+      ".rrrrRRppppRRRRrrrrrqqqqqqqqrrRRppRRRRRRrrrrrrRRrrrr...............",
+      "rrRRRRRRRRrrrrrrqqqqqqqqqqqqrrrrRRRRrrrrrrqqrrRRpRRrrrr............",
+      "..rrrrrrrrrrqqqqqqqqqqqqqqqqqqrrrrrrrqqqqqqqrrRRpppRRRrrr..........",
+      "....rrrqqqqqqqqqqqqqqnnnqqqqqqqqqqqqqqqqqqrrrrRRRRRRRRrrrrr........",
+      ".........qqqqqqqqnnnnnnnnnnqqqqqqqqqqqqqqqqrrrrrrRRRRRRRrrrr.......",
+      ".............qqqqnnnnnnnnnnnnnqqqqqqqqqqqqqqqqqqrrrrrrrrrrrrrr.....",
+      ".....................nnnnnnnnnnnnnnqqqqqqqqqqqqqqqqqqrrrrrrrrrrrr..",
+      "................................nnnnnnqqqqqqqqqqqqqqqqqqqqqqqqqqq..",
+      "..............................................qqqqqqqqqqqqqqqq....."
+    ],
+    "symbols": {
+      ".": {
+        "transparent": true
+      },
+      "k": {
+        "hex": "#101323"
+      },
+      "n": {
+        "hex": "#161c32"
+      },
+      "b": {
+        "hex": "#1f2943"
+      },
+      "d": {
+        "hex": "#2b3553"
+      },
+      "s": {
+        "hex": "#394365"
+      },
+      "m": {
+        "hex": "#4b5577"
+      },
+      "l": {
+        "hex": "#666b8a"
+      },
+      "h": {
+        "hex": "#8d899f"
+      },
+      "H": {
+        "hex": "#b7a7b0"
+      },
+      "f": {
+        "hex": "#252d4c"
+      },
+      "F": {
+        "hex": "#343b60"
+      },
+      "q": {
+        "hex": "#341c36"
+      },
+      "r": {
+        "hex": "#5b263e"
+      },
+      "R": {
+        "hex": "#92374d"
+      },
+      "p": {
+        "hex": "#c7505c"
+      },
+      "P": {
+        "hex": "#ee7b77"
+      },
+      "o": {
+        "hex": "#ae705d"
+      },
+      "g": {
+        "hex": "#d59a74"
+      },
+      "G": {
+        "hex": "#ffd39a"
+      }
+    }
+  },
+  "round_trip": {
+    "width": 67,
+    "height": 15,
+    "cel_hash": true
+  },
+  "resources": {
+    "export": "robopixel://export/scarlet-moon-never-sets/v4-rooftop-trans01-cloud-scarlet/revision/2/scarlet-moon-js"
+  }
+}

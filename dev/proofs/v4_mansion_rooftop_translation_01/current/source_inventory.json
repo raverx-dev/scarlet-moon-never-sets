@@ -1,0 +1,31 @@
+{
+  "dialogueActors": [
+    [
+      56,
+      124
+    ],
+    [
+      200,
+      124
+    ]
+  ],
+  "dialoguePanelY": 174,
+  "remiliaFrames": [
+    "remilia",
+    "remiliaB",
+    "remiliaFinal"
+  ],
+  "gameplayMode": "boss remilia / stage3 after 70s",
+  "sourceRoofSizes": [
+    [
+      192,
+      240
+    ],
+    [
+      256,
+      240
+    ]
+  ],
+  "attractTick": 1045,
+  "defeatTick": 45
+}

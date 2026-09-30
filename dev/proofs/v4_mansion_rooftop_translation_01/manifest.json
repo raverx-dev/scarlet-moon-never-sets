@@ -1,0 +1,241 @@
+{
+  "project_id": "scarlet-moon-never-sets",
+  "status": "ROOFTOP WORKING STATIC-ART CANDIDATE \u2014 OWNER REVIEW REQUIRED",
+  "base_sha": "d7054d2b9b111ff711f44cc3ee5b71268aca6ed8",
+  "branch": "v4-mansion-rooftop-translation-01",
+  "recovery": "Original session files survived. Existing layouts and selected exports preserved; no post-resume art changes.",
+  "assets": [
+    {
+      "asset_id": "v4-rooftop-trans01-banner-pier",
+      "name": "banner-pier",
+      "revision": 2,
+      "revision_hash": "e92bab3010f30d9153f21540fb2ac5e6722034c1afac0f22ccd40c77f660908c",
+      "palette_hash": "edd47a9c7cc94d9bf8df93b6b018aaca2cbdea6388a661d081c9a04008cf1880",
+      "render_hash": "f444d4d00cd803f4339c0ad95ac27c38cf693fedf2c09f007683c2e1f764dda1",
+      "canvas": {
+        "width": 24,
+        "height": 50
+      },
+      "png_sha256": "dafb3341887e9a41274f9d29409fc52277052eae5998134a035367835e663356",
+      "export_sha256": "0b4823b52fa0ae12f4fef08c05060b1cc4cfd987114e789e8da60d696d752d77"
+    },
+    {
+      "asset_id": "v4-rooftop-trans01-cloud-scarlet",
+      "name": "cloud-scarlet",
+      "revision": 2,
+      "revision_hash": "2f6d745287b09942fa1f1c6687587c5f4234458eb18ec01e34bd3b2ad06e5113",
+      "palette_hash": "edd47a9c7cc94d9bf8df93b6b018aaca2cbdea6388a661d081c9a04008cf1880",
+      "render_hash": "8c9642e193746f59141f1dbbb5e2c5be2d1fde8b3bd8536b95dd37c99667aa57",
+      "canvas": {
+        "width": 67,
+        "height": 15
+      },
+      "png_sha256": "8183b46cd52eb5656ce5a568bc3d1f9c9e36a197b09318fec0cedd930e012dbb",
+      "export_sha256": "9561fd6b79c3778a425f3ff3411f8bfc3a0da62de25dbead76aba12762de5ce3"
+    },
+    {
+      "asset_id": "v4-rooftop-trans01-cloud-violet",
+      "name": "cloud-violet",
+      "revision": 2,
+      "revision_hash": "b639b450ced05aba25df951e037e3422a6b07a4b8d65e3ff027c1a554e85edab",
+      "palette_hash": "edd47a9c7cc94d9bf8df93b6b018aaca2cbdea6388a661d081c9a04008cf1880",
+      "render_hash": "e0601918f21fbeb2345f04b4276fedcfb95a5eead75135bc008e0bf259f5e082",
+      "canvas": {
+        "width": 58,
+        "height": 16
+      },
+      "png_sha256": "73c2821d6fa892e8c2808e75ae64efcae02c0677a5ce7ea0a8e7b6f8ce73cd35",
+      "export_sha256": "a8539d4f0aac32ce8b5a8bccd5f843f3a7bdfc3361a150bc5edb04d084c45b5a"
+    },
+    {
+      "asset_id": "v4-rooftop-trans01-crimson-leaves",
+      "name": "crimson-leaves",
+      "revision": 2,
+      "revision_hash": "94b6a3671a11ff17494ef84b9c488f1d61f549e416b49256c5be29a6acaba545",
+      "palette_hash": "edd47a9c7cc94d9bf8df93b6b018aaca2cbdea6388a661d081c9a04008cf1880",
+      "render_hash": "ff497115ed9787300acef033684c2f0b07cd8383c9b9860d5ccbf2a5c2767155",
+      "canvas": {
+        "width": 32,
+        "height": 20
+      },
+      "png_sha256": "f138d9db401e347a1b565923ecb530ce8936fc09f04dd4e789ab8cc0e963e18d",
+      "export_sha256": "19492325f58a784401b2f9a20f09f26a9ad6568d8454039e05a249d54f6701e9"
+    },
+    {
+      "asset_id": "v4-rooftop-trans01-forest-depth",
+      "name": "forest-depth",
+      "revision": 2,
+      "revision_hash": "fe15b45a58afc31c548fbbbbd0804bbfa0a77b413a496ff33d320d98407f0678",
+      "palette_hash": "edd47a9c7cc94d9bf8df93b6b018aaca2cbdea6388a661d081c9a04008cf1880",
+      "render_hash": "a0d6ee23f90748c0a1fca571b4566dc929514474681ebf015c92f3fe9e2ed002",
+      "canvas": {
+        "width": 65,
+        "height": 25
+      },
+      "png_sha256": "9e859277eb941fe6e04c66ce95d7efebc65e00129d8edc5e60f1b75cf980c01e",
+      "export_sha256": "ce43281adb4c5ae7a00ad6c1d317e0b5f9b63d3b7da17f4719fd7f15a1607054"
+    },
+    {
+      "asset_id": "v4-rooftop-trans01-gargoyle",
+      "name": "gargoyle",
+      "revision": 2,
+      "revision_hash": "eeab4e0dd5c44af7a4e3857c98103e8f6b9c8bb6c11ffc3312bdf9c88e741a1d",
+      "palette_hash": "edd47a9c7cc94d9bf8df93b6b018aaca2cbdea6388a661d081c9a04008cf1880",
+      "render_hash": "4494cfb942f057f48dd5dbf6f4f00e594a477b472707aaeada46755e78a4ee5f",
+      "canvas": {
+        "width": 35,
+        "height": 31
+      },
+      "png_sha256": "46b552f5d2149404c9c0c8bc05677ba32375ba2baf9be1ba0a889cc7c06c9b25",
+      "export_sha256": "1adde312f1fe4bb28ce398d65e3fe1baddbc5cbcd3521296b75a43d972f5e866"
+    },
+    {
+      "asset_id": "v4-rooftop-trans01-lancet-wall",
+      "name": "lancet-wall",
+      "revision": 2,
+      "revision_hash": "3e89a97c5de1e602c9171106e3eccd617818d5dbf4d4d53948d36209f13068be",
+      "palette_hash": "edd47a9c7cc94d9bf8df93b6b018aaca2cbdea6388a661d081c9a04008cf1880",
+      "render_hash": "76e8bbf3ecf71afcd9d99a271816b0ea4c6cb152d8b5f50e30403465733adff3",
+      "canvas": {
+        "width": 41,
+        "height": 52
+      },
+      "png_sha256": "069a0ee708c966e433f2c2a194f68a206edc7c8476f6d826bb78095761404c08",
+      "export_sha256": "57b63c5ed9d9c6cca632a18f7618c2512b254a0e7278c319ecf226c9d498fc4d"
+    },
+    {
+      "asset_id": "v4-rooftop-trans01-lantern",
+      "name": "lantern",
+      "revision": 2,
+      "revision_hash": "756061efe324ee4f6c264730321e4301ef44de41970c1992a887e01e790dec46",
+      "palette_hash": "edd47a9c7cc94d9bf8df93b6b018aaca2cbdea6388a661d081c9a04008cf1880",
+      "render_hash": "06ea333f9cceae38b9fdd9ef5a52ce8b613333d90a9de9f6c0a74b0f925a8eed",
+      "canvas": {
+        "width": 16,
+        "height": 31
+      },
+      "png_sha256": "ca2fa892719598bc997b1f7ab0e96e926bb2b0772da097ea76f9432655a147c9",
+      "export_sha256": "f57e45195be71624d45f33f7d498d224b373a0e1ea33d52f6fbbf7666d04070b"
+    },
+    {
+      "asset_id": "v4-rooftop-trans01-mountain-range",
+      "name": "mountain-range",
+      "revision": 3,
+      "revision_hash": "fbc25db07d5aa25ef70562ecd83e422d1dd275adaa1c22a4ea9206fa6d490ebb",
+      "palette_hash": "edd47a9c7cc94d9bf8df93b6b018aaca2cbdea6388a661d081c9a04008cf1880",
+      "render_hash": "51afddb5c42bdf9f537d7d2f0a404a31970889c6c3eb63f4cc82aaf3287ecd63",
+      "canvas": {
+        "width": 99,
+        "height": 27
+      },
+      "png_sha256": "5df038fed5c9b7e331a07c70b1b50aa9c646c058446e4bc3cf51812949a7583b",
+      "export_sha256": "409668e54e80ba0b4a7ee47a74b4b6f08213c9db586f4e36e3a5b679b2e64071"
+    },
+    {
+      "asset_id": "v4-rooftop-trans01-night-field",
+      "name": "night-field",
+      "revision": 2,
+      "revision_hash": "0035e1ff4d4a60c92c8130938099d94f898a0ad0c165e48e23de2dac2d9f97f7",
+      "palette_hash": "edd47a9c7cc94d9bf8df93b6b018aaca2cbdea6388a661d081c9a04008cf1880",
+      "render_hash": "c96aaf6e09060b1e98bf673c8e1f9e29e3ebbbd6bbce8c6f428fb5ba60721354",
+      "canvas": {
+        "width": 256,
+        "height": 144
+      },
+      "png_sha256": "939f4ba3f29abcbee5be59efacc1adc5fc7dce98d16092826c3aa3944c252fe6",
+      "export_sha256": "58b3641000801794b6484020b42f8b3ac33440a428ce1b01de0d5d7f35a9b5e5"
+    },
+    {
+      "asset_id": "v4-rooftop-trans01-parapet",
+      "name": "parapet",
+      "revision": 2,
+      "revision_hash": "161fc4cc6939126a26c198fc104f7adaf28cb5ca927a6ca165982cf67c35a28b",
+      "palette_hash": "edd47a9c7cc94d9bf8df93b6b018aaca2cbdea6388a661d081c9a04008cf1880",
+      "render_hash": "866d0a8fd208bb3d6d6a22016dcebb268e63adfb505096dd6baa55d1c613996b",
+      "canvas": {
+        "width": 33,
+        "height": 24
+      },
+      "png_sha256": "b3d890f746d341e1de9baf45e3a4251098d54bfdcba09fd40abedd025164fbd0",
+      "export_sha256": "1d186731144eaf029d843bcc1711c5a4d4c038331c041c76d389b29f193b9b2e"
+    },
+    {
+      "asset_id": "v4-rooftop-trans01-paving-gameplay",
+      "name": "paving-gameplay",
+      "revision": 3,
+      "revision_hash": "a45d1a6b2f482428cb2eac7a946fc19a3d40e93d4f4cf0b06dde2090f2413096",
+      "palette_hash": "edd47a9c7cc94d9bf8df93b6b018aaca2cbdea6388a661d081c9a04008cf1880",
+      "render_hash": "b5edc134e2837d19a65f2d405f2f57674a7a6108df449650a51304be79f64c7e",
+      "canvas": {
+        "width": 192,
+        "height": 112
+      },
+      "png_sha256": "19413fb92d2d8dd2a2f9ba95a01947206cc9976c6401ef1e7f76241793dacb4b",
+      "export_sha256": "9d03b1b14db2628a1e808435d4dac997c273fc6bfa5b8307fec48360f52b1e7e"
+    },
+    {
+      "asset_id": "v4-rooftop-trans01-paving-story",
+      "name": "paving-story",
+      "revision": 3,
+      "revision_hash": "be9371619cbc08445ba4de6485b69e0ffa1578fe03b368926c19ac50575abd5b",
+      "palette_hash": "edd47a9c7cc94d9bf8df93b6b018aaca2cbdea6388a661d081c9a04008cf1880",
+      "render_hash": "b2e194afa6efd590cd84222bc014c9abd81848a5ad01c6422536909fcd6a7001",
+      "canvas": {
+        "width": 256,
+        "height": 96
+      },
+      "png_sha256": "4ba43d6b25b1bb50a342b1e35e2375b277e3653ad9017eb64f571aaf63870bae",
+      "export_sha256": "921d70c8c376bef240f892bb97d628f52c63de20cc527c5fabf4c5165ab624c4"
+    },
+    {
+      "asset_id": "v4-rooftop-trans01-scarlet-moon",
+      "name": "scarlet-moon",
+      "revision": 2,
+      "revision_hash": "598fb83ed1a22d871f8e163bf6ae33a2775fae62dee72c3b2cc4d029a3312112",
+      "palette_hash": "edd47a9c7cc94d9bf8df93b6b018aaca2cbdea6388a661d081c9a04008cf1880",
+      "render_hash": "e90d37dce999b29e9117372384a1c218abcf8bd498f82be0c172a6b1235b9c4c",
+      "canvas": {
+        "width": 34,
+        "height": 33
+      },
+      "png_sha256": "e06191e30deca6d5331a7453e24c4ee17784a47b8066cea8aefd93dba276d40c",
+      "export_sha256": "355f6e6d07bc4de018ffa059234a5f5bdb05b73b9242708be4a027d65d1ef2f1"
+    },
+    {
+      "asset_id": "v4-rooftop-trans01-spire-tower",
+      "name": "spire-tower",
+      "revision": 2,
+      "revision_hash": "b17da631beafc12b936724f8d9e17731e65bfdd699ed86432afd7dc437b49ed5",
+      "palette_hash": "edd47a9c7cc94d9bf8df93b6b018aaca2cbdea6388a661d081c9a04008cf1880",
+      "render_hash": "cf1537b5d2c5c6beef1f249be6c328854284ef051319641bd3f1f7808dda9cb1",
+      "canvas": {
+        "width": 33,
+        "height": 70
+      },
+      "png_sha256": "c61adc82fd1b114963294f66dbf56dd6a52e90511636fd33d94b76342d4e5a38",
+      "export_sha256": "185cf0d9298074d697f5e43fb1c4ee54b77200b819f2df6724f720f88f49c4c1"
+    }
+  ],
+  "references": [
+    {
+      "role": "gameplay",
+      "source": "Owner-selected generated art-direction reference; not production raster",
+      "path": "reference/gameplay.png",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "sha256": "3ff8959d76eec065a155c81f81cdadbfb0d66717dd45dd2fcdb9203a2452e61c"
+    },
+    {
+      "role": "story",
+      "source": "Owner-selected generated art-direction reference; not production raster",
+      "path": "reference/story.png",
+      "dimensions": [
+        1295,
+        1214
+      ],
+      "sha256": "0790e19bc04277da86e7aacd742cf52936540043e58538aaf55271bde9681f94"
+    }
+  ]
+}
