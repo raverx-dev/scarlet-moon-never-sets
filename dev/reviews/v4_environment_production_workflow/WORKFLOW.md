@@ -30,6 +30,11 @@ Return a short preserve/change plan:
 This is an anti-duplication gate, not a new Owner-approval gate unless a real authority
 conflict is discovered.
 
+If required historical evidence is absent from the current checkout, do not skip it.
+Use the exact archival commit/head recorded for that location in EVIDENCE.md or the
+governing scene issue. If the required pinned commit/path cannot be read, stop that
+unit rather than silently substituting current-main material.
+
 ## 2. Declare the real scene contract
 
 Before authoring, declare:
@@ -118,17 +123,15 @@ canonical background.
 #44 remains the controlling source. This workflow does not restate it as a competing
 profile.
 
-At minimum, a Late-Cartridge environment unit provides:
+Do not treat this workflow's summary as a second copy of the profile. Apply the
+normative rule IDs in PROFILE.md directly. Environment work commonly depends on
+LC-TILE-1/2/4, LC-PAL-1/1A/2, LC-PIX-1/2, LC-ENV-1/2/3, LC-SCREEN rules and
+LC-EVID-1, plus any later accepted amendments.
 
-- deliberate 8x8 construction vocabulary;
-- 16x16 planning/palette neighborhoods;
-- small shared background subpalette pools;
-- explicit palette/subpalette ledger;
-- stage-local resident bank/vocabulary;
-- stepped deliberate pixel clusters;
-- material-specific treatment;
-- quiet gameplay/readability space;
-- explicit waivers rather than silent constraint expansion.
+The practical effect is still a deliberate 8x8/16x16 construction vocabulary,
+small shared palette families, stage-local bank thinking, material-specific clusters,
+quiet gameplay/readability space, exact evidence, and explicit waivers rather than
+silent constraint expansion.
 
 If a different future production profile is activated, its own accepted construction
 rules replace these profile-specific points while the surrounding workflow remains
