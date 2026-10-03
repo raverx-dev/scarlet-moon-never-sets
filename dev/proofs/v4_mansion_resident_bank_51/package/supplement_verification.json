@@ -4,19 +4,26 @@
     192,
     240
   ],
-  "candidate_render_hash": "63e7a362cedd179868ffad29483fd7545b984eabd0e12c5f898b25fdfa383136",
-  "readability_render_hash": "126d5c014a7fe19d4ec6dd2cf23cc6c5d188fbd0779ece028bd79b582fe6a4d3",
+  "candidate_render_hash": "9f766329c5d3e1dbd7e334bced46e06ad04293aba99626b0d24c367e9ebdc700",
+  "readability_render_hash": "f0a269c3144435bc434ba70bf357079f1975a880541f12fa72b70962eae8139d",
   "environment_assets": 41,
   "unchanged_witness_assets": 5,
-  "bank_all_used": true,
+  "bank_all_used": false,
+  "placed_environment_assets": 37,
+  "preserved_unplaced_assets": [
+    "floor-field",
+    "floor-joint",
+    "floor-worn",
+    "lancet-ruby"
+  ],
   "selected_validations_pass": 41,
-  "retained_orphan_warnings": 58,
+  "retained_orphan_warnings": 38,
   "bg_visible_colors": 13,
   "bg_subpalettes": 4,
   "neighborhoods": 180,
   "nonconforming_neighborhoods": 0,
-  "unique_8x8_tiles": 196,
-  "unique_16x16_metatiles": 92,
+  "unique_8x8_tiles": 175,
+  "unique_16x16_metatiles": 65,
   "metatile_reconstruction_exact": true,
   "quiet_lane": {
     "x": 64,
@@ -24,7 +31,7 @@
     "width": 64,
     "height": 112,
     "pixels": 7168,
-    "unique_rgba_colors": 3,
+    "unique_rgba_colors": 6,
     "readability_changed_pixels": 390
   },
   "soft_diagnostics": [

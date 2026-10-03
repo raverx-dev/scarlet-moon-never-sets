@@ -12,7 +12,8 @@
       "width": 8,
       "height": 8,
       "render_hash": "c7a836d4463be51d7fbaa99680bd619661988ee8715bc517667d891c3f4b665b",
-      "role": "environment"
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "wall-joint-a",
@@ -25,7 +26,8 @@
       "width": 8,
       "height": 8,
       "render_hash": "646e8f7decffd9bc7b31984975126b5479a59ad40c75ac768e494442d338b37e",
-      "role": "environment"
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "wall-joint-b",
@@ -38,7 +40,8 @@
       "width": 8,
       "height": 8,
       "render_hash": "902e450ef44b2aca24aa016091e1747310ae359f337c3c3544e51b62fc87fd50",
-      "role": "environment"
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "floor-field",
@@ -51,7 +54,8 @@
       "width": 8,
       "height": 8,
       "render_hash": "c7a836d4463be51d7fbaa99680bd619661988ee8715bc517667d891c3f4b665b",
-      "role": "environment"
+      "role": "environment",
+      "placed": false
     },
     {
       "name": "floor-joint",
@@ -64,7 +68,8 @@
       "width": 8,
       "height": 8,
       "render_hash": "0883bdf6367588d7b70f43fac3a977a1521a83651d37830d8ab3ecadf48a7db9",
-      "role": "environment"
+      "role": "environment",
+      "placed": false
     },
     {
       "name": "floor-worn",
@@ -77,7 +82,8 @@
       "width": 8,
       "height": 8,
       "render_hash": "465ad697cd9836096e47f67c0981a4d43f7c6ec1d7965c6119130689fc51c205",
-      "role": "environment"
+      "role": "environment",
+      "placed": false
     },
     {
       "name": "runner-field",
@@ -90,7 +96,8 @@
       "width": 8,
       "height": 8,
       "render_hash": "a8d9110b9a1df18718b60e979c104f6448d6d73734d7379ce6d35f43257794fd",
-      "role": "environment"
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "runner-motif",
@@ -103,7 +110,8 @@
       "width": 8,
       "height": 8,
       "render_hash": "76c1ee6cf09243cdbb0d340a70ae846e6ae83ea8812eeb8c3d56ad1cb079d425",
-      "role": "environment"
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "cornice",
@@ -116,7 +124,8 @@
       "width": 16,
       "height": 8,
       "render_hash": "72b467ba7af90cdeac15e66386d7fd07475bdf16729d6ae1202536b5ac558ad5",
-      "role": "environment"
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "pier-cap",
@@ -129,7 +138,8 @@
       "width": 16,
       "height": 16,
       "render_hash": "53ba9cd50ca608cb9da7b8e23eb3a54033f6f951d6afd004a9ee9179f3f07b62",
-      "role": "environment"
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "pier-shaft",
@@ -142,7 +152,8 @@
       "width": 16,
       "height": 16,
       "render_hash": "e94538ee91f57a3eefad623743769c2b68879df3f5430e36ba421d51982cf7c4",
-      "role": "environment"
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "pier-collar",
@@ -155,7 +166,8 @@
       "width": 16,
       "height": 16,
       "render_hash": "a2a618fae011a4cd5227a29350bd0fc7bc1cd5d742250657c1ef0c107cf87747",
-      "role": "environment"
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "pier-base",
@@ -168,7 +180,8 @@
       "width": 16,
       "height": 16,
       "render_hash": "bc9681d6889d7cb3ab837eba545e67b2867c7869202c6815d31227971eae877b",
-      "role": "environment"
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "dado-panel",
@@ -181,7 +194,8 @@
       "width": 16,
       "height": 16,
       "render_hash": "723f20ef54cbc04e9ec3eacd0ebfc114af7c0733e9c5e5aedbfc15e1e10658c8",
-      "role": "environment"
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "stair-stone",
@@ -194,7 +208,8 @@
       "width": 16,
       "height": 16,
       "render_hash": "3e2d552fc24453bb08bf3edf230113b2f8563ac6b371e892c5682e1b2113f5f8",
-      "role": "environment"
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "stair-runner",
@@ -207,7 +222,8 @@
       "width": 16,
       "height": 16,
       "render_hash": "7ac8334f27d04abf5387423ccb8444e261598463cbdd9eaa502390e29479d768",
-      "role": "environment"
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "lancet-near",
@@ -220,7 +236,8 @@
       "width": 16,
       "height": 48,
       "render_hash": "4c9ded9ab5465fc62104209891b794f544e460b2f9e0d7c2c7d52882b40ccf15",
-      "role": "environment"
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "lancet-ruby",
@@ -233,7 +250,8 @@
       "width": 16,
       "height": 48,
       "render_hash": "1fb433492d3f3719ec9398cc3580109e417e8253fc65f9ff7e037bb0483da219",
-      "role": "environment"
+      "role": "environment",
+      "placed": false
     },
     {
       "name": "lancet-far",
@@ -246,7 +264,8 @@
       "width": 16,
       "height": 32,
       "render_hash": "c0681183286994f535cc5004e39e401d68d0b2d771c0ccc038b54453bd97ae45",
-      "role": "environment"
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "arch-shoulder",
@@ -259,7 +278,8 @@
       "width": 16,
       "height": 32,
       "render_hash": "771c15a330b0f1517b294eda4b8bbcda5d6f440b2c34e357fa2fadd42816e80e",
-      "role": "environment"
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "arch-jamb",
@@ -272,7 +292,8 @@
       "width": 16,
       "height": 16,
       "render_hash": "72866f1090358085636c05e3035d5b0070c7f2d64850b85f97c568bf091f3e82",
-      "role": "environment"
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "arch-foot",
@@ -285,7 +306,8 @@
       "width": 16,
       "height": 16,
       "render_hash": "8f949e7e012cfdac92b4766f4dfed3cf5f550813b824875eff84722fef3fe75a",
-      "role": "environment"
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "banner",
@@ -298,7 +320,8 @@
       "width": 16,
       "height": 48,
       "render_hash": "d1f37c7c6993cb71724b7f247c0930cf4b9a006a81046eb27e60e7a54ba6f647",
-      "role": "environment"
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "sconce",
@@ -311,20 +334,22 @@
       "width": 16,
       "height": 16,
       "render_hash": "b139d026ad5f627a345d2457dc29cce56fc63e79a42f2209fc18a3ea3cf448aa",
-      "role": "environment"
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "rose",
       "asset_id": "v4-mi51-rose",
-      "revision": 4,
-      "revision_hash": "553bb309716e308de12b13e6f4209fbdd398881faa7254023adb353122d4b36e",
+      "revision": 7,
+      "revision_hash": "0ddf597abdd5163f48032fbc03a73d7aff88249f74f83e42792b09fe8ff5ed72",
       "palette_id": "mi51-bg-crimson",
       "palette_hash": "5c3be50ea8634eff83358cbdb81fc7a481c211b86036b670d99a8e7d66930fb9",
       "frame_id": "default",
       "width": 64,
       "height": 64,
-      "render_hash": "3c37de7defc251ea764f9d5ec24a7724a4f1090b7ee7a77bed16df4df2a9056b",
-      "role": "environment"
+      "render_hash": "319abb5dae764cfb0492bd7a00f763c3b24f1890f203ef9fd6a387c609a08a50",
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "backdrop",
@@ -337,7 +362,8 @@
       "width": 8,
       "height": 8,
       "render_hash": "26a55a57eddaf6814dda7e0e0ca09159ffa7a458c7f20968856b1705f1a4d689",
-      "role": "environment"
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "runner-turn-far",
@@ -350,7 +376,8 @@
       "width": 16,
       "height": 16,
       "render_hash": "69a993f4f7b5fd385ce5caa531da27d2a205a2b11b0a85631a817f088874e37d",
-      "role": "environment"
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "runner-turn-mid",
@@ -363,7 +390,8 @@
       "width": 16,
       "height": 16,
       "render_hash": "afcd8807b57ba1577cc25f5a4694e1cecf7f0cf782a1ee3e060a78ce25735395",
-      "role": "environment"
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "runner-turn-near",
@@ -376,7 +404,8 @@
       "width": 16,
       "height": 16,
       "render_hash": "0b1b6acfe3e57acdff1575acabd0ac564f9a7523ebde21567bc56274b67054fa",
-      "role": "environment"
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "runner-turn-full",
@@ -389,7 +418,8 @@
       "width": 16,
       "height": 16,
       "render_hash": "005a439e65fb5fb0f599832f6a85c2bd0ae7680f13678c856b4e8ad0af481bff",
-      "role": "environment"
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "near-pier-cap",
@@ -402,7 +432,8 @@
       "width": 32,
       "height": 16,
       "render_hash": "c7b66c06fd63be63581b6850ee7299fa25f4c5b66dc503760e9702f03f8b5484",
-      "role": "environment"
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "near-pier-shaft",
@@ -415,7 +446,8 @@
       "width": 32,
       "height": 16,
       "render_hash": "75d2230fa833b1ad680845dee6dd9f4932562c8f76b42e3bc8774926f44730b5",
-      "role": "environment"
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "near-pier-base",
@@ -428,7 +460,8 @@
       "width": 32,
       "height": 16,
       "render_hash": "43d211a459f7ff1fb8fc23a03b993f27fe2e7f23c05ff01606994162ca3bfc97",
-      "role": "environment"
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "door",
@@ -441,7 +474,8 @@
       "width": 32,
       "height": 32,
       "render_hash": "faf3d14162dc9051db60f6c91e10158f1d712c21640f6ba939d2e970700e2bc1",
-      "role": "environment"
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "arch-shoulder-mirror",
@@ -454,7 +488,8 @@
       "width": 16,
       "height": 32,
       "render_hash": "3e26bd5d5b931cbbbf2493673635fce8c263cfc933cb384a36f0a71ee5343195",
-      "role": "environment"
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "arch-jamb-mirror",
@@ -467,7 +502,8 @@
       "width": 16,
       "height": 16,
       "render_hash": "7a3f4b53fe76a36101aa51504fcb1fa6d99c303e8445a1f755a5623c91d3394d",
-      "role": "environment"
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "arch-foot-mirror",
@@ -480,7 +516,8 @@
       "width": 16,
       "height": 16,
       "render_hash": "814e982d6448a0ec5b1ceabc57d51e9b7bd1c5ef76ac12bda03ca516e48ecde3",
-      "role": "environment"
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "runner-turn-far-mirror",
@@ -493,7 +530,8 @@
       "width": 16,
       "height": 16,
       "render_hash": "30c65409ce0b0a0ef88d908a8a96f7d57667cc3538a549f3ab3a3ff9329f3fd9",
-      "role": "environment"
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "runner-turn-mid-mirror",
@@ -506,7 +544,8 @@
       "width": 16,
       "height": 16,
       "render_hash": "0231984d1660298fcbd6cdc92c9698636d1fee7f0f6559eb8322f4aed946b635",
-      "role": "environment"
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "runner-turn-near-mirror",
@@ -519,7 +558,8 @@
       "width": 16,
       "height": 16,
       "render_hash": "ef4d671924f1e2914671cb2063869f32dc1e30d6d40b84eeca0c1f5e897ade81",
-      "role": "environment"
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "runner-turn-full-mirror",
@@ -532,7 +572,8 @@
       "width": 16,
       "height": 16,
       "render_hash": "194546dab706d2f07a81a0bebac8520513f3193dc3e6568dc7aa830c09faed53",
-      "role": "environment"
+      "role": "environment",
+      "placed": true
     },
     {
       "name": "reimu-neutral",
@@ -545,7 +586,8 @@
       "width": 16,
       "height": 24,
       "render_hash": "3e124228236822139b1a2addbe9202f37da096a73ebc146ae448a2560ff2b262",
-      "role": "unchanged-witness"
+      "role": "unchanged-witness",
+      "placed": true
     },
     {
       "name": "gohei-normal",
@@ -558,7 +600,8 @@
       "width": 10,
       "height": 14,
       "render_hash": "731ed65c5d1be5d16e60a45ae2f03f8440366e5f5989c19f3c32445fa9672f60",
-      "role": "unchanged-witness"
+      "role": "unchanged-witness",
+      "placed": true
     },
     {
       "name": "bullet-pink",
@@ -571,7 +614,8 @@
       "width": 7,
       "height": 7,
       "render_hash": "e33d74967bcafc4cb7617af567a3f5af076e9b558d72dba34d18135d95dcacb8",
-      "role": "unchanged-witness"
+      "role": "unchanged-witness",
+      "placed": true
     },
     {
       "name": "bullet-blue",
@@ -584,7 +628,8 @@
       "width": 7,
       "height": 7,
       "render_hash": "bc72510bfaf5d868eec4a7af7b7c5da049beb2b4b50a5d051354cd97d89cedc1",
-      "role": "unchanged-witness"
+      "role": "unchanged-witness",
+      "placed": true
     },
     {
       "name": "bat-familiar",
@@ -597,7 +642,8 @@
       "width": 11,
       "height": 7,
       "render_hash": "60f039327b557c804246817e29d2dfaab9e23446a5cc31a1c7ec0316bded17d5",
-      "role": "unchanged-witness"
+      "role": "unchanged-witness",
+      "placed": true
     }
   ]
 }

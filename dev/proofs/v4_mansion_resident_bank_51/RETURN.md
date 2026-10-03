@@ -83,7 +83,9 @@ Correction package branch: `v4-mi51-correction-01`; exact published head is supp
 
 ## 8. Verification
 
-Author-side: all recovered original 41 D3 pins matched before mutation; final 41 bank matrices match their selected canonical pins; 41 bound validations PASS, with **38 retained nonblocking orphan warnings** (58 -> 38). Four unchanged background subpalettes, 13 available colors; all 180 final 16x16 neighborhoods conform. Native candidate hash `9f766329c5d3e1dbd7e334bced46e06ad04293aba99626b0d24c367e9ebdc700`; readability hash `f0a269c3144435bc434ba70bf357079f1975a880541f12fa72b70962eae8139d`. Deterministic reconstruction, canonical D4 verification and two independent package runs are recorded in `package/verification.json`, `package/supplement_verification.json` and `PACKAGE_README.md` after mechanical packaging.
+Author-side: all recovered original 41 D3 pins matched before mutation; final 41 bank matrices match their selected canonical pins; 41 bound validations PASS, with **38 retained nonblocking orphan warnings** (58 -> 38). Four unchanged background subpalettes, 13 available colors; all 180 final 16x16 neighborhoods conform. Native candidate hash `9f766329c5d3e1dbd7e334bced46e06ad04293aba99626b0d24c367e9ebdc700`; readability hash `f0a269c3144435bc434ba70bf357079f1975a880541f12fa72b70962eae8139d`.
+
+Mechanical packaging at RoboPixel `79e7d2af9da8ee6b510c2bde07c762fbf877045e` verified the 42 standard placed pins through canonical D4/render, and an independent check through the same canonical repository/render stack verified the four preserved unplaced pins. Full bank plus witnesses are therefore 46/46 PASS. Two independently generated and supplemented outputs are byte-identical across all 17 files (453,144 bytes); detailed file and RGBA hashes are in `mechanical_results.json`. The final package has no unresolved mechanical blocker. This is mechanical readiness only and does not claim Owner artistic acceptance.
 
 ## 9–10. Remaining issues / artistic questions
 

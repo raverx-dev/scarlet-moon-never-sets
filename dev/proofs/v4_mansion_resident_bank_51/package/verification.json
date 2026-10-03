@@ -1,11 +1,11 @@
 {
   "schema": "robopixel.production-handoff-verification/v1",
-  "checkpoint_sha256": "3266ad6c8cf5776cea962d5771b1161b17b025fe6b8b8056d2f28af6607ed6e6",
+  "checkpoint_sha256": "1231dd3185c83335e39ab9d749ac7cd2fb7a8a390b9181fc0552f2d066f7c96a",
   "provenance": {
     "repository": "raverx-dev/scarlet-moon-never-sets",
-    "commit": "39177310c7c3e82aff41033e4404f07d82137980",
+    "commit": "a9ae66e0dcf71de4b8381fd3f1abbc0c064e75b5",
     "issue": "51",
-    "note": "Canonical artist-authored matrices; no reference pixel copying, resolution recovery, scaling/recolor/post-fixup. Owner artistic acceptance pending."
+    "note": "Correction 01 exact artist-authored input; same bank, rose r4->r7 only; original branch preserved. Four unplaced bank members remain separately pinned. No Owner artistic acceptance."
   },
   "assets": [
     {
@@ -28,27 +28,6 @@
       "revision_hash": "1333f8d4d4c3dc8a87a385d4802e75b704c86283aeb7712ba22200c78245af59",
       "palette_hash": "06203dccfb967c6a0cb5da5b8bdace94c3b2caf48d341e9e9994efd2afea292c",
       "render_hash": "902e450ef44b2aca24aa016091e1747310ae359f337c3c3544e51b62fc87fd50"
-    },
-    {
-      "asset_id": "v4-mi51-floor-field",
-      "revision": 2,
-      "revision_hash": "083dff45ccd542c90f30d1a3c3528e559a306724d4ba7a5fe50db4615b0940a4",
-      "palette_hash": "06203dccfb967c6a0cb5da5b8bdace94c3b2caf48d341e9e9994efd2afea292c",
-      "render_hash": "c7a836d4463be51d7fbaa99680bd619661988ee8715bc517667d891c3f4b665b"
-    },
-    {
-      "asset_id": "v4-mi51-floor-joint",
-      "revision": 2,
-      "revision_hash": "a758921c2039bfa54bc195cc103106c916a30bec3debb923a5da530b9e59de6c",
-      "palette_hash": "06203dccfb967c6a0cb5da5b8bdace94c3b2caf48d341e9e9994efd2afea292c",
-      "render_hash": "0883bdf6367588d7b70f43fac3a977a1521a83651d37830d8ab3ecadf48a7db9"
-    },
-    {
-      "asset_id": "v4-mi51-floor-worn",
-      "revision": 3,
-      "revision_hash": "1b5928a86c359cb3d108fc96f6b97c411c56e248374ce470ca7f20a47e8f25db",
-      "palette_hash": "06203dccfb967c6a0cb5da5b8bdace94c3b2caf48d341e9e9994efd2afea292c",
-      "render_hash": "465ad697cd9836096e47f67c0981a4d43f7c6ec1d7965c6119130689fc51c205"
     },
     {
       "asset_id": "v4-mi51-runner-field",
@@ -128,13 +107,6 @@
       "render_hash": "4c9ded9ab5465fc62104209891b794f544e460b2f9e0d7c2c7d52882b40ccf15"
     },
     {
-      "asset_id": "v4-mi51-lancet-ruby",
-      "revision": 2,
-      "revision_hash": "997fc19cea24f591b25c90519fd103b172d87baf22d414294f203fbdaf97e50d",
-      "palette_hash": "5c3be50ea8634eff83358cbdb81fc7a481c211b86036b670d99a8e7d66930fb9",
-      "render_hash": "1fb433492d3f3719ec9398cc3580109e417e8253fc65f9ff7e037bb0483da219"
-    },
-    {
       "asset_id": "v4-mi51-lancet-far",
       "revision": 2,
       "revision_hash": "627768dd76fb323d0c7134f5b60827bda1a6287ba201ed10ffda9685c12f5d08",
@@ -178,10 +150,10 @@
     },
     {
       "asset_id": "v4-mi51-rose",
-      "revision": 4,
-      "revision_hash": "553bb309716e308de12b13e6f4209fbdd398881faa7254023adb353122d4b36e",
+      "revision": 7,
+      "revision_hash": "0ddf597abdd5163f48032fbc03a73d7aff88249f74f83e42792b09fe8ff5ed72",
       "palette_hash": "5c3be50ea8634eff83358cbdb81fc7a481c211b86036b670d99a8e7d66930fb9",
-      "render_hash": "3c37de7defc251ea764f9d5ec24a7724a4f1090b7ee7a77bed16df4df2a9056b"
+      "render_hash": "319abb5dae764cfb0492bd7a00f763c3b24f1890f203ef9fd6a387c609a08a50"
     },
     {
       "asset_id": "v4-mi51-backdrop",
@@ -336,21 +308,21 @@
       "scene": "candidate",
       "width": 192,
       "height": 240,
-      "render_hash": "63e7a362cedd179868ffad29483fd7545b984eabd0e12c5f898b25fdfa383136",
-      "comparison_render_hash": "24d956d35f3fa0ac96e935bd3528f188c56c9a684f5f5f6169a0b9ec921939c4"
+      "render_hash": "9f766329c5d3e1dbd7e334bced46e06ad04293aba99626b0d24c367e9ebdc700",
+      "comparison_render_hash": "2bcd6980cceefbf81672e6edf56fa55ec67ad632fb4869c2c56c4df4087ee751"
     },
     {
       "scene": "readability",
       "width": 192,
       "height": 240,
-      "render_hash": "126d5c014a7fe19d4ec6dd2cf23cc6c5d188fbd0779ece028bd79b582fe6a4d3",
-      "comparison_render_hash": "cb5f305da6fad58e1d8b379528562124f1b07413d14de8a42cdeffc76d9bc80a"
+      "render_hash": "f0a269c3144435bc434ba70bf357079f1975a880541f12fa72b70962eae8139d",
+      "comparison_render_hash": "2ee225d8738189518acf13ede1a2cf909a67933f99308482c980a7646fb34bd0"
     }
   ],
   "atlas": {
     "width": 128,
-    "height": 935,
-    "render_hash": "8714d8ca8946dc47a2c376fac17f4bbde8c1fad0f34616c86eadc538195c2ce5"
+    "height": 855,
+    "render_hash": "473e575bea456725b5163eb228850bcfd8547c19577e272dfec9ea80f080f7c2"
   },
   "sources": [
     {
@@ -373,12 +345,12 @@
     {
       "key": "artist-checkpoint",
       "path": "dev/proofs/v4_mansion_resident_bank_51/artist_checkpoint.json",
-      "sha256": "b2a1565a5fcf08f05f85465858041329b246ed683ef9c8234acd968740e9a262"
+      "sha256": "a479ce0fddf6a0f4a3276a51a4e5666b549f5a302458103c8858a2f867f09d0f"
     },
     {
       "key": "canonical-readback",
       "path": "dev/proofs/v4_mansion_resident_bank_51/canonical_readback.json",
-      "sha256": "381d5671fedf5026888957009a9890c344c2d21147765568d4a8ab713ae10811"
+      "sha256": "ea246b76685d4702c009b99f447e736aa9d049ab4ebfeb8a787aa57949e01d6f"
     },
     {
       "key": "witness-readback",
@@ -388,12 +360,12 @@
     {
       "key": "authoring",
       "path": "dev/proofs/v4_mansion_resident_bank_51/authoring.json",
-      "sha256": "bbcf9c2a6038fc49bb781032d9ba022eacd4c6f6c967605e309afc1e8097a828"
+      "sha256": "8576a9e626ec418c2a5053c2dc2f543b84cad88bb557b72a3f27848b7634b4fd"
     },
     {
       "key": "validation-selected",
       "path": "dev/proofs/v4_mansion_resident_bank_51/validation_selected.json",
-      "sha256": "4dfe43957f3ff44c0365fa82a3ece5b40a6de7e9393d4a4dd7b33a282aa2575c"
+      "sha256": "99c8c29fada01fa73e102e024d12ddeecff7dd4fd874ad4ffa26bae0324c17a5"
     },
     {
       "key": "palette-ledger",
@@ -403,38 +375,43 @@
     {
       "key": "provenance",
       "path": "dev/proofs/v4_mansion_resident_bank_51/PROVENANCE.md",
-      "sha256": "716d794f78a300aa0d3cdb18f19c3ef2cdfc9644c8b4e558877ed64e5d83f6e0"
+      "sha256": "c3c605a44c1cf07439d068e8cccd7d608e18a7f6b578ab8d451ad28f6177ee74"
     },
     {
       "key": "preserve-change",
       "path": "dev/proofs/v4_mansion_resident_bank_51/PRESERVE_CHANGE.md",
       "sha256": "cc1a717700067b858fcdbb5c87118fff4509ae12551c78786ec572f8952af58d"
+    },
+    {
+      "key": "correction-manifest",
+      "path": "dev/proofs/v4_mansion_resident_bank_51/correction_manifest.json",
+      "sha256": "e1be0e1014fa72c52c1b2426f13820b1ea18b55c5012359634046f40f9171069"
     }
   ],
   "files": {
     "candidate_native.png": {
-      "sha256": "2f841b1dd8dd5cbfdce2354241950488ff49a4ae626272f07f68d6102fb8ebb5",
-      "bytes": 4916
+      "sha256": "0669b7b58b238a923c53bd965afee560383401b31e58acd466ec20f02a184502",
+      "bytes": 3446
     },
     "candidate_comparison.png": {
-      "sha256": "4719202d6f2f1338fe4f012e05612eb3c3af355a3de021477775f6c1c8cf9c47",
-      "bytes": 20784
+      "sha256": "63258618985991725c1790b1cdd360bc3eea5b3b15476d819e578871eaa3a962",
+      "bytes": 19023
     },
     "readability_native.png": {
-      "sha256": "a86da092fcdf9e6cc698f7d741b3def90cbe2fa9aea613e3ed25fa5eed5222b0",
-      "bytes": 5402
+      "sha256": "2856fa0d471c4c9d9c085f914e849c563af08576e8d2eeb8894d67f8456a5996",
+      "bytes": 3992
     },
     "readability_comparison.png": {
-      "sha256": "e83dc0190462f34c51bccd9060170a127b4c1bcc929c87c084487922de1ab668",
-      "bytes": 21326
+      "sha256": "26cc9d7100aeccda161828fb0c0b13563ad06c33c9607e5846569bdbce544f15",
+      "bytes": 19610
     },
     "asset_atlas.png": {
-      "sha256": "0de3fe3e6a88bf9826bb9634b3a0e2253f592d6a4a1e69c4eb2529938bf64259",
-      "bytes": 4130
+      "sha256": "18238e61eed3f98724bbbd5894debbe1ef1400565002afcec9c0f92da24892f2",
+      "bytes": 3891
     },
     "checkpoint.json": {
-      "sha256": "3266ad6c8cf5776cea962d5771b1161b17b025fe6b8b8056d2f28af6607ed6e6",
-      "bytes": 369858
+      "sha256": "1231dd3185c83335e39ab9d749ac7cd2fb7a8a390b9181fc0552f2d066f7c96a",
+      "bytes": 287123
     },
     "review.html": {
       "sha256": "d2d3f914a1075410fe5faad90c4f929283371a13a674a7e2ad4b91446461f162",
