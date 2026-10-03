@@ -19,7 +19,7 @@ readback = load('canonical_readback.json')
 validations = load('validation_selected.json')
 assets = {a['name']: a for a in authoring}
 assert set(assets) == {a['name'] for a in artist['production_bank']}
-assert len(assets) == 41 and len(checkpoint['assets']) == 46
+assert len(assets) == 41 and len(checkpoint['assets']) == 42
 used = {p['asset'] for s in checkpoint['scenes'] for p in s['placements']}
 assert used == {a['name'] for a in checkpoint['assets']}
 patterns = {}
@@ -97,19 +97,19 @@ mask=Image.new('L',candidate.size,0)
 ImageDraw.Draw(mask).rectangle((lane[0],lane[1],lane[2]-1,lane[3]-1),fill=255)
 mask.save(OUT/'quiet_lane_mask.png')
 warning_count=sum(1 for v in validations.values() for finding in v['report']['findings'] if finding['disposition']=='warning' and finding['rule_id']=='pixel-orphans')
-assert len(validations)==41 and all(v['report']['passed'] for v in validations.values()) and warning_count==58
-pins=[{**a,'role':'environment' if a['name'] in assets else 'unchanged-witness'} for a in checkpoint['assets']]
+assert len(validations)==41 and all(v['report']['passed'] for v in validations.values()) and warning_count==38
+pins=[{**a,'role':'environment' if a['name'] in assets else 'unchanged-witness','placed':a['name'] in used} for a in artist['production_bank']+artist['witness_assets']]
 # Retain names, revisions and exact hashes; no canonical bitmap copies.
 (OUT/'bank_inventory.json').write_text(json.dumps({'schema':'scarlet.mi51-bank-inventory/v1','assets':pins},indent=2)+'\n')
 wall, floor=assets['wall-field'],assets['floor-field']
 soft=[]
 if wall['rows']==floor['rows']:
     soft.append('wall-field and floor-field have pixel-equivalent rows but distinct material identities')
-metrics={'schema':'scarlet.mi51-supplement-verification/v1','production_dimensions':[192,240], 'candidate_render_hash':checkpoint['scenes'][0]['render_hash'],'readability_render_hash':checkpoint['scenes'][1]['render_hash'],'environment_assets':41,'unchanged_witness_assets':5,'bank_all_used':True,'selected_validations_pass':41,'retained_orphan_warnings':warning_count,'bg_visible_colors':len(colors),'bg_subpalettes':len(families),'neighborhoods':180,'nonconforming_neighborhoods':0,'unique_8x8_tiles':len(patterns),'unique_16x16_metatiles':len(metatiles),'metatile_reconstruction_exact':True,'quiet_lane':{'x':64,'y':128,'width':64,'height':112,'pixels':64*112,'unique_rgba_colors':len(counts),'readability_changed_pixels':changed},'soft_diagnostics':soft}
+metrics={'schema':'scarlet.mi51-supplement-verification/v1','production_dimensions':[192,240], 'candidate_render_hash':checkpoint['scenes'][0]['render_hash'],'readability_render_hash':checkpoint['scenes'][1]['render_hash'],'environment_assets':41,'unchanged_witness_assets':5,'bank_all_used':False,'placed_environment_assets':37,'preserved_unplaced_assets':['floor-field','floor-joint','floor-worn','lancet-ruby'],'selected_validations_pass':41,'retained_orphan_warnings':warning_count,'bg_visible_colors':len(colors),'bg_subpalettes':len(families),'neighborhoods':180,'nonconforming_neighborhoods':0,'unique_8x8_tiles':len(patterns),'unique_16x16_metatiles':len(metatiles),'metatile_reconstruction_exact':True,'quiet_lane':{'x':64,'y':128,'width':64,'height':112,'pixels':64*112,'unique_rgba_colors':len(counts),'readability_changed_pixels':changed},'soft_diagnostics':soft}
 (OUT/'supplement_verification.json').write_text(json.dumps(metrics,indent=2)+'\n')
 
 sources=[Image.open(ROOT/'inputs'/f'{key}.png').convert('RGBA') for key in ['v3','accepted-22','proof-45']]+[candidate]
-labels=['V3 CONSTRUCTION','ACCEPTED #22 HIERARCHY','#45 MINIMUM PROOF','#51 CANDIDATE']
+labels=['V3 CONSTRUCTION','ACCEPTED #22 HIERARCHY','#45 MINIMUM PROOF','#51 CORRECTION 01']
 board=Image.new('RGBA',(192*4,260),(16,18,30,255))
 draw=ImageDraw.Draw(board)
 for i,(im,label) in enumerate(zip(sources,labels)):
