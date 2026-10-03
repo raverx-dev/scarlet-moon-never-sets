@@ -1,0 +1,5711 @@
+{
+  "wall-field": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-wall-field",
+      "name": "#51 Mansion wall-field",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "33f79b8bd46080bfa9eebcc6486d6c72a81e5e65ee70a04f1a3f979e4c4f5e15",
+      "canvas": {
+        "width": 8,
+        "height": 8
+      },
+      "palette_id": "mi51-bg-stone",
+      "palette_hash": "06203dccfb967c6a0cb5da5b8bdace94c3b2caf48d341e9e9994efd2afea292c",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-wall-field",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-wall-field/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-wall-field/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-wall-field/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-wall-field",
+      "revision": 2,
+      "revision_hash": "33f79b8bd46080bfa9eebcc6486d6c72a81e5e65ee70a04f1a3f979e4c4f5e15",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 8,
+        "height": 8,
+        "rows": [
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111"
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#232637"
+          },
+          "2": {
+            "hex": "#48475c"
+          },
+          "3": {
+            "hex": "#898299"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 8,
+        "height": 8,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-wall-field/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-wall-field",
+      "revision": 2,
+      "revision_hash": "33f79b8bd46080bfa9eebcc6486d6c72a81e5e65ee70a04f1a3f979e4c4f5e15",
+      "frame_id": "default",
+      "width": 8,
+      "height": 8,
+      "scale": 1,
+      "render_hash": "c7a836d4463be51d7fbaa99680bd619661988ee8715bc517667d891c3f4b665b",
+      "text": {
+        "frame_id": "default",
+        "width": 8,
+        "height": 8,
+        "rows": [
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111"
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-wall-field/revision/2/view"
+      }
+    }
+  },
+  "wall-joint-a": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-wall-joint-a",
+      "name": "#51 Mansion wall-joint-a",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "205f94b5c74360957d13437efcfa28f84bddd9a4f99f2f01bff8a67af71af93d",
+      "canvas": {
+        "width": 8,
+        "height": 8
+      },
+      "palette_id": "mi51-bg-stone",
+      "palette_hash": "06203dccfb967c6a0cb5da5b8bdace94c3b2caf48d341e9e9994efd2afea292c",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-wall-joint-a",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-wall-joint-a/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-wall-joint-a/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-wall-joint-a/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-wall-joint-a",
+      "revision": 2,
+      "revision_hash": "205f94b5c74360957d13437efcfa28f84bddd9a4f99f2f01bff8a67af71af93d",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 8,
+        "height": 8,
+        "rows": [
+          "1111111D",
+          "1111111D",
+          "1111111D",
+          "1111111D",
+          "DDDDDDDD",
+          "111D1111",
+          "111D1111",
+          "111D1111"
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#232637"
+          },
+          "2": {
+            "hex": "#48475c"
+          },
+          "3": {
+            "hex": "#898299"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 8,
+        "height": 8,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-wall-joint-a/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-wall-joint-a",
+      "revision": 2,
+      "revision_hash": "205f94b5c74360957d13437efcfa28f84bddd9a4f99f2f01bff8a67af71af93d",
+      "frame_id": "default",
+      "width": 8,
+      "height": 8,
+      "scale": 1,
+      "render_hash": "646e8f7decffd9bc7b31984975126b5479a59ad40c75ac768e494442d338b37e",
+      "text": {
+        "frame_id": "default",
+        "width": 8,
+        "height": 8,
+        "rows": [
+          "1111111D",
+          "1111111D",
+          "1111111D",
+          "1111111D",
+          "DDDDDDDD",
+          "111D1111",
+          "111D1111",
+          "111D1111"
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-wall-joint-a/revision/2/view"
+      }
+    }
+  },
+  "wall-joint-b": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-wall-joint-b",
+      "name": "#51 Mansion wall-joint-b",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "1333f8d4d4c3dc8a87a385d4802e75b704c86283aeb7712ba22200c78245af59",
+      "canvas": {
+        "width": 8,
+        "height": 8
+      },
+      "palette_id": "mi51-bg-stone",
+      "palette_hash": "06203dccfb967c6a0cb5da5b8bdace94c3b2caf48d341e9e9994efd2afea292c",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-wall-joint-b",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-wall-joint-b/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-wall-joint-b/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-wall-joint-b/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-wall-joint-b",
+      "revision": 2,
+      "revision_hash": "1333f8d4d4c3dc8a87a385d4802e75b704c86283aeb7712ba22200c78245af59",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 8,
+        "height": 8,
+        "rows": [
+          "1111111D",
+          "1111111D",
+          "1122111D",
+          "1111111D",
+          "DDDDDDDD",
+          "111D1111",
+          "111D1111",
+          "111D1111"
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#232637"
+          },
+          "2": {
+            "hex": "#48475c"
+          },
+          "3": {
+            "hex": "#898299"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 8,
+        "height": 8,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-wall-joint-b/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-wall-joint-b",
+      "revision": 2,
+      "revision_hash": "1333f8d4d4c3dc8a87a385d4802e75b704c86283aeb7712ba22200c78245af59",
+      "frame_id": "default",
+      "width": 8,
+      "height": 8,
+      "scale": 1,
+      "render_hash": "902e450ef44b2aca24aa016091e1747310ae359f337c3c3544e51b62fc87fd50",
+      "text": {
+        "frame_id": "default",
+        "width": 8,
+        "height": 8,
+        "rows": [
+          "1111111D",
+          "1111111D",
+          "1122111D",
+          "1111111D",
+          "DDDDDDDD",
+          "111D1111",
+          "111D1111",
+          "111D1111"
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-wall-joint-b/revision/2/view"
+      }
+    }
+  },
+  "floor-field": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-floor-field",
+      "name": "#51 Mansion floor-field",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "083dff45ccd542c90f30d1a3c3528e559a306724d4ba7a5fe50db4615b0940a4",
+      "canvas": {
+        "width": 8,
+        "height": 8
+      },
+      "palette_id": "mi51-bg-stone",
+      "palette_hash": "06203dccfb967c6a0cb5da5b8bdace94c3b2caf48d341e9e9994efd2afea292c",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-floor-field",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-floor-field/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-floor-field/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-floor-field/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-floor-field",
+      "revision": 2,
+      "revision_hash": "083dff45ccd542c90f30d1a3c3528e559a306724d4ba7a5fe50db4615b0940a4",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 8,
+        "height": 8,
+        "rows": [
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111"
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#232637"
+          },
+          "2": {
+            "hex": "#48475c"
+          },
+          "3": {
+            "hex": "#898299"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 8,
+        "height": 8,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-floor-field/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-floor-field",
+      "revision": 2,
+      "revision_hash": "083dff45ccd542c90f30d1a3c3528e559a306724d4ba7a5fe50db4615b0940a4",
+      "frame_id": "default",
+      "width": 8,
+      "height": 8,
+      "scale": 1,
+      "render_hash": "c7a836d4463be51d7fbaa99680bd619661988ee8715bc517667d891c3f4b665b",
+      "text": {
+        "frame_id": "default",
+        "width": 8,
+        "height": 8,
+        "rows": [
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111"
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-floor-field/revision/2/view"
+      }
+    }
+  },
+  "floor-joint": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-floor-joint",
+      "name": "#51 Mansion floor-joint",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "a758921c2039bfa54bc195cc103106c916a30bec3debb923a5da530b9e59de6c",
+      "canvas": {
+        "width": 8,
+        "height": 8
+      },
+      "palette_id": "mi51-bg-stone",
+      "palette_hash": "06203dccfb967c6a0cb5da5b8bdace94c3b2caf48d341e9e9994efd2afea292c",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-floor-joint",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-floor-joint/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-floor-joint/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-floor-joint/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-floor-joint",
+      "revision": 2,
+      "revision_hash": "a758921c2039bfa54bc195cc103106c916a30bec3debb923a5da530b9e59de6c",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 8,
+        "height": 8,
+        "rows": [
+          "DDDDDDDD",
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111",
+          "1111111D"
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#232637"
+          },
+          "2": {
+            "hex": "#48475c"
+          },
+          "3": {
+            "hex": "#898299"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 8,
+        "height": 8,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-floor-joint/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-floor-joint",
+      "revision": 2,
+      "revision_hash": "a758921c2039bfa54bc195cc103106c916a30bec3debb923a5da530b9e59de6c",
+      "frame_id": "default",
+      "width": 8,
+      "height": 8,
+      "scale": 1,
+      "render_hash": "0883bdf6367588d7b70f43fac3a977a1521a83651d37830d8ab3ecadf48a7db9",
+      "text": {
+        "frame_id": "default",
+        "width": 8,
+        "height": 8,
+        "rows": [
+          "DDDDDDDD",
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111",
+          "1111111D"
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-floor-joint/revision/2/view"
+      }
+    }
+  },
+  "floor-worn": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-floor-worn",
+      "name": "#51 Mansion floor-worn",
+      "class_id": "tile",
+      "current_revision": 3,
+      "current_revision_hash": "1b5928a86c359cb3d108fc96f6b97c411c56e248374ce470ca7f20a47e8f25db",
+      "canvas": {
+        "width": 8,
+        "height": 8
+      },
+      "palette_id": "mi51-bg-stone",
+      "palette_hash": "06203dccfb967c6a0cb5da5b8bdace94c3b2caf48d341e9e9994efd2afea292c",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-floor-worn",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-floor-worn/revision/3",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-floor-worn/revision/3/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-floor-worn/revision/3/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-floor-worn",
+      "revision": 3,
+      "revision_hash": "1b5928a86c359cb3d108fc96f6b97c411c56e248374ce470ca7f20a47e8f25db",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 8,
+        "height": 8,
+        "rows": [
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111",
+          "11DD1111",
+          "11111111"
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#232637"
+          },
+          "2": {
+            "hex": "#48475c"
+          },
+          "3": {
+            "hex": "#898299"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 8,
+        "height": 8,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-floor-worn/revision/3/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-floor-worn",
+      "revision": 3,
+      "revision_hash": "1b5928a86c359cb3d108fc96f6b97c411c56e248374ce470ca7f20a47e8f25db",
+      "frame_id": "default",
+      "width": 8,
+      "height": 8,
+      "scale": 1,
+      "render_hash": "465ad697cd9836096e47f67c0981a4d43f7c6ec1d7965c6119130689fc51c205",
+      "text": {
+        "frame_id": "default",
+        "width": 8,
+        "height": 8,
+        "rows": [
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111",
+          "11DD1111",
+          "11111111"
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-floor-worn/revision/3/view"
+      }
+    }
+  },
+  "runner-field": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-field",
+      "name": "#51 Mansion runner-field",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "b11ed4b8745070f98797513315cee8dbc3c2b4182799895d90de58b3b1e3fa8a",
+      "canvas": {
+        "width": 8,
+        "height": 8
+      },
+      "palette_id": "mi51-bg-crimson",
+      "palette_hash": "5c3be50ea8634eff83358cbdb81fc7a481c211b86036b670d99a8e7d66930fb9",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-field",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-field/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-field/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-field/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-field",
+      "revision": 2,
+      "revision_hash": "b11ed4b8745070f98797513315cee8dbc3c2b4182799895d90de58b3b1e3fa8a",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 8,
+        "height": 8,
+        "rows": [
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111"
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#301b2b"
+          },
+          "2": {
+            "hex": "#6c293f"
+          },
+          "3": {
+            "hex": "#c56879"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 8,
+        "height": 8,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-runner-field/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-field",
+      "revision": 2,
+      "revision_hash": "b11ed4b8745070f98797513315cee8dbc3c2b4182799895d90de58b3b1e3fa8a",
+      "frame_id": "default",
+      "width": 8,
+      "height": 8,
+      "scale": 1,
+      "render_hash": "a8d9110b9a1df18718b60e979c104f6448d6d73734d7379ce6d35f43257794fd",
+      "text": {
+        "frame_id": "default",
+        "width": 8,
+        "height": 8,
+        "rows": [
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111",
+          "11111111"
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-field/revision/2/view"
+      }
+    }
+  },
+  "runner-motif": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-motif",
+      "name": "#51 Mansion runner-motif",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "5d70ac1d2d7e4e8cf2173c54001531aea028bbfa07dd4d4a0bf260840383b54f",
+      "canvas": {
+        "width": 8,
+        "height": 8
+      },
+      "palette_id": "mi51-bg-crimson",
+      "palette_hash": "5c3be50ea8634eff83358cbdb81fc7a481c211b86036b670d99a8e7d66930fb9",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-motif",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-motif/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-motif/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-motif/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-motif",
+      "revision": 2,
+      "revision_hash": "5d70ac1d2d7e4e8cf2173c54001531aea028bbfa07dd4d4a0bf260840383b54f",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 8,
+        "height": 8,
+        "rows": [
+          "11111111",
+          "11111111",
+          "11121111",
+          "11222111",
+          "11121111",
+          "11111111",
+          "11111111",
+          "11111111"
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#301b2b"
+          },
+          "2": {
+            "hex": "#6c293f"
+          },
+          "3": {
+            "hex": "#c56879"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 8,
+        "height": 8,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-runner-motif/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-motif",
+      "revision": 2,
+      "revision_hash": "5d70ac1d2d7e4e8cf2173c54001531aea028bbfa07dd4d4a0bf260840383b54f",
+      "frame_id": "default",
+      "width": 8,
+      "height": 8,
+      "scale": 1,
+      "render_hash": "76c1ee6cf09243cdbb0d340a70ae846e6ae83ea8812eeb8c3d56ad1cb079d425",
+      "text": {
+        "frame_id": "default",
+        "width": 8,
+        "height": 8,
+        "rows": [
+          "11111111",
+          "11111111",
+          "11121111",
+          "11222111",
+          "11121111",
+          "11111111",
+          "11111111",
+          "11111111"
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-motif/revision/2/view"
+      }
+    }
+  },
+  "cornice": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-cornice",
+      "name": "#51 Mansion cornice",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "7b72065b9eb95d49e499a28b544eb37407e336c7520e3251125390518a2753be",
+      "canvas": {
+        "width": 16,
+        "height": 8
+      },
+      "palette_id": "mi51-bg-stone",
+      "palette_hash": "06203dccfb967c6a0cb5da5b8bdace94c3b2caf48d341e9e9994efd2afea292c",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-cornice",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-cornice/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-cornice/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-cornice/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-cornice",
+      "revision": 2,
+      "revision_hash": "7b72065b9eb95d49e499a28b544eb37407e336c7520e3251125390518a2753be",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 16,
+        "height": 8,
+        "rows": [
+          "DDDDDDDDDDDDDDDD",
+          "3333333333333333",
+          "2222222222222222",
+          "1222122212221222",
+          "1131113111311131",
+          "1121112111211121",
+          "DDDDDDDDDDDDDDDD",
+          "1111111111111111"
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#232637"
+          },
+          "2": {
+            "hex": "#48475c"
+          },
+          "3": {
+            "hex": "#898299"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 16,
+        "height": 8,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-cornice/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-cornice",
+      "revision": 2,
+      "revision_hash": "7b72065b9eb95d49e499a28b544eb37407e336c7520e3251125390518a2753be",
+      "frame_id": "default",
+      "width": 16,
+      "height": 8,
+      "scale": 1,
+      "render_hash": "72b467ba7af90cdeac15e66386d7fd07475bdf16729d6ae1202536b5ac558ad5",
+      "text": {
+        "frame_id": "default",
+        "width": 16,
+        "height": 8,
+        "rows": [
+          "DDDDDDDDDDDDDDDD",
+          "3333333333333333",
+          "2222222222222222",
+          "1222122212221222",
+          "1131113111311131",
+          "1121112111211121",
+          "DDDDDDDDDDDDDDDD",
+          "1111111111111111"
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-cornice/revision/2/view"
+      }
+    }
+  },
+  "pier-cap": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-pier-cap",
+      "name": "#51 Mansion pier-cap",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "ca8ecab3435d9b2f16f45e1027e84e6bbf0c2302240f221e41e8fca943a8b8b3",
+      "canvas": {
+        "width": 16,
+        "height": 16
+      },
+      "palette_id": "mi51-bg-stone",
+      "palette_hash": "06203dccfb967c6a0cb5da5b8bdace94c3b2caf48d341e9e9994efd2afea292c",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-pier-cap",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-pier-cap/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-pier-cap/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-pier-cap/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-pier-cap",
+      "revision": 2,
+      "revision_hash": "ca8ecab3435d9b2f16f45e1027e84e6bbf0c2302240f221e41e8fca943a8b8b3",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 16,
+        "height": 16,
+        "rows": [
+          "....22222222....",
+          "..233333333332..",
+          ".23222222222232.",
+          "2321111111111232",
+          "2212332332332122",
+          ".21322222222312.",
+          ".21122222222112.",
+          "..221122221122..",
+          "...2212222122...",
+          "....22222222....",
+          "....23333332....",
+          "....22111122....",
+          ".....221122.....",
+          ".....221122.....",
+          ".....221122.....",
+          ".....221122....."
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#232637"
+          },
+          "2": {
+            "hex": "#48475c"
+          },
+          "3": {
+            "hex": "#898299"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 16,
+        "height": 16,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-pier-cap/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-pier-cap",
+      "revision": 2,
+      "revision_hash": "ca8ecab3435d9b2f16f45e1027e84e6bbf0c2302240f221e41e8fca943a8b8b3",
+      "frame_id": "default",
+      "width": 16,
+      "height": 16,
+      "scale": 1,
+      "render_hash": "53ba9cd50ca608cb9da7b8e23eb3a54033f6f951d6afd004a9ee9179f3f07b62",
+      "text": {
+        "frame_id": "default",
+        "width": 16,
+        "height": 16,
+        "rows": [
+          "....22222222....",
+          "..233333333332..",
+          ".23222222222232.",
+          "2321111111111232",
+          "2212332332332122",
+          ".21322222222312.",
+          ".21122222222112.",
+          "..221122221122..",
+          "...2212222122...",
+          "....22222222....",
+          "....23333332....",
+          "....22111122....",
+          ".....221122.....",
+          ".....221122.....",
+          ".....221122.....",
+          ".....221122....."
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-pier-cap/revision/2/view"
+      }
+    }
+  },
+  "pier-shaft": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-pier-shaft",
+      "name": "#51 Mansion pier-shaft",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "47243870d44c5dd5b71998ae13a27434ff3bdacfbc8a0d9013e44a9358a22144",
+      "canvas": {
+        "width": 16,
+        "height": 16
+      },
+      "palette_id": "mi51-bg-stone",
+      "palette_hash": "06203dccfb967c6a0cb5da5b8bdace94c3b2caf48d341e9e9994efd2afea292c",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-pier-shaft",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-pier-shaft/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-pier-shaft/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-pier-shaft/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-pier-shaft",
+      "revision": 2,
+      "revision_hash": "47243870d44c5dd5b71998ae13a27434ff3bdacfbc8a0d9013e44a9358a22144",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 16,
+        "height": 16,
+        "rows": [
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D...."
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#232637"
+          },
+          "2": {
+            "hex": "#48475c"
+          },
+          "3": {
+            "hex": "#898299"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 16,
+        "height": 16,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-pier-shaft/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-pier-shaft",
+      "revision": 2,
+      "revision_hash": "47243870d44c5dd5b71998ae13a27434ff3bdacfbc8a0d9013e44a9358a22144",
+      "frame_id": "default",
+      "width": 16,
+      "height": 16,
+      "scale": 1,
+      "render_hash": "e94538ee91f57a3eefad623743769c2b68879df3f5430e36ba421d51982cf7c4",
+      "text": {
+        "frame_id": "default",
+        "width": 16,
+        "height": 16,
+        "rows": [
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D...."
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-pier-shaft/revision/2/view"
+      }
+    }
+  },
+  "pier-collar": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-pier-collar",
+      "name": "#51 Mansion pier-collar",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "f12b81de8b0e534f484da6e60e01c8ae742b0c5f7e3c1ef05040e34c9b78c72d",
+      "canvas": {
+        "width": 16,
+        "height": 16
+      },
+      "palette_id": "mi51-bg-stone",
+      "palette_hash": "06203dccfb967c6a0cb5da5b8bdace94c3b2caf48d341e9e9994efd2afea292c",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-pier-collar",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-pier-collar/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-pier-collar/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-pier-collar/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-pier-collar",
+      "revision": 2,
+      "revision_hash": "f12b81de8b0e534f484da6e60e01c8ae742b0c5f7e3c1ef05040e34c9b78c72d",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 16,
+        "height": 16,
+        "rows": [
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "...D23333332D...",
+          "...D22222222D...",
+          "....D221122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D...."
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#232637"
+          },
+          "2": {
+            "hex": "#48475c"
+          },
+          "3": {
+            "hex": "#898299"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 16,
+        "height": 16,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-pier-collar/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-pier-collar",
+      "revision": 2,
+      "revision_hash": "f12b81de8b0e534f484da6e60e01c8ae742b0c5f7e3c1ef05040e34c9b78c72d",
+      "frame_id": "default",
+      "width": 16,
+      "height": 16,
+      "scale": 1,
+      "render_hash": "a2a618fae011a4cd5227a29350bd0fc7bc1cd5d742250657c1ef0c107cf87747",
+      "text": {
+        "frame_id": "default",
+        "width": 16,
+        "height": 16,
+        "rows": [
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "...D23333332D...",
+          "...D22222222D...",
+          "....D221122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D....",
+          "....D231122D...."
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-pier-collar/revision/2/view"
+      }
+    }
+  },
+  "pier-base": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-pier-base",
+      "name": "#51 Mansion pier-base",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "530181be435dcfcf79db1867e0dc6ef8d8c72ab87844bbdc9182e79910b282a4",
+      "canvas": {
+        "width": 16,
+        "height": 16
+      },
+      "palette_id": "mi51-bg-stone",
+      "palette_hash": "06203dccfb967c6a0cb5da5b8bdace94c3b2caf48d341e9e9994efd2afea292c",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-pier-base",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-pier-base/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-pier-base/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-pier-base/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-pier-base",
+      "revision": 2,
+      "revision_hash": "530181be435dcfcf79db1867e0dc6ef8d8c72ab87844bbdc9182e79910b282a4",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 16,
+        "height": 16,
+        "rows": [
+          ".....221122.....",
+          ".....221122.....",
+          "....23333332....",
+          "...2322222223...",
+          "...2211111122...",
+          "...2212332122...",
+          "...2212222122...",
+          "...2211111122...",
+          "..233333333332..",
+          "..222222222222..",
+          ".23333333333332.",
+          ".22222222222222.",
+          "DDDDDDDDDDDDDDDD",
+          "DDDDDDDDDDDDDDDD",
+          "................",
+          "................"
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#232637"
+          },
+          "2": {
+            "hex": "#48475c"
+          },
+          "3": {
+            "hex": "#898299"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 16,
+        "height": 16,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-pier-base/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-pier-base",
+      "revision": 2,
+      "revision_hash": "530181be435dcfcf79db1867e0dc6ef8d8c72ab87844bbdc9182e79910b282a4",
+      "frame_id": "default",
+      "width": 16,
+      "height": 16,
+      "scale": 1,
+      "render_hash": "bc9681d6889d7cb3ab837eba545e67b2867c7869202c6815d31227971eae877b",
+      "text": {
+        "frame_id": "default",
+        "width": 16,
+        "height": 16,
+        "rows": [
+          ".....221122.....",
+          ".....221122.....",
+          "....23333332....",
+          "...2322222223...",
+          "...2211111122...",
+          "...2212332122...",
+          "...2212222122...",
+          "...2211111122...",
+          "..233333333332..",
+          "..222222222222..",
+          ".23333333333332.",
+          ".22222222222222.",
+          "DDDDDDDDDDDDDDDD",
+          "DDDDDDDDDDDDDDDD",
+          "................",
+          "................"
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-pier-base/revision/2/view"
+      }
+    }
+  },
+  "dado-panel": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-dado-panel",
+      "name": "#51 Mansion dado-panel",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "8eba0932482e2bbd3db01e98c1ab1cb6ee53b163ea225f535edc41cf6ec19e79",
+      "canvas": {
+        "width": 16,
+        "height": 16
+      },
+      "palette_id": "mi51-bg-stone",
+      "palette_hash": "06203dccfb967c6a0cb5da5b8bdace94c3b2caf48d341e9e9994efd2afea292c",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-dado-panel",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-dado-panel/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-dado-panel/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-dado-panel/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-dado-panel",
+      "revision": 2,
+      "revision_hash": "8eba0932482e2bbd3db01e98c1ab1cb6ee53b163ea225f535edc41cf6ec19e79",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 16,
+        "height": 16,
+        "rows": [
+          "2222222222222222",
+          "3333333333333333",
+          "2DDDDDDDDDDDDDD2",
+          "2D111111111111D2",
+          "2D122222222221D2",
+          "2D12DDDDDDDD21D2",
+          "2D121111111D21D2",
+          "2D121111111D21D2",
+          "2D121111111D21D2",
+          "2D121111111D21D2",
+          "2D12DDDDDDDD21D2",
+          "2D122222222221D2",
+          "2D111111111111D2",
+          "2DDDDDDDDDDDDDD2",
+          "2222222222222222",
+          "DDDDDDDDDDDDDDDD"
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#232637"
+          },
+          "2": {
+            "hex": "#48475c"
+          },
+          "3": {
+            "hex": "#898299"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 16,
+        "height": 16,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-dado-panel/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-dado-panel",
+      "revision": 2,
+      "revision_hash": "8eba0932482e2bbd3db01e98c1ab1cb6ee53b163ea225f535edc41cf6ec19e79",
+      "frame_id": "default",
+      "width": 16,
+      "height": 16,
+      "scale": 1,
+      "render_hash": "723f20ef54cbc04e9ec3eacd0ebfc114af7c0733e9c5e5aedbfc15e1e10658c8",
+      "text": {
+        "frame_id": "default",
+        "width": 16,
+        "height": 16,
+        "rows": [
+          "2222222222222222",
+          "3333333333333333",
+          "2DDDDDDDDDDDDDD2",
+          "2D111111111111D2",
+          "2D122222222221D2",
+          "2D12DDDDDDDD21D2",
+          "2D121111111D21D2",
+          "2D121111111D21D2",
+          "2D121111111D21D2",
+          "2D121111111D21D2",
+          "2D12DDDDDDDD21D2",
+          "2D122222222221D2",
+          "2D111111111111D2",
+          "2DDDDDDDDDDDDDD2",
+          "2222222222222222",
+          "DDDDDDDDDDDDDDDD"
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-dado-panel/revision/2/view"
+      }
+    }
+  },
+  "stair-stone": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-stair-stone",
+      "name": "#51 Mansion stair-stone",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "59294bfe653b209acc095b2bdd8697415f782c94c3cbafd747e8b534fa2c9e5f",
+      "canvas": {
+        "width": 16,
+        "height": 16
+      },
+      "palette_id": "mi51-bg-stone",
+      "palette_hash": "06203dccfb967c6a0cb5da5b8bdace94c3b2caf48d341e9e9994efd2afea292c",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-stair-stone",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-stair-stone/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-stair-stone/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-stair-stone/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-stair-stone",
+      "revision": 2,
+      "revision_hash": "59294bfe653b209acc095b2bdd8697415f782c94c3cbafd747e8b534fa2c9e5f",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 16,
+        "height": 16,
+        "rows": [
+          "3333333333333333",
+          "2222222222222222",
+          "1111111111111111",
+          "DDDDDDDDDDDDDDDD",
+          "3333333333333333",
+          "2222222222222222",
+          "1111111111111111",
+          "DDDDDDDDDDDDDDDD",
+          "3333333333333333",
+          "2222222222222222",
+          "1111111111111111",
+          "DDDDDDDDDDDDDDDD",
+          "3333333333333333",
+          "2222222222222222",
+          "1111111111111111",
+          "DDDDDDDDDDDDDDDD"
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#232637"
+          },
+          "2": {
+            "hex": "#48475c"
+          },
+          "3": {
+            "hex": "#898299"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 16,
+        "height": 16,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-stair-stone/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-stair-stone",
+      "revision": 2,
+      "revision_hash": "59294bfe653b209acc095b2bdd8697415f782c94c3cbafd747e8b534fa2c9e5f",
+      "frame_id": "default",
+      "width": 16,
+      "height": 16,
+      "scale": 1,
+      "render_hash": "3e2d552fc24453bb08bf3edf230113b2f8563ac6b371e892c5682e1b2113f5f8",
+      "text": {
+        "frame_id": "default",
+        "width": 16,
+        "height": 16,
+        "rows": [
+          "3333333333333333",
+          "2222222222222222",
+          "1111111111111111",
+          "DDDDDDDDDDDDDDDD",
+          "3333333333333333",
+          "2222222222222222",
+          "1111111111111111",
+          "DDDDDDDDDDDDDDDD",
+          "3333333333333333",
+          "2222222222222222",
+          "1111111111111111",
+          "DDDDDDDDDDDDDDDD",
+          "3333333333333333",
+          "2222222222222222",
+          "1111111111111111",
+          "DDDDDDDDDDDDDDDD"
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-stair-stone/revision/2/view"
+      }
+    }
+  },
+  "stair-runner": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-stair-runner",
+      "name": "#51 Mansion stair-runner",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "f9fc9ff6b310c28cb487ef1710dfcf033d344333fe50cf3ffc646396566ebaa7",
+      "canvas": {
+        "width": 16,
+        "height": 16
+      },
+      "palette_id": "mi51-bg-crimson",
+      "palette_hash": "5c3be50ea8634eff83358cbdb81fc7a481c211b86036b670d99a8e7d66930fb9",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-stair-runner",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-stair-runner/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-stair-runner/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-stair-runner/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-stair-runner",
+      "revision": 2,
+      "revision_hash": "f9fc9ff6b310c28cb487ef1710dfcf033d344333fe50cf3ffc646396566ebaa7",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 16,
+        "height": 16,
+        "rows": [
+          "2222222222222222",
+          "1111111111111111",
+          "1111111111111111",
+          "DDDDDDDDDDDDDDDD",
+          "2222222222222222",
+          "1111111111111111",
+          "1111111111111111",
+          "DDDDDDDDDDDDDDDD",
+          "2222222222222222",
+          "1111111111111111",
+          "1111111111111111",
+          "DDDDDDDDDDDDDDDD",
+          "2222222222222222",
+          "1111111111111111",
+          "1111111111111111",
+          "DDDDDDDDDDDDDDDD"
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#301b2b"
+          },
+          "2": {
+            "hex": "#6c293f"
+          },
+          "3": {
+            "hex": "#c56879"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 16,
+        "height": 16,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-stair-runner/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-stair-runner",
+      "revision": 2,
+      "revision_hash": "f9fc9ff6b310c28cb487ef1710dfcf033d344333fe50cf3ffc646396566ebaa7",
+      "frame_id": "default",
+      "width": 16,
+      "height": 16,
+      "scale": 1,
+      "render_hash": "7ac8334f27d04abf5387423ccb8444e261598463cbdd9eaa502390e29479d768",
+      "text": {
+        "frame_id": "default",
+        "width": 16,
+        "height": 16,
+        "rows": [
+          "2222222222222222",
+          "1111111111111111",
+          "1111111111111111",
+          "DDDDDDDDDDDDDDDD",
+          "2222222222222222",
+          "1111111111111111",
+          "1111111111111111",
+          "DDDDDDDDDDDDDDDD",
+          "2222222222222222",
+          "1111111111111111",
+          "1111111111111111",
+          "DDDDDDDDDDDDDDDD",
+          "2222222222222222",
+          "1111111111111111",
+          "1111111111111111",
+          "DDDDDDDDDDDDDDDD"
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-stair-runner/revision/2/view"
+      }
+    }
+  },
+  "lancet-near": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-lancet-near",
+      "name": "#51 Mansion lancet-near",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "d370242944513547764add5187b0a0e8cf03f979d6470f57621fe76ef6bf5390",
+      "canvas": {
+        "width": 16,
+        "height": 48
+      },
+      "palette_id": "mi51-bg-glass",
+      "palette_hash": "106a5e86d96a4ac085e4c1696fe565f6c15b6cc891a140f223a340eb37b5ce7d",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-lancet-near",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-lancet-near/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-lancet-near/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-lancet-near/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-lancet-near",
+      "revision": 2,
+      "revision_hash": "d370242944513547764add5187b0a0e8cf03f979d6470f57621fe76ef6bf5390",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 16,
+        "height": 48,
+        "rows": [
+          ".......22.......",
+          "......2332......",
+          "......3223......",
+          ".....231132.....",
+          "....23122132....",
+          "....32122123....",
+          "...2312332132...",
+          "...3213223123...",
+          "..23123DD32132..",
+          "..32132DD23123..",
+          ".23123D22D32132.",
+          ".32132D33D23123.",
+          ".3212D2332D2123.",
+          ".3212D2332D2123.",
+          ".3212D2332D2123.",
+          ".3212D2332D2123.",
+          ".3212D2222D2123.",
+          ".3212D2332D2123.",
+          ".3212D2332D2123.",
+          ".3212D2222D2123.",
+          ".3212D1DD1D2123.",
+          ".3212D2222D2123.",
+          ".3212D2332D2123.",
+          ".3212D2332D2123.",
+          ".3212D2222D2123.",
+          ".3212D1DD1D2123.",
+          ".3212D2222D2123.",
+          ".3212D2332D2123.",
+          ".3212D2332D2123.",
+          ".3212D2222D2123.",
+          ".3212D1DD1D2123.",
+          ".3212D2222D2123.",
+          ".3212D2332D2123.",
+          ".3212D2332D2123.",
+          ".3212D2222D2123.",
+          ".3212D1DD1D2123.",
+          ".3212DD11DD2123.",
+          ".32122222222123.",
+          ".32333333333223.",
+          ".32222222222223.",
+          "2333333333333332",
+          "2222222222222222",
+          "D11111111111111D",
+          "DDDDDDDDDDDDDDDD",
+          "................",
+          "................",
+          "................",
+          "................"
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#203447"
+          },
+          "2": {
+            "hex": "#426b81"
+          },
+          "3": {
+            "hex": "#9bbbc5"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 16,
+        "height": 48,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-lancet-near/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-lancet-near",
+      "revision": 2,
+      "revision_hash": "d370242944513547764add5187b0a0e8cf03f979d6470f57621fe76ef6bf5390",
+      "frame_id": "default",
+      "width": 16,
+      "height": 48,
+      "scale": 1,
+      "render_hash": "4c9ded9ab5465fc62104209891b794f544e460b2f9e0d7c2c7d52882b40ccf15",
+      "text": {
+        "frame_id": "default",
+        "width": 16,
+        "height": 48,
+        "rows": [
+          ".......22.......",
+          "......2332......",
+          "......3223......",
+          ".....231132.....",
+          "....23122132....",
+          "....32122123....",
+          "...2312332132...",
+          "...3213223123...",
+          "..23123DD32132..",
+          "..32132DD23123..",
+          ".23123D22D32132.",
+          ".32132D33D23123.",
+          ".3212D2332D2123.",
+          ".3212D2332D2123.",
+          ".3212D2332D2123.",
+          ".3212D2332D2123.",
+          ".3212D2222D2123.",
+          ".3212D2332D2123.",
+          ".3212D2332D2123.",
+          ".3212D2222D2123.",
+          ".3212D1DD1D2123.",
+          ".3212D2222D2123.",
+          ".3212D2332D2123.",
+          ".3212D2332D2123.",
+          ".3212D2222D2123.",
+          ".3212D1DD1D2123.",
+          ".3212D2222D2123.",
+          ".3212D2332D2123.",
+          ".3212D2332D2123.",
+          ".3212D2222D2123.",
+          ".3212D1DD1D2123.",
+          ".3212D2222D2123.",
+          ".3212D2332D2123.",
+          ".3212D2332D2123.",
+          ".3212D2222D2123.",
+          ".3212D1DD1D2123.",
+          ".3212DD11DD2123.",
+          ".32122222222123.",
+          ".32333333333223.",
+          ".32222222222223.",
+          "2333333333333332",
+          "2222222222222222",
+          "D11111111111111D",
+          "DDDDDDDDDDDDDDDD",
+          "................",
+          "................",
+          "................",
+          "................"
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-lancet-near/revision/2/view"
+      }
+    }
+  },
+  "lancet-ruby": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-lancet-ruby",
+      "name": "#51 Mansion lancet-ruby",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "997fc19cea24f591b25c90519fd103b172d87baf22d414294f203fbdaf97e50d",
+      "canvas": {
+        "width": 16,
+        "height": 48
+      },
+      "palette_id": "mi51-bg-crimson",
+      "palette_hash": "5c3be50ea8634eff83358cbdb81fc7a481c211b86036b670d99a8e7d66930fb9",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-lancet-ruby",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-lancet-ruby/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-lancet-ruby/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-lancet-ruby/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-lancet-ruby",
+      "revision": 2,
+      "revision_hash": "997fc19cea24f591b25c90519fd103b172d87baf22d414294f203fbdaf97e50d",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 16,
+        "height": 48,
+        "rows": [
+          ".......22.......",
+          "......2332......",
+          "......3223......",
+          ".....231132.....",
+          "....23122132....",
+          "....32122123....",
+          "...2312332132...",
+          "...3213223123...",
+          "..23123DD32132..",
+          "..32132DD23123..",
+          ".23123D22D32132.",
+          ".32132D33D23123.",
+          ".3212D2332D2123.",
+          ".3212D2332D2123.",
+          ".3212D2332D2123.",
+          ".3212D2332D2123.",
+          ".3212D2222D2123.",
+          ".3212D2332D2123.",
+          ".3212D2332D2123.",
+          ".3212D2222D2123.",
+          ".3212D1DD1D2123.",
+          ".3212D2222D2123.",
+          ".3212D2332D2123.",
+          ".3212D2332D2123.",
+          ".3212D2222D2123.",
+          ".3212D1DD1D2123.",
+          ".3212D2222D2123.",
+          ".3212D2332D2123.",
+          ".3212D2332D2123.",
+          ".3212D2222D2123.",
+          ".3212D1DD1D2123.",
+          ".3212D2222D2123.",
+          ".3212D2332D2123.",
+          ".3212D2332D2123.",
+          ".3212D2222D2123.",
+          ".3212D1DD1D2123.",
+          ".3212DD11DD2123.",
+          ".32122222222123.",
+          ".32333333333223.",
+          ".32222222222223.",
+          "2333333333333332",
+          "2222222222222222",
+          "D11111111111111D",
+          "DDDDDDDDDDDDDDDD",
+          "................",
+          "................",
+          "................",
+          "................"
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#301b2b"
+          },
+          "2": {
+            "hex": "#6c293f"
+          },
+          "3": {
+            "hex": "#c56879"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 16,
+        "height": 48,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-lancet-ruby/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-lancet-ruby",
+      "revision": 2,
+      "revision_hash": "997fc19cea24f591b25c90519fd103b172d87baf22d414294f203fbdaf97e50d",
+      "frame_id": "default",
+      "width": 16,
+      "height": 48,
+      "scale": 1,
+      "render_hash": "1fb433492d3f3719ec9398cc3580109e417e8253fc65f9ff7e037bb0483da219",
+      "text": {
+        "frame_id": "default",
+        "width": 16,
+        "height": 48,
+        "rows": [
+          ".......22.......",
+          "......2332......",
+          "......3223......",
+          ".....231132.....",
+          "....23122132....",
+          "....32122123....",
+          "...2312332132...",
+          "...3213223123...",
+          "..23123DD32132..",
+          "..32132DD23123..",
+          ".23123D22D32132.",
+          ".32132D33D23123.",
+          ".3212D2332D2123.",
+          ".3212D2332D2123.",
+          ".3212D2332D2123.",
+          ".3212D2332D2123.",
+          ".3212D2222D2123.",
+          ".3212D2332D2123.",
+          ".3212D2332D2123.",
+          ".3212D2222D2123.",
+          ".3212D1DD1D2123.",
+          ".3212D2222D2123.",
+          ".3212D2332D2123.",
+          ".3212D2332D2123.",
+          ".3212D2222D2123.",
+          ".3212D1DD1D2123.",
+          ".3212D2222D2123.",
+          ".3212D2332D2123.",
+          ".3212D2332D2123.",
+          ".3212D2222D2123.",
+          ".3212D1DD1D2123.",
+          ".3212D2222D2123.",
+          ".3212D2332D2123.",
+          ".3212D2332D2123.",
+          ".3212D2222D2123.",
+          ".3212D1DD1D2123.",
+          ".3212DD11DD2123.",
+          ".32122222222123.",
+          ".32333333333223.",
+          ".32222222222223.",
+          "2333333333333332",
+          "2222222222222222",
+          "D11111111111111D",
+          "DDDDDDDDDDDDDDDD",
+          "................",
+          "................",
+          "................",
+          "................"
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-lancet-ruby/revision/2/view"
+      }
+    }
+  },
+  "lancet-far": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-lancet-far",
+      "name": "#51 Mansion lancet-far",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "627768dd76fb323d0c7134f5b60827bda1a6287ba201ed10ffda9685c12f5d08",
+      "canvas": {
+        "width": 16,
+        "height": 32
+      },
+      "palette_id": "mi51-bg-crimson",
+      "palette_hash": "5c3be50ea8634eff83358cbdb81fc7a481c211b86036b670d99a8e7d66930fb9",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-lancet-far",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-lancet-far/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-lancet-far/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-lancet-far/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-lancet-far",
+      "revision": 2,
+      "revision_hash": "627768dd76fb323d0c7134f5b60827bda1a6287ba201ed10ffda9685c12f5d08",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 16,
+        "height": 32,
+        "rows": [
+          ".......22.......",
+          "......2332......",
+          ".....231132.....",
+          "....23122132....",
+          "...2312332132...",
+          "..23123DD32132..",
+          "..32132DD23123..",
+          "..3212D22D2123..",
+          "..3212D33D2123..",
+          "..3212D22D2123..",
+          "..3212D11D2123..",
+          "..3212D22D2123..",
+          "..3212D33D2123..",
+          "..3212D22D2123..",
+          "..3212D11D2123..",
+          "..3212D22D2123..",
+          "..3212D33D2123..",
+          "..3212D22D2123..",
+          "..3212D11D2123..",
+          "..3212D22D2123..",
+          "..3212D33D2123..",
+          "..3212D22D2123..",
+          "..3212D11D2123..",
+          "..321222222123..",
+          ".23333333333332.",
+          ".22222222222222.",
+          "..111111111111..",
+          "..DDDDDDDDDDDD..",
+          "................",
+          "................",
+          "................",
+          "................"
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#301b2b"
+          },
+          "2": {
+            "hex": "#6c293f"
+          },
+          "3": {
+            "hex": "#c56879"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 16,
+        "height": 32,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-lancet-far/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-lancet-far",
+      "revision": 2,
+      "revision_hash": "627768dd76fb323d0c7134f5b60827bda1a6287ba201ed10ffda9685c12f5d08",
+      "frame_id": "default",
+      "width": 16,
+      "height": 32,
+      "scale": 1,
+      "render_hash": "c0681183286994f535cc5004e39e401d68d0b2d771c0ccc038b54453bd97ae45",
+      "text": {
+        "frame_id": "default",
+        "width": 16,
+        "height": 32,
+        "rows": [
+          ".......22.......",
+          "......2332......",
+          ".....231132.....",
+          "....23122132....",
+          "...2312332132...",
+          "..23123DD32132..",
+          "..32132DD23123..",
+          "..3212D22D2123..",
+          "..3212D33D2123..",
+          "..3212D22D2123..",
+          "..3212D11D2123..",
+          "..3212D22D2123..",
+          "..3212D33D2123..",
+          "..3212D22D2123..",
+          "..3212D11D2123..",
+          "..3212D22D2123..",
+          "..3212D33D2123..",
+          "..3212D22D2123..",
+          "..3212D11D2123..",
+          "..3212D22D2123..",
+          "..3212D33D2123..",
+          "..3212D22D2123..",
+          "..3212D11D2123..",
+          "..321222222123..",
+          ".23333333333332.",
+          ".22222222222222.",
+          "..111111111111..",
+          "..DDDDDDDDDDDD..",
+          "................",
+          "................",
+          "................",
+          "................"
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-lancet-far/revision/2/view"
+      }
+    }
+  },
+  "arch-shoulder": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-arch-shoulder",
+      "name": "#51 Mansion arch-shoulder",
+      "class_id": "tile",
+      "current_revision": 3,
+      "current_revision_hash": "7678875fe69cee1f396d7bd8f5436a861cb15b99b7f3373002942724775ebe5b",
+      "canvas": {
+        "width": 16,
+        "height": 32
+      },
+      "palette_id": "mi51-bg-stone",
+      "palette_hash": "06203dccfb967c6a0cb5da5b8bdace94c3b2caf48d341e9e9994efd2afea292c",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-arch-shoulder",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-arch-shoulder/revision/3",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-arch-shoulder/revision/3/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-arch-shoulder/revision/3/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-arch-shoulder",
+      "revision": 3,
+      "revision_hash": "7678875fe69cee1f396d7bd8f5436a861cb15b99b7f3373002942724775ebe5b",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 16,
+        "height": 32,
+        "rows": [
+          "............2222",
+          "............2333",
+          "..........223322",
+          "..........233221",
+          "........22332211",
+          "........23322111",
+          "......22332211DD",
+          "......2332211DD.",
+          ".....2332211DD..",
+          ".....332211D....",
+          "....2332211D....",
+          "....332211D.....",
+          "...2332211D.....",
+          "...332211D......",
+          "..2332211D......",
+          "..332211D.......",
+          ".2332211D.......",
+          ".332211D........",
+          ".332211D........",
+          ".332211D........",
+          "2332211D........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D........."
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#232637"
+          },
+          "2": {
+            "hex": "#48475c"
+          },
+          "3": {
+            "hex": "#898299"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 16,
+        "height": 32,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-arch-shoulder/revision/3/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-arch-shoulder",
+      "revision": 3,
+      "revision_hash": "7678875fe69cee1f396d7bd8f5436a861cb15b99b7f3373002942724775ebe5b",
+      "frame_id": "default",
+      "width": 16,
+      "height": 32,
+      "scale": 1,
+      "render_hash": "771c15a330b0f1517b294eda4b8bbcda5d6f440b2c34e357fa2fadd42816e80e",
+      "text": {
+        "frame_id": "default",
+        "width": 16,
+        "height": 32,
+        "rows": [
+          "............2222",
+          "............2333",
+          "..........223322",
+          "..........233221",
+          "........22332211",
+          "........23322111",
+          "......22332211DD",
+          "......2332211DD.",
+          ".....2332211DD..",
+          ".....332211D....",
+          "....2332211D....",
+          "....332211D.....",
+          "...2332211D.....",
+          "...332211D......",
+          "..2332211D......",
+          "..332211D.......",
+          ".2332211D.......",
+          ".332211D........",
+          ".332211D........",
+          ".332211D........",
+          "2332211D........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D........."
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-arch-shoulder/revision/3/view"
+      }
+    }
+  },
+  "arch-jamb": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-arch-jamb",
+      "name": "#51 Mansion arch-jamb",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "4069ecc08287b33fdac57ac2959536d9ac8f815b8dbaea6635430ce3e662579a",
+      "canvas": {
+        "width": 16,
+        "height": 16
+      },
+      "palette_id": "mi51-bg-stone",
+      "palette_hash": "06203dccfb967c6a0cb5da5b8bdace94c3b2caf48d341e9e9994efd2afea292c",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-arch-jamb",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-arch-jamb/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-arch-jamb/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-arch-jamb/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-arch-jamb",
+      "revision": 2,
+      "revision_hash": "4069ecc08287b33fdac57ac2959536d9ac8f815b8dbaea6635430ce3e662579a",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 16,
+        "height": 16,
+        "rows": [
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D........."
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#232637"
+          },
+          "2": {
+            "hex": "#48475c"
+          },
+          "3": {
+            "hex": "#898299"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 16,
+        "height": 16,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-arch-jamb/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-arch-jamb",
+      "revision": 2,
+      "revision_hash": "4069ecc08287b33fdac57ac2959536d9ac8f815b8dbaea6635430ce3e662579a",
+      "frame_id": "default",
+      "width": 16,
+      "height": 16,
+      "scale": 1,
+      "render_hash": "72866f1090358085636c05e3035d5b0070c7f2d64850b85f97c568bf091f3e82",
+      "text": {
+        "frame_id": "default",
+        "width": 16,
+        "height": 16,
+        "rows": [
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D.........",
+          "332211D........."
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-arch-jamb/revision/2/view"
+      }
+    }
+  },
+  "arch-foot": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-arch-foot",
+      "name": "#51 Mansion arch-foot",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "b154c68606a2808c4c518342c8cf143cfba1a2e0cfff0181c930cbec1dbbc86f",
+      "canvas": {
+        "width": 16,
+        "height": 16
+      },
+      "palette_id": "mi51-bg-stone",
+      "palette_hash": "06203dccfb967c6a0cb5da5b8bdace94c3b2caf48d341e9e9994efd2afea292c",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-arch-foot",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-arch-foot/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-arch-foot/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-arch-foot/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-arch-foot",
+      "revision": 2,
+      "revision_hash": "b154c68606a2808c4c518342c8cf143cfba1a2e0cfff0181c930cbec1dbbc86f",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 16,
+        "height": 16,
+        "rows": [
+          "332211D.........",
+          "332211D.........",
+          "3332222D........",
+          "2221111D........",
+          "2311111D........",
+          "2312211D........",
+          "231DD11D........",
+          "2312211D........",
+          "2311111D........",
+          "2311111D........",
+          "23333332D.......",
+          "22222222D.......",
+          "DDDDDDDDD.......",
+          "DDDDDDDDD.......",
+          "................",
+          "................"
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#232637"
+          },
+          "2": {
+            "hex": "#48475c"
+          },
+          "3": {
+            "hex": "#898299"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 16,
+        "height": 16,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-arch-foot/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-arch-foot",
+      "revision": 2,
+      "revision_hash": "b154c68606a2808c4c518342c8cf143cfba1a2e0cfff0181c930cbec1dbbc86f",
+      "frame_id": "default",
+      "width": 16,
+      "height": 16,
+      "scale": 1,
+      "render_hash": "8f949e7e012cfdac92b4766f4dfed3cf5f550813b824875eff84722fef3fe75a",
+      "text": {
+        "frame_id": "default",
+        "width": 16,
+        "height": 16,
+        "rows": [
+          "332211D.........",
+          "332211D.........",
+          "3332222D........",
+          "2221111D........",
+          "2311111D........",
+          "2312211D........",
+          "231DD11D........",
+          "2312211D........",
+          "2311111D........",
+          "2311111D........",
+          "23333332D.......",
+          "22222222D.......",
+          "DDDDDDDDD.......",
+          "DDDDDDDDD.......",
+          "................",
+          "................"
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-arch-foot/revision/2/view"
+      }
+    }
+  },
+  "banner": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-banner",
+      "name": "#51 Mansion banner",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "608e8b7d6184744977ebe725128d0c4b336563976f01258e531c4fee6b82ec93",
+      "canvas": {
+        "width": 16,
+        "height": 48
+      },
+      "palette_id": "mi51-bg-crimson",
+      "palette_hash": "5c3be50ea8634eff83358cbdb81fc7a481c211b86036b670d99a8e7d66930fb9",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-banner",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-banner/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-banner/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-banner/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-banner",
+      "revision": 2,
+      "revision_hash": "608e8b7d6184744977ebe725128d0c4b336563976f01258e531c4fee6b82ec93",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 16,
+        "height": 48,
+        "rows": [
+          "2222222222222222",
+          "D3333333333333DD",
+          "D2211111211221DD",
+          "D2311111211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311222211221DD",
+          "D2311233211221DD",
+          "D2312333321221DD",
+          "D2312333321221DD",
+          "D2311233211221DD",
+          "D2311222211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "DD23121221221DDD",
+          "DD23121221221DDD",
+          "DDD232122221DDDD",
+          "DDD232122221DDDD",
+          "DDDD2322221DDDDD",
+          "DDDD2322221DDDDD",
+          "DDDDD23221DDDDDD",
+          "DDDDD23221DDDDDD",
+          "DDDDDD221DDDDDDD",
+          "DDDDDD221DDDDDDD",
+          "DDDDDDD1DDDDDDDD",
+          "DDDDDDDDDDDDDDDD"
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#301b2b"
+          },
+          "2": {
+            "hex": "#6c293f"
+          },
+          "3": {
+            "hex": "#c56879"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 16,
+        "height": 48,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-banner/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-banner",
+      "revision": 2,
+      "revision_hash": "608e8b7d6184744977ebe725128d0c4b336563976f01258e531c4fee6b82ec93",
+      "frame_id": "default",
+      "width": 16,
+      "height": 48,
+      "scale": 1,
+      "render_hash": "d1f37c7c6993cb71724b7f247c0930cf4b9a006a81046eb27e60e7a54ba6f647",
+      "text": {
+        "frame_id": "default",
+        "width": 16,
+        "height": 48,
+        "rows": [
+          "2222222222222222",
+          "D3333333333333DD",
+          "D2211111211221DD",
+          "D2311111211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311222211221DD",
+          "D2311233211221DD",
+          "D2312333321221DD",
+          "D2312333321221DD",
+          "D2311233211221DD",
+          "D2311222211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "D2311212211221DD",
+          "DD23121221221DDD",
+          "DD23121221221DDD",
+          "DDD232122221DDDD",
+          "DDD232122221DDDD",
+          "DDDD2322221DDDDD",
+          "DDDD2322221DDDDD",
+          "DDDDD23221DDDDDD",
+          "DDDDD23221DDDDDD",
+          "DDDDDD221DDDDDDD",
+          "DDDDDD221DDDDDDD",
+          "DDDDDDD1DDDDDDDD",
+          "DDDDDDDDDDDDDDDD"
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-banner/revision/2/view"
+      }
+    }
+  },
+  "sconce": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-sconce",
+      "name": "#51 Mansion sconce",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "00a87694f5be30fbe045dfb5db582400dac2bef5b729ff7c6090d8cd6ff3524d",
+      "canvas": {
+        "width": 16,
+        "height": 16
+      },
+      "palette_id": "mi51-bg-warm",
+      "palette_hash": "65c966d35d006067581caf6d4a793be8490056851ca0d6d621b24f12fedb3ece",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-sconce",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-sconce/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-sconce/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-sconce/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-sconce",
+      "revision": 2,
+      "revision_hash": "00a87694f5be30fbe045dfb5db582400dac2bef5b729ff7c6090d8cd6ff3524d",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 16,
+        "height": 16,
+        "rows": [
+          ".......3........",
+          "......333.......",
+          "......232.......",
+          "......232.......",
+          ".......3........",
+          ".......3........",
+          "......232.......",
+          "....3322233.....",
+          "...32..2..23....",
+          "...2...2...2....",
+          "....2222222.....",
+          ".......2........",
+          "......323.......",
+          "......222.......",
+          ".......1........",
+          "................"
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#392d30"
+          },
+          "2": {
+            "hex": "#846349"
+          },
+          "3": {
+            "hex": "#d4b185"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 16,
+        "height": 16,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-sconce/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-sconce",
+      "revision": 2,
+      "revision_hash": "00a87694f5be30fbe045dfb5db582400dac2bef5b729ff7c6090d8cd6ff3524d",
+      "frame_id": "default",
+      "width": 16,
+      "height": 16,
+      "scale": 1,
+      "render_hash": "b139d026ad5f627a345d2457dc29cce56fc63e79a42f2209fc18a3ea3cf448aa",
+      "text": {
+        "frame_id": "default",
+        "width": 16,
+        "height": 16,
+        "rows": [
+          ".......3........",
+          "......333.......",
+          "......232.......",
+          "......232.......",
+          ".......3........",
+          ".......3........",
+          "......232.......",
+          "....3322233.....",
+          "...32..2..23....",
+          "...2...2...2....",
+          "....2222222.....",
+          ".......2........",
+          "......323.......",
+          "......222.......",
+          ".......1........",
+          "................"
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-sconce/revision/2/view"
+      }
+    }
+  },
+  "rose": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-rose",
+      "name": "#51 Mansion rose",
+      "class_id": "tile",
+      "current_revision": 4,
+      "current_revision_hash": "553bb309716e308de12b13e6f4209fbdd398881faa7254023adb353122d4b36e",
+      "canvas": {
+        "width": 64,
+        "height": 64
+      },
+      "palette_id": "mi51-bg-crimson",
+      "palette_hash": "5c3be50ea8634eff83358cbdb81fc7a481c211b86036b670d99a8e7d66930fb9",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-rose",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-rose/revision/4",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-rose/revision/4/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-rose/revision/4/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-rose",
+      "revision": 4,
+      "revision_hash": "553bb309716e308de12b13e6f4209fbdd398881faa7254023adb353122d4b36e",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 64,
+        "height": 64,
+        "rows": [
+          "......................222222DDDDDDDD222222......................",
+          "...................222333DDDDDDDDDDDDDD333222...................",
+          ".................223332DDDDDDDDDDDDDDDDDD233322.................",
+          "...............223322DDDDDDDDDDDDDDDDDDDDDD223322...............",
+          ".............223322DDDDDDDDDDDDDDDDDDDDDDDDDD223322.............",
+          "............233221DDDDDDDDDDDDDDDDDDDDDDDDDDDD122332............",
+          "..........223322DDDDDDDDDDDDDD2222DDDDDDDDDDDDDD223322..........",
+          ".........233222DDDDDDDDDDDDD22333322DDDDDDDDDDDDD222332.........",
+          "........233222DDDDDDDDDDDDD2322332232DDDDDDDDDDDDD222332........",
+          ".......233222DD22DDDDDDDDD232223322232DDDDDDDDD22DD222332.......",
+          "......233222D223322DDDDDD23222233222232DDDDDD223322D222332......",
+          "......33222223322332DDDDD32222233222223DDDDD23322332222233......",
+          ".....2332222322222232DDD2322222332222232DDD2322222232222332.....",
+          "....233222232222222232DD3222222332222223DD232222222232222332....",
+          "....3322123222233222232D3222222332222223D2322223322223212233....",
+          "...23321132222333322223D3223322332233223D32222333322223112332...",
+          "...33222132222322322223D3223322332233223D32222322322223122233...",
+          "..233233223222233222232D3222222332222223D232222332222322332332..",
+          "..33223223232222222232DD3222222332222223DD23222222223232232233..",
+          "..3321321232322222232DDD2322222332222232DDD2322222232321231233..",
+          ".2332132122323322332DDDDD32222233222223DDDDD2332233232212312332.",
+          ".33221321223D223322DDDDDD23222233222232DDDDDD223322D32212312233.",
+          ".33211321223DDD22DDDDDDDDD232223322232DDDDDDDDD22DDD32212311233.",
+          "233211322223DDDDDDDDDDDDDDD2322332232DDDDDDDDDDDDDDD322223112332",
+          "332211332223DDDDDDDDDDDDDDDDDD2222DDDDDDDDDDDDDDDDDD322233112233",
+          "33211D322223DDDDDDDDDDDDDDDD22333322DDDDDDDDDDDDDDDD322223D11233",
+          "33211D321113DDDDDDDDDDDDDDD2322332232DDDDDDDDDDDDDDD311123D11233",
+          "33211D321113DDDDDDDDDDDDDD232123321232DDDDDDDDDDDDDD311123D11233",
+          "33211D321123DDDDDDDDDDDDD23211233211232DDDDDDDDDDDDD321123D11233",
+          "33211D321232DDDDDDDDDDDD2321112332111232DDDDDDDDDDDD232123D11233",
+          "33211D32232DDDDDDDDDDDDD3211112332111123DDDDDDDDDDDDD23223D11233",
+          "33211D3322DDDDDDDDDDDDDD3211112332111123DDDDDDDDDDDDDD2233D11233",
+          "33211D3322DDDDDDDDDDDDDD3211112332111123DDDDDDDDDDDDDD2233D11233",
+          "33211D32232DDDDDDDDDDDDD3211112332111123DDDDDDDDDDDDD23223D11233",
+          "33211D321232DDDDDDDDDDDD2321112332111232DDDDDDDDDDDD232123D11233",
+          "33211D321123DDDDDDDDDDDDD23211233211232DDDDDDDDDDDDD321123D11233",
+          "33211D321113DDDDDDDDDDDDDD232123321232DDDDDDDDDDDDDD311123D11233",
+          "33211D321113DDDDDDDDDDDDDDD2322332232DDDDDDDDDDDDDDD311123D11233",
+          "33211D322223DDDDDDDDDDDDDDDD22333322DDDDDDDDDDDDDDDD322223D11233",
+          "332211332223DDDDDDDDDDDDDDDDDD2222DDDDDDDDDDDDDDDDDD322233112233",
+          "233211322223DDDDDDDDDDDDDDD2322332232DDDDDDDDDDDDDDD322223112332",
+          ".33211321223DDD22DDDDDDDDD232223322232DDDDDDDDD22DDD32212311233.",
+          ".33221321223D223322DDDDDD23222233222232DDDDDD223322D32212312233.",
+          ".2332132122323322332DDDDD32222233222223DDDDD2332233232212312332.",
+          "..3321321232322222232DDD2322222332222232DDD2322222232321231233..",
+          "..33223223232222222232DD3222222332222223DD23222222223232232233..",
+          "..233233223222233222232D3222222332222223D232222332222322332332..",
+          "...33222132222322322223D3223322332233223D32222322322223122233...",
+          "...23321132222333322223D3223322332233223D32222333322223112332...",
+          "....3322123222233222232D3222222332222223D2322223322223212233....",
+          "....233222232222222232DD3222222332222223DD232222222232222332....",
+          ".....2332222322222232DDD2322222332222232DDD2322222232222332.....",
+          "......33222223322332DDDDD32222233222223DDDDD23322332222233......",
+          "......233222D223322DDDDDD23222233222232DDDDDD223322D222332......",
+          ".......233222DD22DDDDDDDDD232223322232DDDDDDDDD22DD222332.......",
+          "........233222DDDDDDDDDDDDD2322332232DDDDDDDDDDDDD222332........",
+          ".........233222DDDDDDDDDDDDD22333322DDDDDDDDDDDDD222332.........",
+          "..........223322DDDDDDDDDDDDDD2222DDDDDDDDDDDDDD223322..........",
+          "............233221DDDDDDDDDDDDDDDDDDDDDDDDDDDD122332............",
+          ".............223322DDDDDDDDDDDDDDDDDDDDDDDDDD223322.............",
+          "...............223322DDDDDDDDDDDDDDDDDDDDDD223322...............",
+          ".................223332DDDDDDDDDDDDDDDDDD233322.................",
+          "...................222333DDDDDDDDDDDDDD333222...................",
+          "......................222222DDDDDDDD222222......................"
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#301b2b"
+          },
+          "2": {
+            "hex": "#6c293f"
+          },
+          "3": {
+            "hex": "#c56879"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 64,
+        "height": 64,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-rose/revision/4/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-rose",
+      "revision": 4,
+      "revision_hash": "553bb309716e308de12b13e6f4209fbdd398881faa7254023adb353122d4b36e",
+      "frame_id": "default",
+      "width": 64,
+      "height": 64,
+      "scale": 1,
+      "render_hash": "3c37de7defc251ea764f9d5ec24a7724a4f1090b7ee7a77bed16df4df2a9056b",
+      "text": {
+        "frame_id": "default",
+        "width": 64,
+        "height": 64,
+        "rows": [
+          "......................222222DDDDDDDD222222......................",
+          "...................222333DDDDDDDDDDDDDD333222...................",
+          ".................223332DDDDDDDDDDDDDDDDDD233322.................",
+          "...............223322DDDDDDDDDDDDDDDDDDDDDD223322...............",
+          ".............223322DDDDDDDDDDDDDDDDDDDDDDDDDD223322.............",
+          "............233221DDDDDDDDDDDDDDDDDDDDDDDDDDDD122332............",
+          "..........223322DDDDDDDDDDDDDD2222DDDDDDDDDDDDDD223322..........",
+          ".........233222DDDDDDDDDDDDD22333322DDDDDDDDDDDDD222332.........",
+          "........233222DDDDDDDDDDDDD2322332232DDDDDDDDDDDDD222332........",
+          ".......233222DD22DDDDDDDDD232223322232DDDDDDDDD22DD222332.......",
+          "......233222D223322DDDDDD23222233222232DDDDDD223322D222332......",
+          "......33222223322332DDDDD32222233222223DDDDD23322332222233......",
+          ".....2332222322222232DDD2322222332222232DDD2322222232222332.....",
+          "....233222232222222232DD3222222332222223DD232222222232222332....",
+          "....3322123222233222232D3222222332222223D2322223322223212233....",
+          "...23321132222333322223D3223322332233223D32222333322223112332...",
+          "...33222132222322322223D3223322332233223D32222322322223122233...",
+          "..233233223222233222232D3222222332222223D232222332222322332332..",
+          "..33223223232222222232DD3222222332222223DD23222222223232232233..",
+          "..3321321232322222232DDD2322222332222232DDD2322222232321231233..",
+          ".2332132122323322332DDDDD32222233222223DDDDD2332233232212312332.",
+          ".33221321223D223322DDDDDD23222233222232DDDDDD223322D32212312233.",
+          ".33211321223DDD22DDDDDDDDD232223322232DDDDDDDDD22DDD32212311233.",
+          "233211322223DDDDDDDDDDDDDDD2322332232DDDDDDDDDDDDDDD322223112332",
+          "332211332223DDDDDDDDDDDDDDDDDD2222DDDDDDDDDDDDDDDDDD322233112233",
+          "33211D322223DDDDDDDDDDDDDDDD22333322DDDDDDDDDDDDDDDD322223D11233",
+          "33211D321113DDDDDDDDDDDDDDD2322332232DDDDDDDDDDDDDDD311123D11233",
+          "33211D321113DDDDDDDDDDDDDD232123321232DDDDDDDDDDDDDD311123D11233",
+          "33211D321123DDDDDDDDDDDDD23211233211232DDDDDDDDDDDDD321123D11233",
+          "33211D321232DDDDDDDDDDDD2321112332111232DDDDDDDDDDDD232123D11233",
+          "33211D32232DDDDDDDDDDDDD3211112332111123DDDDDDDDDDDDD23223D11233",
+          "33211D3322DDDDDDDDDDDDDD3211112332111123DDDDDDDDDDDDDD2233D11233",
+          "33211D3322DDDDDDDDDDDDDD3211112332111123DDDDDDDDDDDDDD2233D11233",
+          "33211D32232DDDDDDDDDDDDD3211112332111123DDDDDDDDDDDDD23223D11233",
+          "33211D321232DDDDDDDDDDDD2321112332111232DDDDDDDDDDDD232123D11233",
+          "33211D321123DDDDDDDDDDDDD23211233211232DDDDDDDDDDDDD321123D11233",
+          "33211D321113DDDDDDDDDDDDDD232123321232DDDDDDDDDDDDDD311123D11233",
+          "33211D321113DDDDDDDDDDDDDDD2322332232DDDDDDDDDDDDDDD311123D11233",
+          "33211D322223DDDDDDDDDDDDDDDD22333322DDDDDDDDDDDDDDDD322223D11233",
+          "332211332223DDDDDDDDDDDDDDDDDD2222DDDDDDDDDDDDDDDDDD322233112233",
+          "233211322223DDDDDDDDDDDDDDD2322332232DDDDDDDDDDDDDDD322223112332",
+          ".33211321223DDD22DDDDDDDDD232223322232DDDDDDDDD22DDD32212311233.",
+          ".33221321223D223322DDDDDD23222233222232DDDDDD223322D32212312233.",
+          ".2332132122323322332DDDDD32222233222223DDDDD2332233232212312332.",
+          "..3321321232322222232DDD2322222332222232DDD2322222232321231233..",
+          "..33223223232222222232DD3222222332222223DD23222222223232232233..",
+          "..233233223222233222232D3222222332222223D232222332222322332332..",
+          "...33222132222322322223D3223322332233223D32222322322223122233...",
+          "...23321132222333322223D3223322332233223D32222333322223112332...",
+          "....3322123222233222232D3222222332222223D2322223322223212233....",
+          "....233222232222222232DD3222222332222223DD232222222232222332....",
+          ".....2332222322222232DDD2322222332222232DDD2322222232222332.....",
+          "......33222223322332DDDDD32222233222223DDDDD23322332222233......",
+          "......233222D223322DDDDDD23222233222232DDDDDD223322D222332......",
+          ".......233222DD22DDDDDDDDD232223322232DDDDDDDDD22DD222332.......",
+          "........233222DDDDDDDDDDDDD2322332232DDDDDDDDDDDDD222332........",
+          ".........233222DDDDDDDDDDDDD22333322DDDDDDDDDDDDD222332.........",
+          "..........223322DDDDDDDDDDDDDD2222DDDDDDDDDDDDDD223322..........",
+          "............233221DDDDDDDDDDDDDDDDDDDDDDDDDDDD122332............",
+          ".............223322DDDDDDDDDDDDDDDDDDDDDDDDDD223322.............",
+          "...............223322DDDDDDDDDDDDDDDDDDDDDD223322...............",
+          ".................223332DDDDDDDDDDDDDDDDDD233322.................",
+          "...................222333DDDDDDDDDDDDDD333222...................",
+          "......................222222DDDDDDDD222222......................"
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-rose/revision/4/view"
+      }
+    }
+  },
+  "backdrop": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-backdrop",
+      "name": "#51 Mansion backdrop",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "291b0594a00861961e4e47baf8505cf785fff0c02462239e87e3579d32c6a4b3",
+      "canvas": {
+        "width": 8,
+        "height": 8
+      },
+      "palette_id": "mi51-bg-stone",
+      "palette_hash": "06203dccfb967c6a0cb5da5b8bdace94c3b2caf48d341e9e9994efd2afea292c",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-backdrop",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-backdrop/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-backdrop/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-backdrop/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-backdrop",
+      "revision": 2,
+      "revision_hash": "291b0594a00861961e4e47baf8505cf785fff0c02462239e87e3579d32c6a4b3",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 8,
+        "height": 8,
+        "rows": [
+          "DDDDDDDD",
+          "DDDDDDDD",
+          "DDDDDDDD",
+          "DDDDDDDD",
+          "DDDDDDDD",
+          "DDDDDDDD",
+          "DDDDDDDD",
+          "DDDDDDDD"
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#232637"
+          },
+          "2": {
+            "hex": "#48475c"
+          },
+          "3": {
+            "hex": "#898299"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 8,
+        "height": 8,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-backdrop/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-backdrop",
+      "revision": 2,
+      "revision_hash": "291b0594a00861961e4e47baf8505cf785fff0c02462239e87e3579d32c6a4b3",
+      "frame_id": "default",
+      "width": 8,
+      "height": 8,
+      "scale": 1,
+      "render_hash": "26a55a57eddaf6814dda7e0e0ca09159ffa7a458c7f20968856b1705f1a4d689",
+      "text": {
+        "frame_id": "default",
+        "width": 8,
+        "height": 8,
+        "rows": [
+          "DDDDDDDD",
+          "DDDDDDDD",
+          "DDDDDDDD",
+          "DDDDDDDD",
+          "DDDDDDDD",
+          "DDDDDDDD",
+          "DDDDDDDD",
+          "DDDDDDDD"
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-backdrop/revision/2/view"
+      }
+    }
+  },
+  "runner-turn-far": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-turn-far",
+      "name": "#51 Mansion runner-turn-far",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "928b9cc30c6b174e761b593bf6ddf4c11ea776372dfd11c0545ea3b7b2f47e77",
+      "canvas": {
+        "width": 16,
+        "height": 16
+      },
+      "palette_id": "mi51-bg-crimson",
+      "palette_hash": "5c3be50ea8634eff83358cbdb81fc7a481c211b86036b670d99a8e7d66930fb9",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-far",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-far/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-far/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-far/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-turn-far",
+      "revision": 2,
+      "revision_hash": "928b9cc30c6b174e761b593bf6ddf4c11ea776372dfd11c0545ea3b7b2f47e77",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 16,
+        "height": 16,
+        "rows": [
+          "DDDDDDDDDDDDDD22",
+          "DDDDDDDDDDDDDD21",
+          "DDDDDDDDDDDDDD21",
+          "DDDDDDDDDDDDDD21",
+          "DDDDDDDDDDDDD221",
+          "DDDDDDDDDDDDD211",
+          "DDDDDDDDDDDDD211",
+          "DDDDDDDDDDDDD211",
+          "DDDDDDDDDDDD2211",
+          "DDDDDDDDDDDD2111",
+          "DDDDDDDDDDDD2111",
+          "DDDDDDDDDDDD2111",
+          "DDDDDDDDDDD22111",
+          "DDDDDDDDDDD21111",
+          "DDDDDDDDDDD21111",
+          "DDDDDDDDDDD21111"
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#301b2b"
+          },
+          "2": {
+            "hex": "#6c293f"
+          },
+          "3": {
+            "hex": "#c56879"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 16,
+        "height": 16,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-runner-turn-far/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-turn-far",
+      "revision": 2,
+      "revision_hash": "928b9cc30c6b174e761b593bf6ddf4c11ea776372dfd11c0545ea3b7b2f47e77",
+      "frame_id": "default",
+      "width": 16,
+      "height": 16,
+      "scale": 1,
+      "render_hash": "69a993f4f7b5fd385ce5caa531da27d2a205a2b11b0a85631a817f088874e37d",
+      "text": {
+        "frame_id": "default",
+        "width": 16,
+        "height": 16,
+        "rows": [
+          "DDDDDDDDDDDDDD22",
+          "DDDDDDDDDDDDDD21",
+          "DDDDDDDDDDDDDD21",
+          "DDDDDDDDDDDDDD21",
+          "DDDDDDDDDDDDD221",
+          "DDDDDDDDDDDDD211",
+          "DDDDDDDDDDDDD211",
+          "DDDDDDDDDDDDD211",
+          "DDDDDDDDDDDD2211",
+          "DDDDDDDDDDDD2111",
+          "DDDDDDDDDDDD2111",
+          "DDDDDDDDDDDD2111",
+          "DDDDDDDDDDD22111",
+          "DDDDDDDDDDD21111",
+          "DDDDDDDDDDD21111",
+          "DDDDDDDDDDD21111"
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-far/revision/2/view"
+      }
+    }
+  },
+  "runner-turn-mid": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-turn-mid",
+      "name": "#51 Mansion runner-turn-mid",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "5bf59889de2dc96a5a54a88024bc3a59fccae6da14815452b5366f73c58ec34d",
+      "canvas": {
+        "width": 16,
+        "height": 16
+      },
+      "palette_id": "mi51-bg-crimson",
+      "palette_hash": "5c3be50ea8634eff83358cbdb81fc7a481c211b86036b670d99a8e7d66930fb9",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-mid",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-mid/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-mid/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-mid/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-turn-mid",
+      "revision": 2,
+      "revision_hash": "5bf59889de2dc96a5a54a88024bc3a59fccae6da14815452b5366f73c58ec34d",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 16,
+        "height": 16,
+        "rows": [
+          "DDDDDDDDDD221111",
+          "DDDDDDDDDD211111",
+          "DDDDDDDDDD211111",
+          "DDDDDDDDDD211111",
+          "DDDDDDDDD2211111",
+          "DDDDDDDDD2111111",
+          "DDDDDDDDD2111111",
+          "DDDDDDDDD2111111",
+          "DDDDDDDD22111111",
+          "DDDDDDDD21111111",
+          "DDDDDDDD21111111",
+          "DDDDDDDD21111111",
+          "DDDDDDD221111111",
+          "DDDDDDD211111111",
+          "DDDDDDD211111111",
+          "DDDDDDD211111111"
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#301b2b"
+          },
+          "2": {
+            "hex": "#6c293f"
+          },
+          "3": {
+            "hex": "#c56879"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 16,
+        "height": 16,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-runner-turn-mid/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-turn-mid",
+      "revision": 2,
+      "revision_hash": "5bf59889de2dc96a5a54a88024bc3a59fccae6da14815452b5366f73c58ec34d",
+      "frame_id": "default",
+      "width": 16,
+      "height": 16,
+      "scale": 1,
+      "render_hash": "afcd8807b57ba1577cc25f5a4694e1cecf7f0cf782a1ee3e060a78ce25735395",
+      "text": {
+        "frame_id": "default",
+        "width": 16,
+        "height": 16,
+        "rows": [
+          "DDDDDDDDDD221111",
+          "DDDDDDDDDD211111",
+          "DDDDDDDDDD211111",
+          "DDDDDDDDDD211111",
+          "DDDDDDDDD2211111",
+          "DDDDDDDDD2111111",
+          "DDDDDDDDD2111111",
+          "DDDDDDDDD2111111",
+          "DDDDDDDD22111111",
+          "DDDDDDDD21111111",
+          "DDDDDDDD21111111",
+          "DDDDDDDD21111111",
+          "DDDDDDD221111111",
+          "DDDDDDD211111111",
+          "DDDDDDD211111111",
+          "DDDDDDD211111111"
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-mid/revision/2/view"
+      }
+    }
+  },
+  "runner-turn-near": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-turn-near",
+      "name": "#51 Mansion runner-turn-near",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "c59d48c81bcbbd5305dd0a67f9482079782ca590d17d120664ac8f190e45928f",
+      "canvas": {
+        "width": 16,
+        "height": 16
+      },
+      "palette_id": "mi51-bg-crimson",
+      "palette_hash": "5c3be50ea8634eff83358cbdb81fc7a481c211b86036b670d99a8e7d66930fb9",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-near",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-near/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-near/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-near/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-turn-near",
+      "revision": 2,
+      "revision_hash": "c59d48c81bcbbd5305dd0a67f9482079782ca590d17d120664ac8f190e45928f",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 16,
+        "height": 16,
+        "rows": [
+          "DDDDDD2211111111",
+          "DDDDDD2111111111",
+          "DDDDDD2111111111",
+          "DDDDDD2111111111",
+          "DDDDD22111111111",
+          "DDDDD21111111111",
+          "DDDDD21111111111",
+          "DDDDD21111111111",
+          "DDDD221111111111",
+          "DDDD211111111111",
+          "DDDD211111111111",
+          "DDDD211111111111",
+          "DDD2211111111111",
+          "DDD2111111111111",
+          "DDD2111111111111",
+          "DDD2111111111111"
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#301b2b"
+          },
+          "2": {
+            "hex": "#6c293f"
+          },
+          "3": {
+            "hex": "#c56879"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 16,
+        "height": 16,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-runner-turn-near/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-turn-near",
+      "revision": 2,
+      "revision_hash": "c59d48c81bcbbd5305dd0a67f9482079782ca590d17d120664ac8f190e45928f",
+      "frame_id": "default",
+      "width": 16,
+      "height": 16,
+      "scale": 1,
+      "render_hash": "0b1b6acfe3e57acdff1575acabd0ac564f9a7523ebde21567bc56274b67054fa",
+      "text": {
+        "frame_id": "default",
+        "width": 16,
+        "height": 16,
+        "rows": [
+          "DDDDDD2211111111",
+          "DDDDDD2111111111",
+          "DDDDDD2111111111",
+          "DDDDDD2111111111",
+          "DDDDD22111111111",
+          "DDDDD21111111111",
+          "DDDDD21111111111",
+          "DDDDD21111111111",
+          "DDDD221111111111",
+          "DDDD211111111111",
+          "DDDD211111111111",
+          "DDDD211111111111",
+          "DDD2211111111111",
+          "DDD2111111111111",
+          "DDD2111111111111",
+          "DDD2111111111111"
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-near/revision/2/view"
+      }
+    }
+  },
+  "runner-turn-full": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-turn-full",
+      "name": "#51 Mansion runner-turn-full",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "1de9260c607e8fec6bf01f0a812616daf1c6e9b11e373837df5014ac690959ab",
+      "canvas": {
+        "width": 16,
+        "height": 16
+      },
+      "palette_id": "mi51-bg-crimson",
+      "palette_hash": "5c3be50ea8634eff83358cbdb81fc7a481c211b86036b670d99a8e7d66930fb9",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-full",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-full/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-full/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-full/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-turn-full",
+      "revision": 2,
+      "revision_hash": "1de9260c607e8fec6bf01f0a812616daf1c6e9b11e373837df5014ac690959ab",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 16,
+        "height": 16,
+        "rows": [
+          "DD22111111111111",
+          "DD21111111111111",
+          "DD21111111111111",
+          "DD21111111111111",
+          "D221111111111111",
+          "D211111111111111",
+          "D211111111111111",
+          "D211111111111111",
+          "2211111111111111",
+          "2111111111111111",
+          "2111111111111111",
+          "2111111111111111",
+          "2211111111111111",
+          "2111111111111111",
+          "2111111111111111",
+          "2111111111111111"
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#301b2b"
+          },
+          "2": {
+            "hex": "#6c293f"
+          },
+          "3": {
+            "hex": "#c56879"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 16,
+        "height": 16,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-runner-turn-full/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-turn-full",
+      "revision": 2,
+      "revision_hash": "1de9260c607e8fec6bf01f0a812616daf1c6e9b11e373837df5014ac690959ab",
+      "frame_id": "default",
+      "width": 16,
+      "height": 16,
+      "scale": 1,
+      "render_hash": "005a439e65fb5fb0f599832f6a85c2bd0ae7680f13678c856b4e8ad0af481bff",
+      "text": {
+        "frame_id": "default",
+        "width": 16,
+        "height": 16,
+        "rows": [
+          "DD22111111111111",
+          "DD21111111111111",
+          "DD21111111111111",
+          "DD21111111111111",
+          "D221111111111111",
+          "D211111111111111",
+          "D211111111111111",
+          "D211111111111111",
+          "2211111111111111",
+          "2111111111111111",
+          "2111111111111111",
+          "2111111111111111",
+          "2211111111111111",
+          "2111111111111111",
+          "2111111111111111",
+          "2111111111111111"
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-full/revision/2/view"
+      }
+    }
+  },
+  "near-pier-cap": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-near-pier-cap",
+      "name": "#51 Mansion near-pier-cap",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "4225645973d905d13fb91ac46fa5861fc06cb1c7348777e047dcf33a18a689bc",
+      "canvas": {
+        "width": 32,
+        "height": 16
+      },
+      "palette_id": "mi51-bg-stone",
+      "palette_hash": "06203dccfb967c6a0cb5da5b8bdace94c3b2caf48d341e9e9994efd2afea292c",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-near-pier-cap",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-near-pier-cap/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-near-pier-cap/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-near-pier-cap/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-near-pier-cap",
+      "revision": 2,
+      "revision_hash": "4225645973d905d13fb91ac46fa5861fc06cb1c7348777e047dcf33a18a689bc",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 32,
+        "height": 16,
+        "rows": [
+          "......22222222222222222222......",
+          "....233333333333333333333332....",
+          "..2332222222222222222222222332..",
+          ".232111111111111111111111111232.",
+          "23212223322233222332223322231232",
+          "2211233223332233322333223321122.",
+          ".221122233222332223322233221122.",
+          ".222112222222222222222222211222.",
+          "..2221122212221122212221112222..",
+          "...2221112222211222221111222....",
+          "....222233333333333333332222....",
+          "....222222222222222222222222....",
+          "......D22311221122112222D.......",
+          "......D22311221122112222D.......",
+          "......D22311221122112222D.......",
+          "......D22311221122112222D......."
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#232637"
+          },
+          "2": {
+            "hex": "#48475c"
+          },
+          "3": {
+            "hex": "#898299"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 32,
+        "height": 16,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-near-pier-cap/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-near-pier-cap",
+      "revision": 2,
+      "revision_hash": "4225645973d905d13fb91ac46fa5861fc06cb1c7348777e047dcf33a18a689bc",
+      "frame_id": "default",
+      "width": 32,
+      "height": 16,
+      "scale": 1,
+      "render_hash": "c7b66c06fd63be63581b6850ee7299fa25f4c5b66dc503760e9702f03f8b5484",
+      "text": {
+        "frame_id": "default",
+        "width": 32,
+        "height": 16,
+        "rows": [
+          "......22222222222222222222......",
+          "....233333333333333333333332....",
+          "..2332222222222222222222222332..",
+          ".232111111111111111111111111232.",
+          "23212223322233222332223322231232",
+          "2211233223332233322333223321122.",
+          ".221122233222332223322233221122.",
+          ".222112222222222222222222211222.",
+          "..2221122212221122212221112222..",
+          "...2221112222211222221111222....",
+          "....222233333333333333332222....",
+          "....222222222222222222222222....",
+          "......D22311221122112222D.......",
+          "......D22311221122112222D.......",
+          "......D22311221122112222D.......",
+          "......D22311221122112222D......."
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-near-pier-cap/revision/2/view"
+      }
+    }
+  },
+  "near-pier-shaft": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-near-pier-shaft",
+      "name": "#51 Mansion near-pier-shaft",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "48bf04925e6fc34a21bcf6b2f845b0c9dc11a6bb6aee16ec7104c8ca10d7ba7c",
+      "canvas": {
+        "width": 32,
+        "height": 16
+      },
+      "palette_id": "mi51-bg-stone",
+      "palette_hash": "06203dccfb967c6a0cb5da5b8bdace94c3b2caf48d341e9e9994efd2afea292c",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-near-pier-shaft",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-near-pier-shaft/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-near-pier-shaft/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-near-pier-shaft/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-near-pier-shaft",
+      "revision": 2,
+      "revision_hash": "48bf04925e6fc34a21bcf6b2f845b0c9dc11a6bb6aee16ec7104c8ca10d7ba7c",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 32,
+        "height": 16,
+        "rows": [
+          "......D23311221122112222D.......",
+          "......D23311221122112222D.......",
+          "......D23311221122112222D.......",
+          "......D23311221122112222D.......",
+          "......D23311221122112222D.......",
+          "......D23311221122112222D.......",
+          "......D23311221122112222D.......",
+          "......D23311221122112222D.......",
+          "......D23311221122112222D.......",
+          "......D23311221122112222D.......",
+          "......D23311221122112222D.......",
+          "......D23311221122112222D.......",
+          "......D23311221122112222D.......",
+          "......D23311221122112222D.......",
+          "......D23311221122112222D.......",
+          "......D23311221122112222D......."
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#232637"
+          },
+          "2": {
+            "hex": "#48475c"
+          },
+          "3": {
+            "hex": "#898299"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 32,
+        "height": 16,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-near-pier-shaft/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-near-pier-shaft",
+      "revision": 2,
+      "revision_hash": "48bf04925e6fc34a21bcf6b2f845b0c9dc11a6bb6aee16ec7104c8ca10d7ba7c",
+      "frame_id": "default",
+      "width": 32,
+      "height": 16,
+      "scale": 1,
+      "render_hash": "75d2230fa833b1ad680845dee6dd9f4932562c8f76b42e3bc8774926f44730b5",
+      "text": {
+        "frame_id": "default",
+        "width": 32,
+        "height": 16,
+        "rows": [
+          "......D23311221122112222D.......",
+          "......D23311221122112222D.......",
+          "......D23311221122112222D.......",
+          "......D23311221122112222D.......",
+          "......D23311221122112222D.......",
+          "......D23311221122112222D.......",
+          "......D23311221122112222D.......",
+          "......D23311221122112222D.......",
+          "......D23311221122112222D.......",
+          "......D23311221122112222D.......",
+          "......D23311221122112222D.......",
+          "......D23311221122112222D.......",
+          "......D23311221122112222D.......",
+          "......D23311221122112222D.......",
+          "......D23311221122112222D.......",
+          "......D23311221122112222D......."
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-near-pier-shaft/revision/2/view"
+      }
+    }
+  },
+  "near-pier-base": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-near-pier-base",
+      "name": "#51 Mansion near-pier-base",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "820ec2d98ee36bcf45583d11a9eb10e1f1178a0074daca086110cccfe1ae7a77",
+      "canvas": {
+        "width": 32,
+        "height": 16
+      },
+      "palette_id": "mi51-bg-stone",
+      "palette_hash": "06203dccfb967c6a0cb5da5b8bdace94c3b2caf48d341e9e9994efd2afea292c",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-near-pier-base",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-near-pier-base/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-near-pier-base/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-near-pier-base/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-near-pier-base",
+      "revision": 2,
+      "revision_hash": "820ec2d98ee36bcf45583d11a9eb10e1f1178a0074daca086110cccfe1ae7a77",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 32,
+        "height": 16,
+        "rows": [
+          "......D23311221122112222D.......",
+          "......D23311221122112222D.......",
+          ".....D233333333333333332D.......",
+          "....D22222222222222222222D......",
+          "....D23111111111111111122D......",
+          "....D23122222222222221122D......",
+          "....D2312DDDDDDDDDDD21122D......",
+          "....D23122222222222221122D......",
+          "....D23111111111111111122D......",
+          "...D2333333333333333333332D.....",
+          "..D222222222222222222222222D....",
+          "..D2333333333333333333333332D...",
+          ".D222222222222222222222222222D..",
+          "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "................................"
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#232637"
+          },
+          "2": {
+            "hex": "#48475c"
+          },
+          "3": {
+            "hex": "#898299"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 32,
+        "height": 16,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-near-pier-base/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-near-pier-base",
+      "revision": 2,
+      "revision_hash": "820ec2d98ee36bcf45583d11a9eb10e1f1178a0074daca086110cccfe1ae7a77",
+      "frame_id": "default",
+      "width": 32,
+      "height": 16,
+      "scale": 1,
+      "render_hash": "43d211a459f7ff1fb8fc23a03b993f27fe2e7f23c05ff01606994162ca3bfc97",
+      "text": {
+        "frame_id": "default",
+        "width": 32,
+        "height": 16,
+        "rows": [
+          "......D23311221122112222D.......",
+          "......D23311221122112222D.......",
+          ".....D233333333333333332D.......",
+          "....D22222222222222222222D......",
+          "....D23111111111111111122D......",
+          "....D23122222222222221122D......",
+          "....D2312DDDDDDDDDDD21122D......",
+          "....D23122222222222221122D......",
+          "....D23111111111111111122D......",
+          "...D2333333333333333333332D.....",
+          "..D222222222222222222222222D....",
+          "..D2333333333333333333333332D...",
+          ".D222222222222222222222222222D..",
+          "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "................................"
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-near-pier-base/revision/2/view"
+      }
+    }
+  },
+  "door": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-door",
+      "name": "#51 Mansion door",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "e29068e36b46d03c19f9f955532940c5cf8ab6fcc886b3090f2bc39f5803cf5c",
+      "canvas": {
+        "width": 32,
+        "height": 32
+      },
+      "palette_id": "mi51-bg-warm",
+      "palette_hash": "65c966d35d006067581caf6d4a793be8490056851ca0d6d621b24f12fedb3ece",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-door",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-door/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-door/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-door/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-door",
+      "revision": 2,
+      "revision_hash": "e29068e36b46d03c19f9f955532940c5cf8ab6fcc886b3090f2bc39f5803cf5c",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 32,
+        "height": 32,
+        "rows": [
+          "DDDD222222222222222222222222DDDD",
+          "DDD23333333333333333333333332DDD",
+          "DD2322222222222222222222222232DD",
+          "D232111111111111111111111111232D",
+          "D321222222222222222222222222123D",
+          "D3212DDDDDDDDDD22DDDDDDDDDD2123D",
+          "D3212D1111111DD22DD1111111D2123D",
+          "D3212D1222221DD22DD1222221D2123D",
+          "D3212D12DDD21DD22DD12DDD21D2123D",
+          "D3212D1211121DD22DD1211121D2123D",
+          "D3212D1211121DD22DD1211121D2123D",
+          "D3212D1211121DD22DD1211121D2123D",
+          "D3212D1211121DD22DD1211121D2123D",
+          "D3212D12DDD21DD22DD12DDD21D2123D",
+          "D3212D1222221DD22DD1222221D2123D",
+          "D3212D1111111DD22DD1111111D2123D",
+          "D3212D1222221DD22DD1222221D2123D",
+          "D3212D12DDD21DD22DD12DDD21D2123D",
+          "D3212D1211121D3223D1211121D2123D",
+          "D3212D1211121D3223D1211121D2123D",
+          "D3212D1211121DD22DD1211121D2123D",
+          "D3212D1211121DD22DD1211121D2123D",
+          "D3212D1211121DD22DD1211121D2123D",
+          "D3212D12DDD21DD22DD12DDD21D2123D",
+          "D3212D1222221DD22DD1222221D2123D",
+          "D3212D1111111DD22DD1111111D2123D",
+          "D3212DDDDDDDDDD22DDDDDDDDDD2123D",
+          "D321222222222222222222222222123D",
+          "D323333333333333333333333333323D",
+          "D322222222222222222222222222223D",
+          "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#392d30"
+          },
+          "2": {
+            "hex": "#846349"
+          },
+          "3": {
+            "hex": "#d4b185"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 32,
+        "height": 32,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-door/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-door",
+      "revision": 2,
+      "revision_hash": "e29068e36b46d03c19f9f955532940c5cf8ab6fcc886b3090f2bc39f5803cf5c",
+      "frame_id": "default",
+      "width": 32,
+      "height": 32,
+      "scale": 1,
+      "render_hash": "faf3d14162dc9051db60f6c91e10158f1d712c21640f6ba939d2e970700e2bc1",
+      "text": {
+        "frame_id": "default",
+        "width": 32,
+        "height": 32,
+        "rows": [
+          "DDDD222222222222222222222222DDDD",
+          "DDD23333333333333333333333332DDD",
+          "DD2322222222222222222222222232DD",
+          "D232111111111111111111111111232D",
+          "D321222222222222222222222222123D",
+          "D3212DDDDDDDDDD22DDDDDDDDDD2123D",
+          "D3212D1111111DD22DD1111111D2123D",
+          "D3212D1222221DD22DD1222221D2123D",
+          "D3212D12DDD21DD22DD12DDD21D2123D",
+          "D3212D1211121DD22DD1211121D2123D",
+          "D3212D1211121DD22DD1211121D2123D",
+          "D3212D1211121DD22DD1211121D2123D",
+          "D3212D1211121DD22DD1211121D2123D",
+          "D3212D12DDD21DD22DD12DDD21D2123D",
+          "D3212D1222221DD22DD1222221D2123D",
+          "D3212D1111111DD22DD1111111D2123D",
+          "D3212D1222221DD22DD1222221D2123D",
+          "D3212D12DDD21DD22DD12DDD21D2123D",
+          "D3212D1211121D3223D1211121D2123D",
+          "D3212D1211121D3223D1211121D2123D",
+          "D3212D1211121DD22DD1211121D2123D",
+          "D3212D1211121DD22DD1211121D2123D",
+          "D3212D1211121DD22DD1211121D2123D",
+          "D3212D12DDD21DD22DD12DDD21D2123D",
+          "D3212D1222221DD22DD1222221D2123D",
+          "D3212D1111111DD22DD1111111D2123D",
+          "D3212DDDDDDDDDD22DDDDDDDDDD2123D",
+          "D321222222222222222222222222123D",
+          "D323333333333333333333333333323D",
+          "D322222222222222222222222222223D",
+          "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-door/revision/2/view"
+      }
+    }
+  },
+  "arch-shoulder-mirror": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-arch-shoulder-mirror",
+      "name": "#51 Mansion arch-shoulder-mirror",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "b9f52c64b798e3d2fdc09a8f76e39c7d3f6195b2dcc814672abc5f578199bcaf",
+      "canvas": {
+        "width": 16,
+        "height": 32
+      },
+      "palette_id": "mi51-bg-stone",
+      "palette_hash": "06203dccfb967c6a0cb5da5b8bdace94c3b2caf48d341e9e9994efd2afea292c",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-arch-shoulder-mirror",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-arch-shoulder-mirror/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-arch-shoulder-mirror/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-arch-shoulder-mirror/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-arch-shoulder-mirror",
+      "revision": 2,
+      "revision_hash": "b9f52c64b798e3d2fdc09a8f76e39c7d3f6195b2dcc814672abc5f578199bcaf",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 16,
+        "height": 32,
+        "rows": [
+          "2222............",
+          "3332............",
+          "223322..........",
+          "122332..........",
+          "11223322........",
+          "11122332........",
+          "DD11223322......",
+          ".DD1122332......",
+          "..DD1122332.....",
+          "....D112233.....",
+          "....D1122332....",
+          ".....D112233....",
+          ".....D1122332...",
+          "......D112233...",
+          "......D1122332..",
+          ".......D112233..",
+          ".......D1122332.",
+          "........D112233.",
+          "........D112233.",
+          "........D112233.",
+          "........D1122332",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233"
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#232637"
+          },
+          "2": {
+            "hex": "#48475c"
+          },
+          "3": {
+            "hex": "#898299"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 16,
+        "height": 32,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-arch-shoulder-mirror/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-arch-shoulder-mirror",
+      "revision": 2,
+      "revision_hash": "b9f52c64b798e3d2fdc09a8f76e39c7d3f6195b2dcc814672abc5f578199bcaf",
+      "frame_id": "default",
+      "width": 16,
+      "height": 32,
+      "scale": 1,
+      "render_hash": "3e26bd5d5b931cbbbf2493673635fce8c263cfc933cb384a36f0a71ee5343195",
+      "text": {
+        "frame_id": "default",
+        "width": 16,
+        "height": 32,
+        "rows": [
+          "2222............",
+          "3332............",
+          "223322..........",
+          "122332..........",
+          "11223322........",
+          "11122332........",
+          "DD11223322......",
+          ".DD1122332......",
+          "..DD1122332.....",
+          "....D112233.....",
+          "....D1122332....",
+          ".....D112233....",
+          ".....D1122332...",
+          "......D112233...",
+          "......D1122332..",
+          ".......D112233..",
+          ".......D1122332.",
+          "........D112233.",
+          "........D112233.",
+          "........D112233.",
+          "........D1122332",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233"
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-arch-shoulder-mirror/revision/2/view"
+      }
+    }
+  },
+  "arch-jamb-mirror": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-arch-jamb-mirror",
+      "name": "#51 Mansion arch-jamb-mirror",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "337d99413a0be7aca7b19021775d4213b134eebca27493f3c351b6fb28cbe49d",
+      "canvas": {
+        "width": 16,
+        "height": 16
+      },
+      "palette_id": "mi51-bg-stone",
+      "palette_hash": "06203dccfb967c6a0cb5da5b8bdace94c3b2caf48d341e9e9994efd2afea292c",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-arch-jamb-mirror",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-arch-jamb-mirror/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-arch-jamb-mirror/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-arch-jamb-mirror/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-arch-jamb-mirror",
+      "revision": 2,
+      "revision_hash": "337d99413a0be7aca7b19021775d4213b134eebca27493f3c351b6fb28cbe49d",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 16,
+        "height": 16,
+        "rows": [
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233"
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#232637"
+          },
+          "2": {
+            "hex": "#48475c"
+          },
+          "3": {
+            "hex": "#898299"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 16,
+        "height": 16,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-arch-jamb-mirror/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-arch-jamb-mirror",
+      "revision": 2,
+      "revision_hash": "337d99413a0be7aca7b19021775d4213b134eebca27493f3c351b6fb28cbe49d",
+      "frame_id": "default",
+      "width": 16,
+      "height": 16,
+      "scale": 1,
+      "render_hash": "7a3f4b53fe76a36101aa51504fcb1fa6d99c303e8445a1f755a5623c91d3394d",
+      "text": {
+        "frame_id": "default",
+        "width": 16,
+        "height": 16,
+        "rows": [
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233",
+          ".........D112233"
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-arch-jamb-mirror/revision/2/view"
+      }
+    }
+  },
+  "arch-foot-mirror": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-arch-foot-mirror",
+      "name": "#51 Mansion arch-foot-mirror",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "51182b668f7f820884a0e631f25a028b02c103aa574071fc8b24967571758999",
+      "canvas": {
+        "width": 16,
+        "height": 16
+      },
+      "palette_id": "mi51-bg-stone",
+      "palette_hash": "06203dccfb967c6a0cb5da5b8bdace94c3b2caf48d341e9e9994efd2afea292c",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-arch-foot-mirror",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-arch-foot-mirror/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-arch-foot-mirror/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-arch-foot-mirror/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-arch-foot-mirror",
+      "revision": 2,
+      "revision_hash": "51182b668f7f820884a0e631f25a028b02c103aa574071fc8b24967571758999",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 16,
+        "height": 16,
+        "rows": [
+          ".........D112233",
+          ".........D112233",
+          "........D2222333",
+          "........D1111222",
+          "........D1111132",
+          "........D1122132",
+          "........D11DD132",
+          "........D1122132",
+          "........D1111132",
+          "........D1111132",
+          ".......D23333332",
+          ".......D22222222",
+          ".......DDDDDDDDD",
+          ".......DDDDDDDDD",
+          "................",
+          "................"
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#232637"
+          },
+          "2": {
+            "hex": "#48475c"
+          },
+          "3": {
+            "hex": "#898299"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 16,
+        "height": 16,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-arch-foot-mirror/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-arch-foot-mirror",
+      "revision": 2,
+      "revision_hash": "51182b668f7f820884a0e631f25a028b02c103aa574071fc8b24967571758999",
+      "frame_id": "default",
+      "width": 16,
+      "height": 16,
+      "scale": 1,
+      "render_hash": "814e982d6448a0ec5b1ceabc57d51e9b7bd1c5ef76ac12bda03ca516e48ecde3",
+      "text": {
+        "frame_id": "default",
+        "width": 16,
+        "height": 16,
+        "rows": [
+          ".........D112233",
+          ".........D112233",
+          "........D2222333",
+          "........D1111222",
+          "........D1111132",
+          "........D1122132",
+          "........D11DD132",
+          "........D1122132",
+          "........D1111132",
+          "........D1111132",
+          ".......D23333332",
+          ".......D22222222",
+          ".......DDDDDDDDD",
+          ".......DDDDDDDDD",
+          "................",
+          "................"
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-arch-foot-mirror/revision/2/view"
+      }
+    }
+  },
+  "runner-turn-far-mirror": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-turn-far-mirror",
+      "name": "#51 Mansion runner-turn-far-mirror",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "1264c6f987ae6d6ab7f0974d37a3e6bc84144ad6858022187a5c73f4960e56af",
+      "canvas": {
+        "width": 16,
+        "height": 16
+      },
+      "palette_id": "mi51-bg-crimson",
+      "palette_hash": "5c3be50ea8634eff83358cbdb81fc7a481c211b86036b670d99a8e7d66930fb9",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-far-mirror",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-far-mirror/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-far-mirror/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-far-mirror/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-turn-far-mirror",
+      "revision": 2,
+      "revision_hash": "1264c6f987ae6d6ab7f0974d37a3e6bc84144ad6858022187a5c73f4960e56af",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 16,
+        "height": 16,
+        "rows": [
+          "22DDDDDDDDDDDDDD",
+          "12DDDDDDDDDDDDDD",
+          "12DDDDDDDDDDDDDD",
+          "12DDDDDDDDDDDDDD",
+          "122DDDDDDDDDDDDD",
+          "112DDDDDDDDDDDDD",
+          "112DDDDDDDDDDDDD",
+          "112DDDDDDDDDDDDD",
+          "1122DDDDDDDDDDDD",
+          "1112DDDDDDDDDDDD",
+          "1112DDDDDDDDDDDD",
+          "1112DDDDDDDDDDDD",
+          "11122DDDDDDDDDDD",
+          "11112DDDDDDDDDDD",
+          "11112DDDDDDDDDDD",
+          "11112DDDDDDDDDDD"
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#301b2b"
+          },
+          "2": {
+            "hex": "#6c293f"
+          },
+          "3": {
+            "hex": "#c56879"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 16,
+        "height": 16,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-runner-turn-far-mirror/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-turn-far-mirror",
+      "revision": 2,
+      "revision_hash": "1264c6f987ae6d6ab7f0974d37a3e6bc84144ad6858022187a5c73f4960e56af",
+      "frame_id": "default",
+      "width": 16,
+      "height": 16,
+      "scale": 1,
+      "render_hash": "30c65409ce0b0a0ef88d908a8a96f7d57667cc3538a549f3ab3a3ff9329f3fd9",
+      "text": {
+        "frame_id": "default",
+        "width": 16,
+        "height": 16,
+        "rows": [
+          "22DDDDDDDDDDDDDD",
+          "12DDDDDDDDDDDDDD",
+          "12DDDDDDDDDDDDDD",
+          "12DDDDDDDDDDDDDD",
+          "122DDDDDDDDDDDDD",
+          "112DDDDDDDDDDDDD",
+          "112DDDDDDDDDDDDD",
+          "112DDDDDDDDDDDDD",
+          "1122DDDDDDDDDDDD",
+          "1112DDDDDDDDDDDD",
+          "1112DDDDDDDDDDDD",
+          "1112DDDDDDDDDDDD",
+          "11122DDDDDDDDDDD",
+          "11112DDDDDDDDDDD",
+          "11112DDDDDDDDDDD",
+          "11112DDDDDDDDDDD"
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-far-mirror/revision/2/view"
+      }
+    }
+  },
+  "runner-turn-mid-mirror": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-turn-mid-mirror",
+      "name": "#51 Mansion runner-turn-mid-mirror",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "7dbbcbdc68eab8d5187d5a5c2cc177b063fc4df0fe701e20499d54e783694439",
+      "canvas": {
+        "width": 16,
+        "height": 16
+      },
+      "palette_id": "mi51-bg-crimson",
+      "palette_hash": "5c3be50ea8634eff83358cbdb81fc7a481c211b86036b670d99a8e7d66930fb9",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-mid-mirror",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-mid-mirror/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-mid-mirror/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-mid-mirror/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-turn-mid-mirror",
+      "revision": 2,
+      "revision_hash": "7dbbcbdc68eab8d5187d5a5c2cc177b063fc4df0fe701e20499d54e783694439",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 16,
+        "height": 16,
+        "rows": [
+          "111122DDDDDDDDDD",
+          "111112DDDDDDDDDD",
+          "111112DDDDDDDDDD",
+          "111112DDDDDDDDDD",
+          "1111122DDDDDDDDD",
+          "1111112DDDDDDDDD",
+          "1111112DDDDDDDDD",
+          "1111112DDDDDDDDD",
+          "11111122DDDDDDDD",
+          "11111112DDDDDDDD",
+          "11111112DDDDDDDD",
+          "11111112DDDDDDDD",
+          "111111122DDDDDDD",
+          "111111112DDDDDDD",
+          "111111112DDDDDDD",
+          "111111112DDDDDDD"
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#301b2b"
+          },
+          "2": {
+            "hex": "#6c293f"
+          },
+          "3": {
+            "hex": "#c56879"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 16,
+        "height": 16,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-runner-turn-mid-mirror/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-turn-mid-mirror",
+      "revision": 2,
+      "revision_hash": "7dbbcbdc68eab8d5187d5a5c2cc177b063fc4df0fe701e20499d54e783694439",
+      "frame_id": "default",
+      "width": 16,
+      "height": 16,
+      "scale": 1,
+      "render_hash": "0231984d1660298fcbd6cdc92c9698636d1fee7f0f6559eb8322f4aed946b635",
+      "text": {
+        "frame_id": "default",
+        "width": 16,
+        "height": 16,
+        "rows": [
+          "111122DDDDDDDDDD",
+          "111112DDDDDDDDDD",
+          "111112DDDDDDDDDD",
+          "111112DDDDDDDDDD",
+          "1111122DDDDDDDDD",
+          "1111112DDDDDDDDD",
+          "1111112DDDDDDDDD",
+          "1111112DDDDDDDDD",
+          "11111122DDDDDDDD",
+          "11111112DDDDDDDD",
+          "11111112DDDDDDDD",
+          "11111112DDDDDDDD",
+          "111111122DDDDDDD",
+          "111111112DDDDDDD",
+          "111111112DDDDDDD",
+          "111111112DDDDDDD"
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-mid-mirror/revision/2/view"
+      }
+    }
+  },
+  "runner-turn-near-mirror": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-turn-near-mirror",
+      "name": "#51 Mansion runner-turn-near-mirror",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "76dfead0c9454e3afe2e10806d1d8e69d8cf2d8a6793713401190e9113321aa3",
+      "canvas": {
+        "width": 16,
+        "height": 16
+      },
+      "palette_id": "mi51-bg-crimson",
+      "palette_hash": "5c3be50ea8634eff83358cbdb81fc7a481c211b86036b670d99a8e7d66930fb9",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-near-mirror",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-near-mirror/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-near-mirror/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-near-mirror/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-turn-near-mirror",
+      "revision": 2,
+      "revision_hash": "76dfead0c9454e3afe2e10806d1d8e69d8cf2d8a6793713401190e9113321aa3",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 16,
+        "height": 16,
+        "rows": [
+          "1111111122DDDDDD",
+          "1111111112DDDDDD",
+          "1111111112DDDDDD",
+          "1111111112DDDDDD",
+          "11111111122DDDDD",
+          "11111111112DDDDD",
+          "11111111112DDDDD",
+          "11111111112DDDDD",
+          "111111111122DDDD",
+          "111111111112DDDD",
+          "111111111112DDDD",
+          "111111111112DDDD",
+          "1111111111122DDD",
+          "1111111111112DDD",
+          "1111111111112DDD",
+          "1111111111112DDD"
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#301b2b"
+          },
+          "2": {
+            "hex": "#6c293f"
+          },
+          "3": {
+            "hex": "#c56879"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 16,
+        "height": 16,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-runner-turn-near-mirror/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-turn-near-mirror",
+      "revision": 2,
+      "revision_hash": "76dfead0c9454e3afe2e10806d1d8e69d8cf2d8a6793713401190e9113321aa3",
+      "frame_id": "default",
+      "width": 16,
+      "height": 16,
+      "scale": 1,
+      "render_hash": "ef4d671924f1e2914671cb2063869f32dc1e30d6d40b84eeca0c1f5e897ade81",
+      "text": {
+        "frame_id": "default",
+        "width": 16,
+        "height": 16,
+        "rows": [
+          "1111111122DDDDDD",
+          "1111111112DDDDDD",
+          "1111111112DDDDDD",
+          "1111111112DDDDDD",
+          "11111111122DDDDD",
+          "11111111112DDDDD",
+          "11111111112DDDDD",
+          "11111111112DDDDD",
+          "111111111122DDDD",
+          "111111111112DDDD",
+          "111111111112DDDD",
+          "111111111112DDDD",
+          "1111111111122DDD",
+          "1111111111112DDD",
+          "1111111111112DDD",
+          "1111111111112DDD"
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-near-mirror/revision/2/view"
+      }
+    }
+  },
+  "runner-turn-full-mirror": {
+    "describe": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-turn-full-mirror",
+      "name": "#51 Mansion runner-turn-full-mirror",
+      "class_id": "tile",
+      "current_revision": 2,
+      "current_revision_hash": "2fb59600ae0eae9e842e804aaea2f3f87053872d41ab88344436e358220bae6e",
+      "canvas": {
+        "width": 16,
+        "height": 16
+      },
+      "palette_id": "mi51-bg-crimson",
+      "palette_hash": "5c3be50ea8634eff83358cbdb81fc7a481c211b86036b670d99a8e7d66930fb9",
+      "layers": [
+        {
+          "layer_id": "art",
+          "name": "Art",
+          "visible": true,
+          "order": 0
+        }
+      ],
+      "frames": [
+        {
+          "frame_id": "default",
+          "order": 0,
+          "duration_ms": 100
+        }
+      ],
+      "regions": [],
+      "resources": {
+        "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-full-mirror",
+        "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-full-mirror/revision/2",
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-full-mirror/revision/2/view",
+        "text": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-full-mirror/revision/2/text"
+      }
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-turn-full-mirror",
+      "revision": 2,
+      "revision_hash": "2fb59600ae0eae9e842e804aaea2f3f87053872d41ab88344436e358220bae6e",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 16,
+        "height": 16,
+        "rows": [
+          "11111111111122DD",
+          "11111111111112DD",
+          "11111111111112DD",
+          "11111111111112DD",
+          "111111111111122D",
+          "111111111111112D",
+          "111111111111112D",
+          "111111111111112D",
+          "1111111111111122",
+          "1111111111111112",
+          "1111111111111112",
+          "1111111111111112",
+          "1111111111111122",
+          "1111111111111112",
+          "1111111111111112",
+          "1111111111111112"
+        ],
+        "symbols": {
+          "1": {
+            "hex": "#301b2b"
+          },
+          "2": {
+            "hex": "#6c293f"
+          },
+          "3": {
+            "hex": "#c56879"
+          },
+          ".": {
+            "transparent": true
+          },
+          "D": {
+            "hex": "#10121e"
+          }
+        }
+      },
+      "round_trip": {
+        "width": 16,
+        "height": 16,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-mi51-runner-turn-full-mirror/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-turn-full-mirror",
+      "revision": 2,
+      "revision_hash": "2fb59600ae0eae9e842e804aaea2f3f87053872d41ab88344436e358220bae6e",
+      "frame_id": "default",
+      "width": 16,
+      "height": 16,
+      "scale": 1,
+      "render_hash": "194546dab706d2f07a81a0bebac8520513f3193dc3e6568dc7aa830c09faed53",
+      "text": {
+        "frame_id": "default",
+        "width": 16,
+        "height": 16,
+        "rows": [
+          "11111111111122DD",
+          "11111111111112DD",
+          "11111111111112DD",
+          "11111111111112DD",
+          "111111111111122D",
+          "111111111111112D",
+          "111111111111112D",
+          "111111111111112D",
+          "1111111111111122",
+          "1111111111111112",
+          "1111111111111112",
+          "1111111111111112",
+          "1111111111111122",
+          "1111111111111112",
+          "1111111111111112",
+          "1111111111111112"
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-mi51-runner-turn-full-mirror/revision/2/view"
+      }
+    }
+  }
+}

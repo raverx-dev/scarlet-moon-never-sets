@@ -1,0 +1,1869 @@
+{
+  "wall-joint-b": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-f0e10b4d-7245-485b-af4f-c5eb2bd64d7e",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-wall-joint-b",
+      "revision": 2,
+      "revision_hash": "1333f8d4d4c3dc8a87a385d4802e75b704c86283aeb7712ba22200c78245af59",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "795db3586cba9974b132644c485a4d0d94358ddb69d3a683945850bb7f809c70",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'stone-3' (index 4) is used 0 time(s); max_usage is 0",
+          "fingerprint": "795db3586cba9974b132644c485a4d0d94358ddb69d3a683945850bb7f809c70"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:44:59.226Z"
+    }
+  },
+  "wall-field": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-b2a395b5-48a6-49a9-b8ea-437d6cedf99e",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-wall-field",
+      "revision": 2,
+      "revision_hash": "33f79b8bd46080bfa9eebcc6486d6c72a81e5e65ee70a04f1a3f979e4c4f5e15",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "bbbb13d579bbdbf3933fa0b198a0d62ee657f4afd33bb93b2ebce0f02e49daf9",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'stone-0' (index 1) is used 0 time(s); max_usage is 0",
+          "fingerprint": "bbbb13d579bbdbf3933fa0b198a0d62ee657f4afd33bb93b2ebce0f02e49daf9"
+        },
+        {
+          "finding_id": "bfb35a6e500a5bb2f55f5970a7c5f57d8ebb54cd7f066a8e0831efac065d3b9a",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'stone-2' (index 3) is used 0 time(s); max_usage is 0",
+          "fingerprint": "bfb35a6e500a5bb2f55f5970a7c5f57d8ebb54cd7f066a8e0831efac065d3b9a"
+        },
+        {
+          "finding_id": "795db3586cba9974b132644c485a4d0d94358ddb69d3a683945850bb7f809c70",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'stone-3' (index 4) is used 0 time(s); max_usage is 0",
+          "fingerprint": "795db3586cba9974b132644c485a4d0d94358ddb69d3a683945850bb7f809c70"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:44:59.639Z"
+    }
+  },
+  "floor-field": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-d101200b-1d59-4513-b7a7-8899caf06be7",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-floor-field",
+      "revision": 2,
+      "revision_hash": "083dff45ccd542c90f30d1a3c3528e559a306724d4ba7a5fe50db4615b0940a4",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "bbbb13d579bbdbf3933fa0b198a0d62ee657f4afd33bb93b2ebce0f02e49daf9",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'stone-0' (index 1) is used 0 time(s); max_usage is 0",
+          "fingerprint": "bbbb13d579bbdbf3933fa0b198a0d62ee657f4afd33bb93b2ebce0f02e49daf9"
+        },
+        {
+          "finding_id": "bfb35a6e500a5bb2f55f5970a7c5f57d8ebb54cd7f066a8e0831efac065d3b9a",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'stone-2' (index 3) is used 0 time(s); max_usage is 0",
+          "fingerprint": "bfb35a6e500a5bb2f55f5970a7c5f57d8ebb54cd7f066a8e0831efac065d3b9a"
+        },
+        {
+          "finding_id": "795db3586cba9974b132644c485a4d0d94358ddb69d3a683945850bb7f809c70",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'stone-3' (index 4) is used 0 time(s); max_usage is 0",
+          "fingerprint": "795db3586cba9974b132644c485a4d0d94358ddb69d3a683945850bb7f809c70"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:45:00.005Z"
+    }
+  },
+  "wall-joint-a": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-f7a3b375-4863-4816-97bc-16462ea9460a",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-wall-joint-a",
+      "revision": 2,
+      "revision_hash": "205f94b5c74360957d13437efcfa28f84bddd9a4f99f2f01bff8a67af71af93d",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "bfb35a6e500a5bb2f55f5970a7c5f57d8ebb54cd7f066a8e0831efac065d3b9a",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'stone-2' (index 3) is used 0 time(s); max_usage is 0",
+          "fingerprint": "bfb35a6e500a5bb2f55f5970a7c5f57d8ebb54cd7f066a8e0831efac065d3b9a"
+        },
+        {
+          "finding_id": "795db3586cba9974b132644c485a4d0d94358ddb69d3a683945850bb7f809c70",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'stone-3' (index 4) is used 0 time(s); max_usage is 0",
+          "fingerprint": "795db3586cba9974b132644c485a4d0d94358ddb69d3a683945850bb7f809c70"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:45:00.403Z"
+    }
+  },
+  "floor-joint": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-66edc5d0-05fa-4c13-825a-d05a4e5ac864",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-floor-joint",
+      "revision": 2,
+      "revision_hash": "a758921c2039bfa54bc195cc103106c916a30bec3debb923a5da530b9e59de6c",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "496dfd4ee560d630db58465a57195e25174fc582c41b832a161aa9f0f072b9ad",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 1 is an orphan authored pixel at (7, 7)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 7,
+            "y": 7
+          },
+          "fingerprint": "496dfd4ee560d630db58465a57195e25174fc582c41b832a161aa9f0f072b9ad"
+        },
+        {
+          "finding_id": "bfb35a6e500a5bb2f55f5970a7c5f57d8ebb54cd7f066a8e0831efac065d3b9a",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'stone-2' (index 3) is used 0 time(s); max_usage is 0",
+          "fingerprint": "bfb35a6e500a5bb2f55f5970a7c5f57d8ebb54cd7f066a8e0831efac065d3b9a"
+        },
+        {
+          "finding_id": "795db3586cba9974b132644c485a4d0d94358ddb69d3a683945850bb7f809c70",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'stone-3' (index 4) is used 0 time(s); max_usage is 0",
+          "fingerprint": "795db3586cba9974b132644c485a4d0d94358ddb69d3a683945850bb7f809c70"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:45:00.796Z"
+    }
+  },
+  "floor-worn": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-2502e9f2-8d61-4e96-b4ff-eb00ce651cc0",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-floor-worn",
+      "revision": 3,
+      "revision_hash": "1b5928a86c359cb3d108fc96f6b97c411c56e248374ce470ca7f20a47e8f25db",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "bfb35a6e500a5bb2f55f5970a7c5f57d8ebb54cd7f066a8e0831efac065d3b9a",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'stone-2' (index 3) is used 0 time(s); max_usage is 0",
+          "fingerprint": "bfb35a6e500a5bb2f55f5970a7c5f57d8ebb54cd7f066a8e0831efac065d3b9a"
+        },
+        {
+          "finding_id": "795db3586cba9974b132644c485a4d0d94358ddb69d3a683945850bb7f809c70",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'stone-3' (index 4) is used 0 time(s); max_usage is 0",
+          "fingerprint": "795db3586cba9974b132644c485a4d0d94358ddb69d3a683945850bb7f809c70"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:45:01.166Z"
+    }
+  },
+  "runner-motif": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-7e00fc7b-3fb4-4391-91ba-404d1c614c21",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-motif",
+      "revision": 2,
+      "revision_hash": "5d70ac1d2d7e4e8cf2173c54001531aea028bbfa07dd4d4a0bf260840383b54f",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "3e1903dbc2fde5478a024c975a71416b5cd563f4bb61dbf0ed4eb4cb655d934c",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'crimson-0' (index 1) is used 0 time(s); max_usage is 0",
+          "fingerprint": "3e1903dbc2fde5478a024c975a71416b5cd563f4bb61dbf0ed4eb4cb655d934c"
+        },
+        {
+          "finding_id": "0c01d56920854df547b4c0b51486282f5198f6f2474288c78ecdea4fd87247d9",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'crimson-3' (index 4) is used 0 time(s); max_usage is 0",
+          "fingerprint": "0c01d56920854df547b4c0b51486282f5198f6f2474288c78ecdea4fd87247d9"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:45:01.575Z"
+    }
+  },
+  "cornice": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-19ec8e5b-d3f6-4635-857e-4e1323877ee5",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-cornice",
+      "revision": 2,
+      "revision_hash": "7b72065b9eb95d49e499a28b544eb37407e336c7520e3251125390518a2753be",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "7aa9b25cea8bcb90ae065b4564432310df8fee36453fa7852aad5c6aaed10f73",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (2, 4)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 2,
+            "y": 4
+          },
+          "fingerprint": "7aa9b25cea8bcb90ae065b4564432310df8fee36453fa7852aad5c6aaed10f73"
+        },
+        {
+          "finding_id": "6496bedeea009794a13978154f7a2c8ed2f4f0206c707c5a68afef12e71b4131",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (6, 4)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 6,
+            "y": 4
+          },
+          "fingerprint": "6496bedeea009794a13978154f7a2c8ed2f4f0206c707c5a68afef12e71b4131"
+        },
+        {
+          "finding_id": "4734077d3723de05ce5d0238c1fb56d6b9726e55af8facbdc1fa393b61ed3aa1",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (10, 4)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 10,
+            "y": 4
+          },
+          "fingerprint": "4734077d3723de05ce5d0238c1fb56d6b9726e55af8facbdc1fa393b61ed3aa1"
+        },
+        {
+          "finding_id": "3722b2c893e485b00a37960176b23d81ca5b936c3d8bfd7910ef633fb9d00275",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (14, 4)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 14,
+            "y": 4
+          },
+          "fingerprint": "3722b2c893e485b00a37960176b23d81ca5b936c3d8bfd7910ef633fb9d00275"
+        },
+        {
+          "finding_id": "2ade0f9f01d04d0143329f6f1303e3d25190cd8ecd53ab01a1300d11df4f192f",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (2, 5)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 2,
+            "y": 5
+          },
+          "fingerprint": "2ade0f9f01d04d0143329f6f1303e3d25190cd8ecd53ab01a1300d11df4f192f"
+        },
+        {
+          "finding_id": "d7879f824b39e3110f3de61c775f41fd2114060409c7e0f94de3c6fa58d198fd",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (6, 5)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 6,
+            "y": 5
+          },
+          "fingerprint": "d7879f824b39e3110f3de61c775f41fd2114060409c7e0f94de3c6fa58d198fd"
+        },
+        {
+          "finding_id": "f14cf08e8b8300760011910fe14636af836be946ef2981b96dd348cf5a11f2f1",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (10, 5)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 10,
+            "y": 5
+          },
+          "fingerprint": "f14cf08e8b8300760011910fe14636af836be946ef2981b96dd348cf5a11f2f1"
+        },
+        {
+          "finding_id": "c15bb4b52f8cc92bf3e20f64dc3e54aaafb954acb646f219b1a3c262f277fd7a",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (14, 5)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 14,
+            "y": 5
+          },
+          "fingerprint": "c15bb4b52f8cc92bf3e20f64dc3e54aaafb954acb646f219b1a3c262f277fd7a"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:45:02.025Z"
+    }
+  },
+  "runner-field": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-397633dd-049b-4c55-ba5a-407fd522ea7a",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-field",
+      "revision": 2,
+      "revision_hash": "b11ed4b8745070f98797513315cee8dbc3c2b4182799895d90de58b3b1e3fa8a",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "3e1903dbc2fde5478a024c975a71416b5cd563f4bb61dbf0ed4eb4cb655d934c",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'crimson-0' (index 1) is used 0 time(s); max_usage is 0",
+          "fingerprint": "3e1903dbc2fde5478a024c975a71416b5cd563f4bb61dbf0ed4eb4cb655d934c"
+        },
+        {
+          "finding_id": "0cd750d1f95500d5a5e63ebc0c8788b8ea4c35f7d11ad8cecc5e7e95554850ee",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'crimson-2' (index 3) is used 0 time(s); max_usage is 0",
+          "fingerprint": "0cd750d1f95500d5a5e63ebc0c8788b8ea4c35f7d11ad8cecc5e7e95554850ee"
+        },
+        {
+          "finding_id": "0c01d56920854df547b4c0b51486282f5198f6f2474288c78ecdea4fd87247d9",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'crimson-3' (index 4) is used 0 time(s); max_usage is 0",
+          "fingerprint": "0c01d56920854df547b4c0b51486282f5198f6f2474288c78ecdea4fd87247d9"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:45:02.383Z"
+    }
+  },
+  "pier-shaft": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-d94892a2-29b9-43ec-b986-d2c27c37354a",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-pier-shaft",
+      "revision": 2,
+      "revision_hash": "47243870d44c5dd5b71998ae13a27434ff3bdacfbc8a0d9013e44a9358a22144",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:45:02.794Z"
+    }
+  },
+  "pier-cap": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-47a70f3a-1397-4b10-adff-e6325f20760d",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-pier-cap",
+      "revision": 2,
+      "revision_hash": "ca8ecab3435d9b2f16f45e1027e84e6bbf0c2302240f221e41e8fca943a8b8b3",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "bbbb13d579bbdbf3933fa0b198a0d62ee657f4afd33bb93b2ebce0f02e49daf9",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'stone-0' (index 1) is used 0 time(s); max_usage is 0",
+          "fingerprint": "bbbb13d579bbdbf3933fa0b198a0d62ee657f4afd33bb93b2ebce0f02e49daf9"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:45:03.211Z"
+    }
+  },
+  "pier-collar": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-705997a9-9e6a-46e3-aac9-45cc7e735da6",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-pier-collar",
+      "revision": 2,
+      "revision_hash": "f12b81de8b0e534f484da6e60e01c8ae742b0c5f7e3c1ef05040e34c9b78c72d",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:45:03.656Z"
+    }
+  },
+  "pier-base": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-d195c3bb-f9a0-4c34-9682-6cb65c248147",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-pier-base",
+      "revision": 2,
+      "revision_hash": "530181be435dcfcf79db1867e0dc6ef8d8c72ab87844bbdc9182e79910b282a4",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "d1411b82731634d2e40dcbf819052349840ea11b833291c5982d8c1cd74463ed",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (12, 3)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 12,
+            "y": 3
+          },
+          "fingerprint": "d1411b82731634d2e40dcbf819052349840ea11b833291c5982d8c1cd74463ed"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:45:04.074Z"
+    }
+  },
+  "dado-panel": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-48beb3d6-9ea0-456d-a2a8-bac4b6fc23ee",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-dado-panel",
+      "revision": 2,
+      "revision_hash": "8eba0932482e2bbd3db01e98c1ab1cb6ee53b163ea225f535edc41cf6ec19e79",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:45:04.459Z"
+    }
+  },
+  "stair-stone": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-5e28070b-3565-4c31-bd3a-ae8a09992a04",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-stair-stone",
+      "revision": 2,
+      "revision_hash": "59294bfe653b209acc095b2bdd8697415f782c94c3cbafd747e8b534fa2c9e5f",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:45:04.791Z"
+    }
+  },
+  "lancet-near": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-1f82719d-8703-4ed3-80e9-884b6d0f82a8",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-lancet-near",
+      "revision": 2,
+      "revision_hash": "d370242944513547764add5187b0a0e8cf03f979d6470f57621fe76ef6bf5390",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "70b9f95753a63e09a95756d0a29a41bf6fb72aca6d40d171a3e37b6ca948f43c",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (6, 20)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 6,
+            "y": 20
+          },
+          "fingerprint": "70b9f95753a63e09a95756d0a29a41bf6fb72aca6d40d171a3e37b6ca948f43c"
+        },
+        {
+          "finding_id": "968889daa25c21ffc513e160085d1cd6cc17ec83a35d96e2672814203668e59b",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (9, 20)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 9,
+            "y": 20
+          },
+          "fingerprint": "968889daa25c21ffc513e160085d1cd6cc17ec83a35d96e2672814203668e59b"
+        },
+        {
+          "finding_id": "54d5ae7479099b199514399aa46036eace5606446e19640510f2c6e5e5f22ee6",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (6, 25)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 6,
+            "y": 25
+          },
+          "fingerprint": "54d5ae7479099b199514399aa46036eace5606446e19640510f2c6e5e5f22ee6"
+        },
+        {
+          "finding_id": "4648ffae50b91fbc6ef8346546aa26d150848bba51b653c9144ab9d9f4a244db",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (9, 25)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 9,
+            "y": 25
+          },
+          "fingerprint": "4648ffae50b91fbc6ef8346546aa26d150848bba51b653c9144ab9d9f4a244db"
+        },
+        {
+          "finding_id": "d9dad9e6f4475faa95ecc7bc96f175d1531c9c989aba759978860a2e27e9410a",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (6, 30)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 6,
+            "y": 30
+          },
+          "fingerprint": "d9dad9e6f4475faa95ecc7bc96f175d1531c9c989aba759978860a2e27e9410a"
+        },
+        {
+          "finding_id": "6822581760acdb48c82242f61ba5a3370d2a1e09a0304bf31f12e534c8af558d",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (9, 30)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 9,
+            "y": 30
+          },
+          "fingerprint": "6822581760acdb48c82242f61ba5a3370d2a1e09a0304bf31f12e534c8af558d"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:45:05.197Z"
+    }
+  },
+  "stair-runner": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-1c424d49-8581-4d77-bae2-d4efc54a2209",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-stair-runner",
+      "revision": 2,
+      "revision_hash": "f9fc9ff6b310c28cb487ef1710dfcf033d344333fe50cf3ffc646396566ebaa7",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "0c01d56920854df547b4c0b51486282f5198f6f2474288c78ecdea4fd87247d9",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'crimson-3' (index 4) is used 0 time(s); max_usage is 0",
+          "fingerprint": "0c01d56920854df547b4c0b51486282f5198f6f2474288c78ecdea4fd87247d9"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:45:05.564Z"
+    }
+  },
+  "lancet-ruby": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-d2debdb5-9b05-445c-8ede-e23302ef05b6",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-lancet-ruby",
+      "revision": 2,
+      "revision_hash": "997fc19cea24f591b25c90519fd103b172d87baf22d414294f203fbdaf97e50d",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "70b9f95753a63e09a95756d0a29a41bf6fb72aca6d40d171a3e37b6ca948f43c",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (6, 20)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 6,
+            "y": 20
+          },
+          "fingerprint": "70b9f95753a63e09a95756d0a29a41bf6fb72aca6d40d171a3e37b6ca948f43c"
+        },
+        {
+          "finding_id": "968889daa25c21ffc513e160085d1cd6cc17ec83a35d96e2672814203668e59b",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (9, 20)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 9,
+            "y": 20
+          },
+          "fingerprint": "968889daa25c21ffc513e160085d1cd6cc17ec83a35d96e2672814203668e59b"
+        },
+        {
+          "finding_id": "54d5ae7479099b199514399aa46036eace5606446e19640510f2c6e5e5f22ee6",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (6, 25)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 6,
+            "y": 25
+          },
+          "fingerprint": "54d5ae7479099b199514399aa46036eace5606446e19640510f2c6e5e5f22ee6"
+        },
+        {
+          "finding_id": "4648ffae50b91fbc6ef8346546aa26d150848bba51b653c9144ab9d9f4a244db",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (9, 25)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 9,
+            "y": 25
+          },
+          "fingerprint": "4648ffae50b91fbc6ef8346546aa26d150848bba51b653c9144ab9d9f4a244db"
+        },
+        {
+          "finding_id": "d9dad9e6f4475faa95ecc7bc96f175d1531c9c989aba759978860a2e27e9410a",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (6, 30)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 6,
+            "y": 30
+          },
+          "fingerprint": "d9dad9e6f4475faa95ecc7bc96f175d1531c9c989aba759978860a2e27e9410a"
+        },
+        {
+          "finding_id": "6822581760acdb48c82242f61ba5a3370d2a1e09a0304bf31f12e534c8af558d",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (9, 30)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 9,
+            "y": 30
+          },
+          "fingerprint": "6822581760acdb48c82242f61ba5a3370d2a1e09a0304bf31f12e534c8af558d"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:45:06.014Z"
+    }
+  },
+  "arch-shoulder": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-9bb8ca22-0443-4419-b99f-be818bba6336",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-arch-shoulder",
+      "revision": 3,
+      "revision_hash": "7678875fe69cee1f396d7bd8f5436a861cb15b99b7f3373002942724775ebe5b",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "fe41c4e6c11ad4d09f2b56d46ec1d683b938dac2113dd2b83bb370a3f56871f2",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (4, 10)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 4,
+            "y": 10
+          },
+          "fingerprint": "fe41c4e6c11ad4d09f2b56d46ec1d683b938dac2113dd2b83bb370a3f56871f2"
+        },
+        {
+          "finding_id": "c752b9453399e4865f258bd6f02099ce483f68a7283c98fd91ac6cc6233efe04",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (3, 12)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 3,
+            "y": 12
+          },
+          "fingerprint": "c752b9453399e4865f258bd6f02099ce483f68a7283c98fd91ac6cc6233efe04"
+        },
+        {
+          "finding_id": "faa98f7fad443867c9acc045c7cfc85d150720bc9fec9f07cef4e2b1aba5436d",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (2, 14)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 2,
+            "y": 14
+          },
+          "fingerprint": "faa98f7fad443867c9acc045c7cfc85d150720bc9fec9f07cef4e2b1aba5436d"
+        },
+        {
+          "finding_id": "c383e1ab0fa347b4bebf177b63618470f966e2801dd0f7ef43bf8af9b67cb175",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (1, 16)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 1,
+            "y": 16
+          },
+          "fingerprint": "c383e1ab0fa347b4bebf177b63618470f966e2801dd0f7ef43bf8af9b67cb175"
+        },
+        {
+          "finding_id": "d17a509586a113f1f736588ee432fbf311e13a8bfb13642ec74f707ca297f634",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (0, 20)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 0,
+            "y": 20
+          },
+          "fingerprint": "d17a509586a113f1f736588ee432fbf311e13a8bfb13642ec74f707ca297f634"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:45:06.542Z"
+    }
+  },
+  "lancet-far": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-fe47f27d-dbf9-4fc9-9c53-5ec14d5ea404",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-lancet-far",
+      "revision": 2,
+      "revision_hash": "627768dd76fb323d0c7134f5b60827bda1a6287ba201ed10ffda9685c12f5d08",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:45:06.907Z"
+    }
+  },
+  "arch-foot": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-efff2aa9-1855-4076-841e-ad8c7e5c6cd0",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-arch-foot",
+      "revision": 2,
+      "revision_hash": "b154c68606a2808c4c518342c8cf143cfba1a2e0cfff0181c930cbec1dbbc86f",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:45:07.209Z"
+    }
+  },
+  "arch-jamb": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-fae98221-7bb4-4899-a5da-68ecd600aed1",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-arch-jamb",
+      "revision": 2,
+      "revision_hash": "4069ecc08287b33fdac57ac2959536d9ac8f815b8dbaea6635430ce3e662579a",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:45:07.585Z"
+    }
+  },
+  "banner": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-3098d06b-2af2-4f88-88d3-0d9a76f94ea2",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-banner",
+      "revision": 2,
+      "revision_hash": "608e8b7d6184744977ebe725128d0c4b336563976f01258e531c4fee6b82ec93",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:45:07.828Z"
+    }
+  },
+  "sconce": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-499055a1-47ac-4e28-bfd7-74dc2ac44ee9",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-sconce",
+      "revision": 2,
+      "revision_hash": "00a87694f5be30fbe045dfb5db582400dac2bef5b729ff7c6090d8cd6ff3524d",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "e8b7c3c4149605de27ff51ee1c2ad343781afbf456f04b63b2de18aabfcd08d5",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (6, 12)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 6,
+            "y": 12
+          },
+          "fingerprint": "e8b7c3c4149605de27ff51ee1c2ad343781afbf456f04b63b2de18aabfcd08d5"
+        },
+        {
+          "finding_id": "de9e1640ec27a1c82a8600f362e7019efec27e76200dd987ae3486060a3a3d6d",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (8, 12)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 8,
+            "y": 12
+          },
+          "fingerprint": "de9e1640ec27a1c82a8600f362e7019efec27e76200dd987ae3486060a3a3d6d"
+        },
+        {
+          "finding_id": "0253cfe2ba1931c3c52ecc69fec9066c14f9b18a6eaff5a87f8a8982d24f215c",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (7, 14)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 7,
+            "y": 14
+          },
+          "fingerprint": "0253cfe2ba1931c3c52ecc69fec9066c14f9b18a6eaff5a87f8a8982d24f215c"
+        },
+        {
+          "finding_id": "a0de102f4f5fc5f3f45f8e08281510d4c4b25e15e646c5da9cb82b074c3b85cb",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'warm-0' (index 1) is used 0 time(s); max_usage is 0",
+          "fingerprint": "a0de102f4f5fc5f3f45f8e08281510d4c4b25e15e646c5da9cb82b074c3b85cb"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:45:08.194Z"
+    }
+  },
+  "rose": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-135e5b14-7b61-43d6-a9fb-0d83b593d498",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-rose",
+      "revision": 4,
+      "revision_hash": "553bb309716e308de12b13e6f4209fbdd398881faa7254023adb353122d4b36e",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "f763d57a89eae4897fa53f03f0b346b443a272b4288eb0ec1c63b08cdc65f7e6",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (17, 5)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 17,
+            "y": 5
+          },
+          "fingerprint": "f763d57a89eae4897fa53f03f0b346b443a272b4288eb0ec1c63b08cdc65f7e6"
+        },
+        {
+          "finding_id": "3012335342af4a5af00f19d199ddef6421d489d6784f4f0a70f12bfad2a56b13",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (46, 5)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 46,
+            "y": 5
+          },
+          "fingerprint": "3012335342af4a5af00f19d199ddef6421d489d6784f4f0a70f12bfad2a56b13"
+        },
+        {
+          "finding_id": "f91caaad79978fd7ec8b6e8eb0904a22afabfdb14621aab9ad425955c30b290d",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (3, 15)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 3,
+            "y": 15
+          },
+          "fingerprint": "f91caaad79978fd7ec8b6e8eb0904a22afabfdb14621aab9ad425955c30b290d"
+        },
+        {
+          "finding_id": "37850d9d8228dbc02ccfc33490f4d4649127bd52e1306a818b4fb1287f6de88b",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (60, 15)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 60,
+            "y": 15
+          },
+          "fingerprint": "37850d9d8228dbc02ccfc33490f4d4649127bd52e1306a818b4fb1287f6de88b"
+        },
+        {
+          "finding_id": "2c9a8cfaa5f6623e1f1c2965b8abbdd7cd528b6250fe7c033d52444c338467e0",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (2, 17)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 2,
+            "y": 17
+          },
+          "fingerprint": "2c9a8cfaa5f6623e1f1c2965b8abbdd7cd528b6250fe7c033d52444c338467e0"
+        },
+        {
+          "finding_id": "20f33d82d69cad37bce16e42acb1983d5319577bb47aab1887181904cec59353",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (61, 17)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 61,
+            "y": 17
+          },
+          "fingerprint": "20f33d82d69cad37bce16e42acb1983d5319577bb47aab1887181904cec59353"
+        },
+        {
+          "finding_id": "9957195623a3e8de0b94da12caf0718efdce64a60baddae4f875f2ac33cd3b3f",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (1, 20)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 1,
+            "y": 20
+          },
+          "fingerprint": "9957195623a3e8de0b94da12caf0718efdce64a60baddae4f875f2ac33cd3b3f"
+        },
+        {
+          "finding_id": "9246b0b3bea290408c26efd244cb95eebefe4f3c2195e0117171e4e2fb822542",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (62, 20)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 62,
+            "y": 20
+          },
+          "fingerprint": "9246b0b3bea290408c26efd244cb95eebefe4f3c2195e0117171e4e2fb822542"
+        },
+        {
+          "finding_id": "d623773d7f6008a92367b24675560f8f47e05d5c22d8ae24dde7fcdfeb9322c8",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (0, 23)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 0,
+            "y": 23
+          },
+          "fingerprint": "d623773d7f6008a92367b24675560f8f47e05d5c22d8ae24dde7fcdfeb9322c8"
+        },
+        {
+          "finding_id": "69a29176f5d3114c2393e58b0ab8652b73dfcfbe71f5bd440962adccccd5d951",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (63, 23)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 63,
+            "y": 23
+          },
+          "fingerprint": "69a29176f5d3114c2393e58b0ab8652b73dfcfbe71f5bd440962adccccd5d951"
+        },
+        {
+          "finding_id": "18ff496ec4eb578bd8fc6c40ebf3505bb0994ee651be41e519298e99053ec22f",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (0, 40)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 0,
+            "y": 40
+          },
+          "fingerprint": "18ff496ec4eb578bd8fc6c40ebf3505bb0994ee651be41e519298e99053ec22f"
+        },
+        {
+          "finding_id": "548a29d7265fda9c6a7d49a33f658b9e68838b93f269fa9225990e3d0a144b3b",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (63, 40)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 63,
+            "y": 40
+          },
+          "fingerprint": "548a29d7265fda9c6a7d49a33f658b9e68838b93f269fa9225990e3d0a144b3b"
+        },
+        {
+          "finding_id": "08df9410a40aeeba32a53ed7dcf6d21637c0a182d165ba2e07d9179a264cd880",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (1, 43)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 1,
+            "y": 43
+          },
+          "fingerprint": "08df9410a40aeeba32a53ed7dcf6d21637c0a182d165ba2e07d9179a264cd880"
+        },
+        {
+          "finding_id": "ca1eb05141f0e669505558eabe3aea46a101e4d423a2c85c00aabc831964413e",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (62, 43)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 62,
+            "y": 43
+          },
+          "fingerprint": "ca1eb05141f0e669505558eabe3aea46a101e4d423a2c85c00aabc831964413e"
+        },
+        {
+          "finding_id": "d6c6a9ea86e338045bd7e52895b162a607ad9aa8b6e9acc9a4dadae673f349c6",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (2, 46)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 2,
+            "y": 46
+          },
+          "fingerprint": "d6c6a9ea86e338045bd7e52895b162a607ad9aa8b6e9acc9a4dadae673f349c6"
+        },
+        {
+          "finding_id": "a2d34faa0c3fdf603686c6828043d46b31868b7d550f21cf13da1aa67fa673ff",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (61, 46)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 61,
+            "y": 46
+          },
+          "fingerprint": "a2d34faa0c3fdf603686c6828043d46b31868b7d550f21cf13da1aa67fa673ff"
+        },
+        {
+          "finding_id": "de23c96d2772ca98cd7882d97f87835581d70d4f16ade7b88bd18c9f63ef9263",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (3, 48)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 3,
+            "y": 48
+          },
+          "fingerprint": "de23c96d2772ca98cd7882d97f87835581d70d4f16ade7b88bd18c9f63ef9263"
+        },
+        {
+          "finding_id": "f1b66529eb1ad0f7aa49c42c5db35b42d040a113d3a1c9d63a8289184e829145",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (60, 48)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 60,
+            "y": 48
+          },
+          "fingerprint": "f1b66529eb1ad0f7aa49c42c5db35b42d040a113d3a1c9d63a8289184e829145"
+        },
+        {
+          "finding_id": "0cc0302b193047c1b064e130b854a84291a880eb1b8082bbfda42f4cf0973c03",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (17, 58)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 17,
+            "y": 58
+          },
+          "fingerprint": "0cc0302b193047c1b064e130b854a84291a880eb1b8082bbfda42f4cf0973c03"
+        },
+        {
+          "finding_id": "d85ede8b83af9e71baeb69071d7e445fc91b5771bdcfc7399f1489f1f8d944ce",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (46, 58)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 46,
+            "y": 58
+          },
+          "fingerprint": "d85ede8b83af9e71baeb69071d7e445fc91b5771bdcfc7399f1489f1f8d944ce"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:45:08.555Z"
+    }
+  },
+  "backdrop": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-94fc9d28-0130-4534-b2c1-fbc04255d720",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-backdrop",
+      "revision": 2,
+      "revision_hash": "291b0594a00861961e4e47baf8505cf785fff0c02462239e87e3579d32c6a4b3",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "1a76440cd22baf38bd2a5ddb5b7131fb59cb21e07c5a17892bad1df3791d967a",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'stone-1' (index 2) is used 0 time(s); max_usage is 0",
+          "fingerprint": "1a76440cd22baf38bd2a5ddb5b7131fb59cb21e07c5a17892bad1df3791d967a"
+        },
+        {
+          "finding_id": "bfb35a6e500a5bb2f55f5970a7c5f57d8ebb54cd7f066a8e0831efac065d3b9a",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'stone-2' (index 3) is used 0 time(s); max_usage is 0",
+          "fingerprint": "bfb35a6e500a5bb2f55f5970a7c5f57d8ebb54cd7f066a8e0831efac065d3b9a"
+        },
+        {
+          "finding_id": "795db3586cba9974b132644c485a4d0d94358ddb69d3a683945850bb7f809c70",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'stone-3' (index 4) is used 0 time(s); max_usage is 0",
+          "fingerprint": "795db3586cba9974b132644c485a4d0d94358ddb69d3a683945850bb7f809c70"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:45:08.983Z"
+    }
+  },
+  "runner-turn-far": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-cd487f41-dff2-4e8e-8406-6e6c2faab3f7",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-turn-far",
+      "revision": 2,
+      "revision_hash": "928b9cc30c6b174e761b593bf6ddf4c11ea776372dfd11c0545ea3b7b2f47e77",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "0c01d56920854df547b4c0b51486282f5198f6f2474288c78ecdea4fd87247d9",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'crimson-3' (index 4) is used 0 time(s); max_usage is 0",
+          "fingerprint": "0c01d56920854df547b4c0b51486282f5198f6f2474288c78ecdea4fd87247d9"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:45:09.383Z"
+    }
+  },
+  "runner-turn-mid": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-75a4d619-a632-4110-b590-43e86a2ca521",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-turn-mid",
+      "revision": 2,
+      "revision_hash": "5bf59889de2dc96a5a54a88024bc3a59fccae6da14815452b5366f73c58ec34d",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "0c01d56920854df547b4c0b51486282f5198f6f2474288c78ecdea4fd87247d9",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'crimson-3' (index 4) is used 0 time(s); max_usage is 0",
+          "fingerprint": "0c01d56920854df547b4c0b51486282f5198f6f2474288c78ecdea4fd87247d9"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:45:09.782Z"
+    }
+  },
+  "runner-turn-near": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-0a5542d9-4203-4dbc-8ced-3008643a8791",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-turn-near",
+      "revision": 2,
+      "revision_hash": "c59d48c81bcbbd5305dd0a67f9482079782ca590d17d120664ac8f190e45928f",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "0c01d56920854df547b4c0b51486282f5198f6f2474288c78ecdea4fd87247d9",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'crimson-3' (index 4) is used 0 time(s); max_usage is 0",
+          "fingerprint": "0c01d56920854df547b4c0b51486282f5198f6f2474288c78ecdea4fd87247d9"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:45:10.171Z"
+    }
+  },
+  "near-pier-cap": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-27bce700-96ad-47a1-b5b2-8f0840f734f3",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-near-pier-cap",
+      "revision": 2,
+      "revision_hash": "4225645973d905d13fb91ac46fa5861fc06cb1c7348777e047dcf33a18a689bc",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "f748e581980d52afc3dc1437850cfd4163fcd768dd66cb6f972387339e00ee26",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 4 is an orphan authored pixel at (27, 4)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 27,
+            "y": 4
+          },
+          "fingerprint": "f748e581980d52afc3dc1437850cfd4163fcd768dd66cb6f972387339e00ee26"
+        },
+        {
+          "finding_id": "6a7fb9379089a66663b87c88cc88e1354a44f246b2e6b67edd2512b5ec75f530",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (10, 8)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 10,
+            "y": 8
+          },
+          "fingerprint": "6a7fb9379089a66663b87c88cc88e1354a44f246b2e6b67edd2512b5ec75f530"
+        },
+        {
+          "finding_id": "ba843068f1ad75b3aa07a5f20e03692899836e6468b6cdac633eaf9a1a61d252",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 2 is an orphan authored pixel at (19, 8)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 19,
+            "y": 8
+          },
+          "fingerprint": "ba843068f1ad75b3aa07a5f20e03692899836e6468b6cdac633eaf9a1a61d252"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:45:10.473Z"
+    }
+  },
+  "runner-turn-full": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-b6158db0-060f-409d-ba34-acef84dc70e5",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-turn-full",
+      "revision": 2,
+      "revision_hash": "1de9260c607e8fec6bf01f0a812616daf1c6e9b11e373837df5014ac690959ab",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "0c01d56920854df547b4c0b51486282f5198f6f2474288c78ecdea4fd87247d9",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'crimson-3' (index 4) is used 0 time(s); max_usage is 0",
+          "fingerprint": "0c01d56920854df547b4c0b51486282f5198f6f2474288c78ecdea4fd87247d9"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:45:10.930Z"
+    }
+  },
+  "near-pier-shaft": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-7aa9a59e-1728-4856-a6fa-a0e4e274fb4e",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-near-pier-shaft",
+      "revision": 2,
+      "revision_hash": "48bf04925e6fc34a21bcf6b2f845b0c9dc11a6bb6aee16ec7104c8ca10d7ba7c",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:45:11.380Z"
+    }
+  },
+  "near-pier-base": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-633783d8-4f15-4820-bdf5-88f705ffbde9",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-near-pier-base",
+      "revision": 2,
+      "revision_hash": "820ec2d98ee36bcf45583d11a9eb10e1f1178a0074daca086110cccfe1ae7a77",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:45:11.732Z"
+    }
+  },
+  "door": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-59930ef0-c8c8-4021-b43b-c5a881052126",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-door",
+      "revision": 2,
+      "revision_hash": "e29068e36b46d03c19f9f955532940c5cf8ab6fcc886b3090f2bc39f5803cf5c",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:45:12.237Z"
+    }
+  },
+  "arch-jamb-mirror": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-8106a40a-1df0-4123-b68d-6f4fa95d867d",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-arch-jamb-mirror",
+      "revision": 2,
+      "revision_hash": "337d99413a0be7aca7b19021775d4213b134eebca27493f3c351b6fb28cbe49d",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:47:22.437Z"
+    }
+  },
+  "arch-shoulder-mirror": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-b860bc20-cfdc-442c-b32b-b52b81721f66",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-arch-shoulder-mirror",
+      "revision": 2,
+      "revision_hash": "b9f52c64b798e3d2fdc09a8f76e39c7d3f6195b2dcc814672abc5f578199bcaf",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "78239d0f60dd0ce2accc9a00ed29f8994739aa481395e7d0da6ba8f20551a6ad",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (11, 10)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 11,
+            "y": 10
+          },
+          "fingerprint": "78239d0f60dd0ce2accc9a00ed29f8994739aa481395e7d0da6ba8f20551a6ad"
+        },
+        {
+          "finding_id": "eac5844b2359fc913420dd1365699abf93b178bcf55b3f55ad242dd11caf4734",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (12, 12)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 12,
+            "y": 12
+          },
+          "fingerprint": "eac5844b2359fc913420dd1365699abf93b178bcf55b3f55ad242dd11caf4734"
+        },
+        {
+          "finding_id": "4d225e6f62c25483ffa3a41b4510d5f39541556e801c96b502bb497f73c7c294",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (13, 14)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 13,
+            "y": 14
+          },
+          "fingerprint": "4d225e6f62c25483ffa3a41b4510d5f39541556e801c96b502bb497f73c7c294"
+        },
+        {
+          "finding_id": "da460d370577c4102d1e0a9eb0c5cb36f95ea77868234127ea86dd72d7d31495",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (14, 16)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 14,
+            "y": 16
+          },
+          "fingerprint": "da460d370577c4102d1e0a9eb0c5cb36f95ea77868234127ea86dd72d7d31495"
+        },
+        {
+          "finding_id": "438a56ccb4fe4b999b6ee9cd029e81f1473dcbd7952a26f5d902e9e484b63d7c",
+          "rule_id": "pixel-orphans",
+          "disposition": "warning",
+          "message": "palette index 3 is an orphan authored pixel at (15, 20)",
+          "location": {
+            "frame_id": "default",
+            "layer_id": "art",
+            "x": 15,
+            "y": 20
+          },
+          "fingerprint": "438a56ccb4fe4b999b6ee9cd029e81f1473dcbd7952a26f5d902e9e484b63d7c"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:47:22.923Z"
+    }
+  },
+  "arch-foot-mirror": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-c76d07b6-9b8b-41bd-b5cb-d21eb3cf7b30",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-arch-foot-mirror",
+      "revision": 2,
+      "revision_hash": "51182b668f7f820884a0e631f25a028b02c103aa574071fc8b24967571758999",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:47:23.330Z"
+    }
+  },
+  "runner-turn-far-mirror": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-8146eb2b-66d0-472e-9fe8-cd4f17c533ea",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-turn-far-mirror",
+      "revision": 2,
+      "revision_hash": "1264c6f987ae6d6ab7f0974d37a3e6bc84144ad6858022187a5c73f4960e56af",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "0c01d56920854df547b4c0b51486282f5198f6f2474288c78ecdea4fd87247d9",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'crimson-3' (index 4) is used 0 time(s); max_usage is 0",
+          "fingerprint": "0c01d56920854df547b4c0b51486282f5198f6f2474288c78ecdea4fd87247d9"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:47:23.844Z"
+    }
+  },
+  "runner-turn-near-mirror": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-3fa76dd2-9da5-48bb-ae10-f801af4f6301",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-turn-near-mirror",
+      "revision": 2,
+      "revision_hash": "76dfead0c9454e3afe2e10806d1d8e69d8cf2d8a6793713401190e9113321aa3",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "0c01d56920854df547b4c0b51486282f5198f6f2474288c78ecdea4fd87247d9",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'crimson-3' (index 4) is used 0 time(s); max_usage is 0",
+          "fingerprint": "0c01d56920854df547b4c0b51486282f5198f6f2474288c78ecdea4fd87247d9"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:47:24.354Z"
+    }
+  },
+  "runner-turn-mid-mirror": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-bef7bd71-97c1-414d-81c8-9268a1375074",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-turn-mid-mirror",
+      "revision": 2,
+      "revision_hash": "7dbbcbdc68eab8d5187d5a5c2cc177b063fc4df0fe701e20499d54e783694439",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "0c01d56920854df547b4c0b51486282f5198f6f2474288c78ecdea4fd87247d9",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'crimson-3' (index 4) is used 0 time(s); max_usage is 0",
+          "fingerprint": "0c01d56920854df547b4c0b51486282f5198f6f2474288c78ecdea4fd87247d9"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:47:24.866Z"
+    }
+  },
+  "runner-turn-full-mirror": {
+    "report": {
+      "schema": "robopixel.validation/v1",
+      "validation_id": "validation-ac0f6598-d881-472e-8aa3-bb0d32368e79",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-mi51-runner-turn-full-mirror",
+      "revision": 2,
+      "revision_hash": "2fb59600ae0eae9e842e804aaea2f3f87053872d41ab88344436e358220bae6e",
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "passed": true,
+      "findings": [
+        {
+          "finding_id": "0c01d56920854df547b4c0b51486282f5198f6f2474288c78ecdea4fd87247d9",
+          "rule_id": "unused-colors",
+          "disposition": "info",
+          "message": "palette color 'crimson-3' (index 4) is used 0 time(s); max_usage is 0",
+          "fingerprint": "0c01d56920854df547b4c0b51486282f5198f6f2474288c78ecdea4fd87247d9"
+        }
+      ],
+      "applied_waivers": [],
+      "validator_versions": {
+        "robopixel.revision-structural@1": "1",
+        "robopixel.pixel-lint.orphans@1": "1",
+        "robopixel.pixel-lint.unused-colors@1": "1",
+        "robopixel.pixel-lint.near-duplicates@1": "1"
+      },
+      "created_at": "2026-10-03T12:47:25.193Z"
+    }
+  }
+}
