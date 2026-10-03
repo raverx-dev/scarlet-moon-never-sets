@@ -1,0 +1,7214 @@
+{
+  "schema": "scarlet.mi51-layout/v1",
+  "width": 192,
+  "height": 240,
+  "backdrop": "#10121e",
+  "quiet_lane": {
+    "x": 64,
+    "y": 128,
+    "width": 64,
+    "height": 112
+  },
+  "placements": [
+    {
+      "asset": "backdrop",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "asset": "backdrop",
+      "x": 8,
+      "y": 0
+    },
+    {
+      "asset": "backdrop",
+      "x": 16,
+      "y": 0
+    },
+    {
+      "asset": "backdrop",
+      "x": 24,
+      "y": 0
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 0
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 0
+    },
+    {
+      "asset": "backdrop",
+      "x": 48,
+      "y": 0
+    },
+    {
+      "asset": "backdrop",
+      "x": 56,
+      "y": 0
+    },
+    {
+      "asset": "backdrop",
+      "x": 64,
+      "y": 0
+    },
+    {
+      "asset": "backdrop",
+      "x": 72,
+      "y": 0
+    },
+    {
+      "asset": "backdrop",
+      "x": 80,
+      "y": 0
+    },
+    {
+      "asset": "backdrop",
+      "x": 88,
+      "y": 0
+    },
+    {
+      "asset": "backdrop",
+      "x": 96,
+      "y": 0
+    },
+    {
+      "asset": "backdrop",
+      "x": 104,
+      "y": 0
+    },
+    {
+      "asset": "backdrop",
+      "x": 112,
+      "y": 0
+    },
+    {
+      "asset": "backdrop",
+      "x": 120,
+      "y": 0
+    },
+    {
+      "asset": "backdrop",
+      "x": 128,
+      "y": 0
+    },
+    {
+      "asset": "backdrop",
+      "x": 136,
+      "y": 0
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 0
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 0
+    },
+    {
+      "asset": "backdrop",
+      "x": 160,
+      "y": 0
+    },
+    {
+      "asset": "backdrop",
+      "x": 168,
+      "y": 0
+    },
+    {
+      "asset": "backdrop",
+      "x": 176,
+      "y": 0
+    },
+    {
+      "asset": "backdrop",
+      "x": 184,
+      "y": 0
+    },
+    {
+      "asset": "backdrop",
+      "x": 0,
+      "y": 8
+    },
+    {
+      "asset": "backdrop",
+      "x": 8,
+      "y": 8
+    },
+    {
+      "asset": "backdrop",
+      "x": 16,
+      "y": 8
+    },
+    {
+      "asset": "backdrop",
+      "x": 24,
+      "y": 8
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 8
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 8
+    },
+    {
+      "asset": "backdrop",
+      "x": 48,
+      "y": 8
+    },
+    {
+      "asset": "backdrop",
+      "x": 56,
+      "y": 8
+    },
+    {
+      "asset": "backdrop",
+      "x": 64,
+      "y": 8
+    },
+    {
+      "asset": "backdrop",
+      "x": 72,
+      "y": 8
+    },
+    {
+      "asset": "backdrop",
+      "x": 80,
+      "y": 8
+    },
+    {
+      "asset": "backdrop",
+      "x": 88,
+      "y": 8
+    },
+    {
+      "asset": "backdrop",
+      "x": 96,
+      "y": 8
+    },
+    {
+      "asset": "backdrop",
+      "x": 104,
+      "y": 8
+    },
+    {
+      "asset": "backdrop",
+      "x": 112,
+      "y": 8
+    },
+    {
+      "asset": "backdrop",
+      "x": 120,
+      "y": 8
+    },
+    {
+      "asset": "backdrop",
+      "x": 128,
+      "y": 8
+    },
+    {
+      "asset": "backdrop",
+      "x": 136,
+      "y": 8
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 8
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 8
+    },
+    {
+      "asset": "backdrop",
+      "x": 160,
+      "y": 8
+    },
+    {
+      "asset": "backdrop",
+      "x": 168,
+      "y": 8
+    },
+    {
+      "asset": "backdrop",
+      "x": 176,
+      "y": 8
+    },
+    {
+      "asset": "backdrop",
+      "x": 184,
+      "y": 8
+    },
+    {
+      "asset": "backdrop",
+      "x": 0,
+      "y": 16
+    },
+    {
+      "asset": "backdrop",
+      "x": 8,
+      "y": 16
+    },
+    {
+      "asset": "backdrop",
+      "x": 16,
+      "y": 16
+    },
+    {
+      "asset": "backdrop",
+      "x": 24,
+      "y": 16
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 16
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 16
+    },
+    {
+      "asset": "backdrop",
+      "x": 48,
+      "y": 16
+    },
+    {
+      "asset": "backdrop",
+      "x": 56,
+      "y": 16
+    },
+    {
+      "asset": "backdrop",
+      "x": 64,
+      "y": 16
+    },
+    {
+      "asset": "backdrop",
+      "x": 72,
+      "y": 16
+    },
+    {
+      "asset": "backdrop",
+      "x": 80,
+      "y": 16
+    },
+    {
+      "asset": "backdrop",
+      "x": 88,
+      "y": 16
+    },
+    {
+      "asset": "backdrop",
+      "x": 96,
+      "y": 16
+    },
+    {
+      "asset": "backdrop",
+      "x": 104,
+      "y": 16
+    },
+    {
+      "asset": "backdrop",
+      "x": 112,
+      "y": 16
+    },
+    {
+      "asset": "backdrop",
+      "x": 120,
+      "y": 16
+    },
+    {
+      "asset": "backdrop",
+      "x": 128,
+      "y": 16
+    },
+    {
+      "asset": "backdrop",
+      "x": 136,
+      "y": 16
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 16
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 16
+    },
+    {
+      "asset": "backdrop",
+      "x": 160,
+      "y": 16
+    },
+    {
+      "asset": "backdrop",
+      "x": 168,
+      "y": 16
+    },
+    {
+      "asset": "backdrop",
+      "x": 176,
+      "y": 16
+    },
+    {
+      "asset": "backdrop",
+      "x": 184,
+      "y": 16
+    },
+    {
+      "asset": "backdrop",
+      "x": 0,
+      "y": 24
+    },
+    {
+      "asset": "backdrop",
+      "x": 8,
+      "y": 24
+    },
+    {
+      "asset": "backdrop",
+      "x": 16,
+      "y": 24
+    },
+    {
+      "asset": "backdrop",
+      "x": 24,
+      "y": 24
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 24
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 24
+    },
+    {
+      "asset": "backdrop",
+      "x": 48,
+      "y": 24
+    },
+    {
+      "asset": "backdrop",
+      "x": 56,
+      "y": 24
+    },
+    {
+      "asset": "backdrop",
+      "x": 64,
+      "y": 24
+    },
+    {
+      "asset": "backdrop",
+      "x": 72,
+      "y": 24
+    },
+    {
+      "asset": "backdrop",
+      "x": 80,
+      "y": 24
+    },
+    {
+      "asset": "backdrop",
+      "x": 88,
+      "y": 24
+    },
+    {
+      "asset": "backdrop",
+      "x": 96,
+      "y": 24
+    },
+    {
+      "asset": "backdrop",
+      "x": 104,
+      "y": 24
+    },
+    {
+      "asset": "backdrop",
+      "x": 112,
+      "y": 24
+    },
+    {
+      "asset": "backdrop",
+      "x": 120,
+      "y": 24
+    },
+    {
+      "asset": "backdrop",
+      "x": 128,
+      "y": 24
+    },
+    {
+      "asset": "backdrop",
+      "x": 136,
+      "y": 24
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 24
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 24
+    },
+    {
+      "asset": "backdrop",
+      "x": 160,
+      "y": 24
+    },
+    {
+      "asset": "backdrop",
+      "x": 168,
+      "y": 24
+    },
+    {
+      "asset": "backdrop",
+      "x": 176,
+      "y": 24
+    },
+    {
+      "asset": "backdrop",
+      "x": 184,
+      "y": 24
+    },
+    {
+      "asset": "backdrop",
+      "x": 0,
+      "y": 32
+    },
+    {
+      "asset": "backdrop",
+      "x": 8,
+      "y": 32
+    },
+    {
+      "asset": "backdrop",
+      "x": 16,
+      "y": 32
+    },
+    {
+      "asset": "backdrop",
+      "x": 24,
+      "y": 32
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 32
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 32
+    },
+    {
+      "asset": "backdrop",
+      "x": 48,
+      "y": 32
+    },
+    {
+      "asset": "backdrop",
+      "x": 56,
+      "y": 32
+    },
+    {
+      "asset": "backdrop",
+      "x": 64,
+      "y": 32
+    },
+    {
+      "asset": "backdrop",
+      "x": 72,
+      "y": 32
+    },
+    {
+      "asset": "backdrop",
+      "x": 80,
+      "y": 32
+    },
+    {
+      "asset": "backdrop",
+      "x": 88,
+      "y": 32
+    },
+    {
+      "asset": "backdrop",
+      "x": 96,
+      "y": 32
+    },
+    {
+      "asset": "backdrop",
+      "x": 104,
+      "y": 32
+    },
+    {
+      "asset": "backdrop",
+      "x": 112,
+      "y": 32
+    },
+    {
+      "asset": "backdrop",
+      "x": 120,
+      "y": 32
+    },
+    {
+      "asset": "backdrop",
+      "x": 128,
+      "y": 32
+    },
+    {
+      "asset": "backdrop",
+      "x": 136,
+      "y": 32
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 32
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 32
+    },
+    {
+      "asset": "backdrop",
+      "x": 160,
+      "y": 32
+    },
+    {
+      "asset": "backdrop",
+      "x": 168,
+      "y": 32
+    },
+    {
+      "asset": "backdrop",
+      "x": 176,
+      "y": 32
+    },
+    {
+      "asset": "backdrop",
+      "x": 184,
+      "y": 32
+    },
+    {
+      "asset": "backdrop",
+      "x": 0,
+      "y": 40
+    },
+    {
+      "asset": "backdrop",
+      "x": 8,
+      "y": 40
+    },
+    {
+      "asset": "backdrop",
+      "x": 16,
+      "y": 40
+    },
+    {
+      "asset": "backdrop",
+      "x": 24,
+      "y": 40
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 40
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 40
+    },
+    {
+      "asset": "backdrop",
+      "x": 48,
+      "y": 40
+    },
+    {
+      "asset": "backdrop",
+      "x": 56,
+      "y": 40
+    },
+    {
+      "asset": "backdrop",
+      "x": 64,
+      "y": 40
+    },
+    {
+      "asset": "backdrop",
+      "x": 72,
+      "y": 40
+    },
+    {
+      "asset": "backdrop",
+      "x": 80,
+      "y": 40
+    },
+    {
+      "asset": "backdrop",
+      "x": 88,
+      "y": 40
+    },
+    {
+      "asset": "backdrop",
+      "x": 96,
+      "y": 40
+    },
+    {
+      "asset": "backdrop",
+      "x": 104,
+      "y": 40
+    },
+    {
+      "asset": "backdrop",
+      "x": 112,
+      "y": 40
+    },
+    {
+      "asset": "backdrop",
+      "x": 120,
+      "y": 40
+    },
+    {
+      "asset": "backdrop",
+      "x": 128,
+      "y": 40
+    },
+    {
+      "asset": "backdrop",
+      "x": 136,
+      "y": 40
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 40
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 40
+    },
+    {
+      "asset": "backdrop",
+      "x": 160,
+      "y": 40
+    },
+    {
+      "asset": "backdrop",
+      "x": 168,
+      "y": 40
+    },
+    {
+      "asset": "backdrop",
+      "x": 176,
+      "y": 40
+    },
+    {
+      "asset": "backdrop",
+      "x": 184,
+      "y": 40
+    },
+    {
+      "asset": "backdrop",
+      "x": 0,
+      "y": 48
+    },
+    {
+      "asset": "backdrop",
+      "x": 8,
+      "y": 48
+    },
+    {
+      "asset": "backdrop",
+      "x": 16,
+      "y": 48
+    },
+    {
+      "asset": "backdrop",
+      "x": 24,
+      "y": 48
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 48
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 48
+    },
+    {
+      "asset": "backdrop",
+      "x": 48,
+      "y": 48
+    },
+    {
+      "asset": "backdrop",
+      "x": 56,
+      "y": 48
+    },
+    {
+      "asset": "backdrop",
+      "x": 64,
+      "y": 48
+    },
+    {
+      "asset": "backdrop",
+      "x": 72,
+      "y": 48
+    },
+    {
+      "asset": "backdrop",
+      "x": 80,
+      "y": 48
+    },
+    {
+      "asset": "backdrop",
+      "x": 88,
+      "y": 48
+    },
+    {
+      "asset": "backdrop",
+      "x": 96,
+      "y": 48
+    },
+    {
+      "asset": "backdrop",
+      "x": 104,
+      "y": 48
+    },
+    {
+      "asset": "backdrop",
+      "x": 112,
+      "y": 48
+    },
+    {
+      "asset": "backdrop",
+      "x": 120,
+      "y": 48
+    },
+    {
+      "asset": "backdrop",
+      "x": 128,
+      "y": 48
+    },
+    {
+      "asset": "backdrop",
+      "x": 136,
+      "y": 48
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 48
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 48
+    },
+    {
+      "asset": "backdrop",
+      "x": 160,
+      "y": 48
+    },
+    {
+      "asset": "backdrop",
+      "x": 168,
+      "y": 48
+    },
+    {
+      "asset": "backdrop",
+      "x": 176,
+      "y": 48
+    },
+    {
+      "asset": "backdrop",
+      "x": 184,
+      "y": 48
+    },
+    {
+      "asset": "backdrop",
+      "x": 0,
+      "y": 56
+    },
+    {
+      "asset": "backdrop",
+      "x": 8,
+      "y": 56
+    },
+    {
+      "asset": "backdrop",
+      "x": 16,
+      "y": 56
+    },
+    {
+      "asset": "backdrop",
+      "x": 24,
+      "y": 56
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 56
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 56
+    },
+    {
+      "asset": "backdrop",
+      "x": 48,
+      "y": 56
+    },
+    {
+      "asset": "backdrop",
+      "x": 56,
+      "y": 56
+    },
+    {
+      "asset": "backdrop",
+      "x": 64,
+      "y": 56
+    },
+    {
+      "asset": "backdrop",
+      "x": 72,
+      "y": 56
+    },
+    {
+      "asset": "backdrop",
+      "x": 80,
+      "y": 56
+    },
+    {
+      "asset": "backdrop",
+      "x": 88,
+      "y": 56
+    },
+    {
+      "asset": "backdrop",
+      "x": 96,
+      "y": 56
+    },
+    {
+      "asset": "backdrop",
+      "x": 104,
+      "y": 56
+    },
+    {
+      "asset": "backdrop",
+      "x": 112,
+      "y": 56
+    },
+    {
+      "asset": "backdrop",
+      "x": 120,
+      "y": 56
+    },
+    {
+      "asset": "backdrop",
+      "x": 128,
+      "y": 56
+    },
+    {
+      "asset": "backdrop",
+      "x": 136,
+      "y": 56
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 56
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 56
+    },
+    {
+      "asset": "backdrop",
+      "x": 160,
+      "y": 56
+    },
+    {
+      "asset": "backdrop",
+      "x": 168,
+      "y": 56
+    },
+    {
+      "asset": "backdrop",
+      "x": 176,
+      "y": 56
+    },
+    {
+      "asset": "backdrop",
+      "x": 184,
+      "y": 56
+    },
+    {
+      "asset": "backdrop",
+      "x": 0,
+      "y": 64
+    },
+    {
+      "asset": "backdrop",
+      "x": 8,
+      "y": 64
+    },
+    {
+      "asset": "backdrop",
+      "x": 16,
+      "y": 64
+    },
+    {
+      "asset": "backdrop",
+      "x": 24,
+      "y": 64
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 64
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 64
+    },
+    {
+      "asset": "backdrop",
+      "x": 48,
+      "y": 64
+    },
+    {
+      "asset": "backdrop",
+      "x": 56,
+      "y": 64
+    },
+    {
+      "asset": "backdrop",
+      "x": 64,
+      "y": 64
+    },
+    {
+      "asset": "backdrop",
+      "x": 72,
+      "y": 64
+    },
+    {
+      "asset": "backdrop",
+      "x": 80,
+      "y": 64
+    },
+    {
+      "asset": "backdrop",
+      "x": 88,
+      "y": 64
+    },
+    {
+      "asset": "backdrop",
+      "x": 96,
+      "y": 64
+    },
+    {
+      "asset": "backdrop",
+      "x": 104,
+      "y": 64
+    },
+    {
+      "asset": "backdrop",
+      "x": 112,
+      "y": 64
+    },
+    {
+      "asset": "backdrop",
+      "x": 120,
+      "y": 64
+    },
+    {
+      "asset": "backdrop",
+      "x": 128,
+      "y": 64
+    },
+    {
+      "asset": "backdrop",
+      "x": 136,
+      "y": 64
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 64
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 64
+    },
+    {
+      "asset": "backdrop",
+      "x": 160,
+      "y": 64
+    },
+    {
+      "asset": "backdrop",
+      "x": 168,
+      "y": 64
+    },
+    {
+      "asset": "backdrop",
+      "x": 176,
+      "y": 64
+    },
+    {
+      "asset": "backdrop",
+      "x": 184,
+      "y": 64
+    },
+    {
+      "asset": "backdrop",
+      "x": 0,
+      "y": 72
+    },
+    {
+      "asset": "backdrop",
+      "x": 8,
+      "y": 72
+    },
+    {
+      "asset": "backdrop",
+      "x": 16,
+      "y": 72
+    },
+    {
+      "asset": "backdrop",
+      "x": 24,
+      "y": 72
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 72
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 72
+    },
+    {
+      "asset": "backdrop",
+      "x": 48,
+      "y": 72
+    },
+    {
+      "asset": "backdrop",
+      "x": 56,
+      "y": 72
+    },
+    {
+      "asset": "backdrop",
+      "x": 64,
+      "y": 72
+    },
+    {
+      "asset": "backdrop",
+      "x": 72,
+      "y": 72
+    },
+    {
+      "asset": "backdrop",
+      "x": 80,
+      "y": 72
+    },
+    {
+      "asset": "backdrop",
+      "x": 88,
+      "y": 72
+    },
+    {
+      "asset": "backdrop",
+      "x": 96,
+      "y": 72
+    },
+    {
+      "asset": "backdrop",
+      "x": 104,
+      "y": 72
+    },
+    {
+      "asset": "backdrop",
+      "x": 112,
+      "y": 72
+    },
+    {
+      "asset": "backdrop",
+      "x": 120,
+      "y": 72
+    },
+    {
+      "asset": "backdrop",
+      "x": 128,
+      "y": 72
+    },
+    {
+      "asset": "backdrop",
+      "x": 136,
+      "y": 72
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 72
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 72
+    },
+    {
+      "asset": "backdrop",
+      "x": 160,
+      "y": 72
+    },
+    {
+      "asset": "backdrop",
+      "x": 168,
+      "y": 72
+    },
+    {
+      "asset": "backdrop",
+      "x": 176,
+      "y": 72
+    },
+    {
+      "asset": "backdrop",
+      "x": 184,
+      "y": 72
+    },
+    {
+      "asset": "backdrop",
+      "x": 0,
+      "y": 80
+    },
+    {
+      "asset": "backdrop",
+      "x": 8,
+      "y": 80
+    },
+    {
+      "asset": "backdrop",
+      "x": 16,
+      "y": 80
+    },
+    {
+      "asset": "backdrop",
+      "x": 24,
+      "y": 80
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 80
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 80
+    },
+    {
+      "asset": "backdrop",
+      "x": 48,
+      "y": 80
+    },
+    {
+      "asset": "backdrop",
+      "x": 56,
+      "y": 80
+    },
+    {
+      "asset": "backdrop",
+      "x": 64,
+      "y": 80
+    },
+    {
+      "asset": "backdrop",
+      "x": 72,
+      "y": 80
+    },
+    {
+      "asset": "backdrop",
+      "x": 80,
+      "y": 80
+    },
+    {
+      "asset": "backdrop",
+      "x": 88,
+      "y": 80
+    },
+    {
+      "asset": "backdrop",
+      "x": 96,
+      "y": 80
+    },
+    {
+      "asset": "backdrop",
+      "x": 104,
+      "y": 80
+    },
+    {
+      "asset": "backdrop",
+      "x": 112,
+      "y": 80
+    },
+    {
+      "asset": "backdrop",
+      "x": 120,
+      "y": 80
+    },
+    {
+      "asset": "backdrop",
+      "x": 128,
+      "y": 80
+    },
+    {
+      "asset": "backdrop",
+      "x": 136,
+      "y": 80
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 80
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 80
+    },
+    {
+      "asset": "backdrop",
+      "x": 160,
+      "y": 80
+    },
+    {
+      "asset": "backdrop",
+      "x": 168,
+      "y": 80
+    },
+    {
+      "asset": "backdrop",
+      "x": 176,
+      "y": 80
+    },
+    {
+      "asset": "backdrop",
+      "x": 184,
+      "y": 80
+    },
+    {
+      "asset": "backdrop",
+      "x": 0,
+      "y": 88
+    },
+    {
+      "asset": "backdrop",
+      "x": 8,
+      "y": 88
+    },
+    {
+      "asset": "backdrop",
+      "x": 16,
+      "y": 88
+    },
+    {
+      "asset": "backdrop",
+      "x": 24,
+      "y": 88
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 88
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 88
+    },
+    {
+      "asset": "backdrop",
+      "x": 48,
+      "y": 88
+    },
+    {
+      "asset": "backdrop",
+      "x": 56,
+      "y": 88
+    },
+    {
+      "asset": "backdrop",
+      "x": 64,
+      "y": 88
+    },
+    {
+      "asset": "backdrop",
+      "x": 72,
+      "y": 88
+    },
+    {
+      "asset": "backdrop",
+      "x": 80,
+      "y": 88
+    },
+    {
+      "asset": "backdrop",
+      "x": 88,
+      "y": 88
+    },
+    {
+      "asset": "backdrop",
+      "x": 96,
+      "y": 88
+    },
+    {
+      "asset": "backdrop",
+      "x": 104,
+      "y": 88
+    },
+    {
+      "asset": "backdrop",
+      "x": 112,
+      "y": 88
+    },
+    {
+      "asset": "backdrop",
+      "x": 120,
+      "y": 88
+    },
+    {
+      "asset": "backdrop",
+      "x": 128,
+      "y": 88
+    },
+    {
+      "asset": "backdrop",
+      "x": 136,
+      "y": 88
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 88
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 88
+    },
+    {
+      "asset": "backdrop",
+      "x": 160,
+      "y": 88
+    },
+    {
+      "asset": "backdrop",
+      "x": 168,
+      "y": 88
+    },
+    {
+      "asset": "backdrop",
+      "x": 176,
+      "y": 88
+    },
+    {
+      "asset": "backdrop",
+      "x": 184,
+      "y": 88
+    },
+    {
+      "asset": "backdrop",
+      "x": 0,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 8,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 16,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 24,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 48,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 56,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 64,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 72,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 80,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 88,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 96,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 104,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 112,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 120,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 128,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 136,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 160,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 168,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 176,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 184,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 0,
+      "y": 104
+    },
+    {
+      "asset": "backdrop",
+      "x": 8,
+      "y": 104
+    },
+    {
+      "asset": "backdrop",
+      "x": 16,
+      "y": 104
+    },
+    {
+      "asset": "backdrop",
+      "x": 24,
+      "y": 104
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 104
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 104
+    },
+    {
+      "asset": "backdrop",
+      "x": 48,
+      "y": 104
+    },
+    {
+      "asset": "backdrop",
+      "x": 56,
+      "y": 104
+    },
+    {
+      "asset": "backdrop",
+      "x": 64,
+      "y": 104
+    },
+    {
+      "asset": "backdrop",
+      "x": 72,
+      "y": 104
+    },
+    {
+      "asset": "backdrop",
+      "x": 80,
+      "y": 104
+    },
+    {
+      "asset": "backdrop",
+      "x": 88,
+      "y": 104
+    },
+    {
+      "asset": "backdrop",
+      "x": 96,
+      "y": 104
+    },
+    {
+      "asset": "backdrop",
+      "x": 104,
+      "y": 104
+    },
+    {
+      "asset": "backdrop",
+      "x": 112,
+      "y": 104
+    },
+    {
+      "asset": "backdrop",
+      "x": 120,
+      "y": 104
+    },
+    {
+      "asset": "backdrop",
+      "x": 128,
+      "y": 104
+    },
+    {
+      "asset": "backdrop",
+      "x": 136,
+      "y": 104
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 104
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 104
+    },
+    {
+      "asset": "backdrop",
+      "x": 160,
+      "y": 104
+    },
+    {
+      "asset": "backdrop",
+      "x": 168,
+      "y": 104
+    },
+    {
+      "asset": "backdrop",
+      "x": 176,
+      "y": 104
+    },
+    {
+      "asset": "backdrop",
+      "x": 184,
+      "y": 104
+    },
+    {
+      "asset": "backdrop",
+      "x": 0,
+      "y": 112
+    },
+    {
+      "asset": "backdrop",
+      "x": 8,
+      "y": 112
+    },
+    {
+      "asset": "backdrop",
+      "x": 16,
+      "y": 112
+    },
+    {
+      "asset": "backdrop",
+      "x": 24,
+      "y": 112
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 112
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 112
+    },
+    {
+      "asset": "backdrop",
+      "x": 48,
+      "y": 112
+    },
+    {
+      "asset": "backdrop",
+      "x": 56,
+      "y": 112
+    },
+    {
+      "asset": "backdrop",
+      "x": 64,
+      "y": 112
+    },
+    {
+      "asset": "backdrop",
+      "x": 72,
+      "y": 112
+    },
+    {
+      "asset": "backdrop",
+      "x": 80,
+      "y": 112
+    },
+    {
+      "asset": "backdrop",
+      "x": 88,
+      "y": 112
+    },
+    {
+      "asset": "backdrop",
+      "x": 96,
+      "y": 112
+    },
+    {
+      "asset": "backdrop",
+      "x": 104,
+      "y": 112
+    },
+    {
+      "asset": "backdrop",
+      "x": 112,
+      "y": 112
+    },
+    {
+      "asset": "backdrop",
+      "x": 120,
+      "y": 112
+    },
+    {
+      "asset": "backdrop",
+      "x": 128,
+      "y": 112
+    },
+    {
+      "asset": "backdrop",
+      "x": 136,
+      "y": 112
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 112
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 112
+    },
+    {
+      "asset": "backdrop",
+      "x": 160,
+      "y": 112
+    },
+    {
+      "asset": "backdrop",
+      "x": 168,
+      "y": 112
+    },
+    {
+      "asset": "backdrop",
+      "x": 176,
+      "y": 112
+    },
+    {
+      "asset": "backdrop",
+      "x": 184,
+      "y": 112
+    },
+    {
+      "asset": "backdrop",
+      "x": 0,
+      "y": 120
+    },
+    {
+      "asset": "backdrop",
+      "x": 8,
+      "y": 120
+    },
+    {
+      "asset": "backdrop",
+      "x": 16,
+      "y": 120
+    },
+    {
+      "asset": "backdrop",
+      "x": 24,
+      "y": 120
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 120
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 120
+    },
+    {
+      "asset": "backdrop",
+      "x": 48,
+      "y": 120
+    },
+    {
+      "asset": "backdrop",
+      "x": 56,
+      "y": 120
+    },
+    {
+      "asset": "backdrop",
+      "x": 64,
+      "y": 120
+    },
+    {
+      "asset": "backdrop",
+      "x": 72,
+      "y": 120
+    },
+    {
+      "asset": "backdrop",
+      "x": 80,
+      "y": 120
+    },
+    {
+      "asset": "backdrop",
+      "x": 88,
+      "y": 120
+    },
+    {
+      "asset": "backdrop",
+      "x": 96,
+      "y": 120
+    },
+    {
+      "asset": "backdrop",
+      "x": 104,
+      "y": 120
+    },
+    {
+      "asset": "backdrop",
+      "x": 112,
+      "y": 120
+    },
+    {
+      "asset": "backdrop",
+      "x": 120,
+      "y": 120
+    },
+    {
+      "asset": "backdrop",
+      "x": 128,
+      "y": 120
+    },
+    {
+      "asset": "backdrop",
+      "x": 136,
+      "y": 120
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 120
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 120
+    },
+    {
+      "asset": "backdrop",
+      "x": 160,
+      "y": 120
+    },
+    {
+      "asset": "backdrop",
+      "x": 168,
+      "y": 120
+    },
+    {
+      "asset": "backdrop",
+      "x": 176,
+      "y": 120
+    },
+    {
+      "asset": "backdrop",
+      "x": 184,
+      "y": 120
+    },
+    {
+      "asset": "backdrop",
+      "x": 0,
+      "y": 128
+    },
+    {
+      "asset": "backdrop",
+      "x": 8,
+      "y": 128
+    },
+    {
+      "asset": "backdrop",
+      "x": 16,
+      "y": 128
+    },
+    {
+      "asset": "backdrop",
+      "x": 24,
+      "y": 128
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 128
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 128
+    },
+    {
+      "asset": "backdrop",
+      "x": 48,
+      "y": 128
+    },
+    {
+      "asset": "backdrop",
+      "x": 56,
+      "y": 128
+    },
+    {
+      "asset": "backdrop",
+      "x": 64,
+      "y": 128
+    },
+    {
+      "asset": "backdrop",
+      "x": 72,
+      "y": 128
+    },
+    {
+      "asset": "backdrop",
+      "x": 80,
+      "y": 128
+    },
+    {
+      "asset": "backdrop",
+      "x": 88,
+      "y": 128
+    },
+    {
+      "asset": "backdrop",
+      "x": 96,
+      "y": 128
+    },
+    {
+      "asset": "backdrop",
+      "x": 104,
+      "y": 128
+    },
+    {
+      "asset": "backdrop",
+      "x": 112,
+      "y": 128
+    },
+    {
+      "asset": "backdrop",
+      "x": 120,
+      "y": 128
+    },
+    {
+      "asset": "backdrop",
+      "x": 128,
+      "y": 128
+    },
+    {
+      "asset": "backdrop",
+      "x": 136,
+      "y": 128
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 128
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 128
+    },
+    {
+      "asset": "backdrop",
+      "x": 160,
+      "y": 128
+    },
+    {
+      "asset": "backdrop",
+      "x": 168,
+      "y": 128
+    },
+    {
+      "asset": "backdrop",
+      "x": 176,
+      "y": 128
+    },
+    {
+      "asset": "backdrop",
+      "x": 184,
+      "y": 128
+    },
+    {
+      "asset": "backdrop",
+      "x": 0,
+      "y": 136
+    },
+    {
+      "asset": "backdrop",
+      "x": 8,
+      "y": 136
+    },
+    {
+      "asset": "backdrop",
+      "x": 16,
+      "y": 136
+    },
+    {
+      "asset": "backdrop",
+      "x": 24,
+      "y": 136
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 136
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 136
+    },
+    {
+      "asset": "backdrop",
+      "x": 48,
+      "y": 136
+    },
+    {
+      "asset": "backdrop",
+      "x": 56,
+      "y": 136
+    },
+    {
+      "asset": "backdrop",
+      "x": 64,
+      "y": 136
+    },
+    {
+      "asset": "backdrop",
+      "x": 72,
+      "y": 136
+    },
+    {
+      "asset": "backdrop",
+      "x": 80,
+      "y": 136
+    },
+    {
+      "asset": "backdrop",
+      "x": 88,
+      "y": 136
+    },
+    {
+      "asset": "backdrop",
+      "x": 96,
+      "y": 136
+    },
+    {
+      "asset": "backdrop",
+      "x": 104,
+      "y": 136
+    },
+    {
+      "asset": "backdrop",
+      "x": 112,
+      "y": 136
+    },
+    {
+      "asset": "backdrop",
+      "x": 120,
+      "y": 136
+    },
+    {
+      "asset": "backdrop",
+      "x": 128,
+      "y": 136
+    },
+    {
+      "asset": "backdrop",
+      "x": 136,
+      "y": 136
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 136
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 136
+    },
+    {
+      "asset": "backdrop",
+      "x": 160,
+      "y": 136
+    },
+    {
+      "asset": "backdrop",
+      "x": 168,
+      "y": 136
+    },
+    {
+      "asset": "backdrop",
+      "x": 176,
+      "y": 136
+    },
+    {
+      "asset": "backdrop",
+      "x": 184,
+      "y": 136
+    },
+    {
+      "asset": "backdrop",
+      "x": 0,
+      "y": 144
+    },
+    {
+      "asset": "backdrop",
+      "x": 8,
+      "y": 144
+    },
+    {
+      "asset": "backdrop",
+      "x": 16,
+      "y": 144
+    },
+    {
+      "asset": "backdrop",
+      "x": 24,
+      "y": 144
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 144
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 144
+    },
+    {
+      "asset": "backdrop",
+      "x": 48,
+      "y": 144
+    },
+    {
+      "asset": "backdrop",
+      "x": 56,
+      "y": 144
+    },
+    {
+      "asset": "backdrop",
+      "x": 64,
+      "y": 144
+    },
+    {
+      "asset": "backdrop",
+      "x": 72,
+      "y": 144
+    },
+    {
+      "asset": "backdrop",
+      "x": 80,
+      "y": 144
+    },
+    {
+      "asset": "backdrop",
+      "x": 88,
+      "y": 144
+    },
+    {
+      "asset": "backdrop",
+      "x": 96,
+      "y": 144
+    },
+    {
+      "asset": "backdrop",
+      "x": 104,
+      "y": 144
+    },
+    {
+      "asset": "backdrop",
+      "x": 112,
+      "y": 144
+    },
+    {
+      "asset": "backdrop",
+      "x": 120,
+      "y": 144
+    },
+    {
+      "asset": "backdrop",
+      "x": 128,
+      "y": 144
+    },
+    {
+      "asset": "backdrop",
+      "x": 136,
+      "y": 144
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 144
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 144
+    },
+    {
+      "asset": "backdrop",
+      "x": 160,
+      "y": 144
+    },
+    {
+      "asset": "backdrop",
+      "x": 168,
+      "y": 144
+    },
+    {
+      "asset": "backdrop",
+      "x": 176,
+      "y": 144
+    },
+    {
+      "asset": "backdrop",
+      "x": 184,
+      "y": 144
+    },
+    {
+      "asset": "backdrop",
+      "x": 0,
+      "y": 152
+    },
+    {
+      "asset": "backdrop",
+      "x": 8,
+      "y": 152
+    },
+    {
+      "asset": "backdrop",
+      "x": 16,
+      "y": 152
+    },
+    {
+      "asset": "backdrop",
+      "x": 24,
+      "y": 152
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 152
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 152
+    },
+    {
+      "asset": "backdrop",
+      "x": 48,
+      "y": 152
+    },
+    {
+      "asset": "backdrop",
+      "x": 56,
+      "y": 152
+    },
+    {
+      "asset": "backdrop",
+      "x": 64,
+      "y": 152
+    },
+    {
+      "asset": "backdrop",
+      "x": 72,
+      "y": 152
+    },
+    {
+      "asset": "backdrop",
+      "x": 80,
+      "y": 152
+    },
+    {
+      "asset": "backdrop",
+      "x": 88,
+      "y": 152
+    },
+    {
+      "asset": "backdrop",
+      "x": 96,
+      "y": 152
+    },
+    {
+      "asset": "backdrop",
+      "x": 104,
+      "y": 152
+    },
+    {
+      "asset": "backdrop",
+      "x": 112,
+      "y": 152
+    },
+    {
+      "asset": "backdrop",
+      "x": 120,
+      "y": 152
+    },
+    {
+      "asset": "backdrop",
+      "x": 128,
+      "y": 152
+    },
+    {
+      "asset": "backdrop",
+      "x": 136,
+      "y": 152
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 152
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 152
+    },
+    {
+      "asset": "backdrop",
+      "x": 160,
+      "y": 152
+    },
+    {
+      "asset": "backdrop",
+      "x": 168,
+      "y": 152
+    },
+    {
+      "asset": "backdrop",
+      "x": 176,
+      "y": 152
+    },
+    {
+      "asset": "backdrop",
+      "x": 184,
+      "y": 152
+    },
+    {
+      "asset": "backdrop",
+      "x": 0,
+      "y": 160
+    },
+    {
+      "asset": "backdrop",
+      "x": 8,
+      "y": 160
+    },
+    {
+      "asset": "backdrop",
+      "x": 16,
+      "y": 160
+    },
+    {
+      "asset": "backdrop",
+      "x": 24,
+      "y": 160
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 160
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 160
+    },
+    {
+      "asset": "backdrop",
+      "x": 48,
+      "y": 160
+    },
+    {
+      "asset": "backdrop",
+      "x": 56,
+      "y": 160
+    },
+    {
+      "asset": "backdrop",
+      "x": 64,
+      "y": 160
+    },
+    {
+      "asset": "backdrop",
+      "x": 72,
+      "y": 160
+    },
+    {
+      "asset": "backdrop",
+      "x": 80,
+      "y": 160
+    },
+    {
+      "asset": "backdrop",
+      "x": 88,
+      "y": 160
+    },
+    {
+      "asset": "backdrop",
+      "x": 96,
+      "y": 160
+    },
+    {
+      "asset": "backdrop",
+      "x": 104,
+      "y": 160
+    },
+    {
+      "asset": "backdrop",
+      "x": 112,
+      "y": 160
+    },
+    {
+      "asset": "backdrop",
+      "x": 120,
+      "y": 160
+    },
+    {
+      "asset": "backdrop",
+      "x": 128,
+      "y": 160
+    },
+    {
+      "asset": "backdrop",
+      "x": 136,
+      "y": 160
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 160
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 160
+    },
+    {
+      "asset": "backdrop",
+      "x": 160,
+      "y": 160
+    },
+    {
+      "asset": "backdrop",
+      "x": 168,
+      "y": 160
+    },
+    {
+      "asset": "backdrop",
+      "x": 176,
+      "y": 160
+    },
+    {
+      "asset": "backdrop",
+      "x": 184,
+      "y": 160
+    },
+    {
+      "asset": "backdrop",
+      "x": 0,
+      "y": 168
+    },
+    {
+      "asset": "backdrop",
+      "x": 8,
+      "y": 168
+    },
+    {
+      "asset": "backdrop",
+      "x": 16,
+      "y": 168
+    },
+    {
+      "asset": "backdrop",
+      "x": 24,
+      "y": 168
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 168
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 168
+    },
+    {
+      "asset": "backdrop",
+      "x": 48,
+      "y": 168
+    },
+    {
+      "asset": "backdrop",
+      "x": 56,
+      "y": 168
+    },
+    {
+      "asset": "backdrop",
+      "x": 64,
+      "y": 168
+    },
+    {
+      "asset": "backdrop",
+      "x": 72,
+      "y": 168
+    },
+    {
+      "asset": "backdrop",
+      "x": 80,
+      "y": 168
+    },
+    {
+      "asset": "backdrop",
+      "x": 88,
+      "y": 168
+    },
+    {
+      "asset": "backdrop",
+      "x": 96,
+      "y": 168
+    },
+    {
+      "asset": "backdrop",
+      "x": 104,
+      "y": 168
+    },
+    {
+      "asset": "backdrop",
+      "x": 112,
+      "y": 168
+    },
+    {
+      "asset": "backdrop",
+      "x": 120,
+      "y": 168
+    },
+    {
+      "asset": "backdrop",
+      "x": 128,
+      "y": 168
+    },
+    {
+      "asset": "backdrop",
+      "x": 136,
+      "y": 168
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 168
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 168
+    },
+    {
+      "asset": "backdrop",
+      "x": 160,
+      "y": 168
+    },
+    {
+      "asset": "backdrop",
+      "x": 168,
+      "y": 168
+    },
+    {
+      "asset": "backdrop",
+      "x": 176,
+      "y": 168
+    },
+    {
+      "asset": "backdrop",
+      "x": 184,
+      "y": 168
+    },
+    {
+      "asset": "backdrop",
+      "x": 0,
+      "y": 176
+    },
+    {
+      "asset": "backdrop",
+      "x": 8,
+      "y": 176
+    },
+    {
+      "asset": "backdrop",
+      "x": 16,
+      "y": 176
+    },
+    {
+      "asset": "backdrop",
+      "x": 24,
+      "y": 176
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 176
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 176
+    },
+    {
+      "asset": "backdrop",
+      "x": 48,
+      "y": 176
+    },
+    {
+      "asset": "backdrop",
+      "x": 56,
+      "y": 176
+    },
+    {
+      "asset": "backdrop",
+      "x": 64,
+      "y": 176
+    },
+    {
+      "asset": "backdrop",
+      "x": 72,
+      "y": 176
+    },
+    {
+      "asset": "backdrop",
+      "x": 80,
+      "y": 176
+    },
+    {
+      "asset": "backdrop",
+      "x": 88,
+      "y": 176
+    },
+    {
+      "asset": "backdrop",
+      "x": 96,
+      "y": 176
+    },
+    {
+      "asset": "backdrop",
+      "x": 104,
+      "y": 176
+    },
+    {
+      "asset": "backdrop",
+      "x": 112,
+      "y": 176
+    },
+    {
+      "asset": "backdrop",
+      "x": 120,
+      "y": 176
+    },
+    {
+      "asset": "backdrop",
+      "x": 128,
+      "y": 176
+    },
+    {
+      "asset": "backdrop",
+      "x": 136,
+      "y": 176
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 176
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 176
+    },
+    {
+      "asset": "backdrop",
+      "x": 160,
+      "y": 176
+    },
+    {
+      "asset": "backdrop",
+      "x": 168,
+      "y": 176
+    },
+    {
+      "asset": "backdrop",
+      "x": 176,
+      "y": 176
+    },
+    {
+      "asset": "backdrop",
+      "x": 184,
+      "y": 176
+    },
+    {
+      "asset": "backdrop",
+      "x": 0,
+      "y": 184
+    },
+    {
+      "asset": "backdrop",
+      "x": 8,
+      "y": 184
+    },
+    {
+      "asset": "backdrop",
+      "x": 16,
+      "y": 184
+    },
+    {
+      "asset": "backdrop",
+      "x": 24,
+      "y": 184
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 184
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 184
+    },
+    {
+      "asset": "backdrop",
+      "x": 48,
+      "y": 184
+    },
+    {
+      "asset": "backdrop",
+      "x": 56,
+      "y": 184
+    },
+    {
+      "asset": "backdrop",
+      "x": 64,
+      "y": 184
+    },
+    {
+      "asset": "backdrop",
+      "x": 72,
+      "y": 184
+    },
+    {
+      "asset": "backdrop",
+      "x": 80,
+      "y": 184
+    },
+    {
+      "asset": "backdrop",
+      "x": 88,
+      "y": 184
+    },
+    {
+      "asset": "backdrop",
+      "x": 96,
+      "y": 184
+    },
+    {
+      "asset": "backdrop",
+      "x": 104,
+      "y": 184
+    },
+    {
+      "asset": "backdrop",
+      "x": 112,
+      "y": 184
+    },
+    {
+      "asset": "backdrop",
+      "x": 120,
+      "y": 184
+    },
+    {
+      "asset": "backdrop",
+      "x": 128,
+      "y": 184
+    },
+    {
+      "asset": "backdrop",
+      "x": 136,
+      "y": 184
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 184
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 184
+    },
+    {
+      "asset": "backdrop",
+      "x": 160,
+      "y": 184
+    },
+    {
+      "asset": "backdrop",
+      "x": 168,
+      "y": 184
+    },
+    {
+      "asset": "backdrop",
+      "x": 176,
+      "y": 184
+    },
+    {
+      "asset": "backdrop",
+      "x": 184,
+      "y": 184
+    },
+    {
+      "asset": "backdrop",
+      "x": 0,
+      "y": 192
+    },
+    {
+      "asset": "backdrop",
+      "x": 8,
+      "y": 192
+    },
+    {
+      "asset": "backdrop",
+      "x": 16,
+      "y": 192
+    },
+    {
+      "asset": "backdrop",
+      "x": 24,
+      "y": 192
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 192
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 192
+    },
+    {
+      "asset": "backdrop",
+      "x": 48,
+      "y": 192
+    },
+    {
+      "asset": "backdrop",
+      "x": 56,
+      "y": 192
+    },
+    {
+      "asset": "backdrop",
+      "x": 64,
+      "y": 192
+    },
+    {
+      "asset": "backdrop",
+      "x": 72,
+      "y": 192
+    },
+    {
+      "asset": "backdrop",
+      "x": 80,
+      "y": 192
+    },
+    {
+      "asset": "backdrop",
+      "x": 88,
+      "y": 192
+    },
+    {
+      "asset": "backdrop",
+      "x": 96,
+      "y": 192
+    },
+    {
+      "asset": "backdrop",
+      "x": 104,
+      "y": 192
+    },
+    {
+      "asset": "backdrop",
+      "x": 112,
+      "y": 192
+    },
+    {
+      "asset": "backdrop",
+      "x": 120,
+      "y": 192
+    },
+    {
+      "asset": "backdrop",
+      "x": 128,
+      "y": 192
+    },
+    {
+      "asset": "backdrop",
+      "x": 136,
+      "y": 192
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 192
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 192
+    },
+    {
+      "asset": "backdrop",
+      "x": 160,
+      "y": 192
+    },
+    {
+      "asset": "backdrop",
+      "x": 168,
+      "y": 192
+    },
+    {
+      "asset": "backdrop",
+      "x": 176,
+      "y": 192
+    },
+    {
+      "asset": "backdrop",
+      "x": 184,
+      "y": 192
+    },
+    {
+      "asset": "backdrop",
+      "x": 0,
+      "y": 200
+    },
+    {
+      "asset": "backdrop",
+      "x": 8,
+      "y": 200
+    },
+    {
+      "asset": "backdrop",
+      "x": 16,
+      "y": 200
+    },
+    {
+      "asset": "backdrop",
+      "x": 24,
+      "y": 200
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 200
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 200
+    },
+    {
+      "asset": "backdrop",
+      "x": 48,
+      "y": 200
+    },
+    {
+      "asset": "backdrop",
+      "x": 56,
+      "y": 200
+    },
+    {
+      "asset": "backdrop",
+      "x": 64,
+      "y": 200
+    },
+    {
+      "asset": "backdrop",
+      "x": 72,
+      "y": 200
+    },
+    {
+      "asset": "backdrop",
+      "x": 80,
+      "y": 200
+    },
+    {
+      "asset": "backdrop",
+      "x": 88,
+      "y": 200
+    },
+    {
+      "asset": "backdrop",
+      "x": 96,
+      "y": 200
+    },
+    {
+      "asset": "backdrop",
+      "x": 104,
+      "y": 200
+    },
+    {
+      "asset": "backdrop",
+      "x": 112,
+      "y": 200
+    },
+    {
+      "asset": "backdrop",
+      "x": 120,
+      "y": 200
+    },
+    {
+      "asset": "backdrop",
+      "x": 128,
+      "y": 200
+    },
+    {
+      "asset": "backdrop",
+      "x": 136,
+      "y": 200
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 200
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 200
+    },
+    {
+      "asset": "backdrop",
+      "x": 160,
+      "y": 200
+    },
+    {
+      "asset": "backdrop",
+      "x": 168,
+      "y": 200
+    },
+    {
+      "asset": "backdrop",
+      "x": 176,
+      "y": 200
+    },
+    {
+      "asset": "backdrop",
+      "x": 184,
+      "y": 200
+    },
+    {
+      "asset": "backdrop",
+      "x": 0,
+      "y": 208
+    },
+    {
+      "asset": "backdrop",
+      "x": 8,
+      "y": 208
+    },
+    {
+      "asset": "backdrop",
+      "x": 16,
+      "y": 208
+    },
+    {
+      "asset": "backdrop",
+      "x": 24,
+      "y": 208
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 208
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 208
+    },
+    {
+      "asset": "backdrop",
+      "x": 48,
+      "y": 208
+    },
+    {
+      "asset": "backdrop",
+      "x": 56,
+      "y": 208
+    },
+    {
+      "asset": "backdrop",
+      "x": 64,
+      "y": 208
+    },
+    {
+      "asset": "backdrop",
+      "x": 72,
+      "y": 208
+    },
+    {
+      "asset": "backdrop",
+      "x": 80,
+      "y": 208
+    },
+    {
+      "asset": "backdrop",
+      "x": 88,
+      "y": 208
+    },
+    {
+      "asset": "backdrop",
+      "x": 96,
+      "y": 208
+    },
+    {
+      "asset": "backdrop",
+      "x": 104,
+      "y": 208
+    },
+    {
+      "asset": "backdrop",
+      "x": 112,
+      "y": 208
+    },
+    {
+      "asset": "backdrop",
+      "x": 120,
+      "y": 208
+    },
+    {
+      "asset": "backdrop",
+      "x": 128,
+      "y": 208
+    },
+    {
+      "asset": "backdrop",
+      "x": 136,
+      "y": 208
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 208
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 208
+    },
+    {
+      "asset": "backdrop",
+      "x": 160,
+      "y": 208
+    },
+    {
+      "asset": "backdrop",
+      "x": 168,
+      "y": 208
+    },
+    {
+      "asset": "backdrop",
+      "x": 176,
+      "y": 208
+    },
+    {
+      "asset": "backdrop",
+      "x": 184,
+      "y": 208
+    },
+    {
+      "asset": "backdrop",
+      "x": 0,
+      "y": 216
+    },
+    {
+      "asset": "backdrop",
+      "x": 8,
+      "y": 216
+    },
+    {
+      "asset": "backdrop",
+      "x": 16,
+      "y": 216
+    },
+    {
+      "asset": "backdrop",
+      "x": 24,
+      "y": 216
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 216
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 216
+    },
+    {
+      "asset": "backdrop",
+      "x": 48,
+      "y": 216
+    },
+    {
+      "asset": "backdrop",
+      "x": 56,
+      "y": 216
+    },
+    {
+      "asset": "backdrop",
+      "x": 64,
+      "y": 216
+    },
+    {
+      "asset": "backdrop",
+      "x": 72,
+      "y": 216
+    },
+    {
+      "asset": "backdrop",
+      "x": 80,
+      "y": 216
+    },
+    {
+      "asset": "backdrop",
+      "x": 88,
+      "y": 216
+    },
+    {
+      "asset": "backdrop",
+      "x": 96,
+      "y": 216
+    },
+    {
+      "asset": "backdrop",
+      "x": 104,
+      "y": 216
+    },
+    {
+      "asset": "backdrop",
+      "x": 112,
+      "y": 216
+    },
+    {
+      "asset": "backdrop",
+      "x": 120,
+      "y": 216
+    },
+    {
+      "asset": "backdrop",
+      "x": 128,
+      "y": 216
+    },
+    {
+      "asset": "backdrop",
+      "x": 136,
+      "y": 216
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 216
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 216
+    },
+    {
+      "asset": "backdrop",
+      "x": 160,
+      "y": 216
+    },
+    {
+      "asset": "backdrop",
+      "x": 168,
+      "y": 216
+    },
+    {
+      "asset": "backdrop",
+      "x": 176,
+      "y": 216
+    },
+    {
+      "asset": "backdrop",
+      "x": 184,
+      "y": 216
+    },
+    {
+      "asset": "backdrop",
+      "x": 0,
+      "y": 224
+    },
+    {
+      "asset": "backdrop",
+      "x": 8,
+      "y": 224
+    },
+    {
+      "asset": "backdrop",
+      "x": 16,
+      "y": 224
+    },
+    {
+      "asset": "backdrop",
+      "x": 24,
+      "y": 224
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 224
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 224
+    },
+    {
+      "asset": "backdrop",
+      "x": 48,
+      "y": 224
+    },
+    {
+      "asset": "backdrop",
+      "x": 56,
+      "y": 224
+    },
+    {
+      "asset": "backdrop",
+      "x": 64,
+      "y": 224
+    },
+    {
+      "asset": "backdrop",
+      "x": 72,
+      "y": 224
+    },
+    {
+      "asset": "backdrop",
+      "x": 80,
+      "y": 224
+    },
+    {
+      "asset": "backdrop",
+      "x": 88,
+      "y": 224
+    },
+    {
+      "asset": "backdrop",
+      "x": 96,
+      "y": 224
+    },
+    {
+      "asset": "backdrop",
+      "x": 104,
+      "y": 224
+    },
+    {
+      "asset": "backdrop",
+      "x": 112,
+      "y": 224
+    },
+    {
+      "asset": "backdrop",
+      "x": 120,
+      "y": 224
+    },
+    {
+      "asset": "backdrop",
+      "x": 128,
+      "y": 224
+    },
+    {
+      "asset": "backdrop",
+      "x": 136,
+      "y": 224
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 224
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 224
+    },
+    {
+      "asset": "backdrop",
+      "x": 160,
+      "y": 224
+    },
+    {
+      "asset": "backdrop",
+      "x": 168,
+      "y": 224
+    },
+    {
+      "asset": "backdrop",
+      "x": 176,
+      "y": 224
+    },
+    {
+      "asset": "backdrop",
+      "x": 184,
+      "y": 224
+    },
+    {
+      "asset": "backdrop",
+      "x": 0,
+      "y": 232
+    },
+    {
+      "asset": "backdrop",
+      "x": 8,
+      "y": 232
+    },
+    {
+      "asset": "backdrop",
+      "x": 16,
+      "y": 232
+    },
+    {
+      "asset": "backdrop",
+      "x": 24,
+      "y": 232
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 232
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 232
+    },
+    {
+      "asset": "backdrop",
+      "x": 48,
+      "y": 232
+    },
+    {
+      "asset": "backdrop",
+      "x": 56,
+      "y": 232
+    },
+    {
+      "asset": "backdrop",
+      "x": 64,
+      "y": 232
+    },
+    {
+      "asset": "backdrop",
+      "x": 72,
+      "y": 232
+    },
+    {
+      "asset": "backdrop",
+      "x": 80,
+      "y": 232
+    },
+    {
+      "asset": "backdrop",
+      "x": 88,
+      "y": 232
+    },
+    {
+      "asset": "backdrop",
+      "x": 96,
+      "y": 232
+    },
+    {
+      "asset": "backdrop",
+      "x": 104,
+      "y": 232
+    },
+    {
+      "asset": "backdrop",
+      "x": 112,
+      "y": 232
+    },
+    {
+      "asset": "backdrop",
+      "x": 120,
+      "y": 232
+    },
+    {
+      "asset": "backdrop",
+      "x": 128,
+      "y": 232
+    },
+    {
+      "asset": "backdrop",
+      "x": 136,
+      "y": 232
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 232
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 232
+    },
+    {
+      "asset": "backdrop",
+      "x": 160,
+      "y": 232
+    },
+    {
+      "asset": "backdrop",
+      "x": 168,
+      "y": 232
+    },
+    {
+      "asset": "backdrop",
+      "x": 176,
+      "y": 232
+    },
+    {
+      "asset": "backdrop",
+      "x": 184,
+      "y": 232
+    },
+    {
+      "asset": "wall-field",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "asset": "wall-field",
+      "x": 8,
+      "y": 0
+    },
+    {
+      "asset": "wall-field",
+      "x": 16,
+      "y": 0
+    },
+    {
+      "asset": "wall-field",
+      "x": 24,
+      "y": 0
+    },
+    {
+      "asset": "wall-field",
+      "x": 32,
+      "y": 0
+    },
+    {
+      "asset": "wall-field",
+      "x": 40,
+      "y": 0
+    },
+    {
+      "asset": "wall-field",
+      "x": 48,
+      "y": 0
+    },
+    {
+      "asset": "wall-field",
+      "x": 56,
+      "y": 0
+    },
+    {
+      "asset": "wall-field",
+      "x": 64,
+      "y": 0
+    },
+    {
+      "asset": "wall-field",
+      "x": 72,
+      "y": 0
+    },
+    {
+      "asset": "wall-field",
+      "x": 80,
+      "y": 0
+    },
+    {
+      "asset": "wall-field",
+      "x": 88,
+      "y": 0
+    },
+    {
+      "asset": "wall-field",
+      "x": 96,
+      "y": 0
+    },
+    {
+      "asset": "wall-field",
+      "x": 104,
+      "y": 0
+    },
+    {
+      "asset": "wall-field",
+      "x": 112,
+      "y": 0
+    },
+    {
+      "asset": "wall-field",
+      "x": 120,
+      "y": 0
+    },
+    {
+      "asset": "wall-field",
+      "x": 128,
+      "y": 0
+    },
+    {
+      "asset": "wall-field",
+      "x": 136,
+      "y": 0
+    },
+    {
+      "asset": "wall-field",
+      "x": 144,
+      "y": 0
+    },
+    {
+      "asset": "wall-field",
+      "x": 152,
+      "y": 0
+    },
+    {
+      "asset": "wall-field",
+      "x": 160,
+      "y": 0
+    },
+    {
+      "asset": "wall-field",
+      "x": 168,
+      "y": 0
+    },
+    {
+      "asset": "wall-field",
+      "x": 176,
+      "y": 0
+    },
+    {
+      "asset": "wall-field",
+      "x": 184,
+      "y": 0
+    },
+    {
+      "asset": "wall-field",
+      "x": 0,
+      "y": 8
+    },
+    {
+      "asset": "wall-field",
+      "x": 8,
+      "y": 8
+    },
+    {
+      "asset": "wall-field",
+      "x": 16,
+      "y": 8
+    },
+    {
+      "asset": "wall-field",
+      "x": 24,
+      "y": 8
+    },
+    {
+      "asset": "wall-field",
+      "x": 32,
+      "y": 8
+    },
+    {
+      "asset": "wall-field",
+      "x": 40,
+      "y": 8
+    },
+    {
+      "asset": "wall-field",
+      "x": 48,
+      "y": 8
+    },
+    {
+      "asset": "wall-field",
+      "x": 56,
+      "y": 8
+    },
+    {
+      "asset": "wall-field",
+      "x": 64,
+      "y": 8
+    },
+    {
+      "asset": "wall-field",
+      "x": 72,
+      "y": 8
+    },
+    {
+      "asset": "wall-field",
+      "x": 80,
+      "y": 8
+    },
+    {
+      "asset": "wall-field",
+      "x": 88,
+      "y": 8
+    },
+    {
+      "asset": "wall-field",
+      "x": 96,
+      "y": 8
+    },
+    {
+      "asset": "wall-field",
+      "x": 104,
+      "y": 8
+    },
+    {
+      "asset": "wall-field",
+      "x": 112,
+      "y": 8
+    },
+    {
+      "asset": "wall-field",
+      "x": 120,
+      "y": 8
+    },
+    {
+      "asset": "wall-field",
+      "x": 128,
+      "y": 8
+    },
+    {
+      "asset": "wall-field",
+      "x": 136,
+      "y": 8
+    },
+    {
+      "asset": "wall-field",
+      "x": 144,
+      "y": 8
+    },
+    {
+      "asset": "wall-field",
+      "x": 152,
+      "y": 8
+    },
+    {
+      "asset": "wall-field",
+      "x": 160,
+      "y": 8
+    },
+    {
+      "asset": "wall-field",
+      "x": 168,
+      "y": 8
+    },
+    {
+      "asset": "wall-field",
+      "x": 176,
+      "y": 8
+    },
+    {
+      "asset": "wall-field",
+      "x": 184,
+      "y": 8
+    },
+    {
+      "asset": "wall-field",
+      "x": 0,
+      "y": 16
+    },
+    {
+      "asset": "wall-field",
+      "x": 8,
+      "y": 16
+    },
+    {
+      "asset": "wall-field",
+      "x": 16,
+      "y": 16
+    },
+    {
+      "asset": "wall-field",
+      "x": 24,
+      "y": 16
+    },
+    {
+      "asset": "wall-field",
+      "x": 32,
+      "y": 16
+    },
+    {
+      "asset": "wall-field",
+      "x": 40,
+      "y": 16
+    },
+    {
+      "asset": "wall-field",
+      "x": 48,
+      "y": 16
+    },
+    {
+      "asset": "wall-field",
+      "x": 56,
+      "y": 16
+    },
+    {
+      "asset": "wall-field",
+      "x": 64,
+      "y": 16
+    },
+    {
+      "asset": "wall-field",
+      "x": 72,
+      "y": 16
+    },
+    {
+      "asset": "wall-field",
+      "x": 80,
+      "y": 16
+    },
+    {
+      "asset": "wall-field",
+      "x": 88,
+      "y": 16
+    },
+    {
+      "asset": "wall-field",
+      "x": 96,
+      "y": 16
+    },
+    {
+      "asset": "wall-field",
+      "x": 104,
+      "y": 16
+    },
+    {
+      "asset": "wall-field",
+      "x": 112,
+      "y": 16
+    },
+    {
+      "asset": "wall-field",
+      "x": 120,
+      "y": 16
+    },
+    {
+      "asset": "wall-field",
+      "x": 128,
+      "y": 16
+    },
+    {
+      "asset": "wall-field",
+      "x": 136,
+      "y": 16
+    },
+    {
+      "asset": "wall-field",
+      "x": 144,
+      "y": 16
+    },
+    {
+      "asset": "wall-field",
+      "x": 152,
+      "y": 16
+    },
+    {
+      "asset": "wall-field",
+      "x": 160,
+      "y": 16
+    },
+    {
+      "asset": "wall-field",
+      "x": 168,
+      "y": 16
+    },
+    {
+      "asset": "wall-field",
+      "x": 176,
+      "y": 16
+    },
+    {
+      "asset": "wall-field",
+      "x": 184,
+      "y": 16
+    },
+    {
+      "asset": "wall-field",
+      "x": 0,
+      "y": 24
+    },
+    {
+      "asset": "wall-field",
+      "x": 8,
+      "y": 24
+    },
+    {
+      "asset": "wall-field",
+      "x": 16,
+      "y": 24
+    },
+    {
+      "asset": "wall-field",
+      "x": 24,
+      "y": 24
+    },
+    {
+      "asset": "wall-field",
+      "x": 32,
+      "y": 24
+    },
+    {
+      "asset": "wall-field",
+      "x": 40,
+      "y": 24
+    },
+    {
+      "asset": "wall-field",
+      "x": 48,
+      "y": 24
+    },
+    {
+      "asset": "wall-field",
+      "x": 56,
+      "y": 24
+    },
+    {
+      "asset": "wall-field",
+      "x": 64,
+      "y": 24
+    },
+    {
+      "asset": "wall-field",
+      "x": 72,
+      "y": 24
+    },
+    {
+      "asset": "wall-field",
+      "x": 80,
+      "y": 24
+    },
+    {
+      "asset": "wall-field",
+      "x": 88,
+      "y": 24
+    },
+    {
+      "asset": "wall-field",
+      "x": 96,
+      "y": 24
+    },
+    {
+      "asset": "wall-field",
+      "x": 104,
+      "y": 24
+    },
+    {
+      "asset": "wall-field",
+      "x": 112,
+      "y": 24
+    },
+    {
+      "asset": "wall-field",
+      "x": 120,
+      "y": 24
+    },
+    {
+      "asset": "wall-field",
+      "x": 128,
+      "y": 24
+    },
+    {
+      "asset": "wall-field",
+      "x": 136,
+      "y": 24
+    },
+    {
+      "asset": "wall-field",
+      "x": 144,
+      "y": 24
+    },
+    {
+      "asset": "wall-field",
+      "x": 152,
+      "y": 24
+    },
+    {
+      "asset": "wall-field",
+      "x": 160,
+      "y": 24
+    },
+    {
+      "asset": "wall-field",
+      "x": 168,
+      "y": 24
+    },
+    {
+      "asset": "wall-field",
+      "x": 176,
+      "y": 24
+    },
+    {
+      "asset": "wall-field",
+      "x": 184,
+      "y": 24
+    },
+    {
+      "asset": "wall-field",
+      "x": 0,
+      "y": 32
+    },
+    {
+      "asset": "wall-field",
+      "x": 8,
+      "y": 32
+    },
+    {
+      "asset": "wall-field",
+      "x": 16,
+      "y": 32
+    },
+    {
+      "asset": "wall-field",
+      "x": 24,
+      "y": 32
+    },
+    {
+      "asset": "wall-field",
+      "x": 32,
+      "y": 32
+    },
+    {
+      "asset": "wall-field",
+      "x": 40,
+      "y": 32
+    },
+    {
+      "asset": "wall-field",
+      "x": 48,
+      "y": 32
+    },
+    {
+      "asset": "wall-field",
+      "x": 56,
+      "y": 32
+    },
+    {
+      "asset": "wall-field",
+      "x": 64,
+      "y": 32
+    },
+    {
+      "asset": "wall-field",
+      "x": 72,
+      "y": 32
+    },
+    {
+      "asset": "wall-field",
+      "x": 80,
+      "y": 32
+    },
+    {
+      "asset": "wall-field",
+      "x": 88,
+      "y": 32
+    },
+    {
+      "asset": "wall-field",
+      "x": 96,
+      "y": 32
+    },
+    {
+      "asset": "wall-field",
+      "x": 104,
+      "y": 32
+    },
+    {
+      "asset": "wall-field",
+      "x": 112,
+      "y": 32
+    },
+    {
+      "asset": "wall-field",
+      "x": 120,
+      "y": 32
+    },
+    {
+      "asset": "wall-field",
+      "x": 128,
+      "y": 32
+    },
+    {
+      "asset": "wall-field",
+      "x": 136,
+      "y": 32
+    },
+    {
+      "asset": "wall-field",
+      "x": 144,
+      "y": 32
+    },
+    {
+      "asset": "wall-field",
+      "x": 152,
+      "y": 32
+    },
+    {
+      "asset": "wall-field",
+      "x": 160,
+      "y": 32
+    },
+    {
+      "asset": "wall-field",
+      "x": 168,
+      "y": 32
+    },
+    {
+      "asset": "wall-field",
+      "x": 176,
+      "y": 32
+    },
+    {
+      "asset": "wall-field",
+      "x": 184,
+      "y": 32
+    },
+    {
+      "asset": "wall-field",
+      "x": 0,
+      "y": 40
+    },
+    {
+      "asset": "wall-field",
+      "x": 8,
+      "y": 40
+    },
+    {
+      "asset": "wall-field",
+      "x": 16,
+      "y": 40
+    },
+    {
+      "asset": "wall-field",
+      "x": 24,
+      "y": 40
+    },
+    {
+      "asset": "wall-field",
+      "x": 32,
+      "y": 40
+    },
+    {
+      "asset": "wall-field",
+      "x": 40,
+      "y": 40
+    },
+    {
+      "asset": "wall-field",
+      "x": 48,
+      "y": 40
+    },
+    {
+      "asset": "wall-field",
+      "x": 56,
+      "y": 40
+    },
+    {
+      "asset": "wall-field",
+      "x": 64,
+      "y": 40
+    },
+    {
+      "asset": "wall-field",
+      "x": 72,
+      "y": 40
+    },
+    {
+      "asset": "wall-field",
+      "x": 80,
+      "y": 40
+    },
+    {
+      "asset": "wall-field",
+      "x": 88,
+      "y": 40
+    },
+    {
+      "asset": "wall-field",
+      "x": 96,
+      "y": 40
+    },
+    {
+      "asset": "wall-field",
+      "x": 104,
+      "y": 40
+    },
+    {
+      "asset": "wall-field",
+      "x": 112,
+      "y": 40
+    },
+    {
+      "asset": "wall-field",
+      "x": 120,
+      "y": 40
+    },
+    {
+      "asset": "wall-field",
+      "x": 128,
+      "y": 40
+    },
+    {
+      "asset": "wall-field",
+      "x": 136,
+      "y": 40
+    },
+    {
+      "asset": "wall-field",
+      "x": 144,
+      "y": 40
+    },
+    {
+      "asset": "wall-field",
+      "x": 152,
+      "y": 40
+    },
+    {
+      "asset": "wall-field",
+      "x": 160,
+      "y": 40
+    },
+    {
+      "asset": "wall-field",
+      "x": 168,
+      "y": 40
+    },
+    {
+      "asset": "wall-field",
+      "x": 176,
+      "y": 40
+    },
+    {
+      "asset": "wall-field",
+      "x": 184,
+      "y": 40
+    },
+    {
+      "asset": "wall-field",
+      "x": 0,
+      "y": 48
+    },
+    {
+      "asset": "wall-field",
+      "x": 8,
+      "y": 48
+    },
+    {
+      "asset": "wall-field",
+      "x": 16,
+      "y": 48
+    },
+    {
+      "asset": "wall-field",
+      "x": 24,
+      "y": 48
+    },
+    {
+      "asset": "wall-field",
+      "x": 32,
+      "y": 48
+    },
+    {
+      "asset": "wall-field",
+      "x": 40,
+      "y": 48
+    },
+    {
+      "asset": "wall-field",
+      "x": 48,
+      "y": 48
+    },
+    {
+      "asset": "wall-field",
+      "x": 56,
+      "y": 48
+    },
+    {
+      "asset": "wall-field",
+      "x": 64,
+      "y": 48
+    },
+    {
+      "asset": "wall-field",
+      "x": 72,
+      "y": 48
+    },
+    {
+      "asset": "wall-field",
+      "x": 80,
+      "y": 48
+    },
+    {
+      "asset": "wall-field",
+      "x": 88,
+      "y": 48
+    },
+    {
+      "asset": "wall-field",
+      "x": 96,
+      "y": 48
+    },
+    {
+      "asset": "wall-field",
+      "x": 104,
+      "y": 48
+    },
+    {
+      "asset": "wall-field",
+      "x": 112,
+      "y": 48
+    },
+    {
+      "asset": "wall-field",
+      "x": 120,
+      "y": 48
+    },
+    {
+      "asset": "wall-field",
+      "x": 128,
+      "y": 48
+    },
+    {
+      "asset": "wall-field",
+      "x": 136,
+      "y": 48
+    },
+    {
+      "asset": "wall-field",
+      "x": 144,
+      "y": 48
+    },
+    {
+      "asset": "wall-field",
+      "x": 152,
+      "y": 48
+    },
+    {
+      "asset": "wall-field",
+      "x": 160,
+      "y": 48
+    },
+    {
+      "asset": "wall-field",
+      "x": 168,
+      "y": 48
+    },
+    {
+      "asset": "wall-field",
+      "x": 176,
+      "y": 48
+    },
+    {
+      "asset": "wall-field",
+      "x": 184,
+      "y": 48
+    },
+    {
+      "asset": "wall-field",
+      "x": 0,
+      "y": 56
+    },
+    {
+      "asset": "wall-field",
+      "x": 8,
+      "y": 56
+    },
+    {
+      "asset": "wall-field",
+      "x": 16,
+      "y": 56
+    },
+    {
+      "asset": "wall-field",
+      "x": 24,
+      "y": 56
+    },
+    {
+      "asset": "wall-field",
+      "x": 32,
+      "y": 56
+    },
+    {
+      "asset": "wall-field",
+      "x": 40,
+      "y": 56
+    },
+    {
+      "asset": "wall-field",
+      "x": 48,
+      "y": 56
+    },
+    {
+      "asset": "wall-field",
+      "x": 56,
+      "y": 56
+    },
+    {
+      "asset": "wall-field",
+      "x": 64,
+      "y": 56
+    },
+    {
+      "asset": "wall-field",
+      "x": 72,
+      "y": 56
+    },
+    {
+      "asset": "wall-field",
+      "x": 80,
+      "y": 56
+    },
+    {
+      "asset": "wall-field",
+      "x": 88,
+      "y": 56
+    },
+    {
+      "asset": "wall-field",
+      "x": 96,
+      "y": 56
+    },
+    {
+      "asset": "wall-field",
+      "x": 104,
+      "y": 56
+    },
+    {
+      "asset": "wall-field",
+      "x": 112,
+      "y": 56
+    },
+    {
+      "asset": "wall-field",
+      "x": 120,
+      "y": 56
+    },
+    {
+      "asset": "wall-field",
+      "x": 128,
+      "y": 56
+    },
+    {
+      "asset": "wall-field",
+      "x": 136,
+      "y": 56
+    },
+    {
+      "asset": "wall-field",
+      "x": 144,
+      "y": 56
+    },
+    {
+      "asset": "wall-field",
+      "x": 152,
+      "y": 56
+    },
+    {
+      "asset": "wall-field",
+      "x": 160,
+      "y": 56
+    },
+    {
+      "asset": "wall-field",
+      "x": 168,
+      "y": 56
+    },
+    {
+      "asset": "wall-field",
+      "x": 176,
+      "y": 56
+    },
+    {
+      "asset": "wall-field",
+      "x": 184,
+      "y": 56
+    },
+    {
+      "asset": "wall-field",
+      "x": 0,
+      "y": 64
+    },
+    {
+      "asset": "wall-field",
+      "x": 8,
+      "y": 64
+    },
+    {
+      "asset": "wall-field",
+      "x": 16,
+      "y": 64
+    },
+    {
+      "asset": "wall-field",
+      "x": 24,
+      "y": 64
+    },
+    {
+      "asset": "wall-field",
+      "x": 32,
+      "y": 64
+    },
+    {
+      "asset": "wall-field",
+      "x": 40,
+      "y": 64
+    },
+    {
+      "asset": "wall-field",
+      "x": 48,
+      "y": 64
+    },
+    {
+      "asset": "wall-field",
+      "x": 56,
+      "y": 64
+    },
+    {
+      "asset": "wall-field",
+      "x": 64,
+      "y": 64
+    },
+    {
+      "asset": "wall-field",
+      "x": 72,
+      "y": 64
+    },
+    {
+      "asset": "wall-field",
+      "x": 80,
+      "y": 64
+    },
+    {
+      "asset": "wall-field",
+      "x": 88,
+      "y": 64
+    },
+    {
+      "asset": "wall-field",
+      "x": 96,
+      "y": 64
+    },
+    {
+      "asset": "wall-field",
+      "x": 104,
+      "y": 64
+    },
+    {
+      "asset": "wall-field",
+      "x": 112,
+      "y": 64
+    },
+    {
+      "asset": "wall-field",
+      "x": 120,
+      "y": 64
+    },
+    {
+      "asset": "wall-field",
+      "x": 128,
+      "y": 64
+    },
+    {
+      "asset": "wall-field",
+      "x": 136,
+      "y": 64
+    },
+    {
+      "asset": "wall-field",
+      "x": 144,
+      "y": 64
+    },
+    {
+      "asset": "wall-field",
+      "x": 152,
+      "y": 64
+    },
+    {
+      "asset": "wall-field",
+      "x": 160,
+      "y": 64
+    },
+    {
+      "asset": "wall-field",
+      "x": 168,
+      "y": 64
+    },
+    {
+      "asset": "wall-field",
+      "x": 176,
+      "y": 64
+    },
+    {
+      "asset": "wall-field",
+      "x": 184,
+      "y": 64
+    },
+    {
+      "asset": "wall-field",
+      "x": 0,
+      "y": 72
+    },
+    {
+      "asset": "wall-field",
+      "x": 8,
+      "y": 72
+    },
+    {
+      "asset": "wall-field",
+      "x": 16,
+      "y": 72
+    },
+    {
+      "asset": "wall-field",
+      "x": 24,
+      "y": 72
+    },
+    {
+      "asset": "wall-field",
+      "x": 32,
+      "y": 72
+    },
+    {
+      "asset": "wall-field",
+      "x": 40,
+      "y": 72
+    },
+    {
+      "asset": "wall-field",
+      "x": 48,
+      "y": 72
+    },
+    {
+      "asset": "wall-field",
+      "x": 56,
+      "y": 72
+    },
+    {
+      "asset": "wall-field",
+      "x": 64,
+      "y": 72
+    },
+    {
+      "asset": "wall-field",
+      "x": 72,
+      "y": 72
+    },
+    {
+      "asset": "wall-field",
+      "x": 80,
+      "y": 72
+    },
+    {
+      "asset": "wall-field",
+      "x": 88,
+      "y": 72
+    },
+    {
+      "asset": "wall-field",
+      "x": 96,
+      "y": 72
+    },
+    {
+      "asset": "wall-field",
+      "x": 104,
+      "y": 72
+    },
+    {
+      "asset": "wall-field",
+      "x": 112,
+      "y": 72
+    },
+    {
+      "asset": "wall-field",
+      "x": 120,
+      "y": 72
+    },
+    {
+      "asset": "wall-field",
+      "x": 128,
+      "y": 72
+    },
+    {
+      "asset": "wall-field",
+      "x": 136,
+      "y": 72
+    },
+    {
+      "asset": "wall-field",
+      "x": 144,
+      "y": 72
+    },
+    {
+      "asset": "wall-field",
+      "x": 152,
+      "y": 72
+    },
+    {
+      "asset": "wall-field",
+      "x": 160,
+      "y": 72
+    },
+    {
+      "asset": "wall-field",
+      "x": 168,
+      "y": 72
+    },
+    {
+      "asset": "wall-field",
+      "x": 176,
+      "y": 72
+    },
+    {
+      "asset": "wall-field",
+      "x": 184,
+      "y": 72
+    },
+    {
+      "asset": "wall-field",
+      "x": 0,
+      "y": 80
+    },
+    {
+      "asset": "wall-field",
+      "x": 8,
+      "y": 80
+    },
+    {
+      "asset": "wall-field",
+      "x": 16,
+      "y": 80
+    },
+    {
+      "asset": "wall-field",
+      "x": 24,
+      "y": 80
+    },
+    {
+      "asset": "wall-field",
+      "x": 32,
+      "y": 80
+    },
+    {
+      "asset": "wall-field",
+      "x": 40,
+      "y": 80
+    },
+    {
+      "asset": "wall-field",
+      "x": 48,
+      "y": 80
+    },
+    {
+      "asset": "wall-field",
+      "x": 56,
+      "y": 80
+    },
+    {
+      "asset": "wall-field",
+      "x": 64,
+      "y": 80
+    },
+    {
+      "asset": "wall-field",
+      "x": 72,
+      "y": 80
+    },
+    {
+      "asset": "wall-field",
+      "x": 80,
+      "y": 80
+    },
+    {
+      "asset": "wall-field",
+      "x": 88,
+      "y": 80
+    },
+    {
+      "asset": "wall-field",
+      "x": 96,
+      "y": 80
+    },
+    {
+      "asset": "wall-field",
+      "x": 104,
+      "y": 80
+    },
+    {
+      "asset": "wall-field",
+      "x": 112,
+      "y": 80
+    },
+    {
+      "asset": "wall-field",
+      "x": 120,
+      "y": 80
+    },
+    {
+      "asset": "wall-field",
+      "x": 128,
+      "y": 80
+    },
+    {
+      "asset": "wall-field",
+      "x": 136,
+      "y": 80
+    },
+    {
+      "asset": "wall-field",
+      "x": 144,
+      "y": 80
+    },
+    {
+      "asset": "wall-field",
+      "x": 152,
+      "y": 80
+    },
+    {
+      "asset": "wall-field",
+      "x": 160,
+      "y": 80
+    },
+    {
+      "asset": "wall-field",
+      "x": 168,
+      "y": 80
+    },
+    {
+      "asset": "wall-field",
+      "x": 176,
+      "y": 80
+    },
+    {
+      "asset": "wall-field",
+      "x": 184,
+      "y": 80
+    },
+    {
+      "asset": "wall-field",
+      "x": 0,
+      "y": 88
+    },
+    {
+      "asset": "wall-field",
+      "x": 8,
+      "y": 88
+    },
+    {
+      "asset": "wall-field",
+      "x": 16,
+      "y": 88
+    },
+    {
+      "asset": "wall-field",
+      "x": 24,
+      "y": 88
+    },
+    {
+      "asset": "wall-field",
+      "x": 32,
+      "y": 88
+    },
+    {
+      "asset": "wall-field",
+      "x": 40,
+      "y": 88
+    },
+    {
+      "asset": "wall-field",
+      "x": 48,
+      "y": 88
+    },
+    {
+      "asset": "wall-field",
+      "x": 56,
+      "y": 88
+    },
+    {
+      "asset": "wall-field",
+      "x": 64,
+      "y": 88
+    },
+    {
+      "asset": "wall-field",
+      "x": 72,
+      "y": 88
+    },
+    {
+      "asset": "wall-field",
+      "x": 80,
+      "y": 88
+    },
+    {
+      "asset": "wall-field",
+      "x": 88,
+      "y": 88
+    },
+    {
+      "asset": "wall-field",
+      "x": 96,
+      "y": 88
+    },
+    {
+      "asset": "wall-field",
+      "x": 104,
+      "y": 88
+    },
+    {
+      "asset": "wall-field",
+      "x": 112,
+      "y": 88
+    },
+    {
+      "asset": "wall-field",
+      "x": 120,
+      "y": 88
+    },
+    {
+      "asset": "wall-field",
+      "x": 128,
+      "y": 88
+    },
+    {
+      "asset": "wall-field",
+      "x": 136,
+      "y": 88
+    },
+    {
+      "asset": "wall-field",
+      "x": 144,
+      "y": 88
+    },
+    {
+      "asset": "wall-field",
+      "x": 152,
+      "y": 88
+    },
+    {
+      "asset": "wall-field",
+      "x": 160,
+      "y": 88
+    },
+    {
+      "asset": "wall-field",
+      "x": 168,
+      "y": 88
+    },
+    {
+      "asset": "wall-field",
+      "x": 176,
+      "y": 88
+    },
+    {
+      "asset": "wall-field",
+      "x": 184,
+      "y": 88
+    },
+    {
+      "asset": "wall-field",
+      "x": 0,
+      "y": 96
+    },
+    {
+      "asset": "wall-field",
+      "x": 8,
+      "y": 96
+    },
+    {
+      "asset": "wall-field",
+      "x": 16,
+      "y": 96
+    },
+    {
+      "asset": "wall-field",
+      "x": 24,
+      "y": 96
+    },
+    {
+      "asset": "wall-field",
+      "x": 32,
+      "y": 96
+    },
+    {
+      "asset": "wall-field",
+      "x": 40,
+      "y": 96
+    },
+    {
+      "asset": "wall-field",
+      "x": 48,
+      "y": 96
+    },
+    {
+      "asset": "wall-field",
+      "x": 56,
+      "y": 96
+    },
+    {
+      "asset": "wall-field",
+      "x": 64,
+      "y": 96
+    },
+    {
+      "asset": "wall-field",
+      "x": 72,
+      "y": 96
+    },
+    {
+      "asset": "wall-field",
+      "x": 80,
+      "y": 96
+    },
+    {
+      "asset": "wall-field",
+      "x": 88,
+      "y": 96
+    },
+    {
+      "asset": "wall-field",
+      "x": 96,
+      "y": 96
+    },
+    {
+      "asset": "wall-field",
+      "x": 104,
+      "y": 96
+    },
+    {
+      "asset": "wall-field",
+      "x": 112,
+      "y": 96
+    },
+    {
+      "asset": "wall-field",
+      "x": 120,
+      "y": 96
+    },
+    {
+      "asset": "wall-field",
+      "x": 128,
+      "y": 96
+    },
+    {
+      "asset": "wall-field",
+      "x": 136,
+      "y": 96
+    },
+    {
+      "asset": "wall-field",
+      "x": 144,
+      "y": 96
+    },
+    {
+      "asset": "wall-field",
+      "x": 152,
+      "y": 96
+    },
+    {
+      "asset": "wall-field",
+      "x": 160,
+      "y": 96
+    },
+    {
+      "asset": "wall-field",
+      "x": 168,
+      "y": 96
+    },
+    {
+      "asset": "wall-field",
+      "x": 176,
+      "y": 96
+    },
+    {
+      "asset": "wall-field",
+      "x": 184,
+      "y": 96
+    },
+    {
+      "asset": "wall-field",
+      "x": 0,
+      "y": 104
+    },
+    {
+      "asset": "wall-field",
+      "x": 8,
+      "y": 104
+    },
+    {
+      "asset": "wall-field",
+      "x": 16,
+      "y": 104
+    },
+    {
+      "asset": "wall-field",
+      "x": 24,
+      "y": 104
+    },
+    {
+      "asset": "wall-field",
+      "x": 32,
+      "y": 104
+    },
+    {
+      "asset": "wall-field",
+      "x": 40,
+      "y": 104
+    },
+    {
+      "asset": "wall-field",
+      "x": 48,
+      "y": 104
+    },
+    {
+      "asset": "wall-field",
+      "x": 56,
+      "y": 104
+    },
+    {
+      "asset": "wall-field",
+      "x": 64,
+      "y": 104
+    },
+    {
+      "asset": "wall-field",
+      "x": 72,
+      "y": 104
+    },
+    {
+      "asset": "wall-field",
+      "x": 80,
+      "y": 104
+    },
+    {
+      "asset": "wall-field",
+      "x": 88,
+      "y": 104
+    },
+    {
+      "asset": "wall-field",
+      "x": 96,
+      "y": 104
+    },
+    {
+      "asset": "wall-field",
+      "x": 104,
+      "y": 104
+    },
+    {
+      "asset": "wall-field",
+      "x": 112,
+      "y": 104
+    },
+    {
+      "asset": "wall-field",
+      "x": 120,
+      "y": 104
+    },
+    {
+      "asset": "wall-field",
+      "x": 128,
+      "y": 104
+    },
+    {
+      "asset": "wall-field",
+      "x": 136,
+      "y": 104
+    },
+    {
+      "asset": "wall-field",
+      "x": 144,
+      "y": 104
+    },
+    {
+      "asset": "wall-field",
+      "x": 152,
+      "y": 104
+    },
+    {
+      "asset": "wall-field",
+      "x": 160,
+      "y": 104
+    },
+    {
+      "asset": "wall-field",
+      "x": 168,
+      "y": 104
+    },
+    {
+      "asset": "wall-field",
+      "x": 176,
+      "y": 104
+    },
+    {
+      "asset": "wall-field",
+      "x": 184,
+      "y": 104
+    },
+    {
+      "asset": "wall-field",
+      "x": 0,
+      "y": 112
+    },
+    {
+      "asset": "wall-field",
+      "x": 8,
+      "y": 112
+    },
+    {
+      "asset": "wall-field",
+      "x": 16,
+      "y": 112
+    },
+    {
+      "asset": "wall-field",
+      "x": 24,
+      "y": 112
+    },
+    {
+      "asset": "wall-field",
+      "x": 32,
+      "y": 112
+    },
+    {
+      "asset": "wall-field",
+      "x": 40,
+      "y": 112
+    },
+    {
+      "asset": "wall-field",
+      "x": 48,
+      "y": 112
+    },
+    {
+      "asset": "wall-field",
+      "x": 56,
+      "y": 112
+    },
+    {
+      "asset": "wall-field",
+      "x": 64,
+      "y": 112
+    },
+    {
+      "asset": "wall-field",
+      "x": 72,
+      "y": 112
+    },
+    {
+      "asset": "wall-field",
+      "x": 80,
+      "y": 112
+    },
+    {
+      "asset": "wall-field",
+      "x": 88,
+      "y": 112
+    },
+    {
+      "asset": "wall-field",
+      "x": 96,
+      "y": 112
+    },
+    {
+      "asset": "wall-field",
+      "x": 104,
+      "y": 112
+    },
+    {
+      "asset": "wall-field",
+      "x": 112,
+      "y": 112
+    },
+    {
+      "asset": "wall-field",
+      "x": 120,
+      "y": 112
+    },
+    {
+      "asset": "wall-field",
+      "x": 128,
+      "y": 112
+    },
+    {
+      "asset": "wall-field",
+      "x": 136,
+      "y": 112
+    },
+    {
+      "asset": "wall-field",
+      "x": 144,
+      "y": 112
+    },
+    {
+      "asset": "wall-field",
+      "x": 152,
+      "y": 112
+    },
+    {
+      "asset": "wall-field",
+      "x": 160,
+      "y": 112
+    },
+    {
+      "asset": "wall-field",
+      "x": 168,
+      "y": 112
+    },
+    {
+      "asset": "wall-field",
+      "x": 176,
+      "y": 112
+    },
+    {
+      "asset": "wall-field",
+      "x": 184,
+      "y": 112
+    },
+    {
+      "asset": "wall-field",
+      "x": 0,
+      "y": 120
+    },
+    {
+      "asset": "wall-field",
+      "x": 8,
+      "y": 120
+    },
+    {
+      "asset": "wall-field",
+      "x": 16,
+      "y": 120
+    },
+    {
+      "asset": "wall-field",
+      "x": 24,
+      "y": 120
+    },
+    {
+      "asset": "wall-field",
+      "x": 32,
+      "y": 120
+    },
+    {
+      "asset": "wall-field",
+      "x": 40,
+      "y": 120
+    },
+    {
+      "asset": "wall-field",
+      "x": 48,
+      "y": 120
+    },
+    {
+      "asset": "wall-field",
+      "x": 56,
+      "y": 120
+    },
+    {
+      "asset": "wall-field",
+      "x": 64,
+      "y": 120
+    },
+    {
+      "asset": "wall-field",
+      "x": 72,
+      "y": 120
+    },
+    {
+      "asset": "wall-field",
+      "x": 80,
+      "y": 120
+    },
+    {
+      "asset": "wall-field",
+      "x": 88,
+      "y": 120
+    },
+    {
+      "asset": "wall-field",
+      "x": 96,
+      "y": 120
+    },
+    {
+      "asset": "wall-field",
+      "x": 104,
+      "y": 120
+    },
+    {
+      "asset": "wall-field",
+      "x": 112,
+      "y": 120
+    },
+    {
+      "asset": "wall-field",
+      "x": 120,
+      "y": 120
+    },
+    {
+      "asset": "wall-field",
+      "x": 128,
+      "y": 120
+    },
+    {
+      "asset": "wall-field",
+      "x": 136,
+      "y": 120
+    },
+    {
+      "asset": "wall-field",
+      "x": 144,
+      "y": 120
+    },
+    {
+      "asset": "wall-field",
+      "x": 152,
+      "y": 120
+    },
+    {
+      "asset": "wall-field",
+      "x": 160,
+      "y": 120
+    },
+    {
+      "asset": "wall-field",
+      "x": 168,
+      "y": 120
+    },
+    {
+      "asset": "wall-field",
+      "x": 176,
+      "y": 120
+    },
+    {
+      "asset": "wall-field",
+      "x": 184,
+      "y": 120
+    },
+    {
+      "asset": "wall-joint-a",
+      "x": 0,
+      "y": 16
+    },
+    {
+      "asset": "wall-joint-b",
+      "x": 8,
+      "y": 16
+    },
+    {
+      "asset": "wall-joint-a",
+      "x": 16,
+      "y": 16
+    },
+    {
+      "asset": "wall-joint-b",
+      "x": 24,
+      "y": 16
+    },
+    {
+      "asset": "wall-joint-a",
+      "x": 32,
+      "y": 16
+    },
+    {
+      "asset": "wall-joint-b",
+      "x": 40,
+      "y": 16
+    },
+    {
+      "asset": "wall-joint-a",
+      "x": 48,
+      "y": 16
+    },
+    {
+      "asset": "wall-joint-b",
+      "x": 56,
+      "y": 16
+    },
+    {
+      "asset": "wall-joint-a",
+      "x": 128,
+      "y": 16
+    },
+    {
+      "asset": "wall-joint-b",
+      "x": 136,
+      "y": 16
+    },
+    {
+      "asset": "wall-joint-a",
+      "x": 144,
+      "y": 16
+    },
+    {
+      "asset": "wall-joint-b",
+      "x": 152,
+      "y": 16
+    },
+    {
+      "asset": "wall-joint-a",
+      "x": 160,
+      "y": 16
+    },
+    {
+      "asset": "wall-joint-b",
+      "x": 168,
+      "y": 16
+    },
+    {
+      "asset": "wall-joint-a",
+      "x": 176,
+      "y": 16
+    },
+    {
+      "asset": "wall-joint-b",
+      "x": 184,
+      "y": 16
+    },
+    {
+      "asset": "wall-joint-a",
+      "x": 0,
+      "y": 80
+    },
+    {
+      "asset": "wall-joint-b",
+      "x": 8,
+      "y": 80
+    },
+    {
+      "asset": "wall-joint-a",
+      "x": 16,
+      "y": 80
+    },
+    {
+      "asset": "wall-joint-b",
+      "x": 24,
+      "y": 80
+    },
+    {
+      "asset": "wall-joint-a",
+      "x": 32,
+      "y": 80
+    },
+    {
+      "asset": "wall-joint-b",
+      "x": 40,
+      "y": 80
+    },
+    {
+      "asset": "wall-joint-a",
+      "x": 48,
+      "y": 80
+    },
+    {
+      "asset": "wall-joint-b",
+      "x": 56,
+      "y": 80
+    },
+    {
+      "asset": "wall-joint-a",
+      "x": 128,
+      "y": 80
+    },
+    {
+      "asset": "wall-joint-b",
+      "x": 136,
+      "y": 80
+    },
+    {
+      "asset": "wall-joint-a",
+      "x": 144,
+      "y": 80
+    },
+    {
+      "asset": "wall-joint-b",
+      "x": 152,
+      "y": 80
+    },
+    {
+      "asset": "wall-joint-a",
+      "x": 160,
+      "y": 80
+    },
+    {
+      "asset": "wall-joint-b",
+      "x": 168,
+      "y": 80
+    },
+    {
+      "asset": "wall-joint-a",
+      "x": 176,
+      "y": 80
+    },
+    {
+      "asset": "wall-joint-b",
+      "x": 184,
+      "y": 80
+    },
+    {
+      "asset": "rose",
+      "x": 64,
+      "y": 16
+    },
+    {
+      "asset": "wall-field",
+      "x": 64,
+      "y": 16
+    },
+    {
+      "asset": "wall-field",
+      "x": 72,
+      "y": 16
+    },
+    {
+      "asset": "wall-field",
+      "x": 64,
+      "y": 24
+    },
+    {
+      "asset": "wall-field",
+      "x": 72,
+      "y": 24
+    },
+    {
+      "asset": "wall-field",
+      "x": 64,
+      "y": 64
+    },
+    {
+      "asset": "wall-field",
+      "x": 72,
+      "y": 64
+    },
+    {
+      "asset": "wall-field",
+      "x": 64,
+      "y": 72
+    },
+    {
+      "asset": "wall-field",
+      "x": 72,
+      "y": 72
+    },
+    {
+      "asset": "wall-field",
+      "x": 112,
+      "y": 16
+    },
+    {
+      "asset": "wall-field",
+      "x": 120,
+      "y": 16
+    },
+    {
+      "asset": "wall-field",
+      "x": 112,
+      "y": 24
+    },
+    {
+      "asset": "wall-field",
+      "x": 120,
+      "y": 24
+    },
+    {
+      "asset": "wall-field",
+      "x": 112,
+      "y": 64
+    },
+    {
+      "asset": "wall-field",
+      "x": 120,
+      "y": 64
+    },
+    {
+      "asset": "wall-field",
+      "x": 112,
+      "y": 72
+    },
+    {
+      "asset": "wall-field",
+      "x": 120,
+      "y": 72
+    },
+    {
+      "asset": "cornice",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "asset": "cornice",
+      "x": 16,
+      "y": 0
+    },
+    {
+      "asset": "cornice",
+      "x": 32,
+      "y": 0
+    },
+    {
+      "asset": "cornice",
+      "x": 48,
+      "y": 0
+    },
+    {
+      "asset": "cornice",
+      "x": 64,
+      "y": 0
+    },
+    {
+      "asset": "cornice",
+      "x": 80,
+      "y": 0
+    },
+    {
+      "asset": "cornice",
+      "x": 96,
+      "y": 0
+    },
+    {
+      "asset": "cornice",
+      "x": 112,
+      "y": 0
+    },
+    {
+      "asset": "cornice",
+      "x": 128,
+      "y": 0
+    },
+    {
+      "asset": "cornice",
+      "x": 144,
+      "y": 0
+    },
+    {
+      "asset": "cornice",
+      "x": 160,
+      "y": 0
+    },
+    {
+      "asset": "cornice",
+      "x": 176,
+      "y": 0
+    },
+    {
+      "asset": "wall-joint-a",
+      "x": 64,
+      "y": 80
+    },
+    {
+      "asset": "wall-joint-b",
+      "x": 72,
+      "y": 80
+    },
+    {
+      "asset": "wall-joint-a",
+      "x": 80,
+      "y": 80
+    },
+    {
+      "asset": "wall-joint-b",
+      "x": 88,
+      "y": 80
+    },
+    {
+      "asset": "wall-joint-a",
+      "x": 96,
+      "y": 80
+    },
+    {
+      "asset": "wall-joint-b",
+      "x": 104,
+      "y": 80
+    },
+    {
+      "asset": "wall-joint-a",
+      "x": 112,
+      "y": 80
+    },
+    {
+      "asset": "wall-joint-b",
+      "x": 120,
+      "y": 80
+    },
+    {
+      "asset": "backdrop",
+      "x": 80,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 88,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 96,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 104,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 80,
+      "y": 104
+    },
+    {
+      "asset": "backdrop",
+      "x": 88,
+      "y": 104
+    },
+    {
+      "asset": "backdrop",
+      "x": 96,
+      "y": 104
+    },
+    {
+      "asset": "backdrop",
+      "x": 104,
+      "y": 104
+    },
+    {
+      "asset": "backdrop",
+      "x": 80,
+      "y": 112
+    },
+    {
+      "asset": "backdrop",
+      "x": 88,
+      "y": 112
+    },
+    {
+      "asset": "backdrop",
+      "x": 96,
+      "y": 112
+    },
+    {
+      "asset": "backdrop",
+      "x": 104,
+      "y": 112
+    },
+    {
+      "asset": "backdrop",
+      "x": 80,
+      "y": 120
+    },
+    {
+      "asset": "backdrop",
+      "x": 88,
+      "y": 120
+    },
+    {
+      "asset": "backdrop",
+      "x": 96,
+      "y": 120
+    },
+    {
+      "asset": "backdrop",
+      "x": 104,
+      "y": 120
+    },
+    {
+      "asset": "door",
+      "x": 80,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 64,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 72,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 64,
+      "y": 104
+    },
+    {
+      "asset": "backdrop",
+      "x": 72,
+      "y": 104
+    },
+    {
+      "asset": "backdrop",
+      "x": 64,
+      "y": 112
+    },
+    {
+      "asset": "backdrop",
+      "x": 72,
+      "y": 112
+    },
+    {
+      "asset": "backdrop",
+      "x": 64,
+      "y": 120
+    },
+    {
+      "asset": "backdrop",
+      "x": 72,
+      "y": 120
+    },
+    {
+      "asset": "lancet-far",
+      "x": 64,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 112,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 120,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 112,
+      "y": 104
+    },
+    {
+      "asset": "backdrop",
+      "x": 120,
+      "y": 104
+    },
+    {
+      "asset": "backdrop",
+      "x": 112,
+      "y": 112
+    },
+    {
+      "asset": "backdrop",
+      "x": 120,
+      "y": 112
+    },
+    {
+      "asset": "backdrop",
+      "x": 112,
+      "y": 120
+    },
+    {
+      "asset": "backdrop",
+      "x": 120,
+      "y": 120
+    },
+    {
+      "asset": "lancet-far",
+      "x": 112,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 16
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 16
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 24
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 24
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 32
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 32
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 40
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 40
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 48
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 48
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 56
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 56
+    },
+    {
+      "asset": "banner",
+      "x": 32,
+      "y": 16
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 80
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 80
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 88
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 88
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 104
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 104
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 112
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 112
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 120
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 120
+    },
+    {
+      "asset": "lancet-near",
+      "x": 32,
+      "y": 80
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 16
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 16
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 24
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 24
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 32
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 32
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 40
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 40
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 48
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 48
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 56
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 56
+    },
+    {
+      "asset": "banner",
+      "x": 144,
+      "y": 16
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 80
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 80
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 88
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 88
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 96
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 104
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 104
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 112
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 112
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 120
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 120
+    },
+    {
+      "asset": "lancet-near",
+      "x": 144,
+      "y": 80
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 64
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 64
+    },
+    {
+      "asset": "backdrop",
+      "x": 32,
+      "y": 72
+    },
+    {
+      "asset": "backdrop",
+      "x": 40,
+      "y": 72
+    },
+    {
+      "asset": "sconce",
+      "x": 32,
+      "y": 64
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 64
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 64
+    },
+    {
+      "asset": "backdrop",
+      "x": 144,
+      "y": 72
+    },
+    {
+      "asset": "backdrop",
+      "x": 152,
+      "y": 72
+    },
+    {
+      "asset": "sconce",
+      "x": 144,
+      "y": 64
+    },
+    {
+      "asset": "arch-shoulder",
+      "x": 16,
+      "y": 16
+    },
+    {
+      "asset": "arch-shoulder-mirror",
+      "x": 48,
+      "y": 16
+    },
+    {
+      "asset": "arch-jamb",
+      "x": 16,
+      "y": 48
+    },
+    {
+      "asset": "arch-jamb-mirror",
+      "x": 48,
+      "y": 48
+    },
+    {
+      "asset": "arch-jamb",
+      "x": 16,
+      "y": 64
+    },
+    {
+      "asset": "arch-jamb-mirror",
+      "x": 48,
+      "y": 64
+    },
+    {
+      "asset": "arch-jamb",
+      "x": 16,
+      "y": 80
+    },
+    {
+      "asset": "arch-jamb-mirror",
+      "x": 48,
+      "y": 80
+    },
+    {
+      "asset": "arch-jamb",
+      "x": 16,
+      "y": 96
+    },
+    {
+      "asset": "arch-jamb-mirror",
+      "x": 48,
+      "y": 96
+    },
+    {
+      "asset": "arch-jamb",
+      "x": 16,
+      "y": 112
+    },
+    {
+      "asset": "arch-jamb-mirror",
+      "x": 48,
+      "y": 112
+    },
+    {
+      "asset": "arch-foot",
+      "x": 16,
+      "y": 128
+    },
+    {
+      "asset": "arch-foot-mirror",
+      "x": 48,
+      "y": 128
+    },
+    {
+      "asset": "arch-shoulder",
+      "x": 128,
+      "y": 16
+    },
+    {
+      "asset": "arch-shoulder-mirror",
+      "x": 160,
+      "y": 16
+    },
+    {
+      "asset": "arch-jamb",
+      "x": 128,
+      "y": 48
+    },
+    {
+      "asset": "arch-jamb-mirror",
+      "x": 160,
+      "y": 48
+    },
+    {
+      "asset": "arch-jamb",
+      "x": 128,
+      "y": 64
+    },
+    {
+      "asset": "arch-jamb-mirror",
+      "x": 160,
+      "y": 64
+    },
+    {
+      "asset": "arch-jamb",
+      "x": 128,
+      "y": 80
+    },
+    {
+      "asset": "arch-jamb-mirror",
+      "x": 160,
+      "y": 80
+    },
+    {
+      "asset": "arch-jamb",
+      "x": 128,
+      "y": 96
+    },
+    {
+      "asset": "arch-jamb-mirror",
+      "x": 160,
+      "y": 96
+    },
+    {
+      "asset": "arch-jamb",
+      "x": 128,
+      "y": 112
+    },
+    {
+      "asset": "arch-jamb-mirror",
+      "x": 160,
+      "y": 112
+    },
+    {
+      "asset": "arch-foot",
+      "x": 128,
+      "y": 128
+    },
+    {
+      "asset": "arch-foot-mirror",
+      "x": 160,
+      "y": 128
+    },
+    {
+      "asset": "pier-cap",
+      "x": 48,
+      "y": 32
+    },
+    {
+      "asset": "pier-shaft",
+      "x": 48,
+      "y": 48
+    },
+    {
+      "asset": "pier-shaft",
+      "x": 48,
+      "y": 64
+    },
+    {
+      "asset": "pier-shaft",
+      "x": 48,
+      "y": 96
+    },
+    {
+      "asset": "pier-shaft",
+      "x": 48,
+      "y": 112
+    },
+    {
+      "asset": "pier-collar",
+      "x": 48,
+      "y": 80
+    },
+    {
+      "asset": "pier-base",
+      "x": 48,
+      "y": 128
+    },
+    {
+      "asset": "pier-cap",
+      "x": 128,
+      "y": 32
+    },
+    {
+      "asset": "pier-shaft",
+      "x": 128,
+      "y": 48
+    },
+    {
+      "asset": "pier-shaft",
+      "x": 128,
+      "y": 64
+    },
+    {
+      "asset": "pier-shaft",
+      "x": 128,
+      "y": 96
+    },
+    {
+      "asset": "pier-shaft",
+      "x": 128,
+      "y": 112
+    },
+    {
+      "asset": "pier-collar",
+      "x": 128,
+      "y": 80
+    },
+    {
+      "asset": "pier-base",
+      "x": 128,
+      "y": 128
+    },
+    {
+      "asset": "stair-stone",
+      "x": 64,
+      "y": 128
+    },
+    {
+      "asset": "stair-stone",
+      "x": 112,
+      "y": 128
+    },
+    {
+      "asset": "stair-runner",
+      "x": 80,
+      "y": 128
+    },
+    {
+      "asset": "stair-runner",
+      "x": 96,
+      "y": 128
+    },
+    {
+      "asset": "runner-field",
+      "x": 80,
+      "y": 144
+    },
+    {
+      "asset": "runner-field",
+      "x": 88,
+      "y": 144
+    },
+    {
+      "asset": "runner-field",
+      "x": 96,
+      "y": 144
+    },
+    {
+      "asset": "runner-field",
+      "x": 104,
+      "y": 144
+    },
+    {
+      "asset": "runner-field",
+      "x": 80,
+      "y": 152
+    },
+    {
+      "asset": "runner-field",
+      "x": 88,
+      "y": 152
+    },
+    {
+      "asset": "runner-field",
+      "x": 96,
+      "y": 152
+    },
+    {
+      "asset": "runner-field",
+      "x": 104,
+      "y": 152
+    },
+    {
+      "asset": "runner-field",
+      "x": 80,
+      "y": 160
+    },
+    {
+      "asset": "runner-field",
+      "x": 88,
+      "y": 160
+    },
+    {
+      "asset": "runner-field",
+      "x": 96,
+      "y": 160
+    },
+    {
+      "asset": "runner-field",
+      "x": 104,
+      "y": 160
+    },
+    {
+      "asset": "runner-field",
+      "x": 80,
+      "y": 168
+    },
+    {
+      "asset": "runner-field",
+      "x": 88,
+      "y": 168
+    },
+    {
+      "asset": "runner-field",
+      "x": 96,
+      "y": 168
+    },
+    {
+      "asset": "runner-field",
+      "x": 104,
+      "y": 168
+    },
+    {
+      "asset": "runner-field",
+      "x": 80,
+      "y": 176
+    },
+    {
+      "asset": "runner-field",
+      "x": 88,
+      "y": 176
+    },
+    {
+      "asset": "runner-field",
+      "x": 96,
+      "y": 176
+    },
+    {
+      "asset": "runner-field",
+      "x": 104,
+      "y": 176
+    },
+    {
+      "asset": "runner-field",
+      "x": 80,
+      "y": 184
+    },
+    {
+      "asset": "runner-field",
+      "x": 88,
+      "y": 184
+    },
+    {
+      "asset": "runner-field",
+      "x": 96,
+      "y": 184
+    },
+    {
+      "asset": "runner-field",
+      "x": 104,
+      "y": 184
+    },
+    {
+      "asset": "runner-field",
+      "x": 80,
+      "y": 192
+    },
+    {
+      "asset": "runner-field",
+      "x": 88,
+      "y": 192
+    },
+    {
+      "asset": "runner-field",
+      "x": 96,
+      "y": 192
+    },
+    {
+      "asset": "runner-field",
+      "x": 104,
+      "y": 192
+    },
+    {
+      "asset": "runner-field",
+      "x": 80,
+      "y": 200
+    },
+    {
+      "asset": "runner-field",
+      "x": 88,
+      "y": 200
+    },
+    {
+      "asset": "runner-field",
+      "x": 96,
+      "y": 200
+    },
+    {
+      "asset": "runner-field",
+      "x": 104,
+      "y": 200
+    },
+    {
+      "asset": "runner-field",
+      "x": 80,
+      "y": 208
+    },
+    {
+      "asset": "runner-field",
+      "x": 88,
+      "y": 208
+    },
+    {
+      "asset": "runner-field",
+      "x": 96,
+      "y": 208
+    },
+    {
+      "asset": "runner-field",
+      "x": 104,
+      "y": 208
+    },
+    {
+      "asset": "runner-field",
+      "x": 80,
+      "y": 216
+    },
+    {
+      "asset": "runner-field",
+      "x": 88,
+      "y": 216
+    },
+    {
+      "asset": "runner-field",
+      "x": 96,
+      "y": 216
+    },
+    {
+      "asset": "runner-field",
+      "x": 104,
+      "y": 216
+    },
+    {
+      "asset": "runner-field",
+      "x": 80,
+      "y": 224
+    },
+    {
+      "asset": "runner-field",
+      "x": 88,
+      "y": 224
+    },
+    {
+      "asset": "runner-field",
+      "x": 96,
+      "y": 224
+    },
+    {
+      "asset": "runner-field",
+      "x": 104,
+      "y": 224
+    },
+    {
+      "asset": "runner-field",
+      "x": 80,
+      "y": 232
+    },
+    {
+      "asset": "runner-field",
+      "x": 88,
+      "y": 232
+    },
+    {
+      "asset": "runner-field",
+      "x": 96,
+      "y": 232
+    },
+    {
+      "asset": "runner-field",
+      "x": 104,
+      "y": 232
+    },
+    {
+      "asset": "runner-turn-far",
+      "x": 64,
+      "y": 144
+    },
+    {
+      "asset": "runner-turn-far-mirror",
+      "x": 112,
+      "y": 144
+    },
+    {
+      "asset": "runner-turn-mid",
+      "x": 64,
+      "y": 160
+    },
+    {
+      "asset": "runner-turn-mid-mirror",
+      "x": 112,
+      "y": 160
+    },
+    {
+      "asset": "runner-turn-near",
+      "x": 64,
+      "y": 176
+    },
+    {
+      "asset": "runner-turn-near-mirror",
+      "x": 112,
+      "y": 176
+    },
+    {
+      "asset": "runner-turn-full",
+      "x": 64,
+      "y": 192
+    },
+    {
+      "asset": "runner-turn-full-mirror",
+      "x": 112,
+      "y": 192
+    },
+    {
+      "asset": "runner-field",
+      "x": 64,
+      "y": 208
+    },
+    {
+      "asset": "runner-field",
+      "x": 72,
+      "y": 208
+    },
+    {
+      "asset": "runner-field",
+      "x": 80,
+      "y": 208
+    },
+    {
+      "asset": "runner-field",
+      "x": 88,
+      "y": 208
+    },
+    {
+      "asset": "runner-field",
+      "x": 96,
+      "y": 208
+    },
+    {
+      "asset": "runner-field",
+      "x": 104,
+      "y": 208
+    },
+    {
+      "asset": "runner-field",
+      "x": 112,
+      "y": 208
+    },
+    {
+      "asset": "runner-field",
+      "x": 120,
+      "y": 208
+    },
+    {
+      "asset": "runner-field",
+      "x": 64,
+      "y": 216
+    },
+    {
+      "asset": "runner-field",
+      "x": 72,
+      "y": 216
+    },
+    {
+      "asset": "runner-field",
+      "x": 80,
+      "y": 216
+    },
+    {
+      "asset": "runner-field",
+      "x": 88,
+      "y": 216
+    },
+    {
+      "asset": "runner-field",
+      "x": 96,
+      "y": 216
+    },
+    {
+      "asset": "runner-field",
+      "x": 104,
+      "y": 216
+    },
+    {
+      "asset": "runner-field",
+      "x": 112,
+      "y": 216
+    },
+    {
+      "asset": "runner-field",
+      "x": 120,
+      "y": 216
+    },
+    {
+      "asset": "runner-field",
+      "x": 64,
+      "y": 224
+    },
+    {
+      "asset": "runner-field",
+      "x": 72,
+      "y": 224
+    },
+    {
+      "asset": "runner-field",
+      "x": 80,
+      "y": 224
+    },
+    {
+      "asset": "runner-field",
+      "x": 88,
+      "y": 224
+    },
+    {
+      "asset": "runner-field",
+      "x": 96,
+      "y": 224
+    },
+    {
+      "asset": "runner-field",
+      "x": 104,
+      "y": 224
+    },
+    {
+      "asset": "runner-field",
+      "x": 112,
+      "y": 224
+    },
+    {
+      "asset": "runner-field",
+      "x": 120,
+      "y": 224
+    },
+    {
+      "asset": "runner-field",
+      "x": 64,
+      "y": 232
+    },
+    {
+      "asset": "runner-field",
+      "x": 72,
+      "y": 232
+    },
+    {
+      "asset": "runner-field",
+      "x": 80,
+      "y": 232
+    },
+    {
+      "asset": "runner-field",
+      "x": 88,
+      "y": 232
+    },
+    {
+      "asset": "runner-field",
+      "x": 96,
+      "y": 232
+    },
+    {
+      "asset": "runner-field",
+      "x": 104,
+      "y": 232
+    },
+    {
+      "asset": "runner-field",
+      "x": 112,
+      "y": 232
+    },
+    {
+      "asset": "runner-field",
+      "x": 120,
+      "y": 232
+    },
+    {
+      "asset": "runner-turn-far",
+      "x": 48,
+      "y": 208
+    },
+    {
+      "asset": "runner-turn-far-mirror",
+      "x": 128,
+      "y": 208
+    },
+    {
+      "asset": "runner-turn-mid",
+      "x": 48,
+      "y": 224
+    },
+    {
+      "asset": "runner-turn-mid-mirror",
+      "x": 128,
+      "y": 224
+    },
+    {
+      "asset": "runner-motif",
+      "x": 88,
+      "y": 168
+    },
+    {
+      "asset": "runner-motif",
+      "x": 96,
+      "y": 208
+    },
+    {
+      "asset": "near-pier-cap",
+      "x": 0,
+      "y": 16
+    },
+    {
+      "asset": "near-pier-shaft",
+      "x": 0,
+      "y": 32
+    },
+    {
+      "asset": "near-pier-shaft",
+      "x": 0,
+      "y": 48
+    },
+    {
+      "asset": "near-pier-shaft",
+      "x": 0,
+      "y": 64
+    },
+    {
+      "asset": "near-pier-shaft",
+      "x": 0,
+      "y": 80
+    },
+    {
+      "asset": "near-pier-shaft",
+      "x": 0,
+      "y": 96
+    },
+    {
+      "asset": "near-pier-shaft",
+      "x": 0,
+      "y": 112
+    },
+    {
+      "asset": "near-pier-shaft",
+      "x": 0,
+      "y": 128
+    },
+    {
+      "asset": "near-pier-shaft",
+      "x": 0,
+      "y": 144
+    },
+    {
+      "asset": "near-pier-shaft",
+      "x": 0,
+      "y": 160
+    },
+    {
+      "asset": "near-pier-shaft",
+      "x": 0,
+      "y": 176
+    },
+    {
+      "asset": "near-pier-shaft",
+      "x": 0,
+      "y": 192
+    },
+    {
+      "asset": "near-pier-shaft",
+      "x": 0,
+      "y": 208
+    },
+    {
+      "asset": "near-pier-base",
+      "x": 0,
+      "y": 224
+    },
+    {
+      "asset": "near-pier-cap",
+      "x": 160,
+      "y": 16
+    },
+    {
+      "asset": "near-pier-shaft",
+      "x": 160,
+      "y": 32
+    },
+    {
+      "asset": "near-pier-shaft",
+      "x": 160,
+      "y": 48
+    },
+    {
+      "asset": "near-pier-shaft",
+      "x": 160,
+      "y": 64
+    },
+    {
+      "asset": "near-pier-shaft",
+      "x": 160,
+      "y": 80
+    },
+    {
+      "asset": "near-pier-shaft",
+      "x": 160,
+      "y": 96
+    },
+    {
+      "asset": "near-pier-shaft",
+      "x": 160,
+      "y": 112
+    },
+    {
+      "asset": "near-pier-shaft",
+      "x": 160,
+      "y": 128
+    },
+    {
+      "asset": "near-pier-shaft",
+      "x": 160,
+      "y": 144
+    },
+    {
+      "asset": "near-pier-shaft",
+      "x": 160,
+      "y": 160
+    },
+    {
+      "asset": "near-pier-shaft",
+      "x": 160,
+      "y": 176
+    },
+    {
+      "asset": "near-pier-shaft",
+      "x": 160,
+      "y": 192
+    },
+    {
+      "asset": "near-pier-shaft",
+      "x": 160,
+      "y": 208
+    },
+    {
+      "asset": "near-pier-base",
+      "x": 160,
+      "y": 224
+    },
+    {
+      "asset": "dado-panel",
+      "x": 32,
+      "y": 128
+    },
+    {
+      "asset": "dado-panel",
+      "x": 144,
+      "y": 128
+    }
+  ]
+}

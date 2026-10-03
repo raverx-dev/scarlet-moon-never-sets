@@ -1,0 +1,520 @@
+{
+  "reimu-neutral": {
+    "describe": {
+      "name": "reimu-neutral",
+      "asset_id": "v4-lc45-reimu-neutral",
+      "revision": 2,
+      "revision_hash": "38316c86ad74b807fc2c84ec81bce8d162b27357b6ba8e9d08f2692066cbdb08",
+      "palette_id": "lc45-sp0",
+      "palette_hash": "67b2b4a707d204688846d292c7d56d716ec1528ff4057e6709adc70f9b5e88f2",
+      "frame_id": "default",
+      "width": 16,
+      "height": 24,
+      "render_hash": "3e124228236822139b1a2addbe9202f37da096a73ebc146ae448a2560ff2b262",
+      "canvas": {
+        "width": 16,
+        "height": 24
+      },
+      "current_revision": 2,
+      "current_revision_hash": "38316c86ad74b807fc2c84ec81bce8d162b27357b6ba8e9d08f2692066cbdb08"
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-lc45-reimu-neutral",
+      "revision": 2,
+      "revision_hash": "38316c86ad74b807fc2c84ec81bce8d162b27357b6ba8e9d08f2692066cbdb08",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 16,
+        "height": 24,
+        "rows": [
+          ".21110....01112.",
+          ".211110..011112.",
+          "..211111111112..",
+          "..211110011112..",
+          "...2110000112...",
+          "...0000000000...",
+          "...0000000000...",
+          "...0000000000...",
+          "...0000000000...",
+          "..220000000022..",
+          "..221000000122..",
+          ".22210000001222.",
+          ".22110000001122.",
+          "..211100001112..",
+          "...0111111110...",
+          "...0112112110...",
+          "...0111111110...",
+          "..011111111110..",
+          "..011101101110..",
+          ".01111011011110.",
+          ".02222222222220.",
+          "..022022220220..",
+          "....20....02....",
+          "...0110..0110..."
+        ],
+        "symbols": {
+          "0": {
+            "hex": "#201b2a"
+          },
+          "1": {
+            "hex": "#d64053"
+          },
+          "2": {
+            "hex": "#fff0da"
+          },
+          ".": {
+            "transparent": true
+          }
+        }
+      },
+      "round_trip": {
+        "width": 16,
+        "height": 24,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-reimu-neutral/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-lc45-reimu-neutral",
+      "revision": 2,
+      "revision_hash": "38316c86ad74b807fc2c84ec81bce8d162b27357b6ba8e9d08f2692066cbdb08",
+      "frame_id": "default",
+      "width": 16,
+      "height": 24,
+      "scale": 1,
+      "render_hash": "3e124228236822139b1a2addbe9202f37da096a73ebc146ae448a2560ff2b262",
+      "text": {
+        "frame_id": "default",
+        "width": 16,
+        "height": 24,
+        "rows": [
+          ".21110....01112.",
+          ".211110..011112.",
+          "..211111111112..",
+          "..211110011112..",
+          "...2110000112...",
+          "...0000000000...",
+          "...0000000000...",
+          "...0000000000...",
+          "...0000000000...",
+          "..220000000022..",
+          "..221000000122..",
+          ".22210000001222.",
+          ".22110000001122.",
+          "..211100001112..",
+          "...0111111110...",
+          "...0112112110...",
+          "...0111111110...",
+          "..011111111110..",
+          "..011101101110..",
+          ".01111011011110.",
+          ".02222222222220.",
+          "..022022220220..",
+          "....20....02....",
+          "...0110..0110..."
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-reimu-neutral/revision/2/view"
+      }
+    }
+  },
+  "bullet-pink": {
+    "describe": {
+      "name": "bullet-pink",
+      "asset_id": "v4-lc45-bullet-pink",
+      "revision": 2,
+      "revision_hash": "a460a078310fa479cc566e6c1b56f6a8dae5f6422c7d3693c9280b6690239622",
+      "palette_id": "lc45-sp3",
+      "palette_hash": "f57d70f243115917078fb8de6a8fd3a41033167ee2e5a679cda144c87b905a12",
+      "frame_id": "default",
+      "width": 7,
+      "height": 7,
+      "render_hash": "e33d74967bcafc4cb7617af567a3f5af076e9b558d72dba34d18135d95dcacb8",
+      "canvas": {
+        "width": 7,
+        "height": 7
+      },
+      "current_revision": 2,
+      "current_revision_hash": "a460a078310fa479cc566e6c1b56f6a8dae5f6422c7d3693c9280b6690239622"
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-lc45-bullet-pink",
+      "revision": 2,
+      "revision_hash": "a460a078310fa479cc566e6c1b56f6a8dae5f6422c7d3693c9280b6690239622",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 7,
+        "height": 7,
+        "rows": [
+          "..000..",
+          ".01110.",
+          "0122110",
+          "0122110",
+          "0111110",
+          ".01110.",
+          "..000.."
+        ],
+        "symbols": {
+          "0": {
+            "hex": "#201b2a"
+          },
+          "1": {
+            "hex": "#de718e"
+          },
+          "2": {
+            "hex": "#fff0da"
+          },
+          ".": {
+            "transparent": true
+          }
+        }
+      },
+      "round_trip": {
+        "width": 7,
+        "height": 7,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-bullet-pink/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-lc45-bullet-pink",
+      "revision": 2,
+      "revision_hash": "a460a078310fa479cc566e6c1b56f6a8dae5f6422c7d3693c9280b6690239622",
+      "frame_id": "default",
+      "width": 7,
+      "height": 7,
+      "scale": 1,
+      "render_hash": "e33d74967bcafc4cb7617af567a3f5af076e9b558d72dba34d18135d95dcacb8",
+      "text": {
+        "frame_id": "default",
+        "width": 7,
+        "height": 7,
+        "rows": [
+          "..000..",
+          ".01110.",
+          "0122110",
+          "0122110",
+          "0111110",
+          ".01110.",
+          "..000.."
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-bullet-pink/revision/2/view"
+      }
+    }
+  },
+  "gohei-normal": {
+    "describe": {
+      "name": "gohei-normal",
+      "asset_id": "v4-lc45-gohei-normal",
+      "revision": 2,
+      "revision_hash": "63f131ef789273bc27acb2d4f06895a927248ed0a9c06cb953a3fd88cf010409",
+      "palette_id": "lc45-sp1",
+      "palette_hash": "34aee9d619ad58519177a39611c07dfa56da6fc1fb3d086a5224f544eced992d",
+      "frame_id": "default",
+      "width": 10,
+      "height": 14,
+      "render_hash": "731ed65c5d1be5d16e60a45ae2f03f8440366e5f5989c19f3c32445fa9672f60",
+      "canvas": {
+        "width": 10,
+        "height": 14
+      },
+      "current_revision": 2,
+      "current_revision_hash": "63f131ef789273bc27acb2d4f06895a927248ed0a9c06cb953a3fd88cf010409"
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-lc45-gohei-normal",
+      "revision": 2,
+      "revision_hash": "63f131ef789273bc27acb2d4f06895a927248ed0a9c06cb953a3fd88cf010409",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 10,
+        "height": 14,
+        "rows": [
+          ".........1",
+          "........11",
+          ".......11.",
+          "......11..",
+          ".....112..",
+          "....11222.",
+          "...11.22..",
+          "..11.222..",
+          ".11...222.",
+          "11...222..",
+          "......22..",
+          ".....222..",
+          "......2...",
+          ".........."
+        ],
+        "symbols": {
+          "0": {
+            "hex": "#201b2a"
+          },
+          "1": {
+            "hex": "#987451"
+          },
+          "2": {
+            "hex": "#fff0da"
+          },
+          ".": {
+            "transparent": true
+          }
+        }
+      },
+      "round_trip": {
+        "width": 10,
+        "height": 14,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-gohei-normal/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-lc45-gohei-normal",
+      "revision": 2,
+      "revision_hash": "63f131ef789273bc27acb2d4f06895a927248ed0a9c06cb953a3fd88cf010409",
+      "frame_id": "default",
+      "width": 10,
+      "height": 14,
+      "scale": 1,
+      "render_hash": "731ed65c5d1be5d16e60a45ae2f03f8440366e5f5989c19f3c32445fa9672f60",
+      "text": {
+        "frame_id": "default",
+        "width": 10,
+        "height": 14,
+        "rows": [
+          ".........1",
+          "........11",
+          ".......11.",
+          "......11..",
+          ".....112..",
+          "....11222.",
+          "...11.22..",
+          "..11.222..",
+          ".11...222.",
+          "11...222..",
+          "......22..",
+          ".....222..",
+          "......2...",
+          ".........."
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-gohei-normal/revision/2/view"
+      }
+    }
+  },
+  "bullet-blue": {
+    "describe": {
+      "name": "bullet-blue",
+      "asset_id": "v4-lc45-bullet-blue",
+      "revision": 2,
+      "revision_hash": "70af647ad6c174b56e003bde66ef3a9624f032ac41c1cb87c2b13e1236f70d8c",
+      "palette_id": "lc45-sp2",
+      "palette_hash": "bf431c5d98623ab29ce5081673ce78ed970b78162877d93905b164456823f21c",
+      "frame_id": "default",
+      "width": 7,
+      "height": 7,
+      "render_hash": "bc72510bfaf5d868eec4a7af7b7c5da049beb2b4b50a5d051354cd97d89cedc1",
+      "canvas": {
+        "width": 7,
+        "height": 7
+      },
+      "current_revision": 2,
+      "current_revision_hash": "70af647ad6c174b56e003bde66ef3a9624f032ac41c1cb87c2b13e1236f70d8c"
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-lc45-bullet-blue",
+      "revision": 2,
+      "revision_hash": "70af647ad6c174b56e003bde66ef3a9624f032ac41c1cb87c2b13e1236f70d8c",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 7,
+        "height": 7,
+        "rows": [
+          "..000..",
+          ".01110.",
+          "0122110",
+          "0122110",
+          "0111110",
+          ".01110.",
+          "..000.."
+        ],
+        "symbols": {
+          "0": {
+            "hex": "#201b2a"
+          },
+          "1": {
+            "hex": "#58abc2"
+          },
+          "2": {
+            "hex": "#fff0da"
+          },
+          ".": {
+            "transparent": true
+          }
+        }
+      },
+      "round_trip": {
+        "width": 7,
+        "height": 7,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-bullet-blue/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-lc45-bullet-blue",
+      "revision": 2,
+      "revision_hash": "70af647ad6c174b56e003bde66ef3a9624f032ac41c1cb87c2b13e1236f70d8c",
+      "frame_id": "default",
+      "width": 7,
+      "height": 7,
+      "scale": 1,
+      "render_hash": "bc72510bfaf5d868eec4a7af7b7c5da049beb2b4b50a5d051354cd97d89cedc1",
+      "text": {
+        "frame_id": "default",
+        "width": 7,
+        "height": 7,
+        "rows": [
+          "..000..",
+          ".01110.",
+          "0122110",
+          "0122110",
+          "0111110",
+          ".01110.",
+          "..000.."
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-bullet-blue/revision/2/view"
+      }
+    }
+  },
+  "bat-familiar": {
+    "describe": {
+      "name": "bat-familiar",
+      "asset_id": "v4-lc45-bat-familiar",
+      "revision": 2,
+      "revision_hash": "97bcd9870f3844ee49b6158975e92fb7e3bc76cafca578f89d9689e45e71a442",
+      "palette_id": "lc45-sp3",
+      "palette_hash": "f57d70f243115917078fb8de6a8fd3a41033167ee2e5a679cda144c87b905a12",
+      "frame_id": "default",
+      "width": 11,
+      "height": 7,
+      "render_hash": "60f039327b557c804246817e29d2dfaab9e23446a5cc31a1c7ec0316bded17d5",
+      "canvas": {
+        "width": 11,
+        "height": 7
+      },
+      "current_revision": 2,
+      "current_revision_hash": "97bcd9870f3844ee49b6158975e92fb7e3bc76cafca578f89d9689e45e71a442"
+    },
+    "export": {
+      "adapter_id": "scarlet-moon-js",
+      "preview": true,
+      "delivery": false,
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-lc45-bat-familiar",
+      "revision": 2,
+      "revision_hash": "97bcd9870f3844ee49b6158975e92fb7e3bc76cafca578f89d9689e45e71a442",
+      "frame_id": "default",
+      "layer_id": "art",
+      "matrix": {
+        "width": 11,
+        "height": 7,
+        "rows": [
+          "0.........0",
+          "00..000..00",
+          "01002220010",
+          ".011222110.",
+          "..0111110..",
+          "...01210...",
+          "....000...."
+        ],
+        "symbols": {
+          "0": {
+            "hex": "#201b2a"
+          },
+          "1": {
+            "hex": "#de718e"
+          },
+          "2": {
+            "hex": "#fff0da"
+          },
+          ".": {
+            "transparent": true
+          }
+        }
+      },
+      "round_trip": {
+        "width": 11,
+        "height": 7,
+        "cel_hash": true
+      },
+      "resources": {
+        "export": "robopixel://export/scarlet-moon-never-sets/v4-lc45-bat-familiar/revision/2/scarlet-moon-js"
+      }
+    },
+    "view": {
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-lc45-bat-familiar",
+      "revision": 2,
+      "revision_hash": "97bcd9870f3844ee49b6158975e92fb7e3bc76cafca578f89d9689e45e71a442",
+      "frame_id": "default",
+      "width": 11,
+      "height": 7,
+      "scale": 1,
+      "render_hash": "60f039327b557c804246817e29d2dfaab9e23446a5cc31a1c7ec0316bded17d5",
+      "text": {
+        "frame_id": "default",
+        "width": 11,
+        "height": 7,
+        "rows": [
+          "0.........0",
+          "00..000..00",
+          "01002220010",
+          ".011222110.",
+          "..0111110..",
+          "...01210...",
+          "....000...."
+        ]
+      },
+      "resources": {
+        "view": "robopixel://asset/scarlet-moon-never-sets/v4-lc45-bat-familiar/revision/2/view"
+      }
+    }
+  }
+}

@@ -1,0 +1,507 @@
+{
+  "schema": "scarlet.mi51-tiles/v1",
+  "tile_count": 175,
+  "assets": {
+    "wall-field": {
+      "width_tiles": 1,
+      "height_tiles": 1,
+      "tile_ids": [
+        0
+      ]
+    },
+    "wall-joint-a": {
+      "width_tiles": 1,
+      "height_tiles": 1,
+      "tile_ids": [
+        1
+      ]
+    },
+    "wall-joint-b": {
+      "width_tiles": 1,
+      "height_tiles": 1,
+      "tile_ids": [
+        2
+      ]
+    },
+    "floor-field": {
+      "width_tiles": 1,
+      "height_tiles": 1,
+      "tile_ids": [
+        0
+      ]
+    },
+    "floor-joint": {
+      "width_tiles": 1,
+      "height_tiles": 1,
+      "tile_ids": [
+        3
+      ]
+    },
+    "floor-worn": {
+      "width_tiles": 1,
+      "height_tiles": 1,
+      "tile_ids": [
+        4
+      ]
+    },
+    "runner-field": {
+      "width_tiles": 1,
+      "height_tiles": 1,
+      "tile_ids": [
+        5
+      ]
+    },
+    "runner-motif": {
+      "width_tiles": 1,
+      "height_tiles": 1,
+      "tile_ids": [
+        6
+      ]
+    },
+    "cornice": {
+      "width_tiles": 2,
+      "height_tiles": 1,
+      "tile_ids": [
+        7,
+        7
+      ]
+    },
+    "pier-cap": {
+      "width_tiles": 2,
+      "height_tiles": 2,
+      "tile_ids": [
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "pier-shaft": {
+      "width_tiles": 2,
+      "height_tiles": 2,
+      "tile_ids": [
+        12,
+        13,
+        12,
+        13
+      ]
+    },
+    "pier-collar": {
+      "width_tiles": 2,
+      "height_tiles": 2,
+      "tile_ids": [
+        14,
+        15,
+        12,
+        13
+      ]
+    },
+    "pier-base": {
+      "width_tiles": 2,
+      "height_tiles": 2,
+      "tile_ids": [
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    "dado-panel": {
+      "width_tiles": 2,
+      "height_tiles": 2,
+      "tile_ids": [
+        20,
+        21,
+        22,
+        23
+      ]
+    },
+    "stair-stone": {
+      "width_tiles": 2,
+      "height_tiles": 2,
+      "tile_ids": [
+        24,
+        24,
+        24,
+        24
+      ]
+    },
+    "stair-runner": {
+      "width_tiles": 2,
+      "height_tiles": 2,
+      "tile_ids": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "lancet-near": {
+      "width_tiles": 2,
+      "height_tiles": 6,
+      "tile_ids": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    "lancet-ruby": {
+      "width_tiles": 2,
+      "height_tiles": 6,
+      "tile_ids": [
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    "lancet-far": {
+      "width_tiles": 2,
+      "height_tiles": 4,
+      "tile_ids": [
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57
+      ]
+    },
+    "arch-shoulder": {
+      "width_tiles": 2,
+      "height_tiles": 4,
+      "tile_ids": [
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ]
+    },
+    "arch-jamb": {
+      "width_tiles": 2,
+      "height_tiles": 2,
+      "tile_ids": [
+        64,
+        65,
+        64,
+        65
+      ]
+    },
+    "arch-foot": {
+      "width_tiles": 2,
+      "height_tiles": 2,
+      "tile_ids": [
+        66,
+        65,
+        67,
+        68
+      ]
+    },
+    "banner": {
+      "width_tiles": 2,
+      "height_tiles": 6,
+      "tile_ids": [
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        71,
+        72,
+        75,
+        76,
+        77,
+        78
+      ]
+    },
+    "sconce": {
+      "width_tiles": 2,
+      "height_tiles": 2,
+      "tile_ids": [
+        79,
+        80,
+        81,
+        82
+      ]
+    },
+    "rose": {
+      "width_tiles": 8,
+      "height_tiles": 8,
+      "tile_ids": [
+        83,
+        83,
+        83,
+        83,
+        83,
+        83,
+        83,
+        83,
+        83,
+        83,
+        84,
+        85,
+        86,
+        87,
+        83,
+        83,
+        83,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        83,
+        83,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        83,
+        83,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        83,
+        83,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        83,
+        83,
+        83,
+        112,
+        113,
+        114,
+        115,
+        83,
+        83,
+        83,
+        83,
+        83,
+        83,
+        83,
+        83,
+        83,
+        83
+      ]
+    },
+    "backdrop": {
+      "width_tiles": 1,
+      "height_tiles": 1,
+      "tile_ids": [
+        116
+      ]
+    },
+    "runner-turn-far": {
+      "width_tiles": 2,
+      "height_tiles": 2,
+      "tile_ids": [
+        83,
+        117,
+        83,
+        118
+      ]
+    },
+    "runner-turn-mid": {
+      "width_tiles": 2,
+      "height_tiles": 2,
+      "tile_ids": [
+        83,
+        119,
+        120,
+        121
+      ]
+    },
+    "runner-turn-near": {
+      "width_tiles": 2,
+      "height_tiles": 2,
+      "tile_ids": [
+        117,
+        5,
+        118,
+        5
+      ]
+    },
+    "runner-turn-full": {
+      "width_tiles": 2,
+      "height_tiles": 2,
+      "tile_ids": [
+        119,
+        5,
+        122,
+        5
+      ]
+    },
+    "near-pier-cap": {
+      "width_tiles": 4,
+      "height_tiles": 2,
+      "tile_ids": [
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130
+      ]
+    },
+    "near-pier-shaft": {
+      "width_tiles": 4,
+      "height_tiles": 2,
+      "tile_ids": [
+        131,
+        132,
+        133,
+        134,
+        131,
+        132,
+        133,
+        134
+      ]
+    },
+    "near-pier-base": {
+      "width_tiles": 4,
+      "height_tiles": 2,
+      "tile_ids": [
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142
+      ]
+    },
+    "door": {
+      "width_tiles": 4,
+      "height_tiles": 4,
+      "tile_ids": [
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158
+      ]
+    },
+    "arch-shoulder-mirror": {
+      "width_tiles": 2,
+      "height_tiles": 4,
+      "tile_ids": [
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        65,
+        165
+      ]
+    },
+    "arch-jamb-mirror": {
+      "width_tiles": 2,
+      "height_tiles": 2,
+      "tile_ids": [
+        65,
+        165,
+        65,
+        165
+      ]
+    },
+    "arch-foot-mirror": {
+      "width_tiles": 2,
+      "height_tiles": 2,
+      "tile_ids": [
+        65,
+        166,
+        167,
+        168
+      ]
+    },
+    "runner-turn-far-mirror": {
+      "width_tiles": 2,
+      "height_tiles": 2,
+      "tile_ids": [
+        169,
+        83,
+        170,
+        83
+      ]
+    },
+    "runner-turn-mid-mirror": {
+      "width_tiles": 2,
+      "height_tiles": 2,
+      "tile_ids": [
+        171,
+        83,
+        172,
+        173
+      ]
+    },
+    "runner-turn-near-mirror": {
+      "width_tiles": 2,
+      "height_tiles": 2,
+      "tile_ids": [
+        5,
+        169,
+        5,
+        170
+      ]
+    },
+    "runner-turn-full-mirror": {
+      "width_tiles": 2,
+      "height_tiles": 2,
+      "tile_ids": [
+        5,
+        171,
+        5,
+        174
+      ]
+    }
+  }
+}

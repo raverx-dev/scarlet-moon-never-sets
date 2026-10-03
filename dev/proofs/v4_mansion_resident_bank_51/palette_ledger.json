@@ -1,0 +1,64 @@
+{
+  "schema": "scarlet.mi51-palette-ledger/v1",
+  "shared_backdrop": "#10121e",
+  "families": {
+    "stone": [
+      "#10121e",
+      "#232637",
+      "#48475c",
+      "#898299"
+    ],
+    "crimson": [
+      "#10121e",
+      "#301b2b",
+      "#6c293f",
+      "#c56879"
+    ],
+    "warm": [
+      "#10121e",
+      "#392d30",
+      "#846349",
+      "#d4b185"
+    ],
+    "glass": [
+      "#10121e",
+      "#203447",
+      "#426b81",
+      "#9bbbc5"
+    ]
+  },
+  "visible_background_colors": 13,
+  "bg_subpalettes": 4,
+  "neighborhood_size": [
+    16,
+    16
+  ],
+  "neighborhood_count": 180,
+  "nonconforming_neighborhoods": 0,
+  "swaps": [],
+  "waivers": [],
+  "hud": "future HUD must share these BG slots; no HUD authored/integrated here",
+  "sprite_witness": {
+    "unchanged_from": "#45 r2",
+    "sp0": [
+      "#201b2a",
+      "#d64053",
+      "#fff0da"
+    ],
+    "sp1": [
+      "#201b2a",
+      "#987451",
+      "#fff0da"
+    ],
+    "sp2": [
+      "#201b2a",
+      "#58abc2",
+      "#fff0da"
+    ],
+    "sp3": [
+      "#201b2a",
+      "#de718e",
+      "#fff0da"
+    ]
+  }
+}
