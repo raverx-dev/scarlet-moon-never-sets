@@ -1,0 +1,487 @@
+{
+  "project_id": "scarlet-moon-never-sets",
+  "candidate": true,
+  "source_commit": "44530dd918ce498544025ca1919e91faccb619d4",
+  "assets": {
+    "rose": {
+      "asset_id": "v4-mansion-trans01-rose",
+      "status": "created",
+      "role": "Rose window and carved stone ring",
+      "kind": "focal",
+      "width": 56,
+      "height": 56,
+      "revision": 3,
+      "revision_hash": "4b2e9eabdb5fed35c1d9ba2d56d99c66b0445e2aae033771445fed488769453c",
+      "render_hash": "89f08a8e88b2e884ca3f32aecf16f55e015d346240fff8c23c4c792286b7b293",
+      "round_trip": {
+        "width": 56,
+        "height": 56,
+        "cel_hash": true
+      },
+      "approval": {
+        "status": {
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-trans01-rose",
+          "revision": 3,
+          "revision_hash": "4b2e9eabdb5fed35c1d9ba2d56d99c66b0445e2aae033771445fed488769453c",
+          "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+          "approval_subject_hash": "c96e2f86ae24497cce9f28a1fa8bbac8546f77298220c5f36ba1a01cdb69ba36",
+          "approved": false,
+          "active_approval_ids": [],
+          "historical_approval_ids": []
+        }
+      },
+      "from_revision": null
+    },
+    "lancet": {
+      "asset_id": "v4-mansion-trans01-lancet",
+      "status": "created",
+      "role": "Narrow ruby stained-glass window",
+      "kind": "reusable",
+      "width": 16,
+      "height": 48,
+      "revision": 2,
+      "revision_hash": "c62d2a8cce3c2d47c08e2fcc1f8e70e4ffe8d40ef116db2f5c4abe7678c21c45",
+      "render_hash": "5ba36c8696ea3013c20feceef10bd3f5049098595fe8bc30ce6037facb94b2de",
+      "round_trip": {
+        "width": 16,
+        "height": 48,
+        "cel_hash": true
+      },
+      "approval": {
+        "status": {
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-trans01-lancet",
+          "revision": 2,
+          "revision_hash": "c62d2a8cce3c2d47c08e2fcc1f8e70e4ffe8d40ef116db2f5c4abe7678c21c45",
+          "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+          "approval_subject_hash": "57df03f3a2c38190bc1fc47b5c2164807aa20e6e784e65ae96841a8928ad210c",
+          "approved": false,
+          "active_approval_ids": [],
+          "historical_approval_ids": []
+        }
+      },
+      "from_revision": null
+    },
+    "arch": {
+      "asset_id": "v4-mansion-trans01-arch",
+      "status": "created",
+      "role": "Pointed open arcade surround",
+      "kind": "reusable",
+      "width": 48,
+      "height": 80,
+      "revision": 2,
+      "revision_hash": "3e4e5c269f972e016bb9f3ac6ef93f084eff0723312b68c6a8aac897837e3535",
+      "render_hash": "ef075f6bad36351410839fc4bef52a5674671e4f743735fcd5b3a2641cda54ae",
+      "round_trip": {
+        "width": 48,
+        "height": 80,
+        "cel_hash": true
+      },
+      "approval": {
+        "status": {
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-trans01-arch",
+          "revision": 2,
+          "revision_hash": "3e4e5c269f972e016bb9f3ac6ef93f084eff0723312b68c6a8aac897837e3535",
+          "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+          "approval_subject_hash": "de7c2864a77cd31d74b37bdae6ef3907bf32c2cb8b69d718f13d63892080f6da",
+          "approved": false,
+          "active_approval_ids": [],
+          "historical_approval_ids": []
+        }
+      },
+      "from_revision": null
+    },
+    "banner": {
+      "asset_id": "v4-mansion-trans01-banner",
+      "status": "created",
+      "role": "Velvet banner and bat crest",
+      "kind": "reusable",
+      "width": 20,
+      "height": 56,
+      "revision": 2,
+      "revision_hash": "ffd2def3424a6f8eccd7620a99cdae2a59ce5e63d858b213555a9b3bb5717a5b",
+      "render_hash": "66e869adaf12cf9a5cbc49e736de3f72eafa6bba78347d8004b13338c78f4aed",
+      "round_trip": {
+        "width": 20,
+        "height": 56,
+        "cel_hash": true
+      },
+      "approval": {
+        "status": {
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-trans01-banner",
+          "revision": 2,
+          "revision_hash": "ffd2def3424a6f8eccd7620a99cdae2a59ce5e63d858b213555a9b3bb5717a5b",
+          "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+          "approval_subject_hash": "b3f00964c10cf55495333a5266be166f0ca2d13023a6cb3c829ea302db07b2c2",
+          "approved": false,
+          "active_approval_ids": [],
+          "historical_approval_ids": []
+        }
+      },
+      "from_revision": null
+    },
+    "near-pier": {
+      "asset_id": "v4-mansion-trans01-near-pier",
+      "status": "created",
+      "role": "Foreground pale clustered pier, cap/shaft/base",
+      "kind": "reusable",
+      "width": 24,
+      "height": 96,
+      "revision": 2,
+      "revision_hash": "e48ab9944b76a0933965db09879d42dddebbc14fa1300b934cf24d1be50d3450",
+      "render_hash": "390382bc610ecdfb8ec20e89a04c13a8870b22ef92b164e305f8fecb74a88ef0",
+      "round_trip": {
+        "width": 24,
+        "height": 96,
+        "cel_hash": true
+      },
+      "approval": {
+        "status": {
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-trans01-near-pier",
+          "revision": 2,
+          "revision_hash": "e48ab9944b76a0933965db09879d42dddebbc14fa1300b934cf24d1be50d3450",
+          "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+          "approval_subject_hash": "acabad1afbc6f1edb59ed99b8f039f2b6b90aae52aac09eb29bd867953d69511",
+          "approved": false,
+          "active_approval_ids": [],
+          "historical_approval_ids": []
+        }
+      },
+      "from_revision": null
+    },
+    "stairs": {
+      "asset_id": "v4-mansion-trans01-stairs",
+      "status": "created",
+      "role": "Widening six-step carpeted dais",
+      "kind": "focal",
+      "width": 64,
+      "height": 24,
+      "revision": 2,
+      "revision_hash": "95c713aac5d254fddb03adc245ea25a3e6b687d49e041c3e240c03a4a804e709",
+      "render_hash": "8d3f9e4920781e2a9d9d5652724e55c08b1ef3773f37078180c5bee32e4a4318",
+      "round_trip": {
+        "width": 64,
+        "height": 24,
+        "cel_hash": true
+      },
+      "approval": {
+        "status": {
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-trans01-stairs",
+          "revision": 2,
+          "revision_hash": "95c713aac5d254fddb03adc245ea25a3e6b687d49e041c3e240c03a4a804e709",
+          "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+          "approval_subject_hash": "9a0f2965911e4e2fecc794a2ef857451d7f99e0c3b168f6c6951feb59a47f978",
+          "approved": false,
+          "active_approval_ids": [],
+          "historical_approval_ids": []
+        }
+      },
+      "from_revision": null
+    },
+    "balustrade": {
+      "asset_id": "v4-mansion-trans01-balustrade",
+      "status": "created",
+      "role": "Gothic gallery balustrade",
+      "kind": "reusable",
+      "width": 24,
+      "height": 18,
+      "revision": 2,
+      "revision_hash": "63ffacbd31c9b50dd60dc7e036e85cce4efbe93ee820c95be0268ae1bd25b7d7",
+      "render_hash": "85790c614bdd1d11100492dd66f4772d72eb080d675dd06d5bf8e155bea1e1f1",
+      "round_trip": {
+        "width": 24,
+        "height": 18,
+        "cel_hash": true
+      },
+      "approval": {
+        "status": {
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-trans01-balustrade",
+          "revision": 2,
+          "revision_hash": "63ffacbd31c9b50dd60dc7e036e85cce4efbe93ee820c95be0268ae1bd25b7d7",
+          "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+          "approval_subject_hash": "1a199591ec28f5f086da01ed34439809837f99215f6b57a427e27a165b333ceb",
+          "approved": false,
+          "active_approval_ids": [],
+          "historical_approval_ids": []
+        }
+      },
+      "from_revision": null
+    },
+    "candelabra": {
+      "asset_id": "v4-mansion-trans01-candelabra",
+      "status": "created",
+      "role": "Three candle accents",
+      "kind": "reusable",
+      "width": 12,
+      "height": 28,
+      "revision": 2,
+      "revision_hash": "77894ea4a25003d33d8572d89d17b12b1f4f44d57318eaa58c7b76a9fa987e55",
+      "render_hash": "a38da904543b0fca2c1986c5b963213005673f8fdfd79c7b30728eb6f3fa205a",
+      "round_trip": {
+        "width": 12,
+        "height": 28,
+        "cel_hash": true
+      },
+      "approval": {
+        "status": {
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-trans01-candelabra",
+          "revision": 2,
+          "revision_hash": "77894ea4a25003d33d8572d89d17b12b1f4f44d57318eaa58c7b76a9fa987e55",
+          "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+          "approval_subject_hash": "aa826c60313923165d7b5f896f1c87d06f0cf5e6ae5e54fdd639a09db7638f0a",
+          "approved": false,
+          "active_approval_ids": [],
+          "historical_approval_ids": []
+        }
+      },
+      "from_revision": null
+    },
+    "runner": {
+      "asset_id": "v4-mansion-trans01-runner",
+      "status": "created",
+      "role": "Quiet dark crimson carpet field",
+      "kind": "reusable",
+      "width": 16,
+      "height": 16,
+      "revision": 2,
+      "revision_hash": "173e9f8275c5bc5246eda7d905610092a5e8041060a2fe551e0f92963d1d2c49",
+      "render_hash": "03ca176583e69e7158891f5c949c2ba75f26351baa290168a7f9ec7c95877d17",
+      "round_trip": {
+        "width": 16,
+        "height": 16,
+        "cel_hash": true
+      },
+      "approval": {
+        "status": {
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-trans01-runner",
+          "revision": 2,
+          "revision_hash": "173e9f8275c5bc5246eda7d905610092a5e8041060a2fe551e0f92963d1d2c49",
+          "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+          "approval_subject_hash": "0baa610376baff6a3a5650dfd0ea1908c68e76de800f96722a2913f13f05f623",
+          "approved": false,
+          "active_approval_ids": [],
+          "historical_approval_ids": []
+        }
+      },
+      "from_revision": null
+    },
+    "runner-edge": {
+      "asset_id": "v4-mansion-trans01-runner-edge",
+      "status": "created",
+      "role": "Fine ochre piping and crimson border",
+      "kind": "reusable",
+      "width": 8,
+      "height": 16,
+      "revision": 2,
+      "revision_hash": "0e0d444891ba06920ab098fef73ab898a9ac20b3436bdfdd5ec95cf444ed5e1f",
+      "render_hash": "091a404f1ac0e636275901390d9a140fdee7987cdc8a3104ba4b407a5daf3eec",
+      "round_trip": {
+        "width": 8,
+        "height": 16,
+        "cel_hash": true
+      },
+      "approval": {
+        "status": {
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-trans01-runner-edge",
+          "revision": 2,
+          "revision_hash": "0e0d444891ba06920ab098fef73ab898a9ac20b3436bdfdd5ec95cf444ed5e1f",
+          "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+          "approval_subject_hash": "663e2c96db6b4c1b4fa35a3bb313f2a629be1e8fa4826561030fd5c3c9589f02",
+          "approved": false,
+          "active_approval_ids": [],
+          "historical_approval_ids": []
+        }
+      },
+      "from_revision": null
+    },
+    "runner-motif": {
+      "asset_id": "v4-mansion-trans01-runner-motif",
+      "status": "created",
+      "role": "Sparse low contrast runner emblem",
+      "kind": "reusable",
+      "width": 16,
+      "height": 16,
+      "revision": 2,
+      "revision_hash": "99fc40e679eb25161067272e5f7193cc37ded52d6a92df2f3c27912d7f31e648",
+      "render_hash": "d8de27a06f59b152de898d3fda9c209c7f6c6a80881860d77e440f902b859170",
+      "round_trip": {
+        "width": 16,
+        "height": 16,
+        "cel_hash": true
+      },
+      "approval": {
+        "status": {
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-trans01-runner-motif",
+          "revision": 2,
+          "revision_hash": "99fc40e679eb25161067272e5f7193cc37ded52d6a92df2f3c27912d7f31e648",
+          "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+          "approval_subject_hash": "d3c594f5f825a0abf196cf96ba976a21a211f1324e10799db8dd91f08bba9c35",
+          "approved": false,
+          "active_approval_ids": [],
+          "historical_approval_ids": []
+        }
+      },
+      "from_revision": null
+    },
+    "paving": {
+      "asset_id": "v4-mansion-trans01-paving",
+      "status": "created",
+      "role": "Two dark polished paving swatches, fragmented reflection",
+      "kind": "reusable",
+      "width": 32,
+      "height": 16,
+      "revision": 3,
+      "revision_hash": "a9173888c4d445e8aa077822fbb7362709b61e3a9c39c0653b45a6a0354f1023",
+      "render_hash": "c5b1d81ab210436b6105cacbdfcbe6b483ebb6b8f23dde5e2feee6e3c5cca76e",
+      "round_trip": {
+        "width": 32,
+        "height": 16,
+        "cel_hash": true
+      },
+      "approval": {
+        "status": {
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-trans01-paving",
+          "revision": 3,
+          "revision_hash": "a9173888c4d445e8aa077822fbb7362709b61e3a9c39c0653b45a6a0354f1023",
+          "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+          "approval_subject_hash": "6e525b9e028ad86ad9e78df449fafaf8d6cf0d261b3a83280a6151adfdf8ca4e",
+          "approved": false,
+          "active_approval_ids": [],
+          "historical_approval_ids": []
+        }
+      },
+      "from_revision": null
+    },
+    "column": {
+      "asset_id": "v4-mansion-proof-column-01",
+      "status": "revised",
+      "role": "Pale middle-distance column, stronger clustered shafts",
+      "kind": "reusable",
+      "width": 16,
+      "height": 64,
+      "revision": 4,
+      "revision_hash": "e5ab2205ee44ef2e728ee282430e5d1df37946e953d8058cc26eab19e0574062",
+      "render_hash": "b268ef9dde2c561b70e8f2e1339286871a42837a4a553cc63ca175b9bb5a3f42",
+      "round_trip": {
+        "width": 16,
+        "height": 64,
+        "cel_hash": true
+      },
+      "approval": {
+        "status": {
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-proof-column-01",
+          "revision": 4,
+          "revision_hash": "e5ab2205ee44ef2e728ee282430e5d1df37946e953d8058cc26eab19e0574062",
+          "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+          "approval_subject_hash": "441491fde53bc0962c5ed1c84afb00b4de7a8e160add6dea126d4e4d7e44316d",
+          "approved": false,
+          "active_approval_ids": [],
+          "historical_approval_ids": []
+        }
+      },
+      "from_revision": 3
+    },
+    "wall-masonry": {
+      "asset_id": "v4-mansion-proof-wall-masonry-01",
+      "status": "reused",
+      "role": "Dark architectural infill",
+      "kind": "reusable",
+      "width": 32,
+      "height": 16,
+      "revision": 2,
+      "revision_hash": "c7a7b82bb2ee25730e1fe092e52d2b9f59c9668c9f68087678d36ec58fd8564d",
+      "render_hash": "1adef98dbd763372d530711f426cc40b86a9f4fa7ea2dc5647d88ae0d931a887",
+      "round_trip": {
+        "width": 32,
+        "height": 16,
+        "cel_hash": true
+      },
+      "approval": {
+        "status": {
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-proof-wall-masonry-01",
+          "revision": 2,
+          "revision_hash": "c7a7b82bb2ee25730e1fe092e52d2b9f59c9668c9f68087678d36ec58fd8564d",
+          "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+          "approval_subject_hash": "adc1c21883b381d990d6da123119eba151c5a965e5ffbc3eb9b61d1a6b44a90b",
+          "approved": false,
+          "active_approval_ids": [],
+          "historical_approval_ids": []
+        }
+      },
+      "from_revision": null
+    },
+    "trim-top": {
+      "asset_id": "v4-mansion-proof-trim-top-01",
+      "status": "reused",
+      "role": "Cornice and gallery ledge",
+      "kind": "reusable",
+      "width": 16,
+      "height": 8,
+      "revision": 3,
+      "revision_hash": "9a1bad091af4ad029928d9bf36963a2476a8d589e47a34dde8f8f4104d1565cf",
+      "render_hash": "feee9ba4bedb0758bb6243a2d38c28ccb71d034e681e706f2a530ad47cbb2313",
+      "round_trip": {
+        "width": 16,
+        "height": 8,
+        "cel_hash": true
+      },
+      "approval": {
+        "status": {
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-proof-trim-top-01",
+          "revision": 3,
+          "revision_hash": "9a1bad091af4ad029928d9bf36963a2476a8d589e47a34dde8f8f4104d1565cf",
+          "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+          "approval_subject_hash": "79fa770b58e23e1a7e8a6fbb96b328a44032321b15be1439e5de67c2cd9e4f50",
+          "approved": false,
+          "active_approval_ids": [],
+          "historical_approval_ids": []
+        }
+      },
+      "from_revision": null
+    },
+    "far-pier": {
+      "asset_id": "v4-mansion-ref01-far-pier-01",
+      "status": "reused",
+      "role": "Small distant pier",
+      "kind": "reusable",
+      "width": 12,
+      "height": 48,
+      "revision": 2,
+      "revision_hash": "73411389d2256b01f59c07a749f84ca1000f81484d34bbcc5665edff2fac9918",
+      "render_hash": "ccbd4ec7f0ef80a5a3b3709d3da7c13304b6d5b0e904d3e4668c3cdf0254378d",
+      "round_trip": {
+        "width": 12,
+        "height": 48,
+        "cel_hash": true
+      },
+      "approval": {
+        "status": {
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-ref01-far-pier-01",
+          "revision": 2,
+          "revision_hash": "73411389d2256b01f59c07a749f84ca1000f81484d34bbcc5665edff2fac9918",
+          "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+          "approval_subject_hash": "0b6d3c1fe4779d02f4e157e010b21db448cd3fa2522df36e736b93f2c67d8962",
+          "approved": false,
+          "active_approval_ids": [],
+          "historical_approval_ids": []
+        }
+      },
+      "from_revision": null
+    }
+  }
+}

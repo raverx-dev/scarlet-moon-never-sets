@@ -1,0 +1,121 @@
+{
+  "source_commit": "4ef4080fc17f53f03393ac74e205220072360c0b",
+  "source_file": "versions/sprite-redesign/index.html",
+  "source_sha256": "7c224ab6fd0e6bb0153a7f279af61e4332a2ad4228d60404f26351800e75d7d4",
+  "primitive": "drawBullet diamond/star integer rectangles",
+  "colors": {
+    "black": "#080810",
+    "white": "#fff0ce",
+    "red": "#e83a51",
+    "pink": "#ff93b4",
+    "blue": "#424d9d",
+    "cyan": "#81d8ed",
+    "purple": "#ae68d7",
+    "gold": "#f5cb70",
+    "green": "#64b58a",
+    "dark": "#171b39",
+    "crimson": "#b32946",
+    "wine": "#6b1c32",
+    "navy": "#1b2851",
+    "ice": "#d6f4ff",
+    "leaf": "#21423e",
+    "wood": "#704638",
+    "wall": "#151627",
+    "carpet": "#35192b",
+    "stone": "#2a315b",
+    "moonG": "#a9a4b6"
+  },
+  "placements": [
+    {
+      "x": 48,
+      "y": 132,
+      "shape": "diamond",
+      "color": "cyan"
+    },
+    {
+      "x": 72,
+      "y": 132,
+      "shape": "diamond",
+      "color": "cyan"
+    },
+    {
+      "x": 96,
+      "y": 132,
+      "shape": "diamond",
+      "color": "cyan"
+    },
+    {
+      "x": 120,
+      "y": 132,
+      "shape": "diamond",
+      "color": "cyan"
+    },
+    {
+      "x": 144,
+      "y": 132,
+      "shape": "diamond",
+      "color": "cyan"
+    },
+    {
+      "x": 48,
+      "y": 158,
+      "shape": "star",
+      "color": "pink"
+    },
+    {
+      "x": 72,
+      "y": 158,
+      "shape": "star",
+      "color": "pink"
+    },
+    {
+      "x": 96,
+      "y": 158,
+      "shape": "star",
+      "color": "pink"
+    },
+    {
+      "x": 120,
+      "y": 158,
+      "shape": "star",
+      "color": "pink"
+    },
+    {
+      "x": 144,
+      "y": 158,
+      "shape": "star",
+      "color": "pink"
+    },
+    {
+      "x": 48,
+      "y": 184,
+      "shape": "diamond",
+      "color": "gold"
+    },
+    {
+      "x": 72,
+      "y": 184,
+      "shape": "diamond",
+      "color": "gold"
+    },
+    {
+      "x": 96,
+      "y": 184,
+      "shape": "diamond",
+      "color": "gold"
+    },
+    {
+      "x": 120,
+      "y": 184,
+      "shape": "diamond",
+      "color": "gold"
+    },
+    {
+      "x": 144,
+      "y": 184,
+      "shape": "diamond",
+      "color": "gold"
+    }
+  ],
+  "limits": "Fixed static comparison; not a combat simulation or runtime screenshot."
+}
