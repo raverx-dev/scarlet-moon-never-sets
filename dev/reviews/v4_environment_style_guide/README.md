@@ -1,25 +1,39 @@
 # Scarlet Moon V4 Environmental Style Guide — v0.2 evidence board
 
 This directory is the mechanical review artifact authorized by issue #40. Open
-`review.html` locally. It assembles Manager-authored doctrine and exact internal
+review.html locally. It assembles Manager-authored doctrine and exact internal
 evidence; it does not redesign, edit, approve, integrate, publish, freeze, or
 merge any art.
 
+## Current role in production
+
+This guide is the environment-workmanship layer, not the complete production
+workflow and not the Late-Cartridge construction contract.
+
+Use it together with:
+
+- ../v4_late_cartridge_profile/PROFILE.md for #44 construction authority;
+- ../v4_environment_production_workflow/WORKFLOW.md for the accepted #50/#51
+  repeatable environment-production sequence.
+
+RoboPixel #29 Artist Development supplies transferable artistic/tutorial guidance
+when a difficult subject needs technique research.
+
 ## Pinned provenance
 
-The branch starts from remote `main` at
-`45e701cf41ef089808babd567a59574b4e326deb`.
+The branch starts from remote main at
+45e701cf41ef089808babd567a59574b4e326deb.
 
 | Evidence package | Exact source head |
 | --- | --- |
-| Mansion Gate Exterior / PR #29 | `796f76d4c173ce4ae5287d20d74d9c37b8f1c8c4` |
-| Mansion Interior / PR #22 | `c2241001946ac5456293f9f2b8be137e5c5bc648` |
-| Forest / PR #26 | `08c2c5364d7e4a5eaa4fbb43e97209e5abf145e0` |
-| Misty Lake / PR #34 | `040c405e912c85b38f08d7ba4a0660e76cb821a1` |
-| Rooftop / PR #37 | `468e793d03b90d5c30b2ac09ea8992b9af7eb6c9` |
-| Shrine / PR #39 | `8438cd4e04e82c12a9f16932ed4fc639f5c2979b` |
+| Mansion Gate Exterior / PR #29 | 796f76d4c173ce4ae5287d20d74d9c37b8f1c8c4 |
+| Mansion Interior / PR #22 | c2241001946ac5456293f9f2b8be137e5c5bc648 |
+| Forest / PR #26 | 08c2c5364d7e4a5eaa4fbb43e97209e5abf145e0 |
+| Misty Lake / PR #34 | 040c405e912c85b38f08d7ba4a0660e76cb821a1 |
+| Rooftop / PR #37 | 468e793d03b90d5c30b2ac09ea8992b9af7eb6c9 |
+| Shrine / PR #39 | 8438cd4e04e82c12a9f16932ed4fc639f5c2979b |
 
-`manifest.json` is the file-level source index. Every image entry records the
+manifest.json is the file-level source index. Every image entry records the
 exact source commit, original path, copied path, copied-byte SHA-256, role, and
 annotation category.
 
@@ -39,22 +53,20 @@ annotation category.
 
 All direct proof PNGs were extracted from the pinned Git objects and copied
 without pixel or byte changes. Misty Lake is the package's documented exception:
-in a detached checkout of exact head `040c405…`, `python hydrate.py` restored 41
+in a detached checkout of exact head 040c405…, python hydrate.py restored 41
 PNG payloads from the committed transport index. The five selected presentation
-PNGs were then copied from their original generated `previews/` paths; their
-hashes matched `verification.json` and the transport index. No `transport/*.b64`
+PNGs were then copied from their original generated previews/ paths; their
+hashes matched verification.json and the transport index. No transport/*.b64
 file is present here.
 
 Run from this directory:
 
-```sh
-python verify.py
-```
+    python verify.py
 
 The verifier uses only the Python standard library. It checks every manifest
 entry, rejects unlisted PNGs, and confirms that no transport payload is exposed.
 For direct Git-backed sources it also compares copied bytes with
-`git show <commit>:<path>`. Misty Lake generated files are checked against the
+git show <commit>:<path>. Misty Lake generated files are checked against the
 pinned SHA-256 recorded after hydration because their generated paths are not
 Git blobs.
 
@@ -64,4 +76,5 @@ The page is CSS/HTML only and loads only local Scarlet Moon images. CSS nearest-
 neighbor enlargement is presentation-only; source PNGs were not resampled or
 annotated. This board grants no authority for canonical art mutation, RoboPixel
 state changes, runtime integration, proof-branch changes, publication, merge, or
-release. Owner review is required before any later environment-polish work.
+release. Actual environment production follows the accepted environment workflow
+and a bounded scene issue; Owner visual review remains the artistic authority.
