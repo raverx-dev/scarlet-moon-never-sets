@@ -92,7 +92,7 @@ assets.
 
 Final proof evidence:
 
-- 46/46 canonical pins PASS;
+- 46/46 canonical pins PASS: 37 placed environment + 4 preserved unplaced environment + 5 unchanged witnesses;
 - 41/41 selected environment validations PASS;
 - four background subpalettes;
 - 13 available/visible background colors in the bank/profile ledger;
@@ -101,6 +101,19 @@ Final proof evidence:
 - quiet lane x=64..127, y=128..239;
 - two independent package runs byte-identical;
 - no unresolved mechanical blocker.
+
+### Proof provenance note
+
+The corrected artist-input tree is pinned by branch v4-mi51-correction-01-input at
+175a48797d72253d90de2bf503e52a88b1fc7c65. The published accepted proof is
+441f07afaee0fda11271e10e9008d279f3cf5396.
+
+The frozen Production Handoff checkpoint/verification provenance.commit field still
+names the original review parent a9ae66e0dcf71de4b8381fd3f1abbc0c064e75b5. Its
+body pins the corrected rose r7 and corrected scene hashes, but that commit field
+must not be used as the correction source-tree coordinate. The correction input and
+published proof heads above are the durable source coordinates. This metadata quirk
+is preserved rather than rewriting the already-accepted mechanical snapshot.
 
 ### Initial candidate lesson
 
