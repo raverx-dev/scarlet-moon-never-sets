@@ -1,22 +1,27 @@
 # Scarlet Moon V4 Late-Cartridge Profile
 
-**Issue:** #44  
-**Parent:** #24  
-**Status:** Owner-review candidate  
-**Source baseline:** `d2586870b92551e931f784631ddfc891208df35b`
+**Issue:** #44
+**Parent:** #24
+**Status:** Owner-accepted controlling V4 construction authority
+**Source baseline:** d2586870b92551e931f784631ddfc891208df35b
 
 This directory defines the V4 construction contract that sits between the broad
-product thesis in #24 and the one-screen proof in #45.
+product thesis in #24 and bounded scene/character production.
 
-It changes **how V4 art is constructed**, not what V4 is. V4 remains the same
+It changes how V4 art is constructed, not what V4 is. V4 remains the same
 Scarlet Moon game presented as a richer late-Famicom/NES-era edition.
 
 ## Read order
 
-1. [PROFILE.md](PROFILE.md) — normative construction rules.
-2. [PROOF_GATE.md](PROOF_GATE.md) — exact acceptance contract for #45.
-3. [REFERENCES.md](REFERENCES.md) — internal evidence and external method/technical
-   references.
+1. PROFILE.md — normative construction rules.
+2. PROOF_GATE.md — exact acceptance contract used for #45.
+3. REFERENCES.md — internal evidence and external method/technical references.
+
+For environment production, also read:
+
+4. ../v4_environment_style_guide/review.html — #40 workmanship evidence.
+5. ../v4_environment_production_workflow/WORKFLOW.md — accepted #50/#51
+   production sequence.
 
 ## Authority
 
@@ -31,17 +36,24 @@ When visual guidance conflicts, use this order:
 for character state/canvas/runtime truth. #42 / PR #43 remain held pre-profile
 research evidence.
 
+#51 later demonstrated this profile in a reusable environment resident-bank +
+deterministic-composition workflow. That proof does not make its exact Mansion
+pixels the universal V4 art target; it demonstrates that the construction doctrine
+can support a coherent environment production unit.
+
 ## Normative language
 
-- **MUST / MUST NOT** — required for a Late-Cartridge candidate unless an explicit
+- MUST / MUST NOT — required for a Late-Cartridge candidate unless an explicit
   waiver is recorded.
-- **SHOULD / SHOULD NOT** — expected default; deviations need a concrete reason.
-- **MAY** — permitted technique, not a requirement.
+- SHOULD / SHOULD NOT — expected default; deviations need a concrete reason.
+- MAY — permitted technique, not a requirement.
 
 ## Scope and stop
 
-This package contains doctrine only. It does not mutate canonical art, RoboPixel
-state, `versions/v4`, V1–V3, gameplay, mechanics, audio, or release state.
+This package contains construction doctrine. It does not itself mutate canonical
+art, RoboPixel state, versions/v4, V1–V3, gameplay, mechanics, audio, or release
+state.
 
-Do not start broad V4 art production from this candidate. Owner acceptance of
-#44 is required before #45 executes.
+#44 and #45 are accepted. Broad environment work must still proceed through the
+accepted environment-production workflow and bounded scene issues rather than
+treating this profile alone as production authorization.
