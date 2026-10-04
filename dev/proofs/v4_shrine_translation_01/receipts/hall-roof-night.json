@@ -1,0 +1,82 @@
+{
+  "create": {
+    "receipt": {
+      "transaction_id": "9db6802e753840851f9dc29f6fbeda04a4c10ad7fcbe41ab91fc2a2a058ba474",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-hall-roof-night",
+      "operation": "asset_create",
+      "name": "Shrine Translation 01 / hall-roof-night",
+      "class_id": "environment-structure",
+      "revision": 1,
+      "revision_hash": "8182bd0dff0ecbbcd3feac799c352a36e79063dc13cb488eb3f4ecd534df95f8",
+      "canvas": {
+        "width": 152,
+        "height": 63
+      },
+      "palette_id": "v4-shrine-trans01-hall-roof-night",
+      "palette_hash": "b2c13bc276e5ada9a12e9c64e7e5df79f33f555c66deebb3ade84000396bcecf",
+      "frame_id": "default",
+      "layer_id": "art",
+      "created_at": "2026-09-25T12:20:06.354Z",
+      "policy_id": "d12-art-policy",
+      "policy_version": 1,
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "guards": []
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-roof-night",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-roof-night/revision/1",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-roof-night/revision/1/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-roof-night/revision/1/text"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  "paste": {
+    "receipt": {
+      "transaction_id": "df2e3ad3f30fe0db6cb673c0809a210501ced13a1ff609ef4900762b4d285eca",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-hall-roof-night",
+      "operation": "grid_paste",
+      "old_revision": 1,
+      "new_revision": 2,
+      "old_revision_hash": "8182bd0dff0ecbbcd3feac799c352a36e79063dc13cb488eb3f4ecd534df95f8",
+      "new_revision_hash": "13ee65cb0863170b275dcbb93d156cf794f6bc5bad25b65c39e6248950b2a645",
+      "changed_pixels": 4259,
+      "changed_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 152,
+        "height": 55
+      },
+      "region_changes": [],
+      "layer_changes": [
+        {
+          "layer_id": "art",
+          "changed_pixels": 4259
+        }
+      ],
+      "frame_changes": [
+        {
+          "frame_id": "default",
+          "changed_pixels": 4259
+        }
+      ],
+      "guards": [],
+      "approval_invalidated": true
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-roof-night",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-roof-night/revision/2",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-roof-night/revision/2/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-hall-roof-night/revision/2/text",
+      "diff": "robopixel://diff/scarlet-moon-never-sets/v4-shrine-trans01-hall-roof-night/1/2"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  }
+}

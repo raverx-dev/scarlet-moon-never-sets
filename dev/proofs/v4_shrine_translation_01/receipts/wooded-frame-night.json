@@ -1,0 +1,82 @@
+{
+  "create": {
+    "receipt": {
+      "transaction_id": "eb51f143da30c54da5482776cd07df071dec84fc6c6d19b588ed557f36473c42",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-wooded-frame-night",
+      "operation": "asset_create",
+      "name": "Shrine Translation 01 / wooded-frame-night",
+      "class_id": "environment-structure",
+      "revision": 1,
+      "revision_hash": "e0e21bf29e03b46d45faf227863e66fcc6bcee8d5943e9bf3a0e8cda09b631d9",
+      "canvas": {
+        "width": 256,
+        "height": 160
+      },
+      "palette_id": "v4-shrine-trans01-wooded-frame-night",
+      "palette_hash": "85e0b778b66c7c3c96ffe2aa60edb57d8e7bf1ee98c49ce535276da693d1b5e9",
+      "frame_id": "default",
+      "layer_id": "art",
+      "created_at": "2026-09-25T12:20:03.994Z",
+      "policy_id": "d12-art-policy",
+      "policy_version": 1,
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "guards": []
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-wooded-frame-night",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-wooded-frame-night/revision/1",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-wooded-frame-night/revision/1/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-wooded-frame-night/revision/1/text"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  "paste": {
+    "receipt": {
+      "transaction_id": "2d93706bca29042a93c4ff9520d38e5917fe91f729d76f90220bcd3ade879d1f",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-shrine-trans01-wooded-frame-night",
+      "operation": "grid_paste",
+      "old_revision": 1,
+      "new_revision": 2,
+      "old_revision_hash": "e0e21bf29e03b46d45faf227863e66fcc6bcee8d5943e9bf3a0e8cda09b631d9",
+      "new_revision_hash": "b4f42ebb1c583ff8a72a663b7e864f52784a76a4ca5db53967c9a10b4ca328fc",
+      "changed_pixels": 22252,
+      "changed_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 160
+      },
+      "region_changes": [],
+      "layer_changes": [
+        {
+          "layer_id": "art",
+          "changed_pixels": 22252
+        }
+      ],
+      "frame_changes": [
+        {
+          "frame_id": "default",
+          "changed_pixels": 22252
+        }
+      ],
+      "guards": [],
+      "approval_invalidated": true
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-wooded-frame-night",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-wooded-frame-night/revision/2",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-wooded-frame-night/revision/2/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-shrine-trans01-wooded-frame-night/revision/2/text",
+      "diff": "robopixel://diff/scarlet-moon-never-sets/v4-shrine-trans01-wooded-frame-night/1/2"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  }
+}
