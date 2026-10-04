@@ -1,0 +1,15 @@
+# #51 preserve/change checkpoint — before canonical authoring
+
+Authority checked: #24; accepted #50 contract/clarifications/reality check; activated #51; current #44 PROFILE at main 58b06036c1bd102099e0598bf755420c0d71265f; #40 review board including Gate and Interior native/atlas; RoboPixel #29; V3 archive ea4c31aa8d2ad92e1a5d8bfb0f25d1ba0863ed31; old kit 13ff42307d5f008b8fa8ebce80f546b164067a1b; accepted #22 c2241001946ac5456293f9f2b8be137e5c5bc648 including floor rollback; #45 accepted proof 4e93c4685c6909b38233ee854036a8308db6aead; Production Handoff v1.
+
+1. Preserve V3: finite named 8x8 atoms/16x16 modules, clear material roles, repeat/place economy, low-activity x64..127 combat lane. Do not reproduce its wallpaper or furnishing density.
+2. Preserve #22: rose/lancet/pier/hanging hierarchy, framed receding hall, raised stair/runner connection, layered stone masses, restrained dark paving. Preserve composition reasoning rather than its pixels or unconstrained palette.
+3. Preserve old kit method: authoritative asset_create/grid_paste, exact committed readback, deterministic external integer placement/crop/repeat/mirror, authored near/far sizes. No scene editor, repaint, scaling or recolor.
+4. #45 proves: stage bank, inspectable 8x8 reconstruction, 16x16 one-subpalette planning, four global BG pools including future HUD, canonical identity and handoff. Its sparse symmetrical facade and small rose are not aesthetic targets.
+5. Improve: substantial stepped Gothic shoulders; stronger rose tracery; capitals/shafts/plinth depth; multiple masonry/floor variants used selectively; near/far bay hierarchy; quiet lower lane without dead flat side planes.
+6. New work: all bank members under v4-mi51-*; wall/floor/carpet atoms and metatiles, near/far pier vocabulary, stepped lancets/arch framing, 64x64 rose landmark, folded hanging, cornice/dado/stair transitions. No old family mutations.
+7. Consulted: Slynyrd Pixelblog 45 for pattern scale/value contrast, short authored shadows and texture variants; Pixelblog 37 for constrained Gothic tile variation and section-by-section construction; Pixelblog 16 for substantial castle massing (limited exterior relevance); Lospec stone index discovery only. Tutorial GIFs were inaccessible through research fetch; no artwork copied. Apply subject technique under #40/#44.
+8. Author order: quiet masonry/floor/carpet + pier cap/shaft/base; inspect coherent family; lancets/stepped shoulders + cornice/dado; rose + hanging + stairs; compose/inspect native against #22/#45; revise exact weak members; pin and mechanically package.
+
+Palette intent: same four role families as #45 (stone, crimson/fabric, warm metal/wood, cool glass), shared #10121e backdrop; maximum 13 visible colors; no swap/waiver/private HUD pool. Each 16x16 final neighborhood must fit one family. Future runtime/readability qualification remains separate.
+One production environment only: 192x240; review witness may add unchanged existing canonical actors/bullets without entering the production bank. No story/runtime/approval/release.
