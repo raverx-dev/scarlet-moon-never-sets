@@ -1,0 +1,187 @@
+{
+  "status": "PASS",
+  "scope": "static proof only; not runtime QA or Owner art acceptance",
+  "base_commit": "d7054d2b9b111ff711f44cc3ee5b71268aca6ed8",
+  "protected_base_files": 23,
+  "correction_changed_pixels": {
+    "gameplay": 38792,
+    "story": 53308
+  },
+  "checks": {
+    "all_16_canonical_matrix_and_png_round_trips": true,
+    "recompose_all_proof_pngs_byte_identical": true,
+    "native_sizes_and_exact_nearest_neighbor_enlargements": true,
+    "story_not_any_gameplay_width_crop": true,
+    "all_16_assets_reused_in_both_compositions": true,
+    "lower_gameplay_lane_80x112_contains_only_two_dark_ground_colors": true,
+    "all_base_tracked_files_unchanged": true,
+    "accepted_reference_hashes_preserved": true,
+    "rejected_checkpoint_preserved_byte_exact": true,
+    "all_assets_unapproved_candidates": true,
+    "both_scenes_substantially_redrawn": true
+  },
+  "assets": {
+    "depth-opening": {
+      "revision": 3,
+      "matrix_equals_submitted": true,
+      "canonical_png_equals_composition_asset": true,
+      "size": [
+        80,
+        112
+      ]
+    },
+    "far-grove": {
+      "revision": 3,
+      "matrix_equals_submitted": true,
+      "canonical_png_equals_composition_asset": true,
+      "size": [
+        56,
+        104
+      ]
+    },
+    "mid-tree": {
+      "revision": 3,
+      "matrix_equals_submitted": true,
+      "canonical_png_equals_composition_asset": true,
+      "size": [
+        36,
+        112
+      ]
+    },
+    "elder-trunk": {
+      "revision": 3,
+      "matrix_equals_submitted": true,
+      "canonical_png_equals_composition_asset": true,
+      "size": [
+        64,
+        176
+      ]
+    },
+    "fork-trunk": {
+      "revision": 3,
+      "matrix_equals_submitted": true,
+      "canonical_png_equals_composition_asset": true,
+      "size": [
+        40,
+        160
+      ]
+    },
+    "canopy": {
+      "revision": 3,
+      "matrix_equals_submitted": true,
+      "canonical_png_equals_composition_asset": true,
+      "size": [
+        64,
+        40
+      ]
+    },
+    "understory": {
+      "revision": 3,
+      "matrix_equals_submitted": true,
+      "canonical_png_equals_composition_asset": true,
+      "size": [
+        40,
+        28
+      ]
+    },
+    "fern": {
+      "revision": 3,
+      "matrix_equals_submitted": true,
+      "canonical_png_equals_composition_asset": true,
+      "size": [
+        28,
+        30
+      ]
+    },
+    "root-bank": {
+      "revision": 3,
+      "matrix_equals_submitted": true,
+      "canonical_png_equals_composition_asset": true,
+      "size": [
+        64,
+        32
+      ]
+    },
+    "quiet-ground": {
+      "revision": 3,
+      "matrix_equals_submitted": true,
+      "canonical_png_equals_composition_asset": true,
+      "size": [
+        32,
+        32
+      ]
+    },
+    "moss-seam": {
+      "revision": 3,
+      "matrix_equals_submitted": true,
+      "canonical_png_equals_composition_asset": true,
+      "size": [
+        32,
+        16
+      ]
+    },
+    "lantern": {
+      "revision": 2,
+      "matrix_equals_submitted": true,
+      "canonical_png_equals_composition_asset": true,
+      "size": [
+        10,
+        20
+      ]
+    },
+    "mushrooms": {
+      "revision": 2,
+      "matrix_equals_submitted": true,
+      "canonical_png_equals_composition_asset": true,
+      "size": [
+        16,
+        16
+      ]
+    },
+    "firefly": {
+      "revision": 2,
+      "matrix_equals_submitted": true,
+      "canonical_png_equals_composition_asset": true,
+      "size": [
+        5,
+        5
+      ]
+    },
+    "root-crook": {
+      "revision": 3,
+      "matrix_equals_submitted": true,
+      "canonical_png_equals_composition_asset": true,
+      "size": [
+        60,
+        72
+      ]
+    },
+    "far-thicket": {
+      "revision": 3,
+      "matrix_equals_submitted": true,
+      "canonical_png_equals_composition_asset": true,
+      "size": [
+        64,
+        32
+      ]
+    }
+  },
+  "native_outputs": {
+    "forest_gameplay_preview_192x240.png": {
+      "sha256": "ab75c273be10e13e0dd0431bedf73c38a828269f580f894e64547c8773b18394",
+      "size": [
+        192,
+        240
+      ],
+      "rgba_sha256": "4306375bca0fd257a9cc268670671a98318851367f2f77ec4a266f13f6e6e01f"
+    },
+    "forest_story_preview_256x240.png": {
+      "sha256": "ff5d234a62134b5527286e83a0dac3e1d2a12003d798333948b4c3266e976faa",
+      "size": [
+        256,
+        240
+      ],
+      "rgba_sha256": "ff5a2551504bcb4417e10af4832f45e0acd5901f7527018b7f12d4b1b600c800"
+    }
+  }
+}
