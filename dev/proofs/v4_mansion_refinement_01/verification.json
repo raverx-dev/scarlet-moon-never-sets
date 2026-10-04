@@ -1,0 +1,167 @@
+{
+  "proof_head": "13ff42307d5f008b8fa8ebce80f546b164067a1b",
+  "assets": {
+    "carpet-border": {
+      "asset_id": "v4-mansion-proof-carpet-border-01",
+      "revision": 3,
+      "revision_hash": "121641ccad16b2cf4b1573f21cc833cc9585a20dc164c476252bf34093120738",
+      "canonical_png_rgba_equal": true,
+      "preview_round_trip": true,
+      "approval": "unchanged proof candidate"
+    },
+    "carpet-field": {
+      "asset_id": "v4-mansion-proof-carpet-field-01",
+      "revision": 3,
+      "revision_hash": "1c4894a5369c9acaab528ec9d8c265a74068b9ed2189e597aa36de5e9164ef63",
+      "canonical_png_rgba_equal": true,
+      "preview_round_trip": true,
+      "approval": "unchanged proof candidate"
+    },
+    "column": {
+      "asset_id": "v4-mansion-proof-column-01",
+      "revision": 3,
+      "revision_hash": "32b38f38f16c8deb716dfb79420d92cb52688a2a801fbb8a7e38218e6d0942a7",
+      "canonical_png_rgba_equal": true,
+      "preview_round_trip": true,
+      "approval": "unchanged proof candidate"
+    },
+    "far-floor": {
+      "asset_id": "v4-mansion-ref01-far-floor-01",
+      "revision": 2,
+      "revision_hash": "d5133ac1d082e0b44a55f6479723bb7b1fceaa33f2a5630abdbe973fccda9dec",
+      "canonical_png_rgba_equal": true,
+      "preview_round_trip": true,
+      "approval": false
+    },
+    "far-pier": {
+      "asset_id": "v4-mansion-ref01-far-pier-01",
+      "revision": 2,
+      "revision_hash": "73411389d2256b01f59c07a749f84ca1000f81484d34bbcc5665edff2fac9918",
+      "canonical_png_rgba_equal": true,
+      "preview_round_trip": true,
+      "approval": false
+    },
+    "far-window-bay": {
+      "asset_id": "v4-mansion-ref01-far-window-bay-01",
+      "revision": 2,
+      "revision_hash": "9ff859ea435bda5e9cff00f2a6ddd856bd334b9a5a5e4a0b8cc6cbef522b21c4",
+      "canonical_png_rgba_equal": true,
+      "preview_round_trip": true,
+      "approval": false
+    },
+    "floor": {
+      "asset_id": "v4-mansion-proof-floor-01",
+      "revision": 5,
+      "revision_hash": "e2e60e4923b1b46d91159fec2f67df48c06bbc00bc99267d38a4ea26ad8256ad",
+      "canonical_png_rgba_equal": true,
+      "preview_round_trip": true,
+      "approval": false
+    },
+    "rose-apse": {
+      "asset_id": "v4-mansion-proof-rose-apse-01",
+      "revision": 5,
+      "revision_hash": "0dea6c919996684ec9f5cd8005abf5731e2890105b7a362baeeefce1dd67a276",
+      "canonical_png_rgba_equal": true,
+      "preview_round_trip": true,
+      "approval": false
+    },
+    "trim-side": {
+      "asset_id": "v4-mansion-proof-trim-side-01",
+      "revision": 3,
+      "revision_hash": "78843e6eedd30e67c59ed73b451edb71a8abfa184f0a9bec2861b47394e9d966",
+      "canonical_png_rgba_equal": true,
+      "preview_round_trip": true,
+      "approval": "unchanged proof candidate"
+    },
+    "trim-top": {
+      "asset_id": "v4-mansion-proof-trim-top-01",
+      "revision": 3,
+      "revision_hash": "9a1bad091af4ad029928d9bf36963a2476a8d589e47a34dde8f8f4104d1565cf",
+      "canonical_png_rgba_equal": true,
+      "preview_round_trip": true,
+      "approval": "unchanged proof candidate"
+    },
+    "wall-masonry": {
+      "asset_id": "v4-mansion-proof-wall-masonry-01",
+      "revision": 2,
+      "revision_hash": "c7a7b82bb2ee25730e1fe092e52d2b9f59c9668c9f68087678d36ec58fd8564d",
+      "canonical_png_rgba_equal": true,
+      "preview_round_trip": true,
+      "approval": "unchanged proof candidate"
+    },
+    "wall-panel": {
+      "asset_id": "v4-mansion-proof-wall-panel-01",
+      "revision": 3,
+      "revision_hash": "10c31697ac6a716fec2adc86af9d4b4c21c0f1b223c10b3b8673eab3bb7e1820",
+      "canonical_png_rgba_equal": true,
+      "preview_round_trip": true,
+      "approval": "unchanged proof candidate"
+    },
+    "window-bay": {
+      "asset_id": "v4-mansion-proof-window-bay-01",
+      "revision": 3,
+      "revision_hash": "728d687127e2ddc8ae6938ee5c8b74f40ce0f6df0b4fe01a990a78be5cba047d",
+      "canonical_png_rgba_equal": true,
+      "preview_round_trip": true,
+      "approval": "unchanged proof candidate"
+    }
+  },
+  "scenes": {
+    "gameplay": {
+      "size": [
+        192,
+        240
+      ],
+      "sha256": "1eae795bd4574abec29897de7759f2099c922d6f482cc91633e0783a336bc88c",
+      "palette_only": true,
+      "reproduced_from_exports": true,
+      "operations": 209,
+      "asset_usage": {
+        "wall-masonry": 1,
+        "far-floor": 2,
+        "floor": 3,
+        "rose-apse": 1,
+        "trim-top": 2,
+        "carpet-field": 164,
+        "carpet-border": 12,
+        "far-window-bay": 2,
+        "far-pier": 2,
+        "window-bay": 4,
+        "column": 12,
+        "wall-panel": 2,
+        "trim-side": 2
+      }
+    },
+    "story": {
+      "size": [
+        256,
+        240
+      ],
+      "sha256": "60bc1bd28f796a633d31cd40fa2699bbc886e430b51019b299a2f3f8f56eeae9",
+      "palette_only": true,
+      "reproduced_from_exports": true,
+      "operations": 161,
+      "asset_usage": {
+        "wall-masonry": 1,
+        "far-floor": 1,
+        "floor": 1,
+        "rose-apse": 1,
+        "window-bay": 2,
+        "far-window-bay": 2,
+        "far-pier": 2,
+        "column": 18,
+        "wall-panel": 2,
+        "trim-top": 3,
+        "carpet-field": 120,
+        "carpet-border": 8
+      }
+    }
+  },
+  "protected": {
+    "baseline_files_byte_identical": 73,
+    "proof_directory_unchanged": true,
+    "runtime_integration": false,
+    "delivery_export": false,
+    "live_game_qa": false
+  }
+}

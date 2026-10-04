@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "baseline": "41132bc77e632d06132989cf134b7ed9719211e3",
+  "asset_id": "v4-mansion-trans01-paving",
+  "revision_change": [
+    5,
+    6
+  ],
+  "restored_pixel_revision": 3,
+  "other_15_canonical_assets_unchanged": true,
+  "layouts_unchanged": true,
+  "staging_unchanged": true,
+  "scenes": {
+    "gameplay": {
+      "dimensions": [
+        192,
+        240
+      ],
+      "changed_pixels": 1898,
+      "all_changes_on_visible_paving": true,
+      "non_floor_pixels_unchanged": true,
+      "sha256": "4c01e4ec1c385e29bba28a6fc7c12a91600e086a84fdb71f3d4be6738d317fb3"
+    },
+    "story": {
+      "dimensions": [
+        256,
+        240
+      ],
+      "changed_pixels": 2845,
+      "all_changes_on_visible_paving": true,
+      "non_floor_pixels_unchanged": true,
+      "sha256": "593e882aa958e5aef4e2e490da300bf7f96ea17bdd88255b8c211550a99efd49"
+    }
+  },
+  "candidate_only": true
+}

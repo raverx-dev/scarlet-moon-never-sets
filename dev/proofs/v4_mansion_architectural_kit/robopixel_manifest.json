@@ -1,0 +1,206 @@
+{
+  "project_id": "scarlet-moon-never-sets",
+  "palette_hash": "6df577122a8b7267dd8aff2a33c908d79ed875b16a8c25aaff6318cdbd4558e2",
+  "assets": [
+    {
+      "key": "window-bay",
+      "asset_id": "v4-mansion-proof-window-bay-01",
+      "revision": 3,
+      "revision_hash": "728d687127e2ddc8ae6938ee5c8b74f40ce0f6df0b4fe01a990a78be5cba047d",
+      "render_hash": "852850c6e0640bedc3d9db8d4cda1d0dcb28c8a90ccbf58007d6befc4a0f7a2a",
+      "approval": {
+        "status": {
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-proof-window-bay-01",
+          "revision": 3,
+          "revision_hash": "728d687127e2ddc8ae6938ee5c8b74f40ce0f6df0b4fe01a990a78be5cba047d",
+          "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+          "approval_subject_hash": "891f718ecc610e9fad4486399b814b03d0acfc21a4d4a5693c533058c8b9b82e",
+          "approved": false,
+          "active_approval_ids": [],
+          "historical_approval_ids": []
+        }
+      }
+    },
+    {
+      "key": "wall-panel",
+      "asset_id": "v4-mansion-proof-wall-panel-01",
+      "revision": 3,
+      "revision_hash": "10c31697ac6a716fec2adc86af9d4b4c21c0f1b223c10b3b8673eab3bb7e1820",
+      "render_hash": "2305f864b0aee82abbc66245e1a299d7dec0139be6381deb2e8c8baaaa10dcda",
+      "approval": {
+        "status": {
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-proof-wall-panel-01",
+          "revision": 3,
+          "revision_hash": "10c31697ac6a716fec2adc86af9d4b4c21c0f1b223c10b3b8673eab3bb7e1820",
+          "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+          "approval_subject_hash": "e7a29ef462ef5f3572fe12e9b9141ca8f869dfb1be5cae01d0f051b4ed8aa243",
+          "approved": false,
+          "active_approval_ids": [],
+          "historical_approval_ids": []
+        }
+      }
+    },
+    {
+      "key": "column",
+      "asset_id": "v4-mansion-proof-column-01",
+      "revision": 3,
+      "revision_hash": "32b38f38f16c8deb716dfb79420d92cb52688a2a801fbb8a7e38218e6d0942a7",
+      "render_hash": "4054c6a703824d15d60204967a66ce26aba7d4a1425fbd314e8aa3b660f8e995",
+      "approval": {
+        "status": {
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-proof-column-01",
+          "revision": 3,
+          "revision_hash": "32b38f38f16c8deb716dfb79420d92cb52688a2a801fbb8a7e38218e6d0942a7",
+          "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+          "approval_subject_hash": "2ff55300f9c86a5ad91f97743a9bf4b800093f47f2e05253b69a7c593ab0c63a",
+          "approved": false,
+          "active_approval_ids": [],
+          "historical_approval_ids": []
+        }
+      }
+    },
+    {
+      "key": "floor",
+      "asset_id": "v4-mansion-proof-floor-01",
+      "revision": 4,
+      "revision_hash": "e2978708cc49db568511dbff6692a52517b862634fdb66befa16088f25034cd3",
+      "render_hash": "6af6f9ca49846cecabf797425d5c29ec918e3c44f1d67a9957ec4349cb59db75",
+      "approval": {
+        "status": {
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-proof-floor-01",
+          "revision": 4,
+          "revision_hash": "e2978708cc49db568511dbff6692a52517b862634fdb66befa16088f25034cd3",
+          "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+          "approval_subject_hash": "72bc5d20131c38fdf615a65e67bb89c9a45ebcc82942dfa1e12266ceb99be1ae",
+          "approved": false,
+          "active_approval_ids": [],
+          "historical_approval_ids": []
+        }
+      }
+    },
+    {
+      "key": "carpet-field",
+      "asset_id": "v4-mansion-proof-carpet-field-01",
+      "revision": 3,
+      "revision_hash": "1c4894a5369c9acaab528ec9d8c265a74068b9ed2189e597aa36de5e9164ef63",
+      "render_hash": "e93deaa8f17dd89ce757a9976967a401b78809cb51792426b01ded73a30b0242",
+      "approval": {
+        "status": {
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-proof-carpet-field-01",
+          "revision": 3,
+          "revision_hash": "1c4894a5369c9acaab528ec9d8c265a74068b9ed2189e597aa36de5e9164ef63",
+          "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+          "approval_subject_hash": "c80bcb4958b1476e6e277932bcd187e70a8da1a4d0555fd110f109b78c2571fe",
+          "approved": false,
+          "active_approval_ids": [],
+          "historical_approval_ids": []
+        }
+      }
+    },
+    {
+      "key": "carpet-border",
+      "asset_id": "v4-mansion-proof-carpet-border-01",
+      "revision": 3,
+      "revision_hash": "121641ccad16b2cf4b1573f21cc833cc9585a20dc164c476252bf34093120738",
+      "render_hash": "3ee242ecc30629a2a61fd4f6c2957cf15bc502910803719802fe34a622d5bbd2",
+      "approval": {
+        "status": {
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-proof-carpet-border-01",
+          "revision": 3,
+          "revision_hash": "121641ccad16b2cf4b1573f21cc833cc9585a20dc164c476252bf34093120738",
+          "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+          "approval_subject_hash": "936febc0144a3c50a708f73353637457a4c2388c4d374ce5a71605fcdb0ad893",
+          "approved": false,
+          "active_approval_ids": [],
+          "historical_approval_ids": []
+        }
+      }
+    },
+    {
+      "key": "trim-side",
+      "asset_id": "v4-mansion-proof-trim-side-01",
+      "revision": 3,
+      "revision_hash": "78843e6eedd30e67c59ed73b451edb71a8abfa184f0a9bec2861b47394e9d966",
+      "render_hash": "1a4bb3294cd32c446ce12799c5eba64804de2c88e06e5477288397b2dccdf938",
+      "approval": {
+        "status": {
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-proof-trim-side-01",
+          "revision": 3,
+          "revision_hash": "78843e6eedd30e67c59ed73b451edb71a8abfa184f0a9bec2861b47394e9d966",
+          "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+          "approval_subject_hash": "e13d5127217387b0c9a8af9f7ea83b387ca152c4f62b40154140ff7776c6a490",
+          "approved": false,
+          "active_approval_ids": [],
+          "historical_approval_ids": []
+        }
+      }
+    },
+    {
+      "key": "trim-top",
+      "asset_id": "v4-mansion-proof-trim-top-01",
+      "revision": 3,
+      "revision_hash": "9a1bad091af4ad029928d9bf36963a2476a8d589e47a34dde8f8f4104d1565cf",
+      "render_hash": "feee9ba4bedb0758bb6243a2d38c28ccb71d034e681e706f2a530ad47cbb2313",
+      "approval": {
+        "status": {
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-proof-trim-top-01",
+          "revision": 3,
+          "revision_hash": "9a1bad091af4ad029928d9bf36963a2476a8d589e47a34dde8f8f4104d1565cf",
+          "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+          "approval_subject_hash": "79fa770b58e23e1a7e8a6fbb96b328a44032321b15be1439e5de67c2cd9e4f50",
+          "approved": false,
+          "active_approval_ids": [],
+          "historical_approval_ids": []
+        }
+      }
+    },
+    {
+      "key": "rose-apse",
+      "asset_id": "v4-mansion-proof-rose-apse-01",
+      "revision": 4,
+      "revision_hash": "744aeb00758441dc9a1d2efbba79bce37786eebf3b8429a3f841a42da2e05e43",
+      "render_hash": "d8085d9b58c4dc6239b7b0f4913cc6d42d8e0f38225f782d2ff64453e3ae6c42",
+      "approval": {
+        "status": {
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-proof-rose-apse-01",
+          "revision": 4,
+          "revision_hash": "744aeb00758441dc9a1d2efbba79bce37786eebf3b8429a3f841a42da2e05e43",
+          "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+          "approval_subject_hash": "89da1cd675ed331bf759bdd1688a0d8aff9b76acd077878dcb87dfbf4f011d3c",
+          "approved": false,
+          "active_approval_ids": [],
+          "historical_approval_ids": []
+        }
+      }
+    },
+    {
+      "key": "wall-masonry",
+      "asset_id": "v4-mansion-proof-wall-masonry-01",
+      "revision": 2,
+      "revision_hash": "c7a7b82bb2ee25730e1fe092e52d2b9f59c9668c9f68087678d36ec58fd8564d",
+      "render_hash": "1adef98dbd763372d530711f426cc40b86a9f4fa7ea2dc5647d88ae0d931a887",
+      "approval": {
+        "status": {
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-proof-wall-masonry-01",
+          "revision": 2,
+          "revision_hash": "c7a7b82bb2ee25730e1fe092e52d2b9f59c9668c9f68087678d36ec58fd8564d",
+          "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+          "approval_subject_hash": "adc1c21883b381d990d6da123119eba151c5a965e5ffbc3eb9b61d1a6b44a90b",
+          "approved": false,
+          "active_approval_ids": [],
+          "historical_approval_ids": []
+        }
+      }
+    }
+  ]
+}

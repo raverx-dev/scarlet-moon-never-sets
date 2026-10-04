@@ -1,0 +1,872 @@
+[
+  {
+    "name": "rose",
+    "op": "grid_paste",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "grid_paste committed revision 3 -> 4; changed_pixels=1682."
+        }
+      ],
+      "structuredContent": {
+        "receipt": {
+          "transaction_id": "90bd7ac78f5f13b23d506a797d5e843a90900d3da8ccfddc4b01f7bbf9c09c96",
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-trans01-rose",
+          "operation": "grid_paste",
+          "old_revision": 3,
+          "new_revision": 4,
+          "old_revision_hash": "4b2e9eabdb5fed35c1d9ba2d56d99c66b0445e2aae033771445fed488769453c",
+          "new_revision_hash": "db936ca74c9a02e17a0b43442831e3b7b2733d084c3789cf0bae0e6947f3d1ee",
+          "changed_pixels": 1682,
+          "changed_bbox": {
+            "x": 1,
+            "y": 1,
+            "width": 54,
+            "height": 54
+          },
+          "region_changes": [],
+          "layer_changes": [
+            {
+              "layer_id": "art",
+              "changed_pixels": 1682
+            }
+          ],
+          "frame_changes": [
+            {
+              "frame_id": "default",
+              "changed_pixels": 1682
+            }
+          ],
+          "guards": [],
+          "approval_invalidated": true
+        },
+        "resources": {
+          "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-rose",
+          "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-rose/revision/4",
+          "view": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-rose/revision/4/view",
+          "text": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-rose/revision/4/text",
+          "diff": "robopixel://diff/scarlet-moon-never-sets/v4-mansion-trans01-rose/3/4"
+        },
+        "presentation": {
+          "available": true,
+          "render": "none"
+        }
+      },
+      "isError": false
+    }
+  },
+  {
+    "name": "lancet",
+    "op": "grid_paste",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "grid_paste committed revision 2 -> 3; changed_pixels=169."
+        }
+      ],
+      "structuredContent": {
+        "receipt": {
+          "transaction_id": "efda99f5d962d3e7154e2d232eecb4d069fabc623120b9e8736e4104d784fd2f",
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-trans01-lancet",
+          "operation": "grid_paste",
+          "old_revision": 2,
+          "new_revision": 3,
+          "old_revision_hash": "c62d2a8cce3c2d47c08e2fcc1f8e70e4ffe8d40ef116db2f5c4abe7678c21c45",
+          "new_revision_hash": "af680c698f85531a5abda37c4723c1caa7e657931f031918d2e0f8a26935f2bb",
+          "changed_pixels": 169,
+          "changed_bbox": {
+            "x": 1,
+            "y": 7,
+            "width": 14,
+            "height": 40
+          },
+          "region_changes": [],
+          "layer_changes": [
+            {
+              "layer_id": "art",
+              "changed_pixels": 169
+            }
+          ],
+          "frame_changes": [
+            {
+              "frame_id": "default",
+              "changed_pixels": 169
+            }
+          ],
+          "guards": [],
+          "approval_invalidated": true
+        },
+        "resources": {
+          "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-lancet",
+          "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-lancet/revision/3",
+          "view": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-lancet/revision/3/view",
+          "text": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-lancet/revision/3/text",
+          "diff": "robopixel://diff/scarlet-moon-never-sets/v4-mansion-trans01-lancet/2/3"
+        },
+        "presentation": {
+          "available": true,
+          "render": "none"
+        }
+      },
+      "isError": false
+    }
+  },
+  {
+    "name": "arch",
+    "op": "grid_paste",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "grid_paste committed revision 2 -> 3; changed_pixels=366."
+        }
+      ],
+      "structuredContent": {
+        "receipt": {
+          "transaction_id": "b751030842e06b722604ba7a9a3bdd59f4afd1f97aab4ebaa62210207d9a14ca",
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-trans01-arch",
+          "operation": "grid_paste",
+          "old_revision": 2,
+          "new_revision": 3,
+          "old_revision_hash": "3e4e5c269f972e016bb9f3ac6ef93f084eff0723312b68c6a8aac897837e3535",
+          "new_revision_hash": "4d6618fd9074150adaed2b2ae80e204467480bf0ecf556aab751ec6065b3e25e",
+          "changed_pixels": 366,
+          "changed_bbox": {
+            "x": 1,
+            "y": 3,
+            "width": 46,
+            "height": 76
+          },
+          "region_changes": [],
+          "layer_changes": [
+            {
+              "layer_id": "art",
+              "changed_pixels": 366
+            }
+          ],
+          "frame_changes": [
+            {
+              "frame_id": "default",
+              "changed_pixels": 366
+            }
+          ],
+          "guards": [],
+          "approval_invalidated": true
+        },
+        "resources": {
+          "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-arch",
+          "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-arch/revision/3",
+          "view": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-arch/revision/3/view",
+          "text": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-arch/revision/3/text",
+          "diff": "robopixel://diff/scarlet-moon-never-sets/v4-mansion-trans01-arch/2/3"
+        },
+        "presentation": {
+          "available": true,
+          "render": "none"
+        }
+      },
+      "isError": false
+    }
+  },
+  {
+    "name": "banner",
+    "op": "grid_paste",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "grid_paste committed revision 2 -> 3; changed_pixels=84."
+        }
+      ],
+      "structuredContent": {
+        "receipt": {
+          "transaction_id": "4b29c405e9435451040d07242fd25bdd28739b59d14091a3405ed81e4d82310e",
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-trans01-banner",
+          "operation": "grid_paste",
+          "old_revision": 2,
+          "new_revision": 3,
+          "old_revision_hash": "ffd2def3424a6f8eccd7620a99cdae2a59ce5e63d858b213555a9b3bb5717a5b",
+          "new_revision_hash": "af2ed3b4c4f83b158092cf0791a8b43eac72fa10a6109d7aa802e371fe56f7dc",
+          "changed_pixels": 84,
+          "changed_bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 49
+          },
+          "region_changes": [],
+          "layer_changes": [
+            {
+              "layer_id": "art",
+              "changed_pixels": 84
+            }
+          ],
+          "frame_changes": [
+            {
+              "frame_id": "default",
+              "changed_pixels": 84
+            }
+          ],
+          "guards": [],
+          "approval_invalidated": true
+        },
+        "resources": {
+          "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-banner",
+          "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-banner/revision/3",
+          "view": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-banner/revision/3/view",
+          "text": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-banner/revision/3/text",
+          "diff": "robopixel://diff/scarlet-moon-never-sets/v4-mansion-trans01-banner/2/3"
+        },
+        "presentation": {
+          "available": true,
+          "render": "none"
+        }
+      },
+      "isError": false
+    }
+  },
+  {
+    "name": "near-pier",
+    "op": "grid_paste",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "grid_paste committed revision 2 -> 3; changed_pixels=342."
+        }
+      ],
+      "structuredContent": {
+        "receipt": {
+          "transaction_id": "7f394c5fd721101ed770f3e9269fa6e78ca7e7d350c11d15d37ce0e317601caf",
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-trans01-near-pier",
+          "operation": "grid_paste",
+          "old_revision": 2,
+          "new_revision": 3,
+          "old_revision_hash": "e48ab9944b76a0933965db09879d42dddebbc14fa1300b934cf24d1be50d3450",
+          "new_revision_hash": "e6b60afaaf0b61b431f4188246f38430c4111d6026c1259b28a6e2fb38c3e3ee",
+          "changed_pixels": 342,
+          "changed_bbox": {
+            "x": 3,
+            "y": 4,
+            "width": 18,
+            "height": 91
+          },
+          "region_changes": [],
+          "layer_changes": [
+            {
+              "layer_id": "art",
+              "changed_pixels": 342
+            }
+          ],
+          "frame_changes": [
+            {
+              "frame_id": "default",
+              "changed_pixels": 342
+            }
+          ],
+          "guards": [],
+          "approval_invalidated": true
+        },
+        "resources": {
+          "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-near-pier",
+          "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-near-pier/revision/3",
+          "view": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-near-pier/revision/3/view",
+          "text": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-near-pier/revision/3/text",
+          "diff": "robopixel://diff/scarlet-moon-never-sets/v4-mansion-trans01-near-pier/2/3"
+        },
+        "presentation": {
+          "available": true,
+          "render": "none"
+        }
+      },
+      "isError": false
+    }
+  },
+  {
+    "name": "stairs",
+    "op": "grid_paste",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "grid_paste committed revision 2 -> 3; changed_pixels=162."
+        }
+      ],
+      "structuredContent": {
+        "receipt": {
+          "transaction_id": "ee5b3046de79b51514ad918e0a9a3f5b727af9f3580d161abb5935e932cd4590",
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-trans01-stairs",
+          "operation": "grid_paste",
+          "old_revision": 2,
+          "new_revision": 3,
+          "old_revision_hash": "95c713aac5d254fddb03adc245ea25a3e6b687d49e041c3e240c03a4a804e709",
+          "new_revision_hash": "a66add7f1da69ae0abc28604378e198cc48193de8cf394e518c541445a3d383a",
+          "changed_pixels": 162,
+          "changed_bbox": {
+            "x": 4,
+            "y": 0,
+            "width": 57,
+            "height": 24
+          },
+          "region_changes": [],
+          "layer_changes": [
+            {
+              "layer_id": "art",
+              "changed_pixels": 162
+            }
+          ],
+          "frame_changes": [
+            {
+              "frame_id": "default",
+              "changed_pixels": 162
+            }
+          ],
+          "guards": [],
+          "approval_invalidated": true
+        },
+        "resources": {
+          "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-stairs",
+          "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-stairs/revision/3",
+          "view": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-stairs/revision/3/view",
+          "text": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-stairs/revision/3/text",
+          "diff": "robopixel://diff/scarlet-moon-never-sets/v4-mansion-trans01-stairs/2/3"
+        },
+        "presentation": {
+          "available": true,
+          "render": "none"
+        }
+      },
+      "isError": false
+    }
+  },
+  {
+    "name": "balustrade",
+    "op": "grid_paste",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "grid_paste committed revision 2 -> 3; changed_pixels=112."
+        }
+      ],
+      "structuredContent": {
+        "receipt": {
+          "transaction_id": "741545019a1751bcfe90567766b1ebd9c511809c21c91525ace6cbab6beab936",
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-trans01-balustrade",
+          "operation": "grid_paste",
+          "old_revision": 2,
+          "new_revision": 3,
+          "old_revision_hash": "63ffacbd31c9b50dd60dc7e036e85cce4efbe93ee820c95be0268ae1bd25b7d7",
+          "new_revision_hash": "26f0156d6762eeb1c272e618a87877e6229f9aaf1bdbc4427b9dd8d6c0c91ab0",
+          "changed_pixels": 112,
+          "changed_bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 24,
+            "height": 16
+          },
+          "region_changes": [],
+          "layer_changes": [
+            {
+              "layer_id": "art",
+              "changed_pixels": 112
+            }
+          ],
+          "frame_changes": [
+            {
+              "frame_id": "default",
+              "changed_pixels": 112
+            }
+          ],
+          "guards": [],
+          "approval_invalidated": true
+        },
+        "resources": {
+          "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-balustrade",
+          "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-balustrade/revision/3",
+          "view": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-balustrade/revision/3/view",
+          "text": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-balustrade/revision/3/text",
+          "diff": "robopixel://diff/scarlet-moon-never-sets/v4-mansion-trans01-balustrade/2/3"
+        },
+        "presentation": {
+          "available": true,
+          "render": "none"
+        }
+      },
+      "isError": false
+    }
+  },
+  {
+    "name": "candelabra",
+    "op": "grid_paste",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "grid_paste committed revision 2 -> 3; changed_pixels=79."
+        }
+      ],
+      "structuredContent": {
+        "receipt": {
+          "transaction_id": "a377f753b0df2fe76855322f84de50c74def445ca6dec62107e705e7c41d10f2",
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-trans01-candelabra",
+          "operation": "grid_paste",
+          "old_revision": 2,
+          "new_revision": 3,
+          "old_revision_hash": "77894ea4a25003d33d8572d89d17b12b1f4f44d57318eaa58c7b76a9fa987e55",
+          "new_revision_hash": "689ed8480042d1be1c500a1a4ea818cd8e281e1643f142a1ddbb1859528e5df2",
+          "changed_pixels": 79,
+          "changed_bbox": {
+            "x": 1,
+            "y": 1,
+            "width": 10,
+            "height": 26
+          },
+          "region_changes": [],
+          "layer_changes": [
+            {
+              "layer_id": "art",
+              "changed_pixels": 79
+            }
+          ],
+          "frame_changes": [
+            {
+              "frame_id": "default",
+              "changed_pixels": 79
+            }
+          ],
+          "guards": [],
+          "approval_invalidated": true
+        },
+        "resources": {
+          "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-candelabra",
+          "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-candelabra/revision/3",
+          "view": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-candelabra/revision/3/view",
+          "text": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-candelabra/revision/3/text",
+          "diff": "robopixel://diff/scarlet-moon-never-sets/v4-mansion-trans01-candelabra/2/3"
+        },
+        "presentation": {
+          "available": true,
+          "render": "none"
+        }
+      },
+      "isError": false
+    }
+  },
+  {
+    "name": "runner-edge",
+    "op": "grid_paste",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "grid_paste committed revision 2 -> 3; changed_pixels=40."
+        }
+      ],
+      "structuredContent": {
+        "receipt": {
+          "transaction_id": "afd8db7ae27bdaced16ac7a14f5d354d191b28a1a8145a3eb2c9a66123fe1d4f",
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-trans01-runner-edge",
+          "operation": "grid_paste",
+          "old_revision": 2,
+          "new_revision": 3,
+          "old_revision_hash": "0e0d444891ba06920ab098fef73ab898a9ac20b3436bdfdd5ec95cf444ed5e1f",
+          "new_revision_hash": "cddfff0d226fa5fcf710981f840a247482f67131090b70b1d13c046f4d992810",
+          "changed_pixels": 40,
+          "changed_bbox": {
+            "x": 1,
+            "y": 0,
+            "width": 6,
+            "height": 16
+          },
+          "region_changes": [],
+          "layer_changes": [
+            {
+              "layer_id": "art",
+              "changed_pixels": 40
+            }
+          ],
+          "frame_changes": [
+            {
+              "frame_id": "default",
+              "changed_pixels": 40
+            }
+          ],
+          "guards": [],
+          "approval_invalidated": true
+        },
+        "resources": {
+          "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-runner-edge",
+          "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-runner-edge/revision/3",
+          "view": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-runner-edge/revision/3/view",
+          "text": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-runner-edge/revision/3/text",
+          "diff": "robopixel://diff/scarlet-moon-never-sets/v4-mansion-trans01-runner-edge/2/3"
+        },
+        "presentation": {
+          "available": true,
+          "render": "none"
+        }
+      },
+      "isError": false
+    }
+  },
+  {
+    "name": "paving",
+    "op": "grid_paste",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "grid_paste committed revision 3 -> 4; changed_pixels=21."
+        }
+      ],
+      "structuredContent": {
+        "receipt": {
+          "transaction_id": "0c27979104dbe38fc8602655150c4d95d5719b4a3f2b2f6bbaafff2545833403",
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-trans01-paving",
+          "operation": "grid_paste",
+          "old_revision": 3,
+          "new_revision": 4,
+          "old_revision_hash": "a9173888c4d445e8aa077822fbb7362709b61e3a9c39c0653b45a6a0354f1023",
+          "new_revision_hash": "70c462b105fccf5df4dc6ca225743e5fdf30b607976864f47485dc09092ceb06",
+          "changed_pixels": 21,
+          "changed_bbox": {
+            "x": 1,
+            "y": 3,
+            "width": 25,
+            "height": 13
+          },
+          "region_changes": [],
+          "layer_changes": [
+            {
+              "layer_id": "art",
+              "changed_pixels": 21
+            }
+          ],
+          "frame_changes": [
+            {
+              "frame_id": "default",
+              "changed_pixels": 21
+            }
+          ],
+          "guards": [],
+          "approval_invalidated": true
+        },
+        "resources": {
+          "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-paving",
+          "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-paving/revision/4",
+          "view": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-paving/revision/4/view",
+          "text": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-paving/revision/4/text",
+          "diff": "robopixel://diff/scarlet-moon-never-sets/v4-mansion-trans01-paving/3/4"
+        },
+        "presentation": {
+          "available": true,
+          "render": "none"
+        }
+      },
+      "isError": false
+    }
+  },
+  {
+    "name": "column",
+    "op": "grid_paste",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "grid_paste committed revision 4 -> 5; changed_pixels=110."
+        }
+      ],
+      "structuredContent": {
+        "receipt": {
+          "transaction_id": "c851b93966f45c7113eedc735c89ba1ea648cde5db26054b83d67aa382db282d",
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-proof-column-01",
+          "operation": "grid_paste",
+          "old_revision": 4,
+          "new_revision": 5,
+          "old_revision_hash": "e5ab2205ee44ef2e728ee282430e5d1df37946e953d8058cc26eab19e0574062",
+          "new_revision_hash": "1f85384467a30319209ee886869688d29c61e18c829ad2ca707fffebdd11e41f",
+          "changed_pixels": 110,
+          "changed_bbox": {
+            "x": 3,
+            "y": 3,
+            "width": 10,
+            "height": 57
+          },
+          "region_changes": [],
+          "layer_changes": [
+            {
+              "layer_id": "art",
+              "changed_pixels": 110
+            }
+          ],
+          "frame_changes": [
+            {
+              "frame_id": "default",
+              "changed_pixels": 110
+            }
+          ],
+          "guards": [],
+          "approval_invalidated": true
+        },
+        "resources": {
+          "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-proof-column-01",
+          "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-proof-column-01/revision/5",
+          "view": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-proof-column-01/revision/5/view",
+          "text": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-proof-column-01/revision/5/text",
+          "diff": "robopixel://diff/scarlet-moon-never-sets/v4-mansion-proof-column-01/4/5"
+        },
+        "presentation": {
+          "available": true,
+          "render": "none"
+        }
+      },
+      "isError": false
+    }
+  },
+  {
+    "name": "trim-top",
+    "op": "grid_paste",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "grid_paste committed revision 3 -> 4; changed_pixels=12."
+        }
+      ],
+      "structuredContent": {
+        "receipt": {
+          "transaction_id": "eadb11f3fc26943526e729442a83b2cbed198b845998e5b13e174c822ae99e74",
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-proof-trim-top-01",
+          "operation": "grid_paste",
+          "old_revision": 3,
+          "new_revision": 4,
+          "old_revision_hash": "9a1bad091af4ad029928d9bf36963a2476a8d589e47a34dde8f8f4104d1565cf",
+          "new_revision_hash": "508da795c7aa3a327f82fa94cb89fe920328408e5a5eee8af566fde293a1552d",
+          "changed_pixels": 12,
+          "changed_bbox": {
+            "x": 1,
+            "y": 1,
+            "width": 14,
+            "height": 4
+          },
+          "region_changes": [],
+          "layer_changes": [
+            {
+              "layer_id": "art",
+              "changed_pixels": 12
+            }
+          ],
+          "frame_changes": [
+            {
+              "frame_id": "default",
+              "changed_pixels": 12
+            }
+          ],
+          "guards": [],
+          "approval_invalidated": true
+        },
+        "resources": {
+          "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-proof-trim-top-01",
+          "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-proof-trim-top-01/revision/4",
+          "view": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-proof-trim-top-01/revision/4/view",
+          "text": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-proof-trim-top-01/revision/4/text",
+          "diff": "robopixel://diff/scarlet-moon-never-sets/v4-mansion-proof-trim-top-01/3/4"
+        },
+        "presentation": {
+          "available": true,
+          "render": "none"
+        }
+      },
+      "isError": false
+    }
+  },
+  {
+    "name": "rose",
+    "op": "grid_paste",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "grid_paste committed revision 4 -> 5; changed_pixels=415."
+        }
+      ],
+      "structuredContent": {
+        "receipt": {
+          "transaction_id": "8fc024895a1207da103977823665356f2701c8ebc4bbeb49d98e705741e4c8be",
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-trans01-rose",
+          "operation": "grid_paste",
+          "old_revision": 4,
+          "new_revision": 5,
+          "old_revision_hash": "db936ca74c9a02e17a0b43442831e3b7b2733d084c3789cf0bae0e6947f3d1ee",
+          "new_revision_hash": "64879b97226e22fb53211a3d8e92b00cca5aacdc12507b0129a2acbc794b35c3",
+          "changed_pixels": 415,
+          "changed_bbox": {
+            "x": 6,
+            "y": 6,
+            "width": 44,
+            "height": 44
+          },
+          "region_changes": [],
+          "layer_changes": [
+            {
+              "layer_id": "art",
+              "changed_pixels": 415
+            }
+          ],
+          "frame_changes": [
+            {
+              "frame_id": "default",
+              "changed_pixels": 415
+            }
+          ],
+          "guards": [],
+          "approval_invalidated": true
+        },
+        "resources": {
+          "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-rose",
+          "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-rose/revision/5",
+          "view": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-rose/revision/5/view",
+          "text": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-rose/revision/5/text",
+          "diff": "robopixel://diff/scarlet-moon-never-sets/v4-mansion-trans01-rose/4/5"
+        },
+        "presentation": {
+          "available": true,
+          "render": "none"
+        }
+      },
+      "isError": false
+    }
+  },
+  {
+    "name": "paving",
+    "op": "grid_paste",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "grid_paste committed revision 4 -> 5; changed_pixels=2."
+        }
+      ],
+      "structuredContent": {
+        "receipt": {
+          "transaction_id": "99d20d4a6285a0b50d8ee428872bde552d72458960f147841b83283395832c8d",
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-trans01-paving",
+          "operation": "grid_paste",
+          "old_revision": 4,
+          "new_revision": 5,
+          "old_revision_hash": "70c462b105fccf5df4dc6ca225743e5fdf30b607976864f47485dc09092ceb06",
+          "new_revision_hash": "ea5ad5194307245681a4b3d4f43db03a08e685377f202968fcbfd4226388dfb9",
+          "changed_pixels": 2,
+          "changed_bbox": {
+            "x": 3,
+            "y": 3,
+            "width": 5,
+            "height": 10
+          },
+          "region_changes": [],
+          "layer_changes": [
+            {
+              "layer_id": "art",
+              "changed_pixels": 2
+            }
+          ],
+          "frame_changes": [
+            {
+              "frame_id": "default",
+              "changed_pixels": 2
+            }
+          ],
+          "guards": [],
+          "approval_invalidated": true
+        },
+        "resources": {
+          "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-paving",
+          "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-paving/revision/5",
+          "view": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-paving/revision/5/view",
+          "text": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-paving/revision/5/text",
+          "diff": "robopixel://diff/scarlet-moon-never-sets/v4-mansion-trans01-paving/4/5"
+        },
+        "presentation": {
+          "available": true,
+          "render": "none"
+        }
+      },
+      "isError": false
+    }
+  },
+  {
+    "name": "paving",
+    "op": "grid_paste",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "grid_paste committed revision 5 -> 6; changed_pixels=21."
+        }
+      ],
+      "structuredContent": {
+        "receipt": {
+          "transaction_id": "4cc94586559ab652438cad101f1e7116d422c7ddaad5bfe264734ec891712399",
+          "project_id": "scarlet-moon-never-sets",
+          "asset_id": "v4-mansion-trans01-paving",
+          "operation": "grid_paste",
+          "old_revision": 5,
+          "new_revision": 6,
+          "old_revision_hash": "ea5ad5194307245681a4b3d4f43db03a08e685377f202968fcbfd4226388dfb9",
+          "new_revision_hash": "a9173888c4d445e8aa077822fbb7362709b61e3a9c39c0653b45a6a0354f1023",
+          "changed_pixels": 21,
+          "changed_bbox": {
+            "x": 1,
+            "y": 3,
+            "width": 25,
+            "height": 13
+          },
+          "region_changes": [],
+          "layer_changes": [
+            {
+              "layer_id": "art",
+              "changed_pixels": 21
+            }
+          ],
+          "frame_changes": [
+            {
+              "frame_id": "default",
+              "changed_pixels": 21
+            }
+          ],
+          "guards": [],
+          "approval_invalidated": true
+        },
+        "resources": {
+          "asset": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-paving",
+          "revision": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-paving/revision/6",
+          "view": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-paving/revision/6/view",
+          "text": "robopixel://asset/scarlet-moon-never-sets/v4-mansion-trans01-paving/revision/6/text",
+          "diff": "robopixel://diff/scarlet-moon-never-sets/v4-mansion-trans01-paving/5/6"
+        },
+        "presentation": {
+          "available": true,
+          "render": "none"
+        }
+      },
+      "isError": false
+    }
+  }
+]

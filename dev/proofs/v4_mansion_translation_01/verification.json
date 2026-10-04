@@ -1,0 +1,200 @@
+{
+  "status": "PASS",
+  "source_commit": "44530dd918ce498544025ca1919e91faccb619d4",
+  "canonical_readback": [
+    {
+      "asset": "rose",
+      "asset_id": "v4-mansion-trans01-rose",
+      "revision": 5,
+      "revision_hash": "64879b97226e22fb53211a3d8e92b00cca5aacdc12507b0129a2acbc794b35c3",
+      "canonical_png_vs_export_rgba": "PASS",
+      "submitted_rows": "PASS",
+      "approved": false
+    },
+    {
+      "asset": "lancet",
+      "asset_id": "v4-mansion-trans01-lancet",
+      "revision": 3,
+      "revision_hash": "af680c698f85531a5abda37c4723c1caa7e657931f031918d2e0f8a26935f2bb",
+      "canonical_png_vs_export_rgba": "PASS",
+      "submitted_rows": "PASS",
+      "approved": false
+    },
+    {
+      "asset": "arch",
+      "asset_id": "v4-mansion-trans01-arch",
+      "revision": 3,
+      "revision_hash": "4d6618fd9074150adaed2b2ae80e204467480bf0ecf556aab751ec6065b3e25e",
+      "canonical_png_vs_export_rgba": "PASS",
+      "submitted_rows": "PASS",
+      "approved": false
+    },
+    {
+      "asset": "banner",
+      "asset_id": "v4-mansion-trans01-banner",
+      "revision": 3,
+      "revision_hash": "af2ed3b4c4f83b158092cf0791a8b43eac72fa10a6109d7aa802e371fe56f7dc",
+      "canonical_png_vs_export_rgba": "PASS",
+      "submitted_rows": "PASS",
+      "approved": false
+    },
+    {
+      "asset": "near-pier",
+      "asset_id": "v4-mansion-trans01-near-pier",
+      "revision": 3,
+      "revision_hash": "e6b60afaaf0b61b431f4188246f38430c4111d6026c1259b28a6e2fb38c3e3ee",
+      "canonical_png_vs_export_rgba": "PASS",
+      "submitted_rows": "PASS",
+      "approved": false
+    },
+    {
+      "asset": "stairs",
+      "asset_id": "v4-mansion-trans01-stairs",
+      "revision": 3,
+      "revision_hash": "a66add7f1da69ae0abc28604378e198cc48193de8cf394e518c541445a3d383a",
+      "canonical_png_vs_export_rgba": "PASS",
+      "submitted_rows": "PASS",
+      "approved": false
+    },
+    {
+      "asset": "balustrade",
+      "asset_id": "v4-mansion-trans01-balustrade",
+      "revision": 3,
+      "revision_hash": "26f0156d6762eeb1c272e618a87877e6229f9aaf1bdbc4427b9dd8d6c0c91ab0",
+      "canonical_png_vs_export_rgba": "PASS",
+      "submitted_rows": "PASS",
+      "approved": false
+    },
+    {
+      "asset": "candelabra",
+      "asset_id": "v4-mansion-trans01-candelabra",
+      "revision": 3,
+      "revision_hash": "689ed8480042d1be1c500a1a4ea818cd8e281e1643f142a1ddbb1859528e5df2",
+      "canonical_png_vs_export_rgba": "PASS",
+      "submitted_rows": "PASS",
+      "approved": false
+    },
+    {
+      "asset": "runner",
+      "asset_id": "v4-mansion-trans01-runner",
+      "revision": 2,
+      "revision_hash": "173e9f8275c5bc5246eda7d905610092a5e8041060a2fe551e0f92963d1d2c49",
+      "canonical_png_vs_export_rgba": "PASS",
+      "submitted_rows": "reused",
+      "approved": false
+    },
+    {
+      "asset": "runner-edge",
+      "asset_id": "v4-mansion-trans01-runner-edge",
+      "revision": 3,
+      "revision_hash": "cddfff0d226fa5fcf710981f840a247482f67131090b70b1d13c046f4d992810",
+      "canonical_png_vs_export_rgba": "PASS",
+      "submitted_rows": "PASS",
+      "approved": false
+    },
+    {
+      "asset": "runner-motif",
+      "asset_id": "v4-mansion-trans01-runner-motif",
+      "revision": 2,
+      "revision_hash": "99fc40e679eb25161067272e5f7193cc37ded52d6a92df2f3c27912d7f31e648",
+      "canonical_png_vs_export_rgba": "PASS",
+      "submitted_rows": "reused",
+      "approved": false
+    },
+    {
+      "asset": "paving",
+      "asset_id": "v4-mansion-trans01-paving",
+      "revision": 6,
+      "revision_hash": "a9173888c4d445e8aa077822fbb7362709b61e3a9c39c0653b45a6a0354f1023",
+      "canonical_png_vs_export_rgba": "PASS",
+      "submitted_rows": "PASS",
+      "approved": false
+    },
+    {
+      "asset": "column",
+      "asset_id": "v4-mansion-proof-column-01",
+      "revision": 5,
+      "revision_hash": "1f85384467a30319209ee886869688d29c61e18c829ad2ca707fffebdd11e41f",
+      "canonical_png_vs_export_rgba": "PASS",
+      "submitted_rows": "PASS",
+      "approved": false
+    },
+    {
+      "asset": "wall-masonry",
+      "asset_id": "v4-mansion-proof-wall-masonry-01",
+      "revision": 2,
+      "revision_hash": "c7a7b82bb2ee25730e1fe092e52d2b9f59c9668c9f68087678d36ec58fd8564d",
+      "canonical_png_vs_export_rgba": "PASS",
+      "submitted_rows": "reused",
+      "approved": false
+    },
+    {
+      "asset": "trim-top",
+      "asset_id": "v4-mansion-proof-trim-top-01",
+      "revision": 4,
+      "revision_hash": "508da795c7aa3a327f82fa94cb89fe920328408e5a5eee8af566fde293a1552d",
+      "canonical_png_vs_export_rgba": "PASS",
+      "submitted_rows": "PASS",
+      "approved": false
+    },
+    {
+      "asset": "far-pier",
+      "asset_id": "v4-mansion-ref01-far-pier-01",
+      "revision": 2,
+      "revision_hash": "73411389d2256b01f59c07a749f84ca1000f81484d34bbcc5665edff2fac9918",
+      "canonical_png_vs_export_rgba": "PASS",
+      "submitted_rows": "reused",
+      "approved": false
+    }
+  ],
+  "scenes": {
+    "gameplay": {
+      "dimensions": [
+        192,
+        240
+      ],
+      "reproduces_exactly": true,
+      "palette_membership": true,
+      "sha256": "4c01e4ec1c385e29bba28a6fc7c12a91600e086a84fdb71f3d4be6738d317fb3"
+    },
+    "story": {
+      "dimensions": [
+        256,
+        240
+      ],
+      "reproduces_exactly": true,
+      "palette_membership": true,
+      "sha256": "593e882aa958e5aef4e2e490da300bf7f96ea17bdd88255b8c211550a99efd49"
+    }
+  },
+  "all_selected_assets_used": true,
+  "protected_tracked_files_unchanged": 130,
+  "original_proof_files_unchanged": 50,
+  "refinement_files_unchanged": 57,
+  "required_files_present": [
+    "README.md",
+    "asset_inventory.md",
+    "robopixel_manifest.json",
+    "authoring_receipts.json",
+    "robopixel_readback.json",
+    "author_inputs.py",
+    "authoring_inputs.json",
+    "unpack_readback.py",
+    "compose.py",
+    "build_layouts.py",
+    "layouts.json",
+    "asset_atlas.png",
+    "gameplay_comparison.png",
+    "story_comparison.png",
+    "references/provenance.json",
+    "mansion_gameplay_scale.png",
+    "mansion_story_staging.png"
+  ],
+  "runtime_modified": false,
+  "limits": [
+    "static only",
+    "not final art approval",
+    "no live combat or dialogue QA",
+    "not NES hardware qualification"
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "adapter_id": "scarlet-moon-js",
+  "preview": true,
+  "delivery": false,
+  "project_id": "scarlet-moon-never-sets",
+  "asset_id": "v4-mansion-proof-carpet-field-01",
+  "revision": 3,
+  "revision_hash": "1c4894a5369c9acaab528ec9d8c265a74068b9ed2189e597aa36de5e9164ef63",
+  "frame_id": "default",
+  "layer_id": "art",
+  "matrix": {
+    "width": 16,
+    "height": 16,
+    "rows": [
+      "AAAAAAAAAAAAAAAA",
+      "AAAAAAAAAAAAAAAA",
+      "AAAAAAAAAAAAAAAA",
+      "AAAAAAAAAAAAAAAA",
+      "AAA11AAAAAAAAAAA",
+      "AAAAAAAAAAAAAAAA",
+      "AAAAAAAAAAAAAAAA",
+      "AAAAAAAAAAAAAAAA",
+      "AAAAAAAAAAAAAAAA",
+      "AAAAAAAAAAAAAAAA",
+      "AAAAAAAAAAAAAAAA",
+      "AAAAAAAAAAAAAAAA",
+      "AAAAAAAAAAA11AAA",
+      "AAAAAAAAAAAAAAAA",
+      "AAAAAAAAAAAAAAAA",
+      "AAAAAAAAAAAAAAAA"
+    ],
+    "symbols": {
+      "0": {
+        "hex": "#080810"
+      },
+      "1": {
+        "hex": "#191528"
+      },
+      "2": {
+        "hex": "#2c2438"
+      },
+      "3": {
+        "hex": "#443550"
+      },
+      "4": {
+        "hex": "#66506a"
+      },
+      "5": {
+        "hex": "#a18a92"
+      },
+      "6": {
+        "hex": "#d4c4a8"
+      },
+      "7": {
+        "hex": "#252c4a"
+      },
+      "8": {
+        "hex": "#424d79"
+      },
+      "9": {
+        "hex": "#819ca7"
+      },
+      ".": {
+        "transparent": true
+      },
+      "A": {
+        "hex": "#3a2038"
+      },
+      "B": {
+        "hex": "#6b2e49"
+      },
+      "C": {
+        "hex": "#a04c64"
+      }
+    }
+  },
+  "round_trip": {
+    "width": 16,
+    "height": 16,
+    "cel_hash": true
+  },
+  "resources": {
+    "export": "robopixel://export/scarlet-moon-never-sets/v4-mansion-proof-carpet-field-01/revision/3/scarlet-moon-js"
+  }
+}
