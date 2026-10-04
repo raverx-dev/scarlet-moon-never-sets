@@ -1,0 +1,99 @@
+{
+  "browser": "/home/runner/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+  "pixels": {
+    "hashes": {
+      "gameplay": "2d9f1b6d171870d4ac06fc6dde626410ad90b574c35461a2118e0934ff598bd8",
+      "story": "710d55e8d60248ba801fe3011584050d0325862a54bd592c3d6fe0e5a019642f",
+      "dialogueBg": "710d55e8d60248ba801fe3011584050d0325862a54bd592c3d6fe0e5a019642f",
+      "stageBg": "2d9f1b6d171870d4ac06fc6dde626410ad90b574c35461a2118e0934ff598bd8",
+      "sakuyaDim": "fa02a672545be6185796f740695316d72848a8a37b47e37b20048ff5809adca2",
+      "remilia": "dac5678cd794d759582114d0d751e3add20a50e9f3f4e0688e7356a0005bbaea",
+      "roof": "6f0e39bba148b0881f45f494129a8e148379fd26a4f9c6648a8339e99f37e6a1",
+      "sakuyaTop": "e41f525d51eb297340689e96ca7cb7c59e4734bb19c561affd643a827df22f87"
+    },
+    "expected": {
+      "gameplay": "2d9f1b6d171870d4ac06fc6dde626410ad90b574c35461a2118e0934ff598bd8",
+      "story": "710d55e8d60248ba801fe3011584050d0325862a54bd592c3d6fe0e5a019642f",
+      "storyTop": "e41f525d51eb297340689e96ca7cb7c59e4734bb19c561affd643a827df22f87"
+    },
+    "checks": {
+      "drawInterior_gameplay_192": true,
+      "drawInterior_story_256": true,
+      "stage3_play_background_is_gameplay": true,
+      "sakuya_dialogue_background_is_story": true,
+      "sakuya_draw_top_rows_are_story": true,
+      "sakuya_boss_dim_changes_pixels": true,
+      "remilia_play_is_not_mansion_gameplay": true,
+      "roof_mode_is_not_mansion_story": true
+    }
+  },
+  "shots": [
+    {
+      "id": "stage3-interior",
+      "scene": "stage3",
+      "tick": 900,
+      "bytes": 23372,
+      "sha256": "6433adc739a1d5e842b81955ea5de49b163264e2b8b37553cafba44116bd2f6e"
+    },
+    {
+      "id": "sakuya-dialogue",
+      "scene": "dialogue:sakuya_before",
+      "tick": 60,
+      "bytes": 20978,
+      "sha256": "ffca96c320ae22a938d8b4bf0817fd77168a06f67cdd592e52f893b6d41648fd"
+    },
+    {
+      "id": "s1",
+      "scene": "boss:sakuya:0",
+      "tick": 340,
+      "bytes": 36400,
+      "sha256": "191975e78506d6fd1a61e3c720af652d4c89e7bac9c9d982e51042994635993a"
+    },
+    {
+      "id": "s2-frozen",
+      "scene": "boss:sakuya:1",
+      "tick": 200,
+      "bytes": 36471,
+      "sha256": "af820aa0165d0547845d9b54f2fc4e3a9e581280f02e628d67c1c6033da49c3d"
+    },
+    {
+      "id": "gate",
+      "scene": "gate",
+      "tick": 150,
+      "bytes": 22000,
+      "sha256": "c9b9b72d3137241892a6610175f85860e7673675772e26c8fd6177e5699871b0"
+    },
+    {
+      "id": "stage3-roof",
+      "scene": "stage3",
+      "tick": 4300,
+      "bytes": 12036,
+      "sha256": "f73053ca2c7850f6fa2f8ca6575d28f2e1d8161f333833133c87956d7eb827eb"
+    },
+    {
+      "id": "remilia-dialogue",
+      "scene": "dialogue:remilia_before",
+      "tick": 60,
+      "bytes": 18899,
+      "sha256": "277d08899c6a748411377babc47ee5a47bf62748264e5d91f832cabeec2ba8dd"
+    },
+    {
+      "id": "r5-final",
+      "scene": "boss:remilia:4",
+      "tick": 1850,
+      "bytes": 12981,
+      "sha256": "86d889dde88bff9d11c2e42a277cf3844f7677199947ff3092a4bfb7757f95c6"
+    },
+    {
+      "id": "undecorated-gameplay",
+      "bytes": 18860,
+      "sha256": "3dbc223918f5cbb962a401ba18fc061f3e647c2563f59ec3bf81ae21f5393133"
+    },
+    {
+      "id": "undecorated-story",
+      "bytes": 19404,
+      "sha256": "0f1ef25a82794483e371238bf736ef8f020ed3d15a158aeead92d7d2f3f433ed"
+    }
+  ],
+  "errors": []
+}
