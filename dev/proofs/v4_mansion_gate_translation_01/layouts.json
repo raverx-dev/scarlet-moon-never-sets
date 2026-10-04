@@ -1,0 +1,356 @@
+{
+  "gameplay": {
+    "width": 192,
+    "height": 240,
+    "background": [
+      23,
+      30,
+      56,
+      255
+    ],
+    "placements": [
+      {
+        "asset": "perspective-paving",
+        "x": -32,
+        "y": 88,
+        "flip_x": false
+      },
+      {
+        "asset": "arcade-bridge",
+        "x": 122,
+        "y": 51,
+        "flip_x": false
+      },
+      {
+        "asset": "moon",
+        "x": 129,
+        "y": 5,
+        "flip_x": false
+      },
+      {
+        "asset": "cloud-bank",
+        "x": 81,
+        "y": 31,
+        "flip_x": false
+      },
+      {
+        "asset": "cloud-bank",
+        "x": -15,
+        "y": 7,
+        "flip_x": false
+      },
+      {
+        "asset": "mansion-facade",
+        "x": 22,
+        "y": 2,
+        "flip_x": false
+      },
+      {
+        "asset": "garden-stair",
+        "x": 73,
+        "y": 95,
+        "flip_x": false
+      },
+      {
+        "asset": "cypress",
+        "x": 30,
+        "y": 53,
+        "flip_x": false
+      },
+      {
+        "asset": "cypress",
+        "x": 12,
+        "y": 75,
+        "flip_x": false
+      },
+      {
+        "asset": "low-fence",
+        "x": -20,
+        "y": 126,
+        "flip_x": false
+      },
+      {
+        "asset": "cypress",
+        "x": 135,
+        "y": 50,
+        "flip_x": true
+      },
+      {
+        "asset": "cypress",
+        "x": 153,
+        "y": 72,
+        "flip_x": true
+      },
+      {
+        "asset": "low-fence",
+        "x": 145,
+        "y": 126,
+        "flip_x": true
+      },
+      {
+        "asset": "banner-pier",
+        "x": 0,
+        "y": 50,
+        "flip_x": false
+      },
+      {
+        "asset": "banner-pier",
+        "x": 159,
+        "y": 50,
+        "flip_x": false
+      },
+      {
+        "asset": "gargoyle",
+        "x": 3,
+        "y": 37,
+        "flip_x": false
+      },
+      {
+        "asset": "gargoyle",
+        "x": 162,
+        "y": 37,
+        "flip_x": false
+      },
+      {
+        "asset": "lantern",
+        "x": 11,
+        "y": 126,
+        "flip_x": false
+      },
+      {
+        "asset": "lantern",
+        "x": 170,
+        "y": 126,
+        "flip_x": false
+      },
+      {
+        "asset": "open-gate-wing",
+        "x": 31,
+        "y": 80,
+        "flip_x": false
+      },
+      {
+        "asset": "open-gate-wing",
+        "x": 137,
+        "y": 80,
+        "flip_x": true
+      },
+      {
+        "asset": "crimson-vine",
+        "x": -16,
+        "y": 112,
+        "flip_x": false
+      },
+      {
+        "asset": "crimson-vine",
+        "x": -18,
+        "y": 173,
+        "flip_x": false
+      },
+      {
+        "asset": "crimson-vine",
+        "x": -17,
+        "y": -12,
+        "flip_x": false
+      },
+      {
+        "asset": "crimson-vine",
+        "x": 168,
+        "y": -9,
+        "flip_x": true
+      },
+      {
+        "asset": "crimson-vine",
+        "x": 169,
+        "y": 111,
+        "flip_x": true
+      },
+      {
+        "asset": "crimson-vine",
+        "x": 176,
+        "y": 175,
+        "flip_x": true
+      }
+    ]
+  },
+  "story": {
+    "width": 256,
+    "height": 240,
+    "background": [
+      23,
+      30,
+      56,
+      255
+    ],
+    "placements": [
+      {
+        "asset": "moon",
+        "x": 193,
+        "y": 5,
+        "flip_x": false
+      },
+      {
+        "asset": "cloud-bank",
+        "x": -15,
+        "y": 7,
+        "flip_x": false
+      },
+      {
+        "asset": "cloud-bank",
+        "x": 145,
+        "y": 31,
+        "flip_x": false
+      },
+      {
+        "asset": "mansion-facade",
+        "x": 30,
+        "y": 0,
+        "flip_x": false
+      },
+      {
+        "asset": "arcade-bridge",
+        "x": 149,
+        "y": 51,
+        "flip_x": false
+      },
+      {
+        "asset": "perspective-paving",
+        "x": 0,
+        "y": 119,
+        "flip_x": false
+      },
+      {
+        "asset": "garden-stair",
+        "x": 140,
+        "y": 95,
+        "flip_x": false
+      },
+      {
+        "asset": "cypress",
+        "x": 30,
+        "y": 20,
+        "flip_x": false
+      },
+      {
+        "asset": "cypress",
+        "x": 56,
+        "y": 47,
+        "flip_x": true
+      },
+      {
+        "asset": "cypress",
+        "x": 182,
+        "y": 64,
+        "flip_x": false
+      },
+      {
+        "asset": "cypress",
+        "x": 221,
+        "y": 46,
+        "flip_x": true
+      },
+      {
+        "asset": "low-fence",
+        "x": 162,
+        "y": 123,
+        "flip_x": false
+      },
+      {
+        "asset": "closed-gate",
+        "x": 45,
+        "y": 76,
+        "flip_x": false
+      },
+      {
+        "asset": "banner-pier",
+        "x": 13,
+        "y": 40,
+        "flip_x": false
+      },
+      {
+        "asset": "banner-pier",
+        "x": 139,
+        "y": 40,
+        "flip_x": false
+      },
+      {
+        "asset": "low-fence",
+        "x": 213,
+        "y": 123,
+        "flip_x": false
+      },
+      {
+        "asset": "gargoyle",
+        "x": 16,
+        "y": 27,
+        "flip_x": false
+      },
+      {
+        "asset": "gargoyle",
+        "x": 142,
+        "y": 27,
+        "flip_x": false
+      },
+      {
+        "asset": "banner-pier",
+        "x": 240,
+        "y": 56,
+        "flip_x": false
+      },
+      {
+        "asset": "gargoyle",
+        "x": 241,
+        "y": 43,
+        "flip_x": false
+      },
+      {
+        "asset": "lantern",
+        "x": 24,
+        "y": 116,
+        "flip_x": false
+      },
+      {
+        "asset": "lantern",
+        "x": 150,
+        "y": 116,
+        "flip_x": false
+      },
+      {
+        "asset": "lantern",
+        "x": 250,
+        "y": 132,
+        "flip_x": false
+      },
+      {
+        "asset": "crimson-vine",
+        "x": -10,
+        "y": 102,
+        "flip_x": false
+      },
+      {
+        "asset": "crimson-vine",
+        "x": -9,
+        "y": -16,
+        "flip_x": false
+      },
+      {
+        "asset": "crimson-vine",
+        "x": -20,
+        "y": 177,
+        "flip_x": false
+      },
+      {
+        "asset": "crimson-vine",
+        "x": 132,
+        "y": 134,
+        "flip_x": true
+      },
+      {
+        "asset": "crimson-vine",
+        "x": 234,
+        "y": 153,
+        "flip_x": true
+      }
+    ]
+  }
+}
