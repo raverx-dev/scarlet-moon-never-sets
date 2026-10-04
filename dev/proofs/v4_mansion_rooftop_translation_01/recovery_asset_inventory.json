@@ -1,0 +1,107 @@
+[
+  {
+    "asset_id": "v4-rooftop-trans01-banner-pier",
+    "name": "Rooftop Translation 01 / banner-pier",
+    "current_revision": 2,
+    "current_revision_hash": "e92bab3010f30d9153f21540fb2ac5e6722034c1afac0f22ccd40c77f660908c",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-banner-pier"
+  },
+  {
+    "asset_id": "v4-rooftop-trans01-cloud-scarlet",
+    "name": "Rooftop Translation 01 / cloud-scarlet",
+    "current_revision": 2,
+    "current_revision_hash": "2f6d745287b09942fa1f1c6687587c5f4234458eb18ec01e34bd3b2ad06e5113",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-cloud-scarlet"
+  },
+  {
+    "asset_id": "v4-rooftop-trans01-cloud-violet",
+    "name": "Rooftop Translation 01 / cloud-violet",
+    "current_revision": 2,
+    "current_revision_hash": "b639b450ced05aba25df951e037e3422a6b07a4b8d65e3ff027c1a554e85edab",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-cloud-violet"
+  },
+  {
+    "asset_id": "v4-rooftop-trans01-crimson-leaves",
+    "name": "Rooftop Translation 01 / crimson-leaves",
+    "current_revision": 2,
+    "current_revision_hash": "94b6a3671a11ff17494ef84b9c488f1d61f549e416b49256c5be29a6acaba545",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-crimson-leaves"
+  },
+  {
+    "asset_id": "v4-rooftop-trans01-forest-depth",
+    "name": "Rooftop Translation 01 / forest-depth",
+    "current_revision": 2,
+    "current_revision_hash": "fe15b45a58afc31c548fbbbbd0804bbfa0a77b413a496ff33d320d98407f0678",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-forest-depth"
+  },
+  {
+    "asset_id": "v4-rooftop-trans01-gargoyle",
+    "name": "Rooftop Translation 01 / gargoyle",
+    "current_revision": 2,
+    "current_revision_hash": "eeab4e0dd5c44af7a4e3857c98103e8f6b9c8bb6c11ffc3312bdf9c88e741a1d",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-gargoyle"
+  },
+  {
+    "asset_id": "v4-rooftop-trans01-lancet-wall",
+    "name": "Rooftop Translation 01 / lancet-wall",
+    "current_revision": 2,
+    "current_revision_hash": "3e89a97c5de1e602c9171106e3eccd617818d5dbf4d4d53948d36209f13068be",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-lancet-wall"
+  },
+  {
+    "asset_id": "v4-rooftop-trans01-lantern",
+    "name": "Rooftop Translation 01 / lantern",
+    "current_revision": 2,
+    "current_revision_hash": "756061efe324ee4f6c264730321e4301ef44de41970c1992a887e01e790dec46",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-lantern"
+  },
+  {
+    "asset_id": "v4-rooftop-trans01-mountain-range",
+    "name": "Rooftop Translation 01 / mountain-range",
+    "current_revision": 3,
+    "current_revision_hash": "fbc25db07d5aa25ef70562ecd83e422d1dd275adaa1c22a4ea9206fa6d490ebb",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-mountain-range"
+  },
+  {
+    "asset_id": "v4-rooftop-trans01-night-field",
+    "name": "Rooftop Translation 01 / night-field",
+    "current_revision": 2,
+    "current_revision_hash": "0035e1ff4d4a60c92c8130938099d94f898a0ad0c165e48e23de2dac2d9f97f7",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-night-field"
+  },
+  {
+    "asset_id": "v4-rooftop-trans01-parapet",
+    "name": "Rooftop Translation 01 / parapet",
+    "current_revision": 2,
+    "current_revision_hash": "161fc4cc6939126a26c198fc104f7adaf28cb5ca927a6ca165982cf67c35a28b",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-parapet"
+  },
+  {
+    "asset_id": "v4-rooftop-trans01-paving-gameplay",
+    "name": "Rooftop Translation 01 / paving-gameplay",
+    "current_revision": 3,
+    "current_revision_hash": "a45d1a6b2f482428cb2eac7a946fc19a3d40e93d4f4cf0b06dde2090f2413096",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-paving-gameplay"
+  },
+  {
+    "asset_id": "v4-rooftop-trans01-paving-story",
+    "name": "Rooftop Translation 01 / paving-story",
+    "current_revision": 3,
+    "current_revision_hash": "be9371619cbc08445ba4de6485b69e0ffa1578fe03b368926c19ac50575abd5b",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-paving-story"
+  },
+  {
+    "asset_id": "v4-rooftop-trans01-scarlet-moon",
+    "name": "Rooftop Translation 01 / scarlet-moon",
+    "current_revision": 2,
+    "current_revision_hash": "598fb83ed1a22d871f8e163bf6ae33a2775fae62dee72c3b2cc4d029a3312112",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-scarlet-moon"
+  },
+  {
+    "asset_id": "v4-rooftop-trans01-spire-tower",
+    "name": "Rooftop Translation 01 / spire-tower",
+    "current_revision": 2,
+    "current_revision_hash": "b17da631beafc12b936724f8d9e17731e65bfdd699ed86432afd7dc437b49ed5",
+    "uri": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-spire-tower"
+  }
+]

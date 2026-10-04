@@ -1,0 +1,243 @@
+{
+  "size": [
+    256,
+    240
+  ],
+  "placements": [
+    {
+      "asset": "night-field",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "asset": "scarlet-moon",
+      "x": 118,
+      "y": 8
+    },
+    {
+      "asset": "cloud-scarlet",
+      "x": 91,
+      "y": 1
+    },
+    {
+      "asset": "cloud-scarlet",
+      "x": 145,
+      "y": 36
+    },
+    {
+      "asset": "cloud-violet",
+      "x": 49,
+      "y": 28
+    },
+    {
+      "asset": "cloud-violet",
+      "x": 173,
+      "y": 52
+    },
+    {
+      "asset": "mountain-range",
+      "x": 42,
+      "y": 62
+    },
+    {
+      "asset": "mountain-range",
+      "x": 141,
+      "y": 67,
+      "mirror": true
+    },
+    {
+      "asset": "forest-depth",
+      "x": 39,
+      "y": 86
+    },
+    {
+      "asset": "forest-depth",
+      "x": 100,
+      "y": 89,
+      "mirror": true
+    },
+    {
+      "asset": "forest-depth",
+      "x": 162,
+      "y": 83
+    },
+    {
+      "asset": "paving-story",
+      "x": 0,
+      "y": 124
+    },
+    {
+      "asset": "paving-story",
+      "x": 0,
+      "y": 220
+    },
+    {
+      "asset": "lancet-wall",
+      "x": -5,
+      "y": -9
+    },
+    {
+      "asset": "lancet-wall",
+      "x": -5,
+      "y": 43
+    },
+    {
+      "asset": "lancet-wall",
+      "x": -20,
+      "y": 95
+    },
+    {
+      "asset": "spire-tower",
+      "x": 31,
+      "y": -18
+    },
+    {
+      "asset": "spire-tower",
+      "x": 223,
+      "y": 12
+    },
+    {
+      "asset": "spire-tower",
+      "x": 35,
+      "y": 50,
+      "crop": [
+        4,
+        46,
+        26,
+        66
+      ]
+    },
+    {
+      "asset": "spire-tower",
+      "x": 35,
+      "y": 70,
+      "crop": [
+        4,
+        46,
+        26,
+        66
+      ]
+    },
+    {
+      "asset": "spire-tower",
+      "x": 35,
+      "y": 90,
+      "crop": [
+        4,
+        46,
+        26,
+        66
+      ]
+    },
+    {
+      "asset": "spire-tower",
+      "x": 227,
+      "y": 80,
+      "crop": [
+        4,
+        46,
+        26,
+        66
+      ]
+    },
+    {
+      "asset": "spire-tower",
+      "x": 227,
+      "y": 100,
+      "crop": [
+        4,
+        46,
+        26,
+        66
+      ]
+    },
+    {
+      "asset": "parapet",
+      "x": 22,
+      "y": 102
+    },
+    {
+      "asset": "parapet",
+      "x": 54,
+      "y": 102
+    },
+    {
+      "asset": "parapet",
+      "x": 86,
+      "y": 102
+    },
+    {
+      "asset": "parapet",
+      "x": 118,
+      "y": 102
+    },
+    {
+      "asset": "parapet",
+      "x": 150,
+      "y": 102
+    },
+    {
+      "asset": "parapet",
+      "x": 182,
+      "y": 102
+    },
+    {
+      "asset": "parapet",
+      "x": 214,
+      "y": 102
+    },
+    {
+      "asset": "lantern",
+      "x": 67,
+      "y": 78
+    },
+    {
+      "asset": "lantern",
+      "x": 166,
+      "y": 78
+    },
+    {
+      "asset": "banner-pier",
+      "x": -3,
+      "y": 139
+    },
+    {
+      "asset": "lantern",
+      "x": 1,
+      "y": 111
+    },
+    {
+      "asset": "banner-pier",
+      "x": 229,
+      "y": 146
+    },
+    {
+      "asset": "gargoyle",
+      "x": 218,
+      "y": 115,
+      "mirror": true
+    },
+    {
+      "asset": "parapet",
+      "x": 241,
+      "y": 196
+    },
+    {
+      "asset": "crimson-leaves",
+      "x": -5,
+      "y": 181
+    },
+    {
+      "asset": "crimson-leaves",
+      "x": 234,
+      "y": 187,
+      "mirror": true
+    },
+    {
+      "asset": "crimson-leaves",
+      "x": 236,
+      "y": 220,
+      "mirror": true
+    }
+  ]
+}

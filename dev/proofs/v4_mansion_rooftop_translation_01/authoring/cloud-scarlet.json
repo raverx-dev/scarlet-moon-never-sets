@@ -1,0 +1,22 @@
+{
+  "name": "cloud-scarlet",
+  "width": 67,
+  "height": 15,
+  "rows": [
+    ".......................rrr.........................................",
+    "....................rrrRRrr..........rr............................",
+    "................rrrrRRRRRRrrr......rrRRr...........................",
+    ".........rrrrrrrrRRppRRRRRrrrrrrrrrrRRRRrrr........................",
+    "......rrrrRRRRRRRppppRRRrrrrrrrrRRRRpRRRRRRrrrr....................",
+    "....rrrrRRppppRRRRRRrrrrqqqqrrRRRpppppRRRRRrrrrrrr.................",
+    ".rrrrRRppppRRRRrrrrrqqqqqqqqrrRRppRRRRRRrrrrrrRRrrrr...............",
+    "rrRRRRRRRRrrrrrrqqqqqqqqqqqqrrrrRRRRrrrrrrqqrrRRpRRrrrr............",
+    "..rrrrrrrrrrqqqqqqqqqqqqqqqqqqrrrrrrrqqqqqqqrrRRpppRRRrrr..........",
+    "....rrrqqqqqqqqqqqqqqnnnqqqqqqqqqqqqqqqqqqrrrrRRRRRRRRrrrrr........",
+    ".........qqqqqqqqnnnnnnnnnnqqqqqqqqqqqqqqqqrrrrrrRRRRRRRrrrr.......",
+    ".............qqqqnnnnnnnnnnnnnqqqqqqqqqqqqqqqqqqrrrrrrrrrrrrrr.....",
+    ".....................nnnnnnnnnnnnnnqqqqqqqqqqqqqqqqqqrrrrrrrrrrrr..",
+    "................................nnnnnnqqqqqqqqqqqqqqqqqqqqqqqqqqq..",
+    "..............................................qqqqqqqqqqqqqqqq....."
+  ]
+}

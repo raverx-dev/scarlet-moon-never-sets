@@ -1,0 +1,157 @@
+{
+  "adapter_id": "scarlet-moon-js",
+  "preview": true,
+  "delivery": false,
+  "project_id": "scarlet-moon-never-sets",
+  "asset_id": "v4-rooftop-trans01-spire-tower",
+  "revision": 2,
+  "revision_hash": "b17da631beafc12b936724f8d9e17731e65bfdd699ed86432afd7dc437b49ed5",
+  "frame_id": "default",
+  "layer_id": "art",
+  "matrix": {
+    "width": 33,
+    "height": 70,
+    "rows": [
+      "...............h.................",
+      "...............m.................",
+      "..............mm.................",
+      "..............sm.................",
+      ".............msmd................",
+      ".............msbd................",
+      "............mssbdd...............",
+      "............mssbdd...............",
+      "...........mssssbdd..............",
+      "...........msbbbbdd..............",
+      "..........msssssbddd.............",
+      "..........msbbbbbddd.............",
+      ".........mssssssbdddd............",
+      ".........msbbbbbbdddd............",
+      "........msssssssbddddd...........",
+      "........msbbbbbbbddddd...........",
+      ".......mssssssssbdddddd..........",
+      ".......msbbbbbbbbdddddd..........",
+      "......msssssssssbddddddd.........",
+      "......msbbbbbbbbbddddddd.........",
+      ".....mssssssssssbdddddddd........",
+      ".....msbbbbbbbbbbdddddddd........",
+      "....msssssssssssbddddddddd.......",
+      "...lmmmmmmmmmmmmmmmmmmmmmmd......",
+      "...ssdddddddddddddddddddddb......",
+      "....hmmssssssssssssssmmmmd.......",
+      "....msdbbbbbbbbbbbbbbsmsbd.......",
+      "....msdbbbbbbmmmbbbbbsmsbd.......",
+      "....msdbbbbbmhmdmbbbbsmsbd.......",
+      "....msdbbbbmhrrrmdbbbsmsbd.......",
+      "....msdbbbmhRppRrmdbbsmsbd.......",
+      "....msdbbbmsRPgRrmdbbsmsbd.......",
+      "....msdbbbmsRPGprmdbbsmsbd.......",
+      "....msdbbbmsRPGprmdbbsmsbd.......",
+      "....msdbbbmsRPGprmdbbsmsbd.......",
+      "....msdbbbmsRPrprmdbbsmsbd.......",
+      "....msdbbbmsRPrprmdbbsmsbd.......",
+      "....msdbbbmsRRrrrmdbbsmsbd.......",
+      "....msdbbbmsRPGprmdbbsmsbd.......",
+      "....msdbbbmsRPGprmdbbsmsbd.......",
+      "....msdbbbmsRPGprmdbbsmsbd.......",
+      "....msdbbbmsRPrprmdbbsmsbd.......",
+      "....msdbbbmsRRrrrmdbbsmsbd.......",
+      "....msdbbbmmmmmmmmdbbbsmsbd......",
+      "...lhmmmmmmmmmmmmmmmmmmmmmd......",
+      "...mssssssssssssssssssssssd......",
+      "....msdbbbbbbbbbbbbbbsmsbd.......",
+      "....msdddddddddddddddsmsbd.......",
+      "....msdbbbdbbbbbbbbbbsmsbd.......",
+      "....msdbbbdbbbssbbbbbsmsbd.......",
+      "....msdbbbdbbbbbbbbbbsmsbd.......",
+      "....msdbbbdbbbbbbbbbbsmsbd.......",
+      "....msdddddddddddddddsmsbd.......",
+      "....msdbbbbbbbbdbbbbbsmsbd.......",
+      "....msdbbssbbbbdbbbbbbsmsbd......",
+      "....msdbbbbbbbbdbbbbbbsmsbd......",
+      "....msdbbbbbbbbdbbbbbbsmsbd......",
+      "....msdddddddddddddddsmsbd.......",
+      "....msdbbbdbbbbbbbbbbsmsbd.......",
+      "....msdbbbdbbbssbbbbbsmsbd.......",
+      "....msdbbbdbbbbbbbbbbsmsbd.......",
+      "....msdbbbdbbbbbbbbbbsmsbd.......",
+      "....msdddddddddddddddsmsbd.......",
+      "....msdbbbbbbbbdbbbbbsmsbd.......",
+      "....msdbbbbbbbbdbbbbbbsmsbd......",
+      "....msdbbssbbbbdbbbbbbsmsbd......",
+      "...lhmmmmmmmmmmmmmmmmmmmmmd......",
+      "...mssssssssssssssssssssssd......",
+      "..mssssssssssssssssssssssssd.....",
+      "..sddddddddddddddddddddddddb....."
+    ],
+    "symbols": {
+      ".": {
+        "transparent": true
+      },
+      "k": {
+        "hex": "#101323"
+      },
+      "n": {
+        "hex": "#161c32"
+      },
+      "b": {
+        "hex": "#1f2943"
+      },
+      "d": {
+        "hex": "#2b3553"
+      },
+      "s": {
+        "hex": "#394365"
+      },
+      "m": {
+        "hex": "#4b5577"
+      },
+      "l": {
+        "hex": "#666b8a"
+      },
+      "h": {
+        "hex": "#8d899f"
+      },
+      "H": {
+        "hex": "#b7a7b0"
+      },
+      "f": {
+        "hex": "#252d4c"
+      },
+      "F": {
+        "hex": "#343b60"
+      },
+      "q": {
+        "hex": "#341c36"
+      },
+      "r": {
+        "hex": "#5b263e"
+      },
+      "R": {
+        "hex": "#92374d"
+      },
+      "p": {
+        "hex": "#c7505c"
+      },
+      "P": {
+        "hex": "#ee7b77"
+      },
+      "o": {
+        "hex": "#ae705d"
+      },
+      "g": {
+        "hex": "#d59a74"
+      },
+      "G": {
+        "hex": "#ffd39a"
+      }
+    }
+  },
+  "round_trip": {
+    "width": 33,
+    "height": 70,
+    "cel_hash": true
+  },
+  "resources": {
+    "export": "robopixel://export/scarlet-moon-never-sets/v4-rooftop-trans01-spire-tower/revision/2/scarlet-moon-js"
+  }
+}

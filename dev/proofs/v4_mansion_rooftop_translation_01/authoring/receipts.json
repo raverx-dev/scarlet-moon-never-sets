@@ -1,0 +1,1122 @@
+[
+  {
+    "receipt": {
+      "transaction_id": "fcca2afb8b806c1db083be8805f05fda2c96be087906b208bfcd3f6e2663bbfc",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-rooftop-trans01-banner-pier",
+      "operation": "asset_create",
+      "name": "Rooftop Translation 01 / banner-pier",
+      "class_id": "environment-structure",
+      "revision": 1,
+      "revision_hash": "aa8e438ec57fbfa771bfaa5cc5818c7f21a2ba4621c7dec6154a1b1960d0a333",
+      "canvas": {
+        "width": 24,
+        "height": 50
+      },
+      "palette_id": "v4-mansion-rooftop-trans01",
+      "palette_hash": "edd47a9c7cc94d9bf8df93b6b018aaca2cbdea6388a661d081c9a04008cf1880",
+      "frame_id": "default",
+      "layer_id": "art",
+      "created_at": "2026-09-25T10:02:39.292Z",
+      "policy_id": "d12-art-policy",
+      "policy_version": 1,
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "guards": []
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-banner-pier",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-banner-pier/revision/1",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-banner-pier/revision/1/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-banner-pier/revision/1/text"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  {
+    "receipt": {
+      "transaction_id": "a497aae8d33c7b265f92d7eee1d562a474f2e8e65bf7ecffd458a08be50891c8",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-rooftop-trans01-banner-pier",
+      "operation": "grid_paste",
+      "old_revision": 1,
+      "new_revision": 2,
+      "old_revision_hash": "aa8e438ec57fbfa771bfaa5cc5818c7f21a2ba4621c7dec6154a1b1960d0a333",
+      "new_revision_hash": "e92bab3010f30d9153f21540fb2ac5e6722034c1afac0f22ccd40c77f660908c",
+      "changed_pixels": 1106,
+      "changed_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 24,
+        "height": 50
+      },
+      "region_changes": [],
+      "layer_changes": [
+        {
+          "layer_id": "art",
+          "changed_pixels": 1106
+        }
+      ],
+      "frame_changes": [
+        {
+          "frame_id": "default",
+          "changed_pixels": 1106
+        }
+      ],
+      "guards": [],
+      "approval_invalidated": true
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-banner-pier",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-banner-pier/revision/2",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-banner-pier/revision/2/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-banner-pier/revision/2/text",
+      "diff": "robopixel://diff/scarlet-moon-never-sets/v4-rooftop-trans01-banner-pier/1/2"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  {
+    "receipt": {
+      "transaction_id": "6fcd60995bd0a6236886527a87b4e1413d83f1e721e01fe80da876af793b7df7",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-rooftop-trans01-cloud-scarlet",
+      "operation": "asset_create",
+      "name": "Rooftop Translation 01 / cloud-scarlet",
+      "class_id": "environment-structure",
+      "revision": 1,
+      "revision_hash": "5d4217692f880ed354951c3ae452fb63aa9633dd45c46baf155a0cd7150da09c",
+      "canvas": {
+        "width": 67,
+        "height": 15
+      },
+      "palette_id": "v4-mansion-rooftop-trans01",
+      "palette_hash": "edd47a9c7cc94d9bf8df93b6b018aaca2cbdea6388a661d081c9a04008cf1880",
+      "frame_id": "default",
+      "layer_id": "art",
+      "created_at": "2026-09-25T10:02:40.374Z",
+      "policy_id": "d12-art-policy",
+      "policy_version": 1,
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "guards": []
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-cloud-scarlet",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-cloud-scarlet/revision/1",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-cloud-scarlet/revision/1/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-cloud-scarlet/revision/1/text"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  {
+    "receipt": {
+      "transaction_id": "98f8ca5de8982cdbc6d061c8e96ac78514ad5a60cb6adc07fb9d3b6c6f61645c",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-rooftop-trans01-cloud-scarlet",
+      "operation": "grid_paste",
+      "old_revision": 1,
+      "new_revision": 2,
+      "old_revision_hash": "5d4217692f880ed354951c3ae452fb63aa9633dd45c46baf155a0cd7150da09c",
+      "new_revision_hash": "2f6d745287b09942fa1f1c6687587c5f4234458eb18ec01e34bd3b2ad06e5113",
+      "changed_pixels": 560,
+      "changed_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 65,
+        "height": 15
+      },
+      "region_changes": [],
+      "layer_changes": [
+        {
+          "layer_id": "art",
+          "changed_pixels": 560
+        }
+      ],
+      "frame_changes": [
+        {
+          "frame_id": "default",
+          "changed_pixels": 560
+        }
+      ],
+      "guards": [],
+      "approval_invalidated": true
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-cloud-scarlet",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-cloud-scarlet/revision/2",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-cloud-scarlet/revision/2/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-cloud-scarlet/revision/2/text",
+      "diff": "robopixel://diff/scarlet-moon-never-sets/v4-rooftop-trans01-cloud-scarlet/1/2"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  {
+    "receipt": {
+      "transaction_id": "3f362b65ed178db58254e18c877b154865b012b71208e62b0c452e7f10c88b3f",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-rooftop-trans01-cloud-violet",
+      "operation": "asset_create",
+      "name": "Rooftop Translation 01 / cloud-violet",
+      "class_id": "environment-structure",
+      "revision": 1,
+      "revision_hash": "50deba9e592676288c25c20b5e31a4742791fac5f3238aa80f6b6bf9e8683fad",
+      "canvas": {
+        "width": 58,
+        "height": 16
+      },
+      "palette_id": "v4-mansion-rooftop-trans01",
+      "palette_hash": "edd47a9c7cc94d9bf8df93b6b018aaca2cbdea6388a661d081c9a04008cf1880",
+      "frame_id": "default",
+      "layer_id": "art",
+      "created_at": "2026-09-25T10:02:41.380Z",
+      "policy_id": "d12-art-policy",
+      "policy_version": 1,
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "guards": []
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-cloud-violet",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-cloud-violet/revision/1",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-cloud-violet/revision/1/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-cloud-violet/revision/1/text"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  {
+    "receipt": {
+      "transaction_id": "30be65d2a3997c88a9711e19b403231990427aeeef5fa55c04fe6373081bb5cb",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-rooftop-trans01-cloud-violet",
+      "operation": "grid_paste",
+      "old_revision": 1,
+      "new_revision": 2,
+      "old_revision_hash": "50deba9e592676288c25c20b5e31a4742791fac5f3238aa80f6b6bf9e8683fad",
+      "new_revision_hash": "b639b450ced05aba25df951e037e3422a6b07a4b8d65e3ff027c1a554e85edab",
+      "changed_pixels": 560,
+      "changed_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 56,
+        "height": 16
+      },
+      "region_changes": [],
+      "layer_changes": [
+        {
+          "layer_id": "art",
+          "changed_pixels": 560
+        }
+      ],
+      "frame_changes": [
+        {
+          "frame_id": "default",
+          "changed_pixels": 560
+        }
+      ],
+      "guards": [],
+      "approval_invalidated": true
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-cloud-violet",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-cloud-violet/revision/2",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-cloud-violet/revision/2/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-cloud-violet/revision/2/text",
+      "diff": "robopixel://diff/scarlet-moon-never-sets/v4-rooftop-trans01-cloud-violet/1/2"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  {
+    "receipt": {
+      "transaction_id": "76a3d67eacbe023f53499def4de8dd0c6b8bffb21e8f0b1239dacb6d5d46532b",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-rooftop-trans01-crimson-leaves",
+      "operation": "asset_create",
+      "name": "Rooftop Translation 01 / crimson-leaves",
+      "class_id": "environment-structure",
+      "revision": 1,
+      "revision_hash": "9f9519f886017472fc1fcea40d1f173b367f963439965638ba5948307014153b",
+      "canvas": {
+        "width": 32,
+        "height": 20
+      },
+      "palette_id": "v4-mansion-rooftop-trans01",
+      "palette_hash": "edd47a9c7cc94d9bf8df93b6b018aaca2cbdea6388a661d081c9a04008cf1880",
+      "frame_id": "default",
+      "layer_id": "art",
+      "created_at": "2026-09-25T10:02:42.255Z",
+      "policy_id": "d12-art-policy",
+      "policy_version": 1,
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "guards": []
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-crimson-leaves",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-crimson-leaves/revision/1",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-crimson-leaves/revision/1/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-crimson-leaves/revision/1/text"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  {
+    "receipt": {
+      "transaction_id": "eeffe0b25465b9d01d36e5c1e3c98a544fd49075c125fb6a3929d3284041c89c",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-rooftop-trans01-crimson-leaves",
+      "operation": "grid_paste",
+      "old_revision": 1,
+      "new_revision": 2,
+      "old_revision_hash": "9f9519f886017472fc1fcea40d1f173b367f963439965638ba5948307014153b",
+      "new_revision_hash": "94b6a3671a11ff17494ef84b9c488f1d61f549e416b49256c5be29a6acaba545",
+      "changed_pixels": 130,
+      "changed_bbox": {
+        "x": 1,
+        "y": 0,
+        "width": 24,
+        "height": 20
+      },
+      "region_changes": [],
+      "layer_changes": [
+        {
+          "layer_id": "art",
+          "changed_pixels": 130
+        }
+      ],
+      "frame_changes": [
+        {
+          "frame_id": "default",
+          "changed_pixels": 130
+        }
+      ],
+      "guards": [],
+      "approval_invalidated": true
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-crimson-leaves",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-crimson-leaves/revision/2",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-crimson-leaves/revision/2/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-crimson-leaves/revision/2/text",
+      "diff": "robopixel://diff/scarlet-moon-never-sets/v4-rooftop-trans01-crimson-leaves/1/2"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  {
+    "receipt": {
+      "transaction_id": "e46e10b9b56e961db8cc8ba70f6006c820c54bff92f29094df1de0e731dc9fa4",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-rooftop-trans01-forest-depth",
+      "operation": "asset_create",
+      "name": "Rooftop Translation 01 / forest-depth",
+      "class_id": "environment-structure",
+      "revision": 1,
+      "revision_hash": "68b1798a959595c6490a096b6d2bc1e2561ab9bd3f4aae5ac14b71d08ac18c86",
+      "canvas": {
+        "width": 65,
+        "height": 25
+      },
+      "palette_id": "v4-mansion-rooftop-trans01",
+      "palette_hash": "edd47a9c7cc94d9bf8df93b6b018aaca2cbdea6388a661d081c9a04008cf1880",
+      "frame_id": "default",
+      "layer_id": "art",
+      "created_at": "2026-09-25T10:02:43.093Z",
+      "policy_id": "d12-art-policy",
+      "policy_version": 1,
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "guards": []
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-forest-depth",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-forest-depth/revision/1",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-forest-depth/revision/1/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-forest-depth/revision/1/text"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  {
+    "receipt": {
+      "transaction_id": "bc1728c83d868e7a5937a3f00fe40d1d7a1cbda3f1929af253bc3729a33c35e5",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-rooftop-trans01-forest-depth",
+      "operation": "grid_paste",
+      "old_revision": 1,
+      "new_revision": 2,
+      "old_revision_hash": "68b1798a959595c6490a096b6d2bc1e2561ab9bd3f4aae5ac14b71d08ac18c86",
+      "new_revision_hash": "fe15b45a58afc31c548fbbbbd0804bbfa0a77b413a496ff33d320d98407f0678",
+      "changed_pixels": 792,
+      "changed_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 65,
+        "height": 25
+      },
+      "region_changes": [],
+      "layer_changes": [
+        {
+          "layer_id": "art",
+          "changed_pixels": 792
+        }
+      ],
+      "frame_changes": [
+        {
+          "frame_id": "default",
+          "changed_pixels": 792
+        }
+      ],
+      "guards": [],
+      "approval_invalidated": true
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-forest-depth",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-forest-depth/revision/2",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-forest-depth/revision/2/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-forest-depth/revision/2/text",
+      "diff": "robopixel://diff/scarlet-moon-never-sets/v4-rooftop-trans01-forest-depth/1/2"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  {
+    "receipt": {
+      "transaction_id": "7abc38e5550de55a79c252809c13697ea88858c19c115db5bd213490c8a84d0b",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-rooftop-trans01-lancet-wall",
+      "operation": "asset_create",
+      "name": "Rooftop Translation 01 / lancet-wall",
+      "class_id": "environment-structure",
+      "revision": 1,
+      "revision_hash": "244359fd4fb2d4350c6537fc9545730de7e5162e2b3e583bf8ac7cc2c8d109e4",
+      "canvas": {
+        "width": 41,
+        "height": 52
+      },
+      "palette_id": "v4-mansion-rooftop-trans01",
+      "palette_hash": "edd47a9c7cc94d9bf8df93b6b018aaca2cbdea6388a661d081c9a04008cf1880",
+      "frame_id": "default",
+      "layer_id": "art",
+      "created_at": "2026-09-25T10:02:44.177Z",
+      "policy_id": "d12-art-policy",
+      "policy_version": 1,
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "guards": []
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-lancet-wall",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-lancet-wall/revision/1",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-lancet-wall/revision/1/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-lancet-wall/revision/1/text"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  {
+    "receipt": {
+      "transaction_id": "e3196f4df3f06927f07fa4600b04fd34cb2d3ff4dc2ad5cab70f9a5280a44f3c",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-rooftop-trans01-lancet-wall",
+      "operation": "grid_paste",
+      "old_revision": 1,
+      "new_revision": 2,
+      "old_revision_hash": "244359fd4fb2d4350c6537fc9545730de7e5162e2b3e583bf8ac7cc2c8d109e4",
+      "new_revision_hash": "3e89a97c5de1e602c9171106e3eccd617818d5dbf4d4d53948d36209f13068be",
+      "changed_pixels": 2024,
+      "changed_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 41,
+        "height": 52
+      },
+      "region_changes": [],
+      "layer_changes": [
+        {
+          "layer_id": "art",
+          "changed_pixels": 2024
+        }
+      ],
+      "frame_changes": [
+        {
+          "frame_id": "default",
+          "changed_pixels": 2024
+        }
+      ],
+      "guards": [],
+      "approval_invalidated": true
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-lancet-wall",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-lancet-wall/revision/2",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-lancet-wall/revision/2/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-lancet-wall/revision/2/text",
+      "diff": "robopixel://diff/scarlet-moon-never-sets/v4-rooftop-trans01-lancet-wall/1/2"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  {
+    "receipt": {
+      "transaction_id": "9b344326668f4a2853481c1a69336246553e68b920cf69a2dfbc1765fda95a75",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-rooftop-trans01-lantern",
+      "operation": "asset_create",
+      "name": "Rooftop Translation 01 / lantern",
+      "class_id": "environment-structure",
+      "revision": 1,
+      "revision_hash": "930cd74f83c8a4bc88a34cacc0e4d935403aebc274842e3ae86b2fed27c9537e",
+      "canvas": {
+        "width": 16,
+        "height": 31
+      },
+      "palette_id": "v4-mansion-rooftop-trans01",
+      "palette_hash": "edd47a9c7cc94d9bf8df93b6b018aaca2cbdea6388a661d081c9a04008cf1880",
+      "frame_id": "default",
+      "layer_id": "art",
+      "created_at": "2026-09-25T10:02:45.163Z",
+      "policy_id": "d12-art-policy",
+      "policy_version": 1,
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "guards": []
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-lantern",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-lantern/revision/1",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-lantern/revision/1/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-lantern/revision/1/text"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  {
+    "receipt": {
+      "transaction_id": "458ba4274e8180553f82f6a5fe8d848b55bbe7d331e8907a5ce95ee654a88b5f",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-rooftop-trans01-lantern",
+      "operation": "grid_paste",
+      "old_revision": 1,
+      "new_revision": 2,
+      "old_revision_hash": "930cd74f83c8a4bc88a34cacc0e4d935403aebc274842e3ae86b2fed27c9537e",
+      "new_revision_hash": "756061efe324ee4f6c264730321e4301ef44de41970c1992a887e01e790dec46",
+      "changed_pixels": 246,
+      "changed_bbox": {
+        "x": 2,
+        "y": 0,
+        "width": 11,
+        "height": 31
+      },
+      "region_changes": [],
+      "layer_changes": [
+        {
+          "layer_id": "art",
+          "changed_pixels": 246
+        }
+      ],
+      "frame_changes": [
+        {
+          "frame_id": "default",
+          "changed_pixels": 246
+        }
+      ],
+      "guards": [],
+      "approval_invalidated": true
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-lantern",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-lantern/revision/2",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-lantern/revision/2/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-lantern/revision/2/text",
+      "diff": "robopixel://diff/scarlet-moon-never-sets/v4-rooftop-trans01-lantern/1/2"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  {
+    "receipt": {
+      "transaction_id": "cd071c30ca7d3672a4da9954c9065d65ff0a1ac45c22e723f73cf9d281af3928",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-rooftop-trans01-mountain-range",
+      "operation": "asset_create",
+      "name": "Rooftop Translation 01 / mountain-range",
+      "class_id": "environment-structure",
+      "revision": 1,
+      "revision_hash": "28b520091ea2e0868b4fea85750fab71eed886a2ecb93d28f317ad3f5ab6ddc8",
+      "canvas": {
+        "width": 99,
+        "height": 27
+      },
+      "palette_id": "v4-mansion-rooftop-trans01",
+      "palette_hash": "edd47a9c7cc94d9bf8df93b6b018aaca2cbdea6388a661d081c9a04008cf1880",
+      "frame_id": "default",
+      "layer_id": "art",
+      "created_at": "2026-09-25T10:02:46.134Z",
+      "policy_id": "d12-art-policy",
+      "policy_version": 1,
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "guards": []
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-mountain-range",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-mountain-range/revision/1",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-mountain-range/revision/1/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-mountain-range/revision/1/text"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  {
+    "receipt": {
+      "transaction_id": "55cf839d23b4bd91578f34d99db4ea4a608d6db87ba2a1e57a4b0af22e96e983",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-rooftop-trans01-mountain-range",
+      "operation": "grid_paste",
+      "old_revision": 1,
+      "new_revision": 2,
+      "old_revision_hash": "28b520091ea2e0868b4fea85750fab71eed886a2ecb93d28f317ad3f5ab6ddc8",
+      "new_revision_hash": "b71d35690fd91b8be1b4aed55389c4fdbb65a5d4116b8e08ef268c25785c372d",
+      "changed_pixels": 1768,
+      "changed_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 99,
+        "height": 27
+      },
+      "region_changes": [],
+      "layer_changes": [
+        {
+          "layer_id": "art",
+          "changed_pixels": 1768
+        }
+      ],
+      "frame_changes": [
+        {
+          "frame_id": "default",
+          "changed_pixels": 1768
+        }
+      ],
+      "guards": [],
+      "approval_invalidated": true
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-mountain-range",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-mountain-range/revision/2",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-mountain-range/revision/2/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-mountain-range/revision/2/text",
+      "diff": "robopixel://diff/scarlet-moon-never-sets/v4-rooftop-trans01-mountain-range/1/2"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  {
+    "receipt": {
+      "transaction_id": "0279b6a746fe856e32dc239ac3e527120450ae8f79ba032be2c20c907c665f6b",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-rooftop-trans01-night-field",
+      "operation": "asset_create",
+      "name": "Rooftop Translation 01 / night-field",
+      "class_id": "environment-structure",
+      "revision": 1,
+      "revision_hash": "ee5617d82fe9a990d8345a2f9be13a5cb664cb9180c5b54b11e622b9042369ac",
+      "canvas": {
+        "width": 256,
+        "height": 144
+      },
+      "palette_id": "v4-mansion-rooftop-trans01",
+      "palette_hash": "edd47a9c7cc94d9bf8df93b6b018aaca2cbdea6388a661d081c9a04008cf1880",
+      "frame_id": "default",
+      "layer_id": "art",
+      "created_at": "2026-09-25T10:02:47.109Z",
+      "policy_id": "d12-art-policy",
+      "policy_version": 1,
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "guards": []
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-night-field",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-night-field/revision/1",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-night-field/revision/1/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-night-field/revision/1/text"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  {
+    "receipt": {
+      "transaction_id": "e9b61fb3c7c4a6773a6967404195ca82ef082f27e3318ef70b1204db1c0f1c9d",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-rooftop-trans01-night-field",
+      "operation": "grid_paste",
+      "old_revision": 1,
+      "new_revision": 2,
+      "old_revision_hash": "ee5617d82fe9a990d8345a2f9be13a5cb664cb9180c5b54b11e622b9042369ac",
+      "new_revision_hash": "0035e1ff4d4a60c92c8130938099d94f898a0ad0c165e48e23de2dac2d9f97f7",
+      "changed_pixels": 36864,
+      "changed_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 144
+      },
+      "region_changes": [],
+      "layer_changes": [
+        {
+          "layer_id": "art",
+          "changed_pixels": 36864
+        }
+      ],
+      "frame_changes": [
+        {
+          "frame_id": "default",
+          "changed_pixels": 36864
+        }
+      ],
+      "guards": [],
+      "approval_invalidated": true
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-night-field",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-night-field/revision/2",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-night-field/revision/2/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-night-field/revision/2/text",
+      "diff": "robopixel://diff/scarlet-moon-never-sets/v4-rooftop-trans01-night-field/1/2"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  {
+    "receipt": {
+      "transaction_id": "272ae38b74d8037e7fb559f615f69af47cc9d6abda2a664b04a491bc12762cab",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-rooftop-trans01-parapet",
+      "operation": "asset_create",
+      "name": "Rooftop Translation 01 / parapet",
+      "class_id": "environment-structure",
+      "revision": 1,
+      "revision_hash": "491d716d63880cde29798ec0f20c63403d06a93a3587073edcc94dd365417b07",
+      "canvas": {
+        "width": 33,
+        "height": 24
+      },
+      "palette_id": "v4-mansion-rooftop-trans01",
+      "palette_hash": "edd47a9c7cc94d9bf8df93b6b018aaca2cbdea6388a661d081c9a04008cf1880",
+      "frame_id": "default",
+      "layer_id": "art",
+      "created_at": "2026-09-25T10:02:48.264Z",
+      "policy_id": "d12-art-policy",
+      "policy_version": 1,
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "guards": []
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-parapet",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-parapet/revision/1",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-parapet/revision/1/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-parapet/revision/1/text"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  {
+    "receipt": {
+      "transaction_id": "bc955d34efb4bbff460c28e6d16c3fc895c55e5eff5ac9375eb6770be6a3a7a8",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-rooftop-trans01-parapet",
+      "operation": "grid_paste",
+      "old_revision": 1,
+      "new_revision": 2,
+      "old_revision_hash": "491d716d63880cde29798ec0f20c63403d06a93a3587073edcc94dd365417b07",
+      "new_revision_hash": "161fc4cc6939126a26c198fc104f7adaf28cb5ca927a6ca165982cf67c35a28b",
+      "changed_pixels": 679,
+      "changed_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 33,
+        "height": 24
+      },
+      "region_changes": [],
+      "layer_changes": [
+        {
+          "layer_id": "art",
+          "changed_pixels": 679
+        }
+      ],
+      "frame_changes": [
+        {
+          "frame_id": "default",
+          "changed_pixels": 679
+        }
+      ],
+      "guards": [],
+      "approval_invalidated": true
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-parapet",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-parapet/revision/2",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-parapet/revision/2/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-parapet/revision/2/text",
+      "diff": "robopixel://diff/scarlet-moon-never-sets/v4-rooftop-trans01-parapet/1/2"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  {
+    "receipt": {
+      "transaction_id": "6bde3bcc5b1ae08441d213bf718eb80649899c120359aa2c471d800502a57a7b",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-rooftop-trans01-paving-gameplay",
+      "operation": "asset_create",
+      "name": "Rooftop Translation 01 / paving-gameplay",
+      "class_id": "environment-structure",
+      "revision": 1,
+      "revision_hash": "1d1ea0b6b15dd108a8d6481a2319d3926297d52f9158a6d807a4c00eb511c11d",
+      "canvas": {
+        "width": 192,
+        "height": 112
+      },
+      "palette_id": "v4-mansion-rooftop-trans01",
+      "palette_hash": "edd47a9c7cc94d9bf8df93b6b018aaca2cbdea6388a661d081c9a04008cf1880",
+      "frame_id": "default",
+      "layer_id": "art",
+      "created_at": "2026-09-25T10:02:49.110Z",
+      "policy_id": "d12-art-policy",
+      "policy_version": 1,
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "guards": []
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-paving-gameplay",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-paving-gameplay/revision/1",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-paving-gameplay/revision/1/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-paving-gameplay/revision/1/text"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  {
+    "receipt": {
+      "transaction_id": "bda303c9cdc1c4bbe22c2a39354c617d2ec29b31b233d2b29da8bb82537199f3",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-rooftop-trans01-paving-gameplay",
+      "operation": "grid_paste",
+      "old_revision": 1,
+      "new_revision": 2,
+      "old_revision_hash": "1d1ea0b6b15dd108a8d6481a2319d3926297d52f9158a6d807a4c00eb511c11d",
+      "new_revision_hash": "9a0fc6246f0fcff31d7c638355f866084ec6b1a6044a6f82c869cb238b473dad",
+      "changed_pixels": 21504,
+      "changed_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 192,
+        "height": 112
+      },
+      "region_changes": [],
+      "layer_changes": [
+        {
+          "layer_id": "art",
+          "changed_pixels": 21504
+        }
+      ],
+      "frame_changes": [
+        {
+          "frame_id": "default",
+          "changed_pixels": 21504
+        }
+      ],
+      "guards": [],
+      "approval_invalidated": true
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-paving-gameplay",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-paving-gameplay/revision/2",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-paving-gameplay/revision/2/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-paving-gameplay/revision/2/text",
+      "diff": "robopixel://diff/scarlet-moon-never-sets/v4-rooftop-trans01-paving-gameplay/1/2"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  {
+    "receipt": {
+      "transaction_id": "fbbde2fd1c7ca864d4a46156e1e400147d4691da664ca74b227ff61a6a8bb1cf",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-rooftop-trans01-paving-story",
+      "operation": "asset_create",
+      "name": "Rooftop Translation 01 / paving-story",
+      "class_id": "environment-structure",
+      "revision": 1,
+      "revision_hash": "e1964f5f7214356719919634499bea6d46aa0a0b4a90b71cde2d48b8dc83ed1d",
+      "canvas": {
+        "width": 256,
+        "height": 96
+      },
+      "palette_id": "v4-mansion-rooftop-trans01",
+      "palette_hash": "edd47a9c7cc94d9bf8df93b6b018aaca2cbdea6388a661d081c9a04008cf1880",
+      "frame_id": "default",
+      "layer_id": "art",
+      "created_at": "2026-09-25T10:02:50.133Z",
+      "policy_id": "d12-art-policy",
+      "policy_version": 1,
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "guards": []
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-paving-story",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-paving-story/revision/1",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-paving-story/revision/1/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-paving-story/revision/1/text"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  {
+    "receipt": {
+      "transaction_id": "bc228ef3fdcc03639773041b656232fcb0341a70edc10b9d61842bd8cc4b9b3e",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-rooftop-trans01-paving-story",
+      "operation": "grid_paste",
+      "old_revision": 1,
+      "new_revision": 2,
+      "old_revision_hash": "e1964f5f7214356719919634499bea6d46aa0a0b4a90b71cde2d48b8dc83ed1d",
+      "new_revision_hash": "3f7c3f1ef25451a8ece006d7b1d621908cbe46bf40147fa5b169cb3b1b28f039",
+      "changed_pixels": 24576,
+      "changed_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 96
+      },
+      "region_changes": [],
+      "layer_changes": [
+        {
+          "layer_id": "art",
+          "changed_pixels": 24576
+        }
+      ],
+      "frame_changes": [
+        {
+          "frame_id": "default",
+          "changed_pixels": 24576
+        }
+      ],
+      "guards": [],
+      "approval_invalidated": true
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-paving-story",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-paving-story/revision/2",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-paving-story/revision/2/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-paving-story/revision/2/text",
+      "diff": "robopixel://diff/scarlet-moon-never-sets/v4-rooftop-trans01-paving-story/1/2"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  {
+    "receipt": {
+      "transaction_id": "e21a2eb995503d5620e6772cc77c86ff6c4cbc79515ad7604aa72d7ca932141c",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-rooftop-trans01-scarlet-moon",
+      "operation": "asset_create",
+      "name": "Rooftop Translation 01 / scarlet-moon",
+      "class_id": "environment-structure",
+      "revision": 1,
+      "revision_hash": "e7869ff1259f5e78095337341bf82a1727d426be6e3c60fe13faef5a20b1a71d",
+      "canvas": {
+        "width": 34,
+        "height": 33
+      },
+      "palette_id": "v4-mansion-rooftop-trans01",
+      "palette_hash": "edd47a9c7cc94d9bf8df93b6b018aaca2cbdea6388a661d081c9a04008cf1880",
+      "frame_id": "default",
+      "layer_id": "art",
+      "created_at": "2026-09-25T10:02:51.178Z",
+      "policy_id": "d12-art-policy",
+      "policy_version": 1,
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "guards": []
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-scarlet-moon",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-scarlet-moon/revision/1",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-scarlet-moon/revision/1/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-scarlet-moon/revision/1/text"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  {
+    "receipt": {
+      "transaction_id": "d4c58d0b8aec45a07da01dc3a3ac35f8fb1087b8e354d23080c71ebce2d3ce57",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-rooftop-trans01-scarlet-moon",
+      "operation": "grid_paste",
+      "old_revision": 1,
+      "new_revision": 2,
+      "old_revision_hash": "e7869ff1259f5e78095337341bf82a1727d426be6e3c60fe13faef5a20b1a71d",
+      "new_revision_hash": "598fb83ed1a22d871f8e163bf6ae33a2775fae62dee72c3b2cc4d029a3312112",
+      "changed_pixels": 821,
+      "changed_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 33,
+        "height": 33
+      },
+      "region_changes": [],
+      "layer_changes": [
+        {
+          "layer_id": "art",
+          "changed_pixels": 821
+        }
+      ],
+      "frame_changes": [
+        {
+          "frame_id": "default",
+          "changed_pixels": 821
+        }
+      ],
+      "guards": [],
+      "approval_invalidated": true
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-scarlet-moon",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-scarlet-moon/revision/2",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-scarlet-moon/revision/2/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-scarlet-moon/revision/2/text",
+      "diff": "robopixel://diff/scarlet-moon-never-sets/v4-rooftop-trans01-scarlet-moon/1/2"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  {
+    "receipt": {
+      "transaction_id": "4587e8e766a1e3e9150bfcf6de9841932c886ae1e5dc0d8ae4cc187479bcb0af",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-rooftop-trans01-spire-tower",
+      "operation": "asset_create",
+      "name": "Rooftop Translation 01 / spire-tower",
+      "class_id": "environment-structure",
+      "revision": 1,
+      "revision_hash": "21f47542a776e105f5593658290a777b430e975e2ac5a7e45fd1a757e80d60ff",
+      "canvas": {
+        "width": 33,
+        "height": 70
+      },
+      "palette_id": "v4-mansion-rooftop-trans01",
+      "palette_hash": "edd47a9c7cc94d9bf8df93b6b018aaca2cbdea6388a661d081c9a04008cf1880",
+      "frame_id": "default",
+      "layer_id": "art",
+      "created_at": "2026-09-25T10:02:52.053Z",
+      "policy_id": "d12-art-policy",
+      "policy_version": 1,
+      "policy_hash": "1add641b1251cb8f996a20c5580fc7a9ed581953e8b24fd75c0c1c63f3937a93",
+      "guards": []
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-spire-tower",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-spire-tower/revision/1",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-spire-tower/revision/1/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-spire-tower/revision/1/text"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  },
+  {
+    "receipt": {
+      "transaction_id": "670b6438baa750e0e407ebca8b13247aaa0e1c164e47742e48161e283e77e690",
+      "project_id": "scarlet-moon-never-sets",
+      "asset_id": "v4-rooftop-trans01-spire-tower",
+      "operation": "grid_paste",
+      "old_revision": 1,
+      "new_revision": 2,
+      "old_revision_hash": "21f47542a776e105f5593658290a777b430e975e2ac5a7e45fd1a757e80d60ff",
+      "new_revision_hash": "b17da631beafc12b936724f8d9e17731e65bfdd699ed86432afd7dc437b49ed5",
+      "changed_pixels": 1304,
+      "changed_bbox": {
+        "x": 2,
+        "y": 0,
+        "width": 26,
+        "height": 70
+      },
+      "region_changes": [],
+      "layer_changes": [
+        {
+          "layer_id": "art",
+          "changed_pixels": 1304
+        }
+      ],
+      "frame_changes": [
+        {
+          "frame_id": "default",
+          "changed_pixels": 1304
+        }
+      ],
+      "guards": [],
+      "approval_invalidated": true
+    },
+    "resources": {
+      "asset": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-spire-tower",
+      "revision": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-spire-tower/revision/2",
+      "view": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-spire-tower/revision/2/view",
+      "text": "robopixel://asset/scarlet-moon-never-sets/v4-rooftop-trans01-spire-tower/revision/2/text",
+      "diff": "robopixel://diff/scarlet-moon-never-sets/v4-rooftop-trans01-spire-tower/1/2"
+    },
+    "presentation": {
+      "available": true,
+      "render": "none"
+    }
+  }
+]
