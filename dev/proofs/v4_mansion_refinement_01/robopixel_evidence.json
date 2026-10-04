@@ -1,0 +1,55 @@
+{
+  "project_id": "scarlet-moon-never-sets",
+  "assets": {
+    "rose-apse": {
+      "asset_id": "v4-mansion-proof-rose-apse-01",
+      "revision": 5,
+      "revision_hash": "0dea6c919996684ec9f5cd8005abf5731e2890105b7a362baeeefce1dd67a276",
+      "validation_id": "validation-b1bbfcb3-7852-4180-b992-5ce1fe582518",
+      "validation_passed": true,
+      "findings_count": 65,
+      "approved": false,
+      "active_approval_ids": []
+    },
+    "floor": {
+      "asset_id": "v4-mansion-proof-floor-01",
+      "revision": 5,
+      "revision_hash": "e2e60e4923b1b46d91159fec2f67df48c06bbc00bc99267d38a4ea26ad8256ad",
+      "validation_id": "validation-ecd6410c-0c5f-4d36-aa62-c94353a5997d",
+      "validation_passed": true,
+      "findings_count": 55,
+      "approved": false,
+      "active_approval_ids": []
+    },
+    "far-window-bay": {
+      "asset_id": "v4-mansion-ref01-far-window-bay-01",
+      "revision": 2,
+      "revision_hash": "9ff859ea435bda5e9cff00f2a6ddd856bd334b9a5a5e4a0b8cc6cbef522b21c4",
+      "validation_id": "validation-f3332010-4683-4ee9-9c46-f7bcd0d062c5",
+      "validation_passed": true,
+      "findings_count": 25,
+      "approved": false,
+      "active_approval_ids": []
+    },
+    "far-pier": {
+      "asset_id": "v4-mansion-ref01-far-pier-01",
+      "revision": 2,
+      "revision_hash": "73411389d2256b01f59c07a749f84ca1000f81484d34bbcc5665edff2fac9918",
+      "validation_id": "validation-6b30241f-8b71-4393-82d2-0c78c00ec8fe",
+      "validation_passed": true,
+      "findings_count": 11,
+      "approved": false,
+      "active_approval_ids": []
+    },
+    "far-floor": {
+      "asset_id": "v4-mansion-ref01-far-floor-01",
+      "revision": 2,
+      "revision_hash": "d5133ac1d082e0b44a55f6479723bb7b1fceaa33f2a5630abdbe973fccda9dec",
+      "validation_id": "validation-03ef2f55-d0f7-41e1-a68b-087025db6500",
+      "validation_passed": true,
+      "findings_count": 39,
+      "approved": false,
+      "active_approval_ids": []
+    }
+  }
+}
